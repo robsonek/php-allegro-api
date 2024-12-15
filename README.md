@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# robsonek/php-allegro-api
 
 https://developer.allegro.pl/about
 
@@ -44,16 +44,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$additional_services_group_request = new \OpenAPI\Client\Model\AdditionalServicesGroupRequest(); // \OpenAPI\Client\Model\AdditionalServicesGroupRequest | Additional service group body
+$additional_services_group_request = new \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest(); // \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest | Additional service group body
 
 try {
     $result = $apiInstance->createAdditionalServicesGroupUsingPOST($additional_services_group_request);

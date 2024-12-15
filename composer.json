@@ -1,9 +1,12 @@
 {
     "name": "robsonek/php-allegro-api",
-    "description": "https://developer.allegro.pl/about  Documentation is generated from [this OpenAPI 3.0 specification file](https://developer.allegro.pl/swagger.yaml). To start working with our API, you can also check our [official Allegro REST API public collection](https://www.postman.com/allegro-rest-api/allegro-rest-api/collection/4puh6ls/allegro-rest-api) in Postman.",
+    "description": "Client library for integrating with the Allegro REST API, based on their OpenAPI 3.0 specification.",
     "keywords": [
-        "openapitools",
-        "openapi-generator",
+        "allegro",
+        "allegro api",
+        "allegro rest api",
+        "allegro sdk",
+        "php allegro api",
         "openapi",
         "php",
         "sdk",

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * WholesalePriceListBenefitSpecificationAllOfThresholds Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class WholesalePriceListBenefitSpecificationAllOfThresholds implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'quantity' => '\OpenAPI\Client\Model\WholesalePriceListBenefitSpecificationAllOfQuantity',
-        'discount' => '\OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount'
+        'quantity' => '\robsonek\phpAllegroApi\Model\WholesalePriceListBenefitSpecificationAllOfQuantity',
+        'discount' => '\robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount'
     ];
 
     /**
@@ -305,7 +305,7 @@ class WholesalePriceListBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Gets quantity
      *
-     * @return \OpenAPI\Client\Model\WholesalePriceListBenefitSpecificationAllOfQuantity
+     * @return \robsonek\phpAllegroApi\Model\WholesalePriceListBenefitSpecificationAllOfQuantity
      */
     public function getQuantity()
     {
@@ -315,7 +315,7 @@ class WholesalePriceListBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Sets quantity
      *
-     * @param \OpenAPI\Client\Model\WholesalePriceListBenefitSpecificationAllOfQuantity $quantity quantity
+     * @param \robsonek\phpAllegroApi\Model\WholesalePriceListBenefitSpecificationAllOfQuantity $quantity quantity
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class WholesalePriceListBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Gets discount
      *
-     * @return \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount
+     * @return \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount
      */
     public function getDiscount()
     {
@@ -342,7 +342,7 @@ class WholesalePriceListBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Sets discount
      *
-     * @param \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount $discount discount
+     * @param \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount $discount discount
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UserRating Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'answer' => '\OpenAPI\Client\Model\Answer',
-        'buyer' => '\OpenAPI\Client\Model\User',
+        'answer' => '\robsonek\phpAllegroApi\Model\Answer',
+        'buyer' => '\robsonek\phpAllegroApi\Model\User',
         'comment' => 'string',
         'created_at' => 'string',
         'edited_at' => 'string',
@@ -66,10 +66,10 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
         'excluded_from_average_rates_reason' => 'string',
         'id' => 'string',
         'last_changed_at' => 'string',
-        'order' => '\OpenAPI\Client\Model\Order',
-        'rates' => '\OpenAPI\Client\Model\Rates',
+        'order' => '\robsonek\phpAllegroApi\Model\Order',
+        'rates' => '\robsonek\phpAllegroApi\Model\Rates',
         'recommended' => 'bool',
-        'removal' => '\OpenAPI\Client\Model\Removal'
+        'removal' => '\robsonek\phpAllegroApi\Model\Removal'
     ];
 
     /**
@@ -388,7 +388,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets answer
      *
-     * @return \OpenAPI\Client\Model\Answer|null
+     * @return \robsonek\phpAllegroApi\Model\Answer|null
      */
     public function getAnswer()
     {
@@ -398,7 +398,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets answer
      *
-     * @param \OpenAPI\Client\Model\Answer|null $answer answer
+     * @param \robsonek\phpAllegroApi\Model\Answer|null $answer answer
      *
      * @return self
      */
@@ -415,7 +415,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \robsonek\phpAllegroApi\Model\User
      */
     public function getBuyer()
     {
@@ -425,7 +425,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\User $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\User $buyer buyer
      *
      * @return self
      */
@@ -631,7 +631,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\Order|null
+     * @return \robsonek\phpAllegroApi\Model\Order|null
      */
     public function getOrder()
     {
@@ -641,7 +641,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\Order|null $order order
+     * @param \robsonek\phpAllegroApi\Model\Order|null $order order
      *
      * @return self
      */
@@ -658,7 +658,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rates
      *
-     * @return \OpenAPI\Client\Model\Rates|null
+     * @return \robsonek\phpAllegroApi\Model\Rates|null
      */
     public function getRates()
     {
@@ -668,7 +668,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rates
      *
-     * @param \OpenAPI\Client\Model\Rates|null $rates rates
+     * @param \robsonek\phpAllegroApi\Model\Rates|null $rates rates
      *
      * @return self
      */
@@ -712,7 +712,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets removal
      *
-     * @return \OpenAPI\Client\Model\Removal|null
+     * @return \robsonek\phpAllegroApi\Model\Removal|null
      */
     public function getRemoval()
     {
@@ -722,7 +722,7 @@ class UserRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets removal
      *
-     * @param \OpenAPI\Client\Model\Removal|null $removal removal
+     * @param \robsonek\phpAllegroApi\Model\Removal|null $removal removal
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PickupDateParcelsProposals Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PickupDateParcelsProposals implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pickup_date_proposals' => '\OpenAPI\Client\Model\PickupDateProposals[]'
+        'pickup_date_proposals' => '\robsonek\phpAllegroApi\Model\PickupDateProposals[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PickupDateParcelsProposals implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets pickup_date_proposals
      *
-     * @return \OpenAPI\Client\Model\PickupDateProposals[]|null
+     * @return \robsonek\phpAllegroApi\Model\PickupDateProposals[]|null
      */
     public function getPickupDateProposals()
     {
@@ -302,7 +302,7 @@ class PickupDateParcelsProposals implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets pickup_date_proposals
      *
-     * @param \OpenAPI\Client\Model\PickupDateProposals[]|null $pickup_date_proposals Pickup date parcels proposals.
+     * @param \robsonek\phpAllegroApi\Model\PickupDateProposals[]|null $pickup_date_proposals Pickup date parcels proposals.
      *
      * @return self
      */

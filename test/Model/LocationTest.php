@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description for offer with a delivery method it is a parcel dispatch location. For offers with personal pick-up it is a pick-up location, additionally we recommend to use points of service (&lt;a href&#x3D;\&quot;../../documentation/#tag/Points-of-service\&quot; target&#x3D;\&quot;_blank\&quot;&gt;https://developer.allegro.pl/documentation/#tag/Points-of-service&lt;/a&gt;)
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CreateAdvanceShipNoticeRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\ProductItem[]',
-        'handling_unit' => '\OpenAPI\Client\Model\HandlingUnit',
-        'shipping' => '\OpenAPI\Client\Model\Shipping'
+        'items' => '\robsonek\phpAllegroApi\Model\ProductItem[]',
+        'handling_unit' => '\robsonek\phpAllegroApi\Model\HandlingUnit',
+        'shipping' => '\robsonek\phpAllegroApi\Model\Shipping'
     ];
 
     /**
@@ -309,7 +309,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ProductItem[]
+     * @return \robsonek\phpAllegroApi\Model\ProductItem[]
      */
     public function getItems()
     {
@@ -319,7 +319,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ProductItem[] $items A list of product items.
+     * @param \robsonek\phpAllegroApi\Model\ProductItem[] $items A list of product items.
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets handling_unit
      *
-     * @return \OpenAPI\Client\Model\HandlingUnit|null
+     * @return \robsonek\phpAllegroApi\Model\HandlingUnit|null
      */
     public function getHandlingUnit()
     {
@@ -346,7 +346,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets handling_unit
      *
-     * @param \OpenAPI\Client\Model\HandlingUnit|null $handling_unit handling_unit
+     * @param \robsonek\phpAllegroApi\Model\HandlingUnit|null $handling_unit handling_unit
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipping
      *
-     * @return \OpenAPI\Client\Model\Shipping|null
+     * @return \robsonek\phpAllegroApi\Model\Shipping|null
      */
     public function getShipping()
     {
@@ -373,7 +373,7 @@ class CreateAdvanceShipNoticeRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipping
      *
-     * @param \OpenAPI\Client\Model\Shipping|null $shipping shipping
+     * @param \robsonek\phpAllegroApi\Model\Shipping|null $shipping shipping
      *
      * @return self
      */

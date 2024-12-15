@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UpdateResponsibleProducerRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class UpdateResponsibleProducerRequest implements ModelInterface, ArrayAccess, \
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'producer_data' => '\OpenAPI\Client\Model\ResponsibleProducerResponseProducerData'
+        'producer_data' => '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponseProducerData'
     ];
 
     /**
@@ -368,7 +368,7 @@ class UpdateResponsibleProducerRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets producer_data
      *
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponseProducerData|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponseProducerData|null
      */
     public function getProducerData()
     {
@@ -378,7 +378,7 @@ class UpdateResponsibleProducerRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets producer_data
      *
-     * @param \OpenAPI\Client\Model\ResponsibleProducerResponseProducerData|null $producer_data producer_data
+     * @param \robsonek\phpAllegroApi\Model\ResponsibleProducerResponseProducerData|null $producer_data producer_data
      *
      * @return self
      */

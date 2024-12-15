@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ImpliedWarrantiesListImpliedWarrantyBasic Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ImpliedWarrantiesListImpliedWarrantyBasic implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'implied_warranties' => '\OpenAPI\Client\Model\ImpliedWarrantyBasic[]'
+        'implied_warranties' => '\robsonek\phpAllegroApi\Model\ImpliedWarrantyBasic[]'
     ];
 
     /**
@@ -335,7 +335,7 @@ class ImpliedWarrantiesListImpliedWarrantyBasic implements ModelInterface, Array
     /**
      * Gets implied_warranties
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyBasic[]|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyBasic[]|null
      */
     public function getImpliedWarranties()
     {
@@ -345,7 +345,7 @@ class ImpliedWarrantiesListImpliedWarrantyBasic implements ModelInterface, Array
     /**
      * Sets implied_warranties
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarrantyBasic[]|null $implied_warranties implied_warranties
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarrantyBasic[]|null $implied_warranties implied_warranties
      *
      * @return self
      */

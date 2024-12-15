@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DiscountsProductOfferResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DiscountsProductOfferResponse implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'wholesale_price_list' => '\OpenAPI\Client\Model\JustId'
+        'wholesale_price_list' => '\robsonek\phpAllegroApi\Model\JustId'
     ];
 
     /**
@@ -292,7 +292,7 @@ class DiscountsProductOfferResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets wholesale_price_list
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getWholesalePriceList()
     {
@@ -302,7 +302,7 @@ class DiscountsProductOfferResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets wholesale_price_list
      *
-     * @param \OpenAPI\Client\Model\JustId|null $wholesale_price_list wholesale_price_list
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $wholesale_price_list wholesale_price_list
      *
      * @return self
      */

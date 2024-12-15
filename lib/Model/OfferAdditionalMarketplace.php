@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAdditionalMarketplace Class Doc Comment
  *
  * @category Class
  * @description Additional marketplace settings.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferAdditionalMarketplace implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'publication' => '\OpenAPI\Client\Model\AdditionalMarketplacePublication',
-        'selling_mode' => '\OpenAPI\Client\Model\AdditionalMarketplaceSellingMode'
+        'publication' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacePublication',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplaceSellingMode'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OfferAdditionalMarketplace implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacePublication|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublication|null
      */
     public function getPublication()
     {
@@ -310,7 +310,7 @@ class OfferAdditionalMarketplace implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublication|null $publication publication
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OfferAdditionalMarketplace implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplaceSellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplaceSellingMode|null
      */
     public function getSellingMode()
     {
@@ -337,7 +337,7 @@ class OfferAdditionalMarketplace implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplaceSellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplaceSellingMode|null $selling_mode selling_mode
      *
      * @return self
      */

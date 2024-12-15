@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormBuyerReference Class Doc Comment
  *
  * @category Class
  * @description Buyer data
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,8 +67,8 @@ class CheckoutFormBuyerReference implements ModelInterface, ArrayAccess, \JsonSe
         'guest' => 'bool',
         'personal_identity' => 'string',
         'phone_number' => 'string',
-        'preferences' => '\OpenAPI\Client\Model\BuyerPreferencesReference',
-        'address' => '\OpenAPI\Client\Model\CheckoutFormBuyerAddressReference'
+        'preferences' => '\robsonek\phpAllegroApi\Model\BuyerPreferencesReference',
+        'address' => '\robsonek\phpAllegroApi\Model\CheckoutFormBuyerAddressReference'
     ];
 
     /**
@@ -618,7 +618,7 @@ class CheckoutFormBuyerReference implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets preferences
      *
-     * @return \OpenAPI\Client\Model\BuyerPreferencesReference|null
+     * @return \robsonek\phpAllegroApi\Model\BuyerPreferencesReference|null
      */
     public function getPreferences()
     {
@@ -628,7 +628,7 @@ class CheckoutFormBuyerReference implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets preferences
      *
-     * @param \OpenAPI\Client\Model\BuyerPreferencesReference|null $preferences preferences
+     * @param \robsonek\phpAllegroApi\Model\BuyerPreferencesReference|null $preferences preferences
      *
      * @return self
      */
@@ -645,7 +645,7 @@ class CheckoutFormBuyerReference implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormBuyerAddressReference|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormBuyerAddressReference|null
      */
     public function getAddress()
     {
@@ -655,7 +655,7 @@ class CheckoutFormBuyerReference implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormBuyerAddressReference|null $address address
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormBuyerAddressReference|null $address address
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductChangesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ProductChangesResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product_changes' => '\OpenAPI\Client\Model\ProductChangeDto[]'
+        'product_changes' => '\robsonek\phpAllegroApi\Model\ProductChangeDto[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ProductChangesResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets product_changes
      *
-     * @return \OpenAPI\Client\Model\ProductChangeDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductChangeDto[]|null
      */
     public function getProductChanges()
     {
@@ -302,7 +302,7 @@ class ProductChangesResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets product_changes
      *
-     * @param \OpenAPI\Client\Model\ProductChangeDto[]|null $product_changes List of requested product changes.
+     * @param \robsonek\phpAllegroApi\Model\ProductChangeDto[]|null $product_changes List of requested product changes.
      *
      * @return self
      */

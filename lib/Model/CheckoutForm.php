@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutForm Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,18 +59,18 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'message_to_seller' => 'string',
-        'buyer' => '\OpenAPI\Client\Model\CheckoutFormBuyerReference',
-        'payment' => '\OpenAPI\Client\Model\CheckoutFormPaymentReference',
-        'status' => '\OpenAPI\Client\Model\CheckoutFormStatus',
-        'fulfillment' => '\OpenAPI\Client\Model\CheckoutFormFulfillment',
-        'delivery' => '\OpenAPI\Client\Model\CheckoutFormDeliveryReference',
-        'invoice' => '\OpenAPI\Client\Model\CheckoutFormInvoiceInfo',
-        'line_items' => '\OpenAPI\Client\Model\CheckoutFormLineItem[]',
-        'surcharges' => '\OpenAPI\Client\Model\CheckoutFormPaymentReference[]',
-        'discounts' => '\OpenAPI\Client\Model\CheckoutFormDiscount[]',
-        'note' => '\OpenAPI\Client\Model\CheckoutFormNoteReference',
-        'marketplace' => '\OpenAPI\Client\Model\CheckoutFormMarketplace',
-        'summary' => '\OpenAPI\Client\Model\CheckoutFormSummary',
+        'buyer' => '\robsonek\phpAllegroApi\Model\CheckoutFormBuyerReference',
+        'payment' => '\robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference',
+        'status' => '\robsonek\phpAllegroApi\Model\CheckoutFormStatus',
+        'fulfillment' => '\robsonek\phpAllegroApi\Model\CheckoutFormFulfillment',
+        'delivery' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryReference',
+        'invoice' => '\robsonek\phpAllegroApi\Model\CheckoutFormInvoiceInfo',
+        'line_items' => '\robsonek\phpAllegroApi\Model\CheckoutFormLineItem[]',
+        'surcharges' => '\robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference[]',
+        'discounts' => '\robsonek\phpAllegroApi\Model\CheckoutFormDiscount[]',
+        'note' => '\robsonek\phpAllegroApi\Model\CheckoutFormNoteReference',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\CheckoutFormMarketplace',
+        'summary' => '\robsonek\phpAllegroApi\Model\CheckoutFormSummary',
         'updated_at' => 'string',
         'revision' => 'string'
     ];
@@ -472,7 +472,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormBuyerReference
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormBuyerReference
      */
     public function getBuyer()
     {
@@ -482,7 +482,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormBuyerReference $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormBuyerReference $buyer buyer
      *
      * @return self
      */
@@ -499,7 +499,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payment
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormPaymentReference|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference|null
      */
     public function getPayment()
     {
@@ -509,7 +509,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payment
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormPaymentReference|null $payment payment
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference|null $payment payment
      *
      * @return self
      */
@@ -526,7 +526,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormStatus
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormStatus
      */
     public function getStatus()
     {
@@ -536,7 +536,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormStatus $status status
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormStatus $status status
      *
      * @return self
      */
@@ -553,7 +553,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fulfillment
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormFulfillment|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment|null
      */
     public function getFulfillment()
     {
@@ -563,7 +563,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fulfillment
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormFulfillment|null $fulfillment fulfillment
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment|null $fulfillment fulfillment
      *
      * @return self
      */
@@ -580,7 +580,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryReference|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryReference|null
      */
     public function getDelivery()
     {
@@ -590,7 +590,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryReference|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryReference|null $delivery delivery
      *
      * @return self
      */
@@ -607,7 +607,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormInvoiceInfo|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceInfo|null
      */
     public function getInvoice()
     {
@@ -617,7 +617,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormInvoiceInfo|null $invoice invoice
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceInfo|null $invoice invoice
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets line_items
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormLineItem[]
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormLineItem[]
      */
     public function getLineItems()
     {
@@ -644,7 +644,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets line_items
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormLineItem[] $line_items line_items
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormLineItem[] $line_items line_items
      *
      * @return self
      */
@@ -661,7 +661,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets surcharges
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormPaymentReference[]
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference[]
      */
     public function getSurcharges()
     {
@@ -671,7 +671,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets surcharges
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormPaymentReference[] $surcharges surcharges
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormPaymentReference[] $surcharges surcharges
      *
      * @return self
      */
@@ -688,7 +688,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discounts
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDiscount[]
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDiscount[]
      */
     public function getDiscounts()
     {
@@ -698,7 +698,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discounts
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDiscount[] $discounts discounts
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDiscount[] $discounts discounts
      *
      * @return self
      */
@@ -715,7 +715,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets note
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormNoteReference|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormNoteReference|null
      */
     public function getNote()
     {
@@ -725,7 +725,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets note
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormNoteReference|null $note note
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormNoteReference|null $note note
      *
      * @return self
      */
@@ -742,7 +742,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormMarketplace|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormMarketplace|null
      */
     public function getMarketplace()
     {
@@ -752,7 +752,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormMarketplace|null $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormMarketplace|null $marketplace marketplace
      *
      * @return self
      */
@@ -769,7 +769,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets summary
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormSummary
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormSummary
      */
     public function getSummary()
     {
@@ -779,7 +779,7 @@ class CheckoutForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets summary
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormSummary $summary summary
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormSummary $summary summary
      *
      * @return self
      */

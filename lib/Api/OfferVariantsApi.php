@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferVariantsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class OfferVariantsApi
      *
      * Create variant set
      *
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\VariantSetResponse
+     * @return \robsonek\phpAllegroApi\Model\VariantSetResponse
      */
     public function createVariantSet($variant_set, string $contentType = self::contentTypes['createVariantSet'][0])
     {
@@ -157,12 +157,12 @@ class OfferVariantsApi
      *
      * Create variant set
      *
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createVariantSetWithHttpInfo($variant_set, string $contentType = self::contentTypes['createVariantSet'][0])
     {
@@ -193,11 +193,11 @@ class OfferVariantsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\VariantSetResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\VariantSetResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,7 +215,7 @@ class OfferVariantsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\VariantSetResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\VariantSetResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -234,7 +234,7 @@ class OfferVariantsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -267,7 +267,7 @@ class OfferVariantsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\VariantSetResponse',
+                        '\robsonek\phpAllegroApi\Model\VariantSetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class OfferVariantsApi
      *
      * Create variant set
      *
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -303,7 +303,7 @@ class OfferVariantsApi
      *
      * Create variant set
      *
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -311,7 +311,7 @@ class OfferVariantsApi
      */
     public function createVariantSetAsyncWithHttpInfo($variant_set, string $contentType = self::contentTypes['createVariantSet'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
         $request = $this->createVariantSetRequest($variant_set, $contentType);
 
         return $this->client
@@ -353,7 +353,7 @@ class OfferVariantsApi
     /**
      * Create request for operation 'createVariantSet'
      *
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -453,7 +453,7 @@ class OfferVariantsApi
      * @param  string $set_id Variant set identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -470,7 +470,7 @@ class OfferVariantsApi
      * @param  string $set_id Variant set identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -674,9 +674,9 @@ class OfferVariantsApi
      * @param  string $set_id Variant set identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\VariantSetResponse
+     * @return \robsonek\phpAllegroApi\Model\VariantSetResponse
      */
     public function getVariantSet($set_id, string $contentType = self::contentTypes['getVariantSet'][0])
     {
@@ -692,9 +692,9 @@ class OfferVariantsApi
      * @param  string $set_id Variant set identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVariantSetWithHttpInfo($set_id, string $contentType = self::contentTypes['getVariantSet'][0])
     {
@@ -725,11 +725,11 @@ class OfferVariantsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\VariantSetResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\VariantSetResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -747,7 +747,7 @@ class OfferVariantsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\VariantSetResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\VariantSetResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -766,7 +766,7 @@ class OfferVariantsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -799,7 +799,7 @@ class OfferVariantsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\VariantSetResponse',
+                        '\robsonek\phpAllegroApi\Model\VariantSetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -843,7 +843,7 @@ class OfferVariantsApi
      */
     public function getVariantSetAsyncWithHttpInfo($set_id, string $contentType = self::contentTypes['getVariantSet'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
         $request = $this->getVariantSetRequest($set_id, $contentType);
 
         return $this->client
@@ -988,9 +988,9 @@ class OfferVariantsApi
      * @param  string $query Filter variant sets by name or offer id. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVariantSets'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\VariantSets
+     * @return \robsonek\phpAllegroApi\Model\VariantSets
      */
     public function getVariantSets($offset = 0, $limit = 10, $query = null, string $contentType = self::contentTypes['getVariantSets'][0])
     {
@@ -1008,9 +1008,9 @@ class OfferVariantsApi
      * @param  string $query Filter variant sets by name or offer id. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getVariantSets'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\VariantSets, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\VariantSets, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVariantSetsWithHttpInfo($offset = 0, $limit = 10, $query = null, string $contentType = self::contentTypes['getVariantSets'][0])
     {
@@ -1041,11 +1041,11 @@ class OfferVariantsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\VariantSets' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\VariantSets' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\VariantSets' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\VariantSets' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1063,7 +1063,7 @@ class OfferVariantsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\VariantSets', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\VariantSets', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1082,7 +1082,7 @@ class OfferVariantsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\VariantSets';
+            $returnType = '\robsonek\phpAllegroApi\Model\VariantSets';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1115,7 +1115,7 @@ class OfferVariantsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\VariantSets',
+                        '\robsonek\phpAllegroApi\Model\VariantSets',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1163,7 +1163,7 @@ class OfferVariantsApi
      */
     public function getVariantSetsAsyncWithHttpInfo($offset = 0, $limit = 10, $query = null, string $contentType = self::contentTypes['getVariantSets'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\VariantSets';
+        $returnType = '\robsonek\phpAllegroApi\Model\VariantSets';
         $request = $this->getVariantSetsRequest($offset, $limit, $query, $contentType);
 
         return $this->client
@@ -1336,12 +1336,12 @@ class OfferVariantsApi
      * Update variant set
      *
      * @param  string $set_id Variant set identifier. (required)
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\VariantSetResponse
+     * @return \robsonek\phpAllegroApi\Model\VariantSetResponse
      */
     public function updateVariantSet($set_id, $variant_set, string $contentType = self::contentTypes['updateVariantSet'][0])
     {
@@ -1355,12 +1355,12 @@ class OfferVariantsApi
      * Update variant set
      *
      * @param  string $set_id Variant set identifier. (required)
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVariantSet'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\VariantSetResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVariantSetWithHttpInfo($set_id, $variant_set, string $contentType = self::contentTypes['updateVariantSet'][0])
     {
@@ -1391,11 +1391,11 @@ class OfferVariantsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\VariantSetResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\VariantSetResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\VariantSetResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1413,7 +1413,7 @@ class OfferVariantsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\VariantSetResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\VariantSetResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1432,7 +1432,7 @@ class OfferVariantsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1465,7 +1465,7 @@ class OfferVariantsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\VariantSetResponse',
+                        '\robsonek\phpAllegroApi\Model\VariantSetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1481,7 +1481,7 @@ class OfferVariantsApi
      * Update variant set
      *
      * @param  string $set_id Variant set identifier. (required)
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1503,7 +1503,7 @@ class OfferVariantsApi
      * Update variant set
      *
      * @param  string $set_id Variant set identifier. (required)
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1511,7 +1511,7 @@ class OfferVariantsApi
      */
     public function updateVariantSetAsyncWithHttpInfo($set_id, $variant_set, string $contentType = self::contentTypes['updateVariantSet'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\VariantSetResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\VariantSetResponse';
         $request = $this->updateVariantSetRequest($set_id, $variant_set, $contentType);
 
         return $this->client
@@ -1554,7 +1554,7 @@ class OfferVariantsApi
      * Create request for operation 'updateVariantSet'
      *
      * @param  string $set_id Variant set identifier. (required)
-     * @param  \OpenAPI\Client\Model\VariantSet $variant_set (required)
+     * @param  \robsonek\phpAllegroApi\Model\VariantSet $variant_set (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateVariantSet'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

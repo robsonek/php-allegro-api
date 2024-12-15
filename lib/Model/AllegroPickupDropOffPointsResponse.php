@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AllegroPickupDropOffPointsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AllegroPickupDropOffPointsResponse implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'points' => '\OpenAPI\Client\Model\AllegroPickupDropOffPoint[]'
+        'points' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPoint[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AllegroPickupDropOffPointsResponse implements ModelInterface, ArrayAccess,
     /**
      * Gets points
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPoint[]|null
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPoint[]|null
      */
     public function getPoints()
     {
@@ -302,7 +302,7 @@ class AllegroPickupDropOffPointsResponse implements ModelInterface, ArrayAccess,
     /**
      * Sets points
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPoint[]|null $points List of Allegro pickup drop off points.
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPoint[]|null $points List of Allegro pickup drop off points.
      *
      * @return self
      */

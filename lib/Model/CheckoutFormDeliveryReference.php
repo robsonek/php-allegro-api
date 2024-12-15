@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormDeliveryReference Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'address' => '\OpenAPI\Client\Model\CheckoutFormDeliveryAddress',
-        'method' => '\OpenAPI\Client\Model\CheckoutFormDeliveryMethod',
-        'pickup_point' => '\OpenAPI\Client\Model\CheckoutFormDeliveryPickupPoint',
-        'cost' => '\OpenAPI\Client\Model\Price',
-        'time' => '\OpenAPI\Client\Model\CheckoutFormDeliveryTime',
+        'address' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryAddress',
+        'method' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryMethod',
+        'pickup_point' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryPickupPoint',
+        'cost' => '\robsonek\phpAllegroApi\Model\Price',
+        'time' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTime',
         'smart' => 'bool',
         'calculated_number_of_packages' => 'int'
     ];
@@ -338,7 +338,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryAddress|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryAddress|null
      */
     public function getAddress()
     {
@@ -348,7 +348,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryAddress|null $address address
      *
      * @return self
      */
@@ -365,7 +365,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets method
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryMethod|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryMethod|null
      */
     public function getMethod()
     {
@@ -375,7 +375,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets method
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryMethod|null $method method
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryMethod|null $method method
      *
      * @return self
      */
@@ -392,7 +392,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets pickup_point
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryPickupPoint|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryPickupPoint|null
      */
     public function getPickupPoint()
     {
@@ -402,7 +402,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets pickup_point
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryPickupPoint|null $pickup_point pickup_point
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryPickupPoint|null $pickup_point pickup_point
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets cost
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getCost()
     {
@@ -429,7 +429,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets cost
      *
-     * @param \OpenAPI\Client\Model\Price|null $cost cost
+     * @param \robsonek\phpAllegroApi\Model\Price|null $cost cost
      *
      * @return self
      */
@@ -446,7 +446,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets time
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryTime|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTime|null
      */
     public function getTime()
     {
@@ -456,7 +456,7 @@ class CheckoutFormDeliveryReference implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets time
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryTime|null $time time
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTime|null $time time
      *
      * @return self
      */

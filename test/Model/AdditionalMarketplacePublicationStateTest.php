@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description The publication status of the offer on an additional marketplace. The possible values:    - *NOT_REQUESTED* - The seller has not declared their intention to list this offer on the marketplace   - *PENDING* - The qualification process has not started; the offer is not listed yet   - *IN_PROGRESS* - We are processing whether the offer qualifies to be listed on the marketplace; the offer is not listed yet   - *APPROVED* - The offer is approved to be listed on the marketplace   - *REFUSED* - The offer will not be listed on the marketplace; the offer may be re-qualified if is corrected
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

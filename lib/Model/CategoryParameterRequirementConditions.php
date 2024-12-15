@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryParameterRequirementConditions Class Doc Comment
  *
  * @category Class
  * @description Restricts the circumstances when this parameter is required. &#x60;null&#x60; if solely the &#x60;required&#x60; flag determines if this parameter is required. Present if this parameter is required only if all of the contained conditions of all condition types are fulfilled. At least one condition is contained if this field is present.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CategoryParameterRequirementConditions implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'parameters_with_value' => '\OpenAPI\Client\Model\CategoryParameterWithValue[]',
-        'parameters_without_value' => '\OpenAPI\Client\Model\CategoryParameterWithoutValue[]'
+        'parameters_with_value' => '\robsonek\phpAllegroApi\Model\CategoryParameterWithValue[]',
+        'parameters_without_value' => '\robsonek\phpAllegroApi\Model\CategoryParameterWithoutValue[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class CategoryParameterRequirementConditions implements ModelInterface, ArrayAcc
     /**
      * Gets parameters_with_value
      *
-     * @return \OpenAPI\Client\Model\CategoryParameterWithValue[]
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameterWithValue[]
      */
     public function getParametersWithValue()
     {
@@ -316,7 +316,7 @@ class CategoryParameterRequirementConditions implements ModelInterface, ArrayAcc
     /**
      * Sets parameters_with_value
      *
-     * @param \OpenAPI\Client\Model\CategoryParameterWithValue[] $parameters_with_value Condition type which requires this parameter only if each of the given other parameters has filled in one of the respective given value ids in an offer or product. Empty if no condition of this type is present.
+     * @param \robsonek\phpAllegroApi\Model\CategoryParameterWithValue[] $parameters_with_value Condition type which requires this parameter only if each of the given other parameters has filled in one of the respective given value ids in an offer or product. Empty if no condition of this type is present.
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class CategoryParameterRequirementConditions implements ModelInterface, ArrayAcc
     /**
      * Gets parameters_without_value
      *
-     * @return \OpenAPI\Client\Model\CategoryParameterWithoutValue[]
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameterWithoutValue[]
      */
     public function getParametersWithoutValue()
     {
@@ -343,7 +343,7 @@ class CategoryParameterRequirementConditions implements ModelInterface, ArrayAcc
     /**
      * Sets parameters_without_value
      *
-     * @param \OpenAPI\Client\Model\CategoryParameterWithoutValue[] $parameters_without_value Condition type which requires this parameter only if each of the given other parameters has filled neither a value nor a value id in an offer or product. Empty if no condition of this type is present.
+     * @param \robsonek\phpAllegroApi\Model\CategoryParameterWithoutValue[] $parameters_without_value Condition type which requires this parameter only if each of the given other parameters has filled neither a value nor a value id in an offer or product. Empty if no condition of this type is present.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**stock** | [**\OpenAPI\Client\Model\StockProductItem[]**](StockProductItem.md) | List of products with their quantity. | [optional]
+**stock** | [**\robsonek\phpAllegroApi\Model\StockProductItem[]**](StockProductItem.md) | List of products with their quantity. | [optional]
 **count** | **float** | Number of returned products. | [optional]
 **total_count** | **float** | Total number of available products. | [optional]
 

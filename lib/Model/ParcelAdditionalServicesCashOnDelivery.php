@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelAdditionalServicesCashOnDelivery Class Doc Comment
  *
  * @category Class
  * @description Cash on delivery service.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ParcelAdditionalServicesCashOnDelivery implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryValue',
+        'value' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryValue',
         'account_number' => 'string',
         'name' => 'string',
         'express' => 'bool'
@@ -317,7 +317,7 @@ class ParcelAdditionalServicesCashOnDelivery implements ModelInterface, ArrayAcc
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryValue
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryValue
      */
     public function getValue()
     {
@@ -327,7 +327,7 @@ class ParcelAdditionalServicesCashOnDelivery implements ModelInterface, ArrayAcc
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryValue $value value
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryValue $value value
      *
      * @return self
      */

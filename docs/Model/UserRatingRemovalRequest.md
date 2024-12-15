@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**request** | [**\OpenAPI\Client\Model\UserRatingRemovalRequestRequest**](UserRatingRemovalRequestRequest.md) |  |
+**request** | [**\robsonek\phpAllegroApi\Model\UserRatingRemovalRequestRequest**](UserRatingRemovalRequestRequest.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

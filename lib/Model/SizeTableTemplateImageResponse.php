@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTableTemplateImageResponse Class Doc Comment
  *
  * @category Class
  * @description size table template image
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class SizeTableTemplateImageResponse implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'captions' => '\OpenAPI\Client\Model\Caption[]',
+        'captions' => '\robsonek\phpAllegroApi\Model\Caption[]',
         'url' => 'string'
     ];
 
@@ -306,7 +306,7 @@ class SizeTableTemplateImageResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets captions
      *
-     * @return \OpenAPI\Client\Model\Caption[]
+     * @return \robsonek\phpAllegroApi\Model\Caption[]
      */
     public function getCaptions()
     {
@@ -316,7 +316,7 @@ class SizeTableTemplateImageResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets captions
      *
-     * @param \OpenAPI\Client\Model\Caption[] $captions captions
+     * @param \robsonek\phpAllegroApi\Model\Caption[] $captions captions
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * WarrantiesListWarrantyBasic Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class WarrantiesListWarrantyBasic implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'warranties' => '\OpenAPI\Client\Model\WarrantyBasic[]'
+        'warranties' => '\robsonek\phpAllegroApi\Model\WarrantyBasic[]'
     ];
 
     /**
@@ -335,7 +335,7 @@ class WarrantiesListWarrantyBasic implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets warranties
      *
-     * @return \OpenAPI\Client\Model\WarrantyBasic[]|null
+     * @return \robsonek\phpAllegroApi\Model\WarrantyBasic[]|null
      */
     public function getWarranties()
     {
@@ -345,7 +345,7 @@ class WarrantiesListWarrantyBasic implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets warranties
      *
-     * @param \OpenAPI\Client\Model\WarrantyBasic[]|null $warranties warranties
+     * @param \robsonek\phpAllegroApi\Model\WarrantyBasic[]|null $warranties warranties
      *
      * @return self
      */

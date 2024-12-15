@@ -1,4 +1,4 @@
-# OpenAPI\Client\ClassifiedsApi
+# robsonek\phpAllegroApi\ClassifiedsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -30,17 +30,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $offer_id = 'offer_id_example'; // string | The offer ID.
-$classified_packages = new \OpenAPI\Client\Model\ClassifiedPackages(); // \OpenAPI\Client\Model\ClassifiedPackages | Packages that should be assigned to the classified.
+$classified_packages = new \robsonek\phpAllegroApi\Model\ClassifiedPackages(); // \robsonek\phpAllegroApi\Model\ClassifiedPackages | Packages that should be assigned to the classified.
 
 try {
     $apiInstance->assignClassifiedPackagesUsingPUT($offer_id, $classified_packages);
@@ -54,7 +54,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **offer_id** | **string**| The offer ID. | |
-| **classified_packages** | [**\OpenAPI\Client\Model\ClassifiedPackages**](../Model/ClassifiedPackages.md)| Packages that should be assigned to the classified. | |
+| **classified_packages** | [**\robsonek\phpAllegroApi\Model\ClassifiedPackages**](../Model/ClassifiedPackages.md)| Packages that should be assigned to the classified. | |
 
 ### Return type
 
@@ -76,7 +76,7 @@ void (empty response body)
 ## `classifiedOffersStatsGET()`
 
 ```php
-classifiedOffersStatsGET($offer_id, $date_gte, $date_lte): \OpenAPI\Client\Model\OfferStatsResponseDto
+classifiedOffersStatsGET($offer_id, $date_gte, $date_lte): \robsonek\phpAllegroApi\Model\OfferStatsResponseDto
 ```
 
 Get the advertisements daily statistics
@@ -91,10 +91,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -122,7 +122,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferStatsResponseDto**](../Model/OfferStatsResponseDto.md)
+[**\robsonek\phpAllegroApi\Model\OfferStatsResponseDto**](../Model/OfferStatsResponseDto.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ try {
 ## `classifiedSellerOfferStatsGET()`
 
 ```php
-classifiedSellerOfferStatsGET($date_gte, $date_lte): \OpenAPI\Client\Model\SellerOfferStatsResponseDto
+classifiedSellerOfferStatsGET($date_gte, $date_lte): \robsonek\phpAllegroApi\Model\SellerOfferStatsResponseDto
 ```
 
 Get the seller's advertisements daily statistics
@@ -155,10 +155,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -184,7 +184,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerOfferStatsResponseDto**](../Model/SellerOfferStatsResponseDto.md)
+[**\robsonek\phpAllegroApi\Model\SellerOfferStatsResponseDto**](../Model/SellerOfferStatsResponseDto.md)
 
 ### Authorization
 
@@ -202,7 +202,7 @@ try {
 ## `getClassifiedPackageConfigurationUsingGET()`
 
 ```php
-getClassifiedPackageConfigurationUsingGET($package_id): \OpenAPI\Client\Model\ClassifiedPackageConfig
+getClassifiedPackageConfigurationUsingGET($package_id): \robsonek\phpAllegroApi\Model\ClassifiedPackageConfig
 ```
 
 Get the configuration of a package
@@ -217,10 +217,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ClassifiedPackageConfig**](../Model/ClassifiedPackageConfig.md)
+[**\robsonek\phpAllegroApi\Model\ClassifiedPackageConfig**](../Model/ClassifiedPackageConfig.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ try {
 ## `getClassifiedPackageConfigurationsForCategoryUsingGET()`
 
 ```php
-getClassifiedPackageConfigurationsForCategoryUsingGET($category_id): \OpenAPI\Client\Model\ClassifiedPackageConfigs
+getClassifiedPackageConfigurationsForCategoryUsingGET($category_id): \robsonek\phpAllegroApi\Model\ClassifiedPackageConfigs
 ```
 
 Get configurations of packages
@@ -277,10 +277,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ClassifiedPackageConfigs**](../Model/ClassifiedPackageConfigs.md)
+[**\robsonek\phpAllegroApi\Model\ClassifiedPackageConfigs**](../Model/ClassifiedPackageConfigs.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ try {
 ## `getClassifiedPackagesUsingGET()`
 
 ```php
-getClassifiedPackagesUsingGET($offer_id): \OpenAPI\Client\Model\ClassifiedResponse
+getClassifiedPackagesUsingGET($offer_id): \robsonek\phpAllegroApi\Model\ClassifiedResponse
 ```
 
 Get classified packages assigned to an offer
@@ -337,10 +337,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ClassifiedsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -364,7 +364,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ClassifiedResponse**](../Model/ClassifiedResponse.md)
+[**\robsonek\phpAllegroApi\Model\ClassifiedResponse**](../Model/ClassifiedResponse.md)
 
 ### Authorization
 

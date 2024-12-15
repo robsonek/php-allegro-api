@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BillingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,9 +140,9 @@ class BillingApi
      * @param  int $offset Index of the first returned payment operation from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBillingEntries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BillingEntries|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BillingEntries|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getBillingEntries($marketplace_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $type_id = null, $offer_id = null, $order_id = null, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getBillingEntries'][0])
     {
@@ -165,9 +165,9 @@ class BillingApi
      * @param  int $offset Index of the first returned payment operation from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBillingEntries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BillingEntries|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BillingEntries|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBillingEntriesWithHttpInfo($marketplace_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $type_id = null, $offer_id = null, $order_id = null, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getBillingEntries'][0])
     {
@@ -198,11 +198,11 @@ class BillingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BillingEntries' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BillingEntries' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BillingEntries' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BillingEntries' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -220,16 +220,16 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BillingEntries', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BillingEntries', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -247,16 +247,16 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -274,16 +274,16 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -301,7 +301,7 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -320,7 +320,7 @@ class BillingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BillingEntries';
+            $returnType = '\robsonek\phpAllegroApi\Model\BillingEntries';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -353,7 +353,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BillingEntries',
+                        '\robsonek\phpAllegroApi\Model\BillingEntries',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -361,7 +361,7 @@ class BillingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -369,7 +369,7 @@ class BillingApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -377,7 +377,7 @@ class BillingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -435,7 +435,7 @@ class BillingApi
      */
     public function getBillingEntriesAsyncWithHttpInfo($marketplace_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $type_id = null, $offer_id = null, $order_id = null, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getBillingEntries'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BillingEntries';
+        $returnType = '\robsonek\phpAllegroApi\Model\BillingEntries';
         $request = $this->getBillingEntriesRequest($marketplace_id, $occurred_at_gte, $occurred_at_lte, $type_id, $offer_id, $order_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -662,9 +662,9 @@ class BillingApi
      * @param  string $accept_language Expected language of name translations. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBillingTypes'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BillingType[]|\OpenAPI\Client\Model\AuthError
+     * @return \robsonek\phpAllegroApi\Model\BillingType[]|\robsonek\phpAllegroApi\Model\AuthError
      */
     public function getBillingTypes($accept_language = null, string $contentType = self::contentTypes['getBillingTypes'][0])
     {
@@ -680,9 +680,9 @@ class BillingApi
      * @param  string $accept_language Expected language of name translations. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBillingTypes'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BillingType[]|\OpenAPI\Client\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BillingType[]|\robsonek\phpAllegroApi\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBillingTypesWithHttpInfo($accept_language = null, string $contentType = self::contentTypes['getBillingTypes'][0])
     {
@@ -713,11 +713,11 @@ class BillingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BillingType[]' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BillingType[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BillingType[]' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BillingType[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -735,16 +735,16 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BillingType[]', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BillingType[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -762,7 +762,7 @@ class BillingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -781,7 +781,7 @@ class BillingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BillingType[]';
+            $returnType = '\robsonek\phpAllegroApi\Model\BillingType[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -814,7 +814,7 @@ class BillingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BillingType[]',
+                        '\robsonek\phpAllegroApi\Model\BillingType[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,7 +822,7 @@ class BillingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class BillingApi
      */
     public function getBillingTypesAsyncWithHttpInfo($accept_language = null, string $contentType = self::contentTypes['getBillingTypes'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BillingType[]';
+        $returnType = '\robsonek\phpAllegroApi\Model\BillingType[]';
         $request = $this->getBillingTypesRequest($accept_language, $contentType);
 
         return $this->client

@@ -1,4 +1,4 @@
-# OpenAPI\Client\PublicOfferInformationApi
+# robsonek\phpAllegroApi\PublicOfferInformationApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getListing()`
 
 ```php
-getListing($category_id, $phrase, $seller_id, $seller_login, $marketplace_id, $shipping_country, $currency, $accept_language, $search_mode, $offset, $limit, $sort, $include, $fallback, $dynamic_filters): \OpenAPI\Client\Model\ListingResponse
+getListing($category_id, $phrase, $seller_id, $seller_login, $marketplace_id, $shipping_country, $currency, $accept_language, $search_mode, $offset, $limit, $sort, $include, $fallback, $dynamic_filters): \robsonek\phpAllegroApi\Model\ListingResponse
 ```
 
 Search offers
@@ -25,13 +25,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PublicOfferInformationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PublicOfferInformationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -83,7 +83,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListingResponse**](../Model/ListingResponse.md)
+[**\robsonek\phpAllegroApi\Model\ListingResponse**](../Model/ListingResponse.md)
 
 ### Authorization
 

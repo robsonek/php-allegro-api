@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountEligibleOfferDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'product' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoProduct',
-        'base_price' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoBasePrice',
-        'alle_discount' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscount'
+        'product' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoProduct',
+        'base_price' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoBasePrice',
+        'alle_discount' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscount'
     ];
 
     /**
@@ -340,7 +340,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoProduct|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoProduct|null
      */
     public function getProduct()
     {
@@ -350,7 +350,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoProduct|null $product product
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoProduct|null $product product
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets base_price
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoBasePrice|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoBasePrice|null
      */
     public function getBasePrice()
     {
@@ -377,7 +377,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets base_price
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoBasePrice|null $base_price base_price
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoBasePrice|null $base_price base_price
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets alle_discount
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscount|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscount|null
      */
     public function getAlleDiscount()
     {
@@ -411,7 +411,7 @@ class AlleDiscountEligibleOfferDto implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets alle_discount
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscount|null $alle_discount alle_discount
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscount|null $alle_discount alle_discount
      *
      * @return self
      */

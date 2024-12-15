@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FundraisingCampaign Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class FundraisingCampaign implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'organization' => '\OpenAPI\Client\Model\CharityOrganization'
+        'organization' => '\robsonek\phpAllegroApi\Model\CharityOrganization'
     ];
 
     /**
@@ -360,7 +360,7 @@ class FundraisingCampaign implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets organization
      *
-     * @return \OpenAPI\Client\Model\CharityOrganization|null
+     * @return \robsonek\phpAllegroApi\Model\CharityOrganization|null
      */
     public function getOrganization()
     {
@@ -370,7 +370,7 @@ class FundraisingCampaign implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets organization
      *
-     * @param \OpenAPI\Client\Model\CharityOrganization|null $organization organization
+     * @param \robsonek\phpAllegroApi\Model\CharityOrganization|null $organization organization
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacesVisibility Class Doc Comment
  *
  * @category Class
  * @description Offer additional marketplaces visibility information.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class AdditionalMarketplacesVisibility implements ModelInterface, ArrayAccess, \
     protected static $openAPITypes = [
         'id' => 'string',
         'status' => 'string',
-        'refusal_reasons' => '\OpenAPI\Client\Model\RefusalReason[]'
+        'refusal_reasons' => '\robsonek\phpAllegroApi\Model\RefusalReason[]'
     ];
 
     /**
@@ -403,7 +403,7 @@ class AdditionalMarketplacesVisibility implements ModelInterface, ArrayAccess, \
     /**
      * Gets refusal_reasons
      *
-     * @return \OpenAPI\Client\Model\RefusalReason[]|null
+     * @return \robsonek\phpAllegroApi\Model\RefusalReason[]|null
      */
     public function getRefusalReasons()
     {
@@ -413,7 +413,7 @@ class AdditionalMarketplacesVisibility implements ModelInterface, ArrayAccess, \
     /**
      * Sets refusal_reasons
      *
-     * @param \OpenAPI\Client\Model\RefusalReason[]|null $refusal_reasons Reasons of visibility refusal.
+     * @param \robsonek\phpAllegroApi\Model\RefusalReason[]|null $refusal_reasons Reasons of visibility refusal.
      *
      * @return self
      */

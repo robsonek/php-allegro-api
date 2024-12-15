@@ -1,4 +1,4 @@
-# OpenAPI\Client\BillingApi
+# robsonek\phpAllegroApi\BillingApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getBillingEntries()`
 
 ```php
-getBillingEntries($marketplace_id, $occurred_at_gte, $occurred_at_lte, $type_id, $offer_id, $order_id, $limit, $offset): \OpenAPI\Client\Model\BillingEntries
+getBillingEntries($marketplace_id, $occurred_at_gte, $occurred_at_lte, $type_id, $offer_id, $order_id, $limit, $offset): \robsonek\phpAllegroApi\Model\BillingEntries
 ```
 
 Get a list of billing entries
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BillingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -67,7 +67,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BillingEntries**](../Model/BillingEntries.md)
+[**\robsonek\phpAllegroApi\Model\BillingEntries**](../Model/BillingEntries.md)
 
 ### Authorization
 
@@ -85,7 +85,7 @@ try {
 ## `getBillingTypes()`
 
 ```php
-getBillingTypes($accept_language): \OpenAPI\Client\Model\BillingType[]
+getBillingTypes($accept_language): \robsonek\phpAllegroApi\Model\BillingType[]
 ```
 
 Get a list of billing types
@@ -100,13 +100,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BillingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BillingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -130,7 +130,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BillingType[]**](../Model/BillingType.md)
+[**\robsonek\phpAllegroApi\Model\BillingType[]**](../Model/BillingType.md)
 
 ### Authorization
 

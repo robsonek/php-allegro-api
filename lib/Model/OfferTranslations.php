@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTranslations Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OfferTranslations implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'translations' => '\OpenAPI\Client\Model\OfferTranslation[]'
+        'translations' => '\robsonek\phpAllegroApi\Model\OfferTranslation[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class OfferTranslations implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets translations
      *
-     * @return \OpenAPI\Client\Model\OfferTranslation[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferTranslation[]|null
      */
     public function getTranslations()
     {
@@ -302,7 +302,7 @@ class OfferTranslations implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets translations
      *
-     * @param \OpenAPI\Client\Model\OfferTranslation[]|null $translations translations
+     * @param \robsonek\phpAllegroApi\Model\OfferTranslation[]|null $translations translations
      *
      * @return self
      */

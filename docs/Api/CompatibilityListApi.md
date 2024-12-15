@@ -1,4 +1,4 @@
-# OpenAPI\Client\CompatibilityListApi
+# robsonek\phpAllegroApi\CompatibilityListApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getCategoriesThatSupportCompatibilityList()`
 
 ```php
-getCategoriesThatSupportCompatibilityList(): \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto
+getCategoriesThatSupportCompatibilityList(): \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto
 ```
 
 Get list of categories where compatibility list is supported
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CompatibilityListApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CompatibilityListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto**](../Model/CompatibilityListSupportedCategoriesDto.md)
+[**\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto**](../Model/CompatibilityListSupportedCategoriesDto.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ This endpoint does not need any parameter.
 ## `getCompatibilityListSuggestion()`
 
 ```php
-getCompatibilityListSuggestion($offer_id, $product_id, $language): \OpenAPI\Client\Model\CompatibilityList
+getCompatibilityListSuggestion($offer_id, $product_id, $language): \robsonek\phpAllegroApi\Model\CompatibilityList
 ```
 
 Get suggested compatibility list.
@@ -85,10 +85,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CompatibilityListApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CompatibilityListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CompatibilityList**](../Model/CompatibilityList.md)
+[**\robsonek\phpAllegroApi\Model\CompatibilityList**](../Model/CompatibilityList.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `getCompatibleProducts()`
 
 ```php
-getCompatibleProducts($type, $if_modified_since, $group_id, $tecdoc_k_typ_nr, $tecdoc_n_typ_nr, $phrase, $limit, $offset): \OpenAPI\Client\Model\CompatibleProductsListDto
+getCompatibleProducts($type, $if_modified_since, $group_id, $tecdoc_k_typ_nr, $tecdoc_n_typ_nr, $phrase, $limit, $offset): \robsonek\phpAllegroApi\Model\CompatibleProductsListDto
 ```
 
 Get list of compatible products
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CompatibilityListApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CompatibilityListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -190,7 +190,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CompatibleProductsListDto**](../Model/CompatibleProductsListDto.md)
+[**\robsonek\phpAllegroApi\Model\CompatibleProductsListDto**](../Model/CompatibleProductsListDto.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ try {
 ## `getCompatibleProductsGroups()`
 
 ```php
-getCompatibleProductsGroups($type, $if_modified_since, $limit, $offset): \OpenAPI\Client\Model\CompatibleProductsGroupsDto
+getCompatibleProductsGroups($type, $if_modified_since, $limit, $offset): \robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto
 ```
 
 Get list of compatible product groups
@@ -223,10 +223,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CompatibilityListApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CompatibilityListApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -256,7 +256,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CompatibleProductsGroupsDto**](../Model/CompatibleProductsGroupsDto.md)
+[**\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto**](../Model/CompatibleProductsGroupsDto.md)
 
 ### Authorization
 

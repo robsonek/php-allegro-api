@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description The number of a given product included in a single offer sold as an element of a product set. &lt;small&gt;**Note:** For number of sets available in stock, use &#x60;stock.available&#x60; property.&lt;/small&gt;
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

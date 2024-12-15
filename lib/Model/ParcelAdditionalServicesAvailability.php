@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelAdditionalServicesAvailability Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ParcelAdditionalServicesAvailability implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cash_on_delivery' => '\OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryAvailability',
-        'options' => '\OpenAPI\Client\Model\ParcelAdditionalServicesOptionAvailability[]'
+        'cash_on_delivery' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryAvailability',
+        'options' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesOptionAvailability[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ParcelAdditionalServicesAvailability implements ModelInterface, ArrayAcces
     /**
      * Gets cash_on_delivery
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryAvailability|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryAvailability|null
      */
     public function getCashOnDelivery()
     {
@@ -309,7 +309,7 @@ class ParcelAdditionalServicesAvailability implements ModelInterface, ArrayAcces
     /**
      * Sets cash_on_delivery
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryAvailability|null $cash_on_delivery cash_on_delivery
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryAvailability|null $cash_on_delivery cash_on_delivery
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class ParcelAdditionalServicesAvailability implements ModelInterface, ArrayAcces
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServicesOptionAvailability[]|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesOptionAvailability[]|null
      */
     public function getOptions()
     {
@@ -336,7 +336,7 @@ class ParcelAdditionalServicesAvailability implements ModelInterface, ArrayAcces
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServicesOptionAvailability[]|null $options Delivery services.
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesOptionAvailability[]|null $options Delivery services.
      *
      * @return self
      */

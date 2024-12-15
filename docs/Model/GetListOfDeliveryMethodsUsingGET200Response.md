@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**delivery_methods** | [**\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]**](GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner.md) |  | [optional]
+**delivery_methods** | [**\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]**](GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

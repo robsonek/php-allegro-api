@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**offers** | [**\OpenAPI\Client\Model\UnfilledParametersResponseOffersInner[]**](UnfilledParametersResponseOffersInner.md) | List of offers unfilled parameters. | [optional]
+**offers** | [**\robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInner[]**](UnfilledParametersResponseOffersInner.md) | List of offers unfilled parameters. | [optional]
 **count** | **int** | Number of returned elements. | [optional]
 **total_count** | **int** | Total number of available elements. | [optional]
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryDefinitionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'description' => '\OpenAPI\Client\Model\CategoryDefinitionDescriptionResponse',
-        'max_price' => '\OpenAPI\Client\Model\Price',
-        'available_constraints' => '\OpenAPI\Client\Model\AvailableConstraint[]',
+        'description' => '\robsonek\phpAllegroApi\Model\CategoryDefinitionDescriptionResponse',
+        'max_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'available_constraints' => '\robsonek\phpAllegroApi\Model\AvailableConstraint[]',
         'updated_at' => '\DateTime'
     ];
 
@@ -381,7 +381,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\CategoryDefinitionDescriptionResponse|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryDefinitionDescriptionResponse|null
      */
     public function getDescription()
     {
@@ -391,7 +391,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\CategoryDefinitionDescriptionResponse|null $description description
+     * @param \robsonek\phpAllegroApi\Model\CategoryDefinitionDescriptionResponse|null $description description
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets max_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getMaxPrice()
     {
@@ -418,7 +418,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets max_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $max_price max_price
+     * @param \robsonek\phpAllegroApi\Model\Price|null $max_price max_price
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets available_constraints
      *
-     * @return \OpenAPI\Client\Model\AvailableConstraint[]|null
+     * @return \robsonek\phpAllegroApi\Model\AvailableConstraint[]|null
      */
     public function getAvailableConstraints()
     {
@@ -445,7 +445,7 @@ class CategoryDefinitionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets available_constraints
      *
-     * @param \OpenAPI\Client\Model\AvailableConstraint[]|null $available_constraints available_constraints
+     * @param \robsonek\phpAllegroApi\Model\AvailableConstraint[]|null $available_constraints available_constraints
      *
      * @return self
      */

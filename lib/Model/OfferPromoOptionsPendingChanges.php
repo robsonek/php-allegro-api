@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferPromoOptionsPendingChanges Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OfferPromoOptionsPendingChanges implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base_package' => '\OpenAPI\Client\Model\OfferPromoOption'
+        'base_package' => '\robsonek\phpAllegroApi\Model\OfferPromoOption'
     ];
 
     /**
@@ -292,7 +292,7 @@ class OfferPromoOptionsPendingChanges implements ModelInterface, ArrayAccess, \J
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOption|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOption|null
      */
     public function getBasePackage()
     {
@@ -302,7 +302,7 @@ class OfferPromoOptionsPendingChanges implements ModelInterface, ArrayAccess, \J
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOption|null $base_package base_package
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOption|null $base_package base_package
      *
      * @return self
      */

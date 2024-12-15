@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderEvent Class Doc Comment
  *
  * @category Class
  * @description Order event
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class OrderEvent implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'order' => '\OpenAPI\Client\Model\OrderEventData',
-        'type' => '\OpenAPI\Client\Model\OrderEventType',
+        'order' => '\robsonek\phpAllegroApi\Model\OrderEventData',
+        'type' => '\robsonek\phpAllegroApi\Model\OrderEventType',
         'occurred_at' => '\DateTime'
     ];
 
@@ -353,7 +353,7 @@ class OrderEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\OrderEventData
+     * @return \robsonek\phpAllegroApi\Model\OrderEventData
      */
     public function getOrder()
     {
@@ -363,7 +363,7 @@ class OrderEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\OrderEventData $order order
+     * @param \robsonek\phpAllegroApi\Model\OrderEventData $order order
      *
      * @return self
      */
@@ -380,7 +380,7 @@ class OrderEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\OrderEventType
+     * @return \robsonek\phpAllegroApi\Model\OrderEventType
      */
     public function getType()
     {
@@ -390,7 +390,7 @@ class OrderEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\OrderEventType $type type
+     * @param \robsonek\phpAllegroApi\Model\OrderEventType $type type
      *
      * @return self
      */

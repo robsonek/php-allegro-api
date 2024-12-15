@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacesResponseValue Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class AdditionalMarketplacesResponseValue implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_mode' => '\OpenAPI\Client\Model\SellingMode',
-        'publication' => '\OpenAPI\Client\Model\AdditionalMarketplacesResponseValuePublication'
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\SellingMode',
+        'publication' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacesResponseValuePublication'
     ];
 
     /**
@@ -299,7 +299,7 @@ class AdditionalMarketplacesResponseValue implements ModelInterface, ArrayAccess
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\SellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\SellingMode|null
      */
     public function getSellingMode()
     {
@@ -309,7 +309,7 @@ class AdditionalMarketplacesResponseValue implements ModelInterface, ArrayAccess
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\SellingMode|null $selling_mode The offer price for the selected additional marketplace.
+     * @param \robsonek\phpAllegroApi\Model\SellingMode|null $selling_mode The offer price for the selected additional marketplace.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class AdditionalMarketplacesResponseValue implements ModelInterface, ArrayAccess
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacesResponseValuePublication|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacesResponseValuePublication|null
      */
     public function getPublication()
     {
@@ -336,7 +336,7 @@ class AdditionalMarketplacesResponseValue implements ModelInterface, ArrayAccess
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacesResponseValuePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacesResponseValuePublication|null $publication publication
      *
      * @return self
      */

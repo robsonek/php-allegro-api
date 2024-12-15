@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefundLineItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class RefundLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'type' => 'string',
         'quantity' => 'float',
-        'value' => '\OpenAPI\Client\Model\RefundLineItemValue'
+        'value' => '\robsonek\phpAllegroApi\Model\RefundLineItemValue'
     ];
 
     /**
@@ -443,7 +443,7 @@ class RefundLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\RefundLineItemValue|null
+     * @return \robsonek\phpAllegroApi\Model\RefundLineItemValue|null
      */
     public function getValue()
     {
@@ -453,7 +453,7 @@ class RefundLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\RefundLineItemValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\RefundLineItemValue|null $value value
      *
      * @return self
      */

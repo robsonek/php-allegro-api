@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacesRequestValueSellingMode Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AdditionalMarketplacesRequestValueSellingMode implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'price' => '\OpenAPI\Client\Model\Price'
+        'price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AdditionalMarketplacesRequestValueSellingMode implements ModelInterface, A
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -302,7 +302,7 @@ class AdditionalMarketplacesRequestValueSellingMode implements ModelInterface, A
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price The offer price for the selected additional marketplace. The price in this field must be provided by the seller in the correct currency, which is specified in the `GET /marketplaces` resource.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price The offer price for the selected additional marketplace. The price in this field must be provided by the seller in the correct currency, which is specified in the `GET /marketplaces` resource.
      *
      * @return self
      */

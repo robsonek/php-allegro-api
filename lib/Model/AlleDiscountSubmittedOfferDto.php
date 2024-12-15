@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmittedOfferDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'participation_id' => 'string',
-        'offer' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoOffer',
-        'campaign' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoCampaign',
-        'prices' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPrices',
-        'process' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcess',
+        'offer' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoOffer',
+        'campaign' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoCampaign',
+        'prices' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPrices',
+        'process' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcess',
         'purchase_limit' => 'int'
     ];
 
@@ -354,7 +354,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoOffer|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoOffer|null
      */
     public function getOffer()
     {
@@ -364,7 +364,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoOffer|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoOffer|null $offer offer
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets campaign
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoCampaign|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoCampaign|null
      */
     public function getCampaign()
     {
@@ -391,7 +391,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets campaign
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoCampaign|null $campaign campaign
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoCampaign|null $campaign campaign
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets prices
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPrices|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPrices|null
      */
     public function getPrices()
     {
@@ -418,7 +418,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets prices
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPrices|null $prices prices
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPrices|null $prices prices
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets process
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcess|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcess|null
      */
     public function getProcess()
     {
@@ -445,7 +445,7 @@ class AlleDiscountSubmittedOfferDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets process
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcess|null $process process
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcess|null $process process
      *
      * @return self
      */

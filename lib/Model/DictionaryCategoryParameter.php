@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DictionaryCategoryParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class DictionaryCategoryParameter extends CategoryParameter
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'restrictions' => '\OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions',
-        'dictionary' => '\OpenAPI\Client\Model\DictionaryCategoryParameterAllOfDictionary[]'
+        'restrictions' => '\robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions',
+        'dictionary' => '\robsonek\phpAllegroApi\Model\DictionaryCategoryParameterAllOfDictionary[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class DictionaryCategoryParameter extends CategoryParameter
     /**
      * Gets restrictions
      *
-     * @return \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions|null
+     * @return \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions|null
      */
     public function getRestrictions()
     {
@@ -337,7 +337,7 @@ class DictionaryCategoryParameter extends CategoryParameter
     /**
      * Sets restrictions
      *
-     * @param \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
+     * @param \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
      *
      * @return self
      */
@@ -354,7 +354,7 @@ class DictionaryCategoryParameter extends CategoryParameter
     /**
      * Gets dictionary
      *
-     * @return \OpenAPI\Client\Model\DictionaryCategoryParameterAllOfDictionary[]|null
+     * @return \robsonek\phpAllegroApi\Model\DictionaryCategoryParameterAllOfDictionary[]|null
      */
     public function getDictionary()
     {
@@ -364,7 +364,7 @@ class DictionaryCategoryParameter extends CategoryParameter
     /**
      * Sets dictionary
      *
-     * @param \OpenAPI\Client\Model\DictionaryCategoryParameterAllOfDictionary[]|null $dictionary Defines the values accepted for this parameter.
+     * @param \robsonek\phpAllegroApi\Model\DictionaryCategoryParameterAllOfDictionary[]|null $dictionary Defines the values accepted for this parameter.
      *
      * @return self
      */

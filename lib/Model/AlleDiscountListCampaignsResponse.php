@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountListCampaignsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AlleDiscountListCampaignsResponse implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'alle_discount_campaigns' => '\OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]'
+        'alle_discount_campaigns' => '\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AlleDiscountListCampaignsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets alle_discount_campaigns
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]|null
      */
     public function getAlleDiscountCampaigns()
     {
@@ -302,7 +302,7 @@ class AlleDiscountListCampaignsResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets alle_discount_campaigns
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]|null $alle_discount_campaigns Array of the available AlleDiscount campaigns.
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner[]|null $alle_discount_campaigns Array of the available AlleDiscount campaigns.
      *
      * @return self
      */

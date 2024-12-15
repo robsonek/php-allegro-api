@@ -1,4 +1,4 @@
-# OpenAPI\Client\UsersOfferInformationApi
+# robsonek\phpAllegroApi\UsersOfferInformationApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getOfferEvents()`
 
 ```php
-getOfferEvents($from, $limit, $type): \OpenAPI\Client\Model\SellerOfferEventsResponse
+getOfferEvents($from, $limit, $type): \robsonek\phpAllegroApi\Model\SellerOfferEventsResponse
 ```
 
 Get events about the seller's offers
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersOfferInformationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\UsersOfferInformationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerOfferEventsResponse**](../Model/SellerOfferEventsResponse.md)
+[**\robsonek\phpAllegroApi\Model\SellerOfferEventsResponse**](../Model/SellerOfferEventsResponse.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ try {
 ## `getOfferSmartClassificationGET()`
 
 ```php
-getOfferSmartClassificationGET($offer_id, $marketplace_id): \OpenAPI\Client\Model\SmartOfferClassificationReport
+getOfferSmartClassificationGET($offer_id, $marketplace_id): \robsonek\phpAllegroApi\Model\SmartOfferClassificationReport
 ```
 
 Get Smart! classification report of the particular offer
@@ -92,10 +92,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersOfferInformationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\UsersOfferInformationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SmartOfferClassificationReport**](../Model/SmartOfferClassificationReport.md)
+[**\robsonek\phpAllegroApi\Model\SmartOfferClassificationReport**](../Model/SmartOfferClassificationReport.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ try {
 ## `getProductOffer()`
 
 ```php
-getProductOffer($offer_id): \OpenAPI\Client\Model\SaleProductOfferResponseV1
+getProductOffer($offer_id): \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1
 ```
 
 Get all data of the particular product-offer
@@ -154,10 +154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersOfferInformationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\UsersOfferInformationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SaleProductOfferResponseV1**](../Model/SaleProductOfferResponseV1.md)
+[**\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1**](../Model/SaleProductOfferResponseV1.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ try {
 ## `searchOffersUsingGET()`
 
 ```php
-searchOffersUsingGET($offer_id, $name, $selling_mode_price_amount_gte, $selling_mode_price_amount_lte, $selling_mode_price_automation_rule_id, $selling_mode_price_automation_rule_id_empty, $publication_status, $publication_marketplace, $selling_mode_format, $external_id, $delivery_shipping_rates_id, $delivery_shipping_rates_id_empty, $sort, $limit, $offset, $category_id, $product_id_empty, $productization_required, $b2b_buyable_only_by_business, $fundraising_campaign_id, $fundraising_campaign_id_empty): \OpenAPI\Client\Model\OffersSearchResultDto
+searchOffersUsingGET($offer_id, $name, $selling_mode_price_amount_gte, $selling_mode_price_amount_lte, $selling_mode_price_automation_rule_id, $selling_mode_price_automation_rule_id_empty, $publication_status, $publication_marketplace, $selling_mode_format, $external_id, $delivery_shipping_rates_id, $delivery_shipping_rates_id_empty, $sort, $limit, $offset, $category_id, $product_id_empty, $productization_required, $b2b_buyable_only_by_business, $fundraising_campaign_id, $fundraising_campaign_id_empty): \robsonek\phpAllegroApi\Model\OffersSearchResultDto
 ```
 
 Get seller's offers
@@ -214,10 +214,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UsersOfferInformationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\UsersOfferInformationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -281,7 +281,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OffersSearchResultDto**](../Model/OffersSearchResultDto.md)
+[**\robsonek\phpAllegroApi\Model\OffersSearchResultDto**](../Model/OffersSearchResultDto.md)
 
 ### Authorization
 

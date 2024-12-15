@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ModificationPayments Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ModificationPayments implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'invoice' => 'string',
-        'tax' => '\OpenAPI\Client\Model\Tax'
+        'tax' => '\robsonek\phpAllegroApi\Model\Tax'
     ];
 
     /**
@@ -364,7 +364,7 @@ class ModificationPayments implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets tax
      *
-     * @return \OpenAPI\Client\Model\Tax|null
+     * @return \robsonek\phpAllegroApi\Model\Tax|null
      */
     public function getTax()
     {
@@ -374,7 +374,7 @@ class ModificationPayments implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets tax
      *
-     * @param \OpenAPI\Client\Model\Tax|null $tax tax
+     * @param \robsonek\phpAllegroApi\Model\Tax|null $tax tax
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderEventsList Class Doc Comment
  *
  * @category Class
  * @description Order events list
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OrderEventsList implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'events' => '\OpenAPI\Client\Model\OrderEvent[]'
+        'events' => '\robsonek\phpAllegroApi\Model\OrderEvent[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class OrderEventsList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets events
      *
-     * @return \OpenAPI\Client\Model\OrderEvent[]
+     * @return \robsonek\phpAllegroApi\Model\OrderEvent[]
      */
     public function getEvents()
     {
@@ -306,7 +306,7 @@ class OrderEventsList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets events
      *
-     * @param \OpenAPI\Client\Model\OrderEvent[] $events events
+     * @param \robsonek\phpAllegroApi\Model\OrderEvent[] $events events
      *
      * @return self
      */

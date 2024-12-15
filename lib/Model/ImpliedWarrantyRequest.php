@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ImpliedWarrantyRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'individual' => '\OpenAPI\Client\Model\ImpliedWarrantyPeriod',
-        'corporate' => '\OpenAPI\Client\Model\ImpliedWarrantyPeriod',
-        'address' => '\OpenAPI\Client\Model\AfterSalesServicesAddress',
+        'individual' => '\robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod',
+        'corporate' => '\robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod',
+        'address' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesAddress',
         'description' => 'string'
     ];
 
@@ -359,7 +359,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets individual
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null
      */
     public function getIndividual()
     {
@@ -369,7 +369,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets individual
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null $individual individual
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null $individual individual
      *
      * @return self
      */
@@ -386,7 +386,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets corporate
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null
      */
     public function getCorporate()
     {
@@ -396,7 +396,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets corporate
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null $corporate corporate
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null $corporate corporate
      *
      * @return self
      */
@@ -413,7 +413,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesAddress|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesAddress|null
      */
     public function getAddress()
     {
@@ -423,7 +423,7 @@ class ImpliedWarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesAddress|null $address address
      *
      * @return self
      */

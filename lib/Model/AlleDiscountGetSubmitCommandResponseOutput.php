@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountGetSubmitCommandResponseOutput Class Doc Comment
  *
  * @category Class
  * @description Submit offer command output data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class AlleDiscountGetSubmitCommandResponseOutput implements ModelInterface, Arra
         'status' => 'string',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
-        'new_offer_participation' => '\OpenAPI\Client\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation',
-        'errors' => '\OpenAPI\Client\Model\ErrorsHolder[]'
+        'new_offer_participation' => '\robsonek\phpAllegroApi\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation',
+        'errors' => '\robsonek\phpAllegroApi\Model\ErrorsHolder[]'
     ];
 
     /**
@@ -440,7 +440,7 @@ class AlleDiscountGetSubmitCommandResponseOutput implements ModelInterface, Arra
     /**
      * Gets new_offer_participation
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation|null
      */
     public function getNewOfferParticipation()
     {
@@ -450,7 +450,7 @@ class AlleDiscountGetSubmitCommandResponseOutput implements ModelInterface, Arra
     /**
      * Sets new_offer_participation
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation|null $new_offer_participation new_offer_participation
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountGetSubmitCommandResponseOutputNewOfferParticipation|null $new_offer_participation new_offer_participation
      *
      * @return self
      */
@@ -474,7 +474,7 @@ class AlleDiscountGetSubmitCommandResponseOutput implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\ErrorsHolder[]|null
+     * @return \robsonek\phpAllegroApi\Model\ErrorsHolder[]|null
      */
     public function getErrors()
     {
@@ -484,7 +484,7 @@ class AlleDiscountGetSubmitCommandResponseOutput implements ModelInterface, Arra
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\ErrorsHolder[]|null $errors errors
+     * @param \robsonek\phpAllegroApi\Model\ErrorsHolder[]|null $errors errors
      *
      * @return self
      */

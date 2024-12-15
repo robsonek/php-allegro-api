@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ContactsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,12 +136,12 @@ class ContactsApi
      *
      * Create a new contact
      *
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request New contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request New contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResponse
+     * @return \robsonek\phpAllegroApi\Model\ContactResponse
      */
     public function createContactUsingPOST($contact_request, string $contentType = self::contentTypes['createContactUsingPOST'][0])
     {
@@ -154,12 +154,12 @@ class ContactsApi
      *
      * Create a new contact
      *
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request New contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request New contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContactUsingPOSTWithHttpInfo($contact_request, string $contentType = self::contentTypes['createContactUsingPOST'][0])
     {
@@ -190,11 +190,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ContactResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ContactResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ContactResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -212,7 +212,7 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ContactResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -231,7 +231,7 @@ class ContactsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -264,7 +264,7 @@ class ContactsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResponse',
+                        '\robsonek\phpAllegroApi\Model\ContactResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -279,7 +279,7 @@ class ContactsApi
      *
      * Create a new contact
      *
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request New contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request New contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class ContactsApi
      *
      * Create a new contact
      *
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request New contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request New contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -308,7 +308,7 @@ class ContactsApi
      */
     public function createContactUsingPOSTAsyncWithHttpInfo($contact_request, string $contentType = self::contentTypes['createContactUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
         $request = $this->createContactUsingPOSTRequest($contact_request, $contentType);
 
         return $this->client
@@ -350,7 +350,7 @@ class ContactsApi
     /**
      * Create request for operation 'createContactUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request New contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request New contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContactUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -450,9 +450,9 @@ class ContactsApi
      * @param  string $id Contact identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResponse
+     * @return \robsonek\phpAllegroApi\Model\ContactResponse
      */
     public function getContactUsingGET($id, string $contentType = self::contentTypes['getContactUsingGET'][0])
     {
@@ -468,9 +468,9 @@ class ContactsApi
      * @param  string $id Contact identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactUsingGETWithHttpInfo($id, string $contentType = self::contentTypes['getContactUsingGET'][0])
     {
@@ -501,11 +501,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ContactResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ContactResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -523,7 +523,7 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ContactResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -542,7 +542,7 @@ class ContactsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -575,7 +575,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResponse',
+                        '\robsonek\phpAllegroApi\Model\ContactResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class ContactsApi
      */
     public function getContactUsingGETAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getContactUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
         $request = $this->getContactUsingGETRequest($id, $contentType);
 
         return $this->client
@@ -761,9 +761,9 @@ class ContactsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfContactsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResponseList
+     * @return \robsonek\phpAllegroApi\Model\ContactResponseList
      */
     public function getListOfContactsUsingGET(string $contentType = self::contentTypes['getListOfContactsUsingGET'][0])
     {
@@ -778,9 +778,9 @@ class ContactsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfContactsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResponseList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ContactResponseList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfContactsUsingGETWithHttpInfo(string $contentType = self::contentTypes['getListOfContactsUsingGET'][0])
     {
@@ -811,11 +811,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactResponseList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ContactResponseList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResponseList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ContactResponseList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -833,7 +833,7 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResponseList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ContactResponseList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -852,7 +852,7 @@ class ContactsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResponseList';
+            $returnType = '\robsonek\phpAllegroApi\Model\ContactResponseList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -885,7 +885,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResponseList',
+                        '\robsonek\phpAllegroApi\Model\ContactResponseList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -927,7 +927,7 @@ class ContactsApi
      */
     public function getListOfContactsUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getListOfContactsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResponseList';
+        $returnType = '\robsonek\phpAllegroApi\Model\ContactResponseList';
         $request = $this->getListOfContactsUsingGETRequest($contentType);
 
         return $this->client
@@ -1052,12 +1052,12 @@ class ContactsApi
      * Modify contact details
      *
      * @param  string $id Contact identifier. (required)
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request Contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request Contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyContactUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResponse
+     * @return \robsonek\phpAllegroApi\Model\ContactResponse
      */
     public function modifyContactUsingPUT($id, $contact_request, string $contentType = self::contentTypes['modifyContactUsingPUT'][0])
     {
@@ -1071,12 +1071,12 @@ class ContactsApi
      * Modify contact details
      *
      * @param  string $id Contact identifier. (required)
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request Contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request Contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyContactUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ContactResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyContactUsingPUTWithHttpInfo($id, $contact_request, string $contentType = self::contentTypes['modifyContactUsingPUT'][0])
     {
@@ -1107,11 +1107,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ContactResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ContactResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1129,7 +1129,7 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ContactResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1148,7 +1148,7 @@ class ContactsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1181,7 +1181,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResponse',
+                        '\robsonek\phpAllegroApi\Model\ContactResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1197,7 +1197,7 @@ class ContactsApi
      * Modify contact details
      *
      * @param  string $id Contact identifier. (required)
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request Contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request Contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyContactUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1219,7 +1219,7 @@ class ContactsApi
      * Modify contact details
      *
      * @param  string $id Contact identifier. (required)
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request Contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request Contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyContactUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1227,7 +1227,7 @@ class ContactsApi
      */
     public function modifyContactUsingPUTAsyncWithHttpInfo($id, $contact_request, string $contentType = self::contentTypes['modifyContactUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ContactResponse';
         $request = $this->modifyContactUsingPUTRequest($id, $contact_request, $contentType);
 
         return $this->client
@@ -1270,7 +1270,7 @@ class ContactsApi
      * Create request for operation 'modifyContactUsingPUT'
      *
      * @param  string $id Contact identifier. (required)
-     * @param  \OpenAPI\Client\Model\ContactRequest $contact_request Contact (required)
+     * @param  \robsonek\phpAllegroApi\Model\ContactRequest $contact_request Contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyContactUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

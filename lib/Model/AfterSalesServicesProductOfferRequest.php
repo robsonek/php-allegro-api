@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AfterSalesServicesProductOfferRequest Class Doc Comment
  *
  * @category Class
  * @description The definitions of the different after sales services assigned to the offer.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'implied_warranty' => '\OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestImpliedWarranty',
-        'return_policy' => '\OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestReturnPolicy',
-        'warranty' => '\OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestWarranty'
+        'implied_warranty' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestImpliedWarranty',
+        'return_policy' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestReturnPolicy',
+        'warranty' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestWarranty'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Gets implied_warranty
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestImpliedWarranty|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestImpliedWarranty|null
      */
     public function getImpliedWarranty()
     {
@@ -317,7 +317,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Sets implied_warranty
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestImpliedWarranty|null $implied_warranty implied_warranty
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestImpliedWarranty|null $implied_warranty implied_warranty
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Gets return_policy
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestReturnPolicy|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestReturnPolicy|null
      */
     public function getReturnPolicy()
     {
@@ -344,7 +344,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Sets return_policy
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestReturnPolicy|null $return_policy return_policy
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestReturnPolicy|null $return_policy return_policy
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Gets warranty
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestWarranty|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestWarranty|null
      */
     public function getWarranty()
     {
@@ -371,7 +371,7 @@ class AfterSalesServicesProductOfferRequest implements ModelInterface, ArrayAcce
     /**
      * Sets warranty
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequestWarranty|null $warranty warranty
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequestWarranty|null $warranty warranty
      *
      * @return self
      */

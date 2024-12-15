@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * LargeOrderDiscountBenefitSpecificationAllOfThresholds Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class LargeOrderDiscountBenefitSpecificationAllOfThresholds implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_value' => '\OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue',
-        'discount' => '\OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount'
+        'order_value' => '\robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue',
+        'discount' => '\robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount'
     ];
 
     /**
@@ -305,7 +305,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Gets order_value
      *
-     * @return \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue
+     * @return \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue
      */
     public function getOrderValue()
     {
@@ -315,7 +315,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Sets order_value
      *
-     * @param \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue $order_value order_value
+     * @param \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfOrderValue $order_value order_value
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Gets discount
      *
-     * @return \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount
+     * @return \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount
      */
     public function getDiscount()
     {
@@ -342,7 +342,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfThresholds implements ModelInte
     /**
      * Sets discount
      *
-     * @param \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount $discount discount
+     * @param \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfDiscount $discount discount
      *
      * @return self
      */

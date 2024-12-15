@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ModificationAttachmentSafetyInformation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -55,7 +55,7 @@ class ModificationAttachmentSafetyInformation extends ModificationSafetyInformat
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attachments' => '\OpenAPI\Client\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]'
+        'attachments' => '\robsonek\phpAllegroApi\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]'
     ];
 
     /**
@@ -286,7 +286,7 @@ class ModificationAttachmentSafetyInformation extends ModificationSafetyInformat
     /**
      * Gets attachments
      *
-     * @return \OpenAPI\Client\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]|null
      */
     public function getAttachments()
     {
@@ -296,7 +296,7 @@ class ModificationAttachmentSafetyInformation extends ModificationSafetyInformat
     /**
      * Sets attachments
      *
-     * @param \OpenAPI\Client\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]|null $attachments Full list of safety information attachments.
+     * @param \robsonek\phpAllegroApi\Model\ModificationAttachmentSafetyInformationAllOfAttachments[]|null $attachments Full list of safety information attachments.
      *
      * @return self
      */

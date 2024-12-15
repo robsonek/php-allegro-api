@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **login** | **string** | Login. |
 **first_name** | **string** | First name. |
 **last_name** | **string** | Last name. |
-**address** | [**\OpenAPI\Client\Model\OperationParticipantAddress**](OperationParticipantAddress.md) |  | [optional]
+**address** | [**\robsonek\phpAllegroApi\Model\OperationParticipantAddress**](OperationParticipantAddress.md) |  | [optional]
 **id** | **string** | The seller&#39;s ID. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

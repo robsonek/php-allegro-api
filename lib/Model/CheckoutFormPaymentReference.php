@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormPaymentReference Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'type' => '\OpenAPI\Client\Model\CheckoutFormPaymentType',
-        'provider' => '\OpenAPI\Client\Model\CheckoutFormPaymentProvider',
+        'type' => '\robsonek\phpAllegroApi\Model\CheckoutFormPaymentType',
+        'provider' => '\robsonek\phpAllegroApi\Model\CheckoutFormPaymentProvider',
         'finished_at' => '\DateTime',
-        'paid_amount' => '\OpenAPI\Client\Model\Price',
-        'reconciliation' => '\OpenAPI\Client\Model\Price',
+        'paid_amount' => '\robsonek\phpAllegroApi\Model\Price',
+        'reconciliation' => '\robsonek\phpAllegroApi\Model\Price',
         'features' => 'string[]'
     ];
 
@@ -367,7 +367,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormPaymentType
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormPaymentType
      */
     public function getType()
     {
@@ -377,7 +377,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormPaymentType $type type
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormPaymentType $type type
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets provider
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormPaymentProvider|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormPaymentProvider|null
      */
     public function getProvider()
     {
@@ -404,7 +404,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets provider
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormPaymentProvider|null $provider provider
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormPaymentProvider|null $provider provider
      *
      * @return self
      */
@@ -448,7 +448,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets paid_amount
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPaidAmount()
     {
@@ -458,7 +458,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets paid_amount
      *
-     * @param \OpenAPI\Client\Model\Price|null $paid_amount paid_amount
+     * @param \robsonek\phpAllegroApi\Model\Price|null $paid_amount paid_amount
      *
      * @return self
      */
@@ -475,7 +475,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets reconciliation
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getReconciliation()
     {
@@ -485,7 +485,7 @@ class CheckoutFormPaymentReference implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets reconciliation
      *
-     * @param \OpenAPI\Client\Model\Price|null $reconciliation reconciliation
+     * @param \robsonek\phpAllegroApi\Model\Price|null $reconciliation reconciliation
      *
      * @return self
      */

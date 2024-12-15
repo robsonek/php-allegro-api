@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * InitializeRefundAdditionalServices Class Doc Comment
  *
  * @category Class
  * @description Payment refund for additional services.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class InitializeRefundAdditionalServices implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\RefundAdditionalServicesValue'
+        'value' => '\robsonek\phpAllegroApi\Model\RefundAdditionalServicesValue'
     ];
 
     /**
@@ -293,7 +293,7 @@ class InitializeRefundAdditionalServices implements ModelInterface, ArrayAccess,
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\RefundAdditionalServicesValue|null
+     * @return \robsonek\phpAllegroApi\Model\RefundAdditionalServicesValue|null
      */
     public function getValue()
     {
@@ -303,7 +303,7 @@ class InitializeRefundAdditionalServices implements ModelInterface, ArrayAccess,
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\RefundAdditionalServicesValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\RefundAdditionalServicesValue|null $value value
      *
      * @return self
      */

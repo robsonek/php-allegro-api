@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeApplicationPurchaseConstraintsLimit Class Doc Comment
  *
  * @category Class
  * @description Limits of purchase of this offer while it participates in the campaign. Only DISCOUNT and SOURCING campaigns.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class BadgeApplicationPurchaseConstraintsLimit implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'per_user' => '\OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimitPerUser'
+        'per_user' => '\robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimitPerUser'
     ];
 
     /**
@@ -293,7 +293,7 @@ class BadgeApplicationPurchaseConstraintsLimit implements ModelInterface, ArrayA
     /**
      * Gets per_user
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimitPerUser|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimitPerUser|null
      */
     public function getPerUser()
     {
@@ -303,7 +303,7 @@ class BadgeApplicationPurchaseConstraintsLimit implements ModelInterface, ArrayA
     /**
      * Sets per_user
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimitPerUser|null $per_user per_user
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimitPerUser|null $per_user per_user
      *
      * @return self
      */

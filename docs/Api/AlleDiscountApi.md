@@ -1,4 +1,4 @@
-# OpenAPI\Client\AlleDiscountApi
+# robsonek\phpAllegroApi\AlleDiscountApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getAlleDiscountCampaigns()`
 
 ```php
-getAlleDiscountCampaigns($campaign_id): \OpenAPI\Client\Model\AlleDiscountListCampaignsResponse
+getAlleDiscountCampaigns($campaign_id): \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponse
 ```
 
 List AlleDiscount campaigns
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountListCampaignsResponse**](../Model/AlleDiscountListCampaignsResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponse**](../Model/AlleDiscountListCampaignsResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `getOffersEligibleForAlleDiscount()`
 
 ```php
-getOffersEligibleForAlleDiscount($campaign_id, $limit, $offset, $meets_conditions, $offer_id): \OpenAPI\Client\Model\AlleDiscountListEligibleResponse
+getOffersEligibleForAlleDiscount($campaign_id, $limit, $offset, $meets_conditions, $offer_id): \robsonek\phpAllegroApi\Model\AlleDiscountListEligibleResponse
 ```
 
 List eligible offers
@@ -91,10 +91,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,7 +126,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountListEligibleResponse**](../Model/AlleDiscountListEligibleResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountListEligibleResponse**](../Model/AlleDiscountListEligibleResponse.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ try {
 ## `getOffersSubmittedToAlleDiscount()`
 
 ```php
-getOffersSubmittedToAlleDiscount($campaign_id, $limit, $offset, $offer_id, $participation_id): \OpenAPI\Client\Model\AlleDiscountListSubmittedResponse
+getOffersSubmittedToAlleDiscount($campaign_id, $limit, $offset, $offer_id, $participation_id): \robsonek\phpAllegroApi\Model\AlleDiscountListSubmittedResponse
 ```
 
 List offer participations
@@ -159,10 +159,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -194,7 +194,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountListSubmittedResponse**](../Model/AlleDiscountListSubmittedResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountListSubmittedResponse**](../Model/AlleDiscountListSubmittedResponse.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ try {
 ## `getSubmitOfferToAlleDiscountCommandsStatus()`
 
 ```php
-getSubmitOfferToAlleDiscountCommandsStatus($command_id): \OpenAPI\Client\Model\AlleDiscountGetSubmitCommandResponse
+getSubmitOfferToAlleDiscountCommandsStatus($command_id): \robsonek\phpAllegroApi\Model\AlleDiscountGetSubmitCommandResponse
 ```
 
 Get the offer submission command status
@@ -227,10 +227,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -254,7 +254,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountGetSubmitCommandResponse**](../Model/AlleDiscountGetSubmitCommandResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountGetSubmitCommandResponse**](../Model/AlleDiscountGetSubmitCommandResponse.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ try {
 ## `getWithdrawOfferFromAlleDiscountCommandsStatus()`
 
 ```php
-getWithdrawOfferFromAlleDiscountCommandsStatus($command_id): \OpenAPI\Client\Model\AlleDiscountGetWithdrawCommandResponse
+getWithdrawOfferFromAlleDiscountCommandsStatus($command_id): \robsonek\phpAllegroApi\Model\AlleDiscountGetWithdrawCommandResponse
 ```
 
 Get the offer withdrawal command status
@@ -287,10 +287,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -314,7 +314,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountGetWithdrawCommandResponse**](../Model/AlleDiscountGetWithdrawCommandResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountGetWithdrawCommandResponse**](../Model/AlleDiscountGetWithdrawCommandResponse.md)
 
 ### Authorization
 
@@ -332,7 +332,7 @@ try {
 ## `submitOfferToAlleDiscountCommands()`
 
 ```php
-submitOfferToAlleDiscountCommands($alle_discount_submit_command_request): \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponse
+submitOfferToAlleDiscountCommands($alle_discount_submit_command_request): \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponse
 ```
 
 Create submit offer command
@@ -347,16 +347,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$alle_discount_submit_command_request = {"commandId":"c1b3f63d-d293-4333-911d-a0c1053e2c81","input":{"offer":{"id":"10394822344"},"campaign":{"id":"ALLEOBNIZKA_20230209"},"proposedPrice":{"amount":"100.00","currency":"PLN"}}}; // \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequest
+$alle_discount_submit_command_request = {"commandId":"c1b3f63d-d293-4333-911d-a0c1053e2c81","input":{"offer":{"id":"10394822344"},"campaign":{"id":"ALLEOBNIZKA_20230209"},"proposedPrice":{"amount":"100.00","currency":"PLN"}}}; // \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequest
 
 try {
     $result = $apiInstance->submitOfferToAlleDiscountCommands($alle_discount_submit_command_request);
@@ -370,11 +370,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **alle_discount_submit_command_request** | [**\OpenAPI\Client\Model\AlleDiscountSubmitCommandRequest**](../Model/AlleDiscountSubmitCommandRequest.md)|  | |
+| **alle_discount_submit_command_request** | [**\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequest**](../Model/AlleDiscountSubmitCommandRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountSubmitCommandResponse**](../Model/AlleDiscountSubmitCommandResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponse**](../Model/AlleDiscountSubmitCommandResponse.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ try {
 ## `withdrawOfferFromAlleDiscountCommands()`
 
 ```php
-withdrawOfferFromAlleDiscountCommands($alle_discount_withdraw_command_request): \OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponse
+withdrawOfferFromAlleDiscountCommands($alle_discount_withdraw_command_request): \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponse
 ```
 
 Create withdraw offer command
@@ -407,16 +407,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AlleDiscountApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AlleDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$alle_discount_withdraw_command_request = {"commandId":"c1b3f63d-d293-4333-911d-a0c1053e2c81","input":{"participationId":"f9a4a70c-6db9-4473-976c-90f8df9f74e8"}}; // \OpenAPI\Client\Model\AlleDiscountWithdrawCommandRequest
+$alle_discount_withdraw_command_request = {"commandId":"c1b3f63d-d293-4333-911d-a0c1053e2c81","input":{"participationId":"f9a4a70c-6db9-4473-976c-90f8df9f74e8"}}; // \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandRequest
 
 try {
     $result = $apiInstance->withdrawOfferFromAlleDiscountCommands($alle_discount_withdraw_command_request);
@@ -430,11 +430,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **alle_discount_withdraw_command_request** | [**\OpenAPI\Client\Model\AlleDiscountWithdrawCommandRequest**](../Model/AlleDiscountWithdrawCommandRequest.md)|  | |
+| **alle_discount_withdraw_command_request** | [**\robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandRequest**](../Model/AlleDiscountWithdrawCommandRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponse**](../Model/AlleDiscountWithdrawCommandResponse.md)
+[**\robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponse**](../Model/AlleDiscountWithdrawCommandResponse.md)
 
 ### Authorization
 

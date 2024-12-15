@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ShipmentCreateRequestDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'delivery_method_id' => 'string',
         'credentials_id' => 'string',
-        'sender' => '\OpenAPI\Client\Model\SenderAddressDto',
-        'receiver' => '\OpenAPI\Client\Model\ReceiverAddressDto',
-        'pickup' => '\OpenAPI\Client\Model\PickupAddressDto',
+        'sender' => '\robsonek\phpAllegroApi\Model\SenderAddressDto',
+        'receiver' => '\robsonek\phpAllegroApi\Model\ReceiverAddressDto',
+        'pickup' => '\robsonek\phpAllegroApi\Model\PickupAddressDto',
         'reference_number' => 'string',
         'description' => 'string',
-        'packages' => '\OpenAPI\Client\Model\PackageRequestDto[]',
-        'insurance' => '\OpenAPI\Client\Model\InsuranceDto',
-        'cash_on_delivery' => '\OpenAPI\Client\Model\CashOnDeliveryDto',
+        'packages' => '\robsonek\phpAllegroApi\Model\PackageRequestDto[]',
+        'insurance' => '\robsonek\phpAllegroApi\Model\InsuranceDto',
+        'cash_on_delivery' => '\robsonek\phpAllegroApi\Model\CashOnDeliveryDto',
         'label_format' => 'string',
         'additional_services' => 'string[]',
         'additional_properties' => 'array<string,string>'
@@ -470,7 +470,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\SenderAddressDto
+     * @return \robsonek\phpAllegroApi\Model\SenderAddressDto
      */
     public function getSender()
     {
@@ -480,7 +480,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\SenderAddressDto $sender sender
+     * @param \robsonek\phpAllegroApi\Model\SenderAddressDto $sender sender
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets receiver
      *
-     * @return \OpenAPI\Client\Model\ReceiverAddressDto
+     * @return \robsonek\phpAllegroApi\Model\ReceiverAddressDto
      */
     public function getReceiver()
     {
@@ -507,7 +507,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets receiver
      *
-     * @param \OpenAPI\Client\Model\ReceiverAddressDto $receiver receiver
+     * @param \robsonek\phpAllegroApi\Model\ReceiverAddressDto $receiver receiver
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets pickup
      *
-     * @return \OpenAPI\Client\Model\PickupAddressDto|null
+     * @return \robsonek\phpAllegroApi\Model\PickupAddressDto|null
      */
     public function getPickup()
     {
@@ -534,7 +534,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets pickup
      *
-     * @param \OpenAPI\Client\Model\PickupAddressDto|null $pickup pickup
+     * @param \robsonek\phpAllegroApi\Model\PickupAddressDto|null $pickup pickup
      *
      * @return self
      */
@@ -607,7 +607,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets packages
      *
-     * @return \OpenAPI\Client\Model\PackageRequestDto[]
+     * @return \robsonek\phpAllegroApi\Model\PackageRequestDto[]
      */
     public function getPackages()
     {
@@ -617,7 +617,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets packages
      *
-     * @param \OpenAPI\Client\Model\PackageRequestDto[] $packages packages
+     * @param \robsonek\phpAllegroApi\Model\PackageRequestDto[] $packages packages
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets insurance
      *
-     * @return \OpenAPI\Client\Model\InsuranceDto|null
+     * @return \robsonek\phpAllegroApi\Model\InsuranceDto|null
      */
     public function getInsurance()
     {
@@ -644,7 +644,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets insurance
      *
-     * @param \OpenAPI\Client\Model\InsuranceDto|null $insurance insurance
+     * @param \robsonek\phpAllegroApi\Model\InsuranceDto|null $insurance insurance
      *
      * @return self
      */
@@ -661,7 +661,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets cash_on_delivery
      *
-     * @return \OpenAPI\Client\Model\CashOnDeliveryDto|null
+     * @return \robsonek\phpAllegroApi\Model\CashOnDeliveryDto|null
      */
     public function getCashOnDelivery()
     {
@@ -671,7 +671,7 @@ class ShipmentCreateRequestDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets cash_on_delivery
      *
-     * @param \OpenAPI\Client\Model\CashOnDeliveryDto|null $cash_on_delivery cash_on_delivery
+     * @param \robsonek\phpAllegroApi\Model\CashOnDeliveryDto|null $cash_on_delivery cash_on_delivery
      *
      * @return self
      */

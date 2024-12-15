@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingRulesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AutomaticPricingRulesResponse implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rules' => '\OpenAPI\Client\Model\AutomaticPricingRuleResponse[]'
+        'rules' => '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class AutomaticPricingRulesResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets rules
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleResponse[]
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse[]
      */
     public function getRules()
     {
@@ -305,7 +305,7 @@ class AutomaticPricingRulesResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets rules
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingRuleResponse[] $rules List of rules.
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse[] $rules List of rules.
      *
      * @return self
      */

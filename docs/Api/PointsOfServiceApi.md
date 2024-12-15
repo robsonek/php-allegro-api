@@ -1,4 +1,4 @@
-# OpenAPI\Client\PointsOfServiceApi
+# robsonek\phpAllegroApi\PointsOfServiceApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createPOSUsingPOST()`
 
 ```php
-createPOSUsingPOST($pos): \OpenAPI\Client\Model\Pos
+createPOSUsingPOST($pos): \robsonek\phpAllegroApi\Model\Pos
 ```
 
 Create a point of service
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PointsOfServiceApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$pos = new \OpenAPI\Client\Model\Pos(); // \OpenAPI\Client\Model\Pos | Point of service
+$pos = new \robsonek\phpAllegroApi\Model\Pos(); // \robsonek\phpAllegroApi\Model\Pos | Point of service
 
 try {
     $result = $apiInstance->createPOSUsingPOST($pos);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **pos** | [**\OpenAPI\Client\Model\Pos**](../Model/Pos.md)| Point of service | |
+| **pos** | [**\robsonek\phpAllegroApi\Model\Pos**](../Model/Pos.md)| Point of service | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Pos**](../Model/Pos.md)
+[**\robsonek\phpAllegroApi\Model\Pos**](../Model/Pos.md)
 
 ### Authorization
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PointsOfServiceApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ void (empty response body)
 ## `getPOSDataUsingGET()`
 
 ```php
-getPOSDataUsingGET($id): \OpenAPI\Client\Model\Pos
+getPOSDataUsingGET($id): \robsonek\phpAllegroApi\Model\Pos
 ```
 
 Get the details of a point of service
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PointsOfServiceApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Pos**](../Model/Pos.md)
+[**\robsonek\phpAllegroApi\Model\Pos**](../Model/Pos.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ try {
 ## `getPOSListUsingGET()`
 
 ```php
-getPOSListUsingGET($seller_id, $country_code): \OpenAPI\Client\Model\SearchResult
+getPOSListUsingGET($seller_id, $country_code): \robsonek\phpAllegroApi\Model\SearchResult
 ```
 
 Get the user's points of service
@@ -208,10 +208,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PointsOfServiceApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchResult**](../Model/SearchResult.md)
+[**\robsonek\phpAllegroApi\Model\SearchResult**](../Model/SearchResult.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ try {
 ## `modifyPOSUsingPUT()`
 
 ```php
-modifyPOSUsingPUT($id, $pos): \OpenAPI\Client\Model\Pos
+modifyPOSUsingPUT($id, $pos): \robsonek\phpAllegroApi\Model\Pos
 ```
 
 Modify a point of service
@@ -270,17 +270,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PointsOfServiceApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Point of service ID. Must match values with 'id' property from the body.
-$pos = new \OpenAPI\Client\Model\Pos(); // \OpenAPI\Client\Model\Pos | Point of service
+$pos = new \robsonek\phpAllegroApi\Model\Pos(); // \robsonek\phpAllegroApi\Model\Pos | Point of service
 
 try {
     $result = $apiInstance->modifyPOSUsingPUT($id, $pos);
@@ -295,11 +295,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Point of service ID. Must match values with &#39;id&#39; property from the body. | |
-| **pos** | [**\OpenAPI\Client\Model\Pos**](../Model/Pos.md)| Point of service | |
+| **pos** | [**\robsonek\phpAllegroApi\Model\Pos**](../Model/Pos.md)| Point of service | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Pos**](../Model/Pos.md)
+[**\robsonek\phpAllegroApi\Model\Pos**](../Model/Pos.md)
 
 ### Authorization
 

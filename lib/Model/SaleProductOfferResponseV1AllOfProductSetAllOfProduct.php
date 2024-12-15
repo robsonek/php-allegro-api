@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferResponseV1AllOfProductSetAllOfProduct Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class SaleProductOfferResponseV1AllOfProductSetAllOfProduct implements ModelInte
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'publication' => '\OpenAPI\Client\Model\ProductOfferResponsePublication',
-        'parameters' => '\OpenAPI\Client\Model\ParameterProductOfferResponse[]'
+        'publication' => '\robsonek\phpAllegroApi\Model\ProductOfferResponsePublication',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ParameterProductOfferResponse[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class SaleProductOfferResponseV1AllOfProductSetAllOfProduct implements ModelInte
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\ProductOfferResponsePublication|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOfferResponsePublication|null
      */
     public function getPublication()
     {
@@ -343,7 +343,7 @@ class SaleProductOfferResponseV1AllOfProductSetAllOfProduct implements ModelInte
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\ProductOfferResponsePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\ProductOfferResponsePublication|null $publication publication
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class SaleProductOfferResponseV1AllOfProductSetAllOfProduct implements ModelInte
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ParameterProductOfferResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\ParameterProductOfferResponse[]|null
      */
     public function getParameters()
     {
@@ -370,7 +370,7 @@ class SaleProductOfferResponseV1AllOfProductSetAllOfProduct implements ModelInte
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ParameterProductOfferResponse[]|null $parameters Product parameters in the offer.
+     * @param \robsonek\phpAllegroApi\Model\ParameterProductOfferResponse[]|null $parameters Product parameters in the offer.
      *
      * @return self
      */

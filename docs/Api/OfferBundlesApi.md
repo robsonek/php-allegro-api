@@ -1,4 +1,4 @@
-# OpenAPI\Client\OfferBundlesApi
+# robsonek\phpAllegroApi\OfferBundlesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createOfferBundleUsingPOST()`
 
 ```php
-createOfferBundleUsingPOST($create_offer_bundle_dto): \OpenAPI\Client\Model\OfferBundleDTO
+createOfferBundleUsingPOST($create_offer_bundle_dto): \robsonek\phpAllegroApi\Model\OfferBundleDTO
 ```
 
 Create a new offer bundle
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferBundlesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_offer_bundle_dto = {"offers":[{"id":"123456789","requiredQuantity":1,"entryPoint":true},{"id":"987654321","requiredQuantity":2,"entryPoint":false}],"discounts":[{"marketplace":{"id":"allegro-pl"},"amount":"10.15","currency":"PLN"}]}; // \OpenAPI\Client\Model\CreateOfferBundleDTO
+$create_offer_bundle_dto = {"offers":[{"id":"123456789","requiredQuantity":1,"entryPoint":true},{"id":"987654321","requiredQuantity":2,"entryPoint":false}],"discounts":[{"marketplace":{"id":"allegro-pl"},"amount":"10.15","currency":"PLN"}]}; // \robsonek\phpAllegroApi\Model\CreateOfferBundleDTO
 
 try {
     $result = $apiInstance->createOfferBundleUsingPOST($create_offer_bundle_dto);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_offer_bundle_dto** | [**\OpenAPI\Client\Model\CreateOfferBundleDTO**](../Model/CreateOfferBundleDTO.md)|  | |
+| **create_offer_bundle_dto** | [**\robsonek\phpAllegroApi\Model\CreateOfferBundleDTO**](../Model/CreateOfferBundleDTO.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
+[**\robsonek\phpAllegroApi\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
 
 ### Authorization
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferBundlesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ void (empty response body)
 ## `getOfferBundleUsingGET()`
 
 ```php
-getOfferBundleUsingGET($bundle_id): \OpenAPI\Client\Model\OfferBundleDTO
+getOfferBundleUsingGET($bundle_id): \robsonek\phpAllegroApi\Model\OfferBundleDTO
 ```
 
 Get bundle by ID
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferBundlesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
+[**\robsonek\phpAllegroApi\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ try {
 ## `listSellersOfferBundlesUsingGET()`
 
 ```php
-listSellersOfferBundlesUsingGET($limit, $offer_id, $page_id): \OpenAPI\Client\Model\OfferBundlesDTO
+listSellersOfferBundlesUsingGET($limit, $offer_id, $page_id): \robsonek\phpAllegroApi\Model\OfferBundlesDTO
 ```
 
 List seller's bundles
@@ -208,10 +208,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferBundlesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferBundlesDTO**](../Model/OfferBundlesDTO.md)
+[**\robsonek\phpAllegroApi\Model\OfferBundlesDTO**](../Model/OfferBundlesDTO.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ try {
 ## `updateOfferBundleDiscountUsingPUT()`
 
 ```php
-updateOfferBundleDiscountUsingPUT($bundle_id, $update_offer_bundle_discount_dto): \OpenAPI\Client\Model\OfferBundleDTO
+updateOfferBundleDiscountUsingPUT($bundle_id, $update_offer_bundle_discount_dto): \robsonek\phpAllegroApi\Model\OfferBundleDTO
 ```
 
 Update discount associated with bundle
@@ -272,17 +272,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferBundlesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $bundle_id = 'bundle_id_example'; // string | Bundle ID.
-$update_offer_bundle_discount_dto = {"discounts":[{"marketplace":{"id":"allegro-pl"},"amount":"10.15","currency":"PLN"}]}; // \OpenAPI\Client\Model\UpdateOfferBundleDiscountDTO
+$update_offer_bundle_discount_dto = {"discounts":[{"marketplace":{"id":"allegro-pl"},"amount":"10.15","currency":"PLN"}]}; // \robsonek\phpAllegroApi\Model\UpdateOfferBundleDiscountDTO
 
 try {
     $result = $apiInstance->updateOfferBundleDiscountUsingPUT($bundle_id, $update_offer_bundle_discount_dto);
@@ -297,11 +297,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **bundle_id** | **string**| Bundle ID. | |
-| **update_offer_bundle_discount_dto** | [**\OpenAPI\Client\Model\UpdateOfferBundleDiscountDTO**](../Model/UpdateOfferBundleDiscountDTO.md)|  | |
+| **update_offer_bundle_discount_dto** | [**\robsonek\phpAllegroApi\Model\UpdateOfferBundleDiscountDTO**](../Model/UpdateOfferBundleDiscountDTO.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
+[**\robsonek\phpAllegroApi\Model\OfferBundleDTO**](../Model/OfferBundleDTO.md)
 
 ### Authorization
 

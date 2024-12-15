@@ -1,4 +1,4 @@
-# OpenAPI\Client\AdditionalServicesTranslationsApi
+# robsonek\phpAllegroApi\AdditionalServicesTranslationsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ void (empty response body)
 ## `getAdditionalServiceGroupTranslations()`
 
 ```php
-getAdditionalServiceGroupTranslations($group_id, $language): \OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse
+getAdditionalServiceGroupTranslations($group_id, $language): \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse
 ```
 
 Get translations for specified group
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse**](../Model/AdditionalServiceGroupTranslationResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse**](../Model/AdditionalServiceGroupTranslationResponse.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ try {
 ## `updateAdditionalServiceGroupTranslation()`
 
 ```php
-updateAdditionalServiceGroupTranslation($group_id, $language, $additional_services_group_translation_request): \OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse
+updateAdditionalServiceGroupTranslation($group_id, $language, $additional_services_group_translation_request): \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse
 ```
 
 Create/Update translations for specified group and language
@@ -150,10 +150,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -161,7 +161,7 @@ $apiInstance = new OpenAPI\Client\Api\AdditionalServicesTranslationsApi(
 );
 $group_id = 'group_id_example'; // string | Additional Service Group ID.
 $language = pl-PL; // string | IETF Language tag.
-$additional_services_group_translation_request = new \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest(); // \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest | Additonal service group translation.
+$additional_services_group_translation_request = new \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest(); // \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest | Additonal service group translation.
 
 try {
     $result = $apiInstance->updateAdditionalServiceGroupTranslation($group_id, $language, $additional_services_group_translation_request);
@@ -177,11 +177,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **group_id** | **string**| Additional Service Group ID. | |
 | **language** | **string**| IETF Language tag. | |
-| **additional_services_group_translation_request** | [**\OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest**](../Model/AdditionalServicesGroupTranslationRequest.md)| Additonal service group translation. | |
+| **additional_services_group_translation_request** | [**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest**](../Model/AdditionalServicesGroupTranslationRequest.md)| Additonal service group translation. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse**](../Model/AdditionalServiceGroupTranslationPatchResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse**](../Model/AdditionalServiceGroupTranslationPatchResponse.md)
 
 ### Authorization
 

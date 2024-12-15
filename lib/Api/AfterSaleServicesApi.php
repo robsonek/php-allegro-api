@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AfterSaleServicesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -166,12 +166,12 @@ class AfterSaleServicesApi
      *
      * Create a warranty attachment metadata
      *
-     * @param  \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AfterSalesServicesAttachment
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment
      */
     public function createAfterSalesServiceConditionsAttachmentUsingPOST($create_after_sales_service_conditions_attachment_using_post_request, string $contentType = self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'][0])
     {
@@ -184,12 +184,12 @@ class AfterSaleServicesApi
      *
      * Create a warranty attachment metadata
      *
-     * @param  \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AfterSalesServicesAttachment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAfterSalesServiceConditionsAttachmentUsingPOSTWithHttpInfo($create_after_sales_service_conditions_attachment_using_post_request, string $contentType = self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'][0])
     {
@@ -220,11 +220,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\AfterSalesServicesAttachment' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AfterSalesServicesAttachment' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -242,7 +242,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AfterSalesServicesAttachment', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -261,7 +261,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AfterSalesServicesAttachment';
+            $returnType = '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -294,7 +294,7 @@ class AfterSaleServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AfterSalesServicesAttachment',
+                        '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -309,7 +309,7 @@ class AfterSaleServicesApi
      *
      * Create a warranty attachment metadata
      *
-     * @param  \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -330,7 +330,7 @@ class AfterSaleServicesApi
      *
      * Create a warranty attachment metadata
      *
-     * @param  \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -338,7 +338,7 @@ class AfterSaleServicesApi
      */
     public function createAfterSalesServiceConditionsAttachmentUsingPOSTAsyncWithHttpInfo($create_after_sales_service_conditions_attachment_using_post_request, string $contentType = self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AfterSalesServicesAttachment';
+        $returnType = '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment';
         $request = $this->createAfterSalesServiceConditionsAttachmentUsingPOSTRequest($create_after_sales_service_conditions_attachment_using_post_request, $contentType);
 
         return $this->client
@@ -380,7 +380,7 @@ class AfterSaleServicesApi
     /**
      * Create request for operation 'createAfterSalesServiceConditionsAttachmentUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest $create_after_sales_service_conditions_attachment_using_post_request After sale services attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceConditionsAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -477,12 +477,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s implied warranty
      *
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
      */
     public function createAfterSalesServiceImpliedWarrantyUsingPOST($implied_warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'][0])
     {
@@ -495,12 +495,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s implied warranty
      *
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAfterSalesServiceImpliedWarrantyUsingPOSTWithHttpInfo($implied_warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'][0])
     {
@@ -531,11 +531,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -553,7 +553,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ImpliedWarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -572,7 +572,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -605,7 +605,7 @@ class AfterSaleServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ImpliedWarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -620,7 +620,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s implied warranty
      *
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -641,7 +641,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s implied warranty
      *
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -649,7 +649,7 @@ class AfterSaleServicesApi
      */
     public function createAfterSalesServiceImpliedWarrantyUsingPOSTAsyncWithHttpInfo($implied_warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
         $request = $this->createAfterSalesServiceImpliedWarrantyUsingPOSTRequest($implied_warranty_request, $contentType);
 
         return $this->client
@@ -691,7 +691,7 @@ class AfterSaleServicesApi
     /**
      * Create request for operation 'createAfterSalesServiceImpliedWarrantyUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceImpliedWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -788,12 +788,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s return policy
      *
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReturnPolicyResponse
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
      */
     public function createAfterSalesServiceReturnPolicyUsingPOST($return_policy_request, string $contentType = self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'][0])
     {
@@ -806,12 +806,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s return policy
      *
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAfterSalesServiceReturnPolicyUsingPOSTWithHttpInfo($return_policy_request, string $contentType = self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'][0])
     {
@@ -842,11 +842,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ReturnPolicyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReturnPolicyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -864,7 +864,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReturnPolicyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -883,7 +883,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -916,7 +916,7 @@ class AfterSaleServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReturnPolicyResponse',
+                        '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -931,7 +931,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s return policy
      *
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -952,7 +952,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s return policy
      *
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -960,7 +960,7 @@ class AfterSaleServicesApi
      */
     public function createAfterSalesServiceReturnPolicyUsingPOSTAsyncWithHttpInfo($return_policy_request, string $contentType = self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
         $request = $this->createAfterSalesServiceReturnPolicyUsingPOSTRequest($return_policy_request, $contentType);
 
         return $this->client
@@ -1002,7 +1002,7 @@ class AfterSaleServicesApi
     /**
      * Create request for operation 'createAfterSalesServiceReturnPolicyUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceReturnPolicyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1099,12 +1099,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s warranty
      *
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\WarrantyResponse
      */
     public function createAfterSalesServiceWarrantyUsingPOST($warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'][0])
     {
@@ -1117,12 +1117,12 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s warranty
      *
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAfterSalesServiceWarrantyUsingPOSTWithHttpInfo($warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'][0])
     {
@@ -1153,11 +1153,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\WarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1175,7 +1175,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\WarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1194,7 +1194,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1227,7 +1227,7 @@ class AfterSaleServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\WarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1242,7 +1242,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s warranty
      *
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1263,7 +1263,7 @@ class AfterSaleServicesApi
      *
      * Create new user&#39;s warranty
      *
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1271,7 +1271,7 @@ class AfterSaleServicesApi
      */
     public function createAfterSalesServiceWarrantyUsingPOSTAsyncWithHttpInfo($warranty_request, string $contentType = self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
         $request = $this->createAfterSalesServiceWarrantyUsingPOSTRequest($warranty_request, $contentType);
 
         return $this->client
@@ -1313,7 +1313,7 @@ class AfterSaleServicesApi
     /**
      * Create request for operation 'createAfterSalesServiceWarrantyUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAfterSalesServiceWarrantyUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1413,9 +1413,9 @@ class AfterSaleServicesApi
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceImpliedWarrantyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
      */
     public function getAfterSalesServiceImpliedWarrantyUsingGET($implied_warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceImpliedWarrantyUsingGET'][0])
     {
@@ -1431,9 +1431,9 @@ class AfterSaleServicesApi
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceImpliedWarrantyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAfterSalesServiceImpliedWarrantyUsingGETWithHttpInfo($implied_warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceImpliedWarrantyUsingGET'][0])
     {
@@ -1464,11 +1464,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1486,7 +1486,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ImpliedWarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1505,7 +1505,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1538,7 +1538,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ImpliedWarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1582,7 +1582,7 @@ class AfterSaleServicesApi
      */
     public function getAfterSalesServiceImpliedWarrantyUsingGETAsyncWithHttpInfo($implied_warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceImpliedWarrantyUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
         $request = $this->getAfterSalesServiceImpliedWarrantyUsingGETRequest($implied_warranty_id, $contentType);
 
         return $this->client
@@ -1725,9 +1725,9 @@ class AfterSaleServicesApi
      * @param  string $return_policy_id The ID of the return policy. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceReturnPolicyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReturnPolicyResponse
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
      */
     public function getAfterSalesServiceReturnPolicyUsingGET($return_policy_id, string $contentType = self::contentTypes['getAfterSalesServiceReturnPolicyUsingGET'][0])
     {
@@ -1743,9 +1743,9 @@ class AfterSaleServicesApi
      * @param  string $return_policy_id The ID of the return policy. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceReturnPolicyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAfterSalesServiceReturnPolicyUsingGETWithHttpInfo($return_policy_id, string $contentType = self::contentTypes['getAfterSalesServiceReturnPolicyUsingGET'][0])
     {
@@ -1776,11 +1776,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReturnPolicyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReturnPolicyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1798,7 +1798,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReturnPolicyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1817,7 +1817,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1850,7 +1850,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReturnPolicyResponse',
+                        '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1894,7 +1894,7 @@ class AfterSaleServicesApi
      */
     public function getAfterSalesServiceReturnPolicyUsingGETAsyncWithHttpInfo($return_policy_id, string $contentType = self::contentTypes['getAfterSalesServiceReturnPolicyUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
         $request = $this->getAfterSalesServiceReturnPolicyUsingGETRequest($return_policy_id, $contentType);
 
         return $this->client
@@ -2037,9 +2037,9 @@ class AfterSaleServicesApi
      * @param  string $warranty_id The ID of the warranty. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceWarrantyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\WarrantyResponse
      */
     public function getAfterSalesServiceWarrantyUsingGET($warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceWarrantyUsingGET'][0])
     {
@@ -2055,9 +2055,9 @@ class AfterSaleServicesApi
      * @param  string $warranty_id The ID of the warranty. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAfterSalesServiceWarrantyUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAfterSalesServiceWarrantyUsingGETWithHttpInfo($warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceWarrantyUsingGET'][0])
     {
@@ -2088,11 +2088,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2110,7 +2110,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\WarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2129,7 +2129,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2162,7 +2162,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\WarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2206,7 +2206,7 @@ class AfterSaleServicesApi
      */
     public function getAfterSalesServiceWarrantyUsingGETAsyncWithHttpInfo($warranty_id, string $contentType = self::contentTypes['getAfterSalesServiceWarrantyUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
         $request = $this->getAfterSalesServiceWarrantyUsingGETRequest($warranty_id, $contentType);
 
         return $this->client
@@ -2350,9 +2350,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic
      */
     public function getPublicSellerListingUsingGET($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET'][0])
     {
@@ -2369,9 +2369,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicSellerListingUsingGETWithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET'][0])
     {
@@ -2402,11 +2402,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2424,7 +2424,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2443,7 +2443,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic';
+            $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2476,7 +2476,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic',
+                        '\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2522,7 +2522,7 @@ class AfterSaleServicesApi
      */
     public function getPublicSellerListingUsingGETAsyncWithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic';
+        $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic';
         $request = $this->getPublicSellerListingUsingGETRequest($limit, $offset, $contentType);
 
         return $this->client
@@ -2684,9 +2684,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic
+     * @return \robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic
      */
     public function getPublicSellerListingUsingGET1($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET1'][0])
     {
@@ -2703,9 +2703,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicSellerListingUsingGET1WithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET1'][0])
     {
@@ -2736,11 +2736,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2758,7 +2758,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2777,7 +2777,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic';
+            $returnType = '\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2810,7 +2810,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic',
+                        '\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2856,7 +2856,7 @@ class AfterSaleServicesApi
      */
     public function getPublicSellerListingUsingGET1AsyncWithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic';
+        $returnType = '\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic';
         $request = $this->getPublicSellerListingUsingGET1Request($limit, $offset, $contentType);
 
         return $this->client
@@ -3018,9 +3018,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WarrantiesListWarrantyBasic
+     * @return \robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic
      */
     public function getPublicSellerListingUsingGET2($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET2'][0])
     {
@@ -3037,9 +3037,9 @@ class AfterSaleServicesApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicSellerListingUsingGET2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WarrantiesListWarrantyBasic, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicSellerListingUsingGET2WithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET2'][0])
     {
@@ -3070,11 +3070,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WarrantiesListWarrantyBasic' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WarrantiesListWarrantyBasic' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3092,7 +3092,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WarrantiesListWarrantyBasic', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3111,7 +3111,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\WarrantiesListWarrantyBasic';
+            $returnType = '\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3144,7 +3144,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WarrantiesListWarrantyBasic',
+                        '\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3190,7 +3190,7 @@ class AfterSaleServicesApi
      */
     public function getPublicSellerListingUsingGET2AsyncWithHttpInfo($limit = 60, $offset = 0, string $contentType = self::contentTypes['getPublicSellerListingUsingGET2'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WarrantiesListWarrantyBasic';
+        $returnType = '\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic';
         $request = $this->getPublicSellerListingUsingGET2Request($limit, $offset, $contentType);
 
         return $this->client
@@ -3349,12 +3349,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s implied warranty
      *
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
      */
     public function updateAfterSalesServiceImpliedWarrantyUsingPUT($implied_warranty_id, $implied_warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'][0])
     {
@@ -3368,12 +3368,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s implied warranty
      *
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAfterSalesServiceImpliedWarrantyUsingPUTWithHttpInfo($implied_warranty_id, $implied_warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'][0])
     {
@@ -3404,11 +3404,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ImpliedWarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3426,7 +3426,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ImpliedWarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3445,7 +3445,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3478,7 +3478,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ImpliedWarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3494,7 +3494,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s implied warranty
      *
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3516,7 +3516,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s implied warranty
      *
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3524,7 +3524,7 @@ class AfterSaleServicesApi
      */
     public function updateAfterSalesServiceImpliedWarrantyUsingPUTAsyncWithHttpInfo($implied_warranty_id, $implied_warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ImpliedWarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse';
         $request = $this->updateAfterSalesServiceImpliedWarrantyUsingPUTRequest($implied_warranty_id, $implied_warranty_request, $contentType);
 
         return $this->client
@@ -3567,7 +3567,7 @@ class AfterSaleServicesApi
      * Create request for operation 'updateAfterSalesServiceImpliedWarrantyUsingPUT'
      *
      * @param  string $implied_warranty_id The ID of the implied warranty. (required)
-     * @param  \OpenAPI\Client\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest $implied_warranty_request Implied warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceImpliedWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3680,12 +3680,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s return policy
      *
      * @param  string $return_policy_id The ID of the return policy. (required)
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReturnPolicyResponse
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
      */
     public function updateAfterSalesServiceReturnPolicyUsingPUT($return_policy_id, $return_policy_request, string $contentType = self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'][0])
     {
@@ -3699,12 +3699,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s return policy
      *
      * @param  string $return_policy_id The ID of the return policy. (required)
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ReturnPolicyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAfterSalesServiceReturnPolicyUsingPUTWithHttpInfo($return_policy_id, $return_policy_request, string $contentType = self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'][0])
     {
@@ -3735,11 +3735,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReturnPolicyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReturnPolicyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ReturnPolicyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3757,7 +3757,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReturnPolicyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3776,7 +3776,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3809,7 +3809,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReturnPolicyResponse',
+                        '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3825,7 +3825,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s return policy
      *
      * @param  string $return_policy_id The ID of the return policy. (required)
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3847,7 +3847,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s return policy
      *
      * @param  string $return_policy_id The ID of the return policy. (required)
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3855,7 +3855,7 @@ class AfterSaleServicesApi
      */
     public function updateAfterSalesServiceReturnPolicyUsingPUTAsyncWithHttpInfo($return_policy_id, $return_policy_request, string $contentType = self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReturnPolicyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ReturnPolicyResponse';
         $request = $this->updateAfterSalesServiceReturnPolicyUsingPUTRequest($return_policy_id, $return_policy_request, $contentType);
 
         return $this->client
@@ -3898,7 +3898,7 @@ class AfterSaleServicesApi
      * Create request for operation 'updateAfterSalesServiceReturnPolicyUsingPUT'
      *
      * @param  string $return_policy_id The ID of the return policy. (required)
-     * @param  \OpenAPI\Client\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
+     * @param  \robsonek\phpAllegroApi\Model\ReturnPolicyRequest $return_policy_request Return Policy (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceReturnPolicyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4011,12 +4011,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s warranty
      *
      * @param  string $warranty_id The ID of the warranty. (required)
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WarrantyResponse
+     * @return \robsonek\phpAllegroApi\Model\WarrantyResponse
      */
     public function updateAfterSalesServiceWarrantyUsingPUT($warranty_id, $warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'][0])
     {
@@ -4030,12 +4030,12 @@ class AfterSaleServicesApi
      * Change the user&#39;s warranty
      *
      * @param  string $warranty_id The ID of the warranty. (required)
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\WarrantyResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAfterSalesServiceWarrantyUsingPUTWithHttpInfo($warranty_id, $warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'][0])
     {
@@ -4066,11 +4066,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WarrantyResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WarrantyResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\WarrantyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4088,7 +4088,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WarrantyResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\WarrantyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4107,7 +4107,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4140,7 +4140,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WarrantyResponse',
+                        '\robsonek\phpAllegroApi\Model\WarrantyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4156,7 +4156,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s warranty
      *
      * @param  string $warranty_id The ID of the warranty. (required)
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4178,7 +4178,7 @@ class AfterSaleServicesApi
      * Change the user&#39;s warranty
      *
      * @param  string $warranty_id The ID of the warranty. (required)
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4186,7 +4186,7 @@ class AfterSaleServicesApi
      */
     public function updateAfterSalesServiceWarrantyUsingPUTAsyncWithHttpInfo($warranty_id, $warranty_request, string $contentType = self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WarrantyResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\WarrantyResponse';
         $request = $this->updateAfterSalesServiceWarrantyUsingPUTRequest($warranty_id, $warranty_request, $contentType);
 
         return $this->client
@@ -4229,7 +4229,7 @@ class AfterSaleServicesApi
      * Create request for operation 'updateAfterSalesServiceWarrantyUsingPUT'
      *
      * @param  string $warranty_id The ID of the warranty. (required)
-     * @param  \OpenAPI\Client\Model\WarrantyRequest $warranty_request Warranty (required)
+     * @param  \robsonek\phpAllegroApi\Model\WarrantyRequest $warranty_request Warranty (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAfterSalesServiceWarrantyUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4356,9 +4356,9 @@ class AfterSaleServicesApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadAfterSalesServiceConditionsAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AfterSalesServicesAttachment
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment
      */
     public function uploadAfterSalesServiceConditionsAttachmentUsingPUT($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadAfterSalesServiceConditionsAttachmentUsingPUT'][0])
     {
@@ -4386,9 +4386,9 @@ class AfterSaleServicesApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadAfterSalesServiceConditionsAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AfterSalesServicesAttachment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment, HTTP status code, HTTP response headers (array of strings)
      */
     public function uploadAfterSalesServiceConditionsAttachmentUsingPUTWithHttpInfo($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadAfterSalesServiceConditionsAttachmentUsingPUT'][0])
     {
@@ -4419,11 +4419,11 @@ class AfterSaleServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AfterSalesServicesAttachment' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AfterSalesServicesAttachment' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4441,7 +4441,7 @@ class AfterSaleServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AfterSalesServicesAttachment', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4460,7 +4460,7 @@ class AfterSaleServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AfterSalesServicesAttachment';
+            $returnType = '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4493,7 +4493,7 @@ class AfterSaleServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AfterSalesServicesAttachment',
+                        '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4561,7 +4561,7 @@ class AfterSaleServicesApi
      */
     public function uploadAfterSalesServiceConditionsAttachmentUsingPUTAsyncWithHttpInfo($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadAfterSalesServiceConditionsAttachmentUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AfterSalesServicesAttachment';
+        $returnType = '\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment';
         $request = $this->uploadAfterSalesServiceConditionsAttachmentUsingPUTRequest($attachment_id, $body, $hostIndex, $variables, $contentType);
 
         return $this->client

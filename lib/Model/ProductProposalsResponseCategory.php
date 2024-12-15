@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductProposalsResponseCategory Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ProductProposalsResponseCategory implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'similar' => '\OpenAPI\Client\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]'
+        'similar' => '\robsonek\phpAllegroApi\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class ProductProposalsResponseCategory implements ModelInterface, ArrayAccess, \
     /**
      * Gets similar
      *
-     * @return \OpenAPI\Client\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]|null
      */
     public function getSimilar()
     {
@@ -336,7 +336,7 @@ class ProductProposalsResponseCategory implements ModelInterface, ArrayAccess, \
     /**
      * Sets similar
      *
-     * @param \OpenAPI\Client\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]|null $similar A list of similar categories in which you can sell this product.
+     * @param \robsonek\phpAllegroApi\Model\ProductProposalsResponseCategoryAllOfSimilarInner[]|null $similar A list of similar categories in which you can sell this product.
      *
      * @return self
      */

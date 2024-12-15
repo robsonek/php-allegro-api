@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplacesVisibility Class Doc Comment
  *
  * @category Class
  * @description Offer marketplaces visibility information.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class MarketplacesVisibility implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'base' => 'string',
-        'additional' => '\OpenAPI\Client\Model\AdditionalMarketplacesVisibility[]'
+        'additional' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacesVisibility[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class MarketplacesVisibility implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets additional
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacesVisibility[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacesVisibility[]|null
      */
     public function getAdditional()
     {
@@ -340,7 +340,7 @@ class MarketplacesVisibility implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets additional
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacesVisibility[]|null $additional Additional marketplaces information.
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacesVisibility[]|null $additional Additional marketplaces information.
      *
      * @return self
      */

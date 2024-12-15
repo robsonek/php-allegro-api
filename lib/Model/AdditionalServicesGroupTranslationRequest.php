@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServicesGroupTranslationRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AdditionalServicesGroupTranslationRequest implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_services' => '\OpenAPI\Client\Model\AdditionalServicesGroupTranslationWrapper'
+        'additional_services' => '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationWrapper'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AdditionalServicesGroupTranslationRequest implements ModelInterface, Array
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroupTranslationWrapper|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationWrapper|null
      */
     public function getAdditionalServices()
     {
@@ -302,7 +302,7 @@ class AdditionalServicesGroupTranslationRequest implements ModelInterface, Array
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\AdditionalServicesGroupTranslationWrapper|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationWrapper|null $additional_services additional_services
      *
      * @return self
      */

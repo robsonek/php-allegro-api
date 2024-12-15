@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description The price of the offer. It is the buy now price for *BUY_NOW* selling format and current auction price for *AUCTION* format.
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

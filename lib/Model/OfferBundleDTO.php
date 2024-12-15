@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferBundleDTO Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'offers' => '\OpenAPI\Client\Model\BundledOfferDTO[]',
-        'publication' => '\OpenAPI\Client\Model\OfferBundleDTOPublication',
-        'discounts' => '\OpenAPI\Client\Model\BundleDiscountDTO[]',
+        'offers' => '\robsonek\phpAllegroApi\Model\BundledOfferDTO[]',
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferBundleDTOPublication',
+        'discounts' => '\robsonek\phpAllegroApi\Model\BundleDiscountDTO[]',
         'created_at' => '\DateTime',
         'created_by' => 'string'
     ];
@@ -396,7 +396,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\BundledOfferDTO[]
+     * @return \robsonek\phpAllegroApi\Model\BundledOfferDTO[]
      */
     public function getOffers()
     {
@@ -406,7 +406,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\BundledOfferDTO[] $offers Offers included in bundle.
+     * @param \robsonek\phpAllegroApi\Model\BundledOfferDTO[] $offers Offers included in bundle.
      *
      * @return self
      */
@@ -423,7 +423,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferBundleDTOPublication
+     * @return \robsonek\phpAllegroApi\Model\OfferBundleDTOPublication
      */
     public function getPublication()
     {
@@ -433,7 +433,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferBundleDTOPublication $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferBundleDTOPublication $publication publication
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discounts
      *
-     * @return \OpenAPI\Client\Model\BundleDiscountDTO[]
+     * @return \robsonek\phpAllegroApi\Model\BundleDiscountDTO[]
      */
     public function getDiscounts()
     {
@@ -460,7 +460,7 @@ class OfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discounts
      *
-     * @param \OpenAPI\Client\Model\BundleDiscountDTO[] $discounts Discounts on marketplaces.
+     * @param \robsonek\phpAllegroApi\Model\BundleDiscountDTO[] $discounts Discounts on marketplaces.
      *
      * @return self
      */

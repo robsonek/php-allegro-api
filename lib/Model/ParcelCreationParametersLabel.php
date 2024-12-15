@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelCreationParametersLabel Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ParcelCreationParametersLabel implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sender' => '\OpenAPI\Client\Model\Sender',
+        'sender' => '\robsonek\phpAllegroApi\Model\Sender',
         'file_format' => 'string',
         'reference_number' => 'string'
     ];
@@ -330,7 +330,7 @@ class ParcelCreationParametersLabel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\Sender|null
+     * @return \robsonek\phpAllegroApi\Model\Sender|null
      */
     public function getSender()
     {
@@ -340,7 +340,7 @@ class ParcelCreationParametersLabel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\Sender|null $sender sender
+     * @param \robsonek\phpAllegroApi\Model\Sender|null $sender sender
      *
      * @return self
      */

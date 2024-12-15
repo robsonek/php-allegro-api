@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Configuration Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class Configuration implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'constraint_criteria' => '\OpenAPI\Client\Model\ConstraintCriteria',
-        'price' => '\OpenAPI\Client\Model\Price'
+        'constraint_criteria' => '\robsonek\phpAllegroApi\Model\ConstraintCriteria',
+        'price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -299,7 +299,7 @@ class Configuration implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets constraint_criteria
      *
-     * @return \OpenAPI\Client\Model\ConstraintCriteria|null
+     * @return \robsonek\phpAllegroApi\Model\ConstraintCriteria|null
      */
     public function getConstraintCriteria()
     {
@@ -309,7 +309,7 @@ class Configuration implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets constraint_criteria
      *
-     * @param \OpenAPI\Client\Model\ConstraintCriteria|null $constraint_criteria constraint_criteria
+     * @param \robsonek\phpAllegroApi\Model\ConstraintCriteria|null $constraint_criteria constraint_criteria
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class Configuration implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -336,7 +336,7 @@ class Configuration implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price price
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price price
      *
      * @return self
      */

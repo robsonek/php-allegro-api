@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAutomaticPricingModificationRemoveRemoveInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OfferAutomaticPricingModificationRemoveRemoveInner implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace'
+        'marketplace' => '\robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace'
     ];
 
     /**
@@ -295,7 +295,7 @@ class OfferAutomaticPricingModificationRemoveRemoveInner implements ModelInterfa
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace
+     * @return \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace
      */
     public function getMarketplace()
     {
@@ -305,7 +305,7 @@ class OfferAutomaticPricingModificationRemoveRemoveInner implements ModelInterfa
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
      *
      * @return self
      */

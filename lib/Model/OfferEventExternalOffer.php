@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferEventExternalOffer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferEventExternalOffer implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId'
     ];
 
     /**
@@ -329,7 +329,7 @@ class OfferEventExternalOffer implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -339,7 +339,7 @@ class OfferEventExternalOffer implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */

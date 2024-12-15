@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServiceRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class AdditionalServiceRequest implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'definition' => '\OpenAPI\Client\Model\AdditionalServiceDefinitionRequest',
+        'definition' => '\robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest',
         'description' => 'string',
-        'configurations' => '\OpenAPI\Client\Model\Configuration[]'
+        'configurations' => '\robsonek\phpAllegroApi\Model\Configuration[]'
     ];
 
     /**
@@ -319,7 +319,7 @@ class AdditionalServiceRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets definition
      *
-     * @return \OpenAPI\Client\Model\AdditionalServiceDefinitionRequest
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest
      */
     public function getDefinition()
     {
@@ -329,7 +329,7 @@ class AdditionalServiceRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets definition
      *
-     * @param \OpenAPI\Client\Model\AdditionalServiceDefinitionRequest $definition definition
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest $definition definition
      *
      * @return self
      */
@@ -377,7 +377,7 @@ class AdditionalServiceRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets configurations
      *
-     * @return \OpenAPI\Client\Model\Configuration[]
+     * @return \robsonek\phpAllegroApi\Model\Configuration[]
      */
     public function getConfigurations()
     {
@@ -387,7 +387,7 @@ class AdditionalServiceRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets configurations
      *
-     * @param \OpenAPI\Client\Model\Configuration[] $configurations configurations
+     * @param \robsonek\phpAllegroApi\Model\Configuration[] $configurations configurations
      *
      * @return self
      */

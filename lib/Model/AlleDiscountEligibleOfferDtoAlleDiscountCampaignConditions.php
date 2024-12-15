@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions Class Doc Comment
  *
  * @category Class
  * @description Info if offer matches campaign requirements.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions implements Mode
       */
     protected static $openAPITypes = [
         'meets_conditions' => 'bool',
-        'violations' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]'
+        'violations' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions implements Mode
     /**
      * Gets violations
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]|null
      */
     public function getViolations()
     {
@@ -337,7 +337,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions implements Mode
     /**
      * Sets violations
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]|null $violations Example violations:   - NOT_ENOUGH_STOCK - offer doesn’t meet the stock requirement.   - VAT_INVOICE_REQUIRED - offer doesn’t have vat invoice enabled.   - NOT_NEW_OFFER - offer’s condition is not new (e.g used).   - OFFER_PRICE_VERIFICATION_IN_PROGRESS - we are still gathering the information about the offer price. In this case the “basePrice” field should be set to null.
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditionsViolationsInner[]|null $violations Example violations:   - NOT_ENOUGH_STOCK - offer doesn’t meet the stock requirement.   - VAT_INVOICE_REQUIRED - offer doesn’t have vat invoice enabled.   - NOT_NEW_OFFER - offer’s condition is not new (e.g used).   - OFFER_PRICE_VERIFICATION_IN_PROGRESS - we are still gathering the information about the offer price. In this case the “basePrice” field should be set to null.
      *
      * @return self
      */

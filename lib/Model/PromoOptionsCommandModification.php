@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PromoOptionsCommandModification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PromoOptionsCommandModification implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base_package' => '\OpenAPI\Client\Model\PromoOptionsCommandModificationPackage',
-        'extra_packages' => '\OpenAPI\Client\Model\PromoOptionsCommandModificationPackage[]',
+        'base_package' => '\robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage[]',
         'modification_time' => 'string'
     ];
 
@@ -330,7 +330,7 @@ class PromoOptionsCommandModification implements ModelInterface, ArrayAccess, \J
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\PromoOptionsCommandModificationPackage|null
+     * @return \robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage|null
      */
     public function getBasePackage()
     {
@@ -340,7 +340,7 @@ class PromoOptionsCommandModification implements ModelInterface, ArrayAccess, \J
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\PromoOptionsCommandModificationPackage|null $base_package The base package. Available packages can be determined using <a href=\"#operation/getAvailableOfferPromotionPackages\">GET /sale/offer-promotion-packages</a>.
+     * @param \robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage|null $base_package The base package. Available packages can be determined using <a href=\"#operation/getAvailableOfferPromotionPackages\">GET /sale/offer-promotion-packages</a>.
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class PromoOptionsCommandModification implements ModelInterface, ArrayAccess, \J
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\PromoOptionsCommandModificationPackage[]|null
+     * @return \robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage[]|null
      */
     public function getExtraPackages()
     {
@@ -367,7 +367,7 @@ class PromoOptionsCommandModification implements ModelInterface, ArrayAccess, \J
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\PromoOptionsCommandModificationPackage[]|null $extra_packages Extra packages to be set on offer. Omitting this parameter will preserve the packages already present.
+     * @param \robsonek\phpAllegroApi\Model\PromoOptionsCommandModificationPackage[]|null $extra_packages Extra packages to be set on offer. Omitting this parameter will preserve the packages already present.
      *
      * @return self
      */

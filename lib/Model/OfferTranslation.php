@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTranslation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class OfferTranslation implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'description' => '\OpenAPI\Client\Model\OfferDescriptionTranslation',
+        'description' => '\robsonek\phpAllegroApi\Model\OfferDescriptionTranslation',
         'language' => 'string',
-        'title' => '\OpenAPI\Client\Model\OfferTitleTranslation'
+        'title' => '\robsonek\phpAllegroApi\Model\OfferTitleTranslation'
     ];
 
     /**
@@ -309,7 +309,7 @@ class OfferTranslation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\OfferDescriptionTranslation|null
+     * @return \robsonek\phpAllegroApi\Model\OfferDescriptionTranslation|null
      */
     public function getDescription()
     {
@@ -319,7 +319,7 @@ class OfferTranslation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\OfferDescriptionTranslation|null $description description
+     * @param \robsonek\phpAllegroApi\Model\OfferDescriptionTranslation|null $description description
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class OfferTranslation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets title
      *
-     * @return \OpenAPI\Client\Model\OfferTitleTranslation|null
+     * @return \robsonek\phpAllegroApi\Model\OfferTitleTranslation|null
      */
     public function getTitle()
     {
@@ -373,7 +373,7 @@ class OfferTranslation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets title
      *
-     * @param \OpenAPI\Client\Model\OfferTitleTranslation|null $title title
+     * @param \robsonek\phpAllegroApi\Model\OfferTitleTranslation|null $title title
      *
      * @return self
      */

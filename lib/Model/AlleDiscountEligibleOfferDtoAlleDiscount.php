@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountEligibleOfferDtoAlleDiscount Class Doc Comment
  *
  * @category Class
  * @description AlleDiscount specific data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'campaign_conditions' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions',
-        'required_merchant_price' => '\OpenAPI\Client\Model\AlleDiscountRequiredMerchantPriceDto',
-        'minimum_guaranteed_discount' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount'
+        'campaign_conditions' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions',
+        'required_merchant_price' => '\robsonek\phpAllegroApi\Model\AlleDiscountRequiredMerchantPriceDto',
+        'minimum_guaranteed_discount' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Gets campaign_conditions
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions|null
      */
     public function getCampaignConditions()
     {
@@ -317,7 +317,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Sets campaign_conditions
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions|null $campaign_conditions campaign_conditions
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountCampaignConditions|null $campaign_conditions campaign_conditions
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Gets required_merchant_price
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountRequiredMerchantPriceDto|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountRequiredMerchantPriceDto|null
      */
     public function getRequiredMerchantPrice()
     {
@@ -344,7 +344,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Sets required_merchant_price
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountRequiredMerchantPriceDto|null $required_merchant_price required_merchant_price
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountRequiredMerchantPriceDto|null $required_merchant_price required_merchant_price
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Gets minimum_guaranteed_discount
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount|null
      */
     public function getMinimumGuaranteedDiscount()
     {
@@ -371,7 +371,7 @@ class AlleDiscountEligibleOfferDtoAlleDiscount implements ModelInterface, ArrayA
     /**
      * Sets minimum_guaranteed_discount
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount|null $minimum_guaranteed_discount minimum_guaranteed_discount
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDtoAlleDiscountMinimumGuaranteedDiscount|null $minimum_guaranteed_discount minimum_guaranteed_discount
      *
      * @return self
      */

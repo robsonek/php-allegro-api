@@ -1,4 +1,4 @@
-# OpenAPI\Client\ImagesAndAttachmentsApi
+# robsonek\phpAllegroApi\ImagesAndAttachmentsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createOfferAttachmentUsingPOST()`
 
 ```php
-createOfferAttachmentUsingPOST($offer_attachment_request): \OpenAPI\Client\Model\OfferAttachment
+createOfferAttachmentUsingPOST($offer_attachment_request): \robsonek\phpAllegroApi\Model\OfferAttachment
 ```
 
 Create an offer attachment
@@ -27,16 +27,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ImagesAndAttachmentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ImagesAndAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$offer_attachment_request = new \OpenAPI\Client\Model\OfferAttachmentRequest(); // \OpenAPI\Client\Model\OfferAttachmentRequest | offer attachment
+$offer_attachment_request = new \robsonek\phpAllegroApi\Model\OfferAttachmentRequest(); // \robsonek\phpAllegroApi\Model\OfferAttachmentRequest | offer attachment
 
 try {
     $result = $apiInstance->createOfferAttachmentUsingPOST($offer_attachment_request);
@@ -50,11 +50,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **offer_attachment_request** | [**\OpenAPI\Client\Model\OfferAttachmentRequest**](../Model/OfferAttachmentRequest.md)| offer attachment | |
+| **offer_attachment_request** | [**\robsonek\phpAllegroApi\Model\OfferAttachmentRequest**](../Model/OfferAttachmentRequest.md)| offer attachment | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferAttachment**](../Model/OfferAttachment.md)
+[**\robsonek\phpAllegroApi\Model\OfferAttachment**](../Model/OfferAttachment.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ try {
 ## `uploadOfferAttachmentUsingPUT()`
 
 ```php
-uploadOfferAttachmentUsingPUT($attachment_id, $body): \OpenAPI\Client\Model\OfferAttachment
+uploadOfferAttachmentUsingPUT($attachment_id, $body): \robsonek\phpAllegroApi\Model\OfferAttachment
 ```
 ### URI(s):
 - https://upload.{environment} 
@@ -95,10 +95,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ImagesAndAttachmentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ImagesAndAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferAttachment**](../Model/OfferAttachment.md)
+[**\robsonek\phpAllegroApi\Model\OfferAttachment**](../Model/OfferAttachment.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ try {
 ## `uploadOfferImageUsingPOST()`
 
 ```php
-uploadOfferImageUsingPOST($offer_image_link_upload_request): \OpenAPI\Client\Model\OfferImageUploadResponse
+uploadOfferImageUsingPOST($offer_image_link_upload_request): \robsonek\phpAllegroApi\Model\OfferImageUploadResponse
 ```
 ### URI(s):
 - https://upload.{environment} 
@@ -172,16 +172,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ImagesAndAttachmentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ImagesAndAttachmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$offer_image_link_upload_request = new \OpenAPI\Client\Model\OfferImageLinkUploadRequest(); // \OpenAPI\Client\Model\OfferImageLinkUploadRequest
+$offer_image_link_upload_request = new \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest(); // \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest
 
 $hostIndex = 0;
 $variables = [
@@ -200,13 +200,13 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **offer_image_link_upload_request** | [**\OpenAPI\Client\Model\OfferImageLinkUploadRequest**](../Model/OfferImageLinkUploadRequest.md)|  | |
+| **offer_image_link_upload_request** | [**\robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest**](../Model/OfferImageLinkUploadRequest.md)|  | |
 | hostIndex | null|int | Host index. Defaults to null. If null, then the library will use $this->hostIndex instead | [optional] |
 | variables | array | Associative array of variables to pass to the host. Defaults to empty array. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferImageUploadResponse**](../Model/OfferImageUploadResponse.md)
+[**\robsonek\phpAllegroApi\Model\OfferImageUploadResponse**](../Model/OfferImageUploadResponse.md)
 
 ### Authorization
 

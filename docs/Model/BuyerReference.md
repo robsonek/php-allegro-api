@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **email** | **string** |  |
 **login** | **string** |  |
 **guest** | **bool** | is a guest account? |
-**preferences** | [**\OpenAPI\Client\Model\BuyerPreferencesReference**](BuyerPreferencesReference.md) |  | [optional]
+**preferences** | [**\robsonek\phpAllegroApi\Model\BuyerPreferencesReference**](BuyerPreferencesReference.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

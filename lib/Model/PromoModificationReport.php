@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PromoModificationReport Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tasks' => '\OpenAPI\Client\Model\PromoModificationTask[]',
-        'modification' => '\OpenAPI\Client\Model\PromoOptionsCommandModification',
-        'additional_marketplaces' => '\OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsCommandModification[]'
+        'tasks' => '\robsonek\phpAllegroApi\Model\PromoModificationTask[]',
+        'modification' => '\robsonek\phpAllegroApi\Model\PromoOptionsCommandModification',
+        'additional_marketplaces' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsCommandModification[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets tasks
      *
-     * @return \OpenAPI\Client\Model\PromoModificationTask[]|null
+     * @return \robsonek\phpAllegroApi\Model\PromoModificationTask[]|null
      */
     public function getTasks()
     {
@@ -316,7 +316,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets tasks
      *
-     * @param \OpenAPI\Client\Model\PromoModificationTask[]|null $tasks Offer promotion modification tasks.
+     * @param \robsonek\phpAllegroApi\Model\PromoModificationTask[]|null $tasks Offer promotion modification tasks.
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets modification
      *
-     * @return \OpenAPI\Client\Model\PromoOptionsCommandModification|null
+     * @return \robsonek\phpAllegroApi\Model\PromoOptionsCommandModification|null
      */
     public function getModification()
     {
@@ -343,7 +343,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets modification
      *
-     * @param \OpenAPI\Client\Model\PromoOptionsCommandModification|null $modification modification
+     * @param \robsonek\phpAllegroApi\Model\PromoOptionsCommandModification|null $modification modification
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets additional_marketplaces
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsCommandModification[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsCommandModification[]|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -370,7 +370,7 @@ class PromoModificationReport implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets additional_marketplaces
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsCommandModification[]|null $additional_marketplaces additional_marketplaces
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsCommandModification[]|null $additional_marketplaces additional_marketplaces
      *
      * @return self
      */

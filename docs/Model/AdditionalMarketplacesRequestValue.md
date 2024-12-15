@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**selling_mode** | [**\OpenAPI\Client\Model\AdditionalMarketplacesRequestValueSellingMode**](AdditionalMarketplacesRequestValueSellingMode.md) |  | [optional]
+**selling_mode** | [**\robsonek\phpAllegroApi\Model\AdditionalMarketplacesRequestValueSellingMode**](AdditionalMarketplacesRequestValueSellingMode.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

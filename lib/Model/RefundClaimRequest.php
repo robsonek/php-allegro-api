@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefundClaimRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class RefundClaimRequest implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'line_item' => '\OpenAPI\Client\Model\RefundClaimRequestLineItem',
+        'line_item' => '\robsonek\phpAllegroApi\Model\RefundClaimRequestLineItem',
         'quantity' => 'int'
     ];
 
@@ -303,7 +303,7 @@ class RefundClaimRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets line_item
      *
-     * @return \OpenAPI\Client\Model\RefundClaimRequestLineItem|null
+     * @return \robsonek\phpAllegroApi\Model\RefundClaimRequestLineItem|null
      */
     public function getLineItem()
     {
@@ -313,7 +313,7 @@ class RefundClaimRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets line_item
      *
-     * @param \OpenAPI\Client\Model\RefundClaimRequestLineItem|null $line_item line_item
+     * @param \robsonek\phpAllegroApi\Model\RefundClaimRequestLineItem|null $line_item line_item
      *
      * @return self
      */

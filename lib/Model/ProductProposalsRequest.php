@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductProposalsRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'category' => '\OpenAPI\Client\Model\Category',
-        'images' => '\OpenAPI\Client\Model\ImageUrl[]',
-        'parameters' => '\OpenAPI\Client\Model\ProductParameter[]',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
+        'category' => '\robsonek\phpAllegroApi\Model\Category',
+        'images' => '\robsonek\phpAllegroApi\Model\ImageUrl[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ProductParameter[]',
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
         'language' => 'string'
     ];
 
@@ -377,7 +377,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category
+     * @return \robsonek\phpAllegroApi\Model\Category
      */
     public function getCategory()
     {
@@ -387,7 +387,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category $category Product category
+     * @param \robsonek\phpAllegroApi\Model\Category $category Product category
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ImageUrl[]
+     * @return \robsonek\phpAllegroApi\Model\ImageUrl[]
      */
     public function getImages()
     {
@@ -414,7 +414,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ImageUrl[] $images List of product images. At least one image is required.
+     * @param \robsonek\phpAllegroApi\Model\ImageUrl[] $images List of product images. At least one image is required.
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ProductParameter[]
+     * @return \robsonek\phpAllegroApi\Model\ProductParameter[]
      */
     public function getParameters()
     {
@@ -441,7 +441,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ProductParameter[] $parameters List of product parameters.
+     * @param \robsonek\phpAllegroApi\Model\ProductParameter[] $parameters List of product parameters.
      *
      * @return self
      */
@@ -458,7 +458,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -468,7 +468,7 @@ class ProductProposalsRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */

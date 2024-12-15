@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeliverySettingsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\DeliverySettingsResponseMarketplace',
-        'free_delivery' => '\OpenAPI\Client\Model\DeliverySettingsResponseFreeDelivery',
-        'abroad_free_delivery' => '\OpenAPI\Client\Model\DeliverySettingsResponseAbroadFreeDelivery',
-        'join_policy' => '\OpenAPI\Client\Model\DeliverySettingsResponseJoinPolicy',
-        'custom_cost' => '\OpenAPI\Client\Model\DeliverySettingsResponseCustomCost',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\DeliverySettingsResponseMarketplace',
+        'free_delivery' => '\robsonek\phpAllegroApi\Model\DeliverySettingsResponseFreeDelivery',
+        'abroad_free_delivery' => '\robsonek\phpAllegroApi\Model\DeliverySettingsResponseAbroadFreeDelivery',
+        'join_policy' => '\robsonek\phpAllegroApi\Model\DeliverySettingsResponseJoinPolicy',
+        'custom_cost' => '\robsonek\phpAllegroApi\Model\DeliverySettingsResponseCustomCost',
         'updated_at' => 'string'
     ];
 
@@ -339,7 +339,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\DeliverySettingsResponseMarketplace
+     * @return \robsonek\phpAllegroApi\Model\DeliverySettingsResponseMarketplace
      */
     public function getMarketplace()
     {
@@ -349,7 +349,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\DeliverySettingsResponseMarketplace $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\DeliverySettingsResponseMarketplace $marketplace marketplace
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets free_delivery
      *
-     * @return \OpenAPI\Client\Model\DeliverySettingsResponseFreeDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\DeliverySettingsResponseFreeDelivery|null
      */
     public function getFreeDelivery()
     {
@@ -376,7 +376,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets free_delivery
      *
-     * @param \OpenAPI\Client\Model\DeliverySettingsResponseFreeDelivery|null $free_delivery free_delivery
+     * @param \robsonek\phpAllegroApi\Model\DeliverySettingsResponseFreeDelivery|null $free_delivery free_delivery
      *
      * @return self
      */
@@ -393,7 +393,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets abroad_free_delivery
      *
-     * @return \OpenAPI\Client\Model\DeliverySettingsResponseAbroadFreeDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\DeliverySettingsResponseAbroadFreeDelivery|null
      */
     public function getAbroadFreeDelivery()
     {
@@ -403,7 +403,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets abroad_free_delivery
      *
-     * @param \OpenAPI\Client\Model\DeliverySettingsResponseAbroadFreeDelivery|null $abroad_free_delivery abroad_free_delivery
+     * @param \robsonek\phpAllegroApi\Model\DeliverySettingsResponseAbroadFreeDelivery|null $abroad_free_delivery abroad_free_delivery
      *
      * @return self
      */
@@ -420,7 +420,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets join_policy
      *
-     * @return \OpenAPI\Client\Model\DeliverySettingsResponseJoinPolicy
+     * @return \robsonek\phpAllegroApi\Model\DeliverySettingsResponseJoinPolicy
      */
     public function getJoinPolicy()
     {
@@ -430,7 +430,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets join_policy
      *
-     * @param \OpenAPI\Client\Model\DeliverySettingsResponseJoinPolicy $join_policy join_policy
+     * @param \robsonek\phpAllegroApi\Model\DeliverySettingsResponseJoinPolicy $join_policy join_policy
      *
      * @return self
      */
@@ -447,7 +447,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets custom_cost
      *
-     * @return \OpenAPI\Client\Model\DeliverySettingsResponseCustomCost
+     * @return \robsonek\phpAllegroApi\Model\DeliverySettingsResponseCustomCost
      */
     public function getCustomCost()
     {
@@ -457,7 +457,7 @@ class DeliverySettingsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets custom_cost
      *
-     * @param \OpenAPI\Client\Model\DeliverySettingsResponseCustomCost $custom_cost custom_cost
+     * @param \robsonek\phpAllegroApi\Model\DeliverySettingsResponseCustomCost $custom_cost custom_cost
      *
      * @return self
      */

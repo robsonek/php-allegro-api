@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FloatCategoryParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class FloatCategoryParameter extends CategoryParameter
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'restrictions' => '\OpenAPI\Client\Model\FloatCategoryProductParameterAllOfRestrictions'
+        'restrictions' => '\robsonek\phpAllegroApi\Model\FloatCategoryProductParameterAllOfRestrictions'
     ];
 
     /**
@@ -320,7 +320,7 @@ class FloatCategoryParameter extends CategoryParameter
     /**
      * Gets restrictions
      *
-     * @return \OpenAPI\Client\Model\FloatCategoryProductParameterAllOfRestrictions|null
+     * @return \robsonek\phpAllegroApi\Model\FloatCategoryProductParameterAllOfRestrictions|null
      */
     public function getRestrictions()
     {
@@ -330,7 +330,7 @@ class FloatCategoryParameter extends CategoryParameter
     /**
      * Sets restrictions
      *
-     * @param \OpenAPI\Client\Model\FloatCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
+     * @param \robsonek\phpAllegroApi\Model\FloatCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
      *
      * @return self
      */

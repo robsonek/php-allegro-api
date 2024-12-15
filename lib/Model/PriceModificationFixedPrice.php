@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PriceModificationFixedPrice Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class PriceModificationFixedPrice extends PriceModification
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'price' => '\OpenAPI\Client\Model\Price'
+        'price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -320,7 +320,7 @@ class PriceModificationFixedPrice extends PriceModification
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -330,7 +330,7 @@ class PriceModificationFixedPrice extends PriceModification
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price New offer buy now price, related to type FIXED_PRICE.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price New offer buy now price, related to type FIXED_PRICE.
      *
      * @return self
      */

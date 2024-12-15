@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeApplication Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,11 +60,11 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'created_at' => 'string',
         'updated_at' => 'string',
-        'campaign' => '\OpenAPI\Client\Model\BadgeApplicationCampaign',
-        'offer' => '\OpenAPI\Client\Model\BadgeApplicationOffer',
-        'prices' => '\OpenAPI\Client\Model\BadgeApplicationPrices',
-        'process' => '\OpenAPI\Client\Model\BadgeApplicationProcess',
-        'purchase_constraints' => '\OpenAPI\Client\Model\BadgeApplicationPurchaseConstraints'
+        'campaign' => '\robsonek\phpAllegroApi\Model\BadgeApplicationCampaign',
+        'offer' => '\robsonek\phpAllegroApi\Model\BadgeApplicationOffer',
+        'prices' => '\robsonek\phpAllegroApi\Model\BadgeApplicationPrices',
+        'process' => '\robsonek\phpAllegroApi\Model\BadgeApplicationProcess',
+        'purchase_constraints' => '\robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraints'
     ];
 
     /**
@@ -440,7 +440,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets campaign
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationCampaign
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationCampaign
      */
     public function getCampaign()
     {
@@ -450,7 +450,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets campaign
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationCampaign $campaign campaign
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationCampaign $campaign campaign
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationOffer
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationOffer
      */
     public function getOffer()
     {
@@ -477,7 +477,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationOffer $offer offer
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationOffer $offer offer
      *
      * @return self
      */
@@ -494,7 +494,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets prices
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationPrices|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationPrices|null
      */
     public function getPrices()
     {
@@ -504,7 +504,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets prices
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationPrices|null $prices prices
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationPrices|null $prices prices
      *
      * @return self
      */
@@ -528,7 +528,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets process
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationProcess
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationProcess
      */
     public function getProcess()
     {
@@ -538,7 +538,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets process
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationProcess $process process
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationProcess $process process
      *
      * @return self
      */
@@ -555,7 +555,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets purchase_constraints
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraints|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraints|null
      */
     public function getPurchaseConstraints()
     {
@@ -565,7 +565,7 @@ class BadgeApplication implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets purchase_constraints
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraints|null $purchase_constraints purchase_constraints
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraints|null $purchase_constraints purchase_constraints
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\SizeTablesApi
+# robsonek\phpAllegroApi\SizeTablesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createTableUsingPOST()`
 
 ```php
-createTableUsingPOST($size_table_post_request): \OpenAPI\Client\Model\PublicTableDto
+createTableUsingPOST($size_table_post_request): \robsonek\phpAllegroApi\Model\PublicTableDto
 ```
 
 Create a size table
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\SizeTablesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\SizeTablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$size_table_post_request = new \OpenAPI\Client\Model\SizeTablePostRequest(); // \OpenAPI\Client\Model\SizeTablePostRequest | Size table details
+$size_table_post_request = new \robsonek\phpAllegroApi\Model\SizeTablePostRequest(); // \robsonek\phpAllegroApi\Model\SizeTablePostRequest | Size table details
 
 try {
     $result = $apiInstance->createTableUsingPOST($size_table_post_request);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **size_table_post_request** | [**\OpenAPI\Client\Model\SizeTablePostRequest**](../Model/SizeTablePostRequest.md)| Size table details | |
+| **size_table_post_request** | [**\robsonek\phpAllegroApi\Model\SizeTablePostRequest**](../Model/SizeTablePostRequest.md)| Size table details | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PublicTableDto**](../Model/PublicTableDto.md)
+[**\robsonek\phpAllegroApi\Model\PublicTableDto**](../Model/PublicTableDto.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ try {
 ## `getTableUsingGET()`
 
 ```php
-getTableUsingGET($table_id): \OpenAPI\Client\Model\PublicTableDto
+getTableUsingGET($table_id): \robsonek\phpAllegroApi\Model\PublicTableDto
 ```
 
 Get a size table
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\SizeTablesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\SizeTablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PublicTableDto**](../Model/PublicTableDto.md)
+[**\robsonek\phpAllegroApi\Model\PublicTableDto**](../Model/PublicTableDto.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `getTablesTemplatesUsingGET()`
 
 ```php
-getTablesTemplatesUsingGET(): \OpenAPI\Client\Model\SizeTableTemplatesResponse
+getTablesTemplatesUsingGET(): \robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse
 ```
 
 Get the size tables templates
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\SizeTablesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\SizeTablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SizeTableTemplatesResponse**](../Model/SizeTableTemplatesResponse.md)
+[**\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse**](../Model/SizeTableTemplatesResponse.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 ## `getTablesUsingGET()`
 
 ```php
-getTablesUsingGET(): \OpenAPI\Client\Model\PublicTablesDto
+getTablesUsingGET(): \robsonek\phpAllegroApi\Model\PublicTablesDto
 ```
 
 Get the user's size tables
@@ -206,10 +206,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\SizeTablesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\SizeTablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PublicTablesDto**](../Model/PublicTablesDto.md)
+[**\robsonek\phpAllegroApi\Model\PublicTablesDto**](../Model/PublicTablesDto.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ This endpoint does not need any parameter.
 ## `modifyTableUsingPUT()`
 
 ```php
-modifyTableUsingPUT($table_id, $size_table_put_request): \OpenAPI\Client\Model\PublicTableDto
+modifyTableUsingPUT($table_id, $size_table_put_request): \robsonek\phpAllegroApi\Model\PublicTableDto
 ```
 
 Update a size table
@@ -263,17 +263,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\SizeTablesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\SizeTablesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $table_id = 'table_id_example'; // string | Table identifier.
-$size_table_put_request = new \OpenAPI\Client\Model\SizeTablePutRequest(); // \OpenAPI\Client\Model\SizeTablePutRequest | Size table details
+$size_table_put_request = new \robsonek\phpAllegroApi\Model\SizeTablePutRequest(); // \robsonek\phpAllegroApi\Model\SizeTablePutRequest | Size table details
 
 try {
     $result = $apiInstance->modifyTableUsingPUT($table_id, $size_table_put_request);
@@ -288,11 +288,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **table_id** | **string**| Table identifier. | |
-| **size_table_put_request** | [**\OpenAPI\Client\Model\SizeTablePutRequest**](../Model/SizeTablePutRequest.md)| Size table details | |
+| **size_table_put_request** | [**\robsonek\phpAllegroApi\Model\SizeTablePutRequest**](../Model/SizeTablePutRequest.md)| Size table details | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PublicTableDto**](../Model/PublicTableDto.md)
+[**\robsonek\phpAllegroApi\Model\PublicTableDto**](../Model/PublicTableDto.md)
 
 ### Authorization
 

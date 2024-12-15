@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTableTemplatesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SizeTableTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'templates' => '\OpenAPI\Client\Model\SizeTableTemplateResponse[]'
+        'templates' => '\robsonek\phpAllegroApi\Model\SizeTableTemplateResponse[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class SizeTableTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets templates
      *
-     * @return \OpenAPI\Client\Model\SizeTableTemplateResponse[]
+     * @return \robsonek\phpAllegroApi\Model\SizeTableTemplateResponse[]
      */
     public function getTemplates()
     {
@@ -305,7 +305,7 @@ class SizeTableTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets templates
      *
-     * @param \OpenAPI\Client\Model\SizeTableTemplateResponse[] $templates size tables templates
+     * @param \robsonek\phpAllegroApi\Model\SizeTableTemplateResponse[] $templates size tables templates
      *
      * @return self
      */

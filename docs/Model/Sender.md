@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | [**\OpenAPI\Client\Model\ParcelCreationAddressWithMandatoryPlace**](ParcelCreationAddressWithMandatoryPlace.md) |  |
+**address** | [**\robsonek\phpAllegroApi\Model\ParcelCreationAddressWithMandatoryPlace**](ParcelCreationAddressWithMandatoryPlace.md) |  |
 **email** | **string** | Email. | [optional]
 **name** | **string** | Person name. | [optional]
 **company** | **string** | Company name. | [optional]

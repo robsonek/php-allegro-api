@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryParametersScheduledChangesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CategoryParametersScheduledChangesResponse implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scheduled_changes' => '\OpenAPI\Client\Model\CategoryParametersScheduledBaseChange[]'
+        'scheduled_changes' => '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChange[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CategoryParametersScheduledChangesResponse implements ModelInterface, Arra
     /**
      * Gets scheduled_changes
      *
-     * @return \OpenAPI\Client\Model\CategoryParametersScheduledBaseChange[]
+     * @return \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChange[]
      */
     public function getScheduledChanges()
     {
@@ -305,7 +305,7 @@ class CategoryParametersScheduledChangesResponse implements ModelInterface, Arra
     /**
      * Sets scheduled_changes
      *
-     * @param \OpenAPI\Client\Model\CategoryParametersScheduledBaseChange[] $scheduled_changes The list of scheduled changes.
+     * @param \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChange[] $scheduled_changes The list of scheduled changes.
      *
      * @return self
      */

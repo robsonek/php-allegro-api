@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **score** | **float** | The total score for the given day. |
 **grade** | **string** | The main sales quality level for the given day. |
 **max_score** | **float** | The maximum possible total score for the given day. |
-**metrics** | [**\OpenAPI\Client\Model\SalesQualityMetric[]**](SalesQualityMetric.md) |  |
+**metrics** | [**\robsonek\phpAllegroApi\Model\SalesQualityMetric[]**](SalesQualityMetric.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

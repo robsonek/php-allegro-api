@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AllegroPickupDropOffPoint Class Doc Comment
  *
  * @category Class
  * @description Allegro pickup drop off point.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,13 +61,13 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
         'id' => 'string',
         'name' => 'string',
         'type' => 'string',
-        'services' => '\OpenAPI\Client\Model\AllegroPickupDropOffPointServicesInner[]',
-        'restrictions' => '\OpenAPI\Client\Model\AllegroPickupDropOffPointRestrictionsInner[]',
+        'services' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointServicesInner[]',
+        'restrictions' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointRestrictionsInner[]',
         'description' => 'string',
-        'payments' => '\OpenAPI\Client\Model\AllegroPickupDropOffPointPaymentsInner[]',
-        'address' => '\OpenAPI\Client\Model\AllegroPickupDropOffPointAddress',
-        'opening' => '\OpenAPI\Client\Model\AllegroPickupDropOffPointOpeningInner[]',
-        'carriers' => '\OpenAPI\Client\Model\AllegroCarrier[]'
+        'payments' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointPaymentsInner[]',
+        'address' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointAddress',
+        'opening' => '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointOpeningInner[]',
+        'carriers' => '\robsonek\phpAllegroApi\Model\AllegroCarrier[]'
     ];
 
     /**
@@ -498,7 +498,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets services
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointServicesInner[]
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointServicesInner[]
      */
     public function getServices()
     {
@@ -508,7 +508,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets services
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPointServicesInner[] $services Point services.
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointServicesInner[] $services Point services.
      *
      * @return self
      */
@@ -525,7 +525,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets restrictions
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointRestrictionsInner[]
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointRestrictionsInner[]
      */
     public function getRestrictions()
     {
@@ -535,7 +535,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets restrictions
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPointRestrictionsInner[] $restrictions Point restrictions.
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointRestrictionsInner[] $restrictions Point restrictions.
      *
      * @return self
      */
@@ -579,7 +579,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointPaymentsInner[]
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointPaymentsInner[]
      */
     public function getPayments()
     {
@@ -589,7 +589,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPointPaymentsInner[] $payments Point payment type.
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointPaymentsInner[] $payments Point payment type.
      *
      * @return self
      */
@@ -606,7 +606,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointAddress
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointAddress
      */
     public function getAddress()
     {
@@ -616,7 +616,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPointAddress $address address
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointAddress $address address
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets opening
      *
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointOpeningInner[]
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointOpeningInner[]
      */
     public function getOpening()
     {
@@ -643,7 +643,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets opening
      *
-     * @param \OpenAPI\Client\Model\AllegroPickupDropOffPointOpeningInner[] $opening Point working hours information.
+     * @param \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointOpeningInner[] $opening Point working hours information.
      *
      * @return self
      */
@@ -660,7 +660,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets carriers
      *
-     * @return \OpenAPI\Client\Model\AllegroCarrier[]
+     * @return \robsonek\phpAllegroApi\Model\AllegroCarrier[]
      */
     public function getCarriers()
     {
@@ -670,7 +670,7 @@ class AllegroPickupDropOffPoint implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets carriers
      *
-     * @param \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carriers that can drop off/pick up packages from point.
+     * @param \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carriers that can drop off/pick up packages from point.
      *
      * @return self
      */

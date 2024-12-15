@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdvanceShipNoticesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -160,7 +160,7 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of the Advance Ship Notice to cancel. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -177,7 +177,7 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of the Advance Ship Notice to cancel. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -378,12 +378,12 @@ class AdvanceShipNoticesApi
      *
      * Create an Advance Ship Notice
      *
-     * @param  \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request create_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request create_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function createAdvanceShipNotice($create_advance_ship_notice_request, string $contentType = self::contentTypes['createAdvanceShipNotice'][0])
     {
@@ -396,12 +396,12 @@ class AdvanceShipNoticesApi
      *
      * Create an Advance Ship Notice
      *
-     * @param  \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAdvanceShipNoticeWithHttpInfo($create_advance_ship_notice_request, string $contentType = self::contentTypes['createAdvanceShipNotice'][0])
     {
@@ -432,11 +432,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -454,16 +454,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -481,16 +481,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -508,7 +508,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -527,7 +527,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -560,7 +560,7 @@ class AdvanceShipNoticesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse',
+                        '\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class AdvanceShipNoticesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -576,7 +576,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -591,7 +591,7 @@ class AdvanceShipNoticesApi
      *
      * Create an Advance Ship Notice
      *
-     * @param  \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -612,7 +612,7 @@ class AdvanceShipNoticesApi
      *
      * Create an Advance Ship Notice
      *
-     * @param  \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -620,7 +620,7 @@ class AdvanceShipNoticesApi
      */
     public function createAdvanceShipNoticeAsyncWithHttpInfo($create_advance_ship_notice_request, string $contentType = self::contentTypes['createAdvanceShipNotice'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse';
         $request = $this->createAdvanceShipNoticeRequest($create_advance_ship_notice_request, $contentType);
 
         return $this->client
@@ -662,7 +662,7 @@ class AdvanceShipNoticesApi
     /**
      * Create request for operation 'createAdvanceShipNotice'
      *
-     * @param  \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest $create_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -762,7 +762,7 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of the Advance Ship Notice to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -779,7 +779,7 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of the Advance Ship Notice to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -983,9 +983,9 @@ class AdvanceShipNoticesApi
      * @param  string $id The identifier of returned Advance Ship Notice. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeResponse
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse
      */
     public function getAdvanceShipNotice($id, string $contentType = self::contentTypes['getAdvanceShipNotice'][0])
     {
@@ -1001,9 +1001,9 @@ class AdvanceShipNoticesApi
      * @param  string $id The identifier of returned Advance Ship Notice. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdvanceShipNoticeResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAdvanceShipNoticeWithHttpInfo($id, string $contentType = self::contentTypes['getAdvanceShipNotice'][0])
     {
@@ -1034,11 +1034,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1056,7 +1056,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdvanceShipNoticeResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1075,7 +1075,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1108,7 +1108,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdvanceShipNoticeResponse',
+                        '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1152,7 +1152,7 @@ class AdvanceShipNoticesApi
      */
     public function getAdvanceShipNoticeAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getAdvanceShipNotice'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
         $request = $this->getAdvanceShipNoticeRequest($id, $contentType);
 
         return $this->client
@@ -1296,7 +1296,7 @@ class AdvanceShipNoticesApi
      * @param  string $accept Content-type of generated labels. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNoticeLabels'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -1315,7 +1315,7 @@ class AdvanceShipNoticesApi
      * @param  string $accept Content-type of generated labels. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNoticeLabels'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1623,9 +1623,9 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of advance ship notice. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNoticeReceivingState'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReceivingState
+     * @return \robsonek\phpAllegroApi\Model\ReceivingState
      */
     public function getAdvanceShipNoticeReceivingState($id, string $contentType = self::contentTypes['getAdvanceShipNoticeReceivingState'][0])
     {
@@ -1641,9 +1641,9 @@ class AdvanceShipNoticesApi
      * @param  string $id An identifier of advance ship notice. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNoticeReceivingState'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReceivingState, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ReceivingState, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAdvanceShipNoticeReceivingStateWithHttpInfo($id, string $contentType = self::contentTypes['getAdvanceShipNoticeReceivingState'][0])
     {
@@ -1674,11 +1674,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReceivingState' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ReceivingState' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReceivingState' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ReceivingState' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1696,7 +1696,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReceivingState', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ReceivingState', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1715,7 +1715,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReceivingState';
+            $returnType = '\robsonek\phpAllegroApi\Model\ReceivingState';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1748,7 +1748,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReceivingState',
+                        '\robsonek\phpAllegroApi\Model\ReceivingState',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1792,7 +1792,7 @@ class AdvanceShipNoticesApi
      */
     public function getAdvanceShipNoticeReceivingStateAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getAdvanceShipNoticeReceivingState'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReceivingState';
+        $returnType = '\robsonek\phpAllegroApi\Model\ReceivingState';
         $request = $this->getAdvanceShipNoticeReceivingStateRequest($id, $contentType);
 
         return $this->client
@@ -1934,12 +1934,12 @@ class AdvanceShipNoticesApi
      *
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotices'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeList|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeList|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getAdvanceShipNotices($offset = 0, $limit = 50, $status = null, string $contentType = self::contentTypes['getAdvanceShipNotices'][0])
     {
@@ -1954,12 +1954,12 @@ class AdvanceShipNoticesApi
      *
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotices'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdvanceShipNoticeList|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdvanceShipNoticeList|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAdvanceShipNoticesWithHttpInfo($offset = 0, $limit = 50, $status = null, string $contentType = self::contentTypes['getAdvanceShipNotices'][0])
     {
@@ -1990,11 +1990,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdvanceShipNoticeList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdvanceShipNoticeList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2012,16 +2012,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdvanceShipNoticeList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2039,7 +2039,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2058,7 +2058,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeList';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2091,7 +2091,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdvanceShipNoticeList',
+                        '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2099,7 +2099,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2116,7 +2116,7 @@ class AdvanceShipNoticesApi
      *
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2139,7 +2139,7 @@ class AdvanceShipNoticesApi
      *
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2147,7 +2147,7 @@ class AdvanceShipNoticesApi
      */
     public function getAdvanceShipNoticesAsyncWithHttpInfo($offset = 0, $limit = 50, $status = null, string $contentType = self::contentTypes['getAdvanceShipNotices'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeList';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList';
         $request = $this->getAdvanceShipNoticesRequest($offset, $limit, $status, $contentType);
 
         return $this->client
@@ -2191,7 +2191,7 @@ class AdvanceShipNoticesApi
      *
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] $status A status of the Advance Ship Notices in the response. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdvanceShipNotices'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2316,9 +2316,9 @@ class AdvanceShipNoticesApi
      * @param  string $command_id An identifier of the command. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSubmitCommand'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SubmitCommand|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\SubmitCommand|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getSubmitCommand($command_id, string $contentType = self::contentTypes['getSubmitCommand'][0])
     {
@@ -2334,9 +2334,9 @@ class AdvanceShipNoticesApi
      * @param  string $command_id An identifier of the command. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSubmitCommand'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SubmitCommand|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SubmitCommand|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubmitCommandWithHttpInfo($command_id, string $contentType = self::contentTypes['getSubmitCommand'][0])
     {
@@ -2367,11 +2367,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SubmitCommand' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SubmitCommand' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SubmitCommand' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SubmitCommand' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2389,16 +2389,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SubmitCommand', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SubmitCommand', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2416,7 +2416,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2435,7 +2435,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SubmitCommand';
+            $returnType = '\robsonek\phpAllegroApi\Model\SubmitCommand';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2468,7 +2468,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SubmitCommand',
+                        '\robsonek\phpAllegroApi\Model\SubmitCommand',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2476,7 +2476,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2520,7 +2520,7 @@ class AdvanceShipNoticesApi
      */
     public function getSubmitCommandAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getSubmitCommand'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SubmitCommand';
+        $returnType = '\robsonek\phpAllegroApi\Model\SubmitCommand';
         $request = $this->getSubmitCommandRequest($command_id, $contentType);
 
         return $this->client
@@ -2661,12 +2661,12 @@ class AdvanceShipNoticesApi
      * Submit the Advance Ship Notice
      *
      * @param  string $command_id The identifier of the command. (required)
-     * @param  \OpenAPI\Client\Model\SubmitCommand $submit_command submit_command (required)
+     * @param  \robsonek\phpAllegroApi\Model\SubmitCommand $submit_command submit_command (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitCommand'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SubmitCommand|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\SubmitCommand|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function submitCommand($command_id, $submit_command, string $contentType = self::contentTypes['submitCommand'][0])
     {
@@ -2680,12 +2680,12 @@ class AdvanceShipNoticesApi
      * Submit the Advance Ship Notice
      *
      * @param  string $command_id The identifier of the command. (required)
-     * @param  \OpenAPI\Client\Model\SubmitCommand $submit_command (required)
+     * @param  \robsonek\phpAllegroApi\Model\SubmitCommand $submit_command (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitCommand'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SubmitCommand|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SubmitCommand|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitCommandWithHttpInfo($command_id, $submit_command, string $contentType = self::contentTypes['submitCommand'][0])
     {
@@ -2716,11 +2716,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\SubmitCommand' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SubmitCommand' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SubmitCommand' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SubmitCommand' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2738,16 +2738,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SubmitCommand', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SubmitCommand', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2765,7 +2765,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2784,7 +2784,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SubmitCommand';
+            $returnType = '\robsonek\phpAllegroApi\Model\SubmitCommand';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2817,7 +2817,7 @@ class AdvanceShipNoticesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SubmitCommand',
+                        '\robsonek\phpAllegroApi\Model\SubmitCommand',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2825,7 +2825,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2841,7 +2841,7 @@ class AdvanceShipNoticesApi
      * Submit the Advance Ship Notice
      *
      * @param  string $command_id The identifier of the command. (required)
-     * @param  \OpenAPI\Client\Model\SubmitCommand $submit_command (required)
+     * @param  \robsonek\phpAllegroApi\Model\SubmitCommand $submit_command (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitCommand'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2863,7 +2863,7 @@ class AdvanceShipNoticesApi
      * Submit the Advance Ship Notice
      *
      * @param  string $command_id The identifier of the command. (required)
-     * @param  \OpenAPI\Client\Model\SubmitCommand $submit_command (required)
+     * @param  \robsonek\phpAllegroApi\Model\SubmitCommand $submit_command (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitCommand'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2871,7 +2871,7 @@ class AdvanceShipNoticesApi
      */
     public function submitCommandAsyncWithHttpInfo($command_id, $submit_command, string $contentType = self::contentTypes['submitCommand'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SubmitCommand';
+        $returnType = '\robsonek\phpAllegroApi\Model\SubmitCommand';
         $request = $this->submitCommandRequest($command_id, $submit_command, $contentType);
 
         return $this->client
@@ -2914,7 +2914,7 @@ class AdvanceShipNoticesApi
      * Create request for operation 'submitCommand'
      *
      * @param  string $command_id The identifier of the command. (required)
-     * @param  \OpenAPI\Client\Model\SubmitCommand $submit_command (required)
+     * @param  \robsonek\phpAllegroApi\Model\SubmitCommand $submit_command (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitCommand'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3028,12 +3028,12 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNotice $advance_ship_notice advance_ship_notice (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNotice $advance_ship_notice advance_ship_notice (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function updateAdvanceShipNotice($id, $if_match, $advance_ship_notice, string $contentType = self::contentTypes['updateAdvanceShipNotice'][0])
     {
@@ -3048,12 +3048,12 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNotice $advance_ship_notice (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNotice $advance_ship_notice (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAdvanceShipNoticeWithHttpInfo($id, $if_match, $advance_ship_notice, string $contentType = self::contentTypes['updateAdvanceShipNotice'][0])
     {
@@ -3084,11 +3084,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3106,16 +3106,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdvanceShipNoticeResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3133,7 +3133,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3152,7 +3152,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3185,7 +3185,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdvanceShipNoticeResponse',
+                        '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3193,7 +3193,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3210,7 +3210,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNotice $advance_ship_notice (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNotice $advance_ship_notice (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3233,7 +3233,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNotice $advance_ship_notice (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNotice $advance_ship_notice (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3241,7 +3241,7 @@ class AdvanceShipNoticesApi
      */
     public function updateAdvanceShipNoticeAsyncWithHttpInfo($id, $if_match, $advance_ship_notice, string $contentType = self::contentTypes['updateAdvanceShipNotice'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
         $request = $this->updateAdvanceShipNoticeRequest($id, $if_match, $advance_ship_notice, $contentType);
 
         return $this->client
@@ -3285,7 +3285,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\AdvanceShipNotice $advance_ship_notice (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdvanceShipNotice $advance_ship_notice (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3410,12 +3410,12 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request update_submitted_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request update_submitted_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSubmittedAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function updateSubmittedAdvanceShipNotice($id, $if_match, $update_submitted_advance_ship_notice_request, string $contentType = self::contentTypes['updateSubmittedAdvanceShipNotice'][0])
     {
@@ -3430,12 +3430,12 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSubmittedAdvanceShipNotice'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdvanceShipNoticeResponse|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateSubmittedAdvanceShipNoticeWithHttpInfo($id, $if_match, $update_submitted_advance_ship_notice_request, string $contentType = self::contentTypes['updateSubmittedAdvanceShipNotice'][0])
     {
@@ -3466,11 +3466,11 @@ class AdvanceShipNoticesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdvanceShipNoticeResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3488,16 +3488,16 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdvanceShipNoticeResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3515,7 +3515,7 @@ class AdvanceShipNoticesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3534,7 +3534,7 @@ class AdvanceShipNoticesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3567,7 +3567,7 @@ class AdvanceShipNoticesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdvanceShipNoticeResponse',
+                        '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3575,7 +3575,7 @@ class AdvanceShipNoticesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3592,7 +3592,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSubmittedAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3615,7 +3615,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSubmittedAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3623,7 +3623,7 @@ class AdvanceShipNoticesApi
      */
     public function updateSubmittedAdvanceShipNoticeAsyncWithHttpInfo($id, $if_match, $update_submitted_advance_ship_notice_request, string $contentType = self::contentTypes['updateSubmittedAdvanceShipNotice'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdvanceShipNoticeResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse';
         $request = $this->updateSubmittedAdvanceShipNoticeRequest($id, $if_match, $update_submitted_advance_ship_notice_request, $contentType);
 
         return $this->client
@@ -3667,7 +3667,7 @@ class AdvanceShipNoticesApi
      *
      * @param  string $id An identifier of Advance Ship Notice. (required)
      * @param  string $if_match A current version of Advance Ship Notice (e.g. from etag header obtained via get). (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest $update_submitted_advance_ship_notice_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSubmittedAdvanceShipNotice'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ListingResponseCategories Class Doc Comment
  *
  * @category Class
  * @description Information about categories.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ListingResponseCategories implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subcategories' => '\OpenAPI\Client\Model\ListingCategoryWithCount[]',
-        'path' => '\OpenAPI\Client\Model\ListingCategory[]'
+        'subcategories' => '\robsonek\phpAllegroApi\Model\ListingCategoryWithCount[]',
+        'path' => '\robsonek\phpAllegroApi\Model\ListingCategory[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class ListingResponseCategories implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets subcategories
      *
-     * @return \OpenAPI\Client\Model\ListingCategoryWithCount[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingCategoryWithCount[]|null
      */
     public function getSubcategories()
     {
@@ -310,7 +310,7 @@ class ListingResponseCategories implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets subcategories
      *
-     * @param \OpenAPI\Client\Model\ListingCategoryWithCount[]|null $subcategories Categories with counters, which can be used to refine search results.
+     * @param \robsonek\phpAllegroApi\Model\ListingCategoryWithCount[]|null $subcategories Categories with counters, which can be used to refine search results.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class ListingResponseCategories implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets path
      *
-     * @return \OpenAPI\Client\Model\ListingCategory[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingCategory[]|null
      */
     public function getPath()
     {
@@ -337,7 +337,7 @@ class ListingResponseCategories implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets path
      *
-     * @param \OpenAPI\Client\Model\ListingCategory[]|null $path Categories path to the current listing category (breadcrumbs).
+     * @param \robsonek\phpAllegroApi\Model\ListingCategory[]|null $path Categories path to the current listing category (breadcrumbs).
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\ResponsiblePersonsApi
+# robsonek\phpAllegroApi\ResponsiblePersonsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `responsiblePersonsGET()`
 
 ```php
-responsiblePersonsGET($accept, $offset, $limit): \OpenAPI\Client\Model\ResponsiblePersonsGET200Response
+responsiblePersonsGET($accept, $offset, $limit): \robsonek\phpAllegroApi\Model\ResponsiblePersonsGET200Response
 ```
 
 Get the list of responsible persons
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsiblePersonsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsiblePersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsiblePersonsGET200Response**](../Model/ResponsiblePersonsGET200Response.md)
+[**\robsonek\phpAllegroApi\Model\ResponsiblePersonsGET200Response**](../Model/ResponsiblePersonsGET200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `responsiblePersonsPOST()`
 
 ```php
-responsiblePersonsPOST($accept, $content_type, $create_responsible_person_request): \OpenAPI\Client\Model\ResponsiblePersonResponse
+responsiblePersonsPOST($accept, $content_type, $create_responsible_person_request): \robsonek\phpAllegroApi\Model\ResponsiblePersonResponse
 ```
 
 Create responsible person
@@ -91,10 +91,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsiblePersonsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsiblePersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ $apiInstance = new OpenAPI\Client\Api\ResponsiblePersonsApi(
 );
 $accept = application/vnd.allegro.public.v1+json; // string | Acceptable representation of the response.
 $content_type = application/vnd.allegro.public.v1+json; // string | Content type of the request body.
-$create_responsible_person_request = new \OpenAPI\Client\Model\CreateResponsiblePersonRequest(); // \OpenAPI\Client\Model\CreateResponsiblePersonRequest
+$create_responsible_person_request = new \robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequest(); // \robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequest
 
 try {
     $result = $apiInstance->responsiblePersonsPOST($accept, $content_type, $create_responsible_person_request);
@@ -118,11 +118,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **accept** | **string**| Acceptable representation of the response. | |
 | **content_type** | **string**| Content type of the request body. | |
-| **create_responsible_person_request** | [**\OpenAPI\Client\Model\CreateResponsiblePersonRequest**](../Model/CreateResponsiblePersonRequest.md)|  | |
+| **create_responsible_person_request** | [**\robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequest**](../Model/CreateResponsiblePersonRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsiblePersonResponse**](../Model/ResponsiblePersonResponse.md)
+[**\robsonek\phpAllegroApi\Model\ResponsiblePersonResponse**](../Model/ResponsiblePersonResponse.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ try {
 ## `responsiblePersonsPUT()`
 
 ```php
-responsiblePersonsPUT($id, $accept, $content_type, $update_responsible_person_request): \OpenAPI\Client\Model\ResponsiblePersonResponse
+responsiblePersonsPUT($id, $accept, $content_type, $update_responsible_person_request): \robsonek\phpAllegroApi\Model\ResponsiblePersonResponse
 ```
 
 Update responsible person
@@ -155,10 +155,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsiblePersonsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsiblePersonsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -167,7 +167,7 @@ $apiInstance = new OpenAPI\Client\Api\ResponsiblePersonsApi(
 $id = 'id_example'; // string | Responsible person ID.
 $accept = application/vnd.allegro.public.v1+json; // string | Acceptable representation of the response.
 $content_type = application/vnd.allegro.public.v1+json; // string | Content type of the request body.
-$update_responsible_person_request = new \OpenAPI\Client\Model\UpdateResponsiblePersonRequest(); // \OpenAPI\Client\Model\UpdateResponsiblePersonRequest
+$update_responsible_person_request = new \robsonek\phpAllegroApi\Model\UpdateResponsiblePersonRequest(); // \robsonek\phpAllegroApi\Model\UpdateResponsiblePersonRequest
 
 try {
     $result = $apiInstance->responsiblePersonsPUT($id, $accept, $content_type, $update_responsible_person_request);
@@ -184,11 +184,11 @@ try {
 | **id** | **string**| Responsible person ID. | |
 | **accept** | **string**| Acceptable representation of the response. | |
 | **content_type** | **string**| Content type of the request body. | |
-| **update_responsible_person_request** | [**\OpenAPI\Client\Model\UpdateResponsiblePersonRequest**](../Model/UpdateResponsiblePersonRequest.md)|  | |
+| **update_responsible_person_request** | [**\robsonek\phpAllegroApi\Model\UpdateResponsiblePersonRequest**](../Model/UpdateResponsiblePersonRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsiblePersonResponse**](../Model/ResponsiblePersonResponse.md)
+[**\robsonek\phpAllegroApi\Model\ResponsiblePersonResponse**](../Model/ResponsiblePersonResponse.md)
 
 ### Authorization
 

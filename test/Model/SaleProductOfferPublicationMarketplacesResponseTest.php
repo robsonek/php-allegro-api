@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Information about publication in multiple marketplaces.&lt;br/&gt; See [Changes in listing offers - we will add the possibility to display offers in foreign domains of Allegro&#39;s marketplaces](https://developer.allegro.pl/news/changes-in-listing-offers-we-will-add-the-possibility-to-display-offers-in-foreign-domains-of-allegro-s-marketplaces-9gKv0RVzRTK) for more details regarding this field
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

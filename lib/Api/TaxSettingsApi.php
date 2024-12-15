@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * TaxSettingsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,9 +131,9 @@ class TaxSettingsApi
      * @param  string[] $country_code Country code for which tax settings will be returned. If not provided settings for all countries will be returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTaxSettingsForCategory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryTaxSettings|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategoryTaxSettings|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getTaxSettingsForCategory($category_id, $country_code = null, string $contentType = self::contentTypes['getTaxSettingsForCategory'][0])
     {
@@ -150,9 +150,9 @@ class TaxSettingsApi
      * @param  string[] $country_code Country code for which tax settings will be returned. If not provided settings for all countries will be returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTaxSettingsForCategory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryTaxSettings|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryTaxSettings|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTaxSettingsForCategoryWithHttpInfo($category_id, $country_code = null, string $contentType = self::contentTypes['getTaxSettingsForCategory'][0])
     {
@@ -183,11 +183,11 @@ class TaxSettingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryTaxSettings' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryTaxSettings' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryTaxSettings' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryTaxSettings' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -205,16 +205,16 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryTaxSettings', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryTaxSettings', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -232,16 +232,16 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -259,16 +259,16 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -286,16 +286,16 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -313,16 +313,16 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -340,7 +340,7 @@ class TaxSettingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -359,7 +359,7 @@ class TaxSettingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryTaxSettings';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryTaxSettings';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -392,7 +392,7 @@ class TaxSettingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryTaxSettings',
+                        '\robsonek\phpAllegroApi\Model\CategoryTaxSettings',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -400,7 +400,7 @@ class TaxSettingsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -408,7 +408,7 @@ class TaxSettingsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -416,7 +416,7 @@ class TaxSettingsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -424,7 +424,7 @@ class TaxSettingsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -432,7 +432,7 @@ class TaxSettingsApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -478,7 +478,7 @@ class TaxSettingsApi
      */
     public function getTaxSettingsForCategoryAsyncWithHttpInfo($category_id, $country_code = null, string $contentType = self::contentTypes['getTaxSettingsForCategory'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryTaxSettings';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryTaxSettings';
         $request = $this->getTaxSettingsForCategoryRequest($category_id, $country_code, $contentType);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServicesGroups Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AdditionalServicesGroups implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_services_groups' => '\OpenAPI\Client\Model\AdditionalServicesGroupResponse[]'
+        'additional_services_groups' => '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AdditionalServicesGroups implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets additional_services_groups
      *
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroupResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse[]|null
      */
     public function getAdditionalServicesGroups()
     {
@@ -302,7 +302,7 @@ class AdditionalServicesGroups implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets additional_services_groups
      *
-     * @param \OpenAPI\Client\Model\AdditionalServicesGroupResponse[]|null $additional_services_groups additional_services_groups
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse[]|null $additional_services_groups additional_services_groups
      *
      * @return self
      */

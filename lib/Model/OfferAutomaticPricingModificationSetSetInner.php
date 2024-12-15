@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAutomaticPricingModificationSetSetInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace',
-        'rule' => '\OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInnerRule',
-        'configuration' => '\OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration'
+        'marketplace' => '\robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace',
+        'rule' => '\robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInnerRule',
+        'configuration' => '\robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration'
     ];
 
     /**
@@ -312,7 +312,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace
+     * @return \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace
      */
     public function getMarketplace()
     {
@@ -322,7 +322,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Gets rule
      *
-     * @return \OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInnerRule
+     * @return \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInnerRule
      */
     public function getRule()
     {
@@ -349,7 +349,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Sets rule
      *
-     * @param \OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInnerRule $rule rule
+     * @param \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInnerRule $rule rule
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Gets configuration
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration|null
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration|null
      */
     public function getConfiguration()
     {
@@ -376,7 +376,7 @@ class OfferAutomaticPricingModificationSetSetInner implements ModelInterface, Ar
     /**
      * Sets configuration
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration|null $configuration configuration
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration|null $configuration configuration
      *
      * @return self
      */

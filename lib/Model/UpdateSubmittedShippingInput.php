@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UpdateSubmittedShippingInput Class Doc Comment
  *
  * @category Class
  * @description Represents information about package shipment.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class UpdateSubmittedShippingInput implements ModelInterface, ArrayAccess, \Json
     protected static $openAPITypes = [
         'estimated_time_of_arrival' => '\DateTime',
         'truck_licence_plate' => 'string',
-        'courier' => '\OpenAPI\Client\Model\Courier',
-        'third_party' => '\OpenAPI\Client\Model\ThirdParty'
+        'courier' => '\robsonek\phpAllegroApi\Model\Courier',
+        'third_party' => '\robsonek\phpAllegroApi\Model\ThirdParty'
     ];
 
     /**
@@ -368,7 +368,7 @@ class UpdateSubmittedShippingInput implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets courier
      *
-     * @return \OpenAPI\Client\Model\Courier|null
+     * @return \robsonek\phpAllegroApi\Model\Courier|null
      */
     public function getCourier()
     {
@@ -378,7 +378,7 @@ class UpdateSubmittedShippingInput implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets courier
      *
-     * @param \OpenAPI\Client\Model\Courier|null $courier courier
+     * @param \robsonek\phpAllegroApi\Model\Courier|null $courier courier
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class UpdateSubmittedShippingInput implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets third_party
      *
-     * @return \OpenAPI\Client\Model\ThirdParty|null
+     * @return \robsonek\phpAllegroApi\Model\ThirdParty|null
      */
     public function getThirdParty()
     {
@@ -405,7 +405,7 @@ class UpdateSubmittedShippingInput implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets third_party
      *
-     * @param \OpenAPI\Client\Model\ThirdParty|null $third_party third_party
+     * @param \robsonek\phpAllegroApi\Model\ThirdParty|null $third_party third_party
      *
      * @return self
      */

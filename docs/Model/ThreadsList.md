@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**threads** | [**\OpenAPI\Client\Model\Thread[]**](Thread.md) |  |
+**threads** | [**\robsonek\phpAllegroApi\Model\Thread[]**](Thread.md) |  |
 **offset** | **int** |  |
 **limit** | **int** |  |
 

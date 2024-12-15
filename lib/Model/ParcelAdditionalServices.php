@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelAdditionalServices Class Doc Comment
  *
  * @category Class
  * @description Additional services.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ParcelAdditionalServices implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cash_on_delivery' => '\OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDelivery',
+        'cash_on_delivery' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDelivery',
         'options' => 'string[]'
     ];
 
@@ -300,7 +300,7 @@ class ParcelAdditionalServices implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets cash_on_delivery
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDelivery|null
      */
     public function getCashOnDelivery()
     {
@@ -310,7 +310,7 @@ class ParcelAdditionalServices implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets cash_on_delivery
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDelivery|null $cash_on_delivery cash_on_delivery
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDelivery|null $cash_on_delivery cash_on_delivery
      *
      * @return self
      */

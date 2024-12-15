@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CancelParcel201Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CancelParcel201Response implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'input' => '\OpenAPI\Client\Model\CancelParcelParameters'
+        'input' => '\robsonek\phpAllegroApi\Model\CancelParcelParameters'
     ];
 
     /**
@@ -326,7 +326,7 @@ class CancelParcel201Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\CancelParcelParameters|null
+     * @return \robsonek\phpAllegroApi\Model\CancelParcelParameters|null
      */
     public function getInput()
     {
@@ -336,7 +336,7 @@ class CancelParcel201Response implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\CancelParcelParameters|null $input input
+     * @param \robsonek\phpAllegroApi\Model\CancelParcelParameters|null $input input
      *
      * @return self
      */

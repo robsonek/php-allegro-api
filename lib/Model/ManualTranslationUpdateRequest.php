@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ManualTranslationUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ManualTranslationUpdateRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'description' => '\OpenAPI\Client\Model\ManualDescriptionTranslation',
-        'title' => '\OpenAPI\Client\Model\ManualTitleTranslation'
+        'description' => '\robsonek\phpAllegroApi\Model\ManualDescriptionTranslation',
+        'title' => '\robsonek\phpAllegroApi\Model\ManualTitleTranslation'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ManualTranslationUpdateRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\ManualDescriptionTranslation|null
+     * @return \robsonek\phpAllegroApi\Model\ManualDescriptionTranslation|null
      */
     public function getDescription()
     {
@@ -309,7 +309,7 @@ class ManualTranslationUpdateRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\ManualDescriptionTranslation|null $description description
+     * @param \robsonek\phpAllegroApi\Model\ManualDescriptionTranslation|null $description description
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class ManualTranslationUpdateRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets title
      *
-     * @return \OpenAPI\Client\Model\ManualTitleTranslation|null
+     * @return \robsonek\phpAllegroApi\Model\ManualTitleTranslation|null
      */
     public function getTitle()
     {
@@ -336,7 +336,7 @@ class ManualTranslationUpdateRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets title
      *
-     * @param \OpenAPI\Client\Model\ManualTitleTranslation|null $title title
+     * @param \robsonek\phpAllegroApi\Model\ManualTitleTranslation|null $title title
      *
      * @return self
      */

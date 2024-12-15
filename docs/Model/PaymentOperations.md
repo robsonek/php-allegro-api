@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**payment_operations** | [**\OpenAPI\Client\Model\BaseOperation[]**](BaseOperation.md) | Collection of payment operations. |
+**payment_operations** | [**\robsonek\phpAllegroApi\Model\BaseOperation[]**](BaseOperation.md) | Collection of payment operations. |
 **count** | **int** | Number of payment operations returned in search result for the given parameters. |
 **total_count** | **int** | Total number of payment operations for the given parameters. |
 

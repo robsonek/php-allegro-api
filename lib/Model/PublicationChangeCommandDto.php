@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PublicationChangeCommandDto Class Doc Comment
  *
  * @category Class
  * @description Publication modification command payload
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class PublicationChangeCommandDto implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_criteria' => '\OpenAPI\Client\Model\OfferCriterium[]',
-        'publication' => '\OpenAPI\Client\Model\PublicationModification'
+        'offer_criteria' => '\robsonek\phpAllegroApi\Model\OfferCriterium[]',
+        'publication' => '\robsonek\phpAllegroApi\Model\PublicationModification'
     ];
 
     /**
@@ -300,7 +300,7 @@ class PublicationChangeCommandDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets offer_criteria
      *
-     * @return \OpenAPI\Client\Model\OfferCriterium[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferCriterium[]|null
      */
     public function getOfferCriteria()
     {
@@ -310,7 +310,7 @@ class PublicationChangeCommandDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets offer_criteria
      *
-     * @param \OpenAPI\Client\Model\OfferCriterium[]|null $offer_criteria List of offer criteria
+     * @param \robsonek\phpAllegroApi\Model\OfferCriterium[]|null $offer_criteria List of offer criteria
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class PublicationChangeCommandDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\PublicationModification|null
+     * @return \robsonek\phpAllegroApi\Model\PublicationModification|null
      */
     public function getPublication()
     {
@@ -337,7 +337,7 @@ class PublicationChangeCommandDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\PublicationModification|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\PublicationModification|null $publication publication
      *
      * @return self
      */

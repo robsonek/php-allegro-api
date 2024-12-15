@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ConstraintCriteria Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ConstraintCriteria implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'country' => 'string',
         'type' => 'string',
-        'delivery_methods' => '\OpenAPI\Client\Model\JustId[]'
+        'delivery_methods' => '\robsonek\phpAllegroApi\Model\JustId[]'
     ];
 
     /**
@@ -394,7 +394,7 @@ class ConstraintCriteria implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets delivery_methods
      *
-     * @return \OpenAPI\Client\Model\JustId[]|null
+     * @return \robsonek\phpAllegroApi\Model\JustId[]|null
      */
     public function getDeliveryMethods()
     {
@@ -404,7 +404,7 @@ class ConstraintCriteria implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets delivery_methods
      *
-     * @param \OpenAPI\Client\Model\JustId[]|null $delivery_methods This is used by additional services that are realised in transport (e.g. CARRY_IN), and this field exists together with COUNTRY_DELIVERY_SAME_QUANTITY constraint type. It describes which delivery methods can realise particular service.
+     * @param \robsonek\phpAllegroApi\Model\JustId[]|null $delivery_methods This is used by additional services that are realised in transport (e.g. CARRY_IN), and this field exists together with COUNTRY_DELIVERY_SAME_QUANTITY constraint type. It describes which delivery methods can realise particular service.
      *
      * @return self
      */

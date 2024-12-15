@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelTrackingHistoryTrackingDetails Class Doc Comment
  *
  * @category Class
  * @description Parcel tracking history if available.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ParcelTrackingHistoryTrackingDetails implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'statuses' => '\OpenAPI\Client\Model\ParcelTrackingStatus[]',
+        'statuses' => '\robsonek\phpAllegroApi\Model\ParcelTrackingStatus[]',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime'
     ];
@@ -316,7 +316,7 @@ class ParcelTrackingHistoryTrackingDetails implements ModelInterface, ArrayAcces
     /**
      * Gets statuses
      *
-     * @return \OpenAPI\Client\Model\ParcelTrackingStatus[]
+     * @return \robsonek\phpAllegroApi\Model\ParcelTrackingStatus[]
      */
     public function getStatuses()
     {
@@ -326,7 +326,7 @@ class ParcelTrackingHistoryTrackingDetails implements ModelInterface, ArrayAcces
     /**
      * Sets statuses
      *
-     * @param \OpenAPI\Client\Model\ParcelTrackingStatus[] $statuses List of parcel shipping statuses
+     * @param \robsonek\phpAllegroApi\Model\ParcelTrackingStatus[] $statuses List of parcel shipping statuses
      *
      * @return self
      */

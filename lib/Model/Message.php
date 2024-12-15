@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Message Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,14 +61,14 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
         'status' => 'string',
         'type' => 'string',
         'created_at' => '\DateTime',
-        'thread' => '\OpenAPI\Client\Model\ThreadId',
-        'author' => '\OpenAPI\Client\Model\MessageAuthor',
+        'thread' => '\robsonek\phpAllegroApi\Model\ThreadId',
+        'author' => '\robsonek\phpAllegroApi\Model\MessageAuthor',
         'text' => 'string',
         'subject' => 'string',
-        'relates_to' => '\OpenAPI\Client\Model\MessageRelatedObject',
+        'relates_to' => '\robsonek\phpAllegroApi\Model\MessageRelatedObject',
         'has_additional_attachments' => 'bool',
-        'attachments' => '\OpenAPI\Client\Model\MessageAttachmentInfo[]',
-        'additional_information' => '\OpenAPI\Client\Model\MessageAdditionalInformation'
+        'attachments' => '\robsonek\phpAllegroApi\Model\MessageAttachmentInfo[]',
+        'additional_information' => '\robsonek\phpAllegroApi\Model\MessageAdditionalInformation'
     ];
 
     /**
@@ -583,7 +583,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thread
      *
-     * @return \OpenAPI\Client\Model\ThreadId
+     * @return \robsonek\phpAllegroApi\Model\ThreadId
      */
     public function getThread()
     {
@@ -593,7 +593,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thread
      *
-     * @param \OpenAPI\Client\Model\ThreadId $thread thread
+     * @param \robsonek\phpAllegroApi\Model\ThreadId $thread thread
      *
      * @return self
      */
@@ -610,7 +610,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets author
      *
-     * @return \OpenAPI\Client\Model\MessageAuthor
+     * @return \robsonek\phpAllegroApi\Model\MessageAuthor
      */
     public function getAuthor()
     {
@@ -620,7 +620,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets author
      *
-     * @param \OpenAPI\Client\Model\MessageAuthor $author author
+     * @param \robsonek\phpAllegroApi\Model\MessageAuthor $author author
      *
      * @return self
      */
@@ -698,7 +698,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets relates_to
      *
-     * @return \OpenAPI\Client\Model\MessageRelatedObject
+     * @return \robsonek\phpAllegroApi\Model\MessageRelatedObject
      */
     public function getRelatesTo()
     {
@@ -708,7 +708,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets relates_to
      *
-     * @param \OpenAPI\Client\Model\MessageRelatedObject $relates_to relates_to
+     * @param \robsonek\phpAllegroApi\Model\MessageRelatedObject $relates_to relates_to
      *
      * @return self
      */
@@ -752,7 +752,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attachments
      *
-     * @return \OpenAPI\Client\Model\MessageAttachmentInfo[]
+     * @return \robsonek\phpAllegroApi\Model\MessageAttachmentInfo[]
      */
     public function getAttachments()
     {
@@ -762,7 +762,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attachments
      *
-     * @param \OpenAPI\Client\Model\MessageAttachmentInfo[] $attachments attachments
+     * @param \robsonek\phpAllegroApi\Model\MessageAttachmentInfo[] $attachments attachments
      *
      * @return self
      */
@@ -779,7 +779,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_information
      *
-     * @return \OpenAPI\Client\Model\MessageAdditionalInformation|null
+     * @return \robsonek\phpAllegroApi\Model\MessageAdditionalInformation|null
      */
     public function getAdditionalInformation()
     {
@@ -789,7 +789,7 @@ class Message implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_information
      *
-     * @param \OpenAPI\Client\Model\MessageAdditionalInformation|null $additional_information additional_information
+     * @param \robsonek\phpAllegroApi\Model\MessageAdditionalInformation|null $additional_information additional_information
      *
      * @return self
      */

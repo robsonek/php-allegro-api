@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSetElementResponsiblePersonRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ProductSetElementResponsiblePersonRequest implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responsible_person' => '\OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson'
+        'responsible_person' => '\robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ProductSetElementResponsiblePersonRequest implements ModelInterface, Array
     /**
      * Gets responsible_person
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null
      */
     public function getResponsiblePerson()
     {
@@ -302,7 +302,7 @@ class ProductSetElementResponsiblePersonRequest implements ModelInterface, Array
     /**
      * Sets responsible_person
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null $responsible_person responsible_person
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null $responsible_person responsible_person
      *
      * @return self
      */

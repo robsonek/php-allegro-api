@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**events** | [**\OpenAPI\Client\Model\CategoryBaseEvent[]**](CategoryBaseEvent.md) | The list of events. |
+**events** | [**\robsonek\phpAllegroApi\Model\CategoryBaseEvent[]**](CategoryBaseEvent.md) | The list of events. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

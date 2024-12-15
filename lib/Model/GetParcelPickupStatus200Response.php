@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetParcelPickupStatus200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetParcelPickupStatus200Response implements ModelInterface, ArrayAccess, \
     protected static $openAPITypes = [
         'id' => 'string',
         'status' => 'string',
-        'errors' => '\OpenAPI\Client\Model\Error200[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\Error200[]'
     ];
 
     /**
@@ -398,7 +398,7 @@ class GetParcelPickupStatus200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error200[]|null
+     * @return \robsonek\phpAllegroApi\Model\Error200[]|null
      */
     public function getErrors()
     {
@@ -408,7 +408,7 @@ class GetParcelPickupStatus200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error200[]|null $errors Array of errors.
+     * @param \robsonek\phpAllegroApi\Model\Error200[]|null $errors Array of errors.
      *
      * @return self
      */

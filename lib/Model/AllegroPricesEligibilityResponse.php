@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AllegroPricesEligibilityResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class AllegroPricesEligibilityResponse implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'consent' => 'string',
-        'qualification' => '\OpenAPI\Client\Model\AllegroPricesQualificationResponse',
-        'additional_marketplaces' => 'array<string,\OpenAPI\Client\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>'
+        'qualification' => '\robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse',
+        'additional_marketplaces' => 'array<string,\robsonek\phpAllegroApi\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>'
     ];
 
     /**
@@ -367,7 +367,7 @@ class AllegroPricesEligibilityResponse implements ModelInterface, ArrayAccess, \
     /**
      * Gets qualification
      *
-     * @return \OpenAPI\Client\Model\AllegroPricesQualificationResponse|null
+     * @return \robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse|null
      */
     public function getQualification()
     {
@@ -377,7 +377,7 @@ class AllegroPricesEligibilityResponse implements ModelInterface, ArrayAccess, \
     /**
      * Sets qualification
      *
-     * @param \OpenAPI\Client\Model\AllegroPricesQualificationResponse|null $qualification qualification
+     * @param \robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse|null $qualification qualification
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class AllegroPricesEligibilityResponse implements ModelInterface, ArrayAccess, \
     /**
      * Gets additional_marketplaces
      *
-     * @return array<string,\OpenAPI\Client\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>|null
+     * @return array<string,\robsonek\phpAllegroApi\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -404,7 +404,7 @@ class AllegroPricesEligibilityResponse implements ModelInterface, ArrayAccess, \
     /**
      * Sets additional_marketplaces
      *
-     * @param array<string,\OpenAPI\Client\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>|null $additional_marketplaces Eligibility state on marketplces other than the base marketplace of the account.
+     * @param array<string,\robsonek\phpAllegroApi\Model\AllegroPricesEligibilityResponseAdditionalMarketplacesValue>|null $additional_marketplaces Eligibility state on marketplces other than the base marketplace of the account.
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\ContactsApi
+# robsonek\phpAllegroApi\ContactsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createContactUsingPOST()`
 
 ```php
-createContactUsingPOST($contact_request): \OpenAPI\Client\Model\ContactResponse
+createContactUsingPOST($contact_request): \robsonek\phpAllegroApi\Model\ContactResponse
 ```
 
 Create a new contact
@@ -28,16 +28,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ContactsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$contact_request = new \OpenAPI\Client\Model\ContactRequest(); // \OpenAPI\Client\Model\ContactRequest | New contact
+$contact_request = new \robsonek\phpAllegroApi\Model\ContactRequest(); // \robsonek\phpAllegroApi\Model\ContactRequest | New contact
 
 try {
     $result = $apiInstance->createContactUsingPOST($contact_request);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **contact_request** | [**\OpenAPI\Client\Model\ContactRequest**](../Model/ContactRequest.md)| New contact | |
+| **contact_request** | [**\robsonek\phpAllegroApi\Model\ContactRequest**](../Model/ContactRequest.md)| New contact | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ContactResponse**](../Model/ContactResponse.md)
+[**\robsonek\phpAllegroApi\Model\ContactResponse**](../Model/ContactResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getContactUsingGET()`
 
 ```php
-getContactUsingGET($id): \OpenAPI\Client\Model\ContactResponse
+getContactUsingGET($id): \robsonek\phpAllegroApi\Model\ContactResponse
 ```
 
 Get contact details
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ContactsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ContactResponse**](../Model/ContactResponse.md)
+[**\robsonek\phpAllegroApi\Model\ContactResponse**](../Model/ContactResponse.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ try {
 ## `getListOfContactsUsingGET()`
 
 ```php
-getListOfContactsUsingGET(): \OpenAPI\Client\Model\ContactResponseList
+getListOfContactsUsingGET(): \robsonek\phpAllegroApi\Model\ContactResponseList
 ```
 
 Get the user's contacts
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ContactsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -172,7 +172,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ContactResponseList**](../Model/ContactResponseList.md)
+[**\robsonek\phpAllegroApi\Model\ContactResponseList**](../Model/ContactResponseList.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ This endpoint does not need any parameter.
 ## `modifyContactUsingPUT()`
 
 ```php
-modifyContactUsingPUT($id, $contact_request): \OpenAPI\Client\Model\ContactResponse
+modifyContactUsingPUT($id, $contact_request): \robsonek\phpAllegroApi\Model\ContactResponse
 ```
 
 Modify contact details
@@ -205,17 +205,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ContactsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Contact identifier.
-$contact_request = new \OpenAPI\Client\Model\ContactRequest(); // \OpenAPI\Client\Model\ContactRequest | Contact
+$contact_request = new \robsonek\phpAllegroApi\Model\ContactRequest(); // \robsonek\phpAllegroApi\Model\ContactRequest | Contact
 
 try {
     $result = $apiInstance->modifyContactUsingPUT($id, $contact_request);
@@ -230,11 +230,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Contact identifier. | |
-| **contact_request** | [**\OpenAPI\Client\Model\ContactRequest**](../Model/ContactRequest.md)| Contact | |
+| **contact_request** | [**\robsonek\phpAllegroApi\Model\ContactRequest**](../Model/ContactRequest.md)| Contact | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ContactResponse**](../Model/ContactResponse.md)
+[**\robsonek\phpAllegroApi\Model\ContactResponse**](../Model/ContactResponse.md)
 
 ### Authorization
 

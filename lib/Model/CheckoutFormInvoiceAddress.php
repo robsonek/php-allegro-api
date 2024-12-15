@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormInvoiceAddress Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class CheckoutFormInvoiceAddress implements ModelInterface, ArrayAccess, \JsonSe
         'city' => 'string',
         'zip_code' => 'string',
         'country_code' => 'string',
-        'company' => '\OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompany',
-        'natural_person' => '\OpenAPI\Client\Model\CheckoutFormInvoiceAddressNaturalPerson'
+        'company' => '\robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompany',
+        'natural_person' => '\robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressNaturalPerson'
     ];
 
     /**
@@ -447,7 +447,7 @@ class CheckoutFormInvoiceAddress implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets company
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompany|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompany|null
      */
     public function getCompany()
     {
@@ -457,7 +457,7 @@ class CheckoutFormInvoiceAddress implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets company
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompany|null $company company
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompany|null $company company
      *
      * @return self
      */
@@ -474,7 +474,7 @@ class CheckoutFormInvoiceAddress implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets natural_person
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormInvoiceAddressNaturalPerson|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressNaturalPerson|null
      */
     public function getNaturalPerson()
     {
@@ -484,7 +484,7 @@ class CheckoutFormInvoiceAddress implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets natural_person
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormInvoiceAddressNaturalPerson|null $natural_person natural_person
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressNaturalPerson|null $natural_person natural_person
      *
      * @return self
      */

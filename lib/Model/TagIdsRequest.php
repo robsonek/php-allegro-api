@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * TagIdsRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class TagIdsRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\OpenAPI\Client\Model\TagId[]'
+        'tags' => '\robsonek\phpAllegroApi\Model\TagId[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class TagIdsRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tags
      *
-     * @return \OpenAPI\Client\Model\TagId[]
+     * @return \robsonek\phpAllegroApi\Model\TagId[]
      */
     public function getTags()
     {
@@ -305,7 +305,7 @@ class TagIdsRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param \OpenAPI\Client\Model\TagId[] $tags tags
+     * @param \robsonek\phpAllegroApi\Model\TagId[] $tags tags
      *
      * @return self
      */

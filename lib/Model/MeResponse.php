@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MeResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class MeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
         'first_name' => 'string',
         'last_name' => 'string',
         'email' => 'string',
-        'base_marketplace' => '\OpenAPI\Client\Model\MeResponseBaseMarketplace',
-        'company' => '\OpenAPI\Client\Model\Company',
+        'base_marketplace' => '\robsonek\phpAllegroApi\Model\MeResponseBaseMarketplace',
+        'company' => '\robsonek\phpAllegroApi\Model\Company',
         'features' => 'string[]'
     ];
 
@@ -476,7 +476,7 @@ class MeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets base_marketplace
      *
-     * @return \OpenAPI\Client\Model\MeResponseBaseMarketplace|null
+     * @return \robsonek\phpAllegroApi\Model\MeResponseBaseMarketplace|null
      */
     public function getBaseMarketplace()
     {
@@ -486,7 +486,7 @@ class MeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets base_marketplace
      *
-     * @param \OpenAPI\Client\Model\MeResponseBaseMarketplace|null $base_marketplace base_marketplace
+     * @param \robsonek\phpAllegroApi\Model\MeResponseBaseMarketplace|null $base_marketplace base_marketplace
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class MeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company
      *
-     * @return \OpenAPI\Client\Model\Company|null
+     * @return \robsonek\phpAllegroApi\Model\Company|null
      */
     public function getCompany()
     {
@@ -513,7 +513,7 @@ class MeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company
      *
-     * @param \OpenAPI\Client\Model\Company|null $company company
+     * @param \robsonek\phpAllegroApi\Model\Company|null $company company
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MessageRequest Class Doc Comment
  *
  * @category Class
  * @description Request body to add message to the dispute. Presence of text or attachment fields or both is required.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class MessageRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'text' => 'string',
-        'attachment' => '\OpenAPI\Client\Model\DisputeAttachmentId',
+        'attachment' => '\robsonek\phpAllegroApi\Model\DisputeAttachmentId',
         'type' => 'string'
     ];
 
@@ -375,7 +375,7 @@ class MessageRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attachment
      *
-     * @return \OpenAPI\Client\Model\DisputeAttachmentId
+     * @return \robsonek\phpAllegroApi\Model\DisputeAttachmentId
      */
     public function getAttachment()
     {
@@ -385,7 +385,7 @@ class MessageRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attachment
      *
-     * @param \OpenAPI\Client\Model\DisputeAttachmentId $attachment attachment
+     * @param \robsonek\phpAllegroApi\Model\DisputeAttachmentId $attachment attachment
      *
      * @return self
      */

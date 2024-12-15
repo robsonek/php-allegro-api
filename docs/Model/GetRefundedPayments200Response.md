@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**refunds** | [**\OpenAPI\Client\Model\RefundDetails[]**](RefundDetails.md) | Collection of payments refunds. | [optional]
+**refunds** | [**\robsonek\phpAllegroApi\Model\RefundDetails[]**](RefundDetails.md) | Collection of payments refunds. | [optional]
 **count** | **int** | Number of payment operations returned in search result for the given parameters. | [optional]
 **total_count** | **int** | Total number of payment operations for the given parameters. | [optional]
 

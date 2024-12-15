@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PublicTablesDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PublicTablesDto implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tables' => '\OpenAPI\Client\Model\PublicTableDto[]'
+        'tables' => '\robsonek\phpAllegroApi\Model\PublicTableDto[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PublicTablesDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tables
      *
-     * @return \OpenAPI\Client\Model\PublicTableDto[]
+     * @return \robsonek\phpAllegroApi\Model\PublicTableDto[]
      */
     public function getTables()
     {
@@ -305,7 +305,7 @@ class PublicTablesDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tables
      *
-     * @param \OpenAPI\Client\Model\PublicTableDto[] $tables tables
+     * @param \robsonek\phpAllegroApi\Model\PublicTableDto[] $tables tables
      *
      * @return self
      */

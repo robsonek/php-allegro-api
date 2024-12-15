@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UserRatingSummaryResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'average_rates' => '\OpenAPI\Client\Model\AverageRates',
-        'not_recommended' => '\OpenAPI\Client\Model\UserRatingSummaryResponseNotRecommended',
-        'recommended' => '\OpenAPI\Client\Model\UserRatingSummaryResponseRecommended',
+        'average_rates' => '\robsonek\phpAllegroApi\Model\AverageRates',
+        'not_recommended' => '\robsonek\phpAllegroApi\Model\UserRatingSummaryResponseNotRecommended',
+        'recommended' => '\robsonek\phpAllegroApi\Model\UserRatingSummaryResponseRecommended',
         'recommended_percentage' => 'string'
     ];
 
@@ -322,7 +322,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets average_rates
      *
-     * @return \OpenAPI\Client\Model\AverageRates|null
+     * @return \robsonek\phpAllegroApi\Model\AverageRates|null
      */
     public function getAverageRates()
     {
@@ -332,7 +332,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets average_rates
      *
-     * @param \OpenAPI\Client\Model\AverageRates|null $average_rates average_rates
+     * @param \robsonek\phpAllegroApi\Model\AverageRates|null $average_rates average_rates
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets not_recommended
      *
-     * @return \OpenAPI\Client\Model\UserRatingSummaryResponseNotRecommended
+     * @return \robsonek\phpAllegroApi\Model\UserRatingSummaryResponseNotRecommended
      */
     public function getNotRecommended()
     {
@@ -359,7 +359,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets not_recommended
      *
-     * @param \OpenAPI\Client\Model\UserRatingSummaryResponseNotRecommended $not_recommended not_recommended
+     * @param \robsonek\phpAllegroApi\Model\UserRatingSummaryResponseNotRecommended $not_recommended not_recommended
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets recommended
      *
-     * @return \OpenAPI\Client\Model\UserRatingSummaryResponseRecommended
+     * @return \robsonek\phpAllegroApi\Model\UserRatingSummaryResponseRecommended
      */
     public function getRecommended()
     {
@@ -386,7 +386,7 @@ class UserRatingSummaryResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets recommended
      *
-     * @param \OpenAPI\Client\Model\UserRatingSummaryResponseRecommended $recommended recommended
+     * @param \robsonek\phpAllegroApi\Model\UserRatingSummaryResponseRecommended $recommended recommended
      *
      * @return self
      */

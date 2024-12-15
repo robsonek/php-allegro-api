@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferPriceChangedEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class OfferPriceChangedEvent extends SellerOfferBaseEvent
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'offer' => '\OpenAPI\Client\Model\OfferEventExternalOfferForPriceChanges'
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferEventExternalOfferForPriceChanges'
     ];
 
     /**
@@ -323,7 +323,7 @@ class OfferPriceChangedEvent extends SellerOfferBaseEvent
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferEventExternalOfferForPriceChanges
+     * @return \robsonek\phpAllegroApi\Model\OfferEventExternalOfferForPriceChanges
      */
     public function getOffer()
     {
@@ -333,7 +333,7 @@ class OfferPriceChangedEvent extends SellerOfferBaseEvent
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferEventExternalOfferForPriceChanges $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferEventExternalOfferForPriceChanges $offer offer
      *
      * @return self
      */

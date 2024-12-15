@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ListingResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\ListingResponseOffers',
-        'categories' => '\OpenAPI\Client\Model\ListingResponseCategories',
-        'filters' => '\OpenAPI\Client\Model\ListingResponseFilters[]',
-        'search_meta' => '\OpenAPI\Client\Model\ListingResponseSearchMeta',
-        'sort' => '\OpenAPI\Client\Model\ListingResponseSort[]'
+        'items' => '\robsonek\phpAllegroApi\Model\ListingResponseOffers',
+        'categories' => '\robsonek\phpAllegroApi\Model\ListingResponseCategories',
+        'filters' => '\robsonek\phpAllegroApi\Model\ListingResponseFilters[]',
+        'search_meta' => '\robsonek\phpAllegroApi\Model\ListingResponseSearchMeta',
+        'sort' => '\robsonek\phpAllegroApi\Model\ListingResponseSort[]'
     ];
 
     /**
@@ -320,7 +320,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ListingResponseOffers|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseOffers|null
      */
     public function getItems()
     {
@@ -330,7 +330,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ListingResponseOffers|null $items items
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseOffers|null $items items
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets categories
      *
-     * @return \OpenAPI\Client\Model\ListingResponseCategories|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseCategories|null
      */
     public function getCategories()
     {
@@ -357,7 +357,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets categories
      *
-     * @param \OpenAPI\Client\Model\ListingResponseCategories|null $categories categories
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseCategories|null $categories categories
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets filters
      *
-     * @return \OpenAPI\Client\Model\ListingResponseFilters[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseFilters[]|null
      */
     public function getFilters()
     {
@@ -384,7 +384,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets filters
      *
-     * @param \OpenAPI\Client\Model\ListingResponseFilters[]|null $filters An array of filters with counters available for given search. This can be used to refine the search results.
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseFilters[]|null $filters An array of filters with counters available for given search. This can be used to refine the search results.
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets search_meta
      *
-     * @return \OpenAPI\Client\Model\ListingResponseSearchMeta|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseSearchMeta|null
      */
     public function getSearchMeta()
     {
@@ -411,7 +411,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets search_meta
      *
-     * @param \OpenAPI\Client\Model\ListingResponseSearchMeta|null $search_meta search_meta
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseSearchMeta|null $search_meta search_meta
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sort
      *
-     * @return \OpenAPI\Client\Model\ListingResponseSort[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseSort[]|null
      */
     public function getSort()
     {
@@ -438,7 +438,7 @@ class ListingResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sort
      *
-     * @param \OpenAPI\Client\Model\ListingResponseSort[]|null $sort Available sorting options.
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseSort[]|null $sort Available sorting options.
      *
      * @return self
      */

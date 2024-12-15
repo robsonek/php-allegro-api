@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategorySuggestionCategoryNode Class Doc Comment
  *
  * @category Class
  * @description Category suggestion category object.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class CategorySuggestionCategoryNode implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'parent' => '\OpenAPI\Client\Model\CategorySuggestionCategoryNode'
+        'parent' => '\robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode'
     ];
 
     /**
@@ -367,7 +367,7 @@ class CategorySuggestionCategoryNode implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets parent
      *
-     * @return \OpenAPI\Client\Model\CategorySuggestionCategoryNode|null
+     * @return \robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode|null
      */
     public function getParent()
     {
@@ -377,7 +377,7 @@ class CategorySuggestionCategoryNode implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets parent
      *
-     * @param \OpenAPI\Client\Model\CategorySuggestionCategoryNode|null $parent parent
+     * @param \robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode|null $parent parent
      *
      * @return self
      */

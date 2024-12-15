@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ReceivingState Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ReceivingState implements ModelInterface, ArrayAccess, \JsonSerializable
         'updated_at' => '\DateTime',
         'stage' => 'string',
         'display_number' => 'string',
-        'content' => '\OpenAPI\Client\Model\ReceivingEntry[]'
+        'content' => '\robsonek\phpAllegroApi\Model\ReceivingEntry[]'
     ];
 
     /**
@@ -428,7 +428,7 @@ class ReceivingState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets content
      *
-     * @return \OpenAPI\Client\Model\ReceivingEntry[]|null
+     * @return \robsonek\phpAllegroApi\Model\ReceivingEntry[]|null
      */
     public function getContent()
     {
@@ -438,7 +438,7 @@ class ReceivingState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets content
      *
-     * @param \OpenAPI\Client\Model\ReceivingEntry[]|null $content The list of products with receiving status.
+     * @param \robsonek\phpAllegroApi\Model\ReceivingEntry[]|null $content The list of products with receiving status.
      *
      * @return self
      */

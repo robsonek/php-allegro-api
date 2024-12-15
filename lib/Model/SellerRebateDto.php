@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SellerRebateDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class SellerRebateDto implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'benefits' => '\OpenAPI\Client\Model\Benefit[]',
+        'benefits' => '\robsonek\phpAllegroApi\Model\Benefit[]',
         'created_at' => '\DateTime',
         'id' => 'string',
-        'offer_criteria' => '\OpenAPI\Client\Model\SellerRebateOfferCriterion[]',
+        'offer_criteria' => '\robsonek\phpAllegroApi\Model\SellerRebateOfferCriterion[]',
         'status' => 'string'
     ];
 
@@ -358,7 +358,7 @@ class SellerRebateDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets benefits
      *
-     * @return \OpenAPI\Client\Model\Benefit[]
+     * @return \robsonek\phpAllegroApi\Model\Benefit[]
      */
     public function getBenefits()
     {
@@ -368,7 +368,7 @@ class SellerRebateDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets benefits
      *
-     * @param \OpenAPI\Client\Model\Benefit[] $benefits What kind of rebate will be given
+     * @param \robsonek\phpAllegroApi\Model\Benefit[] $benefits What kind of rebate will be given
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class SellerRebateDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer_criteria
      *
-     * @return \OpenAPI\Client\Model\SellerRebateOfferCriterion[]
+     * @return \robsonek\phpAllegroApi\Model\SellerRebateOfferCriterion[]
      */
     public function getOfferCriteria()
     {
@@ -449,7 +449,7 @@ class SellerRebateDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer_criteria
      *
-     * @param \OpenAPI\Client\Model\SellerRebateOfferCriterion[] $offer_criteria What offers will be included
+     * @param \robsonek\phpAllegroApi\Model\SellerRebateOfferCriterion[] $offer_criteria What offers will be included
      *
      * @return self
      */

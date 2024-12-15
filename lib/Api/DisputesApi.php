@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DisputesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -151,12 +151,12 @@ class DisputesApi
      * Add a message to a dispute
      *
      * @param  string $dispute_id Dispute identifier. (required)
-     * @param  \OpenAPI\Client\Model\MessageRequest $message_request Message request (required)
+     * @param  \robsonek\phpAllegroApi\Model\MessageRequest $message_request Message request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addMessageToDisputeUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DisputeMessage
+     * @return \robsonek\phpAllegroApi\Model\DisputeMessage
      */
     public function addMessageToDisputeUsingPOST($dispute_id, $message_request, string $contentType = self::contentTypes['addMessageToDisputeUsingPOST'][0])
     {
@@ -170,12 +170,12 @@ class DisputesApi
      * Add a message to a dispute
      *
      * @param  string $dispute_id Dispute identifier. (required)
-     * @param  \OpenAPI\Client\Model\MessageRequest $message_request Message request (required)
+     * @param  \robsonek\phpAllegroApi\Model\MessageRequest $message_request Message request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addMessageToDisputeUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DisputeMessage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\DisputeMessage, HTTP status code, HTTP response headers (array of strings)
      */
     public function addMessageToDisputeUsingPOSTWithHttpInfo($dispute_id, $message_request, string $contentType = self::contentTypes['addMessageToDisputeUsingPOST'][0])
     {
@@ -206,11 +206,11 @@ class DisputesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\DisputeMessage' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\DisputeMessage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DisputeMessage' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\DisputeMessage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -228,7 +228,7 @@ class DisputesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DisputeMessage', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\DisputeMessage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -247,7 +247,7 @@ class DisputesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\DisputeMessage';
+            $returnType = '\robsonek\phpAllegroApi\Model\DisputeMessage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -280,7 +280,7 @@ class DisputesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisputeMessage',
+                        '\robsonek\phpAllegroApi\Model\DisputeMessage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -296,7 +296,7 @@ class DisputesApi
      * Add a message to a dispute
      *
      * @param  string $dispute_id Dispute identifier. (required)
-     * @param  \OpenAPI\Client\Model\MessageRequest $message_request Message request (required)
+     * @param  \robsonek\phpAllegroApi\Model\MessageRequest $message_request Message request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addMessageToDisputeUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -318,7 +318,7 @@ class DisputesApi
      * Add a message to a dispute
      *
      * @param  string $dispute_id Dispute identifier. (required)
-     * @param  \OpenAPI\Client\Model\MessageRequest $message_request Message request (required)
+     * @param  \robsonek\phpAllegroApi\Model\MessageRequest $message_request Message request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addMessageToDisputeUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -326,7 +326,7 @@ class DisputesApi
      */
     public function addMessageToDisputeUsingPOSTAsyncWithHttpInfo($dispute_id, $message_request, string $contentType = self::contentTypes['addMessageToDisputeUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DisputeMessage';
+        $returnType = '\robsonek\phpAllegroApi\Model\DisputeMessage';
         $request = $this->addMessageToDisputeUsingPOSTRequest($dispute_id, $message_request, $contentType);
 
         return $this->client
@@ -369,7 +369,7 @@ class DisputesApi
      * Create request for operation 'addMessageToDisputeUsingPOST'
      *
      * @param  string $dispute_id Dispute identifier. (required)
-     * @param  \OpenAPI\Client\Model\MessageRequest $message_request Message request (required)
+     * @param  \robsonek\phpAllegroApi\Model\MessageRequest $message_request Message request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addMessageToDisputeUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -481,12 +481,12 @@ class DisputesApi
      *
      * Create an attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
+     * @param  \robsonek\phpAllegroApi\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAnAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DisputeAttachmentId
+     * @return \robsonek\phpAllegroApi\Model\DisputeAttachmentId
      */
     public function createAnAttachmentUsingPOST($attachment_declaration, string $contentType = self::contentTypes['createAnAttachmentUsingPOST'][0])
     {
@@ -499,12 +499,12 @@ class DisputesApi
      *
      * Create an attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
+     * @param  \robsonek\phpAllegroApi\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAnAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DisputeAttachmentId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\DisputeAttachmentId, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAnAttachmentUsingPOSTWithHttpInfo($attachment_declaration, string $contentType = self::contentTypes['createAnAttachmentUsingPOST'][0])
     {
@@ -535,11 +535,11 @@ class DisputesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\DisputeAttachmentId' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\DisputeAttachmentId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DisputeAttachmentId' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\DisputeAttachmentId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -557,7 +557,7 @@ class DisputesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DisputeAttachmentId', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\DisputeAttachmentId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -576,7 +576,7 @@ class DisputesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\DisputeAttachmentId';
+            $returnType = '\robsonek\phpAllegroApi\Model\DisputeAttachmentId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -609,7 +609,7 @@ class DisputesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisputeAttachmentId',
+                        '\robsonek\phpAllegroApi\Model\DisputeAttachmentId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -624,7 +624,7 @@ class DisputesApi
      *
      * Create an attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
+     * @param  \robsonek\phpAllegroApi\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAnAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -645,7 +645,7 @@ class DisputesApi
      *
      * Create an attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
+     * @param  \robsonek\phpAllegroApi\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAnAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -653,7 +653,7 @@ class DisputesApi
      */
     public function createAnAttachmentUsingPOSTAsyncWithHttpInfo($attachment_declaration, string $contentType = self::contentTypes['createAnAttachmentUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DisputeAttachmentId';
+        $returnType = '\robsonek\phpAllegroApi\Model\DisputeAttachmentId';
         $request = $this->createAnAttachmentUsingPOSTRequest($attachment_declaration, $contentType);
 
         return $this->client
@@ -695,7 +695,7 @@ class DisputesApi
     /**
      * Create request for operation 'createAnAttachmentUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
+     * @param  \robsonek\phpAllegroApi\Model\AttachmentDeclaration $attachment_declaration A detailed declaration of a file to be uploaded (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAnAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -795,7 +795,7 @@ class DisputesApi
      * @param  string $attachment_id Attachment identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAttachmentUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -813,7 +813,7 @@ class DisputesApi
      * @param  string $attachment_id Attachment identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAttachmentUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1107,9 +1107,9 @@ class DisputesApi
      * @param  string $dispute_id Dispute identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDisputeUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Dispute
+     * @return \robsonek\phpAllegroApi\Model\Dispute
      */
     public function getDisputeUsingGET($dispute_id, string $contentType = self::contentTypes['getDisputeUsingGET'][0])
     {
@@ -1125,9 +1125,9 @@ class DisputesApi
      * @param  string $dispute_id Dispute identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDisputeUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Dispute, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Dispute, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDisputeUsingGETWithHttpInfo($dispute_id, string $contentType = self::contentTypes['getDisputeUsingGET'][0])
     {
@@ -1158,11 +1158,11 @@ class DisputesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Dispute' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Dispute' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Dispute' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Dispute' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1180,7 +1180,7 @@ class DisputesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Dispute', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Dispute', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1199,7 +1199,7 @@ class DisputesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Dispute';
+            $returnType = '\robsonek\phpAllegroApi\Model\Dispute';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1232,7 +1232,7 @@ class DisputesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Dispute',
+                        '\robsonek\phpAllegroApi\Model\Dispute',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1276,7 +1276,7 @@ class DisputesApi
      */
     public function getDisputeUsingGETAsyncWithHttpInfo($dispute_id, string $contentType = self::contentTypes['getDisputeUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Dispute';
+        $returnType = '\robsonek\phpAllegroApi\Model\Dispute';
         $request = $this->getDisputeUsingGETRequest($dispute_id, $contentType);
 
         return $this->client
@@ -1422,9 +1422,9 @@ class DisputesApi
      * @param  string[] $status Filter disputes with given set of statuses. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfDisputesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DisputeListResponse
+     * @return \robsonek\phpAllegroApi\Model\DisputeListResponse
      */
     public function getListOfDisputesUsingGET($checkout_form_id = null, $limit = 10, $offset = 0, $status = null, string $contentType = self::contentTypes['getListOfDisputesUsingGET'][0])
     {
@@ -1443,9 +1443,9 @@ class DisputesApi
      * @param  string[] $status Filter disputes with given set of statuses. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfDisputesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DisputeListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\DisputeListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfDisputesUsingGETWithHttpInfo($checkout_form_id = null, $limit = 10, $offset = 0, $status = null, string $contentType = self::contentTypes['getListOfDisputesUsingGET'][0])
     {
@@ -1476,11 +1476,11 @@ class DisputesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DisputeListResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\DisputeListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DisputeListResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\DisputeListResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1498,7 +1498,7 @@ class DisputesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DisputeListResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\DisputeListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1517,7 +1517,7 @@ class DisputesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\DisputeListResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\DisputeListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1550,7 +1550,7 @@ class DisputesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisputeListResponse',
+                        '\robsonek\phpAllegroApi\Model\DisputeListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1600,7 +1600,7 @@ class DisputesApi
      */
     public function getListOfDisputesUsingGETAsyncWithHttpInfo($checkout_form_id = null, $limit = 10, $offset = 0, $status = null, string $contentType = self::contentTypes['getListOfDisputesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DisputeListResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\DisputeListResponse';
         $request = $this->getListOfDisputesUsingGETRequest($checkout_form_id, $limit, $offset, $status, $contentType);
 
         return $this->client
@@ -1782,9 +1782,9 @@ class DisputesApi
      * @param  int $offset Index of first returned message within dispute. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMessagesFromDisputeUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DisputeMessageList
+     * @return \robsonek\phpAllegroApi\Model\DisputeMessageList
      */
     public function getMessagesFromDisputeUsingGET($dispute_id, $limit = 10, $offset = 0, string $contentType = self::contentTypes['getMessagesFromDisputeUsingGET'][0])
     {
@@ -1802,9 +1802,9 @@ class DisputesApi
      * @param  int $offset Index of first returned message within dispute. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMessagesFromDisputeUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DisputeMessageList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\DisputeMessageList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMessagesFromDisputeUsingGETWithHttpInfo($dispute_id, $limit = 10, $offset = 0, string $contentType = self::contentTypes['getMessagesFromDisputeUsingGET'][0])
     {
@@ -1835,11 +1835,11 @@ class DisputesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DisputeMessageList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\DisputeMessageList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DisputeMessageList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\DisputeMessageList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1857,7 +1857,7 @@ class DisputesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DisputeMessageList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\DisputeMessageList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1876,7 +1876,7 @@ class DisputesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\DisputeMessageList';
+            $returnType = '\robsonek\phpAllegroApi\Model\DisputeMessageList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1909,7 +1909,7 @@ class DisputesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DisputeMessageList',
+                        '\robsonek\phpAllegroApi\Model\DisputeMessageList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1957,7 +1957,7 @@ class DisputesApi
      */
     public function getMessagesFromDisputeUsingGETAsyncWithHttpInfo($dispute_id, $limit = 10, $offset = 0, string $contentType = self::contentTypes['getMessagesFromDisputeUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DisputeMessageList';
+        $returnType = '\robsonek\phpAllegroApi\Model\DisputeMessageList';
         $request = $this->getMessagesFromDisputeUsingGETRequest($dispute_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -2143,7 +2143,7 @@ class DisputesApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadDisputeAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2172,7 +2172,7 @@ class DisputesApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadDisputeAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

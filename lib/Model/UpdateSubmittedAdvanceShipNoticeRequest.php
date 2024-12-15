@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UpdateSubmittedAdvanceShipNoticeRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\ProductItem[]',
-        'handling_unit' => '\OpenAPI\Client\Model\UpdateSubmittedHandlingUnitInput',
-        'shipping' => '\OpenAPI\Client\Model\UpdateSubmittedShippingInput'
+        'items' => '\robsonek\phpAllegroApi\Model\ProductItem[]',
+        'handling_unit' => '\robsonek\phpAllegroApi\Model\UpdateSubmittedHandlingUnitInput',
+        'shipping' => '\robsonek\phpAllegroApi\Model\UpdateSubmittedShippingInput'
     ];
 
     /**
@@ -306,7 +306,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ProductItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductItem[]|null
      */
     public function getItems()
     {
@@ -316,7 +316,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ProductItem[]|null $items A list of product items.
+     * @param \robsonek\phpAllegroApi\Model\ProductItem[]|null $items A list of product items.
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Gets handling_unit
      *
-     * @return \OpenAPI\Client\Model\UpdateSubmittedHandlingUnitInput|null
+     * @return \robsonek\phpAllegroApi\Model\UpdateSubmittedHandlingUnitInput|null
      */
     public function getHandlingUnit()
     {
@@ -343,7 +343,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Sets handling_unit
      *
-     * @param \OpenAPI\Client\Model\UpdateSubmittedHandlingUnitInput|null $handling_unit handling_unit
+     * @param \robsonek\phpAllegroApi\Model\UpdateSubmittedHandlingUnitInput|null $handling_unit handling_unit
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Gets shipping
      *
-     * @return \OpenAPI\Client\Model\UpdateSubmittedShippingInput|null
+     * @return \robsonek\phpAllegroApi\Model\UpdateSubmittedShippingInput|null
      */
     public function getShipping()
     {
@@ -370,7 +370,7 @@ class UpdateSubmittedAdvanceShipNoticeRequest implements ModelInterface, ArrayAc
     /**
      * Sets shipping
      *
-     * @param \OpenAPI\Client\Model\UpdateSubmittedShippingInput|null $shipping shipping
+     * @param \robsonek\phpAllegroApi\Model\UpdateSubmittedShippingInput|null $shipping shipping
      *
      * @return self
      */

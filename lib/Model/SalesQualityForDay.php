@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SalesQualityForDay Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class SalesQualityForDay implements ModelInterface, ArrayAccess, \JsonSerializab
         'score' => 'float',
         'grade' => 'string',
         'max_score' => 'float',
-        'metrics' => '\OpenAPI\Client\Model\SalesQualityMetric[]'
+        'metrics' => '\robsonek\phpAllegroApi\Model\SalesQualityMetric[]'
     ];
 
     /**
@@ -443,7 +443,7 @@ class SalesQualityForDay implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets metrics
      *
-     * @return \OpenAPI\Client\Model\SalesQualityMetric[]
+     * @return \robsonek\phpAllegroApi\Model\SalesQualityMetric[]
      */
     public function getMetrics()
     {
@@ -453,7 +453,7 @@ class SalesQualityForDay implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets metrics
      *
-     * @param \OpenAPI\Client\Model\SalesQualityMetric[] $metrics metrics
+     * @param \robsonek\phpAllegroApi\Model\SalesQualityMetric[] $metrics metrics
      *
      * @return self
      */

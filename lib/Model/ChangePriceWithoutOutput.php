@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ChangePriceWithoutOutput Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ChangePriceWithoutOutput implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'input' => '\OpenAPI\Client\Model\ChangePriceInput'
+        'input' => '\robsonek\phpAllegroApi\Model\ChangePriceInput'
     ];
 
     /**
@@ -329,7 +329,7 @@ class ChangePriceWithoutOutput implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\ChangePriceInput
+     * @return \robsonek\phpAllegroApi\Model\ChangePriceInput
      */
     public function getInput()
     {
@@ -339,7 +339,7 @@ class ChangePriceWithoutOutput implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\ChangePriceInput $input input
+     * @param \robsonek\phpAllegroApi\Model\ChangePriceInput $input input
      *
      * @return self
      */

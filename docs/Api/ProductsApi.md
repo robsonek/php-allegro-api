@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProductsApi
+# robsonek\phpAllegroApi\ProductsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getFlatProductParametersUsingGET()`
 
 ```php
-getFlatProductParametersUsingGET($category_id): \OpenAPI\Client\Model\CategoryProductParameterList
+getFlatProductParametersUsingGET($category_id): \robsonek\phpAllegroApi\Model\CategoryProductParameterList
 ```
 
 Get product parameters available in given category
@@ -30,13 +30,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoryProductParameterList**](../Model/CategoryProductParameterList.md)
+[**\robsonek\phpAllegroApi\Model\CategoryProductParameterList**](../Model/CategoryProductParameterList.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ try {
 ## `getProductChangeProposal()`
 
 ```php
-getProductChangeProposal($change_proposal_id, $accept_language): \OpenAPI\Client\Model\ProductChangeProposalDto
+getProductChangeProposal($change_proposal_id, $accept_language): \robsonek\phpAllegroApi\Model\ProductChangeProposalDto
 ```
 
 Get all data of the particular product changes proposal
@@ -93,10 +93,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -122,7 +122,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProductChangeProposalDto**](../Model/ProductChangeProposalDto.md)
+[**\robsonek\phpAllegroApi\Model\ProductChangeProposalDto**](../Model/ProductChangeProposalDto.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ try {
 ## `getSaleProduct()`
 
 ```php
-getSaleProduct($product_id, $category_id, $include_drafts, $language): \OpenAPI\Client\Model\SaleProductDto
+getSaleProduct($product_id, $category_id, $include_drafts, $language): \robsonek\phpAllegroApi\Model\SaleProductDto
 ```
 
 Get all data of the particular product
@@ -155,10 +155,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -188,7 +188,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SaleProductDto**](../Model/SaleProductDto.md)
+[**\robsonek\phpAllegroApi\Model\SaleProductDto**](../Model/SaleProductDto.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ try {
 ## `getSaleProducts()`
 
 ```php
-getSaleProducts($ean, $phrase, $mode, $language, $category_id, $dynamic_filters, $page_id, $search_features, $include_drafts): \OpenAPI\Client\Model\GetSaleProductsResponse
+getSaleProducts($ean, $phrase, $mode, $language, $category_id, $dynamic_filters, $page_id, $search_features, $include_drafts): \robsonek\phpAllegroApi\Model\GetSaleProductsResponse
 ```
 
 Get search products results
@@ -221,10 +221,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -264,7 +264,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetSaleProductsResponse**](../Model/GetSaleProductsResponse.md)
+[**\robsonek\phpAllegroApi\Model\GetSaleProductsResponse**](../Model/GetSaleProductsResponse.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ try {
 ## `productChangeProposal()`
 
 ```php
-productChangeProposal($product_id, $product_change_proposal_request, $accept_language): \OpenAPI\Client\Model\ProductChangeProposalDto
+productChangeProposal($product_id, $product_change_proposal_request, $accept_language): \robsonek\phpAllegroApi\Model\ProductChangeProposalDto
 ```
 
 Propose changes in product
@@ -297,17 +297,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $product_id = 'product_id_example'; // string | The product identifier.
-$product_change_proposal_request = new \OpenAPI\Client\Model\ProductChangeProposalRequest(); // \OpenAPI\Client\Model\ProductChangeProposalRequest
+$product_change_proposal_request = new \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest(); // \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest
 $accept_language = pl-PL; // string | Expected language of messages.
 
 try {
@@ -323,12 +323,12 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **product_id** | **string**| The product identifier. | |
-| **product_change_proposal_request** | [**\OpenAPI\Client\Model\ProductChangeProposalRequest**](../Model/ProductChangeProposalRequest.md)|  | |
+| **product_change_proposal_request** | [**\robsonek\phpAllegroApi\Model\ProductChangeProposalRequest**](../Model/ProductChangeProposalRequest.md)|  | |
 | **accept_language** | **string**| Expected language of messages. | [optional] [default to &#39;en-US&#39;] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProductChangeProposalDto**](../Model/ProductChangeProposalDto.md)
+[**\robsonek\phpAllegroApi\Model\ProductChangeProposalDto**](../Model/ProductChangeProposalDto.md)
 
 ### Authorization
 
@@ -346,7 +346,7 @@ try {
 ## `proposeSaleProduct()`
 
 ```php
-proposeSaleProduct($product_proposals_request): \OpenAPI\Client\Model\ProductProposalsResponse
+proposeSaleProduct($product_proposals_request): \robsonek\phpAllegroApi\Model\ProductProposalsResponse
 ```
 
 Propose a product
@@ -361,16 +361,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$product_proposals_request = new \OpenAPI\Client\Model\ProductProposalsRequest(); // \OpenAPI\Client\Model\ProductProposalsRequest
+$product_proposals_request = new \robsonek\phpAllegroApi\Model\ProductProposalsRequest(); // \robsonek\phpAllegroApi\Model\ProductProposalsRequest
 
 try {
     $result = $apiInstance->proposeSaleProduct($product_proposals_request);
@@ -384,11 +384,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **product_proposals_request** | [**\OpenAPI\Client\Model\ProductProposalsRequest**](../Model/ProductProposalsRequest.md)|  | |
+| **product_proposals_request** | [**\robsonek\phpAllegroApi\Model\ProductProposalsRequest**](../Model/ProductProposalsRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProductProposalsResponse**](../Model/ProductProposalsResponse.md)
+[**\robsonek\phpAllegroApi\Model\ProductProposalsResponse**](../Model/ProductProposalsResponse.md)
 
 ### Authorization
 

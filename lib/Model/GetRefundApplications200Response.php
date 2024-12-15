@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetRefundApplications200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetRefundApplications200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'refund_claims' => '\OpenAPI\Client\Model\RefundClaim[]',
+        'refund_claims' => '\robsonek\phpAllegroApi\Model\RefundClaim[]',
         'count' => 'int'
     ];
 
@@ -303,7 +303,7 @@ class GetRefundApplications200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets refund_claims
      *
-     * @return \OpenAPI\Client\Model\RefundClaim[]|null
+     * @return \robsonek\phpAllegroApi\Model\RefundClaim[]|null
      */
     public function getRefundClaims()
     {
@@ -313,7 +313,7 @@ class GetRefundApplications200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets refund_claims
      *
-     * @param \OpenAPI\Client\Model\RefundClaim[]|null $refund_claims Collection of refund applications.
+     * @param \robsonek\phpAllegroApi\Model\RefundClaim[]|null $refund_claims Collection of refund applications.
      *
      * @return self
      */

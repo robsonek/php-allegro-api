@@ -1,4 +1,4 @@
-# OpenAPI\Client\AllegroPricesApi
+# robsonek\phpAllegroApi\AllegroPricesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getAllegroPricesConsentForOffer()`
 
 ```php
-getAllegroPricesConsentForOffer($offer_id): \OpenAPI\Client\Model\AllegroPricesOfferConsentChangeResponse
+getAllegroPricesConsentForOffer($offer_id): \robsonek\phpAllegroApi\Model\AllegroPricesOfferConsentChangeResponse
 ```
 
 Get the current consents' state for an offer
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AllegroPricesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AllegroPricesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroPricesOfferConsentChangeResponse**](../Model/AllegroPricesOfferConsentChangeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AllegroPricesOfferConsentChangeResponse**](../Model/AllegroPricesOfferConsentChangeResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getAllegroPricesEligibilityForAccount()`
 
 ```php
-getAllegroPricesEligibilityForAccount(): \OpenAPI\Client\Model\AllegroPricesEligibilityResponse
+getAllegroPricesEligibilityForAccount(): \robsonek\phpAllegroApi\Model\AllegroPricesEligibilityResponse
 ```
 
 Get the current eligibility information for the account
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AllegroPricesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AllegroPricesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -112,7 +112,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroPricesEligibilityResponse**](../Model/AllegroPricesEligibilityResponse.md)
+[**\robsonek\phpAllegroApi\Model\AllegroPricesEligibilityResponse**](../Model/AllegroPricesEligibilityResponse.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ This endpoint does not need any parameter.
 ## `updateAllegroPricesConsentForAccount()`
 
 ```php
-updateAllegroPricesConsentForAccount($allegro_prices_account_change_request): \OpenAPI\Client\Model\AllegroPricesAccountConsentChangeResponse
+updateAllegroPricesConsentForAccount($allegro_prices_account_change_request): \robsonek\phpAllegroApi\Model\AllegroPricesAccountConsentChangeResponse
 ```
 
 Update consents for the account
@@ -145,16 +145,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AllegroPricesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AllegroPricesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$allegro_prices_account_change_request = {"status":"ALLOWED","additionalMarketplaces":{"allegro-cz":{"status":"DENIED"}}}; // \OpenAPI\Client\Model\AllegroPricesAccountChangeRequest
+$allegro_prices_account_change_request = {"status":"ALLOWED","additionalMarketplaces":{"allegro-cz":{"status":"DENIED"}}}; // \robsonek\phpAllegroApi\Model\AllegroPricesAccountChangeRequest
 
 try {
     $result = $apiInstance->updateAllegroPricesConsentForAccount($allegro_prices_account_change_request);
@@ -168,11 +168,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **allegro_prices_account_change_request** | [**\OpenAPI\Client\Model\AllegroPricesAccountChangeRequest**](../Model/AllegroPricesAccountChangeRequest.md)|  | |
+| **allegro_prices_account_change_request** | [**\robsonek\phpAllegroApi\Model\AllegroPricesAccountChangeRequest**](../Model/AllegroPricesAccountChangeRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroPricesAccountConsentChangeResponse**](../Model/AllegroPricesAccountConsentChangeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AllegroPricesAccountConsentChangeResponse**](../Model/AllegroPricesAccountConsentChangeResponse.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ try {
 ## `updateAllegroPricesConsentForOffer()`
 
 ```php
-updateAllegroPricesConsentForOffer($offer_id, $allegro_prices_offer_change_request): \OpenAPI\Client\Model\AllegroPricesOfferConsentChangeResponse
+updateAllegroPricesConsentForOffer($offer_id, $allegro_prices_offer_change_request): \robsonek\phpAllegroApi\Model\AllegroPricesOfferConsentChangeResponse
 ```
 
 Update consents for an offer
@@ -205,17 +205,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AllegroPricesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AllegroPricesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $offer_id = 'offer_id_example'; // string | The offer ID.
-$allegro_prices_offer_change_request = {"status":"DENIED","additionalMarketplaces":{"allegro-cz":{"status":"DENIED"}}}; // \OpenAPI\Client\Model\AllegroPricesOfferChangeRequest
+$allegro_prices_offer_change_request = {"status":"DENIED","additionalMarketplaces":{"allegro-cz":{"status":"DENIED"}}}; // \robsonek\phpAllegroApi\Model\AllegroPricesOfferChangeRequest
 
 try {
     $result = $apiInstance->updateAllegroPricesConsentForOffer($offer_id, $allegro_prices_offer_change_request);
@@ -230,11 +230,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **offer_id** | **string**| The offer ID. | |
-| **allegro_prices_offer_change_request** | [**\OpenAPI\Client\Model\AllegroPricesOfferChangeRequest**](../Model/AllegroPricesOfferChangeRequest.md)|  | |
+| **allegro_prices_offer_change_request** | [**\robsonek\phpAllegroApi\Model\AllegroPricesOfferChangeRequest**](../Model/AllegroPricesOfferChangeRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroPricesOfferConsentChangeResponse**](../Model/AllegroPricesOfferConsentChangeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AllegroPricesOfferConsentChangeResponse**](../Model/AllegroPricesOfferConsentChangeResponse.md)
 
 ### Authorization
 

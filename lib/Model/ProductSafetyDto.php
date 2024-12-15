@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSafetyDto Class Doc Comment
  *
  * @category Class
  * @description Suggested product safety data in accordance with GPSR: Note: Allegro does not assume responsibility for the accuracy of this data. It is the merchant&#39;s responsibility to verify its applicability to their product.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ProductSafetyDto implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responsible_producers' => '\OpenAPI\Client\Model\ResponsibleProducerResponse[]',
-        'safety_information' => '\OpenAPI\Client\Model\ProductSafetyDtoSafetyInformation'
+        'responsible_producers' => '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]',
+        'safety_information' => '\robsonek\phpAllegroApi\Model\ProductSafetyDtoSafetyInformation'
     ];
 
     /**
@@ -300,7 +300,7 @@ class ProductSafetyDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets responsible_producers
      *
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]|null
      */
     public function getResponsibleProducers()
     {
@@ -310,7 +310,7 @@ class ProductSafetyDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets responsible_producers
      *
-     * @param \OpenAPI\Client\Model\ResponsibleProducerResponse[]|null $responsible_producers responsible_producers
+     * @param \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]|null $responsible_producers responsible_producers
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class ProductSafetyDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets safety_information
      *
-     * @return \OpenAPI\Client\Model\ProductSafetyDtoSafetyInformation|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSafetyDtoSafetyInformation|null
      */
     public function getSafetyInformation()
     {
@@ -344,7 +344,7 @@ class ProductSafetyDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets safety_information
      *
-     * @param \OpenAPI\Client\Model\ProductSafetyDtoSafetyInformation|null $safety_information safety_information
+     * @param \robsonek\phpAllegroApi\Model\ProductSafetyDtoSafetyInformation|null $safety_information safety_information
      *
      * @return self
      */

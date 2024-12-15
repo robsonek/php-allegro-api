@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UserCampaignEligibility Class Doc Comment
  *
  * @category Class
  * @description Summary of user eligibility for participation in the campaign.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class UserCampaignEligibility implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'eligible' => 'bool',
-        'refusal_reasons' => '\OpenAPI\Client\Model\CampaignRefusalReason[]'
+        'refusal_reasons' => '\robsonek\phpAllegroApi\Model\CampaignRefusalReason[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class UserCampaignEligibility implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets refusal_reasons
      *
-     * @return \OpenAPI\Client\Model\CampaignRefusalReason[]
+     * @return \robsonek\phpAllegroApi\Model\CampaignRefusalReason[]
      */
     public function getRefusalReasons()
     {
@@ -343,7 +343,7 @@ class UserCampaignEligibility implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets refusal_reasons
      *
-     * @param \OpenAPI\Client\Model\CampaignRefusalReason[] $refusal_reasons Information why user is not able to participate in the campaign.
+     * @param \robsonek\phpAllegroApi\Model\CampaignRefusalReason[] $refusal_reasons Information why user is not able to participate in the campaign.
      *
      * @return self
      */

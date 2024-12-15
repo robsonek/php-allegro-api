@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturnResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CustomerReturnResponse implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'customer_returns' => '\OpenAPI\Client\Model\CustomerReturn[]'
+        'customer_returns' => '\robsonek\phpAllegroApi\Model\CustomerReturn[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class CustomerReturnResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets customer_returns
      *
-     * @return \OpenAPI\Client\Model\CustomerReturn[]
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturn[]
      */
     public function getCustomerReturns()
     {
@@ -342,7 +342,7 @@ class CustomerReturnResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets customer_returns
      *
-     * @param \OpenAPI\Client\Model\CustomerReturn[] $customer_returns List of matching customer returns.
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturn[] $customer_returns List of matching customer returns.
      *
      * @return self
      */

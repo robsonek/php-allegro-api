@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1PublicationMarketplaces Class Doc Comment
  *
  * @category Class
  * @description Information on the offer&#39;s publication marketplaces.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferListingDtoV1PublicationMarketplaces implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base' => '\OpenAPI\Client\Model\MarketplaceReference',
-        'additional' => '\OpenAPI\Client\Model\MarketplaceReference[]'
+        'base' => '\robsonek\phpAllegroApi\Model\MarketplaceReference',
+        'additional' => '\robsonek\phpAllegroApi\Model\MarketplaceReference[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OfferListingDtoV1PublicationMarketplaces implements ModelInterface, ArrayA
     /**
      * Gets base
      *
-     * @return \OpenAPI\Client\Model\MarketplaceReference|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceReference|null
      */
     public function getBase()
     {
@@ -310,7 +310,7 @@ class OfferListingDtoV1PublicationMarketplaces implements ModelInterface, ArrayA
     /**
      * Sets base
      *
-     * @param \OpenAPI\Client\Model\MarketplaceReference|null $base The base marketplace of the offer.
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceReference|null $base The base marketplace of the offer.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OfferListingDtoV1PublicationMarketplaces implements ModelInterface, ArrayA
     /**
      * Gets additional
      *
-     * @return \OpenAPI\Client\Model\MarketplaceReference[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceReference[]|null
      */
     public function getAdditional()
     {
@@ -337,7 +337,7 @@ class OfferListingDtoV1PublicationMarketplaces implements ModelInterface, ArrayA
     /**
      * Sets additional
      *
-     * @param \OpenAPI\Client\Model\MarketplaceReference[]|null $additional Additional marketplaces, on which the offer is to be listed.
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceReference[]|null $additional Additional marketplaces, on which the offer is to be listed.
      *
      * @return self
      */

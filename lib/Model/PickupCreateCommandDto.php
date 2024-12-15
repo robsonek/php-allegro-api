@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PickupCreateCommandDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PickupCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'command_id' => 'string',
-        'input' => '\OpenAPI\Client\Model\PickupCreateRequestDto'
+        'input' => '\robsonek\phpAllegroApi\Model\PickupCreateRequestDto'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PickupCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\PickupCreateRequestDto
+     * @return \robsonek\phpAllegroApi\Model\PickupCreateRequestDto
      */
     public function getInput()
     {
@@ -339,7 +339,7 @@ class PickupCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\PickupCreateRequestDto $input input
+     * @param \robsonek\phpAllegroApi\Model\PickupCreateRequestDto $input input
      *
      * @return self
      */

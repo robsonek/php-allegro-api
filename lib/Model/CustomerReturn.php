@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturn Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
         'created_at' => '\DateTime',
         'reference_number' => 'string',
         'order_id' => 'string',
-        'buyer' => '\OpenAPI\Client\Model\CustomerReturnBuyer',
-        'items' => '\OpenAPI\Client\Model\CustomerReturnItem[]',
-        'refund' => '\OpenAPI\Client\Model\CustomerReturnRefund',
-        'parcels' => '\OpenAPI\Client\Model\CustomerReturnReturnParcel[]',
-        'rejection' => '\OpenAPI\Client\Model\CustomerReturnRejection',
+        'buyer' => '\robsonek\phpAllegroApi\Model\CustomerReturnBuyer',
+        'items' => '\robsonek\phpAllegroApi\Model\CustomerReturnItem[]',
+        'refund' => '\robsonek\phpAllegroApi\Model\CustomerReturnRefund',
+        'parcels' => '\robsonek\phpAllegroApi\Model\CustomerReturnReturnParcel[]',
+        'rejection' => '\robsonek\phpAllegroApi\Model\CustomerReturnRejection',
         'marketplace_id' => 'string',
         'status' => 'string'
     ];
@@ -470,7 +470,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnBuyer|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnBuyer|null
      */
     public function getBuyer()
     {
@@ -480,7 +480,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnBuyer|null $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnBuyer|null $buyer buyer
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnItem[]|null
      */
     public function getItems()
     {
@@ -507,7 +507,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnItem[]|null $items List of returned items.
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnItem[]|null $items List of returned items.
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets refund
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnRefund|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnRefund|null
      */
     public function getRefund()
     {
@@ -534,7 +534,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets refund
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnRefund|null $refund refund
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnRefund|null $refund refund
      *
      * @return self
      */
@@ -551,7 +551,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parcels
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnReturnParcel[]|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnReturnParcel[]|null
      */
     public function getParcels()
     {
@@ -561,7 +561,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parcels
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnReturnParcel[]|null $parcels List of returned parcels.
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnReturnParcel[]|null $parcels List of returned parcels.
      *
      * @return self
      */
@@ -578,7 +578,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rejection
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnRejection|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnRejection|null
      */
     public function getRejection()
     {
@@ -588,7 +588,7 @@ class CustomerReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rejection
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnRejection|null $rejection rejection
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnRejection|null $rejection rejection
      *
      * @return self
      */

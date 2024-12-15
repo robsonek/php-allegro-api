@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgePatchPricesPrices Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BadgePatchPricesPrices implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bargain' => '\OpenAPI\Client\Model\BadgePatchPricesPricesBargain'
+        'bargain' => '\robsonek\phpAllegroApi\Model\BadgePatchPricesPricesBargain'
     ];
 
     /**
@@ -292,7 +292,7 @@ class BadgePatchPricesPrices implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets bargain
      *
-     * @return \OpenAPI\Client\Model\BadgePatchPricesPricesBargain|null
+     * @return \robsonek\phpAllegroApi\Model\BadgePatchPricesPricesBargain|null
      */
     public function getBargain()
     {
@@ -302,7 +302,7 @@ class BadgePatchPricesPrices implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets bargain
      *
-     * @param \OpenAPI\Client\Model\BadgePatchPricesPricesBargain|null $bargain bargain
+     * @param \robsonek\phpAllegroApi\Model\BadgePatchPricesPricesBargain|null $bargain bargain
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductOfferResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ProductOfferResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'publication' => '\OpenAPI\Client\Model\ProductOfferResponsePublication'
+        'publication' => '\robsonek\phpAllegroApi\Model\ProductOfferResponsePublication'
     ];
 
     /**
@@ -326,7 +326,7 @@ class ProductOfferResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\ProductOfferResponsePublication|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOfferResponsePublication|null
      */
     public function getPublication()
     {
@@ -336,7 +336,7 @@ class ProductOfferResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\ProductOfferResponsePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\ProductOfferResponsePublication|null $publication publication
      *
      * @return self
      */

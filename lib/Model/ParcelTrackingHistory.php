@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelTrackingHistory Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ParcelTrackingHistory implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'waybill' => 'string',
-        'tracking_details' => '\OpenAPI\Client\Model\ParcelTrackingHistoryTrackingDetails'
+        'tracking_details' => '\robsonek\phpAllegroApi\Model\ParcelTrackingHistoryTrackingDetails'
     ];
 
     /**
@@ -329,7 +329,7 @@ class ParcelTrackingHistory implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets tracking_details
      *
-     * @return \OpenAPI\Client\Model\ParcelTrackingHistoryTrackingDetails|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelTrackingHistoryTrackingDetails|null
      */
     public function getTrackingDetails()
     {
@@ -339,7 +339,7 @@ class ParcelTrackingHistory implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets tracking_details
      *
-     * @param \OpenAPI\Client\Model\ParcelTrackingHistoryTrackingDetails|null $tracking_details tracking_details
+     * @param \robsonek\phpAllegroApi\Model\ParcelTrackingHistoryTrackingDetails|null $tracking_details tracking_details
      *
      * @return self
      */

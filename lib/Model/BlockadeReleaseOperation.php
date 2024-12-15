@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BlockadeReleaseOperation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class BlockadeReleaseOperation extends BaseOperation
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'payment' => '\OpenAPI\Client\Model\OperationPayment'
+        'payment' => '\robsonek\phpAllegroApi\Model\OperationPayment'
     ];
 
     /**
@@ -323,7 +323,7 @@ class BlockadeReleaseOperation extends BaseOperation
     /**
      * Gets payment
      *
-     * @return \OpenAPI\Client\Model\OperationPayment
+     * @return \robsonek\phpAllegroApi\Model\OperationPayment
      */
     public function getPayment()
     {
@@ -333,7 +333,7 @@ class BlockadeReleaseOperation extends BaseOperation
     /**
      * Sets payment
      *
-     * @param \OpenAPI\Client\Model\OperationPayment $payment payment
+     * @param \robsonek\phpAllegroApi\Model\OperationPayment $payment payment
      *
      * @return self
      */

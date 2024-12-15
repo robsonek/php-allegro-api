@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServicesTranslationsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -137,7 +137,7 @@ class AdditionalServicesTranslationsApi
      * @param  string $language IETF Language tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -155,7 +155,7 @@ class AdditionalServicesTranslationsApi
      * @param  string $language IETF Language tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -384,9 +384,9 @@ class AdditionalServicesTranslationsApi
      * @param  string $language IETF language tag. When provided, the response will contain translations in only that language (if exists). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdditionalServiceGroupTranslations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse
      */
     public function getAdditionalServiceGroupTranslations($group_id, $language = null, string $contentType = self::contentTypes['getAdditionalServiceGroupTranslations'][0])
     {
@@ -403,9 +403,9 @@ class AdditionalServicesTranslationsApi
      * @param  string $language IETF language tag. When provided, the response will contain translations in only that language (if exists). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdditionalServiceGroupTranslations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAdditionalServiceGroupTranslationsWithHttpInfo($group_id, $language = null, string $contentType = self::contentTypes['getAdditionalServiceGroupTranslations'][0])
     {
@@ -436,11 +436,11 @@ class AdditionalServicesTranslationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -458,7 +458,7 @@ class AdditionalServicesTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -477,7 +477,7 @@ class AdditionalServicesTranslationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -510,7 +510,7 @@ class AdditionalServicesTranslationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -556,7 +556,7 @@ class AdditionalServicesTranslationsApi
      */
     public function getAdditionalServiceGroupTranslationsAsyncWithHttpInfo($group_id, $language = null, string $contentType = self::contentTypes['getAdditionalServiceGroupTranslations'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationResponse';
         $request = $this->getAdditionalServiceGroupTranslationsRequest($group_id, $language, $contentType);
 
         return $this->client
@@ -715,12 +715,12 @@ class AdditionalServicesTranslationsApi
      *
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $language IETF Language tag. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse
      */
     public function updateAdditionalServiceGroupTranslation($group_id, $language, $additional_services_group_translation_request, string $contentType = self::contentTypes['updateAdditionalServiceGroupTranslation'][0])
     {
@@ -735,12 +735,12 @@ class AdditionalServicesTranslationsApi
      *
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $language IETF Language tag. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAdditionalServiceGroupTranslationWithHttpInfo($group_id, $language, $additional_services_group_translation_request, string $contentType = self::contentTypes['updateAdditionalServiceGroupTranslation'][0])
     {
@@ -771,11 +771,11 @@ class AdditionalServicesTranslationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -793,7 +793,7 @@ class AdditionalServicesTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -812,7 +812,7 @@ class AdditionalServicesTranslationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -845,7 +845,7 @@ class AdditionalServicesTranslationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -862,7 +862,7 @@ class AdditionalServicesTranslationsApi
      *
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $language IETF Language tag. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -885,7 +885,7 @@ class AdditionalServicesTranslationsApi
      *
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $language IETF Language tag. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -893,7 +893,7 @@ class AdditionalServicesTranslationsApi
      */
     public function updateAdditionalServiceGroupTranslationAsyncWithHttpInfo($group_id, $language, $additional_services_group_translation_request, string $contentType = self::contentTypes['updateAdditionalServiceGroupTranslation'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServiceGroupTranslationPatchResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServiceGroupTranslationPatchResponse';
         $request = $this->updateAdditionalServiceGroupTranslationRequest($group_id, $language, $additional_services_group_translation_request, $contentType);
 
         return $this->client
@@ -937,7 +937,7 @@ class AdditionalServicesTranslationsApi
      *
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $language IETF Language tag. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupTranslationRequest $additional_services_group_translation_request Additonal service group translation. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAdditionalServiceGroupTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

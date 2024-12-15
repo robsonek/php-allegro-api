@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplaceItemCurrencies Class Doc Comment
  *
  * @category Class
  * @description Currencies available for that marketplace
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class MarketplaceItemCurrencies implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base' => '\OpenAPI\Client\Model\MarketplaceItemCurrency',
-        'additional' => '\OpenAPI\Client\Model\MarketplaceItemCurrency[]'
+        'base' => '\robsonek\phpAllegroApi\Model\MarketplaceItemCurrency',
+        'additional' => '\robsonek\phpAllegroApi\Model\MarketplaceItemCurrency[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class MarketplaceItemCurrencies implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets base
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemCurrency|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemCurrency|null
      */
     public function getBase()
     {
@@ -310,7 +310,7 @@ class MarketplaceItemCurrencies implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets base
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemCurrency|null $base base
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemCurrency|null $base base
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class MarketplaceItemCurrencies implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets additional
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemCurrency[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemCurrency[]|null
      */
     public function getAdditional()
     {
@@ -337,7 +337,7 @@ class MarketplaceItemCurrencies implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets additional
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemCurrency[]|null $additional List of other currencies available for that marketplace
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemCurrency[]|null $additional List of other currencies available for that marketplace
      *
      * @return self
      */

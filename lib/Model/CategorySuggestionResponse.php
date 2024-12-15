@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategorySuggestionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'matching_categories' => '\OpenAPI\Client\Model\CategorySuggestionCategoryNode[]'
+        'matching_categories' => '\robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets matching_categories
      *
-     * @return \OpenAPI\Client\Model\CategorySuggestionCategoryNode[]
+     * @return \robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode[]
      */
     public function getMatchingCategories()
     {
@@ -305,7 +305,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets matching_categories
      *
-     * @param \OpenAPI\Client\Model\CategorySuggestionCategoryNode[] $matching_categories List of categories matching with given phrase.
+     * @param \robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode[] $matching_categories List of categories matching with given phrase.
      *
      * @return self
      */

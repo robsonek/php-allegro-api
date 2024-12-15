@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DictionaryCategoryProductParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class DictionaryCategoryProductParameter extends CategoryProductParameter
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'restrictions' => '\OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions',
-        'dictionary' => '\OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfDictionary[]'
+        'restrictions' => '\robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions',
+        'dictionary' => '\robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfDictionary[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class DictionaryCategoryProductParameter extends CategoryProductParameter
     /**
      * Gets restrictions
      *
-     * @return \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions|null
+     * @return \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions|null
      */
     public function getRestrictions()
     {
@@ -337,7 +337,7 @@ class DictionaryCategoryProductParameter extends CategoryProductParameter
     /**
      * Sets restrictions
      *
-     * @param \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
+     * @param \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfRestrictions|null $restrictions restrictions
      *
      * @return self
      */
@@ -354,7 +354,7 @@ class DictionaryCategoryProductParameter extends CategoryProductParameter
     /**
      * Gets dictionary
      *
-     * @return \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfDictionary[]|null
+     * @return \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfDictionary[]|null
      */
     public function getDictionary()
     {
@@ -364,7 +364,7 @@ class DictionaryCategoryProductParameter extends CategoryProductParameter
     /**
      * Sets dictionary
      *
-     * @param \OpenAPI\Client\Model\DictionaryCategoryProductParameterAllOfDictionary[]|null $dictionary Defines the values accepted for this parameter.
+     * @param \robsonek\phpAllegroApi\Model\DictionaryCategoryProductParameterAllOfDictionary[]|null $dictionary Defines the values accepted for this parameter.
      *
      * @return self
      */

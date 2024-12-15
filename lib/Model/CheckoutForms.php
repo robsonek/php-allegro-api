@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutForms Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckoutForms implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'checkout_forms' => '\OpenAPI\Client\Model\CheckoutForm[]',
+        'checkout_forms' => '\robsonek\phpAllegroApi\Model\CheckoutForm[]',
         'count' => 'float',
         'total_count' => 'float'
     ];
@@ -323,7 +323,7 @@ class CheckoutForms implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets checkout_forms
      *
-     * @return \OpenAPI\Client\Model\CheckoutForm[]
+     * @return \robsonek\phpAllegroApi\Model\CheckoutForm[]
      */
     public function getCheckoutForms()
     {
@@ -333,7 +333,7 @@ class CheckoutForms implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets checkout_forms
      *
-     * @param \OpenAPI\Client\Model\CheckoutForm[] $checkout_forms checkout_forms
+     * @param \robsonek\phpAllegroApi\Model\CheckoutForm[] $checkout_forms checkout_forms
      *
      * @return self
      */

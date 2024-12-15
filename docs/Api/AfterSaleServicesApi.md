@@ -1,4 +1,4 @@
-# OpenAPI\Client\AfterSaleServicesApi
+# robsonek\phpAllegroApi\AfterSaleServicesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -23,7 +23,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createAfterSalesServiceConditionsAttachmentUsingPOST()`
 
 ```php
-createAfterSalesServiceConditionsAttachmentUsingPOST($create_after_sales_service_conditions_attachment_using_post_request): \OpenAPI\Client\Model\AfterSalesServicesAttachment
+createAfterSalesServiceConditionsAttachmentUsingPOST($create_after_sales_service_conditions_attachment_using_post_request): \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment
 ```
 
 Create a warranty attachment metadata
@@ -38,16 +38,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_after_sales_service_conditions_attachment_using_post_request = new \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest(); // \OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest | After sale services attachment
+$create_after_sales_service_conditions_attachment_using_post_request = new \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest(); // \robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest | After sale services attachment
 
 try {
     $result = $apiInstance->createAfterSalesServiceConditionsAttachmentUsingPOST($create_after_sales_service_conditions_attachment_using_post_request);
@@ -61,11 +61,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_after_sales_service_conditions_attachment_using_post_request** | [**\OpenAPI\Client\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest**](../Model/CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest.md)| After sale services attachment | |
+| **create_after_sales_service_conditions_attachment_using_post_request** | [**\robsonek\phpAllegroApi\Model\CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest**](../Model/CreateAfterSalesServiceConditionsAttachmentUsingPOSTRequest.md)| After sale services attachment | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AfterSalesServicesAttachment**](../Model/AfterSalesServicesAttachment.md)
+[**\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment**](../Model/AfterSalesServicesAttachment.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ try {
 ## `createAfterSalesServiceImpliedWarrantyUsingPOST()`
 
 ```php
-createAfterSalesServiceImpliedWarrantyUsingPOST($implied_warranty_request): \OpenAPI\Client\Model\ImpliedWarrantyResponse
+createAfterSalesServiceImpliedWarrantyUsingPOST($implied_warranty_request): \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
 ```
 
 Create new user's implied warranty
@@ -98,16 +98,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$implied_warranty_request = new \OpenAPI\Client\Model\ImpliedWarrantyRequest(); // \OpenAPI\Client\Model\ImpliedWarrantyRequest | Implied warranty
+$implied_warranty_request = new \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest(); // \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest | Implied warranty
 
 try {
     $result = $apiInstance->createAfterSalesServiceImpliedWarrantyUsingPOST($implied_warranty_request);
@@ -121,11 +121,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **implied_warranty_request** | [**\OpenAPI\Client\Model\ImpliedWarrantyRequest**](../Model/ImpliedWarrantyRequest.md)| Implied warranty | |
+| **implied_warranty_request** | [**\robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest**](../Model/ImpliedWarrantyRequest.md)| Implied warranty | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ try {
 ## `createAfterSalesServiceReturnPolicyUsingPOST()`
 
 ```php
-createAfterSalesServiceReturnPolicyUsingPOST($return_policy_request): \OpenAPI\Client\Model\ReturnPolicyResponse
+createAfterSalesServiceReturnPolicyUsingPOST($return_policy_request): \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
 ```
 
 Create new user's return policy
@@ -158,16 +158,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$return_policy_request = new \OpenAPI\Client\Model\ReturnPolicyRequest(); // \OpenAPI\Client\Model\ReturnPolicyRequest | Return Policy
+$return_policy_request = new \robsonek\phpAllegroApi\Model\ReturnPolicyRequest(); // \robsonek\phpAllegroApi\Model\ReturnPolicyRequest | Return Policy
 
 try {
     $result = $apiInstance->createAfterSalesServiceReturnPolicyUsingPOST($return_policy_request);
@@ -181,11 +181,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **return_policy_request** | [**\OpenAPI\Client\Model\ReturnPolicyRequest**](../Model/ReturnPolicyRequest.md)| Return Policy | |
+| **return_policy_request** | [**\robsonek\phpAllegroApi\Model\ReturnPolicyRequest**](../Model/ReturnPolicyRequest.md)| Return Policy | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ try {
 ## `createAfterSalesServiceWarrantyUsingPOST()`
 
 ```php
-createAfterSalesServiceWarrantyUsingPOST($warranty_request): \OpenAPI\Client\Model\WarrantyResponse
+createAfterSalesServiceWarrantyUsingPOST($warranty_request): \robsonek\phpAllegroApi\Model\WarrantyResponse
 ```
 
 Create new user's warranty
@@ -218,16 +218,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$warranty_request = new \OpenAPI\Client\Model\WarrantyRequest(); // \OpenAPI\Client\Model\WarrantyRequest | Warranty
+$warranty_request = new \robsonek\phpAllegroApi\Model\WarrantyRequest(); // \robsonek\phpAllegroApi\Model\WarrantyRequest | Warranty
 
 try {
     $result = $apiInstance->createAfterSalesServiceWarrantyUsingPOST($warranty_request);
@@ -241,11 +241,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **warranty_request** | [**\OpenAPI\Client\Model\WarrantyRequest**](../Model/WarrantyRequest.md)| Warranty | |
+| **warranty_request** | [**\robsonek\phpAllegroApi\Model\WarrantyRequest**](../Model/WarrantyRequest.md)| Warranty | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ try {
 ## `getAfterSalesServiceImpliedWarrantyUsingGET()`
 
 ```php
-getAfterSalesServiceImpliedWarrantyUsingGET($implied_warranty_id): \OpenAPI\Client\Model\ImpliedWarrantyResponse
+getAfterSalesServiceImpliedWarrantyUsingGET($implied_warranty_id): \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
 ```
 
 Get the user's implied warranty
@@ -278,10 +278,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -305,7 +305,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ try {
 ## `getAfterSalesServiceReturnPolicyUsingGET()`
 
 ```php
-getAfterSalesServiceReturnPolicyUsingGET($return_policy_id): \OpenAPI\Client\Model\ReturnPolicyResponse
+getAfterSalesServiceReturnPolicyUsingGET($return_policy_id): \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
 ```
 
 Get the user's return policy
@@ -338,10 +338,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -365,7 +365,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ try {
 ## `getAfterSalesServiceWarrantyUsingGET()`
 
 ```php
-getAfterSalesServiceWarrantyUsingGET($warranty_id): \OpenAPI\Client\Model\WarrantyResponse
+getAfterSalesServiceWarrantyUsingGET($warranty_id): \robsonek\phpAllegroApi\Model\WarrantyResponse
 ```
 
 Get the user's warranty
@@ -398,10 +398,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -425,7 +425,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
 
 ### Authorization
 
@@ -443,7 +443,7 @@ try {
 ## `getPublicSellerListingUsingGET()`
 
 ```php
-getPublicSellerListingUsingGET($limit, $offset): \OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic
+getPublicSellerListingUsingGET($limit, $offset): \robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic
 ```
 
 Get the user's implied warranties
@@ -458,10 +458,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -487,7 +487,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ImpliedWarrantiesListImpliedWarrantyBasic**](../Model/ImpliedWarrantiesListImpliedWarrantyBasic.md)
+[**\robsonek\phpAllegroApi\Model\ImpliedWarrantiesListImpliedWarrantyBasic**](../Model/ImpliedWarrantiesListImpliedWarrantyBasic.md)
 
 ### Authorization
 
@@ -505,7 +505,7 @@ try {
 ## `getPublicSellerListingUsingGET1()`
 
 ```php
-getPublicSellerListingUsingGET1($limit, $offset): \OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic
+getPublicSellerListingUsingGET1($limit, $offset): \robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic
 ```
 
 Get the user's return policies
@@ -520,10 +520,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -549,7 +549,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReturnPoliciesListReturnPolicyBasic**](../Model/ReturnPoliciesListReturnPolicyBasic.md)
+[**\robsonek\phpAllegroApi\Model\ReturnPoliciesListReturnPolicyBasic**](../Model/ReturnPoliciesListReturnPolicyBasic.md)
 
 ### Authorization
 
@@ -567,7 +567,7 @@ try {
 ## `getPublicSellerListingUsingGET2()`
 
 ```php
-getPublicSellerListingUsingGET2($limit, $offset): \OpenAPI\Client\Model\WarrantiesListWarrantyBasic
+getPublicSellerListingUsingGET2($limit, $offset): \robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic
 ```
 
 Get the user's warranties
@@ -582,10 +582,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -611,7 +611,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WarrantiesListWarrantyBasic**](../Model/WarrantiesListWarrantyBasic.md)
+[**\robsonek\phpAllegroApi\Model\WarrantiesListWarrantyBasic**](../Model/WarrantiesListWarrantyBasic.md)
 
 ### Authorization
 
@@ -629,7 +629,7 @@ try {
 ## `updateAfterSalesServiceImpliedWarrantyUsingPUT()`
 
 ```php
-updateAfterSalesServiceImpliedWarrantyUsingPUT($implied_warranty_id, $implied_warranty_request): \OpenAPI\Client\Model\ImpliedWarrantyResponse
+updateAfterSalesServiceImpliedWarrantyUsingPUT($implied_warranty_id, $implied_warranty_request): \robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse
 ```
 
 Change the user's implied warranty
@@ -644,17 +644,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $implied_warranty_id = 'implied_warranty_id_example'; // string | The ID of the implied warranty.
-$implied_warranty_request = new \OpenAPI\Client\Model\ImpliedWarrantyRequest(); // \OpenAPI\Client\Model\ImpliedWarrantyRequest | Implied warranty
+$implied_warranty_request = new \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest(); // \robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest | Implied warranty
 
 try {
     $result = $apiInstance->updateAfterSalesServiceImpliedWarrantyUsingPUT($implied_warranty_id, $implied_warranty_request);
@@ -669,11 +669,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **implied_warranty_id** | **string**| The ID of the implied warranty. | |
-| **implied_warranty_request** | [**\OpenAPI\Client\Model\ImpliedWarrantyRequest**](../Model/ImpliedWarrantyRequest.md)| Implied warranty | |
+| **implied_warranty_request** | [**\robsonek\phpAllegroApi\Model\ImpliedWarrantyRequest**](../Model/ImpliedWarrantyRequest.md)| Implied warranty | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ImpliedWarrantyResponse**](../Model/ImpliedWarrantyResponse.md)
 
 ### Authorization
 
@@ -691,7 +691,7 @@ try {
 ## `updateAfterSalesServiceReturnPolicyUsingPUT()`
 
 ```php
-updateAfterSalesServiceReturnPolicyUsingPUT($return_policy_id, $return_policy_request): \OpenAPI\Client\Model\ReturnPolicyResponse
+updateAfterSalesServiceReturnPolicyUsingPUT($return_policy_id, $return_policy_request): \robsonek\phpAllegroApi\Model\ReturnPolicyResponse
 ```
 
 Change the user's return policy
@@ -706,17 +706,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $return_policy_id = 'return_policy_id_example'; // string | The ID of the return policy.
-$return_policy_request = new \OpenAPI\Client\Model\ReturnPolicyRequest(); // \OpenAPI\Client\Model\ReturnPolicyRequest | Return Policy
+$return_policy_request = new \robsonek\phpAllegroApi\Model\ReturnPolicyRequest(); // \robsonek\phpAllegroApi\Model\ReturnPolicyRequest | Return Policy
 
 try {
     $result = $apiInstance->updateAfterSalesServiceReturnPolicyUsingPUT($return_policy_id, $return_policy_request);
@@ -731,11 +731,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **return_policy_id** | **string**| The ID of the return policy. | |
-| **return_policy_request** | [**\OpenAPI\Client\Model\ReturnPolicyRequest**](../Model/ReturnPolicyRequest.md)| Return Policy | |
+| **return_policy_request** | [**\robsonek\phpAllegroApi\Model\ReturnPolicyRequest**](../Model/ReturnPolicyRequest.md)| Return Policy | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
+[**\robsonek\phpAllegroApi\Model\ReturnPolicyResponse**](../Model/ReturnPolicyResponse.md)
 
 ### Authorization
 
@@ -753,7 +753,7 @@ try {
 ## `updateAfterSalesServiceWarrantyUsingPUT()`
 
 ```php
-updateAfterSalesServiceWarrantyUsingPUT($warranty_id, $warranty_request): \OpenAPI\Client\Model\WarrantyResponse
+updateAfterSalesServiceWarrantyUsingPUT($warranty_id, $warranty_request): \robsonek\phpAllegroApi\Model\WarrantyResponse
 ```
 
 Change the user's warranty
@@ -768,17 +768,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $warranty_id = 'warranty_id_example'; // string | The ID of the warranty.
-$warranty_request = new \OpenAPI\Client\Model\WarrantyRequest(); // \OpenAPI\Client\Model\WarrantyRequest | Warranty
+$warranty_request = new \robsonek\phpAllegroApi\Model\WarrantyRequest(); // \robsonek\phpAllegroApi\Model\WarrantyRequest | Warranty
 
 try {
     $result = $apiInstance->updateAfterSalesServiceWarrantyUsingPUT($warranty_id, $warranty_request);
@@ -793,11 +793,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **warranty_id** | **string**| The ID of the warranty. | |
-| **warranty_request** | [**\OpenAPI\Client\Model\WarrantyRequest**](../Model/WarrantyRequest.md)| Warranty | |
+| **warranty_request** | [**\robsonek\phpAllegroApi\Model\WarrantyRequest**](../Model/WarrantyRequest.md)| Warranty | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
+[**\robsonek\phpAllegroApi\Model\WarrantyResponse**](../Model/WarrantyResponse.md)
 
 ### Authorization
 
@@ -815,7 +815,7 @@ try {
 ## `uploadAfterSalesServiceConditionsAttachmentUsingPUT()`
 
 ```php
-uploadAfterSalesServiceConditionsAttachmentUsingPUT($attachment_id, $body): \OpenAPI\Client\Model\AfterSalesServicesAttachment
+uploadAfterSalesServiceConditionsAttachmentUsingPUT($attachment_id, $body): \robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment
 ```
 ### URI(s):
 - https://upload.{environment} 
@@ -838,10 +838,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AfterSaleServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AfterSaleServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -874,7 +874,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AfterSalesServicesAttachment**](../Model/AfterSalesServicesAttachment.md)
+[**\robsonek\phpAllegroApi\Model\AfterSalesServicesAttachment**](../Model/AfterSalesServicesAttachment.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTagsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,10 +143,10 @@ class OfferTagsApi
      * Assign tags to an offer
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagIdsRequest $tag_ids_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagIdsRequest $tag_ids_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['assignTagToOfferPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -161,10 +161,10 @@ class OfferTagsApi
      * Assign tags to an offer
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagIdsRequest $tag_ids_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagIdsRequest $tag_ids_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['assignTagToOfferPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -202,7 +202,7 @@ class OfferTagsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class OfferTagsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -234,7 +234,7 @@ class OfferTagsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class OfferTagsApi
      * Assign tags to an offer
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagIdsRequest $tag_ids_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagIdsRequest $tag_ids_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['assignTagToOfferPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -272,7 +272,7 @@ class OfferTagsApi
      * Assign tags to an offer
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagIdsRequest $tag_ids_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagIdsRequest $tag_ids_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['assignTagToOfferPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class OfferTagsApi
      * Create request for operation 'assignTagToOfferPOST'
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagIdsRequest $tag_ids_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagIdsRequest $tag_ids_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['assignTagToOfferPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -422,12 +422,12 @@ class OfferTagsApi
      *
      * Create a tag
      *
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTagPOST1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TagId|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\TagId|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function createTagPOST1($tag_request, string $contentType = self::contentTypes['createTagPOST1'][0])
     {
@@ -440,12 +440,12 @@ class OfferTagsApi
      *
      * Create a tag
      *
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTagPOST1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TagId|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TagId|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTagPOST1WithHttpInfo($tag_request, string $contentType = self::contentTypes['createTagPOST1'][0])
     {
@@ -476,11 +476,11 @@ class OfferTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TagId' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TagId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TagId' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TagId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -498,16 +498,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TagId', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TagId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -525,16 +525,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -552,16 +552,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -579,16 +579,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -606,7 +606,7 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -625,7 +625,7 @@ class OfferTagsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TagId';
+            $returnType = '\robsonek\phpAllegroApi\Model\TagId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -658,7 +658,7 @@ class OfferTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TagId',
+                        '\robsonek\phpAllegroApi\Model\TagId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -666,7 +666,7 @@ class OfferTagsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -674,7 +674,7 @@ class OfferTagsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -682,7 +682,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -690,7 +690,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -705,7 +705,7 @@ class OfferTagsApi
      *
      * Create a tag
      *
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTagPOST1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -726,7 +726,7 @@ class OfferTagsApi
      *
      * Create a tag
      *
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTagPOST1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -734,7 +734,7 @@ class OfferTagsApi
      */
     public function createTagPOST1AsyncWithHttpInfo($tag_request, string $contentType = self::contentTypes['createTagPOST1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TagId';
+        $returnType = '\robsonek\phpAllegroApi\Model\TagId';
         $request = $this->createTagPOST1Request($tag_request, $contentType);
 
         return $this->client
@@ -776,7 +776,7 @@ class OfferTagsApi
     /**
      * Create request for operation 'createTagPOST1'
      *
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTagPOST1'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -876,7 +876,7 @@ class OfferTagsApi
      * @param  string $tag_id Tag identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTagUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -893,7 +893,7 @@ class OfferTagsApi
      * @param  string $tag_id Tag identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTagUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -931,7 +931,7 @@ class OfferTagsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -939,7 +939,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -947,7 +947,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1121,9 +1121,9 @@ class OfferTagsApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listAssignedOfferTagsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TagListResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\TagListResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function listAssignedOfferTagsGET($offer_id, string $contentType = self::contentTypes['listAssignedOfferTagsGET'][0])
     {
@@ -1139,9 +1139,9 @@ class OfferTagsApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listAssignedOfferTagsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TagListResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TagListResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function listAssignedOfferTagsGETWithHttpInfo($offer_id, string $contentType = self::contentTypes['listAssignedOfferTagsGET'][0])
     {
@@ -1172,11 +1172,11 @@ class OfferTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TagListResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TagListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TagListResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TagListResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1194,16 +1194,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TagListResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TagListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1221,16 +1221,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1248,16 +1248,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1275,7 +1275,7 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1294,7 +1294,7 @@ class OfferTagsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TagListResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\TagListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1327,7 +1327,7 @@ class OfferTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TagListResponse',
+                        '\robsonek\phpAllegroApi\Model\TagListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1335,7 +1335,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1343,7 +1343,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1351,7 +1351,7 @@ class OfferTagsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1395,7 +1395,7 @@ class OfferTagsApi
      */
     public function listAssignedOfferTagsGETAsyncWithHttpInfo($offer_id, string $contentType = self::contentTypes['listAssignedOfferTagsGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TagListResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\TagListResponse';
         $request = $this->listAssignedOfferTagsGETRequest($offer_id, $contentType);
 
         return $this->client
@@ -1539,9 +1539,9 @@ class OfferTagsApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listSellerTagsGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TagListResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\TagListResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function listSellerTagsGET1($limit = 1000, $offset = 0, string $contentType = self::contentTypes['listSellerTagsGET1'][0])
     {
@@ -1558,9 +1558,9 @@ class OfferTagsApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listSellerTagsGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TagListResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TagListResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function listSellerTagsGET1WithHttpInfo($limit = 1000, $offset = 0, string $contentType = self::contentTypes['listSellerTagsGET1'][0])
     {
@@ -1591,11 +1591,11 @@ class OfferTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TagListResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TagListResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TagListResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TagListResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1613,16 +1613,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TagListResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TagListResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1640,16 +1640,16 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1667,7 +1667,7 @@ class OfferTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1686,7 +1686,7 @@ class OfferTagsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TagListResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\TagListResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1719,7 +1719,7 @@ class OfferTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TagListResponse',
+                        '\robsonek\phpAllegroApi\Model\TagListResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1727,7 +1727,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1735,7 +1735,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1781,7 +1781,7 @@ class OfferTagsApi
      */
     public function listSellerTagsGET1AsyncWithHttpInfo($limit = 1000, $offset = 0, string $contentType = self::contentTypes['listSellerTagsGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TagListResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\TagListResponse';
         $request = $this->listSellerTagsGET1Request($limit, $offset, $contentType);
 
         return $this->client
@@ -1937,10 +1937,10 @@ class OfferTagsApi
      * Modify a tag
      *
      * @param  string $tag_id Tag identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTagPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1955,10 +1955,10 @@ class OfferTagsApi
      * Modify a tag
      *
      * @param  string $tag_id Tag identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTagPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1996,7 +1996,7 @@ class OfferTagsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2004,7 +2004,7 @@ class OfferTagsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2012,7 +2012,7 @@ class OfferTagsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2020,7 +2020,7 @@ class OfferTagsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2036,7 +2036,7 @@ class OfferTagsApi
      * Modify a tag
      *
      * @param  string $tag_id Tag identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTagPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2058,7 +2058,7 @@ class OfferTagsApi
      * Modify a tag
      *
      * @param  string $tag_id Tag identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTagPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2096,7 +2096,7 @@ class OfferTagsApi
      * Create request for operation 'updateTagPUT'
      *
      * @param  string $tag_id Tag identifier. (required)
-     * @param  \OpenAPI\Client\Model\TagRequest $tag_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\TagRequest $tag_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateTagPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

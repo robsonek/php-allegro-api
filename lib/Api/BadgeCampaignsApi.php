@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeCampaignsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -151,9 +151,9 @@ class BadgeCampaignsApi
      * @param  int $limit The maximum number of applications returned in the response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeApplicationsGetAll'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BadgeApplications|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplications|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function badgeApplicationsGetAll($campaign_id = null, $offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['badgeApplicationsGetAll'][0])
     {
@@ -172,9 +172,9 @@ class BadgeCampaignsApi
      * @param  int $limit The maximum number of applications returned in the response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeApplicationsGetAll'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BadgeApplications|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BadgeApplications|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function badgeApplicationsGetAllWithHttpInfo($campaign_id = null, $offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['badgeApplicationsGetAll'][0])
     {
@@ -205,11 +205,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BadgeApplications' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BadgeApplications' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BadgeApplications' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BadgeApplications' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,16 +227,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BadgeApplications', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BadgeApplications', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,16 +254,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -281,16 +281,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -308,7 +308,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -327,7 +327,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BadgeApplications';
+            $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplications';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -360,7 +360,7 @@ class BadgeCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BadgeApplications',
+                        '\robsonek\phpAllegroApi\Model\BadgeApplications',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -368,7 +368,7 @@ class BadgeCampaignsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -376,7 +376,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -384,7 +384,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -434,7 +434,7 @@ class BadgeCampaignsApi
      */
     public function badgeApplicationsGetAllAsyncWithHttpInfo($campaign_id = null, $offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['badgeApplicationsGetAll'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BadgeApplications';
+        $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplications';
         $request = $this->badgeApplicationsGetAllRequest($campaign_id, $offer_id, $offset, $limit, $contentType);
 
         return $this->client
@@ -614,9 +614,9 @@ class BadgeCampaignsApi
      * @param  string $application_id Badge application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeApplicationsGetOne'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BadgeApplication|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplication|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function badgeApplicationsGetOne($application_id, string $contentType = self::contentTypes['badgeApplicationsGetOne'][0])
     {
@@ -632,9 +632,9 @@ class BadgeCampaignsApi
      * @param  string $application_id Badge application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeApplicationsGetOne'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BadgeApplication|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BadgeApplication|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function badgeApplicationsGetOneWithHttpInfo($application_id, string $contentType = self::contentTypes['badgeApplicationsGetOne'][0])
     {
@@ -665,11 +665,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BadgeApplication' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BadgeApplication' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BadgeApplication' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BadgeApplication' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -687,16 +687,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BadgeApplication', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BadgeApplication', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -714,16 +714,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -741,16 +741,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -768,7 +768,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -787,7 +787,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BadgeApplication';
+            $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplication';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -820,7 +820,7 @@ class BadgeCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BadgeApplication',
+                        '\robsonek\phpAllegroApi\Model\BadgeApplication',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -828,7 +828,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -836,7 +836,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class BadgeCampaignsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -888,7 +888,7 @@ class BadgeCampaignsApi
      */
     public function badgeApplicationsGetOneAsyncWithHttpInfo($application_id, string $contentType = self::contentTypes['badgeApplicationsGetOne'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BadgeApplication';
+        $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplication';
         $request = $this->badgeApplicationsGetOneRequest($application_id, $contentType);
 
         return $this->client
@@ -1030,9 +1030,9 @@ class BadgeCampaignsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeCampaignsGetAll'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetBadgeCampaignsList|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\GetBadgeCampaignsList|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function badgeCampaignsGetAll(string $contentType = self::contentTypes['badgeCampaignsGetAll'][0])
     {
@@ -1047,9 +1047,9 @@ class BadgeCampaignsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeCampaignsGetAll'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetBadgeCampaignsList|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetBadgeCampaignsList|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function badgeCampaignsGetAllWithHttpInfo(string $contentType = self::contentTypes['badgeCampaignsGetAll'][0])
     {
@@ -1080,11 +1080,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetBadgeCampaignsList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetBadgeCampaignsList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1102,16 +1102,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetBadgeCampaignsList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1129,16 +1129,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1156,7 +1156,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1175,7 +1175,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetBadgeCampaignsList';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1208,7 +1208,7 @@ class BadgeCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetBadgeCampaignsList',
+                        '\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1216,7 +1216,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1224,7 +1224,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1266,7 +1266,7 @@ class BadgeCampaignsApi
      */
     public function badgeCampaignsGetAllAsyncWithHttpInfo(string $contentType = self::contentTypes['badgeCampaignsGetAll'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetBadgeCampaignsList';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList';
         $request = $this->badgeCampaignsGetAllRequest($contentType);
 
         return $this->client
@@ -1393,9 +1393,9 @@ class BadgeCampaignsApi
      * @param  string $operation_id Badge operation ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeOperationsGetOne'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BadgeOperation|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BadgeOperation|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function badgeOperationsGetOne($operation_id, string $contentType = self::contentTypes['badgeOperationsGetOne'][0])
     {
@@ -1411,9 +1411,9 @@ class BadgeCampaignsApi
      * @param  string $operation_id Badge operation ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['badgeOperationsGetOne'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BadgeOperation|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BadgeOperation|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function badgeOperationsGetOneWithHttpInfo($operation_id, string $contentType = self::contentTypes['badgeOperationsGetOne'][0])
     {
@@ -1444,11 +1444,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BadgeOperation' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BadgeOperation' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BadgeOperation' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BadgeOperation' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1466,16 +1466,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BadgeOperation', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BadgeOperation', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1493,16 +1493,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1520,16 +1520,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1547,7 +1547,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1566,7 +1566,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BadgeOperation';
+            $returnType = '\robsonek\phpAllegroApi\Model\BadgeOperation';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1599,7 +1599,7 @@ class BadgeCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BadgeOperation',
+                        '\robsonek\phpAllegroApi\Model\BadgeOperation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1607,7 +1607,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1615,7 +1615,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1623,7 +1623,7 @@ class BadgeCampaignsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1667,7 +1667,7 @@ class BadgeCampaignsApi
      */
     public function badgeOperationsGetOneAsyncWithHttpInfo($operation_id, string $contentType = self::contentTypes['badgeOperationsGetOne'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BadgeOperation';
+        $returnType = '\robsonek\phpAllegroApi\Model\BadgeOperation';
         $request = $this->badgeOperationsGetOneRequest($operation_id, $contentType);
 
         return $this->client
@@ -1812,9 +1812,9 @@ class BadgeCampaignsApi
      * @param  int $limit The maximum number of badges returned in the response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBadges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BadgesList|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BadgesList|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getBadges($offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['getBadges'][0])
     {
@@ -1832,9 +1832,9 @@ class BadgeCampaignsApi
      * @param  int $limit The maximum number of badges returned in the response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBadges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BadgesList|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BadgesList|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBadgesWithHttpInfo($offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['getBadges'][0])
     {
@@ -1865,11 +1865,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BadgesList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BadgesList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BadgesList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BadgesList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1887,16 +1887,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BadgesList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BadgesList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1914,16 +1914,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1941,16 +1941,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1968,7 +1968,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1987,7 +1987,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BadgesList';
+            $returnType = '\robsonek\phpAllegroApi\Model\BadgesList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2020,7 +2020,7 @@ class BadgeCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BadgesList',
+                        '\robsonek\phpAllegroApi\Model\BadgesList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2028,7 +2028,7 @@ class BadgeCampaignsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2036,7 +2036,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2044,7 +2044,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2092,7 +2092,7 @@ class BadgeCampaignsApi
      */
     public function getBadgesAsyncWithHttpInfo($offer_id = null, $offset = null, $limit = 50, string $contentType = self::contentTypes['getBadges'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BadgesList';
+        $returnType = '\robsonek\phpAllegroApi\Model\BadgesList';
         $request = $this->getBadgesRequest($offer_id, $offset, $limit, $contentType);
 
         return $this->client
@@ -2260,12 +2260,12 @@ class BadgeCampaignsApi
      *
      * @param  string $offer_id Offer ID. (required)
      * @param  string $campaign_id Campaign ID. (required)
-     * @param  \OpenAPI\Client\Model\BadgePatchRequest $badge_patch_request badge_patch_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgePatchRequest $badge_patch_request badge_patch_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['patchBadge'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PatchBadge202Response|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\PatchBadge202Response|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function patchBadge($offer_id, $campaign_id, $badge_patch_request = null, string $contentType = self::contentTypes['patchBadge'][0])
     {
@@ -2280,12 +2280,12 @@ class BadgeCampaignsApi
      *
      * @param  string $offer_id Offer ID. (required)
      * @param  string $campaign_id Campaign ID. (required)
-     * @param  \OpenAPI\Client\Model\BadgePatchRequest $badge_patch_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgePatchRequest $badge_patch_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['patchBadge'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PatchBadge202Response|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PatchBadge202Response|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchBadgeWithHttpInfo($offer_id, $campaign_id, $badge_patch_request = null, string $contentType = self::contentTypes['patchBadge'][0])
     {
@@ -2316,11 +2316,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\PatchBadge202Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PatchBadge202Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PatchBadge202Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PatchBadge202Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2338,16 +2338,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PatchBadge202Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PatchBadge202Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2365,16 +2365,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2392,16 +2392,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2419,16 +2419,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2446,16 +2446,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2473,16 +2473,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2500,7 +2500,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2519,7 +2519,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PatchBadge202Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\PatchBadge202Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2552,7 +2552,7 @@ class BadgeCampaignsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PatchBadge202Response',
+                        '\robsonek\phpAllegroApi\Model\PatchBadge202Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2560,7 +2560,7 @@ class BadgeCampaignsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2568,7 +2568,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2576,7 +2576,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2584,7 +2584,7 @@ class BadgeCampaignsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2592,7 +2592,7 @@ class BadgeCampaignsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2600,7 +2600,7 @@ class BadgeCampaignsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2617,7 +2617,7 @@ class BadgeCampaignsApi
      *
      * @param  string $offer_id Offer ID. (required)
      * @param  string $campaign_id Campaign ID. (required)
-     * @param  \OpenAPI\Client\Model\BadgePatchRequest $badge_patch_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgePatchRequest $badge_patch_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['patchBadge'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2640,7 +2640,7 @@ class BadgeCampaignsApi
      *
      * @param  string $offer_id Offer ID. (required)
      * @param  string $campaign_id Campaign ID. (required)
-     * @param  \OpenAPI\Client\Model\BadgePatchRequest $badge_patch_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgePatchRequest $badge_patch_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['patchBadge'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2648,7 +2648,7 @@ class BadgeCampaignsApi
      */
     public function patchBadgeAsyncWithHttpInfo($offer_id, $campaign_id, $badge_patch_request = null, string $contentType = self::contentTypes['patchBadge'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PatchBadge202Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\PatchBadge202Response';
         $request = $this->patchBadgeRequest($offer_id, $campaign_id, $badge_patch_request, $contentType);
 
         return $this->client
@@ -2692,7 +2692,7 @@ class BadgeCampaignsApi
      *
      * @param  string $offer_id Offer ID. (required)
      * @param  string $campaign_id Campaign ID. (required)
-     * @param  \OpenAPI\Client\Model\BadgePatchRequest $badge_patch_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgePatchRequest $badge_patch_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['patchBadge'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2813,12 +2813,12 @@ class BadgeCampaignsApi
      *
      * Apply for badge in selected offer
      *
-     * @param  \OpenAPI\Client\Model\BadgeApplicationRequest $badge_application_request badge_application_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgeApplicationRequest $badge_application_request badge_application_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBadges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BadgeApplication|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplication|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function postBadges($badge_application_request = null, string $contentType = self::contentTypes['postBadges'][0])
     {
@@ -2831,12 +2831,12 @@ class BadgeCampaignsApi
      *
      * Apply for badge in selected offer
      *
-     * @param  \OpenAPI\Client\Model\BadgeApplicationRequest $badge_application_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgeApplicationRequest $badge_application_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBadges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BadgeApplication|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\BadgeApplication|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBadgesWithHttpInfo($badge_application_request = null, string $contentType = self::contentTypes['postBadges'][0])
     {
@@ -2867,11 +2867,11 @@ class BadgeCampaignsApi
 
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\BadgeApplication' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\BadgeApplication' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BadgeApplication' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\BadgeApplication' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2889,16 +2889,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BadgeApplication', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\BadgeApplication', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2916,16 +2916,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2943,16 +2943,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2970,16 +2970,16 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2997,7 +2997,7 @@ class BadgeCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3016,7 +3016,7 @@ class BadgeCampaignsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\BadgeApplication';
+            $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplication';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3049,7 +3049,7 @@ class BadgeCampaignsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BadgeApplication',
+                        '\robsonek\phpAllegroApi\Model\BadgeApplication',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3057,7 +3057,7 @@ class BadgeCampaignsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3065,7 +3065,7 @@ class BadgeCampaignsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3073,7 +3073,7 @@ class BadgeCampaignsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3081,7 +3081,7 @@ class BadgeCampaignsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3096,7 +3096,7 @@ class BadgeCampaignsApi
      *
      * Apply for badge in selected offer
      *
-     * @param  \OpenAPI\Client\Model\BadgeApplicationRequest $badge_application_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgeApplicationRequest $badge_application_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBadges'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3117,7 +3117,7 @@ class BadgeCampaignsApi
      *
      * Apply for badge in selected offer
      *
-     * @param  \OpenAPI\Client\Model\BadgeApplicationRequest $badge_application_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgeApplicationRequest $badge_application_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBadges'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3125,7 +3125,7 @@ class BadgeCampaignsApi
      */
     public function postBadgesAsyncWithHttpInfo($badge_application_request = null, string $contentType = self::contentTypes['postBadges'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BadgeApplication';
+        $returnType = '\robsonek\phpAllegroApi\Model\BadgeApplication';
         $request = $this->postBadgesRequest($badge_application_request, $contentType);
 
         return $this->client
@@ -3167,7 +3167,7 @@ class BadgeCampaignsApi
     /**
      * Create request for operation 'postBadges'
      *
-     * @param  \OpenAPI\Client\Model\BadgeApplicationRequest $badge_application_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BadgeApplicationRequest $badge_application_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postBadges'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

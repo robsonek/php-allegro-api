@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BillingEntryTax Class Doc Comment
  *
  * @category Class
  * @description Tax rate applied to the returned billing entry. Optional field percentage is present if the returned billing entry is subject to tax. In this case, annotation is not returned. Optional field annotation is present if the returned billing entry is exempt from tax or tax is not applicable; the possible value is \&quot;OUT_OF_SCOPE\&quot;. In this case, percentage is not returned.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

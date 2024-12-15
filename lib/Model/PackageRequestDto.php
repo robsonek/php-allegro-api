@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PackageRequestDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'length' => '\OpenAPI\Client\Model\DimensionValue',
-        'width' => '\OpenAPI\Client\Model\DimensionValue',
-        'height' => '\OpenAPI\Client\Model\DimensionValue',
-        'weight' => '\OpenAPI\Client\Model\WeightValue',
+        'length' => '\robsonek\phpAllegroApi\Model\DimensionValue',
+        'width' => '\robsonek\phpAllegroApi\Model\DimensionValue',
+        'height' => '\robsonek\phpAllegroApi\Model\DimensionValue',
+        'weight' => '\robsonek\phpAllegroApi\Model\WeightValue',
         'text_on_label' => 'string'
     ];
 
@@ -378,7 +378,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets length
      *
-     * @return \OpenAPI\Client\Model\DimensionValue
+     * @return \robsonek\phpAllegroApi\Model\DimensionValue
      */
     public function getLength()
     {
@@ -388,7 +388,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets length
      *
-     * @param \OpenAPI\Client\Model\DimensionValue $length length
+     * @param \robsonek\phpAllegroApi\Model\DimensionValue $length length
      *
      * @return self
      */
@@ -405,7 +405,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets width
      *
-     * @return \OpenAPI\Client\Model\DimensionValue
+     * @return \robsonek\phpAllegroApi\Model\DimensionValue
      */
     public function getWidth()
     {
@@ -415,7 +415,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets width
      *
-     * @param \OpenAPI\Client\Model\DimensionValue $width width
+     * @param \robsonek\phpAllegroApi\Model\DimensionValue $width width
      *
      * @return self
      */
@@ -432,7 +432,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets height
      *
-     * @return \OpenAPI\Client\Model\DimensionValue
+     * @return \robsonek\phpAllegroApi\Model\DimensionValue
      */
     public function getHeight()
     {
@@ -442,7 +442,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets height
      *
-     * @param \OpenAPI\Client\Model\DimensionValue $height height
+     * @param \robsonek\phpAllegroApi\Model\DimensionValue $height height
      *
      * @return self
      */
@@ -459,7 +459,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets weight
      *
-     * @return \OpenAPI\Client\Model\WeightValue
+     * @return \robsonek\phpAllegroApi\Model\WeightValue
      */
     public function getWeight()
     {
@@ -469,7 +469,7 @@ class PackageRequestDto implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets weight
      *
-     * @param \OpenAPI\Client\Model\WeightValue $weight weight
+     * @param \robsonek\phpAllegroApi\Model\WeightValue $weight weight
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDto Class Doc Comment
  *
  * @category Class
  * @description An offer.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,20 +60,20 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'category' => '\OpenAPI\Client\Model\Category',
-        'primary_image' => '\OpenAPI\Client\Model\OfferListingDtoImage',
-        'selling_mode' => '\OpenAPI\Client\Model\OfferListingDtoV1SellingMode',
-        'sale_info' => '\OpenAPI\Client\Model\OfferListingDtoV1SaleInfo',
-        'stock' => '\OpenAPI\Client\Model\OfferListingDtoV1Stock',
-        'stats' => '\OpenAPI\Client\Model\OfferListingDtoV1Stats',
-        'publication' => '\OpenAPI\Client\Model\OfferListingDtoV1Publication',
-        'after_sales_services' => '\OpenAPI\Client\Model\AfterSalesServices',
-        'additional_services' => '\OpenAPI\Client\Model\OfferAdditionalServices',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'delivery' => '\OpenAPI\Client\Model\OfferListingDtoV1Delivery',
-        'b2b' => '\OpenAPI\Client\Model\OfferListingDtoV1B2b',
-        'fundraising_campaign' => '\OpenAPI\Client\Model\JustId',
-        'additional_marketplaces' => 'array<string,\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplace>'
+        'category' => '\robsonek\phpAllegroApi\Model\Category',
+        'primary_image' => '\robsonek\phpAllegroApi\Model\OfferListingDtoImage',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1SellingMode',
+        'sale_info' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1SaleInfo',
+        'stock' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1Stock',
+        'stats' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats',
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1Publication',
+        'after_sales_services' => '\robsonek\phpAllegroApi\Model\AfterSalesServices',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\OfferAdditionalServices',
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'delivery' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1Delivery',
+        'b2b' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1B2b',
+        'fundraising_campaign' => '\robsonek\phpAllegroApi\Model\JustId',
+        'additional_marketplaces' => 'array<string,\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplace>'
     ];
 
     /**
@@ -452,7 +452,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category|null
+     * @return \robsonek\phpAllegroApi\Model\Category|null
      */
     public function getCategory()
     {
@@ -462,7 +462,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category|null $category The category to which the offer is listed for sale.
+     * @param \robsonek\phpAllegroApi\Model\Category|null $category The category to which the offer is listed for sale.
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets primary_image
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoImage|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoImage|null
      */
     public function getPrimaryImage()
     {
@@ -489,7 +489,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets primary_image
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoImage|null $primary_image primary_image
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoImage|null $primary_image primary_image
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1SellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1SellingMode|null
      */
     public function getSellingMode()
     {
@@ -516,7 +516,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1SellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1SellingMode|null $selling_mode selling_mode
      *
      * @return self
      */
@@ -533,7 +533,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sale_info
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1SaleInfo|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1SaleInfo|null
      */
     public function getSaleInfo()
     {
@@ -543,7 +543,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sale_info
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1SaleInfo|null $sale_info sale_info
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1SaleInfo|null $sale_info sale_info
      *
      * @return self
      */
@@ -560,7 +560,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1Stock|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stock|null
      */
     public function getStock()
     {
@@ -570,7 +570,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1Stock|null $stock stock
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stock|null $stock stock
      *
      * @return self
      */
@@ -587,7 +587,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets stats
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1Stats|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats|null
      */
     public function getStats()
     {
@@ -597,7 +597,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets stats
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1Stats|null $stats stats
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats|null $stats stats
      *
      * @return self
      */
@@ -621,7 +621,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1Publication|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1Publication|null
      */
     public function getPublication()
     {
@@ -631,7 +631,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1Publication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1Publication|null $publication publication
      *
      * @return self
      */
@@ -648,7 +648,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets after_sales_services
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServices|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServices|null
      */
     public function getAfterSalesServices()
     {
@@ -658,7 +658,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets after_sales_services
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServices|null $after_sales_services after_sales_services
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServices|null $after_sales_services after_sales_services
      *
      * @return self
      */
@@ -675,7 +675,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\OfferAdditionalServices|null
+     * @return \robsonek\phpAllegroApi\Model\OfferAdditionalServices|null
      */
     public function getAdditionalServices()
     {
@@ -685,7 +685,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\OfferAdditionalServices|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\OfferAdditionalServices|null $additional_services additional_services
      *
      * @return self
      */
@@ -702,7 +702,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -712,7 +712,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -729,7 +729,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1Delivery|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1Delivery|null
      */
     public function getDelivery()
     {
@@ -739,7 +739,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1Delivery|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1Delivery|null $delivery delivery
      *
      * @return self
      */
@@ -756,7 +756,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets b2b
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1B2b|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1B2b|null
      */
     public function getB2b()
     {
@@ -766,7 +766,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets b2b
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1B2b|null $b2b b2b
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1B2b|null $b2b b2b
      *
      * @return self
      */
@@ -783,7 +783,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fundraising_campaign
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getFundraisingCampaign()
     {
@@ -793,7 +793,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fundraising_campaign
      *
-     * @param \OpenAPI\Client\Model\JustId|null $fundraising_campaign fundraising_campaign
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $fundraising_campaign fundraising_campaign
      *
      * @return self
      */
@@ -810,7 +810,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_marketplaces
      *
-     * @return array<string,\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplace>|null
+     * @return array<string,\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplace>|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -820,7 +820,7 @@ class OfferListingDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_marketplaces
      *
-     * @param array<string,\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplace>|null $additional_marketplaces Properties of the offer for each additional marketplace.
+     * @param array<string,\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplace>|null $additional_marketplaces Properties of the offer for each additional marketplace.
      *
      * @return self
      */

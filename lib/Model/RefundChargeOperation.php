@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefundChargeOperation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class RefundChargeOperation extends BaseOperation
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'payment' => '\OpenAPI\Client\Model\OperationPayment',
-        'participant' => '\OpenAPI\Client\Model\BuyerParticipant'
+        'payment' => '\robsonek\phpAllegroApi\Model\OperationPayment',
+        'participant' => '\robsonek\phpAllegroApi\Model\BuyerParticipant'
     ];
 
     /**
@@ -333,7 +333,7 @@ class RefundChargeOperation extends BaseOperation
     /**
      * Gets payment
      *
-     * @return \OpenAPI\Client\Model\OperationPayment
+     * @return \robsonek\phpAllegroApi\Model\OperationPayment
      */
     public function getPayment()
     {
@@ -343,7 +343,7 @@ class RefundChargeOperation extends BaseOperation
     /**
      * Sets payment
      *
-     * @param \OpenAPI\Client\Model\OperationPayment $payment payment
+     * @param \robsonek\phpAllegroApi\Model\OperationPayment $payment payment
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class RefundChargeOperation extends BaseOperation
     /**
      * Gets participant
      *
-     * @return \OpenAPI\Client\Model\BuyerParticipant
+     * @return \robsonek\phpAllegroApi\Model\BuyerParticipant
      */
     public function getParticipant()
     {
@@ -370,7 +370,7 @@ class RefundChargeOperation extends BaseOperation
     /**
      * Sets participant
      *
-     * @param \OpenAPI\Client\Model\BuyerParticipant $participant participant
+     * @param \robsonek\phpAllegroApi\Model\BuyerParticipant $participant participant
      *
      * @return self
      */

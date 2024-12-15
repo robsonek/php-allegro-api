@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferProductSetReference Class Doc Comment
  *
  * @category Class
  * @description If the offer was a product set, you can see a list of component products (product id with quantity).
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferProductSetReference implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'products' => '\OpenAPI\Client\Model\OfferProductSetProductReference[]'
+        'products' => '\robsonek\phpAllegroApi\Model\OfferProductSetProductReference[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class OfferProductSetReference implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\OfferProductSetProductReference[]
+     * @return \robsonek\phpAllegroApi\Model\OfferProductSetProductReference[]
      */
     public function getProducts()
     {
@@ -306,7 +306,7 @@ class OfferProductSetReference implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\OfferProductSetProductReference[] $products List of products in a product set.
+     * @param \robsonek\phpAllegroApi\Model\OfferProductSetProductReference[] $products List of products in a product set.
      *
      * @return self
      */

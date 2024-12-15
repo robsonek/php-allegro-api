@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**promo_options** | [**\OpenAPI\Client\Model\OfferPromoOptions[]**](OfferPromoOptions.md) | Promo options for seller offers. | [optional]
+**promo_options** | [**\robsonek\phpAllegroApi\Model\OfferPromoOptions[]**](OfferPromoOptions.md) | Promo options for seller offers. | [optional]
 **count** | **int** | Number of returned elements. | [optional]
 **total_count** | **int** | Total number of available elements. | [optional]
 

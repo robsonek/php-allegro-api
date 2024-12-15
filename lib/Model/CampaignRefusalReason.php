@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CampaignRefusalReason Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CampaignRefusalReason implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'code' => 'string',
-        'messages' => '\OpenAPI\Client\Model\RefusalMessage[]'
+        'messages' => '\robsonek\phpAllegroApi\Model\RefusalMessage[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class CampaignRefusalReason implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets messages
      *
-     * @return \OpenAPI\Client\Model\RefusalMessage[]
+     * @return \robsonek\phpAllegroApi\Model\RefusalMessage[]
      */
     public function getMessages()
     {
@@ -342,7 +342,7 @@ class CampaignRefusalReason implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets messages
      *
-     * @param \OpenAPI\Client\Model\RefusalMessage[] $messages List of refusal messages.
+     * @param \robsonek\phpAllegroApi\Model\RefusalMessage[] $messages List of refusal messages.
      *
      * @return self
      */

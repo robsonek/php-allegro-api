@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfDeliveryMethodsUsingGET200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetListOfDeliveryMethodsUsingGET200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_methods' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]'
+        'delivery_methods' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetListOfDeliveryMethodsUsingGET200Response implements ModelInterface, Arr
     /**
      * Gets delivery_methods
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]|null
      */
     public function getDeliveryMethods()
     {
@@ -302,7 +302,7 @@ class GetListOfDeliveryMethodsUsingGET200Response implements ModelInterface, Arr
     /**
      * Sets delivery_methods
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]|null $delivery_methods delivery_methods
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner[]|null $delivery_methods delivery_methods
      *
      * @return self
      */

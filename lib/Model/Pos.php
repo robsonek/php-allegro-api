@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Pos Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,15 +60,15 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'external_id' => 'string',
         'name' => 'string',
-        'seller' => '\OpenAPI\Client\Model\Seller',
+        'seller' => '\robsonek\phpAllegroApi\Model\Seller',
         'type' => 'string',
-        'address' => '\OpenAPI\Client\Model\Address',
+        'address' => '\robsonek\phpAllegroApi\Model\Address',
         'phone_number' => 'string',
         'email' => 'string',
-        'locations' => '\OpenAPI\Client\Model\PosLocation[]',
-        'open_hours' => '\OpenAPI\Client\Model\OpenHour[]',
+        'locations' => '\robsonek\phpAllegroApi\Model\PosLocation[]',
+        'open_hours' => '\robsonek\phpAllegroApi\Model\OpenHour[]',
         'service_time' => 'string',
-        'payments' => '\OpenAPI\Client\Model\Payment[]',
+        'payments' => '\robsonek\phpAllegroApi\Model\Payment[]',
         'confirmation_type' => 'string',
         'status' => 'string',
         'created_at' => 'string',
@@ -520,7 +520,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \OpenAPI\Client\Model\Seller|null
+     * @return \robsonek\phpAllegroApi\Model\Seller|null
      */
     public function getSeller()
     {
@@ -530,7 +530,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \OpenAPI\Client\Model\Seller|null $seller seller
+     * @param \robsonek\phpAllegroApi\Model\Seller|null $seller seller
      *
      * @return self
      */
@@ -574,7 +574,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\Address
+     * @return \robsonek\phpAllegroApi\Model\Address
      */
     public function getAddress()
     {
@@ -584,7 +584,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\Address $address address
+     * @param \robsonek\phpAllegroApi\Model\Address $address address
      *
      * @return self
      */
@@ -663,7 +663,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets locations
      *
-     * @return \OpenAPI\Client\Model\PosLocation[]|null
+     * @return \robsonek\phpAllegroApi\Model\PosLocation[]|null
      */
     public function getLocations()
     {
@@ -673,7 +673,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets locations
      *
-     * @param \OpenAPI\Client\Model\PosLocation[]|null $locations IDs for a location. When creating (Post) or updating (Put) a point of service the field is ignored.
+     * @param \robsonek\phpAllegroApi\Model\PosLocation[]|null $locations IDs for a location. When creating (Post) or updating (Put) a point of service the field is ignored.
      *
      * @return self
      */
@@ -690,7 +690,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets open_hours
      *
-     * @return \OpenAPI\Client\Model\OpenHour[]
+     * @return \robsonek\phpAllegroApi\Model\OpenHour[]
      */
     public function getOpenHours()
     {
@@ -700,7 +700,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets open_hours
      *
-     * @param \OpenAPI\Client\Model\OpenHour[] $open_hours Possible empty list of opening hours.
+     * @param \robsonek\phpAllegroApi\Model\OpenHour[] $open_hours Possible empty list of opening hours.
      *
      * @return self
      */
@@ -744,7 +744,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\Payment[]|null
+     * @return \robsonek\phpAllegroApi\Model\Payment[]|null
      */
     public function getPayments()
     {
@@ -754,7 +754,7 @@ class Pos implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\Payment[]|null $payments An empty list of payment types is available.
+     * @param \robsonek\phpAllegroApi\Model\Payment[]|null $payments An empty list of payment types is available.
      *
      * @return self
      */

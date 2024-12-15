@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListProductBased Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class CompatibilityListProductBased extends CompatibilityList
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'items' => '\OpenAPI\Client\Model\CompatibilityListItemProductBased[]'
+        'items' => '\robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]'
     ];
 
     /**
@@ -323,7 +323,7 @@ class CompatibilityListProductBased extends CompatibilityList
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListItemProductBased[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]|null
      */
     public function getItems()
     {
@@ -333,7 +333,7 @@ class CompatibilityListProductBased extends CompatibilityList
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListItemProductBased[]|null $items Text representation of the compatibility list items. Provided for informational purposes only - ignored when creating (Post) or updating (Put) compatibility list in the offer.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]|null $items Text representation of the compatibility list items. Provided for informational purposes only - ignored when creating (Post) or updating (Put) compatibility list in the offer.
      *
      * @return self
      */

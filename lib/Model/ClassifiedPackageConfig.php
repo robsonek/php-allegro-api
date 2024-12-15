@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ClassifiedPackageConfig Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'extensions' => '\OpenAPI\Client\Model\ClassifiedExtension[]',
+        'extensions' => '\robsonek\phpAllegroApi\Model\ClassifiedExtension[]',
         'id' => 'string',
         'name' => 'string',
-        'promotions' => '\OpenAPI\Client\Model\ClassifiedPromotion[]',
-        'publication' => '\OpenAPI\Client\Model\ClassifiedPublication',
+        'promotions' => '\robsonek\phpAllegroApi\Model\ClassifiedPromotion[]',
+        'publication' => '\robsonek\phpAllegroApi\Model\ClassifiedPublication',
         'type' => 'string'
     ];
 
@@ -360,7 +360,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets extensions
      *
-     * @return \OpenAPI\Client\Model\ClassifiedExtension[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedExtension[]|null
      */
     public function getExtensions()
     {
@@ -370,7 +370,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets extensions
      *
-     * @param \OpenAPI\Client\Model\ClassifiedExtension[]|null $extensions extensions
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedExtension[]|null $extensions extensions
      *
      * @return self
      */
@@ -441,7 +441,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets promotions
      *
-     * @return \OpenAPI\Client\Model\ClassifiedPromotion[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedPromotion[]|null
      */
     public function getPromotions()
     {
@@ -451,7 +451,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets promotions
      *
-     * @param \OpenAPI\Client\Model\ClassifiedPromotion[]|null $promotions A list of additional promotions included in the package.
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedPromotion[]|null $promotions A list of additional promotions included in the package.
      *
      * @return self
      */
@@ -468,7 +468,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\ClassifiedPublication|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedPublication|null
      */
     public function getPublication()
     {
@@ -478,7 +478,7 @@ class ClassifiedPackageConfig implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\ClassifiedPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedPublication|null $publication publication
      *
      * @return self
      */

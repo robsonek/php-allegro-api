@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetShipmentDetails404Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetShipmentDetails404Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\OpenAPI\Client\Model\Error404[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\Error404[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetShipmentDetails404Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error404[]|null
+     * @return \robsonek\phpAllegroApi\Model\Error404[]|null
      */
     public function getErrors()
     {
@@ -302,7 +302,7 @@ class GetShipmentDetails404Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error404[]|null $errors Array of errors.
+     * @param \robsonek\phpAllegroApi\Model\Error404[]|null $errors Array of errors.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ListingResponseFilters Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ListingResponseFilters implements ModelInterface, ArrayAccess, \JsonSerial
         'id' => 'string',
         'type' => 'string',
         'name' => 'string',
-        'values' => '\OpenAPI\Client\Model\ListingResponseFiltersValues[]',
+        'values' => '\robsonek\phpAllegroApi\Model\ListingResponseFiltersValues[]',
         'min_value' => 'float',
         'max_value' => 'float',
         'unit' => 'string'
@@ -455,7 +455,7 @@ class ListingResponseFilters implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\ListingResponseFiltersValues[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseFiltersValues[]|null
      */
     public function getValues()
     {
@@ -465,7 +465,7 @@ class ListingResponseFilters implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\ListingResponseFiltersValues[]|null $values Available filter values.
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseFiltersValues[]|null $values Available filter values.
      *
      * @return self
      */

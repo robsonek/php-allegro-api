@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ReceivingEntry Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ReceivingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'expected' => 'int',
-        'product' => '\OpenAPI\Client\Model\Product',
-        'received' => '\OpenAPI\Client\Model\ReceivingStatus[]'
+        'product' => '\robsonek\phpAllegroApi\Model\Product',
+        'received' => '\robsonek\phpAllegroApi\Model\ReceivingStatus[]'
     ];
 
     /**
@@ -342,7 +342,7 @@ class ReceivingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\Product|null
+     * @return \robsonek\phpAllegroApi\Model\Product|null
      */
     public function getProduct()
     {
@@ -352,7 +352,7 @@ class ReceivingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\Product|null $product product
+     * @param \robsonek\phpAllegroApi\Model\Product|null $product product
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class ReceivingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets received
      *
-     * @return \OpenAPI\Client\Model\ReceivingStatus[]|null
+     * @return \robsonek\phpAllegroApi\Model\ReceivingStatus[]|null
      */
     public function getReceived()
     {
@@ -379,7 +379,7 @@ class ReceivingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets received
      *
-     * @param \OpenAPI\Client\Model\ReceivingStatus[]|null $received received
+     * @param \robsonek\phpAllegroApi\Model\ReceivingStatus[]|null $received received
      *
      * @return self
      */

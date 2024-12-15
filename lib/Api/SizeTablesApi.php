@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTablesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class SizeTablesApi
      *
      * Create a size table
      *
-     * @param  \OpenAPI\Client\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTableUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PublicTableDto
+     * @return \robsonek\phpAllegroApi\Model\PublicTableDto
      */
     public function createTableUsingPOST($size_table_post_request, string $contentType = self::contentTypes['createTableUsingPOST'][0])
     {
@@ -157,12 +157,12 @@ class SizeTablesApi
      *
      * Create a size table
      *
-     * @param  \OpenAPI\Client\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTableUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTableUsingPOSTWithHttpInfo($size_table_post_request, string $contentType = self::contentTypes['createTableUsingPOST'][0])
     {
@@ -193,11 +193,11 @@ class SizeTablesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\PublicTableDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PublicTableDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PublicTableDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PublicTableDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,7 +215,7 @@ class SizeTablesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PublicTableDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PublicTableDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -234,7 +234,7 @@ class SizeTablesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -267,7 +267,7 @@ class SizeTablesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PublicTableDto',
+                        '\robsonek\phpAllegroApi\Model\PublicTableDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class SizeTablesApi
      *
      * Create a size table
      *
-     * @param  \OpenAPI\Client\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTableUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -303,7 +303,7 @@ class SizeTablesApi
      *
      * Create a size table
      *
-     * @param  \OpenAPI\Client\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTableUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -311,7 +311,7 @@ class SizeTablesApi
      */
     public function createTableUsingPOSTAsyncWithHttpInfo($size_table_post_request, string $contentType = self::contentTypes['createTableUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
         $request = $this->createTableUsingPOSTRequest($size_table_post_request, $contentType);
 
         return $this->client
@@ -353,7 +353,7 @@ class SizeTablesApi
     /**
      * Create request for operation 'createTableUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePostRequest $size_table_post_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTableUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -453,9 +453,9 @@ class SizeTablesApi
      * @param  string $table_id Table identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTableUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PublicTableDto
+     * @return \robsonek\phpAllegroApi\Model\PublicTableDto
      */
     public function getTableUsingGET($table_id, string $contentType = self::contentTypes['getTableUsingGET'][0])
     {
@@ -471,9 +471,9 @@ class SizeTablesApi
      * @param  string $table_id Table identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTableUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTableUsingGETWithHttpInfo($table_id, string $contentType = self::contentTypes['getTableUsingGET'][0])
     {
@@ -504,11 +504,11 @@ class SizeTablesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PublicTableDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PublicTableDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PublicTableDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PublicTableDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -526,7 +526,7 @@ class SizeTablesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PublicTableDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PublicTableDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -545,7 +545,7 @@ class SizeTablesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -578,7 +578,7 @@ class SizeTablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PublicTableDto',
+                        '\robsonek\phpAllegroApi\Model\PublicTableDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -622,7 +622,7 @@ class SizeTablesApi
      */
     public function getTableUsingGETAsyncWithHttpInfo($table_id, string $contentType = self::contentTypes['getTableUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
         $request = $this->getTableUsingGETRequest($table_id, $contentType);
 
         return $this->client
@@ -764,9 +764,9 @@ class SizeTablesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTablesTemplatesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SizeTableTemplatesResponse
+     * @return \robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse
      */
     public function getTablesTemplatesUsingGET(string $contentType = self::contentTypes['getTablesTemplatesUsingGET'][0])
     {
@@ -781,9 +781,9 @@ class SizeTablesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTablesTemplatesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SizeTableTemplatesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTablesTemplatesUsingGETWithHttpInfo(string $contentType = self::contentTypes['getTablesTemplatesUsingGET'][0])
     {
@@ -814,11 +814,11 @@ class SizeTablesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SizeTableTemplatesResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SizeTableTemplatesResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -836,7 +836,7 @@ class SizeTablesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SizeTableTemplatesResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -855,7 +855,7 @@ class SizeTablesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SizeTableTemplatesResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -888,7 +888,7 @@ class SizeTablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SizeTableTemplatesResponse',
+                        '\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -930,7 +930,7 @@ class SizeTablesApi
      */
     public function getTablesTemplatesUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getTablesTemplatesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SizeTableTemplatesResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\SizeTableTemplatesResponse';
         $request = $this->getTablesTemplatesUsingGETRequest($contentType);
 
         return $this->client
@@ -1056,9 +1056,9 @@ class SizeTablesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTablesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PublicTablesDto
+     * @return \robsonek\phpAllegroApi\Model\PublicTablesDto
      */
     public function getTablesUsingGET(string $contentType = self::contentTypes['getTablesUsingGET'][0])
     {
@@ -1073,9 +1073,9 @@ class SizeTablesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTablesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PublicTablesDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PublicTablesDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTablesUsingGETWithHttpInfo(string $contentType = self::contentTypes['getTablesUsingGET'][0])
     {
@@ -1106,11 +1106,11 @@ class SizeTablesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PublicTablesDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PublicTablesDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PublicTablesDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PublicTablesDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1128,7 +1128,7 @@ class SizeTablesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PublicTablesDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PublicTablesDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1147,7 +1147,7 @@ class SizeTablesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PublicTablesDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\PublicTablesDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1180,7 +1180,7 @@ class SizeTablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PublicTablesDto',
+                        '\robsonek\phpAllegroApi\Model\PublicTablesDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1222,7 +1222,7 @@ class SizeTablesApi
      */
     public function getTablesUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getTablesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PublicTablesDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\PublicTablesDto';
         $request = $this->getTablesUsingGETRequest($contentType);
 
         return $this->client
@@ -1347,12 +1347,12 @@ class SizeTablesApi
      * Update a size table
      *
      * @param  string $table_id Table identifier. (required)
-     * @param  \OpenAPI\Client\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyTableUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PublicTableDto
+     * @return \robsonek\phpAllegroApi\Model\PublicTableDto
      */
     public function modifyTableUsingPUT($table_id, $size_table_put_request, string $contentType = self::contentTypes['modifyTableUsingPUT'][0])
     {
@@ -1366,12 +1366,12 @@ class SizeTablesApi
      * Update a size table
      *
      * @param  string $table_id Table identifier. (required)
-     * @param  \OpenAPI\Client\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyTableUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PublicTableDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyTableUsingPUTWithHttpInfo($table_id, $size_table_put_request, string $contentType = self::contentTypes['modifyTableUsingPUT'][0])
     {
@@ -1402,11 +1402,11 @@ class SizeTablesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PublicTableDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PublicTableDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PublicTableDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PublicTableDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1424,7 +1424,7 @@ class SizeTablesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PublicTableDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PublicTableDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1443,7 +1443,7 @@ class SizeTablesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1476,7 +1476,7 @@ class SizeTablesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PublicTableDto',
+                        '\robsonek\phpAllegroApi\Model\PublicTableDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1492,7 +1492,7 @@ class SizeTablesApi
      * Update a size table
      *
      * @param  string $table_id Table identifier. (required)
-     * @param  \OpenAPI\Client\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyTableUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1514,7 +1514,7 @@ class SizeTablesApi
      * Update a size table
      *
      * @param  string $table_id Table identifier. (required)
-     * @param  \OpenAPI\Client\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyTableUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1522,7 +1522,7 @@ class SizeTablesApi
      */
     public function modifyTableUsingPUTAsyncWithHttpInfo($table_id, $size_table_put_request, string $contentType = self::contentTypes['modifyTableUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PublicTableDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\PublicTableDto';
         $request = $this->modifyTableUsingPUTRequest($table_id, $size_table_put_request, $contentType);
 
         return $this->client
@@ -1565,7 +1565,7 @@ class SizeTablesApi
      * Create request for operation 'modifyTableUsingPUT'
      *
      * @param  string $table_id Table identifier. (required)
-     * @param  \OpenAPI\Client\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
+     * @param  \robsonek\phpAllegroApi\Model\SizeTablePutRequest $size_table_put_request Size table details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyTableUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

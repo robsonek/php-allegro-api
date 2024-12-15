@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1SellingMode Class Doc Comment
  *
  * @category Class
  * @description Information on the offer&#39;s selling mode.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\OpenAPI\Client\Model\SellingModeFormat',
-        'price' => '\OpenAPI\Client\Model\Price',
-        'price_automation' => '\OpenAPI\Client\Model\PriceAutomation',
-        'minimal_price' => '\OpenAPI\Client\Model\Price',
-        'starting_price' => '\OpenAPI\Client\Model\Price'
+        'format' => '\robsonek\phpAllegroApi\Model\SellingModeFormat',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
+        'price_automation' => '\robsonek\phpAllegroApi\Model\PriceAutomation',
+        'minimal_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'starting_price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -321,7 +321,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets format
      *
-     * @return \OpenAPI\Client\Model\SellingModeFormat|null
+     * @return \robsonek\phpAllegroApi\Model\SellingModeFormat|null
      */
     public function getFormat()
     {
@@ -331,7 +331,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets format
      *
-     * @param \OpenAPI\Client\Model\SellingModeFormat|null $format format
+     * @param \robsonek\phpAllegroApi\Model\SellingModeFormat|null $format format
      *
      * @return self
      */
@@ -348,7 +348,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -358,7 +358,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets price_automation
      *
-     * @return \OpenAPI\Client\Model\PriceAutomation|null
+     * @return \robsonek\phpAllegroApi\Model\PriceAutomation|null
      */
     public function getPriceAutomation()
     {
@@ -385,7 +385,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets price_automation
      *
-     * @param \OpenAPI\Client\Model\PriceAutomation|null $price_automation price_automation
+     * @param \robsonek\phpAllegroApi\Model\PriceAutomation|null $price_automation price_automation
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets minimal_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getMinimalPrice()
     {
@@ -412,7 +412,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets minimal_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $minimal_price The minimal price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $minimal_price The minimal price for offers in auction format.
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets starting_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getStartingPrice()
     {
@@ -439,7 +439,7 @@ class OfferListingDtoV1SellingMode implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets starting_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $starting_price The starting price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $starting_price The starting price for offers in auction format.
      *
      * @return self
      */

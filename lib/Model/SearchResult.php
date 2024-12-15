@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SearchResult Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pos_list' => '\OpenAPI\Client\Model\Pos[]'
+        'pos_list' => '\robsonek\phpAllegroApi\Model\Pos[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pos_list
      *
-     * @return \OpenAPI\Client\Model\Pos[]|null
+     * @return \robsonek\phpAllegroApi\Model\Pos[]|null
      */
     public function getPosList()
     {
@@ -302,7 +302,7 @@ class SearchResult implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pos_list
      *
-     * @param \OpenAPI\Client\Model\Pos[]|null $pos_list pos_list
+     * @param \robsonek\phpAllegroApi\Model\Pos[]|null $pos_list pos_list
      *
      * @return self
      */

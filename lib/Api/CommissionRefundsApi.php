@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CommissionRefundsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,7 +139,7 @@ class CommissionRefundsApi
      * @param  string $claim_id Refund application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -156,7 +156,7 @@ class CommissionRefundsApi
      * @param  string $claim_id Refund application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -357,12 +357,12 @@ class CommissionRefundsApi
      *
      * Create a refund application
      *
-     * @param  \OpenAPI\Client\Model\RefundClaimRequest $refund_claim_request refund_claim_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\RefundClaimRequest $refund_claim_request refund_claim_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RefundClaimResponse
+     * @return \robsonek\phpAllegroApi\Model\RefundClaimResponse
      */
     public function createRefundApplication($refund_claim_request, string $contentType = self::contentTypes['createRefundApplication'][0])
     {
@@ -375,12 +375,12 @@ class CommissionRefundsApi
      *
      * Create a refund application
      *
-     * @param  \OpenAPI\Client\Model\RefundClaimRequest $refund_claim_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\RefundClaimRequest $refund_claim_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RefundClaimResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\RefundClaimResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createRefundApplicationWithHttpInfo($refund_claim_request, string $contentType = self::contentTypes['createRefundApplication'][0])
     {
@@ -411,11 +411,11 @@ class CommissionRefundsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\RefundClaimResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\RefundClaimResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RefundClaimResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\RefundClaimResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -433,7 +433,7 @@ class CommissionRefundsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RefundClaimResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\RefundClaimResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -452,7 +452,7 @@ class CommissionRefundsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RefundClaimResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\RefundClaimResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -485,7 +485,7 @@ class CommissionRefundsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RefundClaimResponse',
+                        '\robsonek\phpAllegroApi\Model\RefundClaimResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -500,7 +500,7 @@ class CommissionRefundsApi
      *
      * Create a refund application
      *
-     * @param  \OpenAPI\Client\Model\RefundClaimRequest $refund_claim_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\RefundClaimRequest $refund_claim_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createRefundApplication'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -521,7 +521,7 @@ class CommissionRefundsApi
      *
      * Create a refund application
      *
-     * @param  \OpenAPI\Client\Model\RefundClaimRequest $refund_claim_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\RefundClaimRequest $refund_claim_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createRefundApplication'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -529,7 +529,7 @@ class CommissionRefundsApi
      */
     public function createRefundApplicationAsyncWithHttpInfo($refund_claim_request, string $contentType = self::contentTypes['createRefundApplication'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RefundClaimResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\RefundClaimResponse';
         $request = $this->createRefundApplicationRequest($refund_claim_request, $contentType);
 
         return $this->client
@@ -571,7 +571,7 @@ class CommissionRefundsApi
     /**
      * Create request for operation 'createRefundApplication'
      *
-     * @param  \OpenAPI\Client\Model\RefundClaimRequest $refund_claim_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\RefundClaimRequest $refund_claim_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createRefundApplication'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -671,9 +671,9 @@ class CommissionRefundsApi
      * @param  string $claim_id Refund application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RefundClaim
+     * @return \robsonek\phpAllegroApi\Model\RefundClaim
      */
     public function getRefundApplication($claim_id, string $contentType = self::contentTypes['getRefundApplication'][0])
     {
@@ -689,9 +689,9 @@ class CommissionRefundsApi
      * @param  string $claim_id Refund application ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundApplication'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RefundClaim, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\RefundClaim, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRefundApplicationWithHttpInfo($claim_id, string $contentType = self::contentTypes['getRefundApplication'][0])
     {
@@ -722,11 +722,11 @@ class CommissionRefundsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\RefundClaim' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\RefundClaim' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RefundClaim' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\RefundClaim' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -744,7 +744,7 @@ class CommissionRefundsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RefundClaim', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\RefundClaim', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -763,7 +763,7 @@ class CommissionRefundsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RefundClaim';
+            $returnType = '\robsonek\phpAllegroApi\Model\RefundClaim';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -796,7 +796,7 @@ class CommissionRefundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RefundClaim',
+                        '\robsonek\phpAllegroApi\Model\RefundClaim',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -840,7 +840,7 @@ class CommissionRefundsApi
      */
     public function getRefundApplicationAsyncWithHttpInfo($claim_id, string $contentType = self::contentTypes['getRefundApplication'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RefundClaim';
+        $returnType = '\robsonek\phpAllegroApi\Model\RefundClaim';
         $request = $this->getRefundApplicationRequest($claim_id, $contentType);
 
         return $this->client
@@ -987,9 +987,9 @@ class CommissionRefundsApi
      * @param  int $offset Index of the first returned refund application from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundApplications'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetRefundApplications200Response
+     * @return \robsonek\phpAllegroApi\Model\GetRefundApplications200Response
      */
     public function getRefundApplications($line_item_offer_id = null, $buyer_login = null, $status = null, $limit = 25, $offset = 0, string $contentType = self::contentTypes['getRefundApplications'][0])
     {
@@ -1009,9 +1009,9 @@ class CommissionRefundsApi
      * @param  int $offset Index of the first returned refund application from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundApplications'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetRefundApplications200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetRefundApplications200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRefundApplicationsWithHttpInfo($line_item_offer_id = null, $buyer_login = null, $status = null, $limit = 25, $offset = 0, string $contentType = self::contentTypes['getRefundApplications'][0])
     {
@@ -1042,11 +1042,11 @@ class CommissionRefundsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetRefundApplications200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetRefundApplications200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetRefundApplications200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetRefundApplications200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1064,7 +1064,7 @@ class CommissionRefundsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetRefundApplications200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetRefundApplications200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1083,7 +1083,7 @@ class CommissionRefundsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetRefundApplications200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetRefundApplications200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1116,7 +1116,7 @@ class CommissionRefundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetRefundApplications200Response',
+                        '\robsonek\phpAllegroApi\Model\GetRefundApplications200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1168,7 +1168,7 @@ class CommissionRefundsApi
      */
     public function getRefundApplicationsAsyncWithHttpInfo($line_item_offer_id = null, $buyer_login = null, $status = null, $limit = 25, $offset = 0, string $contentType = self::contentTypes['getRefundApplications'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetRefundApplications200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetRefundApplications200Response';
         $request = $this->getRefundApplicationsRequest($line_item_offer_id, $buyer_login, $status, $limit, $offset, $contentType);
 
         return $this->client

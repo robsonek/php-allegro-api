@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PromoOptionsModifications Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PromoOptionsModifications implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'modifications' => '\OpenAPI\Client\Model\PromoOptionsModification[]',
-        'additional_marketplaces' => '\OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsModification[]'
+        'modifications' => '\robsonek\phpAllegroApi\Model\PromoOptionsModification[]',
+        'additional_marketplaces' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsModification[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class PromoOptionsModifications implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets modifications
      *
-     * @return \OpenAPI\Client\Model\PromoOptionsModification[]|null
+     * @return \robsonek\phpAllegroApi\Model\PromoOptionsModification[]|null
      */
     public function getModifications()
     {
@@ -309,7 +309,7 @@ class PromoOptionsModifications implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets modifications
      *
-     * @param \OpenAPI\Client\Model\PromoOptionsModification[]|null $modifications Promo package modifications to be applied.
+     * @param \robsonek\phpAllegroApi\Model\PromoOptionsModification[]|null $modifications Promo package modifications to be applied.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class PromoOptionsModifications implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets additional_marketplaces
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsModification[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsModification[]|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -336,7 +336,7 @@ class PromoOptionsModifications implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets additional_marketplaces
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacePromoOptionsModification[]|null $additional_marketplaces Promo package modifications to be applied on additional marketplaces.
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacePromoOptionsModification[]|null $additional_marketplaces Promo package modifications to be applied on additional marketplaces.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RequirementChange Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class RequirementChange extends CategoryParametersScheduledBaseChange
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'category' => '\OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeCategory',
-        'parameter' => '\OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeParameter'
+        'category' => '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeCategory',
+        'parameter' => '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeParameter'
     ];
 
     /**
@@ -333,7 +333,7 @@ class RequirementChange extends CategoryParametersScheduledBaseChange
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeCategory
+     * @return \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeCategory
      */
     public function getCategory()
     {
@@ -343,7 +343,7 @@ class RequirementChange extends CategoryParametersScheduledBaseChange
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeCategory $category category
+     * @param \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeCategory $category category
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class RequirementChange extends CategoryParametersScheduledBaseChange
     /**
      * Gets parameter
      *
-     * @return \OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeParameter
+     * @return \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeParameter
      */
     public function getParameter()
     {
@@ -370,7 +370,7 @@ class RequirementChange extends CategoryParametersScheduledBaseChange
     /**
      * Sets parameter
      *
-     * @param \OpenAPI\Client\Model\CategoryParametersScheduledBaseChangeParameter $parameter parameter
+     * @param \robsonek\phpAllegroApi\Model\CategoryParametersScheduledBaseChangeParameter $parameter parameter
      *
      * @return self
      */

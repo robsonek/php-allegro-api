@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Removal Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class Removal implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'possible_to' => 'string',
-        'request' => '\OpenAPI\Client\Model\RemovalRequest'
+        'request' => '\robsonek\phpAllegroApi\Model\RemovalRequest'
     ];
 
     /**
@@ -329,7 +329,7 @@ class Removal implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets request
      *
-     * @return \OpenAPI\Client\Model\RemovalRequest|null
+     * @return \robsonek\phpAllegroApi\Model\RemovalRequest|null
      */
     public function getRequest()
     {
@@ -339,7 +339,7 @@ class Removal implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets request
      *
-     * @param \OpenAPI\Client\Model\RemovalRequest|null $request request
+     * @param \robsonek\phpAllegroApi\Model\RemovalRequest|null $request request
      *
      * @return self
      */

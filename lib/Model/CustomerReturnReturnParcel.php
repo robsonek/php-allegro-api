@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturnReturnParcel Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class CustomerReturnReturnParcel implements ModelInterface, ArrayAccess, \JsonSe
         'created_at' => '\DateTime',
         'waybill' => 'string',
         'carrier_id' => 'string',
-        'sender' => '\OpenAPI\Client\Model\CustomerReturnParcelSender'
+        'sender' => '\robsonek\phpAllegroApi\Model\CustomerReturnParcelSender'
     ];
 
     /**
@@ -394,7 +394,7 @@ class CustomerReturnReturnParcel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnParcelSender|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnParcelSender|null
      */
     public function getSender()
     {
@@ -404,7 +404,7 @@ class CustomerReturnReturnParcel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnParcelSender|null $sender sender
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnParcelSender|null $sender sender
      *
      * @return self
      */

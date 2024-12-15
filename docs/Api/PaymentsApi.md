@@ -1,4 +1,4 @@
-# OpenAPI\Client\PaymentsApi
+# robsonek\phpAllegroApi\PaymentsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getPaymentsOperationHistory()`
 
 ```php
-getPaymentsOperationHistory($wallet_type, $wallet_payment_operator, $payment_id, $participant_login, $occurred_at_gte, $occurred_at_lte, $group, $marketplace_id, $currency, $limit, $offset): \OpenAPI\Client\Model\PaymentOperations
+getPaymentsOperationHistory($wallet_type, $wallet_payment_operator, $payment_id, $participant_login, $occurred_at_gte, $occurred_at_lte, $group, $marketplace_id, $currency, $limit, $offset): \robsonek\phpAllegroApi\Model\PaymentOperations
 ```
 
 Payment operations history
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,7 +74,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PaymentOperations**](../Model/PaymentOperations.md)
+[**\robsonek\phpAllegroApi\Model\PaymentOperations**](../Model/PaymentOperations.md)
 
 ### Authorization
 
@@ -92,7 +92,7 @@ try {
 ## `getRefundedPayments()`
 
 ```php
-getRefundedPayments($limit, $offset, $id, $payment_id, $occurred_at_gte, $occurred_at_lte, $status): \OpenAPI\Client\Model\GetRefundedPayments200Response
+getRefundedPayments($limit, $offset, $id, $payment_id, $occurred_at_gte, $occurred_at_lte, $status): \robsonek\phpAllegroApi\Model\GetRefundedPayments200Response
 ```
 
 Get a list of refunded payments
@@ -107,10 +107,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -146,7 +146,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetRefundedPayments200Response**](../Model/GetRefundedPayments200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response**](../Model/GetRefundedPayments200Response.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ try {
 ## `initiateRefund()`
 
 ```php
-initiateRefund($initialize_refund): \OpenAPI\Client\Model\RefundDetails
+initiateRefund($initialize_refund): \robsonek\phpAllegroApi\Model\RefundDetails
 ```
 
 Initiate a refund of a payment
@@ -179,16 +179,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$initialize_refund = new \OpenAPI\Client\Model\InitializeRefund(); // \OpenAPI\Client\Model\InitializeRefund
+$initialize_refund = new \robsonek\phpAllegroApi\Model\InitializeRefund(); // \robsonek\phpAllegroApi\Model\InitializeRefund
 
 try {
     $result = $apiInstance->initiateRefund($initialize_refund);
@@ -202,11 +202,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **initialize_refund** | [**\OpenAPI\Client\Model\InitializeRefund**](../Model/InitializeRefund.md)|  | [optional] |
+| **initialize_refund** | [**\robsonek\phpAllegroApi\Model\InitializeRefund**](../Model/InitializeRefund.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RefundDetails**](../Model/RefundDetails.md)
+[**\robsonek\phpAllegroApi\Model\RefundDetails**](../Model/RefundDetails.md)
 
 ### Authorization
 

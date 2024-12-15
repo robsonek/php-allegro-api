@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * LineItemReconciliation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class LineItemReconciliation implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\Price',
+        'value' => '\robsonek\phpAllegroApi\Model\Price',
         'type' => 'string',
         'quantity' => 'int'
     ];
@@ -334,7 +334,7 @@ class LineItemReconciliation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getValue()
     {
@@ -344,7 +344,7 @@ class LineItemReconciliation implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\Price|null $value value
+     * @param \robsonek\phpAllegroApi\Model\Price|null $value value
      *
      * @return self
      */

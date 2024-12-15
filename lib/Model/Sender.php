@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Sender Class Doc Comment
  *
  * @category Class
  * @description Parcel&#39;s sender data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class Sender implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'address' => '\OpenAPI\Client\Model\ParcelCreationAddressWithMandatoryPlace',
+        'address' => '\robsonek\phpAllegroApi\Model\ParcelCreationAddressWithMandatoryPlace',
         'email' => 'string',
         'name' => 'string',
         'company' => 'string',
@@ -324,7 +324,7 @@ class Sender implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\ParcelCreationAddressWithMandatoryPlace
+     * @return \robsonek\phpAllegroApi\Model\ParcelCreationAddressWithMandatoryPlace
      */
     public function getAddress()
     {
@@ -334,7 +334,7 @@ class Sender implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\ParcelCreationAddressWithMandatoryPlace $address address
+     * @param \robsonek\phpAllegroApi\Model\ParcelCreationAddressWithMandatoryPlace $address address
      *
      * @return self
      */

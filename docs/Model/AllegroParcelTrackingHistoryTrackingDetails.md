@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**statuses** | [**\OpenAPI\Client\Model\AllegroParcelTrackingStatus[]**](AllegroParcelTrackingStatus.md) | List of parcel shipping statuses |
+**statuses** | [**\robsonek\phpAllegroApi\Model\AllegroParcelTrackingStatus[]**](AllegroParcelTrackingStatus.md) | List of parcel shipping statuses |
 **created_at** | **\DateTime** | The start time parcel tracking recording in ISO 8601 format |
 **updated_at** | **\DateTime** | Time of registration of the last shipment status change in ISO 8601 format |
 

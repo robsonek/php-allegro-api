@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelManagementApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -158,12 +158,12 @@ class ParcelManagementApi
      * Cancel parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\CancelParcelParameters $cancel_parcel_parameters cancel_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\CancelParcelParameters $cancel_parcel_parameters cancel_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelParcel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CancelParcel201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response
+     * @return \robsonek\phpAllegroApi\Model\CancelParcel201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response
      * @deprecated
      */
     public function cancelParcel($command_id, $cancel_parcel_parameters, string $contentType = self::contentTypes['cancelParcel'][0])
@@ -178,12 +178,12 @@ class ParcelManagementApi
      * Cancel parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\CancelParcelParameters $cancel_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\CancelParcelParameters $cancel_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelParcel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CancelParcel201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CancelParcel201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function cancelParcelWithHttpInfo($command_id, $cancel_parcel_parameters, string $contentType = self::contentTypes['cancelParcel'][0])
@@ -215,11 +215,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CancelParcel201Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CancelParcel201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CancelParcel201Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CancelParcel201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -237,16 +237,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CancelParcel201Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CancelParcel201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -264,16 +264,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -291,16 +291,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -318,7 +318,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -337,7 +337,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CancelParcel201Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\CancelParcel201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -370,7 +370,7 @@ class ParcelManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CancelParcel201Response',
+                        '\robsonek\phpAllegroApi\Model\CancelParcel201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -378,7 +378,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -386,7 +386,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -394,7 +394,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -410,7 +410,7 @@ class ParcelManagementApi
      * Cancel parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\CancelParcelParameters $cancel_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\CancelParcelParameters $cancel_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -433,7 +433,7 @@ class ParcelManagementApi
      * Cancel parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\CancelParcelParameters $cancel_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\CancelParcelParameters $cancel_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -442,7 +442,7 @@ class ParcelManagementApi
      */
     public function cancelParcelAsyncWithHttpInfo($command_id, $cancel_parcel_parameters, string $contentType = self::contentTypes['cancelParcel'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CancelParcel201Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\CancelParcel201Response';
         $request = $this->cancelParcelRequest($command_id, $cancel_parcel_parameters, $contentType);
 
         return $this->client
@@ -485,7 +485,7 @@ class ParcelManagementApi
      * Create request for operation 'cancelParcel'
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\CancelParcelParameters $cancel_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\CancelParcelParameters $cancel_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -599,12 +599,12 @@ class ParcelManagementApi
      * Create a new parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\ParcelCreationParameters $parcel_creation_parameters parcel_creation_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\ParcelCreationParameters $parcel_creation_parameters parcel_creation_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNewParcel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateNewParcel201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response
+     * @return \robsonek\phpAllegroApi\Model\CreateNewParcel201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response
      * @deprecated
      */
     public function createNewParcel($command_id, $parcel_creation_parameters, string $contentType = self::contentTypes['createNewParcel'][0])
@@ -619,12 +619,12 @@ class ParcelManagementApi
      * Create a new parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\ParcelCreationParameters $parcel_creation_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\ParcelCreationParameters $parcel_creation_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNewParcel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateNewParcel201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CreateNewParcel201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function createNewParcelWithHttpInfo($command_id, $parcel_creation_parameters, string $contentType = self::contentTypes['createNewParcel'][0])
@@ -656,11 +656,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CreateNewParcel201Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CreateNewParcel201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateNewParcel201Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CreateNewParcel201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -678,16 +678,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateNewParcel201Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CreateNewParcel201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -705,16 +705,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -732,16 +732,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -759,7 +759,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -778,7 +778,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateNewParcel201Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\CreateNewParcel201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -811,7 +811,7 @@ class ParcelManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateNewParcel201Response',
+                        '\robsonek\phpAllegroApi\Model\CreateNewParcel201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -819,7 +819,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -827,7 +827,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -835,7 +835,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -851,7 +851,7 @@ class ParcelManagementApi
      * Create a new parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\ParcelCreationParameters $parcel_creation_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\ParcelCreationParameters $parcel_creation_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNewParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -874,7 +874,7 @@ class ParcelManagementApi
      * Create a new parcel
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\ParcelCreationParameters $parcel_creation_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\ParcelCreationParameters $parcel_creation_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNewParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -883,7 +883,7 @@ class ParcelManagementApi
      */
     public function createNewParcelAsyncWithHttpInfo($command_id, $parcel_creation_parameters, string $contentType = self::contentTypes['createNewParcel'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateNewParcel201Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\CreateNewParcel201Response';
         $request = $this->createNewParcelRequest($command_id, $parcel_creation_parameters, $contentType);
 
         return $this->client
@@ -926,7 +926,7 @@ class ParcelManagementApi
      * Create request for operation 'createNewParcel'
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\ParcelCreationParameters $parcel_creation_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\ParcelCreationParameters $parcel_creation_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNewParcel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1041,9 +1041,9 @@ class ParcelManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableDeliveryServices'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeliveryServices|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\DeliveryServices|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getAvailableDeliveryServices(string $contentType = self::contentTypes['getAvailableDeliveryServices'][0])
@@ -1059,9 +1059,9 @@ class ParcelManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableDeliveryServices'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeliveryServices|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\DeliveryServices|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getAvailableDeliveryServicesWithHttpInfo(string $contentType = self::contentTypes['getAvailableDeliveryServices'][0])
@@ -1093,11 +1093,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeliveryServices' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\DeliveryServices' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DeliveryServices' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\DeliveryServices' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1115,16 +1115,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeliveryServices', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\DeliveryServices', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1142,16 +1142,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1169,16 +1169,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1196,7 +1196,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1215,7 +1215,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeliveryServices';
+            $returnType = '\robsonek\phpAllegroApi\Model\DeliveryServices';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1248,7 +1248,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeliveryServices',
+                        '\robsonek\phpAllegroApi\Model\DeliveryServices',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1256,7 +1256,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1264,7 +1264,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1272,7 +1272,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1316,7 +1316,7 @@ class ParcelManagementApi
      */
     public function getAvailableDeliveryServicesAsyncWithHttpInfo(string $contentType = self::contentTypes['getAvailableDeliveryServices'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DeliveryServices';
+        $returnType = '\robsonek\phpAllegroApi\Model\DeliveryServices';
         $request = $this->getAvailableDeliveryServicesRequest($contentType);
 
         return $this->client
@@ -1444,9 +1444,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelCancellationStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetParcelCancellationStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelCancellationStatus($command_id, string $contentType = self::contentTypes['getParcelCancellationStatus'][0])
@@ -1463,9 +1463,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelCancellationStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetParcelCancellationStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelCancellationStatusWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelCancellationStatus'][0])
@@ -1497,11 +1497,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetParcelCancellationStatus200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetParcelCancellationStatus200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1519,16 +1519,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetParcelCancellationStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1546,16 +1546,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1573,16 +1573,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1600,16 +1600,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1627,7 +1627,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1646,7 +1646,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetParcelCancellationStatus200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1679,7 +1679,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetParcelCancellationStatus200Response',
+                        '\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1687,7 +1687,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1695,7 +1695,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1703,7 +1703,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1711,7 +1711,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1757,7 +1757,7 @@ class ParcelManagementApi
      */
     public function getParcelCancellationStatusAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelCancellationStatus'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetParcelCancellationStatus200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response';
         $request = $this->getParcelCancellationStatusRequest($command_id, $contentType);
 
         return $this->client
@@ -1901,9 +1901,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelCreationStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetParcelCreationStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelCreationStatus($command_id, string $contentType = self::contentTypes['getParcelCreationStatus'][0])
@@ -1920,9 +1920,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelCreationStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetParcelCreationStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelCreationStatusWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelCreationStatus'][0])
@@ -1954,11 +1954,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetParcelCreationStatus200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetParcelCreationStatus200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1976,16 +1976,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetParcelCreationStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2003,16 +2003,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2030,16 +2030,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2057,16 +2057,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2084,7 +2084,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2103,7 +2103,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetParcelCreationStatus200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2136,7 +2136,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetParcelCreationStatus200Response',
+                        '\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2144,7 +2144,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2152,7 +2152,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2160,7 +2160,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2168,7 +2168,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2214,7 +2214,7 @@ class ParcelManagementApi
      */
     public function getParcelCreationStatusAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelCreationStatus'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetParcelCreationStatus200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response';
         $request = $this->getParcelCreationStatusRequest($command_id, $contentType);
 
         return $this->client
@@ -2358,9 +2358,9 @@ class ParcelManagementApi
      * @param  string $parcel_id Id of parcel. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ParcelDetails|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\ParcelDetails|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelDetails($parcel_id, string $contentType = self::contentTypes['getParcelDetails'][0])
@@ -2377,9 +2377,9 @@ class ParcelManagementApi
      * @param  string $parcel_id Id of parcel. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ParcelDetails|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ParcelDetails|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelDetailsWithHttpInfo($parcel_id, string $contentType = self::contentTypes['getParcelDetails'][0])
@@ -2411,11 +2411,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ParcelDetails' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ParcelDetails' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ParcelDetails' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ParcelDetails' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2433,16 +2433,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ParcelDetails', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ParcelDetails', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2460,16 +2460,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2487,16 +2487,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2514,16 +2514,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2541,16 +2541,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetShipmentDetails404Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2568,7 +2568,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2587,7 +2587,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ParcelDetails';
+            $returnType = '\robsonek\phpAllegroApi\Model\ParcelDetails';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2620,7 +2620,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ParcelDetails',
+                        '\robsonek\phpAllegroApi\Model\ParcelDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2628,7 +2628,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2636,7 +2636,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2644,7 +2644,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2652,7 +2652,7 @@ class ParcelManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetShipmentDetails404Response',
+                        '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2660,7 +2660,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2706,7 +2706,7 @@ class ParcelManagementApi
      */
     public function getParcelDetailsAsyncWithHttpInfo($parcel_id, string $contentType = self::contentTypes['getParcelDetails'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ParcelDetails';
+        $returnType = '\robsonek\phpAllegroApi\Model\ParcelDetails';
         $request = $this->getParcelDetailsRequest($parcel_id, $contentType);
 
         return $this->client
@@ -2851,9 +2851,9 @@ class ParcelManagementApi
      * @param  string $page_format Label page format. Only for PDF file. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelLabel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \SplFileObject|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \SplFileObject|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelLabel($parcel_id, $page_format = null, string $contentType = self::contentTypes['getParcelLabel'][0])
@@ -2871,9 +2871,9 @@ class ParcelManagementApi
      * @param  string $page_format Label page format. Only for PDF file. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelLabel'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SplFileObject|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelLabelWithHttpInfo($parcel_id, $page_format = null, string $contentType = self::contentTypes['getParcelLabel'][0])
@@ -2932,11 +2932,11 @@ class ParcelManagementApi
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2954,16 +2954,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2981,16 +2981,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3008,16 +3008,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3035,16 +3035,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetShipmentDetails404Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3062,7 +3062,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3122,7 +3122,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3130,7 +3130,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3138,7 +3138,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3146,7 +3146,7 @@ class ParcelManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetShipmentDetails404Response',
+                        '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3154,7 +3154,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3358,9 +3358,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelPickupStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetParcelPickupStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelPickupStatus($command_id, string $contentType = self::contentTypes['getParcelPickupStatus'][0])
@@ -3377,9 +3377,9 @@ class ParcelManagementApi
      * @param  string $command_id Command UUID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelPickupStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetParcelPickupStatus200Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelPickupStatusWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelPickupStatus'][0])
@@ -3411,11 +3411,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetParcelPickupStatus200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetParcelPickupStatus200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3433,16 +3433,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetParcelPickupStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3460,16 +3460,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3487,16 +3487,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3514,16 +3514,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3541,7 +3541,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3560,7 +3560,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetParcelPickupStatus200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3593,7 +3593,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetParcelPickupStatus200Response',
+                        '\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3601,7 +3601,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3609,7 +3609,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3617,7 +3617,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3625,7 +3625,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3671,7 +3671,7 @@ class ParcelManagementApi
      */
     public function getParcelPickupStatusAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getParcelPickupStatus'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetParcelPickupStatus200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response';
         $request = $this->getParcelPickupStatusRequest($command_id, $contentType);
 
         return $this->client
@@ -3816,9 +3816,9 @@ class ParcelManagementApi
      * @param  \DateTime $ready_date Date when parcels will be ready. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelsPickupDateProposals'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PickupDateParcelsProposals|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \robsonek\phpAllegroApi\Model\PickupDateParcelsProposals|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelsPickupDateProposals($parcel_id, $ready_date = null, string $contentType = self::contentTypes['getParcelsPickupDateProposals'][0])
@@ -3836,9 +3836,9 @@ class ParcelManagementApi
      * @param  \DateTime $ready_date Date when parcels will be ready. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelsPickupDateProposals'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PickupDateParcelsProposals|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PickupDateParcelsProposals|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelsPickupDateProposalsWithHttpInfo($parcel_id, $ready_date = null, string $contentType = self::contentTypes['getParcelsPickupDateProposals'][0])
@@ -3870,11 +3870,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PickupDateParcelsProposals' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PickupDateParcelsProposals' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3892,16 +3892,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PickupDateParcelsProposals', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3919,16 +3919,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3946,16 +3946,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3973,16 +3973,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4000,16 +4000,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetShipmentDetails404Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4027,7 +4027,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4046,7 +4046,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PickupDateParcelsProposals';
+            $returnType = '\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4079,7 +4079,7 @@ class ParcelManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PickupDateParcelsProposals',
+                        '\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4087,7 +4087,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4095,7 +4095,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4103,7 +4103,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4111,7 +4111,7 @@ class ParcelManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetShipmentDetails404Response',
+                        '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4119,7 +4119,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4167,7 +4167,7 @@ class ParcelManagementApi
      */
     public function getParcelsPickupDateProposalsAsyncWithHttpInfo($parcel_id, $ready_date = null, string $contentType = self::contentTypes['getParcelsPickupDateProposals'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PickupDateParcelsProposals';
+        $returnType = '\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals';
         $request = $this->getParcelsPickupDateProposalsRequest($parcel_id, $ready_date, $contentType);
 
         return $this->client
@@ -4326,9 +4326,9 @@ class ParcelManagementApi
      * @param  string[] $parcel_id Ids of parcels. Passing more than one value will generate protocol for all of them. Example: &#x60;parcelId&#x3D;2c6d5ca1-e892-455f-ae24-89ba7c12abcd&amp;parcelId&#x3D;2c6d5ca1-e892-455f-ae24-89ba7c12abc1&#x60; - returns protocol for parcels with ID &#x60;2c6d5ca1-e892-455f-ae24-89ba7c12abcd&#x60; and &#x60;2c6d5ca1-e892-455f-ae24-89ba7c12abc1&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelsProtocol'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \SplFileObject|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response
+     * @return \SplFileObject|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response
      * @deprecated
      */
     public function getParcelsProtocol($parcel_id, string $contentType = self::contentTypes['getParcelsProtocol'][0])
@@ -4345,9 +4345,9 @@ class ParcelManagementApi
      * @param  string[] $parcel_id Ids of parcels. Passing more than one value will generate protocol for all of them. Example: &#x60;parcelId&#x3D;2c6d5ca1-e892-455f-ae24-89ba7c12abcd&amp;parcelId&#x3D;2c6d5ca1-e892-455f-ae24-89ba7c12abc1&#x60; - returns protocol for parcels with ID &#x60;2c6d5ca1-e892-455f-ae24-89ba7c12abcd&#x60; and &#x60;2c6d5ca1-e892-455f-ae24-89ba7c12abc1&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelsProtocol'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\GetShipmentDetails404Response|\OpenAPI\Client\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SplFileObject|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response|\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getParcelsProtocolWithHttpInfo($parcel_id, string $contentType = self::contentTypes['getParcelsProtocol'][0])
@@ -4406,11 +4406,11 @@ class ParcelManagementApi
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4428,16 +4428,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4455,16 +4455,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4482,16 +4482,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetShipmentDetails404Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4509,16 +4509,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetShipmentDetails404Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 504:
-                    if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDeliveryServices504Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4536,7 +4536,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDeliveryServices504Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4596,7 +4596,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4604,7 +4604,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4612,7 +4612,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4620,7 +4620,7 @@ class ParcelManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetShipmentDetails404Response',
+                        '\robsonek\phpAllegroApi\Model\GetShipmentDetails404Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4628,7 +4628,7 @@ class ParcelManagementApi
                 case 504:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDeliveryServices504Response',
+                        '\robsonek\phpAllegroApi\Model\GetDeliveryServices504Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4820,12 +4820,12 @@ class ParcelManagementApi
      * Request parcel pickup
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\PickupParcelParameters $pickup_parcel_parameters pickup_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\PickupParcelParameters $pickup_parcel_parameters pickup_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['requestParcelPickup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RequestParcelPickup201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response
+     * @return \robsonek\phpAllegroApi\Model\RequestParcelPickup201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response
      * @deprecated
      */
     public function requestParcelPickup($command_id, $pickup_parcel_parameters, string $contentType = self::contentTypes['requestParcelPickup'][0])
@@ -4840,12 +4840,12 @@ class ParcelManagementApi
      * Request parcel pickup
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\PickupParcelParameters $pickup_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\PickupParcelParameters $pickup_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['requestParcelPickup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RequestParcelPickup201Response|\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\RequestParcelPickup201Response|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function requestParcelPickupWithHttpInfo($command_id, $pickup_parcel_parameters, string $contentType = self::contentTypes['requestParcelPickup'][0])
@@ -4877,11 +4877,11 @@ class ParcelManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\RequestParcelPickup201Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RequestParcelPickup201Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4899,16 +4899,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RequestParcelPickup201Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4926,16 +4926,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4953,16 +4953,16 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4980,7 +4980,7 @@ class ParcelManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4999,7 +4999,7 @@ class ParcelManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RequestParcelPickup201Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5032,7 +5032,7 @@ class ParcelManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RequestParcelPickup201Response',
+                        '\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5040,7 +5040,7 @@ class ParcelManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET400Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5048,7 +5048,7 @@ class ParcelManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5056,7 +5056,7 @@ class ParcelManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5072,7 +5072,7 @@ class ParcelManagementApi
      * Request parcel pickup
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\PickupParcelParameters $pickup_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\PickupParcelParameters $pickup_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['requestParcelPickup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5095,7 +5095,7 @@ class ParcelManagementApi
      * Request parcel pickup
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\PickupParcelParameters $pickup_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\PickupParcelParameters $pickup_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['requestParcelPickup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5104,7 +5104,7 @@ class ParcelManagementApi
      */
     public function requestParcelPickupAsyncWithHttpInfo($command_id, $pickup_parcel_parameters, string $contentType = self::contentTypes['requestParcelPickup'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RequestParcelPickup201Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response';
         $request = $this->requestParcelPickupRequest($command_id, $pickup_parcel_parameters, $contentType);
 
         return $this->client
@@ -5147,7 +5147,7 @@ class ParcelManagementApi
      * Create request for operation 'requestParcelPickup'
      *
      * @param  string $command_id Command UUID. (required)
-     * @param  \OpenAPI\Client\Model\PickupParcelParameters $pickup_parcel_parameters (required)
+     * @param  \robsonek\phpAllegroApi\Model\PickupParcelParameters $pickup_parcel_parameters (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['requestParcelPickup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

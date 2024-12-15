@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderManagementApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -164,12 +164,12 @@ class OrderManagementApi
      * Post new invoice
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addOrderInvoicesMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function addOrderInvoicesMetadata($id, $check_forms_new_order_invoice, string $contentType = self::contentTypes['addOrderInvoicesMetadata'][0])
     {
@@ -183,12 +183,12 @@ class OrderManagementApi
      * Post new invoice
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addOrderInvoicesMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function addOrderInvoicesMetadataWithHttpInfo($id, $check_forms_new_order_invoice, string $contentType = self::contentTypes['addOrderInvoicesMetadata'][0])
     {
@@ -219,11 +219,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -241,16 +241,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -268,16 +268,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -295,16 +295,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -322,16 +322,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -349,16 +349,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 429:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -376,7 +376,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -395,7 +395,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -428,7 +428,7 @@ class OrderManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId',
+                        '\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -436,7 +436,7 @@ class OrderManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class OrderManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -452,7 +452,7 @@ class OrderManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -460,7 +460,7 @@ class OrderManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,7 +468,7 @@ class OrderManagementApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -484,7 +484,7 @@ class OrderManagementApi
      * Post new invoice
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addOrderInvoicesMetadata'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -506,7 +506,7 @@ class OrderManagementApi
      * Post new invoice
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addOrderInvoicesMetadata'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -514,7 +514,7 @@ class OrderManagementApi
      */
     public function addOrderInvoicesMetadataAsyncWithHttpInfo($id, $check_forms_new_order_invoice, string $contentType = self::contentTypes['addOrderInvoicesMetadata'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId';
         $request = $this->addOrderInvoicesMetadataRequest($id, $check_forms_new_order_invoice, $contentType);
 
         return $this->client
@@ -557,7 +557,7 @@ class OrderManagementApi
      * Create request for operation 'addOrderInvoicesMetadata'
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice $check_forms_new_order_invoice request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addOrderInvoicesMetadata'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -670,12 +670,12 @@ class OrderManagementApi
      * Add a parcel tracking number
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrderShipmentsUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckoutFormAddWaybillCreated|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function createOrderShipmentsUsingPOST($id, $checkout_form_add_waybill_request, string $contentType = self::contentTypes['createOrderShipmentsUsingPOST'][0])
     {
@@ -689,12 +689,12 @@ class OrderManagementApi
      * Add a parcel tracking number
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrderShipmentsUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckoutFormAddWaybillCreated|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function createOrderShipmentsUsingPOSTWithHttpInfo($id, $checkout_form_add_waybill_request, string $contentType = self::contentTypes['createOrderShipmentsUsingPOST'][0])
     {
@@ -725,11 +725,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -747,16 +747,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -774,16 +774,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -801,16 +801,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -828,16 +828,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -855,16 +855,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -882,7 +882,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -901,7 +901,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -934,7 +934,7 @@ class OrderManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated',
+                        '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -942,7 +942,7 @@ class OrderManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,7 +950,7 @@ class OrderManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -958,7 +958,7 @@ class OrderManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -966,7 +966,7 @@ class OrderManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -974,7 +974,7 @@ class OrderManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -990,7 +990,7 @@ class OrderManagementApi
      * Add a parcel tracking number
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrderShipmentsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1012,7 +1012,7 @@ class OrderManagementApi
      * Add a parcel tracking number
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrderShipmentsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1020,7 +1020,7 @@ class OrderManagementApi
      */
     public function createOrderShipmentsUsingPOSTAsyncWithHttpInfo($id, $checkout_form_add_waybill_request, string $contentType = self::contentTypes['createOrderShipmentsUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated';
         $request = $this->createOrderShipmentsUsingPOSTRequest($id, $checkout_form_add_waybill_request, $contentType);
 
         return $this->client
@@ -1063,7 +1063,7 @@ class OrderManagementApi
      * Create request for operation 'createOrderShipmentsUsingPOST'
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest $checkout_form_add_waybill_request request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrderShipmentsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1175,13 +1175,13 @@ class OrderManagementApi
      *
      * Get Allegro pickup drop off points
      *
-     * @param  \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
      * @param  string $if_modified_since Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllegroPickupDropOffPointsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse
+     * @return \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse
      */
     public function getAllegroPickupDropOffPointsGET($carriers = null, $if_modified_since = null, string $contentType = self::contentTypes['getAllegroPickupDropOffPointsGET'][0])
     {
@@ -1194,13 +1194,13 @@ class OrderManagementApi
      *
      * Get Allegro pickup drop off points
      *
-     * @param  \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
      * @param  string $if_modified_since Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllegroPickupDropOffPointsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllegroPickupDropOffPointsGETWithHttpInfo($carriers = null, $if_modified_since = null, string $contentType = self::contentTypes['getAllegroPickupDropOffPointsGET'][0])
     {
@@ -1231,11 +1231,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1253,7 +1253,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1272,7 +1272,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1305,7 +1305,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse',
+                        '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1320,7 +1320,7 @@ class OrderManagementApi
      *
      * Get Allegro pickup drop off points
      *
-     * @param  \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
      * @param  string $if_modified_since Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllegroPickupDropOffPointsGET'] to see the possible values for this operation
      *
@@ -1342,7 +1342,7 @@ class OrderManagementApi
      *
      * Get Allegro pickup drop off points
      *
-     * @param  \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
      * @param  string $if_modified_since Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllegroPickupDropOffPointsGET'] to see the possible values for this operation
      *
@@ -1351,7 +1351,7 @@ class OrderManagementApi
      */
     public function getAllegroPickupDropOffPointsGETAsyncWithHttpInfo($carriers = null, $if_modified_since = null, string $contentType = self::contentTypes['getAllegroPickupDropOffPointsGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse';
         $request = $this->getAllegroPickupDropOffPointsGETRequest($carriers, $if_modified_since, $contentType);
 
         return $this->client
@@ -1393,7 +1393,7 @@ class OrderManagementApi
     /**
      * Create request for operation 'getAllegroPickupDropOffPointsGET'
      *
-     * @param  \OpenAPI\Client\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
+     * @param  \robsonek\phpAllegroApi\Model\AllegroCarrier[] $carriers List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. (optional)
      * @param  string $if_modified_since Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllegroPickupDropOffPointsGET'] to see the possible values for this operation
      *
@@ -1513,9 +1513,9 @@ class OrderManagementApi
      * @param  string $sort The results&#39; sorting order. No prefix in the value means ascending order. &#x60;-&#x60; prefix means descending order. If you don&#39;t provide the sort parameter, the list is sorted by line item boughtAt date, descending. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfOrdersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckoutForms
+     * @return \robsonek\phpAllegroApi\Model\CheckoutForms
      */
     public function getListOfOrdersUsingGET($offset = 0, $limit = 100, $status = null, $fulfillment_status = null, $fulfillment_shipment_summary_line_items_sent = null, $line_items_bought_at_lte = null, $line_items_bought_at_gte = null, $payment_id = null, $surcharges_id = null, $delivery_method_id = null, $buyer_login = null, $marketplace_id = null, $updated_at_lte = null, $updated_at_gte = null, $sort = null, string $contentType = self::contentTypes['getListOfOrdersUsingGET'][0])
     {
@@ -1545,9 +1545,9 @@ class OrderManagementApi
      * @param  string $sort The results&#39; sorting order. No prefix in the value means ascending order. &#x60;-&#x60; prefix means descending order. If you don&#39;t provide the sort parameter, the list is sorted by line item boughtAt date, descending. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfOrdersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckoutForms, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckoutForms, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfOrdersUsingGETWithHttpInfo($offset = 0, $limit = 100, $status = null, $fulfillment_status = null, $fulfillment_shipment_summary_line_items_sent = null, $line_items_bought_at_lte = null, $line_items_bought_at_gte = null, $payment_id = null, $surcharges_id = null, $delivery_method_id = null, $buyer_login = null, $marketplace_id = null, $updated_at_lte = null, $updated_at_gte = null, $sort = null, string $contentType = self::contentTypes['getListOfOrdersUsingGET'][0])
     {
@@ -1578,11 +1578,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CheckoutForms' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckoutForms' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckoutForms' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckoutForms' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1600,7 +1600,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckoutForms', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckoutForms', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1619,7 +1619,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckoutForms';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckoutForms';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1652,7 +1652,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckoutForms',
+                        '\robsonek\phpAllegroApi\Model\CheckoutForms',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1724,7 +1724,7 @@ class OrderManagementApi
      */
     public function getListOfOrdersUsingGETAsyncWithHttpInfo($offset = 0, $limit = 100, $status = null, $fulfillment_status = null, $fulfillment_shipment_summary_line_items_sent = null, $line_items_bought_at_lte = null, $line_items_bought_at_gte = null, $payment_id = null, $surcharges_id = null, $delivery_method_id = null, $buyer_login = null, $marketplace_id = null, $updated_at_lte = null, $updated_at_gte = null, $sort = null, string $contentType = self::contentTypes['getListOfOrdersUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckoutForms';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckoutForms';
         $request = $this->getListOfOrdersUsingGETRequest($offset, $limit, $status, $fulfillment_status, $fulfillment_shipment_summary_line_items_sent, $line_items_bought_at_lte, $line_items_bought_at_gte, $payment_id, $surcharges_id, $delivery_method_id, $buyer_login, $marketplace_id, $updated_at_lte, $updated_at_gte, $sort, $contentType);
 
         return $this->client
@@ -2024,9 +2024,9 @@ class OrderManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderEventsStatisticsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OrderEventStats
+     * @return \robsonek\phpAllegroApi\Model\OrderEventStats
      */
     public function getOrderEventsStatisticsUsingGET(string $contentType = self::contentTypes['getOrderEventsStatisticsUsingGET'][0])
     {
@@ -2041,9 +2041,9 @@ class OrderManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderEventsStatisticsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OrderEventStats, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OrderEventStats, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderEventsStatisticsUsingGETWithHttpInfo(string $contentType = self::contentTypes['getOrderEventsStatisticsUsingGET'][0])
     {
@@ -2074,11 +2074,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OrderEventStats' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OrderEventStats' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OrderEventStats' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OrderEventStats' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2096,7 +2096,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OrderEventStats', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OrderEventStats', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2115,7 +2115,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OrderEventStats';
+            $returnType = '\robsonek\phpAllegroApi\Model\OrderEventStats';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2148,7 +2148,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OrderEventStats',
+                        '\robsonek\phpAllegroApi\Model\OrderEventStats',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2190,7 +2190,7 @@ class OrderManagementApi
      */
     public function getOrderEventsStatisticsUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getOrderEventsStatisticsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OrderEventStats';
+        $returnType = '\robsonek\phpAllegroApi\Model\OrderEventStats';
         $request = $this->getOrderEventsStatisticsUsingGETRequest($contentType);
 
         return $this->client
@@ -2319,9 +2319,9 @@ class OrderManagementApi
      * @param  int $limit The maximum number of events returned in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderEventsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OrderEventsList
+     * @return \robsonek\phpAllegroApi\Model\OrderEventsList
      */
     public function getOrderEventsUsingGET($from = null, $type = null, $limit = 100, string $contentType = self::contentTypes['getOrderEventsUsingGET'][0])
     {
@@ -2339,9 +2339,9 @@ class OrderManagementApi
      * @param  int $limit The maximum number of events returned in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderEventsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OrderEventsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OrderEventsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderEventsUsingGETWithHttpInfo($from = null, $type = null, $limit = 100, string $contentType = self::contentTypes['getOrderEventsUsingGET'][0])
     {
@@ -2372,11 +2372,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OrderEventsList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OrderEventsList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OrderEventsList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OrderEventsList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2394,7 +2394,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OrderEventsList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OrderEventsList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2413,7 +2413,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OrderEventsList';
+            $returnType = '\robsonek\phpAllegroApi\Model\OrderEventsList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2446,7 +2446,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OrderEventsList',
+                        '\robsonek\phpAllegroApi\Model\OrderEventsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2494,7 +2494,7 @@ class OrderManagementApi
      */
     public function getOrderEventsUsingGETAsyncWithHttpInfo($from = null, $type = null, $limit = 100, string $contentType = self::contentTypes['getOrderEventsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OrderEventsList';
+        $returnType = '\robsonek\phpAllegroApi\Model\OrderEventsList';
         $request = $this->getOrderEventsUsingGETRequest($from, $type, $limit, $contentType);
 
         return $this->client
@@ -2660,9 +2660,9 @@ class OrderManagementApi
      * @param  string $id Order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderInvoicesDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckoutFormsOrderInvoices|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getOrderInvoicesDetails($id, string $contentType = self::contentTypes['getOrderInvoicesDetails'][0])
     {
@@ -2678,9 +2678,9 @@ class OrderManagementApi
      * @param  string $id Order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderInvoicesDetails'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckoutFormsOrderInvoices|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderInvoicesDetailsWithHttpInfo($id, string $contentType = self::contentTypes['getOrderInvoicesDetails'][0])
     {
@@ -2711,11 +2711,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CheckoutFormsOrderInvoices' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckoutFormsOrderInvoices' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2733,16 +2733,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckoutFormsOrderInvoices', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2760,16 +2760,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2787,7 +2787,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2806,7 +2806,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckoutFormsOrderInvoices';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2839,7 +2839,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckoutFormsOrderInvoices',
+                        '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2847,7 +2847,7 @@ class OrderManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2855,7 +2855,7 @@ class OrderManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2899,7 +2899,7 @@ class OrderManagementApi
      */
     public function getOrderInvoicesDetailsAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getOrderInvoicesDetails'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckoutFormsOrderInvoices';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices';
         $request = $this->getOrderInvoicesDetailsRequest($id, $contentType);
 
         return $this->client
@@ -3042,9 +3042,9 @@ class OrderManagementApi
      * @param  string $id Order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderShipmentsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getOrderShipmentsUsingGET($id, string $contentType = self::contentTypes['getOrderShipmentsUsingGET'][0])
     {
@@ -3060,9 +3060,9 @@ class OrderManagementApi
      * @param  string $id Order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrderShipmentsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderShipmentsUsingGETWithHttpInfo($id, string $contentType = self::contentTypes['getOrderShipmentsUsingGET'][0])
     {
@@ -3093,11 +3093,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3115,16 +3115,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3142,16 +3142,16 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3169,7 +3169,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3188,7 +3188,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3221,7 +3221,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse',
+                        '\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3229,7 +3229,7 @@ class OrderManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3237,7 +3237,7 @@ class OrderManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3281,7 +3281,7 @@ class OrderManagementApi
      */
     public function getOrderShipmentsUsingGETAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getOrderShipmentsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse';
         $request = $this->getOrderShipmentsUsingGETRequest($id, $contentType);
 
         return $this->client
@@ -3423,9 +3423,9 @@ class OrderManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrdersCarriersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OrdersShippingCarriersResponse
+     * @return \robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse
      */
     public function getOrdersCarriersUsingGET(string $contentType = self::contentTypes['getOrdersCarriersUsingGET'][0])
     {
@@ -3440,9 +3440,9 @@ class OrderManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrdersCarriersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OrdersShippingCarriersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersCarriersUsingGETWithHttpInfo(string $contentType = self::contentTypes['getOrdersCarriersUsingGET'][0])
     {
@@ -3473,11 +3473,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OrdersShippingCarriersResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OrdersShippingCarriersResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3495,7 +3495,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OrdersShippingCarriersResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3514,7 +3514,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OrdersShippingCarriersResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3547,7 +3547,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OrdersShippingCarriersResponse',
+                        '\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3589,7 +3589,7 @@ class OrderManagementApi
      */
     public function getOrdersCarriersUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getOrdersCarriersUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OrdersShippingCarriersResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse';
         $request = $this->getOrdersCarriersUsingGETRequest($contentType);
 
         return $this->client
@@ -3720,9 +3720,9 @@ class OrderManagementApi
      * @param  string $id Checkout form identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrdersDetailsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CheckoutForm
+     * @return \robsonek\phpAllegroApi\Model\CheckoutForm
      */
     public function getOrdersDetailsUsingGET($id, string $contentType = self::contentTypes['getOrdersDetailsUsingGET'][0])
     {
@@ -3738,9 +3738,9 @@ class OrderManagementApi
      * @param  string $id Checkout form identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOrdersDetailsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CheckoutForm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CheckoutForm, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersDetailsUsingGETWithHttpInfo($id, string $contentType = self::contentTypes['getOrdersDetailsUsingGET'][0])
     {
@@ -3771,11 +3771,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CheckoutForm' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CheckoutForm' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CheckoutForm' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CheckoutForm' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3793,7 +3793,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CheckoutForm', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CheckoutForm', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3812,7 +3812,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CheckoutForm';
+            $returnType = '\robsonek\phpAllegroApi\Model\CheckoutForm';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3845,7 +3845,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CheckoutForm',
+                        '\robsonek\phpAllegroApi\Model\CheckoutForm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3889,7 +3889,7 @@ class OrderManagementApi
      */
     public function getOrdersDetailsUsingGETAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getOrdersDetailsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CheckoutForm';
+        $returnType = '\robsonek\phpAllegroApi\Model\CheckoutForm';
         $request = $this->getOrdersDetailsUsingGETRequest($id, $contentType);
 
         return $this->client
@@ -4033,9 +4033,9 @@ class OrderManagementApi
      * @param  string[] $waybill Waybill number (parcel tracking number). Example: &#x60;waybill&#x3D;AAA0000E5D201&amp;waybill&#x3D;BBB00000E5D202&#x60; - returns parcel tracking history for &#x60;AAA0000E5D201&#x60; as well as for &#x60;BBB00000E5D202&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelTrackingUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CarrierParcelTrackingResponse
+     * @return \robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse
      */
     public function getParcelTrackingUsingGET($carrier_id, $waybill, string $contentType = self::contentTypes['getParcelTrackingUsingGET'][0])
     {
@@ -4052,9 +4052,9 @@ class OrderManagementApi
      * @param  string[] $waybill Waybill number (parcel tracking number). Example: &#x60;waybill&#x3D;AAA0000E5D201&amp;waybill&#x3D;BBB00000E5D202&#x60; - returns parcel tracking history for &#x60;AAA0000E5D201&#x60; as well as for &#x60;BBB00000E5D202&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getParcelTrackingUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CarrierParcelTrackingResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getParcelTrackingUsingGETWithHttpInfo($carrier_id, $waybill, string $contentType = self::contentTypes['getParcelTrackingUsingGET'][0])
     {
@@ -4085,11 +4085,11 @@ class OrderManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CarrierParcelTrackingResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CarrierParcelTrackingResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4107,7 +4107,7 @@ class OrderManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CarrierParcelTrackingResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4126,7 +4126,7 @@ class OrderManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CarrierParcelTrackingResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4159,7 +4159,7 @@ class OrderManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CarrierParcelTrackingResponse',
+                        '\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4205,7 +4205,7 @@ class OrderManagementApi
      */
     public function getParcelTrackingUsingGETAsyncWithHttpInfo($carrier_id, $waybill, string $contentType = self::contentTypes['getParcelTrackingUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CarrierParcelTrackingResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse';
         $request = $this->getParcelTrackingUsingGETRequest($carrier_id, $waybill, $contentType);
 
         return $this->client
@@ -4370,11 +4370,11 @@ class OrderManagementApi
      * Set seller order status
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
      * @param  string $checkout_form_revision Checkout form revision. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setOrderFulfillmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4389,11 +4389,11 @@ class OrderManagementApi
      * Set seller order status
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
      * @param  string $checkout_form_revision Checkout form revision. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setOrderFulfillmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4431,7 +4431,7 @@ class OrderManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4439,7 +4439,7 @@ class OrderManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4455,7 +4455,7 @@ class OrderManagementApi
      * Set seller order status
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
      * @param  string $checkout_form_revision Checkout form revision. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setOrderFulfillmentUsingPUT'] to see the possible values for this operation
      *
@@ -4478,7 +4478,7 @@ class OrderManagementApi
      * Set seller order status
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
      * @param  string $checkout_form_revision Checkout form revision. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setOrderFulfillmentUsingPUT'] to see the possible values for this operation
      *
@@ -4517,7 +4517,7 @@ class OrderManagementApi
      * Create request for operation 'setOrderFulfillmentUsingPUT'
      *
      * @param  string $id Order identifier. (required)
-     * @param  \OpenAPI\Client\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment $checkout_form_fulfillment request (required)
      * @param  string $checkout_form_revision Checkout form revision. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setOrderFulfillmentUsingPUT'] to see the possible values for this operation
      *
@@ -4645,7 +4645,7 @@ class OrderManagementApi
      * @param  \SplFileObject $body body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOrderInvoiceFile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4664,7 +4664,7 @@ class OrderManagementApi
      * @param  \SplFileObject $body (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOrderInvoiceFile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4702,7 +4702,7 @@ class OrderManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4710,7 +4710,7 @@ class OrderManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4718,7 +4718,7 @@ class OrderManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4726,7 +4726,7 @@ class OrderManagementApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4734,7 +4734,7 @@ class OrderManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DisputeFirstMessage Class Doc Comment
  *
  * @category Class
  * @description Initial dispute message with text OR attachment OR both
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class DisputeFirstMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'id' => 'string',
         'text' => 'string',
-        'attachment' => '\OpenAPI\Client\Model\DisputeAttachment',
-        'author' => '\OpenAPI\Client\Model\DisputeAuthor',
+        'attachment' => '\robsonek\phpAllegroApi\Model\DisputeAttachment',
+        'author' => '\robsonek\phpAllegroApi\Model\DisputeAuthor',
         'created_at' => '\DateTime'
     ];
 
@@ -384,7 +384,7 @@ class DisputeFirstMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets attachment
      *
-     * @return \OpenAPI\Client\Model\DisputeAttachment|null
+     * @return \robsonek\phpAllegroApi\Model\DisputeAttachment|null
      */
     public function getAttachment()
     {
@@ -394,7 +394,7 @@ class DisputeFirstMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets attachment
      *
-     * @param \OpenAPI\Client\Model\DisputeAttachment|null $attachment attachment
+     * @param \robsonek\phpAllegroApi\Model\DisputeAttachment|null $attachment attachment
      *
      * @return self
      */
@@ -411,7 +411,7 @@ class DisputeFirstMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets author
      *
-     * @return \OpenAPI\Client\Model\DisputeAuthor
+     * @return \robsonek\phpAllegroApi\Model\DisputeAuthor
      */
     public function getAuthor()
     {
@@ -421,7 +421,7 @@ class DisputeFirstMessage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets author
      *
-     * @param \OpenAPI\Client\Model\DisputeAuthor $author author
+     * @param \robsonek\phpAllegroApi\Model\DisputeAuthor $author author
      *
      * @return self
      */

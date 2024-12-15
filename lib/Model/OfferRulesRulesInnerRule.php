@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferRulesRulesInnerRule Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferRulesRulesInnerRule implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'type' => '\OpenAPI\Client\Model\AutomaticPricingRuleType'
+        'type' => '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleType'
     ];
 
     /**
@@ -332,7 +332,7 @@ class OfferRulesRulesInnerRule implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleType
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleType
      */
     public function getType()
     {
@@ -342,7 +342,7 @@ class OfferRulesRulesInnerRule implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingRuleType $type type
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingRuleType $type type
      *
      * @return self
      */

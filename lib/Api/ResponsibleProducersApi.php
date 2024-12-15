@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ResponsibleProducersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,9 +140,9 @@ class ResponsibleProducersApi
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducerGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function responsibleProducerGET($id, $accept, string $contentType = self::contentTypes['responsibleProducerGET'][0])
     {
@@ -159,9 +159,9 @@ class ResponsibleProducersApi
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducerGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function responsibleProducerGETWithHttpInfo($id, $accept, string $contentType = self::contentTypes['responsibleProducerGET'][0])
     {
@@ -192,11 +192,11 @@ class ResponsibleProducersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -214,16 +214,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponsibleProducerResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -241,16 +241,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -268,16 +268,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -295,16 +295,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -322,7 +322,7 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -341,7 +341,7 @@ class ResponsibleProducersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -374,7 +374,7 @@ class ResponsibleProducersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponsibleProducerResponse',
+                        '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -382,7 +382,7 @@ class ResponsibleProducersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -390,7 +390,7 @@ class ResponsibleProducersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -398,7 +398,7 @@ class ResponsibleProducersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -406,7 +406,7 @@ class ResponsibleProducersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -452,7 +452,7 @@ class ResponsibleProducersApi
      */
     public function responsibleProducerGETAsyncWithHttpInfo($id, $accept, string $contentType = self::contentTypes['responsibleProducerGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
         $request = $this->responsibleProducerGETRequest($id, $accept, $contentType);
 
         return $this->client
@@ -609,9 +609,9 @@ class ResponsibleProducersApi
      * @param  int $limit Number of returned responsible producers data. (optional, default to 1000)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponsibleProducersGET200Response|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function responsibleProducersGET($accept, $offset = 0, $limit = 1000, string $contentType = self::contentTypes['responsibleProducersGET'][0])
     {
@@ -629,9 +629,9 @@ class ResponsibleProducersApi
      * @param  int $limit Number of returned responsible producers data. (optional, default to 1000)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponsibleProducersGET200Response|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function responsibleProducersGETWithHttpInfo($accept, $offset = 0, $limit = 1000, string $contentType = self::contentTypes['responsibleProducersGET'][0])
     {
@@ -662,11 +662,11 @@ class ResponsibleProducersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ResponsibleProducersGET200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResponsibleProducersGET200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -684,16 +684,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponsibleProducersGET200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -711,16 +711,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -738,16 +738,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -765,16 +765,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -792,7 +792,7 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -811,7 +811,7 @@ class ResponsibleProducersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResponsibleProducersGET200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -844,7 +844,7 @@ class ResponsibleProducersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponsibleProducersGET200Response',
+                        '\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -852,7 +852,7 @@ class ResponsibleProducersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -860,7 +860,7 @@ class ResponsibleProducersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -868,7 +868,7 @@ class ResponsibleProducersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -876,7 +876,7 @@ class ResponsibleProducersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -924,7 +924,7 @@ class ResponsibleProducersApi
      */
     public function responsibleProducersGETAsyncWithHttpInfo($accept, $offset = 0, $limit = 1000, string $contentType = self::contentTypes['responsibleProducersGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResponsibleProducersGET200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response';
         $request = $this->responsibleProducersGETRequest($accept, $offset, $limit, $contentType);
 
         return $this->client
@@ -1096,12 +1096,12 @@ class ResponsibleProducersApi
      *
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\CreateResponsibleProducerRequest $create_responsible_producer_request create_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest $create_responsible_producer_request create_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function responsibleProducersPOST($accept, $content_type, $create_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPOST'][0])
     {
@@ -1116,12 +1116,12 @@ class ResponsibleProducersApi
      *
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function responsibleProducersPOSTWithHttpInfo($accept, $content_type, $create_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPOST'][0])
     {
@@ -1152,11 +1152,11 @@ class ResponsibleProducersApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1174,16 +1174,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponsibleProducerResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1201,16 +1201,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1228,16 +1228,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1255,16 +1255,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1282,7 +1282,7 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1301,7 +1301,7 @@ class ResponsibleProducersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1334,7 +1334,7 @@ class ResponsibleProducersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponsibleProducerResponse',
+                        '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1342,7 +1342,7 @@ class ResponsibleProducersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1350,7 +1350,7 @@ class ResponsibleProducersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1358,7 +1358,7 @@ class ResponsibleProducersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1366,7 +1366,7 @@ class ResponsibleProducersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,7 +1383,7 @@ class ResponsibleProducersApi
      *
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1406,7 +1406,7 @@ class ResponsibleProducersApi
      *
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1414,7 +1414,7 @@ class ResponsibleProducersApi
      */
     public function responsibleProducersPOSTAsyncWithHttpInfo($accept, $content_type, $create_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
         $request = $this->responsibleProducersPOSTRequest($accept, $content_type, $create_responsible_producer_request, $contentType);
 
         return $this->client
@@ -1458,7 +1458,7 @@ class ResponsibleProducersApi
      *
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest $create_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1580,12 +1580,12 @@ class ResponsibleProducersApi
      * @param  string $id Responsible producer ID. (required)
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request update_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request update_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function responsibleProducersPUT($id, $accept, $content_type, $update_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPUT'][0])
     {
@@ -1601,12 +1601,12 @@ class ResponsibleProducersApi
      * @param  string $id Responsible producer ID. (required)
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponsibleProducerResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function responsibleProducersPUTWithHttpInfo($id, $accept, $content_type, $update_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPUT'][0])
     {
@@ -1637,11 +1637,11 @@ class ResponsibleProducersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResponsibleProducerResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1659,16 +1659,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponsibleProducerResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1686,16 +1686,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1713,16 +1713,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1740,16 +1740,16 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1767,7 +1767,7 @@ class ResponsibleProducersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1786,7 +1786,7 @@ class ResponsibleProducersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1819,7 +1819,7 @@ class ResponsibleProducersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponsibleProducerResponse',
+                        '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1827,7 +1827,7 @@ class ResponsibleProducersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1835,7 +1835,7 @@ class ResponsibleProducersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1843,7 +1843,7 @@ class ResponsibleProducersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1851,7 +1851,7 @@ class ResponsibleProducersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1869,7 +1869,7 @@ class ResponsibleProducersApi
      * @param  string $id Responsible producer ID. (required)
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1893,7 +1893,7 @@ class ResponsibleProducersApi
      * @param  string $id Responsible producer ID. (required)
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1901,7 +1901,7 @@ class ResponsibleProducersApi
      */
     public function responsibleProducersPUTAsyncWithHttpInfo($id, $accept, $content_type, $update_responsible_producer_request, string $contentType = self::contentTypes['responsibleProducersPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResponsibleProducerResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse';
         $request = $this->responsibleProducersPUTRequest($id, $accept, $content_type, $update_responsible_producer_request, $contentType);
 
         return $this->client
@@ -1946,7 +1946,7 @@ class ResponsibleProducersApi
      * @param  string $id Responsible producer ID. (required)
      * @param  string $accept Acceptable representation of the response. (required)
      * @param  string $content_type Content type of the request body. (required)
-     * @param  \OpenAPI\Client\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest $update_responsible_producer_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['responsibleProducersPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

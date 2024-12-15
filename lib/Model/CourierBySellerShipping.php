@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CourierBySellerShipping Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class CourierBySellerShipping extends Shipping
       */
     protected static $openAPITypes = [
         'method' => 'string',
-        'courier' => '\OpenAPI\Client\Model\Courier',
+        'courier' => '\robsonek\phpAllegroApi\Model\Courier',
         'estimated_time_of_arrival' => '\DateTime',
         'country_code' => 'string'
     ];
@@ -334,7 +334,7 @@ class CourierBySellerShipping extends Shipping
     /**
      * Gets courier
      *
-     * @return \OpenAPI\Client\Model\Courier|null
+     * @return \robsonek\phpAllegroApi\Model\Courier|null
      */
     public function getCourier()
     {
@@ -344,7 +344,7 @@ class CourierBySellerShipping extends Shipping
     /**
      * Sets courier
      *
-     * @param \OpenAPI\Client\Model\Courier|null $courier courier
+     * @param \robsonek\phpAllegroApi\Model\Courier|null $courier courier
      *
      * @return self
      */

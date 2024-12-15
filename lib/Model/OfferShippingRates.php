@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferShippingRates Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OfferShippingRates implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rates' => '\OpenAPI\Client\Model\ShippingRate[]'
+        'rates' => '\robsonek\phpAllegroApi\Model\ShippingRate[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class OfferShippingRates implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets rates
      *
-     * @return \OpenAPI\Client\Model\ShippingRate[]|null
+     * @return \robsonek\phpAllegroApi\Model\ShippingRate[]|null
      */
     public function getRates()
     {
@@ -302,7 +302,7 @@ class OfferShippingRates implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets rates
      *
-     * @param \OpenAPI\Client\Model\ShippingRate[]|null $rates If empty there is the shipping rates set attached to offer. You should use the GET /sale/offers/{offerId} resource to retrieve the shipping rates set ID.
+     * @param \robsonek\phpAllegroApi\Model\ShippingRate[]|null $rates If empty there is the shipping rates set attached to offer. You should use the GET /sale/offers/{offerId} resource to retrieve the shipping rates set ID.
      *
      * @return self
      */

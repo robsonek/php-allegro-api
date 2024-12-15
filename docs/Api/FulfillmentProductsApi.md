@@ -1,4 +1,4 @@
-# OpenAPI\Client\FulfillmentProductsApi
+# robsonek\phpAllegroApi\FulfillmentProductsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getAvailableProducts()`
 
 ```php
-getAvailableProducts($accept_language, $offset, $limit): \OpenAPI\Client\Model\AvailableProductsList
+getAvailableProducts($accept_language, $offset, $limit): \robsonek\phpAllegroApi\Model\AvailableProductsList
 ```
 
 Get list of available products
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FulfillmentProductsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\FulfillmentProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AvailableProductsList**](../Model/AvailableProductsList.md)
+[**\robsonek\phpAllegroApi\Model\AvailableProductsList**](../Model/AvailableProductsList.md)
 
 ### Authorization
 

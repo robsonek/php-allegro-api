@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTablePutRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class SizeTablePutRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'headers' => '\OpenAPI\Client\Model\Header[]',
-        'values' => '\OpenAPI\Client\Model\Cells[]'
+        'headers' => '\robsonek\phpAllegroApi\Model\Header[]',
+        'values' => '\robsonek\phpAllegroApi\Model\Cells[]'
     ];
 
     /**
@@ -342,7 +342,7 @@ class SizeTablePutRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets headers
      *
-     * @return \OpenAPI\Client\Model\Header[]
+     * @return \robsonek\phpAllegroApi\Model\Header[]
      */
     public function getHeaders()
     {
@@ -352,7 +352,7 @@ class SizeTablePutRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets headers
      *
-     * @param \OpenAPI\Client\Model\Header[] $headers size table headers
+     * @param \robsonek\phpAllegroApi\Model\Header[] $headers size table headers
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class SizeTablePutRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\Cells[]
+     * @return \robsonek\phpAllegroApi\Model\Cells[]
      */
     public function getValues()
     {
@@ -379,7 +379,7 @@ class SizeTablePutRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\Cells[] $values size table cells
+     * @param \robsonek\phpAllegroApi\Model\Cells[] $values size table cells
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfShippingRatestUsingGET200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetListOfShippingRatestUsingGET200Response implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipping_rates' => '\OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]'
+        'shipping_rates' => '\robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetListOfShippingRatestUsingGET200Response implements ModelInterface, Arra
     /**
      * Gets shipping_rates
      *
-     * @return \OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]|null
      */
     public function getShippingRates()
     {
@@ -302,7 +302,7 @@ class GetListOfShippingRatestUsingGET200Response implements ModelInterface, Arra
     /**
      * Sets shipping_rates
      *
-     * @param \OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]|null $shipping_rates shipping_rates
+     * @param \robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInner[]|null $shipping_rates shipping_rates
      *
      * @return self
      */

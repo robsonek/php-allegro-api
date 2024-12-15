@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**offer_events** | [**\OpenAPI\Client\Model\SellerOfferBaseEvent[]**](SellerOfferBaseEvent.md) | The list of events. |
+**offer_events** | [**\robsonek\phpAllegroApi\Model\SellerOfferBaseEvent[]**](SellerOfferBaseEvent.md) | The list of events. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

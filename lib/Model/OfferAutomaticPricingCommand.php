@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAutomaticPricingCommand Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferAutomaticPricingCommand implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'modification' => '\OpenAPI\Client\Model\OfferAutomaticPricingCommandModification',
-        'offer_criteria' => '\OpenAPI\Client\Model\OfferCriterium[]'
+        'modification' => '\robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommandModification',
+        'offer_criteria' => '\robsonek\phpAllegroApi\Model\OfferCriterium[]'
     ];
 
     /**
@@ -339,7 +339,7 @@ class OfferAutomaticPricingCommand implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets modification
      *
-     * @return \OpenAPI\Client\Model\OfferAutomaticPricingCommandModification
+     * @return \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommandModification
      */
     public function getModification()
     {
@@ -349,7 +349,7 @@ class OfferAutomaticPricingCommand implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets modification
      *
-     * @param \OpenAPI\Client\Model\OfferAutomaticPricingCommandModification $modification modification
+     * @param \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommandModification $modification modification
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OfferAutomaticPricingCommand implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets offer_criteria
      *
-     * @return \OpenAPI\Client\Model\OfferCriterium[]
+     * @return \robsonek\phpAllegroApi\Model\OfferCriterium[]
      */
     public function getOfferCriteria()
     {
@@ -376,7 +376,7 @@ class OfferAutomaticPricingCommand implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets offer_criteria
      *
-     * @param \OpenAPI\Client\Model\OfferCriterium[] $offer_criteria List of offer criteria.
+     * @param \robsonek\phpAllegroApi\Model\OfferCriterium[] $offer_criteria List of offer criteria.
      *
      * @return self
      */

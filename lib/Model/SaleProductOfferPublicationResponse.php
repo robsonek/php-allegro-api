@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferPublicationResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class SaleProductOfferPublicationResponse implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'duration' => 'string',
         'starting_at' => '\DateTime',
-        'status' => '\OpenAPI\Client\Model\OfferStatus',
+        'status' => '\robsonek\phpAllegroApi\Model\OfferStatus',
         'republish' => 'bool',
         'ending_at' => '\DateTime',
         'ended_by' => 'string',
-        'marketplaces' => '\OpenAPI\Client\Model\SaleProductOfferPublicationMarketplacesResponse'
+        'marketplaces' => '\robsonek\phpAllegroApi\Model\SaleProductOfferPublicationMarketplacesResponse'
     ];
 
     /**
@@ -420,7 +420,7 @@ class SaleProductOfferPublicationResponse implements ModelInterface, ArrayAccess
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\OfferStatus|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStatus|null
      */
     public function getStatus()
     {
@@ -430,7 +430,7 @@ class SaleProductOfferPublicationResponse implements ModelInterface, ArrayAccess
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\OfferStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\OfferStatus|null $status status
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class SaleProductOfferPublicationResponse implements ModelInterface, ArrayAccess
     /**
      * Gets marketplaces
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferPublicationMarketplacesResponse|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferPublicationMarketplacesResponse|null
      */
     public function getMarketplaces()
     {
@@ -548,7 +548,7 @@ class SaleProductOfferPublicationResponse implements ModelInterface, ArrayAccess
     /**
      * Sets marketplaces
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferPublicationMarketplacesResponse|null $marketplaces marketplaces
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferPublicationMarketplacesResponse|null $marketplaces marketplaces
      *
      * @return self
      */

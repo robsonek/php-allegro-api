@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CarrierParcelTrackingResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CarrierParcelTrackingResponse implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'carrier_id' => 'string',
-        'waybills' => '\OpenAPI\Client\Model\ParcelTrackingHistory[]'
+        'waybills' => '\robsonek\phpAllegroApi\Model\ParcelTrackingHistory[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class CarrierParcelTrackingResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets waybills
      *
-     * @return \OpenAPI\Client\Model\ParcelTrackingHistory[]
+     * @return \robsonek\phpAllegroApi\Model\ParcelTrackingHistory[]
      */
     public function getWaybills()
     {
@@ -342,7 +342,7 @@ class CarrierParcelTrackingResponse implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets waybills
      *
-     * @param \OpenAPI\Client\Model\ParcelTrackingHistory[] $waybills Allegro parcel tracking history for multiple tracking numbers (waybills).
+     * @param \robsonek\phpAllegroApi\Model\ParcelTrackingHistory[] $waybills Allegro parcel tracking history for multiple tracking numbers (waybills).
      *
      * @return self
      */

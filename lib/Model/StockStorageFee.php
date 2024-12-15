@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * StockStorageFee Class Doc Comment
  *
  * @category Class
  * @description Information about storage fee for a given product in merchant&#39;s stock.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class StockStorageFee implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'status' => 'string',
         'fee_status_at' => 'string',
-        'details' => '\OpenAPI\Client\Model\StockStorageFeeDetails'
+        'details' => '\robsonek\phpAllegroApi\Model\StockStorageFeeDetails'
     ];
 
     /**
@@ -399,7 +399,7 @@ class StockStorageFee implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets details
      *
-     * @return \OpenAPI\Client\Model\StockStorageFeeDetails|null
+     * @return \robsonek\phpAllegroApi\Model\StockStorageFeeDetails|null
      */
     public function getDetails()
     {
@@ -409,7 +409,7 @@ class StockStorageFee implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets details
      *
-     * @param \OpenAPI\Client\Model\StockStorageFeeDetails|null $details details
+     * @param \robsonek\phpAllegroApi\Model\StockStorageFeeDetails|null $details details
      *
      * @return self
      */

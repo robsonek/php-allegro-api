@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**responsible_producers** | [**\OpenAPI\Client\Model\ResponsibleProducerResponse[]**](ResponsibleProducerResponse.md) |  | [optional]
+**responsible_producers** | [**\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]**](ResponsibleProducerResponse.md) |  | [optional]
 **count** | **int** | Number of responsible producers data returned in search result for the given parameters. | [optional]
 **total_count** | **int** | Total number of available responsible producers data. | [optional]
 

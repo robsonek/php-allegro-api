@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeductionIncreaseOperation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class DeductionIncreaseOperation extends BaseOperation
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'deduction' => '\OpenAPI\Client\Model\Deduction'
+        'deduction' => '\robsonek\phpAllegroApi\Model\Deduction'
     ];
 
     /**
@@ -323,7 +323,7 @@ class DeductionIncreaseOperation extends BaseOperation
     /**
      * Gets deduction
      *
-     * @return \OpenAPI\Client\Model\Deduction
+     * @return \robsonek\phpAllegroApi\Model\Deduction
      */
     public function getDeduction()
     {
@@ -333,7 +333,7 @@ class DeductionIncreaseOperation extends BaseOperation
     /**
      * Sets deduction
      *
-     * @param \OpenAPI\Client\Model\Deduction $deduction deduction
+     * @param \robsonek\phpAllegroApi\Model\Deduction $deduction deduction
      *
      * @return self
      */

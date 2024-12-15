@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturnRefundRejectionRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CustomerReturnRefundRejectionRequest implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rejection' => '\OpenAPI\Client\Model\CustomerReturnRefundRejectionRequestRejection'
+        'rejection' => '\robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequestRejection'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CustomerReturnRefundRejectionRequest implements ModelInterface, ArrayAcces
     /**
      * Gets rejection
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnRefundRejectionRequestRejection
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequestRejection
      */
     public function getRejection()
     {
@@ -305,7 +305,7 @@ class CustomerReturnRefundRejectionRequest implements ModelInterface, ArrayAcces
     /**
      * Sets rejection
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnRefundRejectionRequestRejection $rejection rejection
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequestRejection $rejection rejection
      *
      * @return self
      */

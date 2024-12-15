@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PickupDateProposalsDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PickupDateProposalsDto implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'proposal_items' => '\OpenAPI\Client\Model\PickupDateProposalDto[]'
+        'proposal_items' => '\robsonek\phpAllegroApi\Model\PickupDateProposalDto[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PickupDateProposalsDto implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets proposal_items
      *
-     * @return \OpenAPI\Client\Model\PickupDateProposalDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\PickupDateProposalDto[]|null
      */
     public function getProposalItems()
     {
@@ -336,7 +336,7 @@ class PickupDateProposalsDto implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets proposal_items
      *
-     * @param \OpenAPI\Client\Model\PickupDateProposalDto[]|null $proposal_items proposal_items
+     * @param \robsonek\phpAllegroApi\Model\PickupDateProposalDto[]|null $proposal_items proposal_items
      *
      * @return self
      */

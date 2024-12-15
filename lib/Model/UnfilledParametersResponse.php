@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UnfilledParametersResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UnfilledParametersResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\OpenAPI\Client\Model\UnfilledParametersResponseOffersInner[]',
+        'offers' => '\robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInner[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class UnfilledParametersResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\UnfilledParametersResponseOffersInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInner[]|null
      */
     public function getOffers()
     {
@@ -324,7 +324,7 @@ class UnfilledParametersResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\UnfilledParametersResponseOffersInner[]|null $offers List of offers unfilled parameters.
+     * @param \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInner[]|null $offers List of offers unfilled parameters.
      *
      * @return self
      */

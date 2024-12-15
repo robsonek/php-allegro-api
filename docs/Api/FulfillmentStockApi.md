@@ -1,4 +1,4 @@
-# OpenAPI\Client\FulfillmentStockApi
+# robsonek\phpAllegroApi\FulfillmentStockApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getFulfillmentStock()`
 
 ```php
-getFulfillmentStock($accept_language, $offset, $limit, $phrase, $sort, $product_id, $product_availability, $product_status, $storage_fee, $asn_status, $out_of_stock_in_from, $out_of_stock_in_to): \OpenAPI\Client\Model\StockProductList
+getFulfillmentStock($accept_language, $offset, $limit, $phrase, $sort, $product_id, $product_availability, $product_status, $storage_fee, $asn_status, $out_of_stock_in_from, $out_of_stock_in_to): \robsonek\phpAllegroApi\Model\StockProductList
 ```
 
 Get available stock
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FulfillmentStockApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\FulfillmentStockApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,7 +74,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\StockProductList**](../Model/StockProductList.md)
+[**\robsonek\phpAllegroApi\Model\StockProductList**](../Model/StockProductList.md)
 
 ### Authorization
 

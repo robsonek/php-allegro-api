@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CommissionResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CommissionResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     protected static $openAPITypes = [
         'name' => 'string',
         'type' => 'string',
-        'fee' => '\OpenAPI\Client\Model\Price'
+        'fee' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -360,7 +360,7 @@ class CommissionResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets fee
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getFee()
     {
@@ -370,7 +370,7 @@ class CommissionResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets fee
      *
-     * @param \OpenAPI\Client\Model\Price|null $fee fee
+     * @param \robsonek\phpAllegroApi\Model\Price|null $fee fee
      *
      * @return self
      */

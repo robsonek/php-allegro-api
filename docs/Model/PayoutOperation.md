@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  | [optional] [default to 'PAYOUT']
-**payout** | [**\OpenAPI\Client\Model\Payout**](Payout.md) |  |
+**payout** | [**\robsonek\phpAllegroApi\Model\Payout**](Payout.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

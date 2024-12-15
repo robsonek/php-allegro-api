@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferBundlesDTO Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class OfferBundlesDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bundles' => '\OpenAPI\Client\Model\OfferBundleDTO[]',
-        'next_page' => '\OpenAPI\Client\Model\OfferBundlesDTONextPage'
+        'bundles' => '\robsonek\phpAllegroApi\Model\OfferBundleDTO[]',
+        'next_page' => '\robsonek\phpAllegroApi\Model\OfferBundlesDTONextPage'
     ];
 
     /**
@@ -302,7 +302,7 @@ class OfferBundlesDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bundles
      *
-     * @return \OpenAPI\Client\Model\OfferBundleDTO[]
+     * @return \robsonek\phpAllegroApi\Model\OfferBundleDTO[]
      */
     public function getBundles()
     {
@@ -312,7 +312,7 @@ class OfferBundlesDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bundles
      *
-     * @param \OpenAPI\Client\Model\OfferBundleDTO[] $bundles Seller's bundles.
+     * @param \robsonek\phpAllegroApi\Model\OfferBundleDTO[] $bundles Seller's bundles.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class OfferBundlesDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets next_page
      *
-     * @return \OpenAPI\Client\Model\OfferBundlesDTONextPage|null
+     * @return \robsonek\phpAllegroApi\Model\OfferBundlesDTONextPage|null
      */
     public function getNextPage()
     {
@@ -339,7 +339,7 @@ class OfferBundlesDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next_page
      *
-     * @param \OpenAPI\Client\Model\OfferBundlesDTONextPage|null $next_page next_page
+     * @param \robsonek\phpAllegroApi\Model\OfferBundlesDTONextPage|null $next_page next_page
      *
      * @return self
      */

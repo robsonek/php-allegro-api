@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetBadgeCampaignsList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetBadgeCampaignsList implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'badge_campaigns' => '\OpenAPI\Client\Model\BadgeCampaign[]'
+        'badge_campaigns' => '\robsonek\phpAllegroApi\Model\BadgeCampaign[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetBadgeCampaignsList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets badge_campaigns
      *
-     * @return \OpenAPI\Client\Model\BadgeCampaign[]
+     * @return \robsonek\phpAllegroApi\Model\BadgeCampaign[]
      */
     public function getBadgeCampaigns()
     {
@@ -305,7 +305,7 @@ class GetBadgeCampaignsList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets badge_campaigns
      *
-     * @param \OpenAPI\Client\Model\BadgeCampaign[] $badge_campaigns List of badge campaigns.
+     * @param \robsonek\phpAllegroApi\Model\BadgeCampaign[] $badge_campaigns List of badge campaigns.
      *
      * @return self
      */

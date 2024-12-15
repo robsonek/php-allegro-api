@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | The rule name. Default rule names are automatically translated based on the value provided in the the \&quot;Accept-Language\&quot; header. |
-**configuration** | [**\OpenAPI\Client\Model\AutomaticPricingRuleConfiguration**](AutomaticPricingRuleConfiguration.md) |  |
+**configuration** | [**\robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfiguration**](AutomaticPricingRuleConfiguration.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

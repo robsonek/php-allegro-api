@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * InformationAboutMarketplacesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -129,9 +129,9 @@ class InformationAboutMarketplacesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['marketplacesGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AllegroMarketplaces
+     * @return \robsonek\phpAllegroApi\Model\AllegroMarketplaces
      */
     public function marketplacesGET(string $contentType = self::contentTypes['marketplacesGET'][0])
     {
@@ -146,9 +146,9 @@ class InformationAboutMarketplacesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['marketplacesGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AllegroMarketplaces, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AllegroMarketplaces, HTTP status code, HTTP response headers (array of strings)
      */
     public function marketplacesGETWithHttpInfo(string $contentType = self::contentTypes['marketplacesGET'][0])
     {
@@ -179,11 +179,11 @@ class InformationAboutMarketplacesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AllegroMarketplaces' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AllegroMarketplaces' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AllegroMarketplaces' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AllegroMarketplaces' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -201,7 +201,7 @@ class InformationAboutMarketplacesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AllegroMarketplaces', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AllegroMarketplaces', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -220,7 +220,7 @@ class InformationAboutMarketplacesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AllegroMarketplaces';
+            $returnType = '\robsonek\phpAllegroApi\Model\AllegroMarketplaces';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -253,7 +253,7 @@ class InformationAboutMarketplacesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AllegroMarketplaces',
+                        '\robsonek\phpAllegroApi\Model\AllegroMarketplaces',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -295,7 +295,7 @@ class InformationAboutMarketplacesApi
      */
     public function marketplacesGETAsyncWithHttpInfo(string $contentType = self::contentTypes['marketplacesGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AllegroMarketplaces';
+        $returnType = '\robsonek\phpAllegroApi\Model\AllegroMarketplaces';
         $request = $this->marketplacesGETRequest($contentType);
 
         return $this->client

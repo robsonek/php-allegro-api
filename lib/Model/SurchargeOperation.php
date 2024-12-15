@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SurchargeOperation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,9 +56,9 @@ class SurchargeOperation extends BaseOperation
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'payment' => '\OpenAPI\Client\Model\OperationPayment',
-        'surcharge' => '\OpenAPI\Client\Model\Surcharge',
-        'participant' => '\OpenAPI\Client\Model\BuyerParticipant'
+        'payment' => '\robsonek\phpAllegroApi\Model\OperationPayment',
+        'surcharge' => '\robsonek\phpAllegroApi\Model\Surcharge',
+        'participant' => '\robsonek\phpAllegroApi\Model\BuyerParticipant'
     ];
 
     /**
@@ -343,7 +343,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Gets payment
      *
-     * @return \OpenAPI\Client\Model\OperationPayment
+     * @return \robsonek\phpAllegroApi\Model\OperationPayment
      */
     public function getPayment()
     {
@@ -353,7 +353,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Sets payment
      *
-     * @param \OpenAPI\Client\Model\OperationPayment $payment payment
+     * @param \robsonek\phpAllegroApi\Model\OperationPayment $payment payment
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Gets surcharge
      *
-     * @return \OpenAPI\Client\Model\Surcharge
+     * @return \robsonek\phpAllegroApi\Model\Surcharge
      */
     public function getSurcharge()
     {
@@ -380,7 +380,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Sets surcharge
      *
-     * @param \OpenAPI\Client\Model\Surcharge $surcharge surcharge
+     * @param \robsonek\phpAllegroApi\Model\Surcharge $surcharge surcharge
      *
      * @return self
      */
@@ -397,7 +397,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Gets participant
      *
-     * @return \OpenAPI\Client\Model\BuyerParticipant
+     * @return \robsonek\phpAllegroApi\Model\BuyerParticipant
      */
     public function getParticipant()
     {
@@ -407,7 +407,7 @@ class SurchargeOperation extends BaseOperation
     /**
      * Sets participant
      *
-     * @param \OpenAPI\Client\Model\BuyerParticipant $participant participant
+     * @param \robsonek\phpAllegroApi\Model\BuyerParticipant $participant participant
      *
      * @return self
      */

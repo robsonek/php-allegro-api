@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,9 +138,9 @@ class CompatibilityListApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoriesThatSupportCompatibilityList'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto
      */
     public function getCategoriesThatSupportCompatibilityList(string $contentType = self::contentTypes['getCategoriesThatSupportCompatibilityList'][0])
     {
@@ -155,9 +155,9 @@ class CompatibilityListApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoriesThatSupportCompatibilityList'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoriesThatSupportCompatibilityListWithHttpInfo(string $contentType = self::contentTypes['getCategoriesThatSupportCompatibilityList'][0])
     {
@@ -188,11 +188,11 @@ class CompatibilityListApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -210,7 +210,7 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -229,7 +229,7 @@ class CompatibilityListApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class CompatibilityListApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto',
+                        '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -304,7 +304,7 @@ class CompatibilityListApi
      */
     public function getCategoriesThatSupportCompatibilityListAsyncWithHttpInfo(string $contentType = self::contentTypes['getCategoriesThatSupportCompatibilityList'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDto';
         $request = $this->getCategoriesThatSupportCompatibilityListRequest($contentType);
 
         return $this->client
@@ -433,9 +433,9 @@ class CompatibilityListApi
      * @param  string $language Locale on the basis of which we will return the suggested compatibility list. For product-based suggestions if missing pl-PL will be used. For offer-based suggestions if missing offer language will be used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibilityListSuggestion'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CompatibilityList|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityList|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getCompatibilityListSuggestion($offer_id = null, $product_id = null, $language = null, string $contentType = self::contentTypes['getCompatibilityListSuggestion'][0])
     {
@@ -453,9 +453,9 @@ class CompatibilityListApi
      * @param  string $language Locale on the basis of which we will return the suggested compatibility list. For product-based suggestions if missing pl-PL will be used. For offer-based suggestions if missing offer language will be used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibilityListSuggestion'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CompatibilityList|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CompatibilityList|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCompatibilityListSuggestionWithHttpInfo($offer_id = null, $product_id = null, $language = null, string $contentType = self::contentTypes['getCompatibilityListSuggestion'][0])
     {
@@ -486,11 +486,11 @@ class CompatibilityListApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CompatibilityList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CompatibilityList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CompatibilityList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CompatibilityList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -508,16 +508,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CompatibilityList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CompatibilityList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -535,16 +535,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -562,16 +562,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -589,7 +589,7 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -608,7 +608,7 @@ class CompatibilityListApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CompatibilityList';
+            $returnType = '\robsonek\phpAllegroApi\Model\CompatibilityList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -641,7 +641,7 @@ class CompatibilityListApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CompatibilityList',
+                        '\robsonek\phpAllegroApi\Model\CompatibilityList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -649,7 +649,7 @@ class CompatibilityListApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -657,7 +657,7 @@ class CompatibilityListApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -665,7 +665,7 @@ class CompatibilityListApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -713,7 +713,7 @@ class CompatibilityListApi
      */
     public function getCompatibilityListSuggestionAsyncWithHttpInfo($offer_id = null, $product_id = null, $language = null, string $contentType = self::contentTypes['getCompatibilityListSuggestion'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CompatibilityList';
+        $returnType = '\robsonek\phpAllegroApi\Model\CompatibilityList';
         $request = $this->getCompatibilityListSuggestionRequest($offer_id, $product_id, $language, $contentType);
 
         return $this->client
@@ -880,9 +880,9 @@ class CompatibilityListApi
      * @param  int $offset The offset of returned items. If &#x60;phrase&#x60; parameter is present, parameter is ignored. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibleProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CompatibleProductsListDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductsListDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getCompatibleProducts($type, $if_modified_since = null, $group_id = null, $tecdoc_k_typ_nr = null, $tecdoc_n_typ_nr = null, $phrase = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProducts'][0])
     {
@@ -905,9 +905,9 @@ class CompatibilityListApi
      * @param  int $offset The offset of returned items. If &#x60;phrase&#x60; parameter is present, parameter is ignored. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibleProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CompatibleProductsListDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CompatibleProductsListDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCompatibleProductsWithHttpInfo($type, $if_modified_since = null, $group_id = null, $tecdoc_k_typ_nr = null, $tecdoc_n_typ_nr = null, $phrase = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProducts'][0])
     {
@@ -938,11 +938,11 @@ class CompatibilityListApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CompatibleProductsListDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CompatibleProductsListDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CompatibleProductsListDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CompatibleProductsListDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -960,16 +960,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CompatibleProductsListDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CompatibleProductsListDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -987,16 +987,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1014,7 +1014,7 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1033,7 +1033,7 @@ class CompatibilityListApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CompatibleProductsListDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\CompatibleProductsListDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1066,7 +1066,7 @@ class CompatibilityListApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CompatibleProductsListDto',
+                        '\robsonek\phpAllegroApi\Model\CompatibleProductsListDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1074,7 +1074,7 @@ class CompatibilityListApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1082,7 +1082,7 @@ class CompatibilityListApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1140,7 +1140,7 @@ class CompatibilityListApi
      */
     public function getCompatibleProductsAsyncWithHttpInfo($type, $if_modified_since = null, $group_id = null, $tecdoc_k_typ_nr = null, $tecdoc_n_typ_nr = null, $phrase = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProducts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CompatibleProductsListDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\CompatibleProductsListDto';
         $request = $this->getCompatibleProductsRequest($type, $if_modified_since, $group_id, $tecdoc_k_typ_nr, $tecdoc_n_typ_nr, $phrase, $limit, $offset, $contentType);
 
         return $this->client
@@ -1368,9 +1368,9 @@ class CompatibilityListApi
      * @param  int $offset The offset of returned items. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibleProductsGroups'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CompatibleProductsGroupsDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getCompatibleProductsGroups($type, $if_modified_since = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProductsGroups'][0])
     {
@@ -1389,9 +1389,9 @@ class CompatibilityListApi
      * @param  int $offset The offset of returned items. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCompatibleProductsGroups'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CompatibleProductsGroupsDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCompatibleProductsGroupsWithHttpInfo($type, $if_modified_since = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProductsGroups'][0])
     {
@@ -1422,11 +1422,11 @@ class CompatibilityListApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CompatibleProductsGroupsDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CompatibleProductsGroupsDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1444,16 +1444,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CompatibleProductsGroupsDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1471,16 +1471,16 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1498,7 +1498,7 @@ class CompatibilityListApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1517,7 +1517,7 @@ class CompatibilityListApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CompatibleProductsGroupsDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1550,7 +1550,7 @@ class CompatibilityListApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CompatibleProductsGroupsDto',
+                        '\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1558,7 +1558,7 @@ class CompatibilityListApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1566,7 +1566,7 @@ class CompatibilityListApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1616,7 +1616,7 @@ class CompatibilityListApi
      */
     public function getCompatibleProductsGroupsAsyncWithHttpInfo($type, $if_modified_since = null, $limit = 200, $offset = 0, string $contentType = self::contentTypes['getCompatibleProductsGroups'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CompatibleProductsGroupsDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDto';
         $request = $this->getCompatibleProductsGroupsRequest($type, $if_modified_since, $limit, $offset, $contentType);
 
         return $this->client

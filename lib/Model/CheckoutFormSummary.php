@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormSummary Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckoutFormSummary implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'total_to_pay' => '\OpenAPI\Client\Model\CheckoutFormSummaryTotalToPay'
+        'total_to_pay' => '\robsonek\phpAllegroApi\Model\CheckoutFormSummaryTotalToPay'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CheckoutFormSummary implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets total_to_pay
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormSummaryTotalToPay
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormSummaryTotalToPay
      */
     public function getTotalToPay()
     {
@@ -305,7 +305,7 @@ class CheckoutFormSummary implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets total_to_pay
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormSummaryTotalToPay $total_to_pay total_to_pay
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormSummaryTotalToPay $total_to_pay total_to_pay
      *
      * @return self
      */

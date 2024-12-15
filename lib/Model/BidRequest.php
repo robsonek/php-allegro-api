@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BidRequest Class Doc Comment
  *
  * @category Class
  * @description The bid request.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class BidRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'max_amount' => '\OpenAPI\Client\Model\Price'
+        'max_amount' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -296,7 +296,7 @@ class BidRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets max_amount
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getMaxAmount()
     {
@@ -306,7 +306,7 @@ class BidRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets max_amount
      *
-     * @param \OpenAPI\Client\Model\Price $max_amount Maximum amount that user is willing to pay for the auction.
+     * @param \robsonek\phpAllegroApi\Model\Price $max_amount Maximum amount that user is willing to pay for the auction.
      *
      * @return self
      */

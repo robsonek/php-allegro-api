@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormFulfillment Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class CheckoutFormFulfillment implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\OpenAPI\Client\Model\CheckoutFormFulfillmentStatus',
-        'shipment_summary' => '\OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummary'
+        'status' => '\robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentStatus',
+        'shipment_summary' => '\robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummary'
     ];
 
     /**
@@ -299,7 +299,7 @@ class CheckoutFormFulfillment implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormFulfillmentStatus|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentStatus|null
      */
     public function getStatus()
     {
@@ -309,7 +309,7 @@ class CheckoutFormFulfillment implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormFulfillmentStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentStatus|null $status status
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class CheckoutFormFulfillment implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets shipment_summary
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummary|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummary|null
      */
     public function getShipmentSummary()
     {
@@ -336,7 +336,7 @@ class CheckoutFormFulfillment implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets shipment_summary
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummary|null $shipment_summary shipment_summary
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummary|null $shipment_summary shipment_summary
      *
      * @return self
      */

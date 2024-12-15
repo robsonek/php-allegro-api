@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgePatchProcess Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BadgePatchProcess implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'process' => '\OpenAPI\Client\Model\BadgePatchProcessProcess'
+        'process' => '\robsonek\phpAllegroApi\Model\BadgePatchProcessProcess'
     ];
 
     /**
@@ -292,7 +292,7 @@ class BadgePatchProcess implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets process
      *
-     * @return \OpenAPI\Client\Model\BadgePatchProcessProcess|null
+     * @return \robsonek\phpAllegroApi\Model\BadgePatchProcessProcess|null
      */
     public function getProcess()
     {
@@ -302,7 +302,7 @@ class BadgePatchProcess implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets process
      *
-     * @param \OpenAPI\Client\Model\BadgePatchProcessProcess|null $process process
+     * @param \robsonek\phpAllegroApi\Model\BadgePatchProcessProcess|null $process process
      *
      * @return self
      */

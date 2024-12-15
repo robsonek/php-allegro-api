@@ -1,4 +1,4 @@
-# OpenAPI\Client\AuctionsAndBiddingApi
+# robsonek\phpAllegroApi\AuctionsAndBiddingApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getBid()`
 
 ```php
-getBid($offer_id): \OpenAPI\Client\Model\MyBidResponse
+getBid($offer_id): \robsonek\phpAllegroApi\Model\MyBidResponse
 ```
 
 Get current user's bid information
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AuctionsAndBiddingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AuctionsAndBiddingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MyBidResponse**](../Model/MyBidResponse.md)
+[**\robsonek\phpAllegroApi\Model\MyBidResponse**](../Model/MyBidResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `placeBid()`
 
 ```php
-placeBid($offer_id, $bid_request): \OpenAPI\Client\Model\MyBidResponse
+placeBid($offer_id, $bid_request): \robsonek\phpAllegroApi\Model\MyBidResponse
 ```
 
 Place a bid in an auction
@@ -86,17 +86,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AuctionsAndBiddingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AuctionsAndBiddingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $offer_id = 'offer_id_example'; // string | The offer ID.
-$bid_request = new \OpenAPI\Client\Model\BidRequest(); // \OpenAPI\Client\Model\BidRequest
+$bid_request = new \robsonek\phpAllegroApi\Model\BidRequest(); // \robsonek\phpAllegroApi\Model\BidRequest
 
 try {
     $result = $apiInstance->placeBid($offer_id, $bid_request);
@@ -111,11 +111,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **offer_id** | **string**| The offer ID. | |
-| **bid_request** | [**\OpenAPI\Client\Model\BidRequest**](../Model/BidRequest.md)|  | [optional] |
+| **bid_request** | [**\robsonek\phpAllegroApi\Model\BidRequest**](../Model/BidRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MyBidResponse**](../Model/MyBidResponse.md)
+[**\robsonek\phpAllegroApi\Model\MyBidResponse**](../Model/MyBidResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderLineItemOfferReference Class Doc Comment
  *
  * @category Class
  * @description Offer identifier.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class OrderLineItemOfferReference implements ModelInterface, ArrayAccess, \JsonS
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId'
     ];
 
     /**
@@ -367,7 +367,7 @@ class OrderLineItemOfferReference implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -377,7 +377,7 @@ class OrderLineItemOfferReference implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */

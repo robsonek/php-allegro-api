@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTaxSettings Class Doc Comment
  *
  * @category Class
  * @description Tax settings for offer. Available settings can be found under &lt;a href&#x3D;\&quot;#operation/getTaxSettingsForCategory\&quot; target&#x3D;\&quot;_blank\&quot;&gt;\&quot;get all tax settings for category\&quot; resource&lt;/a&gt;.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rates' => '\OpenAPI\Client\Model\OfferTaxRate[]',
+        'rates' => '\robsonek\phpAllegroApi\Model\OfferTaxRate[]',
         'subject' => 'string',
         'exemption' => 'string'
     ];
@@ -310,7 +310,7 @@ class OfferTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rates
      *
-     * @return \OpenAPI\Client\Model\OfferTaxRate[]
+     * @return \robsonek\phpAllegroApi\Model\OfferTaxRate[]
      */
     public function getRates()
     {
@@ -320,7 +320,7 @@ class OfferTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rates
      *
-     * @param \OpenAPI\Client\Model\OfferTaxRate[] $rates Tax rates for offer.
+     * @param \robsonek\phpAllegroApi\Model\OfferTaxRate[] $rates Tax rates for offer.
      *
      * @return self
      */

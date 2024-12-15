@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SubmitFailedCommandOutput Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class SubmitFailedCommandOutput extends SubmitCommandOutput
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'errors' => '\OpenAPI\Client\Model\Error[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\Error[]'
     ];
 
     /**
@@ -323,7 +323,7 @@ class SubmitFailedCommandOutput extends SubmitCommandOutput
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error[]
+     * @return \robsonek\phpAllegroApi\Model\Error[]
      */
     public function getErrors()
     {
@@ -333,7 +333,7 @@ class SubmitFailedCommandOutput extends SubmitCommandOutput
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error[] $errors The list of all the error objects explaining the error.
+     * @param \robsonek\phpAllegroApi\Model\Error[] $errors The list of all the error objects explaining the error.
      *
      * @return self
      */

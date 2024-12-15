@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SmartSellerClassificationReport Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'classification' => '\OpenAPI\Client\Model\SmartSellerClassificationReportClassification',
-        'conditions' => '\OpenAPI\Client\Model\SmartSellerClassificationReportConditionsInner[]',
-        'excluded_delivery_methods' => '\OpenAPI\Client\Model\SmartDeliveryMethod[]'
+        'classification' => '\robsonek\phpAllegroApi\Model\SmartSellerClassificationReportClassification',
+        'conditions' => '\robsonek\phpAllegroApi\Model\SmartSellerClassificationReportConditionsInner[]',
+        'excluded_delivery_methods' => '\robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Gets classification
      *
-     * @return \OpenAPI\Client\Model\SmartSellerClassificationReportClassification|null
+     * @return \robsonek\phpAllegroApi\Model\SmartSellerClassificationReportClassification|null
      */
     public function getClassification()
     {
@@ -316,7 +316,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Sets classification
      *
-     * @param \OpenAPI\Client\Model\SmartSellerClassificationReportClassification|null $classification classification
+     * @param \robsonek\phpAllegroApi\Model\SmartSellerClassificationReportClassification|null $classification classification
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Gets conditions
      *
-     * @return \OpenAPI\Client\Model\SmartSellerClassificationReportConditionsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\SmartSellerClassificationReportConditionsInner[]|null
      */
     public function getConditions()
     {
@@ -343,7 +343,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Sets conditions
      *
-     * @param \OpenAPI\Client\Model\SmartSellerClassificationReportConditionsInner[]|null $conditions Set of conditions to be met in order for user to be Smart!
+     * @param \robsonek\phpAllegroApi\Model\SmartSellerClassificationReportConditionsInner[]|null $conditions Set of conditions to be met in order for user to be Smart!
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Gets excluded_delivery_methods
      *
-     * @return \OpenAPI\Client\Model\SmartDeliveryMethod[]|null
+     * @return \robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]|null
      */
     public function getExcludedDeliveryMethods()
     {
@@ -370,7 +370,7 @@ class SmartSellerClassificationReport implements ModelInterface, ArrayAccess, \J
     /**
      * Sets excluded_delivery_methods
      *
-     * @param \OpenAPI\Client\Model\SmartDeliveryMethod[]|null $excluded_delivery_methods Set of delivery methods that were excluded from Smart! classification on demand by seller
+     * @param \robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]|null $excluded_delivery_methods Set of delivery methods that were excluded from Smart! classification on demand by seller
      *
      * @return self
      */

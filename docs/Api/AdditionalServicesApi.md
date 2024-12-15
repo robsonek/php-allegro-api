@@ -1,4 +1,4 @@
-# OpenAPI\Client\AdditionalServicesApi
+# robsonek\phpAllegroApi\AdditionalServicesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createAdditionalServicesGroupUsingPOST()`
 
 ```php
-createAdditionalServicesGroupUsingPOST($additional_services_group_request): \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+createAdditionalServicesGroupUsingPOST($additional_services_group_request): \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
 ```
 
 Create additional services group
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$additional_services_group_request = new \OpenAPI\Client\Model\AdditionalServicesGroupRequest(); // \OpenAPI\Client\Model\AdditionalServicesGroupRequest | Additional service group body
+$additional_services_group_request = new \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest(); // \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest | Additional service group body
 
 try {
     $result = $apiInstance->createAdditionalServicesGroupUsingPOST($additional_services_group_request);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **additional_services_group_request** | [**\OpenAPI\Client\Model\AdditionalServicesGroupRequest**](../Model/AdditionalServicesGroupRequest.md)| Additional service group body | |
+| **additional_services_group_request** | [**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest**](../Model/AdditionalServicesGroupRequest.md)| Additional service group body | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ try {
 ## `getAdditionalServicesGroupUsingGET()`
 
 ```php
-getAdditionalServicesGroupUsingGET($group_id): \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+getAdditionalServicesGroupUsingGET($group_id): \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
 ```
 
 Get the details of an additional services group
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `getListOfAdditionalServicesDefinitionsCategoriesUsingGET()`
 
 ```php
-getListOfAdditionalServicesDefinitionsCategoriesUsingGET(): \OpenAPI\Client\Model\CategoriesResponse
+getListOfAdditionalServicesDefinitionsCategoriesUsingGET(): \robsonek\phpAllegroApi\Model\CategoriesResponse
 ```
 
 Get the additional services definitions by categories
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -173,7 +173,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoriesResponse**](../Model/CategoriesResponse.md)
+[**\robsonek\phpAllegroApi\Model\CategoriesResponse**](../Model/CategoriesResponse.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 ## `getListOfAdditionalServicesGroupsUsingGET()`
 
 ```php
-getListOfAdditionalServicesGroupsUsingGET($offset, $limit): \OpenAPI\Client\Model\AdditionalServicesGroups
+getListOfAdditionalServicesGroupsUsingGET($offset, $limit): \robsonek\phpAllegroApi\Model\AdditionalServicesGroups
 ```
 
 Get the user's additional services groups
@@ -206,10 +206,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -235,7 +235,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServicesGroups**](../Model/AdditionalServicesGroups.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServicesGroups**](../Model/AdditionalServicesGroups.md)
 
 ### Authorization
 
@@ -253,7 +253,7 @@ try {
 ## `modifyAdditionalServicesGroupUsingPUT()`
 
 ```php
-modifyAdditionalServicesGroupUsingPUT($group_id, $additional_services_group_request): \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+modifyAdditionalServicesGroupUsingPUT($group_id, $additional_services_group_request): \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
 ```
 
 Modify an additional services group
@@ -268,17 +268,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdditionalServicesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $group_id = 'group_id_example'; // string | Additional service group ID.
-$additional_services_group_request = new \OpenAPI\Client\Model\AdditionalServicesGroupRequest(); // \OpenAPI\Client\Model\AdditionalServicesGroupRequest | Additional service group body
+$additional_services_group_request = new \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest(); // \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest | Additional service group body
 
 try {
     $result = $apiInstance->modifyAdditionalServicesGroupUsingPUT($group_id, $additional_services_group_request);
@@ -293,11 +293,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **group_id** | **string**| Additional service group ID. | |
-| **additional_services_group_request** | [**\OpenAPI\Client\Model\AdditionalServicesGroupRequest**](../Model/AdditionalServicesGroupRequest.md)| Additional service group body | |
+| **additional_services_group_request** | [**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest**](../Model/AdditionalServicesGroupRequest.md)| Additional service group body | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse**](../Model/AdditionalServicesGroupResponse.md)
 
 ### Authorization
 

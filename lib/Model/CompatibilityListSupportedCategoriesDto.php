@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListSupportedCategoriesDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CompatibilityListSupportedCategoriesDto implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'supported_categories' => '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]'
+        'supported_categories' => '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CompatibilityListSupportedCategoriesDto implements ModelInterface, ArrayAc
     /**
      * Gets supported_categories
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]|null
      */
     public function getSupportedCategories()
     {
@@ -302,7 +302,7 @@ class CompatibilityListSupportedCategoriesDto implements ModelInterface, ArrayAc
     /**
      * Sets supported_categories
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]|null $supported_categories List with information about categories where compatibility list is supported. <a href=\" https://developer.allegro.pl/compatibility_list/\" target=\"_blank\">Read more</a>.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner[]|null $supported_categories List with information about categories where compatibility list is supported. <a href=\" https://developer.allegro.pl/compatibility_list/\" target=\"_blank\">Read more</a>.
      *
      * @return self
      */

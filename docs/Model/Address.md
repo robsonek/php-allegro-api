@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **zip_code** | **string** |  |
 **state** | **string** |  |
 **country_code** | **string** |  |
-**coordinates** | [**\OpenAPI\Client\Model\Coordinates**](Coordinates.md) |  | [optional]
+**coordinates** | [**\robsonek\phpAllegroApi\Model\Coordinates**](Coordinates.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

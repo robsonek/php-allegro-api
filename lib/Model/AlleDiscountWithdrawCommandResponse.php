@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountWithdrawCommandResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class AlleDiscountWithdrawCommandResponse implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'input' => '\OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseInput',
-        'output' => '\OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseOutput'
+        'input' => '\robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseInput',
+        'output' => '\robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseOutput'
     ];
 
     /**
@@ -333,7 +333,7 @@ class AlleDiscountWithdrawCommandResponse implements ModelInterface, ArrayAccess
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseInput|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseInput|null
      */
     public function getInput()
     {
@@ -343,7 +343,7 @@ class AlleDiscountWithdrawCommandResponse implements ModelInterface, ArrayAccess
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseInput|null $input input
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseInput|null $input input
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class AlleDiscountWithdrawCommandResponse implements ModelInterface, ArrayAccess
     /**
      * Gets output
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseOutput|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseOutput|null
      */
     public function getOutput()
     {
@@ -370,7 +370,7 @@ class AlleDiscountWithdrawCommandResponse implements ModelInterface, ArrayAccess
     /**
      * Sets output
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountWithdrawCommandResponseOutput|null $output output
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountWithdrawCommandResponseOutput|null $output output
      *
      * @return self
      */

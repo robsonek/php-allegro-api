@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormAdditionalService Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CheckoutFormAdditionalService implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'definition_id' => 'string',
         'name' => 'string',
-        'price' => '\OpenAPI\Client\Model\Price',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
         'quantity' => 'int'
     ];
 
@@ -371,7 +371,7 @@ class CheckoutFormAdditionalService implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -381,7 +381,7 @@ class CheckoutFormAdditionalService implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price price
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price price
      *
      * @return self
      */

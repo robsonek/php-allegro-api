@@ -1,4 +1,4 @@
-# OpenAPI\Client\PricingApi
+# robsonek\phpAllegroApi\PricingApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `calculateFeePreviewUsingPOST()`
 
 ```php
-calculateFeePreviewUsingPOST($public_offer_preview_request): \OpenAPI\Client\Model\FeePreviewResponse
+calculateFeePreviewUsingPOST($public_offer_preview_request): \robsonek\phpAllegroApi\Model\FeePreviewResponse
 ```
 
 Calculate fee and commission for an offer
@@ -26,16 +26,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$public_offer_preview_request = new \OpenAPI\Client\Model\PublicOfferPreviewRequest(); // \OpenAPI\Client\Model\PublicOfferPreviewRequest
+$public_offer_preview_request = new \robsonek\phpAllegroApi\Model\PublicOfferPreviewRequest(); // \robsonek\phpAllegroApi\Model\PublicOfferPreviewRequest
 
 try {
     $result = $apiInstance->calculateFeePreviewUsingPOST($public_offer_preview_request);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **public_offer_preview_request** | [**\OpenAPI\Client\Model\PublicOfferPreviewRequest**](../Model/PublicOfferPreviewRequest.md)|  | |
+| **public_offer_preview_request** | [**\robsonek\phpAllegroApi\Model\PublicOfferPreviewRequest**](../Model/PublicOfferPreviewRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeePreviewResponse**](../Model/FeePreviewResponse.md)
+[**\robsonek\phpAllegroApi\Model\FeePreviewResponse**](../Model/FeePreviewResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `offerQuotesPublicUsingGET()`
 
 ```php
-offerQuotesPublicUsingGET($offer_id): \OpenAPI\Client\Model\OfferQuotesDto
+offerQuotesPublicUsingGET($offer_id): \robsonek\phpAllegroApi\Model\OfferQuotesDto
 ```
 
 Get the user's current offer quotes
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\PricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferQuotesDto**](../Model/OfferQuotesDto.md)
+[**\robsonek\phpAllegroApi\Model\OfferQuotesDto**](../Model/OfferQuotesDto.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ClassifiedsPackages Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ClassifiedsPackages implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base_package' => '\OpenAPI\Client\Model\ClassifiedPackage',
-        'extra_packages' => '\OpenAPI\Client\Model\ClassifiedExtraPackage[]'
+        'base_package' => '\robsonek\phpAllegroApi\Model\ClassifiedPackage',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ClassifiedsPackages implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\ClassifiedPackage|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedPackage|null
      */
     public function getBasePackage()
     {
@@ -309,7 +309,7 @@ class ClassifiedsPackages implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\ClassifiedPackage|null $base_package base_package
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedPackage|null $base_package base_package
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class ClassifiedsPackages implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\ClassifiedExtraPackage[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[]|null
      */
     public function getExtraPackages()
     {
@@ -336,7 +336,7 @@ class ClassifiedsPackages implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\ClassifiedExtraPackage[]|null $extra_packages An array of extra packages.
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[]|null $extra_packages An array of extra packages.
      *
      * @return self
      */

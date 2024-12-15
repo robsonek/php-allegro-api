@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AllegroPricesOfferChangeRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AllegroPricesOfferChangeRequest implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'additional_marketplaces' => 'array<string,\OpenAPI\Client\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>'
+        'additional_marketplaces' => 'array<string,\robsonek\phpAllegroApi\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>'
     ];
 
     /**
@@ -360,7 +360,7 @@ class AllegroPricesOfferChangeRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets additional_marketplaces
      *
-     * @return array<string,\OpenAPI\Client\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>|null
+     * @return array<string,\robsonek\phpAllegroApi\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -370,7 +370,7 @@ class AllegroPricesOfferChangeRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets additional_marketplaces
      *
-     * @param array<string,\OpenAPI\Client\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>|null $additional_marketplaces Use it to update the consent on marketplaces other than the base marketplace of the offer.
+     * @param array<string,\robsonek\phpAllegroApi\Model\AllegroPricesAccountChangeRequestAdditionalMarketplacesValue>|null $additional_marketplaces Use it to update the consent on marketplaces other than the base marketplace of the offer.
      *
      * @return self
      */

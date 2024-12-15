@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * LargeOrderDiscountBenefitSpecificationAllOfOrderValue Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfOrderValue implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'lower_bound' => '\OpenAPI\Client\Model\Price'
+        'lower_bound' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -295,7 +295,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfOrderValue implements ModelInte
     /**
      * Gets lower_bound
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getLowerBound()
     {
@@ -305,7 +305,7 @@ class LargeOrderDiscountBenefitSpecificationAllOfOrderValue implements ModelInte
     /**
      * Sets lower_bound
      *
-     * @param \OpenAPI\Client\Model\Price $lower_bound lower_bound
+     * @param \robsonek\phpAllegroApi\Model\Price $lower_bound lower_bound
      *
      * @return self
      */

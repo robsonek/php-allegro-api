@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibleProductDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class CompatibleProductDto implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'id' => 'string',
         'text' => 'string',
-        'group' => '\OpenAPI\Client\Model\CompatibleProductDtoGroup',
-        'attributes' => '\OpenAPI\Client\Model\CompatibleProductDtoAttributesInner[]'
+        'group' => '\robsonek\phpAllegroApi\Model\CompatibleProductDtoGroup',
+        'attributes' => '\robsonek\phpAllegroApi\Model\CompatibleProductDtoAttributesInner[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class CompatibleProductDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets group
      *
-     * @return \OpenAPI\Client\Model\CompatibleProductDtoGroup|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductDtoGroup|null
      */
     public function getGroup()
     {
@@ -377,7 +377,7 @@ class CompatibleProductDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets group
      *
-     * @param \OpenAPI\Client\Model\CompatibleProductDtoGroup|null $group group
+     * @param \robsonek\phpAllegroApi\Model\CompatibleProductDtoGroup|null $group group
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class CompatibleProductDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attributes
      *
-     * @return \OpenAPI\Client\Model\CompatibleProductDtoAttributesInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductDtoAttributesInner[]|null
      */
     public function getAttributes()
     {
@@ -404,7 +404,7 @@ class CompatibleProductDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attributes
      *
-     * @param \OpenAPI\Client\Model\CompatibleProductDtoAttributesInner[]|null $attributes List of compatible products attributes.
+     * @param \robsonek\phpAllegroApi\Model\CompatibleProductDtoAttributesInner[]|null $attributes List of compatible products attributes.
      *
      * @return self
      */

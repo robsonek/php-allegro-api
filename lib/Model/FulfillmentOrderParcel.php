@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FulfillmentOrderParcel Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class FulfillmentOrderParcel implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'waybill' => 'string',
-        'items' => '\OpenAPI\Client\Model\FulfillmentOrderParcelItem[]'
+        'items' => '\robsonek\phpAllegroApi\Model\FulfillmentOrderParcelItem[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class FulfillmentOrderParcel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\FulfillmentOrderParcelItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\FulfillmentOrderParcelItem[]|null
      */
     public function getItems()
     {
@@ -336,7 +336,7 @@ class FulfillmentOrderParcel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\FulfillmentOrderParcelItem[]|null $items List of parcels' items
+     * @param \robsonek\phpAllegroApi\Model\FulfillmentOrderParcelItem[]|null $items List of parcels' items
      *
      * @return self
      */

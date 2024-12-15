@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferMarketplacesPublication Class Doc Comment
  *
  * @category Class
  * @description Offer publication data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferMarketplacesPublication implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplaces' => '\OpenAPI\Client\Model\MarketplacesVisibility',
+        'marketplaces' => '\robsonek\phpAllegroApi\Model\MarketplacesVisibility',
         'updated_marketplaces' => 'string[]'
     ];
 
@@ -306,7 +306,7 @@ class OfferMarketplacesPublication implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets marketplaces
      *
-     * @return \OpenAPI\Client\Model\MarketplacesVisibility
+     * @return \robsonek\phpAllegroApi\Model\MarketplacesVisibility
      */
     public function getMarketplaces()
     {
@@ -316,7 +316,7 @@ class OfferMarketplacesPublication implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets marketplaces
      *
-     * @param \OpenAPI\Client\Model\MarketplacesVisibility $marketplaces marketplaces
+     * @param \robsonek\phpAllegroApi\Model\MarketplacesVisibility $marketplaces marketplaces
      *
      * @return self
      */

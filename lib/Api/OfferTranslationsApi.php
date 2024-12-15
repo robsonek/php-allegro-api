@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTranslationsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,7 +138,7 @@ class OfferTranslationsApi
      * @param  string $element Offer element for which translation should be deleted. If not provided, translations for all elements will be deleted. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManualTranslationUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -157,7 +157,7 @@ class OfferTranslationsApi
      * @param  string $element Offer element for which translation should be deleted. If not provided, translations for all elements will be deleted. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteManualTranslationUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -195,7 +195,7 @@ class OfferTranslationsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -203,7 +203,7 @@ class OfferTranslationsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -409,9 +409,9 @@ class OfferTranslationsApi
      * @param  string $language Language for translation to retrieve. If not provided, all translations as well as base content for offer will be returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOfferTranslationUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferTranslations|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\OfferTranslations|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getOfferTranslationUsingGET($offer_id, $language = null, string $contentType = self::contentTypes['getOfferTranslationUsingGET'][0])
     {
@@ -428,9 +428,9 @@ class OfferTranslationsApi
      * @param  string $language Language for translation to retrieve. If not provided, all translations as well as base content for offer will be returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOfferTranslationUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferTranslations|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferTranslations|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferTranslationUsingGETWithHttpInfo($offer_id, $language = null, string $contentType = self::contentTypes['getOfferTranslationUsingGET'][0])
     {
@@ -461,11 +461,11 @@ class OfferTranslationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferTranslations' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferTranslations' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferTranslations' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferTranslations' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -483,16 +483,16 @@ class OfferTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferTranslations', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferTranslations', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -510,16 +510,16 @@ class OfferTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -537,16 +537,16 @@ class OfferTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -564,7 +564,7 @@ class OfferTranslationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -583,7 +583,7 @@ class OfferTranslationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferTranslations';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferTranslations';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -616,7 +616,7 @@ class OfferTranslationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferTranslations',
+                        '\robsonek\phpAllegroApi\Model\OfferTranslations',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -624,7 +624,7 @@ class OfferTranslationsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -632,7 +632,7 @@ class OfferTranslationsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -640,7 +640,7 @@ class OfferTranslationsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -686,7 +686,7 @@ class OfferTranslationsApi
      */
     public function getOfferTranslationUsingGETAsyncWithHttpInfo($offer_id, $language = null, string $contentType = self::contentTypes['getOfferTranslationUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferTranslations';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferTranslations';
         $request = $this->getOfferTranslationUsingGETRequest($offer_id, $language, $contentType);
 
         return $this->client
@@ -839,10 +839,10 @@ class OfferTranslationsApi
      *
      * @param  string $language Language of the provided translation. (required)
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
+     * @param  \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOfferTranslationUsingPATCH'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -858,10 +858,10 @@ class OfferTranslationsApi
      *
      * @param  string $language Language of the provided translation. (required)
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
+     * @param  \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOfferTranslationUsingPATCH'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -899,7 +899,7 @@ class OfferTranslationsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -907,7 +907,7 @@ class OfferTranslationsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -915,7 +915,7 @@ class OfferTranslationsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -932,7 +932,7 @@ class OfferTranslationsApi
      *
      * @param  string $language Language of the provided translation. (required)
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
+     * @param  \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOfferTranslationUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -955,7 +955,7 @@ class OfferTranslationsApi
      *
      * @param  string $language Language of the provided translation. (required)
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
+     * @param  \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOfferTranslationUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -994,7 +994,7 @@ class OfferTranslationsApi
      *
      * @param  string $language Language of the provided translation. (required)
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
+     * @param  \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest $manual_translation_update_request Request with manual translation for offer, must contain at least one translated offer element (title or description). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateOfferTranslationUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

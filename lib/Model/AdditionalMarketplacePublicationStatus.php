@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacePublicationStatus Class Doc Comment
  *
  * @category Class
  * @description The publication status of the offer on additional marketplace. The possible values:    - *NOT_REQUESTED* - seller has not declared a willingness to list this offer on given marketplace   - *PENDING* - seller declared a willingness to list this offer on given marketplace, but the process has not started yet; e.g. the offer is not published yet   - *IN_PROGRESS* - we process the offer&#39;s qualification for given marketplace; the offer is not listed yet   - *APPROVED* - the offer is approved to list on given marketplace   - *REFUSED* - the offer is refused to list on given marketplace
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

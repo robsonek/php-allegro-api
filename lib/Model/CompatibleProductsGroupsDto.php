@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibleProductsGroupsDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CompatibleProductsGroupsDto implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'groups' => '\OpenAPI\Client\Model\CompatibleProductsGroupsDtoGroupsInner[]',
+        'groups' => '\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDtoGroupsInner[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class CompatibleProductsGroupsDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets groups
      *
-     * @return \OpenAPI\Client\Model\CompatibleProductsGroupsDtoGroupsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDtoGroupsInner[]|null
      */
     public function getGroups()
     {
@@ -324,7 +324,7 @@ class CompatibleProductsGroupsDto implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets groups
      *
-     * @param \OpenAPI\Client\Model\CompatibleProductsGroupsDtoGroupsInner[]|null $groups List of groups for given type of compatible products.
+     * @param \robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDtoGroupsInner[]|null $groups List of groups for given type of compatible products.
      *
      * @return self
      */

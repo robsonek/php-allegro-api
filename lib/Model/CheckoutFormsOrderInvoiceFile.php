@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormsOrderInvoiceFile Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CheckoutFormsOrderInvoiceFile implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'name' => 'string',
         'uploaded_at' => '\DateTime',
-        'security_verification' => '\OpenAPI\Client\Model\CheckoutFormsOrderInvoiceFileSecurityVerification'
+        'security_verification' => '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoiceFileSecurityVerification'
     ];
 
     /**
@@ -360,7 +360,7 @@ class CheckoutFormsOrderInvoiceFile implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets security_verification
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormsOrderInvoiceFileSecurityVerification|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoiceFileSecurityVerification|null
      */
     public function getSecurityVerification()
     {
@@ -370,7 +370,7 @@ class CheckoutFormsOrderInvoiceFile implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets security_verification
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormsOrderInvoiceFileSecurityVerification|null $security_verification security_verification
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoiceFileSecurityVerification|null $security_verification security_verification
      *
      * @return self
      */

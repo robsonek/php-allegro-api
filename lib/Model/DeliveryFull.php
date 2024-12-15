@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeliveryFull Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class DeliveryFull implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'additional_info' => 'string',
         'handling_time' => 'string',
-        'shipping_rates' => '\OpenAPI\Client\Model\JustId',
+        'shipping_rates' => '\robsonek\phpAllegroApi\Model\JustId',
         'shipment_date' => '\DateTime'
     ];
 
@@ -377,7 +377,7 @@ class DeliveryFull implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_rates
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getShippingRates()
     {
@@ -387,7 +387,7 @@ class DeliveryFull implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_rates
      *
-     * @param \OpenAPI\Client\Model\JustId|null $shipping_rates shipping_rates
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $shipping_rates shipping_rates
      *
      * @return self
      */

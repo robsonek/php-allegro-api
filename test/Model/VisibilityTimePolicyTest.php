@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace robsonek\phpAllegroApi\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Time period when the campaign is visible in &lt;a href&#x3D;\&quot;https://allegro.pl/moje-allegro/sprzedaz/moje-oferty\&quot; target&#x3D;\&quot;_blank\&quot;&gt;My Allegro&lt;/a&gt; and &lt;a href&#x3D;\&quot;https://ms.allegro.pl/seller-offers/\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Sales Manager (Menedżer sprzedaży)&lt;/a&gt; (it is not equal to the time period when badges are displayed on the list of offers or on the offer page).
- * @package     OpenAPI\Client
+ * @package     robsonek\phpAllegroApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FulfillmentProductsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class FulfillmentProductsApi
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AvailableProductsList|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\AvailableProductsList|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getAvailableProducts($accept_language = 'en-US', $offset = 0, $limit = 50, string $contentType = self::contentTypes['getAvailableProducts'][0])
     {
@@ -152,9 +152,9 @@ class FulfillmentProductsApi
      * @param  int $limit Maximum number of elements in response. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AvailableProductsList|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AvailableProductsList|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAvailableProductsWithHttpInfo($accept_language = 'en-US', $offset = 0, $limit = 50, string $contentType = self::contentTypes['getAvailableProducts'][0])
     {
@@ -185,11 +185,11 @@ class FulfillmentProductsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AvailableProductsList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AvailableProductsList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AvailableProductsList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AvailableProductsList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -207,16 +207,16 @@ class FulfillmentProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AvailableProductsList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AvailableProductsList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -234,7 +234,7 @@ class FulfillmentProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -253,7 +253,7 @@ class FulfillmentProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AvailableProductsList';
+            $returnType = '\robsonek\phpAllegroApi\Model\AvailableProductsList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -286,7 +286,7 @@ class FulfillmentProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AvailableProductsList',
+                        '\robsonek\phpAllegroApi\Model\AvailableProductsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -294,7 +294,7 @@ class FulfillmentProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -342,7 +342,7 @@ class FulfillmentProductsApi
      */
     public function getAvailableProductsAsyncWithHttpInfo($accept_language = 'en-US', $offset = 0, $limit = 50, string $contentType = self::contentTypes['getAvailableProducts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AvailableProductsList';
+        $returnType = '\robsonek\phpAllegroApi\Model\AvailableProductsList';
         $request = $this->getAvailableProductsRequest($accept_language, $offset, $limit, $contentType);
 
         return $this->client

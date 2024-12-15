@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferTranslationUpdatedEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class OfferTranslationUpdatedEvent extends SellerOfferBaseEvent
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'offer' => '\OpenAPI\Client\Model\OfferEventExternalOffer',
-        'translations' => '\OpenAPI\Client\Model\ChangedTranslation[]'
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferEventExternalOffer',
+        'translations' => '\robsonek\phpAllegroApi\Model\ChangedTranslation[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class OfferTranslationUpdatedEvent extends SellerOfferBaseEvent
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferEventExternalOffer
+     * @return \robsonek\phpAllegroApi\Model\OfferEventExternalOffer
      */
     public function getOffer()
     {
@@ -340,7 +340,7 @@ class OfferTranslationUpdatedEvent extends SellerOfferBaseEvent
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferEventExternalOffer $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferEventExternalOffer $offer offer
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class OfferTranslationUpdatedEvent extends SellerOfferBaseEvent
     /**
      * Gets translations
      *
-     * @return \OpenAPI\Client\Model\ChangedTranslation[]|null
+     * @return \robsonek\phpAllegroApi\Model\ChangedTranslation[]|null
      */
     public function getTranslations()
     {
@@ -367,7 +367,7 @@ class OfferTranslationUpdatedEvent extends SellerOfferBaseEvent
     /**
      * Sets translations
      *
-     * @param \OpenAPI\Client\Model\ChangedTranslation[]|null $translations translations
+     * @param \robsonek\phpAllegroApi\Model\ChangedTranslation[]|null $translations translations
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderEventStats Class Doc Comment
  *
  * @category Class
  * @description Event statistics, currently contains only basic information about the latest event.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OrderEventStats implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'latest_event' => '\OpenAPI\Client\Model\LatestOrderEvent'
+        'latest_event' => '\robsonek\phpAllegroApi\Model\LatestOrderEvent'
     ];
 
     /**
@@ -293,7 +293,7 @@ class OrderEventStats implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets latest_event
      *
-     * @return \OpenAPI\Client\Model\LatestOrderEvent|null
+     * @return \robsonek\phpAllegroApi\Model\LatestOrderEvent|null
      */
     public function getLatestEvent()
     {
@@ -303,7 +303,7 @@ class OrderEventStats implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets latest_event
      *
-     * @param \OpenAPI\Client\Model\LatestOrderEvent|null $latest_event latest_event
+     * @param \robsonek\phpAllegroApi\Model\LatestOrderEvent|null $latest_event latest_event
      *
      * @return self
      */

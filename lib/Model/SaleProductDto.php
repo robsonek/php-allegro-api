@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,18 +59,18 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'category' => '\OpenAPI\Client\Model\ProductCategoryWithPath',
-        'images' => '\OpenAPI\Client\Model\ImageUrl[]',
-        'parameters' => '\OpenAPI\Client\Model\ProductParameterDto[]',
-        'offer_requirements' => '\OpenAPI\Client\Model\OfferRequirements',
-        'compatibility_list' => '\OpenAPI\Client\Model\SaleProductCompatibilityList',
-        'tecdoc_specification' => '\OpenAPI\Client\Model\TecdocSpecification',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
+        'category' => '\robsonek\phpAllegroApi\Model\ProductCategoryWithPath',
+        'images' => '\robsonek\phpAllegroApi\Model\ImageUrl[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ProductParameterDto[]',
+        'offer_requirements' => '\robsonek\phpAllegroApi\Model\OfferRequirements',
+        'compatibility_list' => '\robsonek\phpAllegroApi\Model\SaleProductCompatibilityList',
+        'tecdoc_specification' => '\robsonek\phpAllegroApi\Model\TecdocSpecification',
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
         'is_draft' => 'bool',
-        'ai_co_created_content' => '\OpenAPI\Client\Model\AiCoCreatedContent',
+        'ai_co_created_content' => '\robsonek\phpAllegroApi\Model\AiCoCreatedContent',
         'has_protected_brand' => 'bool',
-        'publication' => '\OpenAPI\Client\Model\SaleProductDtoPublication',
-        'product_safety' => '\OpenAPI\Client\Model\ProductSafetyDto'
+        'publication' => '\robsonek\phpAllegroApi\Model\SaleProductDtoPublication',
+        'product_safety' => '\robsonek\phpAllegroApi\Model\ProductSafetyDto'
     ];
 
     /**
@@ -446,7 +446,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ProductCategoryWithPath
+     * @return \robsonek\phpAllegroApi\Model\ProductCategoryWithPath
      */
     public function getCategory()
     {
@@ -456,7 +456,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ProductCategoryWithPath $category category
+     * @param \robsonek\phpAllegroApi\Model\ProductCategoryWithPath $category category
      *
      * @return self
      */
@@ -473,7 +473,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ImageUrl[]|null
+     * @return \robsonek\phpAllegroApi\Model\ImageUrl[]|null
      */
     public function getImages()
     {
@@ -483,7 +483,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ImageUrl[]|null $images List of product images.
+     * @param \robsonek\phpAllegroApi\Model\ImageUrl[]|null $images List of product images.
      *
      * @return self
      */
@@ -500,7 +500,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ProductParameterDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductParameterDto[]|null
      */
     public function getParameters()
     {
@@ -510,7 +510,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ProductParameterDto[]|null $parameters List of product parameters.
+     * @param \robsonek\phpAllegroApi\Model\ProductParameterDto[]|null $parameters List of product parameters.
      *
      * @return self
      */
@@ -527,7 +527,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer_requirements
      *
-     * @return \OpenAPI\Client\Model\OfferRequirements|null
+     * @return \robsonek\phpAllegroApi\Model\OfferRequirements|null
      */
     public function getOfferRequirements()
     {
@@ -537,7 +537,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer_requirements
      *
-     * @param \OpenAPI\Client\Model\OfferRequirements|null $offer_requirements offer_requirements
+     * @param \robsonek\phpAllegroApi\Model\OfferRequirements|null $offer_requirements offer_requirements
      *
      * @return self
      */
@@ -554,7 +554,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets compatibility_list
      *
-     * @return \OpenAPI\Client\Model\SaleProductCompatibilityList|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductCompatibilityList|null
      */
     public function getCompatibilityList()
     {
@@ -564,7 +564,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets compatibility_list
      *
-     * @param \OpenAPI\Client\Model\SaleProductCompatibilityList|null $compatibility_list compatibility_list
+     * @param \robsonek\phpAllegroApi\Model\SaleProductCompatibilityList|null $compatibility_list compatibility_list
      *
      * @return self
      */
@@ -581,7 +581,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tecdoc_specification
      *
-     * @return \OpenAPI\Client\Model\TecdocSpecification|null
+     * @return \robsonek\phpAllegroApi\Model\TecdocSpecification|null
      */
     public function getTecdocSpecification()
     {
@@ -591,7 +591,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tecdoc_specification
      *
-     * @param \OpenAPI\Client\Model\TecdocSpecification|null $tecdoc_specification tecdoc_specification
+     * @param \robsonek\phpAllegroApi\Model\TecdocSpecification|null $tecdoc_specification tecdoc_specification
      *
      * @return self
      */
@@ -608,7 +608,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -618,7 +618,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */
@@ -662,7 +662,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ai_co_created_content
      *
-     * @return \OpenAPI\Client\Model\AiCoCreatedContent|null
+     * @return \robsonek\phpAllegroApi\Model\AiCoCreatedContent|null
      */
     public function getAiCoCreatedContent()
     {
@@ -672,7 +672,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ai_co_created_content
      *
-     * @param \OpenAPI\Client\Model\AiCoCreatedContent|null $ai_co_created_content ai_co_created_content
+     * @param \robsonek\phpAllegroApi\Model\AiCoCreatedContent|null $ai_co_created_content ai_co_created_content
      *
      * @return self
      */
@@ -716,7 +716,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\SaleProductDtoPublication|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductDtoPublication|null
      */
     public function getPublication()
     {
@@ -726,7 +726,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\SaleProductDtoPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\SaleProductDtoPublication|null $publication publication
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product_safety
      *
-     * @return \OpenAPI\Client\Model\ProductSafetyDto|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSafetyDto|null
      */
     public function getProductSafety()
     {
@@ -753,7 +753,7 @@ class SaleProductDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product_safety
      *
-     * @param \OpenAPI\Client\Model\ProductSafetyDto|null $product_safety product_safety
+     * @param \robsonek\phpAllegroApi\Model\ProductSafetyDto|null $product_safety product_safety
      *
      * @return self
      */

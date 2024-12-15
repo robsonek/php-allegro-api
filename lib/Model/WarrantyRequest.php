@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * WarrantyRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'type' => '\OpenAPI\Client\Model\WarrantyType',
-        'individual' => '\OpenAPI\Client\Model\WarrantyPeriod',
-        'corporate' => '\OpenAPI\Client\Model\WarrantyPeriod',
-        'attachment' => '\OpenAPI\Client\Model\WarrantyAttachment',
+        'type' => '\robsonek\phpAllegroApi\Model\WarrantyType',
+        'individual' => '\robsonek\phpAllegroApi\Model\WarrantyPeriod',
+        'corporate' => '\robsonek\phpAllegroApi\Model\WarrantyPeriod',
+        'attachment' => '\robsonek\phpAllegroApi\Model\WarrantyAttachment',
         'description' => 'string'
     ];
 
@@ -366,7 +366,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\WarrantyType|null
+     * @return \robsonek\phpAllegroApi\Model\WarrantyType|null
      */
     public function getType()
     {
@@ -376,7 +376,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\WarrantyType|null $type type
+     * @param \robsonek\phpAllegroApi\Model\WarrantyType|null $type type
      *
      * @return self
      */
@@ -393,7 +393,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets individual
      *
-     * @return \OpenAPI\Client\Model\WarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\WarrantyPeriod|null
      */
     public function getIndividual()
     {
@@ -403,7 +403,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets individual
      *
-     * @param \OpenAPI\Client\Model\WarrantyPeriod|null $individual individual
+     * @param \robsonek\phpAllegroApi\Model\WarrantyPeriod|null $individual individual
      *
      * @return self
      */
@@ -420,7 +420,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets corporate
      *
-     * @return \OpenAPI\Client\Model\WarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\WarrantyPeriod|null
      */
     public function getCorporate()
     {
@@ -430,7 +430,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets corporate
      *
-     * @param \OpenAPI\Client\Model\WarrantyPeriod|null $corporate corporate
+     * @param \robsonek\phpAllegroApi\Model\WarrantyPeriod|null $corporate corporate
      *
      * @return self
      */
@@ -447,7 +447,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attachment
      *
-     * @return \OpenAPI\Client\Model\WarrantyAttachment|null
+     * @return \robsonek\phpAllegroApi\Model\WarrantyAttachment|null
      */
     public function getAttachment()
     {
@@ -457,7 +457,7 @@ class WarrantyRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attachment
      *
-     * @param \OpenAPI\Client\Model\WarrantyAttachment|null $attachment attachment
+     * @param \robsonek\phpAllegroApi\Model\WarrantyAttachment|null $attachment attachment
      *
      * @return self
      */

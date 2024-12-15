@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ResponsibleProducerResponseProducerData Class Doc Comment
  *
  * @category Class
  * @description Responsible producer data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class ResponsibleProducerResponseProducerData implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'trade_name' => 'string',
-        'address' => '\OpenAPI\Client\Model\ResponsibleProducerAddress',
-        'contact' => '\OpenAPI\Client\Model\ResponsibleProducerContact'
+        'address' => '\robsonek\phpAllegroApi\Model\ResponsibleProducerAddress',
+        'contact' => '\robsonek\phpAllegroApi\Model\ResponsibleProducerContact'
     ];
 
     /**
@@ -342,7 +342,7 @@ class ResponsibleProducerResponseProducerData implements ModelInterface, ArrayAc
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\ResponsibleProducerAddress|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerAddress|null
      */
     public function getAddress()
     {
@@ -352,7 +352,7 @@ class ResponsibleProducerResponseProducerData implements ModelInterface, ArrayAc
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\ResponsibleProducerAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\ResponsibleProducerAddress|null $address address
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class ResponsibleProducerResponseProducerData implements ModelInterface, ArrayAc
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ResponsibleProducerContact|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerContact|null
      */
     public function getContact()
     {
@@ -379,7 +379,7 @@ class ResponsibleProducerResponseProducerData implements ModelInterface, ArrayAc
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ResponsibleProducerContact|null $contact contact
+     * @param \robsonek\phpAllegroApi\Model\ResponsibleProducerContact|null $contact contact
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryProductParameter Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class CategoryProductParameter implements ModelInterface, ArrayAccess, \JsonSeri
         'name' => 'string',
         'type' => 'string',
         'required' => 'bool',
-        'required_if' => '\OpenAPI\Client\Model\CategoryParameterRequirementConditions',
-        'displayed_if' => '\OpenAPI\Client\Model\CategoryParameterDisplayConditions',
+        'required_if' => '\robsonek\phpAllegroApi\Model\CategoryParameterRequirementConditions',
+        'displayed_if' => '\robsonek\phpAllegroApi\Model\CategoryParameterDisplayConditions',
         'unit' => 'string'
     ];
 
@@ -448,7 +448,7 @@ class CategoryProductParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets required_if
      *
-     * @return \OpenAPI\Client\Model\CategoryParameterRequirementConditions|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameterRequirementConditions|null
      */
     public function getRequiredIf()
     {
@@ -458,7 +458,7 @@ class CategoryProductParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets required_if
      *
-     * @param \OpenAPI\Client\Model\CategoryParameterRequirementConditions|null $required_if required_if
+     * @param \robsonek\phpAllegroApi\Model\CategoryParameterRequirementConditions|null $required_if required_if
      *
      * @return self
      */
@@ -475,7 +475,7 @@ class CategoryProductParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets displayed_if
      *
-     * @return \OpenAPI\Client\Model\CategoryParameterDisplayConditions|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameterDisplayConditions|null
      */
     public function getDisplayedIf()
     {
@@ -485,7 +485,7 @@ class CategoryProductParameter implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets displayed_if
      *
-     * @param \OpenAPI\Client\Model\CategoryParameterDisplayConditions|null $displayed_if displayed_if
+     * @param \robsonek\phpAllegroApi\Model\CategoryParameterDisplayConditions|null $displayed_if displayed_if
      *
      * @return self
      */

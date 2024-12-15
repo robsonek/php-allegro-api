@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdvanceShipNoticeList Class Doc Comment
  *
  * @category Class
  * @description The list of Advance Ship Notices.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AdvanceShipNoticeList implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'advance_ship_notices' => '\OpenAPI\Client\Model\AdvanceShipNoticeResponse[]',
+        'advance_ship_notices' => '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse[]',
         'count' => 'float',
         'total_count' => 'float'
     ];
@@ -316,7 +316,7 @@ class AdvanceShipNoticeList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets advance_ship_notices
      *
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeResponse[]
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse[]
      */
     public function getAdvanceShipNotices()
     {
@@ -326,7 +326,7 @@ class AdvanceShipNoticeList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets advance_ship_notices
      *
-     * @param \OpenAPI\Client\Model\AdvanceShipNoticeResponse[] $advance_ship_notices advance_ship_notices
+     * @param \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse[] $advance_ship_notices advance_ship_notices
      *
      * @return self
      */

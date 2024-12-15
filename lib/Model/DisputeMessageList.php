@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DisputeMessageList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DisputeMessageList implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\OpenAPI\Client\Model\DisputeMessage[]'
+        'messages' => '\robsonek\phpAllegroApi\Model\DisputeMessage[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class DisputeMessageList implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets messages
      *
-     * @return \OpenAPI\Client\Model\DisputeMessage[]|null
+     * @return \robsonek\phpAllegroApi\Model\DisputeMessage[]|null
      */
     public function getMessages()
     {
@@ -302,7 +302,7 @@ class DisputeMessageList implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets messages
      *
-     * @param \OpenAPI\Client\Model\DisputeMessage[]|null $messages messages
+     * @param \robsonek\phpAllegroApi\Model\DisputeMessage[]|null $messages messages
      *
      * @return self
      */

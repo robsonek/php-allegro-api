@@ -1,4 +1,4 @@
-# OpenAPI\Client\DeliveryApi
+# robsonek\phpAllegroApi\DeliveryApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createShippingRatesSetUsingPOST()`
 
 ```php
-createShippingRatesSetUsingPOST($shipping_rates_set): \OpenAPI\Client\Model\ShippingRatesSet
+createShippingRatesSetUsingPOST($shipping_rates_set): \robsonek\phpAllegroApi\Model\ShippingRatesSet
 ```
 
 Create a new shipping rates set
@@ -31,16 +31,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$shipping_rates_set = new \OpenAPI\Client\Model\ShippingRatesSet(); // \OpenAPI\Client\Model\ShippingRatesSet | Shipping rates set
+$shipping_rates_set = new \robsonek\phpAllegroApi\Model\ShippingRatesSet(); // \robsonek\phpAllegroApi\Model\ShippingRatesSet | Shipping rates set
 
 try {
     $result = $apiInstance->createShippingRatesSetUsingPOST($shipping_rates_set);
@@ -54,11 +54,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **shipping_rates_set** | [**\OpenAPI\Client\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)| Shipping rates set | |
+| **shipping_rates_set** | [**\robsonek\phpAllegroApi\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)| Shipping rates set | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
+[**\robsonek\phpAllegroApi\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ try {
 ## `getListOfDeliveryMethodsUsingGET()`
 
 ```php
-getListOfDeliveryMethodsUsingGET($marketplace): \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200Response
+getListOfDeliveryMethodsUsingGET($marketplace): \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200Response
 ```
 
 Get the list of delivery methods
@@ -91,13 +91,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200Response**](../Model/GetListOfDeliveryMethodsUsingGET200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200Response**](../Model/GetListOfDeliveryMethodsUsingGET200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ try {
 ## `getListOfShippingRatestUsingGET()`
 
 ```php
-getListOfShippingRatestUsingGET($marketplace): \OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200Response
+getListOfShippingRatestUsingGET($marketplace): \robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200Response
 ```
 
 Get the user's shipping rates
@@ -154,10 +154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200Response**](../Model/GetListOfShippingRatestUsingGET200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200Response**](../Model/GetListOfShippingRatestUsingGET200Response.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ try {
 ## `getSaleDeliverySettings()`
 
 ```php
-getSaleDeliverySettings($marketplace_id): \OpenAPI\Client\Model\DeliverySettingsResponse
+getSaleDeliverySettings($marketplace_id): \robsonek\phpAllegroApi\Model\DeliverySettingsResponse
 ```
 
 Get the user's delivery settings
@@ -214,10 +214,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliverySettingsResponse**](../Model/DeliverySettingsResponse.md)
+[**\robsonek\phpAllegroApi\Model\DeliverySettingsResponse**](../Model/DeliverySettingsResponse.md)
 
 ### Authorization
 
@@ -259,7 +259,7 @@ try {
 ## `getShippingRatesSetUsingGET()`
 
 ```php
-getShippingRatesSetUsingGET($id): \OpenAPI\Client\Model\ShippingRatesSet
+getShippingRatesSetUsingGET($id): \robsonek\phpAllegroApi\Model\ShippingRatesSet
 ```
 
 Get the details of a shipping rates set
@@ -274,10 +274,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,7 +301,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
+[**\robsonek\phpAllegroApi\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ try {
 ## `modifyShippingRatesSetUsingPUT()`
 
 ```php
-modifyShippingRatesSetUsingPUT($id, $shipping_rates_set): \OpenAPI\Client\Model\ShippingRatesSet
+modifyShippingRatesSetUsingPUT($id, $shipping_rates_set): \robsonek\phpAllegroApi\Model\ShippingRatesSet
 ```
 
 Edit a user's shipping rates set
@@ -334,17 +334,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Shipping rates set identifier.
-$shipping_rates_set = new \OpenAPI\Client\Model\ShippingRatesSet(); // \OpenAPI\Client\Model\ShippingRatesSet | Shipping rates set
+$shipping_rates_set = new \robsonek\phpAllegroApi\Model\ShippingRatesSet(); // \robsonek\phpAllegroApi\Model\ShippingRatesSet | Shipping rates set
 
 try {
     $result = $apiInstance->modifyShippingRatesSetUsingPUT($id, $shipping_rates_set);
@@ -359,11 +359,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Shipping rates set identifier. | |
-| **shipping_rates_set** | [**\OpenAPI\Client\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)| Shipping rates set | |
+| **shipping_rates_set** | [**\robsonek\phpAllegroApi\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)| Shipping rates set | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
+[**\robsonek\phpAllegroApi\Model\ShippingRatesSet**](../Model/ShippingRatesSet.md)
 
 ### Authorization
 
@@ -381,7 +381,7 @@ try {
 ## `putSaleDeliverySettings()`
 
 ```php
-putSaleDeliverySettings($delivery_settings_request): \OpenAPI\Client\Model\DeliverySettingsResponse
+putSaleDeliverySettings($delivery_settings_request): \robsonek\phpAllegroApi\Model\DeliverySettingsResponse
 ```
 
 Modify the user's delivery settings
@@ -396,16 +396,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DeliveryApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delivery_settings_request = new \OpenAPI\Client\Model\DeliverySettingsRequest(); // \OpenAPI\Client\Model\DeliverySettingsRequest | Delivery settings set
+$delivery_settings_request = new \robsonek\phpAllegroApi\Model\DeliverySettingsRequest(); // \robsonek\phpAllegroApi\Model\DeliverySettingsRequest | Delivery settings set
 
 try {
     $result = $apiInstance->putSaleDeliverySettings($delivery_settings_request);
@@ -419,11 +419,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **delivery_settings_request** | [**\OpenAPI\Client\Model\DeliverySettingsRequest**](../Model/DeliverySettingsRequest.md)| Delivery settings set | |
+| **delivery_settings_request** | [**\robsonek\phpAllegroApi\Model\DeliverySettingsRequest**](../Model/DeliverySettingsRequest.md)| Delivery settings set | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliverySettingsResponse**](../Model/DeliverySettingsResponse.md)
+[**\robsonek\phpAllegroApi\Model\DeliverySettingsResponse**](../Model/DeliverySettingsResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmittedOfferDtoPrices Class Doc Comment
  *
  * @category Class
  * @description AlleDiscount prices data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'proposed_price' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInputProposedPrice',
-        'minimal_price_reduction' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction',
-        'maximum_selling_price' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice'
+        'proposed_price' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInputProposedPrice',
+        'minimal_price_reduction' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction',
+        'maximum_selling_price' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Gets proposed_price
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInputProposedPrice|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInputProposedPrice|null
      */
     public function getProposedPrice()
     {
@@ -317,7 +317,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Sets proposed_price
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInputProposedPrice|null $proposed_price proposed_price
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInputProposedPrice|null $proposed_price proposed_price
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Gets minimal_price_reduction
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction|null
      */
     public function getMinimalPriceReduction()
     {
@@ -344,7 +344,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Sets minimal_price_reduction
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction|null $minimal_price_reduction minimal_price_reduction
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMinimalPriceReduction|null $minimal_price_reduction minimal_price_reduction
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_selling_price
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice|null
      */
     public function getMaximumSellingPrice()
     {
@@ -371,7 +371,7 @@ class AlleDiscountSubmittedOfferDtoPrices implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_selling_price
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice|null $maximum_selling_price maximum_selling_price
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoPricesMaximumSellingPrice|null $maximum_selling_price maximum_selling_price
      *
      * @return self
      */

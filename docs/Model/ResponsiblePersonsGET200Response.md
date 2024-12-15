@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**responsible_persons** | [**\OpenAPI\Client\Model\ResponsiblePersonResponse[]**](ResponsiblePersonResponse.md) |  | [optional]
+**responsible_persons** | [**\robsonek\phpAllegroApi\Model\ResponsiblePersonResponse[]**](ResponsiblePersonResponse.md) |  | [optional]
 **count** | **int** | Number of responsible persons data returned in search result for the given parameters. | [optional]
 **total_count** | **int** | Total number of available responsible persons data. | [optional]
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountGetWithdrawCommandResponseOutput Class Doc Comment
  *
  * @category Class
  * @description Withdraw offer command output data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class AlleDiscountGetWithdrawCommandResponseOutput implements ModelInterface, Ar
         'status' => 'string',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
-        'withdrawn_offer_participation' => '\OpenAPI\Client\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation',
-        'errors' => '\OpenAPI\Client\Model\ErrorsHolder[]'
+        'withdrawn_offer_participation' => '\robsonek\phpAllegroApi\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation',
+        'errors' => '\robsonek\phpAllegroApi\Model\ErrorsHolder[]'
     ];
 
     /**
@@ -440,7 +440,7 @@ class AlleDiscountGetWithdrawCommandResponseOutput implements ModelInterface, Ar
     /**
      * Gets withdrawn_offer_participation
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation|null
      */
     public function getWithdrawnOfferParticipation()
     {
@@ -450,7 +450,7 @@ class AlleDiscountGetWithdrawCommandResponseOutput implements ModelInterface, Ar
     /**
      * Sets withdrawn_offer_participation
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation|null $withdrawn_offer_participation withdrawn_offer_participation
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountGetWithdrawCommandResponseOutputWithdrawnOfferParticipation|null $withdrawn_offer_participation withdrawn_offer_participation
      *
      * @return self
      */
@@ -474,7 +474,7 @@ class AlleDiscountGetWithdrawCommandResponseOutput implements ModelInterface, Ar
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\ErrorsHolder[]|null
+     * @return \robsonek\phpAllegroApi\Model\ErrorsHolder[]|null
      */
     public function getErrors()
     {
@@ -484,7 +484,7 @@ class AlleDiscountGetWithdrawCommandResponseOutput implements ModelInterface, Ar
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\ErrorsHolder[]|null $errors errors
+     * @param \robsonek\phpAllegroApi\Model\ErrorsHolder[]|null $errors errors
      *
      * @return self
      */

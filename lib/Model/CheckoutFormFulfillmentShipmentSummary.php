@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormFulfillmentShipmentSummary Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckoutFormFulfillmentShipmentSummary implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'line_items_sent' => '\OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent'
+        'line_items_sent' => '\robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CheckoutFormFulfillmentShipmentSummary implements ModelInterface, ArrayAcc
     /**
      * Gets line_items_sent
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent|null
      */
     public function getLineItemsSent()
     {
@@ -302,7 +302,7 @@ class CheckoutFormFulfillmentShipmentSummary implements ModelInterface, ArrayAcc
     /**
      * Sets line_items_sent
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent|null $line_items_sent line_items_sent
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormFulfillmentShipmentSummaryLineItemsSent|null $line_items_sent line_items_sent
      *
      * @return self
      */

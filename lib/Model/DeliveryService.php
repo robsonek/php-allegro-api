@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeliveryService Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class DeliveryService implements ModelInterface, ArrayAccess, \JsonSerializable
         'service' => 'string',
         'name' => 'string',
         'carrier_id' => 'string',
-        'additional_services' => '\OpenAPI\Client\Model\ParcelAdditionalServicesAvailability',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesAvailability',
         'owner' => 'string'
     ];
 
@@ -459,7 +459,7 @@ class DeliveryService implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServicesAvailability|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesAvailability|null
      */
     public function getAdditionalServices()
     {
@@ -469,7 +469,7 @@ class DeliveryService implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServicesAvailability|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServicesAvailability|null $additional_services additional_services
      *
      * @return self
      */

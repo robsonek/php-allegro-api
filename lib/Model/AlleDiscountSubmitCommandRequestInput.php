@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmitCommandRequestInput Class Doc Comment
  *
  * @category Class
  * @description Command input.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputOffer',
-        'campaign' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputCampaign',
-        'proposed_price' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputProposedPrice'
+        'offer' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputOffer',
+        'campaign' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputCampaign',
+        'proposed_price' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputProposedPrice'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputOffer|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputOffer|null
      */
     public function getOffer()
     {
@@ -317,7 +317,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputOffer|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputOffer|null $offer offer
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Gets campaign
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputCampaign|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputCampaign|null
      */
     public function getCampaign()
     {
@@ -344,7 +344,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Sets campaign
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputCampaign|null $campaign campaign
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputCampaign|null $campaign campaign
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Gets proposed_price
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputProposedPrice|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputProposedPrice|null
      */
     public function getProposedPrice()
     {
@@ -371,7 +371,7 @@ class AlleDiscountSubmitCommandRequestInput implements ModelInterface, ArrayAcce
     /**
      * Sets proposed_price
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInputProposedPrice|null $proposed_price proposed_price
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInputProposedPrice|null $proposed_price proposed_price
      *
      * @return self
      */

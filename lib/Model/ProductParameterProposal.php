@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductParameterProposal Class Doc Comment
  *
  * @category Class
  * @description Product parameter values proposal status.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ProductParameterProposal implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'values' => '\OpenAPI\Client\Model\ProductParameterValueProposal[]'
+        'values' => '\robsonek\phpAllegroApi\Model\ProductParameterValueProposal[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class ProductParameterProposal implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\ProductParameterValueProposal[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductParameterValueProposal[]|null
      */
     public function getValues()
     {
@@ -337,7 +337,7 @@ class ProductParameterProposal implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\ProductParameterValueProposal[]|null $values List of proposed product parameter change statuses.
+     * @param \robsonek\phpAllegroApi\Model\ProductParameterValueProposal[]|null $values List of proposed product parameter change statuses.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferPatchRequestV1 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,30 +58,30 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'category' => 'object',
-        'parameters' => '\OpenAPI\Client\Model\ParameterProductOfferRequest[]',
-        'publication' => '\OpenAPI\Client\Model\SaleProductOfferPublicationRequest',
-        'delivery' => '\OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfDelivery',
-        'after_sales_services' => '\OpenAPI\Client\Model\AfterSalesServicesProductOfferRequest',
-        'size_table' => '\OpenAPI\Client\Model\SizeTable',
-        'contact' => '\OpenAPI\Client\Model\SaleProductOfferRequestBaseAllOfContact',
-        'discounts' => '\OpenAPI\Client\Model\DiscountsProductOfferRequest',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]',
+        'publication' => '\robsonek\phpAllegroApi\Model\SaleProductOfferPublicationRequest',
+        'delivery' => '\robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfDelivery',
+        'after_sales_services' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequest',
+        'size_table' => '\robsonek\phpAllegroApi\Model\SizeTable',
+        'contact' => '\robsonek\phpAllegroApi\Model\SaleProductOfferRequestBaseAllOfContact',
+        'discounts' => '\robsonek\phpAllegroApi\Model\DiscountsProductOfferRequest',
         'name' => 'string',
-        'payments' => '\OpenAPI\Client\Model\Payments',
-        'selling_mode' => '\OpenAPI\Client\Model\SellingMode',
-        'location' => '\OpenAPI\Client\Model\Location',
+        'payments' => '\robsonek\phpAllegroApi\Model\Payments',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\SellingMode',
+        'location' => '\robsonek\phpAllegroApi\Model\Location',
         'images' => 'string[]',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'tax_settings' => '\OpenAPI\Client\Model\OfferTaxSettings',
-        'message_to_seller_settings' => '\OpenAPI\Client\Model\MessageToSellerSettings',
-        'product_set' => '\OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]',
-        'b2b' => '\OpenAPI\Client\Model\B2b',
-        'attachments' => '\OpenAPI\Client\Model\ProductOfferAttachmentInner[]',
-        'fundraising_campaign' => '\OpenAPI\Client\Model\ProductOfferFundraisingCampaignRequest',
-        'additional_services' => '\OpenAPI\Client\Model\ProductOfferAdditionalServicesRequest',
-        'compatibility_list' => '\OpenAPI\Client\Model\CompatibilityListManualType',
-        'stock' => '\OpenAPI\Client\Model\SaleProductOffersRequestStock',
-        'additional_marketplaces' => 'array<string,\OpenAPI\Client\Model\AdditionalMarketplacesRequestValue>',
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'tax_settings' => '\robsonek\phpAllegroApi\Model\OfferTaxSettings',
+        'message_to_seller_settings' => '\robsonek\phpAllegroApi\Model\MessageToSellerSettings',
+        'product_set' => '\robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]',
+        'b2b' => '\robsonek\phpAllegroApi\Model\B2b',
+        'attachments' => '\robsonek\phpAllegroApi\Model\ProductOfferAttachmentInner[]',
+        'fundraising_campaign' => '\robsonek\phpAllegroApi\Model\ProductOfferFundraisingCampaignRequest',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\ProductOfferAdditionalServicesRequest',
+        'compatibility_list' => '\robsonek\phpAllegroApi\Model\CompatibilityListManualType',
+        'stock' => '\robsonek\phpAllegroApi\Model\SaleProductOffersRequestStock',
+        'additional_marketplaces' => 'array<string,\robsonek\phpAllegroApi\Model\AdditionalMarketplacesRequestValue>',
         'language' => 'string'
     ];
 
@@ -498,7 +498,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ParameterProductOfferRequest[]|null
+     * @return \robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]|null
      */
     public function getParameters()
     {
@@ -508,7 +508,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ParameterProductOfferRequest[]|null $parameters parameters
+     * @param \robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]|null $parameters parameters
      *
      * @return self
      */
@@ -525,7 +525,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferPublicationRequest|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferPublicationRequest|null
      */
     public function getPublication()
     {
@@ -535,7 +535,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferPublicationRequest|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferPublicationRequest|null $publication publication
      *
      * @return self
      */
@@ -552,7 +552,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfDelivery|null
      */
     public function getDelivery()
     {
@@ -562,7 +562,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfDelivery|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -579,7 +579,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets after_sales_services
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequest|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequest|null
      */
     public function getAfterSalesServices()
     {
@@ -589,7 +589,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets after_sales_services
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesProductOfferRequest|null $after_sales_services after_sales_services
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesProductOfferRequest|null $after_sales_services after_sales_services
      *
      * @return self
      */
@@ -606,7 +606,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets size_table
      *
-     * @return \OpenAPI\Client\Model\SizeTable|null
+     * @return \robsonek\phpAllegroApi\Model\SizeTable|null
      */
     public function getSizeTable()
     {
@@ -616,7 +616,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets size_table
      *
-     * @param \OpenAPI\Client\Model\SizeTable|null $size_table size_table
+     * @param \robsonek\phpAllegroApi\Model\SizeTable|null $size_table size_table
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferRequestBaseAllOfContact|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferRequestBaseAllOfContact|null
      */
     public function getContact()
     {
@@ -643,7 +643,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferRequestBaseAllOfContact|null $contact contact
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferRequestBaseAllOfContact|null $contact contact
      *
      * @return self
      */
@@ -660,7 +660,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets discounts
      *
-     * @return \OpenAPI\Client\Model\DiscountsProductOfferRequest|null
+     * @return \robsonek\phpAllegroApi\Model\DiscountsProductOfferRequest|null
      */
     public function getDiscounts()
     {
@@ -670,7 +670,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets discounts
      *
-     * @param \OpenAPI\Client\Model\DiscountsProductOfferRequest|null $discounts discounts
+     * @param \robsonek\phpAllegroApi\Model\DiscountsProductOfferRequest|null $discounts discounts
      *
      * @return self
      */
@@ -718,7 +718,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\Payments|null
+     * @return \robsonek\phpAllegroApi\Model\Payments|null
      */
     public function getPayments()
     {
@@ -728,7 +728,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\Payments|null $payments payments
+     * @param \robsonek\phpAllegroApi\Model\Payments|null $payments payments
      *
      * @return self
      */
@@ -745,7 +745,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\SellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\SellingMode|null
      */
     public function getSellingMode()
     {
@@ -755,7 +755,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\SellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\SellingMode|null $selling_mode selling_mode
      *
      * @return self
      */
@@ -772,7 +772,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets location
      *
-     * @return \OpenAPI\Client\Model\Location|null
+     * @return \robsonek\phpAllegroApi\Model\Location|null
      */
     public function getLocation()
     {
@@ -782,7 +782,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets location
      *
-     * @param \OpenAPI\Client\Model\Location|null $location location
+     * @param \robsonek\phpAllegroApi\Model\Location|null $location location
      *
      * @return self
      */
@@ -826,7 +826,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -836,7 +836,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */
@@ -853,7 +853,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -863,7 +863,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -880,7 +880,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets tax_settings
      *
-     * @return \OpenAPI\Client\Model\OfferTaxSettings|null
+     * @return \robsonek\phpAllegroApi\Model\OfferTaxSettings|null
      */
     public function getTaxSettings()
     {
@@ -890,7 +890,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tax_settings
      *
-     * @param \OpenAPI\Client\Model\OfferTaxSettings|null $tax_settings tax_settings
+     * @param \robsonek\phpAllegroApi\Model\OfferTaxSettings|null $tax_settings tax_settings
      *
      * @return self
      */
@@ -907,7 +907,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets message_to_seller_settings
      *
-     * @return \OpenAPI\Client\Model\MessageToSellerSettings|null
+     * @return \robsonek\phpAllegroApi\Model\MessageToSellerSettings|null
      */
     public function getMessageToSellerSettings()
     {
@@ -917,7 +917,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets message_to_seller_settings
      *
-     * @param \OpenAPI\Client\Model\MessageToSellerSettings|null $message_to_seller_settings message_to_seller_settings
+     * @param \robsonek\phpAllegroApi\Model\MessageToSellerSettings|null $message_to_seller_settings message_to_seller_settings
      *
      * @return self
      */
@@ -934,7 +934,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets product_set
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]|null
      */
     public function getProductSet()
     {
@@ -944,7 +944,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets product_set
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]|null $product_set product_set
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1AllOfProductSet[]|null $product_set product_set
      *
      * @return self
      */
@@ -961,7 +961,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets b2b
      *
-     * @return \OpenAPI\Client\Model\B2b|null
+     * @return \robsonek\phpAllegroApi\Model\B2b|null
      */
     public function getB2b()
     {
@@ -971,7 +971,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets b2b
      *
-     * @param \OpenAPI\Client\Model\B2b|null $b2b b2b
+     * @param \robsonek\phpAllegroApi\Model\B2b|null $b2b b2b
      *
      * @return self
      */
@@ -988,7 +988,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets attachments
      *
-     * @return \OpenAPI\Client\Model\ProductOfferAttachmentInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOfferAttachmentInner[]|null
      */
     public function getAttachments()
     {
@@ -998,7 +998,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets attachments
      *
-     * @param \OpenAPI\Client\Model\ProductOfferAttachmentInner[]|null $attachments An array of offer attachments.
+     * @param \robsonek\phpAllegroApi\Model\ProductOfferAttachmentInner[]|null $attachments An array of offer attachments.
      *
      * @return self
      */
@@ -1015,7 +1015,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets fundraising_campaign
      *
-     * @return \OpenAPI\Client\Model\ProductOfferFundraisingCampaignRequest|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOfferFundraisingCampaignRequest|null
      */
     public function getFundraisingCampaign()
     {
@@ -1025,7 +1025,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets fundraising_campaign
      *
-     * @param \OpenAPI\Client\Model\ProductOfferFundraisingCampaignRequest|null $fundraising_campaign fundraising_campaign
+     * @param \robsonek\phpAllegroApi\Model\ProductOfferFundraisingCampaignRequest|null $fundraising_campaign fundraising_campaign
      *
      * @return self
      */
@@ -1042,7 +1042,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\ProductOfferAdditionalServicesRequest|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOfferAdditionalServicesRequest|null
      */
     public function getAdditionalServices()
     {
@@ -1052,7 +1052,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\ProductOfferAdditionalServicesRequest|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\ProductOfferAdditionalServicesRequest|null $additional_services additional_services
      *
      * @return self
      */
@@ -1069,7 +1069,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets compatibility_list
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListManualType|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListManualType|null
      */
     public function getCompatibilityList()
     {
@@ -1079,7 +1079,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets compatibility_list
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListManualType|null $compatibility_list For the `/sale/product-offers` resources you can send only definition of the MANUAL compatibility list. If compatibility list is provided for the product assigned to the offer, it will be used automatically.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListManualType|null $compatibility_list For the `/sale/product-offers` resources you can send only definition of the MANUAL compatibility list. If compatibility list is provided for the product assigned to the offer, it will be used automatically.
      *
      * @return self
      */
@@ -1096,7 +1096,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\SaleProductOffersRequestStock|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOffersRequestStock|null
      */
     public function getStock()
     {
@@ -1106,7 +1106,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\SaleProductOffersRequestStock|null $stock stock
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOffersRequestStock|null $stock stock
      *
      * @return self
      */
@@ -1123,7 +1123,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets additional_marketplaces
      *
-     * @return array<string,\OpenAPI\Client\Model\AdditionalMarketplacesRequestValue>|null
+     * @return array<string,\robsonek\phpAllegroApi\Model\AdditionalMarketplacesRequestValue>|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -1133,7 +1133,7 @@ class SaleProductOfferPatchRequestV1 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets additional_marketplaces
      *
-     * @param array<string,\OpenAPI\Client\Model\AdditionalMarketplacesRequestValue>|null $additional_marketplaces Selected information about the offer in each additional service. This field does not contain information about the base marketplace of the offer.<br/> Possible values of `marketplaceId` can be obtained from `GET /marketplaces` resource.</br> See [Allegro foreign marketplaces](https://developer.allegro.pl/tutorials/listing-and-managing-offers-on-foreign-marketplaces-7GndGjeAATn) for more details regarding this field.
+     * @param array<string,\robsonek\phpAllegroApi\Model\AdditionalMarketplacesRequestValue>|null $additional_marketplaces Selected information about the offer in each additional service. This field does not contain information about the base marketplace of the offer.<br/> Possible values of `marketplaceId` can be obtained from `GET /marketplaces` resource.</br> See [Allegro foreign marketplaces](https://developer.allegro.pl/tutorials/listing-and-managing-offers-on-foreign-marketplaces-7GndGjeAATn) for more details regarding this field.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MultiPackBenefitSpecification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class MultiPackBenefitSpecification extends BenefitSpecification
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'configuration' => '\OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfConfiguration',
-        'trigger' => '\OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfTrigger'
+        'configuration' => '\robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfConfiguration',
+        'trigger' => '\robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfTrigger'
     ];
 
     /**
@@ -333,7 +333,7 @@ class MultiPackBenefitSpecification extends BenefitSpecification
     /**
      * Gets configuration
      *
-     * @return \OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfConfiguration
+     * @return \robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfConfiguration
      */
     public function getConfiguration()
     {
@@ -343,7 +343,7 @@ class MultiPackBenefitSpecification extends BenefitSpecification
     /**
      * Sets configuration
      *
-     * @param \OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfConfiguration $configuration configuration
+     * @param \robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfConfiguration $configuration configuration
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class MultiPackBenefitSpecification extends BenefitSpecification
     /**
      * Gets trigger
      *
-     * @return \OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfTrigger
+     * @return \robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfTrigger
      */
     public function getTrigger()
     {
@@ -370,7 +370,7 @@ class MultiPackBenefitSpecification extends BenefitSpecification
     /**
      * Sets trigger
      *
-     * @param \OpenAPI\Client\Model\MultiPackBenefitSpecificationAllOfTrigger $trigger trigger
+     * @param \robsonek\phpAllegroApi\Model\MultiPackBenefitSpecificationAllOfTrigger $trigger trigger
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**products** | [**\OpenAPI\Client\Model\AvailableProductResponse[]**](AvailableProductResponse.md) | List of products. | [optional]
+**products** | [**\robsonek\phpAllegroApi\Model\AvailableProductResponse[]**](AvailableProductResponse.md) | List of products. | [optional]
 **count** | **float** | Number of returned products. | [optional]
 **total_count** | **float** | Total number of available products. | [optional]
 

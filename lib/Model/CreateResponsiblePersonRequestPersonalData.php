@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CreateResponsiblePersonRequestPersonalData Class Doc Comment
  *
  * @category Class
  * @description Responsible person personal data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class CreateResponsiblePersonRequestPersonalData implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'address' => '\OpenAPI\Client\Model\ResponsiblePersonAddress',
-        'contact' => '\OpenAPI\Client\Model\ResponsiblePersonContact'
+        'address' => '\robsonek\phpAllegroApi\Model\ResponsiblePersonAddress',
+        'contact' => '\robsonek\phpAllegroApi\Model\ResponsiblePersonContact'
     ];
 
     /**
@@ -342,7 +342,7 @@ class CreateResponsiblePersonRequestPersonalData implements ModelInterface, Arra
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\ResponsiblePersonAddress|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsiblePersonAddress|null
      */
     public function getAddress()
     {
@@ -352,7 +352,7 @@ class CreateResponsiblePersonRequestPersonalData implements ModelInterface, Arra
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\ResponsiblePersonAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\ResponsiblePersonAddress|null $address address
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class CreateResponsiblePersonRequestPersonalData implements ModelInterface, Arra
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ResponsiblePersonContact|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsiblePersonContact|null
      */
     public function getContact()
     {
@@ -379,7 +379,7 @@ class CreateResponsiblePersonRequestPersonalData implements ModelInterface, Arra
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ResponsiblePersonContact|null $contact contact
+     * @param \robsonek\phpAllegroApi\Model\ResponsiblePersonContact|null $contact contact
      *
      * @return self
      */

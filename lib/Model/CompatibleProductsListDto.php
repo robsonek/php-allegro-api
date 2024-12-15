@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibleProductsListDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CompatibleProductsListDto implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'compatible_products' => '\OpenAPI\Client\Model\CompatibleProductDto[]',
+        'compatible_products' => '\robsonek\phpAllegroApi\Model\CompatibleProductDto[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class CompatibleProductsListDto implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets compatible_products
      *
-     * @return \OpenAPI\Client\Model\CompatibleProductDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibleProductDto[]|null
      */
     public function getCompatibleProducts()
     {
@@ -324,7 +324,7 @@ class CompatibleProductsListDto implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets compatible_products
      *
-     * @param \OpenAPI\Client\Model\CompatibleProductDto[]|null $compatible_products List of compatible products for given type and parameters.
+     * @param \robsonek\phpAllegroApi\Model\CompatibleProductDto[]|null $compatible_products List of compatible products for given type and parameters.
      *
      * @return self
      */

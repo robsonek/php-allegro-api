@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeApplicationRejectionReason Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class BadgeApplicationRejectionReason implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'code' => 'string',
-        'messages' => '\OpenAPI\Client\Model\BadgeApplicationRejectionReasonMessage[]'
+        'messages' => '\robsonek\phpAllegroApi\Model\BadgeApplicationRejectionReasonMessage[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class BadgeApplicationRejectionReason implements ModelInterface, ArrayAccess, \J
     /**
      * Gets messages
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationRejectionReasonMessage[]
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationRejectionReasonMessage[]
      */
     public function getMessages()
     {
@@ -342,7 +342,7 @@ class BadgeApplicationRejectionReason implements ModelInterface, ArrayAccess, \J
     /**
      * Sets messages
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationRejectionReasonMessage[] $messages List of messages with rejection reasons.
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationRejectionReasonMessage[] $messages List of messages with rejection reasons.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferBundleDTOPublication Class Doc Comment
  *
  * @category Class
  * @description Bundle status on each marketplace.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferBundleDTOPublication implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\BundleMarketplaceDTO',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\BundleMarketplaceDTO',
         'status' => 'string'
     ];
 
@@ -330,7 +330,7 @@ class OfferBundleDTOPublication implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\BundleMarketplaceDTO
+     * @return \robsonek\phpAllegroApi\Model\BundleMarketplaceDTO
      */
     public function getMarketplace()
     {
@@ -340,7 +340,7 @@ class OfferBundleDTOPublication implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\BundleMarketplaceDTO $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\BundleMarketplaceDTO $marketplace marketplace
      *
      * @return self
      */

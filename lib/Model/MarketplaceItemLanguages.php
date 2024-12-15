@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplaceItemLanguages Class Doc Comment
  *
  * @category Class
  * @description Languages available for that marketplace
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class MarketplaceItemLanguages implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_creation' => '\OpenAPI\Client\Model\MarketplaceItemLanguage[]',
-        'offer_display' => '\OpenAPI\Client\Model\MarketplaceItemLanguage[]'
+        'offer_creation' => '\robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]',
+        'offer_display' => '\robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class MarketplaceItemLanguages implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets offer_creation
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemLanguage[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]|null
      */
     public function getOfferCreation()
     {
@@ -310,7 +310,7 @@ class MarketplaceItemLanguages implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets offer_creation
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemLanguage[]|null $offer_creation Languages in which you can create offer
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]|null $offer_creation Languages in which you can create offer
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class MarketplaceItemLanguages implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets offer_display
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemLanguage[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]|null
      */
     public function getOfferDisplay()
     {
@@ -337,7 +337,7 @@ class MarketplaceItemLanguages implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets offer_display
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemLanguage[]|null $offer_display Languages in which buyer can see the offer
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemLanguage[]|null $offer_display Languages in which buyer can see the offer
      *
      * @return self
      */

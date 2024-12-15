@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryEventBaseCategory Class Doc Comment
  *
  * @category Class
  * @description Category event category data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class CategoryEventBaseCategory implements ModelInterface, ArrayAccess, \JsonSer
         'id' => 'string',
         'leaf' => 'bool',
         'name' => 'string',
-        'parent' => '\OpenAPI\Client\Model\CategoryEventBaseCategoryParent'
+        'parent' => '\robsonek\phpAllegroApi\Model\CategoryEventBaseCategoryParent'
     ];
 
     /**
@@ -395,7 +395,7 @@ class CategoryEventBaseCategory implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets parent
      *
-     * @return \OpenAPI\Client\Model\CategoryEventBaseCategoryParent|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryEventBaseCategoryParent|null
      */
     public function getParent()
     {
@@ -405,7 +405,7 @@ class CategoryEventBaseCategory implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets parent
      *
-     * @param \OpenAPI\Client\Model\CategoryEventBaseCategoryParent|null $parent parent
+     * @param \robsonek\phpAllegroApi\Model\CategoryEventBaseCategoryParent|null $parent parent
      *
      * @return self
      */

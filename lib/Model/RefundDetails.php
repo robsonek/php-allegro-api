@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefundDetails Class Doc Comment
  *
  * @category Class
  * @description Detailed information about the refund.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,16 +59,16 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'payment' => '\OpenAPI\Client\Model\RefundPayment',
+        'payment' => '\robsonek\phpAllegroApi\Model\RefundPayment',
         'reason' => 'string',
         'status' => 'string',
         'created_at' => '\DateTime',
-        'total_value' => '\OpenAPI\Client\Model\RefundTotalValue',
-        'line_items' => '\OpenAPI\Client\Model\RefundLineItem[]',
-        'delivery' => '\OpenAPI\Client\Model\InitializeRefundDelivery',
-        'overpaid' => '\OpenAPI\Client\Model\InitializeRefundOverpaid',
-        'surcharges' => '\OpenAPI\Client\Model\PaymentsSurcharge[]',
-        'additional_services' => '\OpenAPI\Client\Model\InitializeRefundAdditionalServices',
+        'total_value' => '\robsonek\phpAllegroApi\Model\RefundTotalValue',
+        'line_items' => '\robsonek\phpAllegroApi\Model\RefundLineItem[]',
+        'delivery' => '\robsonek\phpAllegroApi\Model\InitializeRefundDelivery',
+        'overpaid' => '\robsonek\phpAllegroApi\Model\InitializeRefundOverpaid',
+        'surcharges' => '\robsonek\phpAllegroApi\Model\PaymentsSurcharge[]',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\InitializeRefundAdditionalServices',
         'seller_comment' => 'string'
     ];
 
@@ -487,7 +487,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payment
      *
-     * @return \OpenAPI\Client\Model\RefundPayment
+     * @return \robsonek\phpAllegroApi\Model\RefundPayment
      */
     public function getPayment()
     {
@@ -497,7 +497,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payment
      *
-     * @param \OpenAPI\Client\Model\RefundPayment $payment payment
+     * @param \robsonek\phpAllegroApi\Model\RefundPayment $payment payment
      *
      * @return self
      */
@@ -615,7 +615,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets total_value
      *
-     * @return \OpenAPI\Client\Model\RefundTotalValue
+     * @return \robsonek\phpAllegroApi\Model\RefundTotalValue
      */
     public function getTotalValue()
     {
@@ -625,7 +625,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets total_value
      *
-     * @param \OpenAPI\Client\Model\RefundTotalValue $total_value total_value
+     * @param \robsonek\phpAllegroApi\Model\RefundTotalValue $total_value total_value
      *
      * @return self
      */
@@ -642,7 +642,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets line_items
      *
-     * @return \OpenAPI\Client\Model\RefundLineItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\RefundLineItem[]|null
      */
     public function getLineItems()
     {
@@ -652,7 +652,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets line_items
      *
-     * @param \OpenAPI\Client\Model\RefundLineItem[]|null $line_items List of order's line items which can be refunded.
+     * @param \robsonek\phpAllegroApi\Model\RefundLineItem[]|null $line_items List of order's line items which can be refunded.
      *
      * @return self
      */
@@ -669,7 +669,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\InitializeRefundDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\InitializeRefundDelivery|null
      */
     public function getDelivery()
     {
@@ -679,7 +679,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\InitializeRefundDelivery|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\InitializeRefundDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -696,7 +696,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets overpaid
      *
-     * @return \OpenAPI\Client\Model\InitializeRefundOverpaid|null
+     * @return \robsonek\phpAllegroApi\Model\InitializeRefundOverpaid|null
      */
     public function getOverpaid()
     {
@@ -706,7 +706,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets overpaid
      *
-     * @param \OpenAPI\Client\Model\InitializeRefundOverpaid|null $overpaid overpaid
+     * @param \robsonek\phpAllegroApi\Model\InitializeRefundOverpaid|null $overpaid overpaid
      *
      * @return self
      */
@@ -723,7 +723,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets surcharges
      *
-     * @return \OpenAPI\Client\Model\PaymentsSurcharge[]|null
+     * @return \robsonek\phpAllegroApi\Model\PaymentsSurcharge[]|null
      */
     public function getSurcharges()
     {
@@ -733,7 +733,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets surcharges
      *
-     * @param \OpenAPI\Client\Model\PaymentsSurcharge[]|null $surcharges List of surcharges for payment which can be refunded.
+     * @param \robsonek\phpAllegroApi\Model\PaymentsSurcharge[]|null $surcharges List of surcharges for payment which can be refunded.
      *
      * @return self
      */
@@ -750,7 +750,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\InitializeRefundAdditionalServices|null
+     * @return \robsonek\phpAllegroApi\Model\InitializeRefundAdditionalServices|null
      */
     public function getAdditionalServices()
     {
@@ -760,7 +760,7 @@ class RefundDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\InitializeRefundAdditionalServices|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\InitializeRefundAdditionalServices|null $additional_services additional_services
      *
      * @return self
      */

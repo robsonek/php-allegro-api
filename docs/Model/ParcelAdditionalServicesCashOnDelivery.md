@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | [**\OpenAPI\Client\Model\ParcelAdditionalServicesCashOnDeliveryValue**](ParcelAdditionalServicesCashOnDeliveryValue.md) |  |
+**value** | [**\robsonek\phpAllegroApi\Model\ParcelAdditionalServicesCashOnDeliveryValue**](ParcelAdditionalServicesCashOnDeliveryValue.md) |  |
 **account_number** | **string** | Bank account number. | [optional]
 **name** | **string** | Bank account owner. | [optional]
 **express** | **bool** | Postpaid Express service. Postpaid value is send to parcel sender in one business day after delivery. | [optional] [default to false]

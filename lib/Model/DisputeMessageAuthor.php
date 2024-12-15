@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DisputeMessageAuthor Class Doc Comment
  *
  * @category Class
  * @description Author of the message
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class DisputeMessageAuthor implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'login' => 'string',
-        'role' => '\OpenAPI\Client\Model\MessageAuthorRole'
+        'role' => '\robsonek\phpAllegroApi\Model\MessageAuthorRole'
     ];
 
     /**
@@ -330,7 +330,7 @@ class DisputeMessageAuthor implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets role
      *
-     * @return \OpenAPI\Client\Model\MessageAuthorRole
+     * @return \robsonek\phpAllegroApi\Model\MessageAuthorRole
      */
     public function getRole()
     {
@@ -340,7 +340,7 @@ class DisputeMessageAuthor implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets role
      *
-     * @param \OpenAPI\Client\Model\MessageAuthorRole $role role
+     * @param \robsonek\phpAllegroApi\Model\MessageAuthorRole $role role
      *
      * @return self
      */

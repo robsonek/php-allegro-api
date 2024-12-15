@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferPromoOptionsForSeller Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OfferPromoOptionsForSeller implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'promo_options' => '\OpenAPI\Client\Model\OfferPromoOptions[]',
+        'promo_options' => '\robsonek\phpAllegroApi\Model\OfferPromoOptions[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class OfferPromoOptionsForSeller implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets promo_options
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOptions[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptions[]|null
      */
     public function getPromoOptions()
     {
@@ -324,7 +324,7 @@ class OfferPromoOptionsForSeller implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets promo_options
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOptions[]|null $promo_options Promo options for seller offers.
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOptions[]|null $promo_options Promo options for seller offers.
      *
      * @return self
      */

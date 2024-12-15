@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PricingOffer Class Doc Comment
  *
  * @category Class
  * @description Single offer data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,13 +58,13 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fundraising_campaign' => '\OpenAPI\Client\Model\JustId',
+        'fundraising_campaign' => '\robsonek\phpAllegroApi\Model\JustId',
         'id' => 'string',
-        'category' => '\OpenAPI\Client\Model\Category',
-        'parameters' => '\OpenAPI\Client\Model\Parameter[]',
-        'promotion' => '\OpenAPI\Client\Model\Promotion',
-        'publication' => '\OpenAPI\Client\Model\PricingPublication',
-        'selling_mode' => '\OpenAPI\Client\Model\SellingModeWithNetPrice'
+        'category' => '\robsonek\phpAllegroApi\Model\Category',
+        'parameters' => '\robsonek\phpAllegroApi\Model\Parameter[]',
+        'promotion' => '\robsonek\phpAllegroApi\Model\Promotion',
+        'publication' => '\robsonek\phpAllegroApi\Model\PricingPublication',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\SellingModeWithNetPrice'
     ];
 
     /**
@@ -335,7 +335,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fundraising_campaign
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getFundraisingCampaign()
     {
@@ -345,7 +345,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fundraising_campaign
      *
-     * @param \OpenAPI\Client\Model\JustId|null $fundraising_campaign fundraising_campaign
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $fundraising_campaign fundraising_campaign
      *
      * @return self
      */
@@ -389,7 +389,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category|null
+     * @return \robsonek\phpAllegroApi\Model\Category|null
      */
     public function getCategory()
     {
@@ -399,7 +399,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category|null $category category
+     * @param \robsonek\phpAllegroApi\Model\Category|null $category category
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\Parameter[]|null
+     * @return \robsonek\phpAllegroApi\Model\Parameter[]|null
      */
     public function getParameters()
     {
@@ -426,7 +426,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\Parameter[]|null $parameters parameters
+     * @param \robsonek\phpAllegroApi\Model\Parameter[]|null $parameters parameters
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets promotion
      *
-     * @return \OpenAPI\Client\Model\Promotion|null
+     * @return \robsonek\phpAllegroApi\Model\Promotion|null
      */
     public function getPromotion()
     {
@@ -453,7 +453,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets promotion
      *
-     * @param \OpenAPI\Client\Model\Promotion|null $promotion promotion
+     * @param \robsonek\phpAllegroApi\Model\Promotion|null $promotion promotion
      *
      * @return self
      */
@@ -470,7 +470,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\PricingPublication|null
+     * @return \robsonek\phpAllegroApi\Model\PricingPublication|null
      */
     public function getPublication()
     {
@@ -480,7 +480,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\PricingPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\PricingPublication|null $publication publication
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\SellingModeWithNetPrice|null
+     * @return \robsonek\phpAllegroApi\Model\SellingModeWithNetPrice|null
      */
     public function getSellingMode()
     {
@@ -507,7 +507,7 @@ class PricingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\SellingModeWithNetPrice|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\SellingModeWithNetPrice|null $selling_mode selling_mode
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryTaxSettings Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subjects' => '\OpenAPI\Client\Model\TaxSubject[]',
-        'rates' => '\OpenAPI\Client\Model\TaxRate[]',
-        'exemptions' => '\OpenAPI\Client\Model\TaxExemption[]'
+        'subjects' => '\robsonek\phpAllegroApi\Model\TaxSubject[]',
+        'rates' => '\robsonek\phpAllegroApi\Model\TaxRate[]',
+        'exemptions' => '\robsonek\phpAllegroApi\Model\TaxExemption[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets subjects
      *
-     * @return \OpenAPI\Client\Model\TaxSubject[]|null
+     * @return \robsonek\phpAllegroApi\Model\TaxSubject[]|null
      */
     public function getSubjects()
     {
@@ -316,7 +316,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets subjects
      *
-     * @param \OpenAPI\Client\Model\TaxSubject[]|null $subjects A list of tax subjects.
+     * @param \robsonek\phpAllegroApi\Model\TaxSubject[]|null $subjects A list of tax subjects.
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets rates
      *
-     * @return \OpenAPI\Client\Model\TaxRate[]|null
+     * @return \robsonek\phpAllegroApi\Model\TaxRate[]|null
      */
     public function getRates()
     {
@@ -343,7 +343,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets rates
      *
-     * @param \OpenAPI\Client\Model\TaxRate[]|null $rates A list of tax rates.
+     * @param \robsonek\phpAllegroApi\Model\TaxRate[]|null $rates A list of tax rates.
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets exemptions
      *
-     * @return \OpenAPI\Client\Model\TaxExemption[]|null
+     * @return \robsonek\phpAllegroApi\Model\TaxExemption[]|null
      */
     public function getExemptions()
     {
@@ -370,7 +370,7 @@ class CategoryTaxSettings implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets exemptions
      *
-     * @param \OpenAPI\Client\Model\TaxExemption[]|null $exemptions A list of tax exemptions.
+     * @param \robsonek\phpAllegroApi\Model\TaxExemption[]|null $exemptions A list of tax exemptions.
      *
      * @return self
      */

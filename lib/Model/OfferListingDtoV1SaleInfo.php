@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1SaleInfo Class Doc Comment
  *
  * @category Class
  * @description Additional information about offers in auction format.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferListingDtoV1SaleInfo implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'current_price' => '\OpenAPI\Client\Model\Price',
+        'current_price' => '\robsonek\phpAllegroApi\Model\Price',
         'bidders_count' => 'int'
     ];
 
@@ -304,7 +304,7 @@ class OfferListingDtoV1SaleInfo implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets current_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getCurrentPrice()
     {
@@ -314,7 +314,7 @@ class OfferListingDtoV1SaleInfo implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets current_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $current_price The current highest bid in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $current_price The current highest bid in auction format.
      *
      * @return self
      */

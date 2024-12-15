@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | [**\OpenAPI\Client\Model\RefundAdditionalServicesValue**](RefundAdditionalServicesValue.md) |  | [optional]
+**value** | [**\robsonek\phpAllegroApi\Model\RefundAdditionalServicesValue**](RefundAdditionalServicesValue.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

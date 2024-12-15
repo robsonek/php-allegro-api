@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carriers** | [**\OpenAPI\Client\Model\OrdersShippingCarrier[]**](OrdersShippingCarrier.md) | List of shipping carriers. | [optional]
+**carriers** | [**\robsonek\phpAllegroApi\Model\OrdersShippingCarrier[]**](OrdersShippingCarrier.md) | List of shipping carriers. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

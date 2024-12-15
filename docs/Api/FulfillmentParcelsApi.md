@@ -1,4 +1,4 @@
-# OpenAPI\Client\FulfillmentParcelsApi
+# robsonek\phpAllegroApi\FulfillmentParcelsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getFulfillmentOrderParcels()`
 
 ```php
-getFulfillmentOrderParcels($order_id): \OpenAPI\Client\Model\FulfillmentOrder
+getFulfillmentOrderParcels($order_id): \robsonek\phpAllegroApi\Model\FulfillmentOrder
 ```
 
 Get list of shipped parcels
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FulfillmentParcelsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\FulfillmentParcelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FulfillmentOrder**](../Model/FulfillmentOrder.md)
+[**\robsonek\phpAllegroApi\Model\FulfillmentOrder**](../Model/FulfillmentOrder.md)
 
 ### Authorization
 

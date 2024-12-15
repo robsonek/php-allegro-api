@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferCriterium Class Doc Comment
  *
  * @category Class
  * @description Contains offers criteria
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferCriterium implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\OpenAPI\Client\Model\OfferId[]',
+        'offers' => '\robsonek\phpAllegroApi\Model\OfferId[]',
         'type' => 'string'
     ];
 
@@ -322,7 +322,7 @@ class OfferCriterium implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\OfferId[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferId[]|null
      */
     public function getOffers()
     {
@@ -332,7 +332,7 @@ class OfferCriterium implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\OfferId[]|null $offers Set of offers
+     * @param \robsonek\phpAllegroApi\Model\OfferId[]|null $offers Set of offers
      *
      * @return self
      */

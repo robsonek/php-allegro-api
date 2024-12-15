@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductParameterDto Class Doc Comment
  *
  * @category Class
  * @description Product&#39;s parameter
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,12 +60,12 @@ class ProductParameterDto implements ModelInterface, ArrayAccess, \JsonSerializa
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'range_value' => '\OpenAPI\Client\Model\ParameterRangeValue',
+        'range_value' => '\robsonek\phpAllegroApi\Model\ParameterRangeValue',
         'values' => 'string[]',
         'values_ids' => 'string[]',
         'values_labels' => 'string[]',
         'unit' => 'string',
-        'options' => '\OpenAPI\Client\Model\ProductParameterDtoOptions'
+        'options' => '\robsonek\phpAllegroApi\Model\ProductParameterDtoOptions'
     ];
 
     /**
@@ -399,7 +399,7 @@ class ProductParameterDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets range_value
      *
-     * @return \OpenAPI\Client\Model\ParameterRangeValue|null
+     * @return \robsonek\phpAllegroApi\Model\ParameterRangeValue|null
      */
     public function getRangeValue()
     {
@@ -409,7 +409,7 @@ class ProductParameterDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets range_value
      *
-     * @param \OpenAPI\Client\Model\ParameterRangeValue|null $range_value range_value
+     * @param \robsonek\phpAllegroApi\Model\ParameterRangeValue|null $range_value range_value
      *
      * @return self
      */
@@ -534,7 +534,7 @@ class ProductParameterDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\ProductParameterDtoOptions|null
+     * @return \robsonek\phpAllegroApi\Model\ProductParameterDtoOptions|null
      */
     public function getOptions()
     {
@@ -544,7 +544,7 @@ class ProductParameterDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\ProductParameterDtoOptions|null $options options
+     * @param \robsonek\phpAllegroApi\Model\ProductParameterDtoOptions|null $options options
      *
      * @return self
      */

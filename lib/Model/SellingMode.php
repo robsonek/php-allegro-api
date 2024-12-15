@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SellingMode Class Doc Comment
  *
  * @category Class
  * @description Information on the offer&#39;s selling mode.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\OpenAPI\Client\Model\SellingModeFormat',
-        'price' => '\OpenAPI\Client\Model\Price',
-        'minimal_price' => '\OpenAPI\Client\Model\Price',
-        'starting_price' => '\OpenAPI\Client\Model\Price'
+        'format' => '\robsonek\phpAllegroApi\Model\SellingModeFormat',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
+        'minimal_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'starting_price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -314,7 +314,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets format
      *
-     * @return \OpenAPI\Client\Model\SellingModeFormat|null
+     * @return \robsonek\phpAllegroApi\Model\SellingModeFormat|null
      */
     public function getFormat()
     {
@@ -324,7 +324,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets format
      *
-     * @param \OpenAPI\Client\Model\SellingModeFormat|null $format format
+     * @param \robsonek\phpAllegroApi\Model\SellingModeFormat|null $format format
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -351,7 +351,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets minimal_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getMinimalPrice()
     {
@@ -378,7 +378,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets minimal_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $minimal_price The minimal price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $minimal_price The minimal price for offers in auction format.
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets starting_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getStartingPrice()
     {
@@ -405,7 +405,7 @@ class SellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets starting_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $starting_price The starting price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $starting_price The starting price for offers in auction format.
      *
      * @return self
      */

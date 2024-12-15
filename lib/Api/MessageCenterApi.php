@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MessageCenterApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -163,12 +163,12 @@ class MessageCenterApi
      * Mark a particular thread as read
      *
      * @param  string $thread_id Identifier of thread to be marked. (required)
-     * @param  \OpenAPI\Client\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
+     * @param  \robsonek\phpAllegroApi\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changeReadFlagOnThreadPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Thread
+     * @return \robsonek\phpAllegroApi\Model\Thread
      */
     public function changeReadFlagOnThreadPUT($thread_id, $thread_read_flag, string $contentType = self::contentTypes['changeReadFlagOnThreadPUT'][0])
     {
@@ -182,12 +182,12 @@ class MessageCenterApi
      * Mark a particular thread as read
      *
      * @param  string $thread_id Identifier of thread to be marked. (required)
-     * @param  \OpenAPI\Client\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
+     * @param  \robsonek\phpAllegroApi\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changeReadFlagOnThreadPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Thread, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Thread, HTTP status code, HTTP response headers (array of strings)
      */
     public function changeReadFlagOnThreadPUTWithHttpInfo($thread_id, $thread_read_flag, string $contentType = self::contentTypes['changeReadFlagOnThreadPUT'][0])
     {
@@ -218,11 +218,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Thread' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Thread' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Thread' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Thread' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -240,7 +240,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Thread', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Thread', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -259,7 +259,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Thread';
+            $returnType = '\robsonek\phpAllegroApi\Model\Thread';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -292,7 +292,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Thread',
+                        '\robsonek\phpAllegroApi\Model\Thread',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -308,7 +308,7 @@ class MessageCenterApi
      * Mark a particular thread as read
      *
      * @param  string $thread_id Identifier of thread to be marked. (required)
-     * @param  \OpenAPI\Client\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
+     * @param  \robsonek\phpAllegroApi\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changeReadFlagOnThreadPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -330,7 +330,7 @@ class MessageCenterApi
      * Mark a particular thread as read
      *
      * @param  string $thread_id Identifier of thread to be marked. (required)
-     * @param  \OpenAPI\Client\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
+     * @param  \robsonek\phpAllegroApi\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changeReadFlagOnThreadPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -338,7 +338,7 @@ class MessageCenterApi
      */
     public function changeReadFlagOnThreadPUTAsyncWithHttpInfo($thread_id, $thread_read_flag, string $contentType = self::contentTypes['changeReadFlagOnThreadPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Thread';
+        $returnType = '\robsonek\phpAllegroApi\Model\Thread';
         $request = $this->changeReadFlagOnThreadPUTRequest($thread_id, $thread_read_flag, $contentType);
 
         return $this->client
@@ -381,7 +381,7 @@ class MessageCenterApi
      * Create request for operation 'changeReadFlagOnThreadPUT'
      *
      * @param  string $thread_id Identifier of thread to be marked. (required)
-     * @param  \OpenAPI\Client\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
+     * @param  \robsonek\phpAllegroApi\Model\ThreadReadFlag $thread_read_flag Updated read flag (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changeReadFlagOnThreadPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -496,7 +496,7 @@ class MessageCenterApi
      * @param  string $message_id Identifier of the message to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteMessageDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -513,7 +513,7 @@ class MessageCenterApi
      * @param  string $message_id Identifier of the message to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteMessageDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -717,7 +717,7 @@ class MessageCenterApi
      * @param  string $attachment_id Identifier of the attachment that will be downloaded. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['downloadAttachmentGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -735,7 +735,7 @@ class MessageCenterApi
      * @param  string $attachment_id Identifier of the attachment that will be downloaded. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['downloadAttachmentGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1029,9 +1029,9 @@ class MessageCenterApi
      * @param  string $message_id Identifier of message to be returned. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMessageGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Message
+     * @return \robsonek\phpAllegroApi\Model\Message
      */
     public function getMessageGET($message_id, string $contentType = self::contentTypes['getMessageGET'][0])
     {
@@ -1047,9 +1047,9 @@ class MessageCenterApi
      * @param  string $message_id Identifier of message to be returned. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMessageGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Message, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Message, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMessageGETWithHttpInfo($message_id, string $contentType = self::contentTypes['getMessageGET'][0])
     {
@@ -1080,11 +1080,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Message' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Message' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Message' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Message' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1102,7 +1102,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Message', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Message', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1121,7 +1121,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Message';
+            $returnType = '\robsonek\phpAllegroApi\Model\Message';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1154,7 +1154,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Message',
+                        '\robsonek\phpAllegroApi\Model\Message',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class MessageCenterApi
      */
     public function getMessageGETAsyncWithHttpInfo($message_id, string $contentType = self::contentTypes['getMessageGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Message';
+        $returnType = '\robsonek\phpAllegroApi\Model\Message';
         $request = $this->getMessageGETRequest($message_id, $contentType);
 
         return $this->client
@@ -1341,9 +1341,9 @@ class MessageCenterApi
      * @param  string $thread_id Identifier of thread to get. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getThreadGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Thread
+     * @return \robsonek\phpAllegroApi\Model\Thread
      */
     public function getThreadGET($thread_id, string $contentType = self::contentTypes['getThreadGET'][0])
     {
@@ -1359,9 +1359,9 @@ class MessageCenterApi
      * @param  string $thread_id Identifier of thread to get. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getThreadGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Thread, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Thread, HTTP status code, HTTP response headers (array of strings)
      */
     public function getThreadGETWithHttpInfo($thread_id, string $contentType = self::contentTypes['getThreadGET'][0])
     {
@@ -1392,11 +1392,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Thread' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Thread' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Thread' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Thread' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1414,7 +1414,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Thread', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Thread', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1433,7 +1433,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Thread';
+            $returnType = '\robsonek\phpAllegroApi\Model\Thread';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1466,7 +1466,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Thread',
+                        '\robsonek\phpAllegroApi\Model\Thread',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1510,7 +1510,7 @@ class MessageCenterApi
      */
     public function getThreadGETAsyncWithHttpInfo($thread_id, string $contentType = self::contentTypes['getThreadGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Thread';
+        $returnType = '\robsonek\phpAllegroApi\Model\Thread';
         $request = $this->getThreadGETRequest($thread_id, $contentType);
 
         return $this->client
@@ -1657,9 +1657,9 @@ class MessageCenterApi
      * @param  \DateTime $after Message creation date after filter parameter (exclusive). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listMessagesGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MessagesList
+     * @return \robsonek\phpAllegroApi\Model\MessagesList
      */
     public function listMessagesGET($thread_id, $limit = 20, $offset = 0, $before = null, $after = null, string $contentType = self::contentTypes['listMessagesGET'][0])
     {
@@ -1679,9 +1679,9 @@ class MessageCenterApi
      * @param  \DateTime $after Message creation date after filter parameter (exclusive). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listMessagesGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MessagesList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\MessagesList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listMessagesGETWithHttpInfo($thread_id, $limit = 20, $offset = 0, $before = null, $after = null, string $contentType = self::contentTypes['listMessagesGET'][0])
     {
@@ -1712,11 +1712,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MessagesList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\MessagesList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MessagesList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\MessagesList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1734,7 +1734,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MessagesList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\MessagesList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1753,7 +1753,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MessagesList';
+            $returnType = '\robsonek\phpAllegroApi\Model\MessagesList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1786,7 +1786,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MessagesList',
+                        '\robsonek\phpAllegroApi\Model\MessagesList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1838,7 +1838,7 @@ class MessageCenterApi
      */
     public function listMessagesGETAsyncWithHttpInfo($thread_id, $limit = 20, $offset = 0, $before = null, $after = null, string $contentType = self::contentTypes['listMessagesGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MessagesList';
+        $returnType = '\robsonek\phpAllegroApi\Model\MessagesList';
         $request = $this->listMessagesGETRequest($thread_id, $limit, $offset, $before, $after, $contentType);
 
         return $this->client
@@ -2038,9 +2038,9 @@ class MessageCenterApi
      * @param  int $offset Index of the first returned thread from all results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listThreadsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ThreadsList
+     * @return \robsonek\phpAllegroApi\Model\ThreadsList
      */
     public function listThreadsGET($limit = 20, $offset = 0, string $contentType = self::contentTypes['listThreadsGET'][0])
     {
@@ -2057,9 +2057,9 @@ class MessageCenterApi
      * @param  int $offset Index of the first returned thread from all results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listThreadsGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ThreadsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ThreadsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listThreadsGETWithHttpInfo($limit = 20, $offset = 0, string $contentType = self::contentTypes['listThreadsGET'][0])
     {
@@ -2090,11 +2090,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ThreadsList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ThreadsList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ThreadsList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ThreadsList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2112,7 +2112,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ThreadsList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ThreadsList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2131,7 +2131,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ThreadsList';
+            $returnType = '\robsonek\phpAllegroApi\Model\ThreadsList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2164,7 +2164,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ThreadsList',
+                        '\robsonek\phpAllegroApi\Model\ThreadsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2210,7 +2210,7 @@ class MessageCenterApi
      */
     public function listThreadsGETAsyncWithHttpInfo($limit = 20, $offset = 0, string $contentType = self::contentTypes['listThreadsGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ThreadsList';
+        $returnType = '\robsonek\phpAllegroApi\Model\ThreadsList';
         $request = $this->listThreadsGETRequest($limit, $offset, $contentType);
 
         return $this->client
@@ -2368,12 +2368,12 @@ class MessageCenterApi
      *
      * Add attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\NewAttachmentDeclaration $new_attachment_declaration new_attachment_declaration (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration $new_attachment_declaration new_attachment_declaration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newAttachmentDeclarationPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MessageAttachmentId
+     * @return \robsonek\phpAllegroApi\Model\MessageAttachmentId
      */
     public function newAttachmentDeclarationPOST($new_attachment_declaration, string $contentType = self::contentTypes['newAttachmentDeclarationPOST'][0])
     {
@@ -2386,12 +2386,12 @@ class MessageCenterApi
      *
      * Add attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newAttachmentDeclarationPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MessageAttachmentId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\MessageAttachmentId, HTTP status code, HTTP response headers (array of strings)
      */
     public function newAttachmentDeclarationPOSTWithHttpInfo($new_attachment_declaration, string $contentType = self::contentTypes['newAttachmentDeclarationPOST'][0])
     {
@@ -2422,11 +2422,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\MessageAttachmentId' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\MessageAttachmentId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MessageAttachmentId' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\MessageAttachmentId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2444,7 +2444,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MessageAttachmentId', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\MessageAttachmentId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2463,7 +2463,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MessageAttachmentId';
+            $returnType = '\robsonek\phpAllegroApi\Model\MessageAttachmentId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2496,7 +2496,7 @@ class MessageCenterApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MessageAttachmentId',
+                        '\robsonek\phpAllegroApi\Model\MessageAttachmentId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2511,7 +2511,7 @@ class MessageCenterApi
      *
      * Add attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newAttachmentDeclarationPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2532,7 +2532,7 @@ class MessageCenterApi
      *
      * Add attachment declaration
      *
-     * @param  \OpenAPI\Client\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newAttachmentDeclarationPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2540,7 +2540,7 @@ class MessageCenterApi
      */
     public function newAttachmentDeclarationPOSTAsyncWithHttpInfo($new_attachment_declaration, string $contentType = self::contentTypes['newAttachmentDeclarationPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MessageAttachmentId';
+        $returnType = '\robsonek\phpAllegroApi\Model\MessageAttachmentId';
         $request = $this->newAttachmentDeclarationPOSTRequest($new_attachment_declaration, $contentType);
 
         return $this->client
@@ -2582,7 +2582,7 @@ class MessageCenterApi
     /**
      * Create request for operation 'newAttachmentDeclarationPOST'
      *
-     * @param  \OpenAPI\Client\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration $new_attachment_declaration (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newAttachmentDeclarationPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2680,12 +2680,12 @@ class MessageCenterApi
      * Write a new message in thread
      *
      * @param  string $thread_id Identifier of thread to write message to. (required)
-     * @param  \OpenAPI\Client\Model\NewMessageInThread $new_message_in_thread new_message_in_thread (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessageInThread $new_message_in_thread new_message_in_thread (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessageInThreadPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Message
+     * @return \robsonek\phpAllegroApi\Model\Message
      */
     public function newMessageInThreadPOST($thread_id, $new_message_in_thread, string $contentType = self::contentTypes['newMessageInThreadPOST'][0])
     {
@@ -2699,12 +2699,12 @@ class MessageCenterApi
      * Write a new message in thread
      *
      * @param  string $thread_id Identifier of thread to write message to. (required)
-     * @param  \OpenAPI\Client\Model\NewMessageInThread $new_message_in_thread (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessageInThread $new_message_in_thread (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessageInThreadPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Message, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Message, HTTP status code, HTTP response headers (array of strings)
      */
     public function newMessageInThreadPOSTWithHttpInfo($thread_id, $new_message_in_thread, string $contentType = self::contentTypes['newMessageInThreadPOST'][0])
     {
@@ -2735,11 +2735,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\Message' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Message' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Message' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Message' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2757,7 +2757,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Message', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Message', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2776,7 +2776,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Message';
+            $returnType = '\robsonek\phpAllegroApi\Model\Message';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2809,7 +2809,7 @@ class MessageCenterApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Message',
+                        '\robsonek\phpAllegroApi\Model\Message',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2825,7 +2825,7 @@ class MessageCenterApi
      * Write a new message in thread
      *
      * @param  string $thread_id Identifier of thread to write message to. (required)
-     * @param  \OpenAPI\Client\Model\NewMessageInThread $new_message_in_thread (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessageInThread $new_message_in_thread (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessageInThreadPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2847,7 +2847,7 @@ class MessageCenterApi
      * Write a new message in thread
      *
      * @param  string $thread_id Identifier of thread to write message to. (required)
-     * @param  \OpenAPI\Client\Model\NewMessageInThread $new_message_in_thread (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessageInThread $new_message_in_thread (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessageInThreadPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2855,7 +2855,7 @@ class MessageCenterApi
      */
     public function newMessageInThreadPOSTAsyncWithHttpInfo($thread_id, $new_message_in_thread, string $contentType = self::contentTypes['newMessageInThreadPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Message';
+        $returnType = '\robsonek\phpAllegroApi\Model\Message';
         $request = $this->newMessageInThreadPOSTRequest($thread_id, $new_message_in_thread, $contentType);
 
         return $this->client
@@ -2898,7 +2898,7 @@ class MessageCenterApi
      * Create request for operation 'newMessageInThreadPOST'
      *
      * @param  string $thread_id Identifier of thread to write message to. (required)
-     * @param  \OpenAPI\Client\Model\NewMessageInThread $new_message_in_thread (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessageInThread $new_message_in_thread (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessageInThreadPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3010,12 +3010,12 @@ class MessageCenterApi
      *
      * Write a new message
      *
-     * @param  \OpenAPI\Client\Model\NewMessage $new_message Object representing new message. (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessage $new_message Object representing new message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessagePOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Message
+     * @return \robsonek\phpAllegroApi\Model\Message
      */
     public function newMessagePOST($new_message, string $contentType = self::contentTypes['newMessagePOST'][0])
     {
@@ -3028,12 +3028,12 @@ class MessageCenterApi
      *
      * Write a new message
      *
-     * @param  \OpenAPI\Client\Model\NewMessage $new_message Object representing new message. (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessage $new_message Object representing new message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessagePOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Message, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Message, HTTP status code, HTTP response headers (array of strings)
      */
     public function newMessagePOSTWithHttpInfo($new_message, string $contentType = self::contentTypes['newMessagePOST'][0])
     {
@@ -3064,11 +3064,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\Message' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Message' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Message' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Message' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3086,7 +3086,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Message', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Message', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3105,7 +3105,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Message';
+            $returnType = '\robsonek\phpAllegroApi\Model\Message';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3138,7 +3138,7 @@ class MessageCenterApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Message',
+                        '\robsonek\phpAllegroApi\Model\Message',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3153,7 +3153,7 @@ class MessageCenterApi
      *
      * Write a new message
      *
-     * @param  \OpenAPI\Client\Model\NewMessage $new_message Object representing new message. (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessage $new_message Object representing new message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessagePOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3174,7 +3174,7 @@ class MessageCenterApi
      *
      * Write a new message
      *
-     * @param  \OpenAPI\Client\Model\NewMessage $new_message Object representing new message. (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessage $new_message Object representing new message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessagePOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3182,7 +3182,7 @@ class MessageCenterApi
      */
     public function newMessagePOSTAsyncWithHttpInfo($new_message, string $contentType = self::contentTypes['newMessagePOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Message';
+        $returnType = '\robsonek\phpAllegroApi\Model\Message';
         $request = $this->newMessagePOSTRequest($new_message, $contentType);
 
         return $this->client
@@ -3224,7 +3224,7 @@ class MessageCenterApi
     /**
      * Create request for operation 'newMessagePOST'
      *
-     * @param  \OpenAPI\Client\Model\NewMessage $new_message Object representing new message. (required)
+     * @param  \robsonek\phpAllegroApi\Model\NewMessage $new_message Object representing new message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['newMessagePOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3325,9 +3325,9 @@ class MessageCenterApi
      * @param  \SplFileObject $body body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadAttachmentPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MessageAttachmentId
+     * @return \robsonek\phpAllegroApi\Model\MessageAttachmentId
      */
     public function uploadAttachmentPUT($attachment_id, $body, string $contentType = self::contentTypes['uploadAttachmentPUT'][0])
     {
@@ -3344,9 +3344,9 @@ class MessageCenterApi
      * @param  \SplFileObject $body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadAttachmentPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MessageAttachmentId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\MessageAttachmentId, HTTP status code, HTTP response headers (array of strings)
      */
     public function uploadAttachmentPUTWithHttpInfo($attachment_id, $body, string $contentType = self::contentTypes['uploadAttachmentPUT'][0])
     {
@@ -3377,11 +3377,11 @@ class MessageCenterApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MessageAttachmentId' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\MessageAttachmentId' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MessageAttachmentId' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\MessageAttachmentId' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3399,7 +3399,7 @@ class MessageCenterApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MessageAttachmentId', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\MessageAttachmentId', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3418,7 +3418,7 @@ class MessageCenterApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MessageAttachmentId';
+            $returnType = '\robsonek\phpAllegroApi\Model\MessageAttachmentId';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3451,7 +3451,7 @@ class MessageCenterApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MessageAttachmentId',
+                        '\robsonek\phpAllegroApi\Model\MessageAttachmentId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3497,7 +3497,7 @@ class MessageCenterApi
      */
     public function uploadAttachmentPUTAsyncWithHttpInfo($attachment_id, $body, string $contentType = self::contentTypes['uploadAttachmentPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MessageAttachmentId';
+        $returnType = '\robsonek\phpAllegroApi\Model\MessageAttachmentId';
         $request = $this->uploadAttachmentPUTRequest($attachment_id, $body, $contentType);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeCampaign Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'marketplace' => '\OpenAPI\Client\Model\MarketplaceReference',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\MarketplaceReference',
         'type' => 'string',
-        'eligibility' => '\OpenAPI\Client\Model\UserCampaignEligibility',
-        'application' => '\OpenAPI\Client\Model\ApplicationTimePolicy',
-        'visibility' => '\OpenAPI\Client\Model\VisibilityTimePolicy',
-        'publication' => '\OpenAPI\Client\Model\PublicationTimePolicy',
+        'eligibility' => '\robsonek\phpAllegroApi\Model\UserCampaignEligibility',
+        'application' => '\robsonek\phpAllegroApi\Model\ApplicationTimePolicy',
+        'visibility' => '\robsonek\phpAllegroApi\Model\VisibilityTimePolicy',
+        'publication' => '\robsonek\phpAllegroApi\Model\PublicationTimePolicy',
         'regulations_link' => 'string'
     ];
 
@@ -455,7 +455,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\MarketplaceReference
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceReference
      */
     public function getMarketplace()
     {
@@ -465,7 +465,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\MarketplaceReference $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceReference $marketplace marketplace
      *
      * @return self
      */
@@ -519,7 +519,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets eligibility
      *
-     * @return \OpenAPI\Client\Model\UserCampaignEligibility
+     * @return \robsonek\phpAllegroApi\Model\UserCampaignEligibility
      */
     public function getEligibility()
     {
@@ -529,7 +529,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets eligibility
      *
-     * @param \OpenAPI\Client\Model\UserCampaignEligibility $eligibility eligibility
+     * @param \robsonek\phpAllegroApi\Model\UserCampaignEligibility $eligibility eligibility
      *
      * @return self
      */
@@ -546,7 +546,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets application
      *
-     * @return \OpenAPI\Client\Model\ApplicationTimePolicy
+     * @return \robsonek\phpAllegroApi\Model\ApplicationTimePolicy
      */
     public function getApplication()
     {
@@ -556,7 +556,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets application
      *
-     * @param \OpenAPI\Client\Model\ApplicationTimePolicy $application application
+     * @param \robsonek\phpAllegroApi\Model\ApplicationTimePolicy $application application
      *
      * @return self
      */
@@ -573,7 +573,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets visibility
      *
-     * @return \OpenAPI\Client\Model\VisibilityTimePolicy
+     * @return \robsonek\phpAllegroApi\Model\VisibilityTimePolicy
      */
     public function getVisibility()
     {
@@ -583,7 +583,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets visibility
      *
-     * @param \OpenAPI\Client\Model\VisibilityTimePolicy $visibility visibility
+     * @param \robsonek\phpAllegroApi\Model\VisibilityTimePolicy $visibility visibility
      *
      * @return self
      */
@@ -600,7 +600,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\PublicationTimePolicy
+     * @return \robsonek\phpAllegroApi\Model\PublicationTimePolicy
      */
     public function getPublication()
     {
@@ -610,7 +610,7 @@ class BadgeCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\PublicationTimePolicy $publication publication
+     * @param \robsonek\phpAllegroApi\Model\PublicationTimePolicy $publication publication
      *
      * @return self
      */

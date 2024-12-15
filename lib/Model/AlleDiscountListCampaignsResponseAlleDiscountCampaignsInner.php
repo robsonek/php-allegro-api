@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,10 +60,10 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
         'id' => 'string',
         'name' => 'string',
         'type' => 'string',
-        'visibility' => '\OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility',
-        'application' => '\OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication',
-        'publication' => '\OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication',
-        'marketplace' => '\OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace'
+        'visibility' => '\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility',
+        'application' => '\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication',
+        'publication' => '\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace'
     ];
 
     /**
@@ -449,7 +449,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Gets visibility
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility|null
      */
     public function getVisibility()
     {
@@ -459,7 +459,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Sets visibility
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility|null $visibility visibility
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerVisibility|null $visibility visibility
      *
      * @return self
      */
@@ -476,7 +476,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Gets application
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication|null
      */
     public function getApplication()
     {
@@ -486,7 +486,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Sets application
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication|null $application application
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerApplication|null $application application
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication|null
      */
     public function getPublication()
     {
@@ -513,7 +513,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerPublication|null $publication publication
      *
      * @return self
      */
@@ -530,7 +530,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace|null
      */
     public function getMarketplace()
     {
@@ -540,7 +540,7 @@ class AlleDiscountListCampaignsResponseAlleDiscountCampaignsInner implements Mod
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace|null $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountListCampaignsResponseAlleDiscountCampaignsInnerMarketplace|null $marketplace marketplace
      *
      * @return self
      */

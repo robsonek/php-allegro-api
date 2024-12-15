@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1Publication Class Doc Comment
  *
  * @category Class
  * @description Information on the offer&#39;s publication status and dates.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class OfferListingDtoV1Publication implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\OpenAPI\Client\Model\OfferStatus',
+        'status' => '\robsonek\phpAllegroApi\Model\OfferStatus',
         'starting_at' => 'string',
         'started_at' => 'string',
         'ending_at' => 'string',
         'ended_at' => 'string',
-        'marketplaces' => '\OpenAPI\Client\Model\OfferListingDtoV1PublicationMarketplaces'
+        'marketplaces' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1PublicationMarketplaces'
     ];
 
     /**
@@ -328,7 +328,7 @@ class OfferListingDtoV1Publication implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\OfferStatus|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStatus|null
      */
     public function getStatus()
     {
@@ -338,7 +338,7 @@ class OfferListingDtoV1Publication implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\OfferStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\OfferStatus|null $status status
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class OfferListingDtoV1Publication implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets marketplaces
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1PublicationMarketplaces|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1PublicationMarketplaces|null
      */
     public function getMarketplaces()
     {
@@ -473,7 +473,7 @@ class OfferListingDtoV1Publication implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets marketplaces
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1PublicationMarketplaces|null $marketplaces marketplaces
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1PublicationMarketplaces|null $marketplaces marketplaces
      *
      * @return self
      */

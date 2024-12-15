@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner implements
         'marketplaces' => 'string[]',
         'payment_policy' => 'string',
         'allegro_endorsed' => 'bool',
-        'shipping_rates_constraints' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints'
+        'shipping_rates_constraints' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints'
     ];
 
     /**
@@ -496,7 +496,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner implements
     /**
      * Gets shipping_rates_constraints
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints|null
      */
     public function getShippingRatesConstraints()
     {
@@ -506,7 +506,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInner implements
     /**
      * Sets shipping_rates_constraints
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints|null $shipping_rates_constraints shipping_rates_constraints
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints|null $shipping_rates_constraints shipping_rates_constraints
      *
      * @return self
      */

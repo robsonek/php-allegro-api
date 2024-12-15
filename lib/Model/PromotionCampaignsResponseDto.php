@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PromotionCampaignsResponseDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PromotionCampaignsResponseDto implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'promotion_campaigns' => '\OpenAPI\Client\Model\SinglePromotionCampaignResponseDto[]',
+        'promotion_campaigns' => '\robsonek\phpAllegroApi\Model\SinglePromotionCampaignResponseDto[]',
         'total_count' => 'int'
     ];
 
@@ -309,7 +309,7 @@ class PromotionCampaignsResponseDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets promotion_campaigns
      *
-     * @return \OpenAPI\Client\Model\SinglePromotionCampaignResponseDto[]
+     * @return \robsonek\phpAllegroApi\Model\SinglePromotionCampaignResponseDto[]
      */
     public function getPromotionCampaigns()
     {
@@ -319,7 +319,7 @@ class PromotionCampaignsResponseDto implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets promotion_campaigns
      *
-     * @param \OpenAPI\Client\Model\SinglePromotionCampaignResponseDto[] $promotion_campaigns promotion_campaigns
+     * @param \robsonek\phpAllegroApi\Model\SinglePromotionCampaignResponseDto[] $promotion_campaigns promotion_campaigns
      *
      * @return self
      */

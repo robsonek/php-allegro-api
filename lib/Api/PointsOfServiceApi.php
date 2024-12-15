@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PointsOfServiceApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class PointsOfServiceApi
      *
      * Create a point of service
      *
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPOSUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function createPOSUsingPOST($pos, string $contentType = self::contentTypes['createPOSUsingPOST'][0])
     {
@@ -157,12 +157,12 @@ class PointsOfServiceApi
      *
      * Create a point of service
      *
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPOSUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPOSUsingPOSTWithHttpInfo($pos, string $contentType = self::contentTypes['createPOSUsingPOST'][0])
     {
@@ -193,11 +193,11 @@ class PointsOfServiceApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\Pos' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Pos' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Pos' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Pos' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,16 +215,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Pos', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Pos', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -242,16 +242,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -269,16 +269,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -296,16 +296,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -323,7 +323,7 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -342,7 +342,7 @@ class PointsOfServiceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Pos';
+            $returnType = '\robsonek\phpAllegroApi\Model\Pos';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -375,7 +375,7 @@ class PointsOfServiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Pos',
+                        '\robsonek\phpAllegroApi\Model\Pos',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -383,7 +383,7 @@ class PointsOfServiceApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -391,7 +391,7 @@ class PointsOfServiceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -399,7 +399,7 @@ class PointsOfServiceApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -407,7 +407,7 @@ class PointsOfServiceApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -422,7 +422,7 @@ class PointsOfServiceApi
      *
      * Create a point of service
      *
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPOSUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -443,7 +443,7 @@ class PointsOfServiceApi
      *
      * Create a point of service
      *
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPOSUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -451,7 +451,7 @@ class PointsOfServiceApi
      */
     public function createPOSUsingPOSTAsyncWithHttpInfo($pos, string $contentType = self::contentTypes['createPOSUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Pos';
+        $returnType = '\robsonek\phpAllegroApi\Model\Pos';
         $request = $this->createPOSUsingPOSTRequest($pos, $contentType);
 
         return $this->client
@@ -493,7 +493,7 @@ class PointsOfServiceApi
     /**
      * Create request for operation 'createPOSUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPOSUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -593,7 +593,7 @@ class PointsOfServiceApi
      * @param  string $id Point of service ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePOSUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -610,7 +610,7 @@ class PointsOfServiceApi
      * @param  string $id Point of service ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePOSUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -648,7 +648,7 @@ class PointsOfServiceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,9 +822,9 @@ class PointsOfServiceApi
      * @param  string $id Point of service ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPOSDataUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getPOSDataUsingGET($id, string $contentType = self::contentTypes['getPOSDataUsingGET'][0])
     {
@@ -840,9 +840,9 @@ class PointsOfServiceApi
      * @param  string $id Point of service ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPOSDataUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPOSDataUsingGETWithHttpInfo($id, string $contentType = self::contentTypes['getPOSDataUsingGET'][0])
     {
@@ -873,11 +873,11 @@ class PointsOfServiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Pos' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Pos' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Pos' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Pos' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -895,16 +895,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Pos', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Pos', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -922,7 +922,7 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -941,7 +941,7 @@ class PointsOfServiceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Pos';
+            $returnType = '\robsonek\phpAllegroApi\Model\Pos';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -974,7 +974,7 @@ class PointsOfServiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Pos',
+                        '\robsonek\phpAllegroApi\Model\Pos',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -982,7 +982,7 @@ class PointsOfServiceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1026,7 +1026,7 @@ class PointsOfServiceApi
      */
     public function getPOSDataUsingGETAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getPOSDataUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Pos';
+        $returnType = '\robsonek\phpAllegroApi\Model\Pos';
         $request = $this->getPOSDataUsingGETRequest($id, $contentType);
 
         return $this->client
@@ -1170,9 +1170,9 @@ class PointsOfServiceApi
      * @param  string $country_code Country code identifier in ISO format. In case of incorrect or unsupported country code, empty list is returned. If missing, list of all defined points is returned. If present, correct and supported, list of all points with given country code for the user is returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPOSListUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchResult|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\SearchResult|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getPOSListUsingGET($seller_id, $country_code = null, string $contentType = self::contentTypes['getPOSListUsingGET'][0])
     {
@@ -1189,9 +1189,9 @@ class PointsOfServiceApi
      * @param  string $country_code Country code identifier in ISO format. In case of incorrect or unsupported country code, empty list is returned. If missing, list of all defined points is returned. If present, correct and supported, list of all points with given country code for the user is returned. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPOSListUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchResult|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SearchResult|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPOSListUsingGETWithHttpInfo($seller_id, $country_code = null, string $contentType = self::contentTypes['getPOSListUsingGET'][0])
     {
@@ -1222,11 +1222,11 @@ class PointsOfServiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchResult' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SearchResult' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchResult' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SearchResult' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1244,16 +1244,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchResult', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SearchResult', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1271,7 +1271,7 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1290,7 +1290,7 @@ class PointsOfServiceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchResult';
+            $returnType = '\robsonek\phpAllegroApi\Model\SearchResult';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1323,7 +1323,7 @@ class PointsOfServiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchResult',
+                        '\robsonek\phpAllegroApi\Model\SearchResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1331,7 +1331,7 @@ class PointsOfServiceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1377,7 +1377,7 @@ class PointsOfServiceApi
      */
     public function getPOSListUsingGETAsyncWithHttpInfo($seller_id, $country_code = null, string $contentType = self::contentTypes['getPOSListUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchResult';
+        $returnType = '\robsonek\phpAllegroApi\Model\SearchResult';
         $request = $this->getPOSListUsingGETRequest($seller_id, $country_code, $contentType);
 
         return $this->client
@@ -1530,12 +1530,12 @@ class PointsOfServiceApi
      * Modify a point of service
      *
      * @param  string $id Point of service ID. Must match values with &#39;id&#39; property from the body. (required)
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyPOSUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function modifyPOSUsingPUT($id, $pos, string $contentType = self::contentTypes['modifyPOSUsingPUT'][0])
     {
@@ -1549,12 +1549,12 @@ class PointsOfServiceApi
      * Modify a point of service
      *
      * @param  string $id Point of service ID. Must match values with &#39;id&#39; property from the body. (required)
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyPOSUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Pos|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\Pos|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyPOSUsingPUTWithHttpInfo($id, $pos, string $contentType = self::contentTypes['modifyPOSUsingPUT'][0])
     {
@@ -1585,11 +1585,11 @@ class PointsOfServiceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Pos' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\Pos' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Pos' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\Pos' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1607,16 +1607,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Pos', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\Pos', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1634,16 +1634,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1661,16 +1661,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1688,16 +1688,16 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1715,7 +1715,7 @@ class PointsOfServiceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1734,7 +1734,7 @@ class PointsOfServiceApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Pos';
+            $returnType = '\robsonek\phpAllegroApi\Model\Pos';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1767,7 +1767,7 @@ class PointsOfServiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Pos',
+                        '\robsonek\phpAllegroApi\Model\Pos',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1775,7 +1775,7 @@ class PointsOfServiceApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1783,7 +1783,7 @@ class PointsOfServiceApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1791,7 +1791,7 @@ class PointsOfServiceApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1799,7 +1799,7 @@ class PointsOfServiceApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1815,7 +1815,7 @@ class PointsOfServiceApi
      * Modify a point of service
      *
      * @param  string $id Point of service ID. Must match values with &#39;id&#39; property from the body. (required)
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyPOSUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1837,7 +1837,7 @@ class PointsOfServiceApi
      * Modify a point of service
      *
      * @param  string $id Point of service ID. Must match values with &#39;id&#39; property from the body. (required)
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyPOSUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1845,7 +1845,7 @@ class PointsOfServiceApi
      */
     public function modifyPOSUsingPUTAsyncWithHttpInfo($id, $pos, string $contentType = self::contentTypes['modifyPOSUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Pos';
+        $returnType = '\robsonek\phpAllegroApi\Model\Pos';
         $request = $this->modifyPOSUsingPUTRequest($id, $pos, $contentType);
 
         return $this->client
@@ -1888,7 +1888,7 @@ class PointsOfServiceApi
      * Create request for operation 'modifyPOSUsingPUT'
      *
      * @param  string $id Point of service ID. Must match values with &#39;id&#39; property from the body. (required)
-     * @param  \OpenAPI\Client\Model\Pos $pos Point of service (required)
+     * @param  \robsonek\phpAllegroApi\Model\Pos $pos Point of service (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyPOSUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

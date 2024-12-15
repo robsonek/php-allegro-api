@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormDeliveryTime Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class CheckoutFormDeliveryTime implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'from' => '\DateTime',
         'to' => '\DateTime',
-        'guaranteed' => '\OpenAPI\Client\Model\CheckoutFormDeliveryTimeGuaranteed',
-        'dispatch' => '\OpenAPI\Client\Model\CheckoutFormDeliveryTimeDispatch'
+        'guaranteed' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeGuaranteed',
+        'dispatch' => '\robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeDispatch'
     ];
 
     /**
@@ -367,7 +367,7 @@ class CheckoutFormDeliveryTime implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets guaranteed
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryTimeGuaranteed|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeGuaranteed|null
      * @deprecated
      */
     public function getGuaranteed()
@@ -378,7 +378,7 @@ class CheckoutFormDeliveryTime implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets guaranteed
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryTimeGuaranteed|null $guaranteed guaranteed
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeGuaranteed|null $guaranteed guaranteed
      *
      * @return self
      * @deprecated
@@ -396,7 +396,7 @@ class CheckoutFormDeliveryTime implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets dispatch
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormDeliveryTimeDispatch|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeDispatch|null
      */
     public function getDispatch()
     {
@@ -406,7 +406,7 @@ class CheckoutFormDeliveryTime implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets dispatch
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormDeliveryTimeDispatch|null $dispatch dispatch
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormDeliveryTimeDispatch|null $dispatch dispatch
      *
      * @return self
      */

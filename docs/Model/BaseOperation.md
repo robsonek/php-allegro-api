@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** | Type of the operation. |
 **group** | **string** | The group to which the given operation type belongs. |
-**wallet** | [**\OpenAPI\Client\Model\Wallet**](Wallet.md) |  |
-**value** | [**\OpenAPI\Client\Model\OperationValue**](OperationValue.md) |  |
+**wallet** | [**\robsonek\phpAllegroApi\Model\Wallet**](Wallet.md) |  |
+**value** | [**\robsonek\phpAllegroApi\Model\OperationValue**](OperationValue.md) |  |
 **occurred_at** | **\DateTime** | Date and time of the operation in ISO 8601 format. |
 **marketplace_id** | **string** | The marketplace ID where operation was made. Value may be &#x60;null&#x60; for operations not assigned to any marketplace. | [optional]
 

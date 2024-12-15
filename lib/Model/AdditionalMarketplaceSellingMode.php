@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplaceSellingMode Class Doc Comment
  *
  * @category Class
  * @description Offer&#39;s selling mode on given marketplace
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AdditionalMarketplaceSellingMode implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'price' => '\OpenAPI\Client\Model\Price'
+        'price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -296,7 +296,7 @@ class AdditionalMarketplaceSellingMode implements ModelInterface, ArrayAccess, \
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getPrice()
     {
@@ -306,7 +306,7 @@ class AdditionalMarketplaceSellingMode implements ModelInterface, ArrayAccess, \
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price $price price
+     * @param \robsonek\phpAllegroApi\Model\Price $price price
      *
      * @return self
      */

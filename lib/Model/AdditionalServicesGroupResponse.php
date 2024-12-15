@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServicesGroupResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class AdditionalServicesGroupResponse implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_services' => '\OpenAPI\Client\Model\AdditionalServiceResponse[]',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\AdditionalServiceResponse[]',
         'created_at' => '\DateTime',
         'id' => 'string',
         'updated_at' => '\DateTime',
         'name' => 'string',
-        'seller' => '\OpenAPI\Client\Model\Reference',
+        'seller' => '\robsonek\phpAllegroApi\Model\Reference',
         'language' => 'string'
     ];
 
@@ -342,7 +342,7 @@ class AdditionalServicesGroupResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\AdditionalServiceResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceResponse[]|null
      */
     public function getAdditionalServices()
     {
@@ -352,7 +352,7 @@ class AdditionalServicesGroupResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\AdditionalServiceResponse[]|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServiceResponse[]|null $additional_services additional_services
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class AdditionalServicesGroupResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Gets seller
      *
-     * @return \OpenAPI\Client\Model\Reference|null
+     * @return \robsonek\phpAllegroApi\Model\Reference|null
      */
     public function getSeller()
     {
@@ -487,7 +487,7 @@ class AdditionalServicesGroupResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Sets seller
      *
-     * @param \OpenAPI\Client\Model\Reference|null $seller seller
+     * @param \robsonek\phpAllegroApi\Model\Reference|null $seller seller
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplaceItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'languages' => '\OpenAPI\Client\Model\MarketplaceItemLanguages',
-        'currencies' => '\OpenAPI\Client\Model\MarketplaceItemCurrencies',
-        'shipping_countries' => '\OpenAPI\Client\Model\MarketplaceItemShippingCountry[]'
+        'languages' => '\robsonek\phpAllegroApi\Model\MarketplaceItemLanguages',
+        'currencies' => '\robsonek\phpAllegroApi\Model\MarketplaceItemCurrencies',
+        'shipping_countries' => '\robsonek\phpAllegroApi\Model\MarketplaceItemShippingCountry[]'
     ];
 
     /**
@@ -340,7 +340,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets languages
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemLanguages|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemLanguages|null
      */
     public function getLanguages()
     {
@@ -350,7 +350,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets languages
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemLanguages|null $languages languages
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemLanguages|null $languages languages
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets currencies
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemCurrencies|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemCurrencies|null
      */
     public function getCurrencies()
     {
@@ -377,7 +377,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets currencies
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemCurrencies|null $currencies currencies
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemCurrencies|null $currencies currencies
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_countries
      *
-     * @return \OpenAPI\Client\Model\MarketplaceItemShippingCountry[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceItemShippingCountry[]|null
      */
     public function getShippingCountries()
     {
@@ -404,7 +404,7 @@ class MarketplaceItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_countries
      *
-     * @param \OpenAPI\Client\Model\MarketplaceItemShippingCountry[]|null $shipping_countries List of delivery countries for that marketplace
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceItemShippingCountry[]|null $shipping_countries List of delivery countries for that marketplace
      *
      * @return self
      */

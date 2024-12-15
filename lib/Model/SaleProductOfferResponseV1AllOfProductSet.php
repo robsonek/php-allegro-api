@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferResponseV1AllOfProductSet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'quantity' => '\OpenAPI\Client\Model\ProductSetElementQuantityQuantity',
-        'safety_information' => '\OpenAPI\Client\Model\ProductSetElementSafetyInformation',
-        'product' => '\OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct',
-        'responsible_person' => '\OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson',
-        'responsible_producer' => '\OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer'
+        'quantity' => '\robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity',
+        'safety_information' => '\robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation',
+        'product' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct',
+        'responsible_person' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson',
+        'responsible_producer' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer'
     ];
 
     /**
@@ -320,7 +320,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Gets quantity
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null
      */
     public function getQuantity()
     {
@@ -330,7 +330,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Sets quantity
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null $quantity quantity
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null $quantity quantity
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Gets safety_information
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null
      */
     public function getSafetyInformation()
     {
@@ -357,7 +357,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Sets safety_information
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct|null
      */
     public function getProduct()
     {
@@ -384,7 +384,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct|null $product product
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct|null $product product
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Gets responsible_person
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson|null
      */
     public function getResponsiblePerson()
     {
@@ -411,7 +411,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Sets responsible_person
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson|null $responsible_person responsible_person
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson|null $responsible_person responsible_person
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Gets responsible_producer
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer|null
      */
     public function getResponsibleProducer()
     {
@@ -438,7 +438,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     /**
      * Sets responsible_producer
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer|null $responsible_producer responsible_producer
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer|null $responsible_producer responsible_producer
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PromoModificationTask Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class PromoModificationTask implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\OfferId',
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferId',
         'marketplace_id' => 'string',
         'scheduled_at' => '\DateTime',
         'finished_at' => '\DateTime',
         'status' => 'string',
-        'errors' => '\OpenAPI\Client\Model\Error[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\Error[]'
     ];
 
     /**
@@ -353,7 +353,7 @@ class PromoModificationTask implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferId|null
+     * @return \robsonek\phpAllegroApi\Model\OfferId|null
      */
     public function getOffer()
     {
@@ -363,7 +363,7 @@ class PromoModificationTask implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferId|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferId|null $offer offer
      *
      * @return self
      */
@@ -498,7 +498,7 @@ class PromoModificationTask implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error[]|null
+     * @return \robsonek\phpAllegroApi\Model\Error[]|null
      */
     public function getErrors()
     {
@@ -508,7 +508,7 @@ class PromoModificationTask implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $errors The list of all the error objects explaining the error.
+     * @param \robsonek\phpAllegroApi\Model\Error[]|null $errors The list of all the error objects explaining the error.
      *
      * @return self
      */

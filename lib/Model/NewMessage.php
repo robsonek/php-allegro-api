@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * NewMessage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'recipient' => '\OpenAPI\Client\Model\Recipient',
+        'recipient' => '\robsonek\phpAllegroApi\Model\Recipient',
         'text' => 'string',
-        'attachments' => '\OpenAPI\Client\Model\MessageAttachmentId[]',
-        'order' => '\OpenAPI\Client\Model\MessageOrder'
+        'attachments' => '\robsonek\phpAllegroApi\Model\MessageAttachmentId[]',
+        'order' => '\robsonek\phpAllegroApi\Model\MessageOrder'
     ];
 
     /**
@@ -323,7 +323,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets recipient
      *
-     * @return \OpenAPI\Client\Model\Recipient
+     * @return \robsonek\phpAllegroApi\Model\Recipient
      */
     public function getRecipient()
     {
@@ -333,7 +333,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets recipient
      *
-     * @param \OpenAPI\Client\Model\Recipient $recipient recipient
+     * @param \robsonek\phpAllegroApi\Model\Recipient $recipient recipient
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attachments
      *
-     * @return \OpenAPI\Client\Model\MessageAttachmentId[]|null
+     * @return \robsonek\phpAllegroApi\Model\MessageAttachmentId[]|null
      */
     public function getAttachments()
     {
@@ -391,7 +391,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attachments
      *
-     * @param \OpenAPI\Client\Model\MessageAttachmentId[]|null $attachments attachments
+     * @param \robsonek\phpAllegroApi\Model\MessageAttachmentId[]|null $attachments attachments
      *
      * @return self
      */
@@ -415,7 +415,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\MessageOrder|null
+     * @return \robsonek\phpAllegroApi\Model\MessageOrder|null
      */
     public function getOrder()
     {
@@ -425,7 +425,7 @@ class NewMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\MessageOrder|null $order order
+     * @param \robsonek\phpAllegroApi\Model\MessageOrder|null $order order
      *
      * @return self
      */

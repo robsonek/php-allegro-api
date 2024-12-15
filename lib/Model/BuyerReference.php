@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BuyerReference Class Doc Comment
  *
  * @category Class
  * @description Buyer data
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class BuyerReference implements ModelInterface, ArrayAccess, \JsonSerializable
         'email' => 'string',
         'login' => 'string',
         'guest' => 'bool',
-        'preferences' => '\OpenAPI\Client\Model\BuyerPreferencesReference'
+        'preferences' => '\robsonek\phpAllegroApi\Model\BuyerPreferencesReference'
     ];
 
     /**
@@ -441,7 +441,7 @@ class BuyerReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets preferences
      *
-     * @return \OpenAPI\Client\Model\BuyerPreferencesReference|null
+     * @return \robsonek\phpAllegroApi\Model\BuyerPreferencesReference|null
      */
     public function getPreferences()
     {
@@ -451,7 +451,7 @@ class BuyerReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets preferences
      *
-     * @param \OpenAPI\Client\Model\BuyerPreferencesReference|null $preferences preferences
+     * @param \robsonek\phpAllegroApi\Model\BuyerPreferencesReference|null $preferences preferences
      *
      * @return self
      */

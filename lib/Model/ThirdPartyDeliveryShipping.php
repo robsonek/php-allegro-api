@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ThirdPartyDeliveryShipping Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class ThirdPartyDeliveryShipping extends Shipping
       */
     protected static $openAPITypes = [
         'method' => 'string',
-        'third_party' => '\OpenAPI\Client\Model\ThirdParty',
+        'third_party' => '\robsonek\phpAllegroApi\Model\ThirdParty',
         'estimated_time_of_arrival' => '\DateTime',
         'country_code' => 'string'
     ];
@@ -334,7 +334,7 @@ class ThirdPartyDeliveryShipping extends Shipping
     /**
      * Gets third_party
      *
-     * @return \OpenAPI\Client\Model\ThirdParty|null
+     * @return \robsonek\phpAllegroApi\Model\ThirdParty|null
      */
     public function getThirdParty()
     {
@@ -344,7 +344,7 @@ class ThirdPartyDeliveryShipping extends Shipping
     /**
      * Sets third_party
      *
-     * @param \OpenAPI\Client\Model\ThirdParty|null $third_party third_party
+     * @param \robsonek\phpAllegroApi\Model\ThirdParty|null $third_party third_party
      *
      * @return self
      */

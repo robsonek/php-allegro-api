@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**bank_account** | [**\OpenAPI\Client\Model\CustomerReturnRefundBankAccount**](CustomerReturnRefundBankAccount.md) |  | [optional]
+**bank_account** | [**\robsonek\phpAllegroApi\Model\CustomerReturnRefundBankAccount**](CustomerReturnRefundBankAccount.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

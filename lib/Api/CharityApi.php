@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CharityApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,9 +131,9 @@ class CharityApi
      * @param  string $phrase Fundraising campaign name or it&#39;s Organization name prefix to search for. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchFundraisingCampaigns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FundraisingCampaigns
+     * @return \robsonek\phpAllegroApi\Model\FundraisingCampaigns
      */
     public function searchFundraisingCampaigns($limit, $phrase, string $contentType = self::contentTypes['searchFundraisingCampaigns'][0])
     {
@@ -150,9 +150,9 @@ class CharityApi
      * @param  string $phrase Fundraising campaign name or it&#39;s Organization name prefix to search for. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchFundraisingCampaigns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FundraisingCampaigns, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\FundraisingCampaigns, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchFundraisingCampaignsWithHttpInfo($limit, $phrase, string $contentType = self::contentTypes['searchFundraisingCampaigns'][0])
     {
@@ -183,11 +183,11 @@ class CharityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FundraisingCampaigns' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\FundraisingCampaigns' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FundraisingCampaigns' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\FundraisingCampaigns' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -205,7 +205,7 @@ class CharityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FundraisingCampaigns', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\FundraisingCampaigns', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -224,7 +224,7 @@ class CharityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FundraisingCampaigns';
+            $returnType = '\robsonek\phpAllegroApi\Model\FundraisingCampaigns';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -257,7 +257,7 @@ class CharityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FundraisingCampaigns',
+                        '\robsonek\phpAllegroApi\Model\FundraisingCampaigns',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -303,7 +303,7 @@ class CharityApi
      */
     public function searchFundraisingCampaignsAsyncWithHttpInfo($limit, $phrase, string $contentType = self::contentTypes['searchFundraisingCampaigns'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FundraisingCampaigns';
+        $returnType = '\robsonek\phpAllegroApi\Model\FundraisingCampaigns';
         $request = $this->searchFundraisingCampaignsRequest($limit, $phrase, $contentType);
 
         return $this->client

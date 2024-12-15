@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BillingEntries Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BillingEntries implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'billing_entries' => '\OpenAPI\Client\Model\BillingEntry[]'
+        'billing_entries' => '\robsonek\phpAllegroApi\Model\BillingEntry[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class BillingEntries implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets billing_entries
      *
-     * @return \OpenAPI\Client\Model\BillingEntry[]|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntry[]|null
      */
     public function getBillingEntries()
     {
@@ -302,7 +302,7 @@ class BillingEntries implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets billing_entries
      *
-     * @param \OpenAPI\Client\Model\BillingEntry[]|null $billing_entries List of billing types.
+     * @param \robsonek\phpAllegroApi\Model\BillingEntry[]|null $billing_entries List of billing types.
      *
      * @return self
      */

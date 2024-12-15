@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductOffer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class ProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'id_type' => 'string',
-        'parameters' => '\OpenAPI\Client\Model\ParameterProductOfferRequest[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]',
         'images' => 'string[]',
         'name' => 'string',
-        'category' => '\OpenAPI\Client\Model\Category'
+        'category' => '\robsonek\phpAllegroApi\Model\Category'
     ];
 
     /**
@@ -419,7 +419,7 @@ class ProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ParameterProductOfferRequest[]|null
+     * @return \robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]|null
      */
     public function getParameters()
     {
@@ -429,7 +429,7 @@ class ProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ParameterProductOfferRequest[]|null $parameters List of product parameters.
+     * @param \robsonek\phpAllegroApi\Model\ParameterProductOfferRequest[]|null $parameters List of product parameters.
      *
      * @return self
      */
@@ -504,7 +504,7 @@ class ProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category|null
+     * @return \robsonek\phpAllegroApi\Model\Category|null
      */
     public function getCategory()
     {
@@ -514,7 +514,7 @@ class ProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category|null $category Product category
+     * @param \robsonek\phpAllegroApi\Model\Category|null $category Product category
      *
      * @return self
      */

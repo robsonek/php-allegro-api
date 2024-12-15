@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturnRefundBankAccount Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class CustomerReturnRefundBankAccount implements ModelInterface, ArrayAccess, \J
         'account_number' => 'string',
         'iban' => 'string',
         'swift' => 'string',
-        'address' => '\OpenAPI\Client\Model\CustomerReturnRefundBankAccountAddress'
+        'address' => '\robsonek\phpAllegroApi\Model\CustomerReturnRefundBankAccountAddress'
     ];
 
     /**
@@ -428,7 +428,7 @@ class CustomerReturnRefundBankAccount implements ModelInterface, ArrayAccess, \J
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnRefundBankAccountAddress|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnRefundBankAccountAddress|null
      */
     public function getAddress()
     {
@@ -438,7 +438,7 @@ class CustomerReturnRefundBankAccount implements ModelInterface, ArrayAccess, \J
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnRefundBankAccountAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnRefundBankAccountAddress|null $address address
      *
      * @return self
      */

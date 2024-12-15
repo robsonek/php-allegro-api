@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * VariantSet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class VariantSet implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\OpenAPI\Client\Model\VariantSetOffer[]',
+        'offers' => '\robsonek\phpAllegroApi\Model\VariantSetOffer[]',
         'name' => 'string',
-        'parameters' => '\OpenAPI\Client\Model\VariantSetParameter[]'
+        'parameters' => '\robsonek\phpAllegroApi\Model\VariantSetParameter[]'
     ];
 
     /**
@@ -319,7 +319,7 @@ class VariantSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\VariantSetOffer[]
+     * @return \robsonek\phpAllegroApi\Model\VariantSetOffer[]
      */
     public function getOffers()
     {
@@ -329,7 +329,7 @@ class VariantSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\VariantSetOffer[] $offers offers
+     * @param \robsonek\phpAllegroApi\Model\VariantSetOffer[] $offers offers
      *
      * @return self
      */
@@ -377,7 +377,7 @@ class VariantSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\VariantSetParameter[]
+     * @return \robsonek\phpAllegroApi\Model\VariantSetParameter[]
      */
     public function getParameters()
     {
@@ -387,7 +387,7 @@ class VariantSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\VariantSetParameter[] $parameters parameters
+     * @param \robsonek\phpAllegroApi\Model\VariantSetParameter[] $parameters parameters
      *
      * @return self
      */

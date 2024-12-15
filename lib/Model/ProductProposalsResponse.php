@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductProposalsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'category' => '\OpenAPI\Client\Model\ProductProposalsResponseCategory',
-        'images' => '\OpenAPI\Client\Model\ImageUrl[]',
-        'parameters' => '\OpenAPI\Client\Model\NewProductParameterDto[]',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
-        'supplier' => '\OpenAPI\Client\Model\SupplierDto',
+        'category' => '\robsonek\phpAllegroApi\Model\ProductProposalsResponseCategory',
+        'images' => '\robsonek\phpAllegroApi\Model\ImageUrl[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\NewProductParameterDto[]',
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
+        'supplier' => '\robsonek\phpAllegroApi\Model\SupplierDto',
         'offer_id' => 'string',
         'language' => 'string',
-        'publication' => '\OpenAPI\Client\Model\ProductProposalsResponsePublication'
+        'publication' => '\robsonek\phpAllegroApi\Model\ProductProposalsResponsePublication'
     ];
 
     /**
@@ -409,7 +409,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ProductProposalsResponseCategory|null
+     * @return \robsonek\phpAllegroApi\Model\ProductProposalsResponseCategory|null
      */
     public function getCategory()
     {
@@ -419,7 +419,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ProductProposalsResponseCategory|null $category category
+     * @param \robsonek\phpAllegroApi\Model\ProductProposalsResponseCategory|null $category category
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ImageUrl[]|null
+     * @return \robsonek\phpAllegroApi\Model\ImageUrl[]|null
      */
     public function getImages()
     {
@@ -446,7 +446,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ImageUrl[]|null $images List of product images.
+     * @param \robsonek\phpAllegroApi\Model\ImageUrl[]|null $images List of product images.
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\NewProductParameterDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\NewProductParameterDto[]|null
      */
     public function getParameters()
     {
@@ -473,7 +473,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\NewProductParameterDto[]|null $parameters List of product parameters.
+     * @param \robsonek\phpAllegroApi\Model\NewProductParameterDto[]|null $parameters List of product parameters.
      *
      * @return self
      */
@@ -490,7 +490,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -500,7 +500,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */
@@ -517,7 +517,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets supplier
      *
-     * @return \OpenAPI\Client\Model\SupplierDto|null
+     * @return \robsonek\phpAllegroApi\Model\SupplierDto|null
      */
     public function getSupplier()
     {
@@ -527,7 +527,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets supplier
      *
-     * @param \OpenAPI\Client\Model\SupplierDto|null $supplier supplier
+     * @param \robsonek\phpAllegroApi\Model\SupplierDto|null $supplier supplier
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\ProductProposalsResponsePublication|null
+     * @return \robsonek\phpAllegroApi\Model\ProductProposalsResponsePublication|null
      */
     public function getPublication()
     {
@@ -608,7 +608,7 @@ class ProductProposalsResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\ProductProposalsResponsePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\ProductProposalsResponsePublication|null $publication publication
      *
      * @return self
      */

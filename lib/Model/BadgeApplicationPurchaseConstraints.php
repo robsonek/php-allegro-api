@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeApplicationPurchaseConstraints Class Doc Comment
  *
  * @category Class
  * @description Constraints of purchase of this offer while it participates in the campaign. Optional for all campaigns types.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class BadgeApplicationPurchaseConstraints implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'limit' => '\OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimit'
+        'limit' => '\robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimit'
     ];
 
     /**
@@ -293,7 +293,7 @@ class BadgeApplicationPurchaseConstraints implements ModelInterface, ArrayAccess
     /**
      * Gets limit
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimit|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimit|null
      */
     public function getLimit()
     {
@@ -303,7 +303,7 @@ class BadgeApplicationPurchaseConstraints implements ModelInterface, ArrayAccess
     /**
      * Sets limit
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationPurchaseConstraintsLimit|null $limit limit
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationPurchaseConstraintsLimit|null $limit limit
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groups** | [**\OpenAPI\Client\Model\CompatibleProductsGroupsDtoGroupsInner[]**](CompatibleProductsGroupsDtoGroupsInner.md) | List of groups for given type of compatible products. | [optional]
+**groups** | [**\robsonek\phpAllegroApi\Model\CompatibleProductsGroupsDtoGroupsInner[]**](CompatibleProductsGroupsDtoGroupsInner.md) | List of groups for given type of compatible products. | [optional]
 **count** | **int** | Number of returned elements. | [optional]
 **total_count** | **int** | Total number of available elements. | [optional]
 

@@ -1,4 +1,4 @@
-# OpenAPI\Client\OfferTranslationsApi
+# robsonek\phpAllegroApi\OfferTranslationsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -75,7 +75,7 @@ void (empty response body)
 ## `getOfferTranslationUsingGET()`
 
 ```php
-getOfferTranslationUsingGET($offer_id, $language): \OpenAPI\Client\Model\OfferTranslations
+getOfferTranslationUsingGET($offer_id, $language): \robsonek\phpAllegroApi\Model\OfferTranslations
 ```
 
 Get offer translations
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferTranslations**](../Model/OfferTranslations.md)
+[**\robsonek\phpAllegroApi\Model\OfferTranslations**](../Model/OfferTranslations.md)
 
 ### Authorization
 
@@ -152,10 +152,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTranslationsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTranslationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -163,7 +163,7 @@ $apiInstance = new OpenAPI\Client\Api\OfferTranslationsApi(
 );
 $language = en-US; // string | Language of the provided translation.
 $offer_id = 'offer_id_example'; // string | Offer identifier.
-$manual_translation_update_request = new \OpenAPI\Client\Model\ManualTranslationUpdateRequest(); // \OpenAPI\Client\Model\ManualTranslationUpdateRequest | Request with manual translation for offer, must contain at least one translated offer element (title or description).
+$manual_translation_update_request = new \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest(); // \robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest | Request with manual translation for offer, must contain at least one translated offer element (title or description).
 
 try {
     $apiInstance->updateOfferTranslationUsingPATCH($language, $offer_id, $manual_translation_update_request);
@@ -178,7 +178,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **language** | **string**| Language of the provided translation. | |
 | **offer_id** | **string**| Offer identifier. | |
-| **manual_translation_update_request** | [**\OpenAPI\Client\Model\ManualTranslationUpdateRequest**](../Model/ManualTranslationUpdateRequest.md)| Request with manual translation for offer, must contain at least one translated offer element (title or description). | |
+| **manual_translation_update_request** | [**\robsonek\phpAllegroApi\Model\ManualTranslationUpdateRequest**](../Model/ManualTranslationUpdateRequest.md)| Request with manual translation for offer, must contain at least one translated offer element (title or description). | |
 
 ### Return type
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferSellingMode Class Doc Comment
  *
  * @category Class
  * @description This section describes the selling format and prices.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\OpenAPI\Client\Model\SellingModeFormat',
-        'price' => '\OpenAPI\Client\Model\OfferPrice',
-        'fixed_price' => '\OpenAPI\Client\Model\OfferFixedPrice',
+        'format' => '\robsonek\phpAllegroApi\Model\SellingModeFormat',
+        'price' => '\robsonek\phpAllegroApi\Model\OfferPrice',
+        'fixed_price' => '\robsonek\phpAllegroApi\Model\OfferFixedPrice',
         'popularity' => 'int',
         'popularity_range' => 'string',
         'bid_count' => 'int'
@@ -336,7 +336,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets format
      *
-     * @return \OpenAPI\Client\Model\SellingModeFormat|null
+     * @return \robsonek\phpAllegroApi\Model\SellingModeFormat|null
      */
     public function getFormat()
     {
@@ -346,7 +346,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets format
      *
-     * @param \OpenAPI\Client\Model\SellingModeFormat|null $format format
+     * @param \robsonek\phpAllegroApi\Model\SellingModeFormat|null $format format
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\OfferPrice|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPrice|null
      */
     public function getPrice()
     {
@@ -373,7 +373,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\OfferPrice|null $price price
+     * @param \robsonek\phpAllegroApi\Model\OfferPrice|null $price price
      *
      * @return self
      */
@@ -390,7 +390,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fixed_price
      *
-     * @return \OpenAPI\Client\Model\OfferFixedPrice|null
+     * @return \robsonek\phpAllegroApi\Model\OfferFixedPrice|null
      */
     public function getFixedPrice()
     {
@@ -400,7 +400,7 @@ class OfferSellingMode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fixed_price
      *
-     * @param \OpenAPI\Client\Model\OfferFixedPrice|null $fixed_price fixed_price
+     * @param \robsonek\phpAllegroApi\Model\OfferFixedPrice|null $fixed_price fixed_price
      *
      * @return self
      */

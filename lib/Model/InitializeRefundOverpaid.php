@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * InitializeRefundOverpaid Class Doc Comment
  *
  * @category Class
  * @description Payment refund for overpaid.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class InitializeRefundOverpaid implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\RefundOverpaidValue'
+        'value' => '\robsonek\phpAllegroApi\Model\RefundOverpaidValue'
     ];
 
     /**
@@ -293,7 +293,7 @@ class InitializeRefundOverpaid implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\RefundOverpaidValue|null
+     * @return \robsonek\phpAllegroApi\Model\RefundOverpaidValue|null
      */
     public function getValue()
     {
@@ -303,7 +303,7 @@ class InitializeRefundOverpaid implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\RefundOverpaidValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\RefundOverpaidValue|null $value value
      *
      * @return self
      */

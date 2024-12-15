@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * LineItemVoucher Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class LineItemVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
         'type' => 'string',
         'status' => 'string',
         'external_transaction_id' => 'string',
-        'value' => '\OpenAPI\Client\Model\LineItemVoucherValue'
+        'value' => '\robsonek\phpAllegroApi\Model\LineItemVoucherValue'
     ];
 
     /**
@@ -497,7 +497,7 @@ class LineItemVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\LineItemVoucherValue|null
+     * @return \robsonek\phpAllegroApi\Model\LineItemVoucherValue|null
      */
     public function getValue()
     {
@@ -507,7 +507,7 @@ class LineItemVoucher implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\LineItemVoucherValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\LineItemVoucherValue|null $value value
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ChangePrice Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ChangePrice implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'input' => '\OpenAPI\Client\Model\ChangePriceInput',
-        'output' => '\OpenAPI\Client\Model\CommandOutput'
+        'input' => '\robsonek\phpAllegroApi\Model\ChangePriceInput',
+        'output' => '\robsonek\phpAllegroApi\Model\CommandOutput'
     ];
 
     /**
@@ -336,7 +336,7 @@ class ChangePrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\ChangePriceInput
+     * @return \robsonek\phpAllegroApi\Model\ChangePriceInput
      */
     public function getInput()
     {
@@ -346,7 +346,7 @@ class ChangePrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\ChangePriceInput $input input
+     * @param \robsonek\phpAllegroApi\Model\ChangePriceInput $input input
      *
      * @return self
      */
@@ -363,7 +363,7 @@ class ChangePrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets output
      *
-     * @return \OpenAPI\Client\Model\CommandOutput|null
+     * @return \robsonek\phpAllegroApi\Model\CommandOutput|null
      */
     public function getOutput()
     {
@@ -373,7 +373,7 @@ class ChangePrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets output
      *
-     * @param \OpenAPI\Client\Model\CommandOutput|null $output output
+     * @param \robsonek\phpAllegroApi\Model\CommandOutput|null $output output
      *
      * @return self
      */

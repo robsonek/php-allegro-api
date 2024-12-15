@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderLineItem Class Doc Comment
  *
  * @category Class
  * @description Order item
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'offer' => '\OpenAPI\Client\Model\OrderLineItemOfferReference',
+        'offer' => '\robsonek\phpAllegroApi\Model\OrderLineItemOfferReference',
         'quantity' => 'float',
-        'original_price' => '\OpenAPI\Client\Model\Price',
-        'price' => '\OpenAPI\Client\Model\Price',
+        'original_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
         'bought_at' => '\DateTime'
     ];
 
@@ -371,7 +371,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OrderLineItemOfferReference
+     * @return \robsonek\phpAllegroApi\Model\OrderLineItemOfferReference
      */
     public function getOffer()
     {
@@ -381,7 +381,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OrderLineItemOfferReference $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OrderLineItemOfferReference $offer offer
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets original_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getOriginalPrice()
     {
@@ -440,7 +440,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets original_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $original_price original_price
+     * @param \robsonek\phpAllegroApi\Model\Price|null $original_price original_price
      *
      * @return self
      */
@@ -457,7 +457,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getPrice()
     {
@@ -467,7 +467,7 @@ class OrderLineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price $price price
+     * @param \robsonek\phpAllegroApi\Model\Price $price price
      *
      * @return self
      */

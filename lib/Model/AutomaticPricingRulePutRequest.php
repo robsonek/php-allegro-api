@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingRulePutRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AutomaticPricingRulePutRequest implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'configuration' => '\OpenAPI\Client\Model\AutomaticPricingRuleConfiguration'
+        'configuration' => '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfiguration'
     ];
 
     /**
@@ -340,7 +340,7 @@ class AutomaticPricingRulePutRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets configuration
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleConfiguration
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfiguration
      */
     public function getConfiguration()
     {
@@ -350,7 +350,7 @@ class AutomaticPricingRulePutRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets configuration
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingRuleConfiguration $configuration configuration
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfiguration $configuration configuration
      *
      * @return self
      */

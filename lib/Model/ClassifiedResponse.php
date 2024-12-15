@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ClassifiedResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ClassifiedResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base_package' => '\OpenAPI\Client\Model\ClassifiedPackage',
-        'extra_packages' => '\OpenAPI\Client\Model\ClassifiedExtraPackage[]'
+        'base_package' => '\robsonek\phpAllegroApi\Model\ClassifiedPackage',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[]'
     ];
 
     /**
@@ -305,7 +305,7 @@ class ClassifiedResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\ClassifiedPackage
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedPackage
      */
     public function getBasePackage()
     {
@@ -315,7 +315,7 @@ class ClassifiedResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\ClassifiedPackage $base_package base_package
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedPackage $base_package base_package
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class ClassifiedResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\ClassifiedExtraPackage[]
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[]
      */
     public function getExtraPackages()
     {
@@ -342,7 +342,7 @@ class ClassifiedResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\ClassifiedExtraPackage[] $extra_packages extra_packages
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedExtraPackage[] $extra_packages extra_packages
      *
      * @return self
      */

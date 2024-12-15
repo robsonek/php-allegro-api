@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeSubsidyPrices Class Doc Comment
  *
  * @category Class
  * @description Prices that relate to the price reconciliation.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class BadgeSubsidyPrices implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'target_price' => '\OpenAPI\Client\Model\BadgeApplicationSubsidyTargetPrice',
-        'seller_price' => '\OpenAPI\Client\Model\BadgeApplicationSubsidySellerPrice'
+        'target_price' => '\robsonek\phpAllegroApi\Model\BadgeApplicationSubsidyTargetPrice',
+        'seller_price' => '\robsonek\phpAllegroApi\Model\BadgeApplicationSubsidySellerPrice'
     ];
 
     /**
@@ -300,7 +300,7 @@ class BadgeSubsidyPrices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets target_price
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationSubsidyTargetPrice|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationSubsidyTargetPrice|null
      */
     public function getTargetPrice()
     {
@@ -310,7 +310,7 @@ class BadgeSubsidyPrices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets target_price
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationSubsidyTargetPrice|null $target_price target_price
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationSubsidyTargetPrice|null $target_price target_price
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class BadgeSubsidyPrices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets seller_price
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationSubsidySellerPrice|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationSubsidySellerPrice|null
      */
     public function getSellerPrice()
     {
@@ -337,7 +337,7 @@ class BadgeSubsidyPrices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets seller_price
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationSubsidySellerPrice|null $seller_price seller_price
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationSubsidySellerPrice|null $seller_price seller_price
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fee** | [**\OpenAPI\Client\Model\Fee**](Fee.md) |  |
+**fee** | [**\robsonek\phpAllegroApi\Model\Fee**](Fee.md) |  |
 **name** | **string** |  |
 **type** | **string** |  |
 **cycle_duration** | **string** | Pricing cycle duration, ISO 8601 duration format |

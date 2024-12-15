@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelItemDetailsWithWaybillDimensions Class Doc Comment
  *
  * @category Class
  * @description Parcel dimensions.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'height' => '\OpenAPI\Client\Model\DimensionItem',
-        'width' => '\OpenAPI\Client\Model\DimensionItem',
-        'depth' => '\OpenAPI\Client\Model\DimensionItem'
+        'height' => '\robsonek\phpAllegroApi\Model\DimensionItem',
+        'width' => '\robsonek\phpAllegroApi\Model\DimensionItem',
+        'depth' => '\robsonek\phpAllegroApi\Model\DimensionItem'
     ];
 
     /**
@@ -307,7 +307,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Gets height
      *
-     * @return \OpenAPI\Client\Model\DimensionItem|null
+     * @return \robsonek\phpAllegroApi\Model\DimensionItem|null
      */
     public function getHeight()
     {
@@ -317,7 +317,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Sets height
      *
-     * @param \OpenAPI\Client\Model\DimensionItem|null $height height
+     * @param \robsonek\phpAllegroApi\Model\DimensionItem|null $height height
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Gets width
      *
-     * @return \OpenAPI\Client\Model\DimensionItem|null
+     * @return \robsonek\phpAllegroApi\Model\DimensionItem|null
      */
     public function getWidth()
     {
@@ -344,7 +344,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Sets width
      *
-     * @param \OpenAPI\Client\Model\DimensionItem|null $width width
+     * @param \robsonek\phpAllegroApi\Model\DimensionItem|null $width width
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Gets depth
      *
-     * @return \OpenAPI\Client\Model\DimensionItem|null
+     * @return \robsonek\phpAllegroApi\Model\DimensionItem|null
      */
     public function getDepth()
     {
@@ -371,7 +371,7 @@ class ParcelItemDetailsWithWaybillDimensions implements ModelInterface, ArrayAcc
     /**
      * Sets depth
      *
-     * @param \OpenAPI\Client\Model\DimensionItem|null $depth depth
+     * @param \robsonek\phpAllegroApi\Model\DimensionItem|null $depth depth
      *
      * @return self
      */

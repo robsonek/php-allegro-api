@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSetElementSafetyInformationWrapper Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ProductSetElementSafetyInformationWrapper implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'safety_information' => '\OpenAPI\Client\Model\ProductSetElementSafetyInformation'
+        'safety_information' => '\robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ProductSetElementSafetyInformationWrapper implements ModelInterface, Array
     /**
      * Gets safety_information
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null
      */
     public function getSafetyInformation()
     {
@@ -302,7 +302,7 @@ class ProductSetElementSafetyInformationWrapper implements ModelInterface, Array
     /**
      * Sets safety_information
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
      *
      * @return self
      */

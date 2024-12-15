@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferEventExternalOfferForPriceChanges Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferEventExternalOfferForPriceChanges implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'marketplaces' => '\OpenAPI\Client\Model\OfferMarketplacesPriceChanges[]'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'marketplaces' => '\robsonek\phpAllegroApi\Model\OfferMarketplacesPriceChanges[]'
     ];
 
     /**
@@ -339,7 +339,7 @@ class OfferEventExternalOfferForPriceChanges implements ModelInterface, ArrayAcc
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId
+     * @return \robsonek\phpAllegroApi\Model\ExternalId
      */
     public function getExternal()
     {
@@ -349,7 +349,7 @@ class OfferEventExternalOfferForPriceChanges implements ModelInterface, ArrayAcc
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId $external external
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OfferEventExternalOfferForPriceChanges implements ModelInterface, ArrayAcc
     /**
      * Gets marketplaces
      *
-     * @return \OpenAPI\Client\Model\OfferMarketplacesPriceChanges[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferMarketplacesPriceChanges[]|null
      */
     public function getMarketplaces()
     {
@@ -376,7 +376,7 @@ class OfferEventExternalOfferForPriceChanges implements ModelInterface, ArrayAcc
     /**
      * Sets marketplaces
      *
-     * @param \OpenAPI\Client\Model\OfferMarketplacesPriceChanges[]|null $marketplaces marketplaces
+     * @param \robsonek\phpAllegroApi\Model\OfferMarketplacesPriceChanges[]|null $marketplaces marketplaces
      *
      * @return self
      */

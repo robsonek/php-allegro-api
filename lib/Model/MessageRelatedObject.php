@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MessageRelatedObject Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class MessageRelatedObject implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\MessageOffer',
-        'order' => '\OpenAPI\Client\Model\MessageOrder'
+        'offer' => '\robsonek\phpAllegroApi\Model\MessageOffer',
+        'order' => '\robsonek\phpAllegroApi\Model\MessageOrder'
     ];
 
     /**
@@ -299,7 +299,7 @@ class MessageRelatedObject implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\MessageOffer|null
+     * @return \robsonek\phpAllegroApi\Model\MessageOffer|null
      */
     public function getOffer()
     {
@@ -309,7 +309,7 @@ class MessageRelatedObject implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\MessageOffer|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\MessageOffer|null $offer offer
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class MessageRelatedObject implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\MessageOrder|null
+     * @return \robsonek\phpAllegroApi\Model\MessageOrder|null
      */
     public function getOrder()
     {
@@ -343,7 +343,7 @@ class MessageRelatedObject implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\MessageOrder|null $order order
+     * @param \robsonek\phpAllegroApi\Model\MessageOrder|null $order order
      *
      * @return self
      */

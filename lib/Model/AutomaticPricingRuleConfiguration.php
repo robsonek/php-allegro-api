@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingRuleConfiguration Class Doc Comment
  *
  * @category Class
  * @description Rule configuration. This field is optional.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AutomaticPricingRuleConfiguration implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'change_by_percentage' => '\OpenAPI\Client\Model\AutomaticPricingRuleConfigurationChangeByPercentage'
+        'change_by_percentage' => '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfigurationChangeByPercentage'
     ];
 
     /**
@@ -293,7 +293,7 @@ class AutomaticPricingRuleConfiguration implements ModelInterface, ArrayAccess, 
     /**
      * Gets change_by_percentage
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleConfigurationChangeByPercentage|null
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfigurationChangeByPercentage|null
      */
     public function getChangeByPercentage()
     {
@@ -303,7 +303,7 @@ class AutomaticPricingRuleConfiguration implements ModelInterface, ArrayAccess, 
     /**
      * Sets change_by_percentage
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingRuleConfigurationChangeByPercentage|null $change_by_percentage change_by_percentage
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingRuleConfigurationChangeByPercentage|null $change_by_percentage change_by_percentage
      *
      * @return self
      */

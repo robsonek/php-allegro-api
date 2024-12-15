@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductChangeProposalDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'name' => '\OpenAPI\Client\Model\ProductNameProposal',
-        'category' => '\OpenAPI\Client\Model\ProductCategoryProposal',
+        'name' => '\robsonek\phpAllegroApi\Model\ProductNameProposal',
+        'category' => '\robsonek\phpAllegroApi\Model\ProductCategoryProposal',
         'note' => 'string',
-        'images' => '\OpenAPI\Client\Model\ProductImageProposal[]',
-        'parameters' => '\OpenAPI\Client\Model\ProductParameterProposal[]',
+        'images' => '\robsonek\phpAllegroApi\Model\ProductImageProposal[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ProductParameterProposal[]',
         'notify_via_email_after_verification' => 'bool',
         'language' => 'string'
     ];
@@ -372,7 +372,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets name
      *
-     * @return \OpenAPI\Client\Model\ProductNameProposal|null
+     * @return \robsonek\phpAllegroApi\Model\ProductNameProposal|null
      */
     public function getName()
     {
@@ -382,7 +382,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets name
      *
-     * @param \OpenAPI\Client\Model\ProductNameProposal|null $name name
+     * @param \robsonek\phpAllegroApi\Model\ProductNameProposal|null $name name
      *
      * @return self
      */
@@ -399,7 +399,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ProductCategoryProposal|null
+     * @return \robsonek\phpAllegroApi\Model\ProductCategoryProposal|null
      */
     public function getCategory()
     {
@@ -409,7 +409,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ProductCategoryProposal|null $category category
+     * @param \robsonek\phpAllegroApi\Model\ProductCategoryProposal|null $category category
      *
      * @return self
      */
@@ -457,7 +457,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ProductImageProposal[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductImageProposal[]|null
      */
     public function getImages()
     {
@@ -467,7 +467,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ProductImageProposal[]|null $images List of proposed image change statuses.
+     * @param \robsonek\phpAllegroApi\Model\ProductImageProposal[]|null $images List of proposed image change statuses.
      *
      * @return self
      */
@@ -484,7 +484,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ProductParameterProposal[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductParameterProposal[]|null
      */
     public function getParameters()
     {
@@ -494,7 +494,7 @@ class ProductChangeProposalDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ProductParameterProposal[]|null $parameters List of proposed product parameter change statuses.
+     * @param \robsonek\phpAllegroApi\Model\ProductParameterProposal[]|null $parameters List of proposed product parameter change statuses.
      *
      * @return self
      */

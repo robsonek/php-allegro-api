@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormAddWaybillCreated Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class CheckoutFormAddWaybillCreated implements ModelInterface, ArrayAccess, \Jso
         'waybill' => 'string',
         'carrier_id' => 'string',
         'carrier_name' => 'string',
-        'line_items' => '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]',
+        'line_items' => '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]',
         'created_at' => 'string'
     ];
 
@@ -435,7 +435,7 @@ class CheckoutFormAddWaybillCreated implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets line_items
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]|null
      */
     public function getLineItems()
     {
@@ -445,7 +445,7 @@ class CheckoutFormAddWaybillCreated implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets line_items
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]|null $line_items List of order line items. They must be from the order specified in the path parameter. List cannot be empty.
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreatedLineItemsInner[]|null $line_items List of order line items. They must be from the order specified in the path parameter. List cannot be empty.
      *
      * @return self
      */

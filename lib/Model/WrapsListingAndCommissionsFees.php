@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * WrapsListingAndCommissionsFees Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class WrapsListingAndCommissionsFees implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'commissions' => '\OpenAPI\Client\Model\DescribesSuccessCommissionFee[]',
-        'quotes' => '\OpenAPI\Client\Model\DescribesListingFee[]'
+        'commissions' => '\robsonek\phpAllegroApi\Model\DescribesSuccessCommissionFee[]',
+        'quotes' => '\robsonek\phpAllegroApi\Model\DescribesListingFee[]'
     ];
 
     /**
@@ -305,7 +305,7 @@ class WrapsListingAndCommissionsFees implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets commissions
      *
-     * @return \OpenAPI\Client\Model\DescribesSuccessCommissionFee[]
+     * @return \robsonek\phpAllegroApi\Model\DescribesSuccessCommissionFee[]
      */
     public function getCommissions()
     {
@@ -315,7 +315,7 @@ class WrapsListingAndCommissionsFees implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets commissions
      *
-     * @param \OpenAPI\Client\Model\DescribesSuccessCommissionFee[] $commissions commissions
+     * @param \robsonek\phpAllegroApi\Model\DescribesSuccessCommissionFee[] $commissions commissions
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class WrapsListingAndCommissionsFees implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets quotes
      *
-     * @return \OpenAPI\Client\Model\DescribesListingFee[]
+     * @return \robsonek\phpAllegroApi\Model\DescribesListingFee[]
      */
     public function getQuotes()
     {
@@ -342,7 +342,7 @@ class WrapsListingAndCommissionsFees implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets quotes
      *
-     * @param \OpenAPI\Client\Model\DescribesListingFee[] $quotes quotes
+     * @param \robsonek\phpAllegroApi\Model\DescribesListingFee[] $quotes quotes
      *
      * @return self
      */

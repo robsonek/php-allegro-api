@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfShippingRatestUsingGET200ResponseShippingRatesInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetListOfShippingRatestUsingGET200ResponseShippingRatesInner implements Mo
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'marketplaces' => '\OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]'
+        'marketplaces' => '\robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]'
     ];
 
     /**
@@ -360,7 +360,7 @@ class GetListOfShippingRatestUsingGET200ResponseShippingRatesInner implements Mo
     /**
      * Gets marketplaces
      *
-     * @return \OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]|null
      */
     public function getMarketplaces()
     {
@@ -370,7 +370,7 @@ class GetListOfShippingRatestUsingGET200ResponseShippingRatesInner implements Mo
     /**
      * Sets marketplaces
      *
-     * @param \OpenAPI\Client\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]|null $marketplaces List of marketplace ids where these shipping rates are qualified for. The list is calculated based on the delivery methods added to the shipping rates.
+     * @param \robsonek\phpAllegroApi\Model\GetListOfShippingRatestUsingGET200ResponseShippingRatesInnerMarketplacesInner[]|null $marketplaces List of marketplace ids where these shipping rates are qualified for. The list is calculated based on the delivery methods added to the shipping rates.
      *
      * @return self
      */

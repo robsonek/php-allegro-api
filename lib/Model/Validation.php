@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Validation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class Validation implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\OpenAPI\Client\Model\ValidationError[]',
-        'warnings' => '\OpenAPI\Client\Model\ValidationWarning[]',
+        'errors' => '\robsonek\phpAllegroApi\Model\ValidationError[]',
+        'warnings' => '\robsonek\phpAllegroApi\Model\ValidationWarning[]',
         'validated_at' => '\DateTime'
     ];
 
@@ -309,7 +309,7 @@ class Validation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\ValidationError[]
+     * @return \robsonek\phpAllegroApi\Model\ValidationError[]
      */
     public function getErrors()
     {
@@ -319,7 +319,7 @@ class Validation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\ValidationError[] $errors errors
+     * @param \robsonek\phpAllegroApi\Model\ValidationError[] $errors errors
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class Validation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \OpenAPI\Client\Model\ValidationWarning[]|null
+     * @return \robsonek\phpAllegroApi\Model\ValidationWarning[]|null
      */
     public function getWarnings()
     {
@@ -346,7 +346,7 @@ class Validation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \OpenAPI\Client\Model\ValidationWarning[]|null $warnings warnings
+     * @param \robsonek\phpAllegroApi\Model\ValidationWarning[]|null $warnings warnings
      *
      * @return self
      */

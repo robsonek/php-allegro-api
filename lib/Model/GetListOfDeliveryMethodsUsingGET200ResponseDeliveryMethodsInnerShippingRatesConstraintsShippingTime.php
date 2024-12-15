@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime Class Doc Comment
  *
  * @category Class
  * @description Rules for the shipping time.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
       * @var string[]
       */
     protected static $openAPITypes = [
-        'default' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault',
+        'default' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault',
         'customizable' => 'bool'
     ];
 
@@ -300,7 +300,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets default
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault|null
      */
     public function getDefault()
     {
@@ -310,7 +310,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets default
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault|null $default default
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault|null $default default
      *
      * @return self
      */

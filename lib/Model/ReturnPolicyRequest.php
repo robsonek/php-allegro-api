@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ReturnPolicyRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'availability' => '\OpenAPI\Client\Model\ReturnPolicyAvailability',
+        'availability' => '\robsonek\phpAllegroApi\Model\ReturnPolicyAvailability',
         'withdrawal_period' => 'string',
-        'return_cost' => '\OpenAPI\Client\Model\ReturnPolicyReturnCost',
-        'address' => '\OpenAPI\Client\Model\ReturnPolicyAddress',
-        'contact' => '\OpenAPI\Client\Model\ReturnPolicyContact',
-        'options' => '\OpenAPI\Client\Model\ReturnPolicyOptions'
+        'return_cost' => '\robsonek\phpAllegroApi\Model\ReturnPolicyReturnCost',
+        'address' => '\robsonek\phpAllegroApi\Model\ReturnPolicyAddress',
+        'contact' => '\robsonek\phpAllegroApi\Model\ReturnPolicyContact',
+        'options' => '\robsonek\phpAllegroApi\Model\ReturnPolicyOptions'
     ];
 
     /**
@@ -384,7 +384,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets availability
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyAvailability
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyAvailability
      */
     public function getAvailability()
     {
@@ -394,7 +394,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets availability
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyAvailability $availability availability
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyAvailability $availability availability
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets return_cost
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyReturnCost
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyReturnCost
      */
     public function getReturnCost()
     {
@@ -448,7 +448,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets return_cost
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyReturnCost $return_cost return_cost
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyReturnCost $return_cost return_cost
      *
      * @return self
      */
@@ -465,7 +465,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyAddress
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyAddress
      */
     public function getAddress()
     {
@@ -475,7 +475,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyAddress $address address
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyAddress $address address
      *
      * @return self
      */
@@ -492,7 +492,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets contact
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyContact|null
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyContact|null
      */
     public function getContact()
     {
@@ -502,7 +502,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets contact
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyContact|null $contact contact
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyContact|null $contact contact
      *
      * @return self
      */
@@ -519,7 +519,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyOptions
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyOptions
      */
     public function getOptions()
     {
@@ -529,7 +529,7 @@ class ReturnPolicyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyOptions $options options
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyOptions $options options
      *
      * @return self
      */

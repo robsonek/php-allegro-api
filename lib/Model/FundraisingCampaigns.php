@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FundraisingCampaigns Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class FundraisingCampaigns implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'campaigns' => '\OpenAPI\Client\Model\FundraisingCampaign[]'
+        'campaigns' => '\robsonek\phpAllegroApi\Model\FundraisingCampaign[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class FundraisingCampaigns implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets campaigns
      *
-     * @return \OpenAPI\Client\Model\FundraisingCampaign[]|null
+     * @return \robsonek\phpAllegroApi\Model\FundraisingCampaign[]|null
      */
     public function getCampaigns()
     {
@@ -302,7 +302,7 @@ class FundraisingCampaigns implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets campaigns
      *
-     * @param \OpenAPI\Client\Model\FundraisingCampaign[]|null $campaigns search results
+     * @param \robsonek\phpAllegroApi\Model\FundraisingCampaign[]|null $campaigns search results
      *
      * @return self
      */

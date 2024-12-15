@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CommandOutput Class Doc Comment
  *
  * @category Class
  * @description The output of the command.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CommandOutput implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\OpenAPI\Client\Model\ProcessingStatus',
-        'errors' => '\OpenAPI\Client\Model\Error[]'
+        'status' => '\robsonek\phpAllegroApi\Model\ProcessingStatus',
+        'errors' => '\robsonek\phpAllegroApi\Model\Error[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class CommandOutput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ProcessingStatus|null
+     * @return \robsonek\phpAllegroApi\Model\ProcessingStatus|null
      */
     public function getStatus()
     {
@@ -310,7 +310,7 @@ class CommandOutput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ProcessingStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\ProcessingStatus|null $status status
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class CommandOutput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error[]|null
+     * @return \robsonek\phpAllegroApi\Model\Error[]|null
      */
     public function getErrors()
     {
@@ -337,7 +337,7 @@ class CommandOutput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $errors errors
+     * @param \robsonek\phpAllegroApi\Model\Error[]|null $errors errors
      *
      * @return self
      */

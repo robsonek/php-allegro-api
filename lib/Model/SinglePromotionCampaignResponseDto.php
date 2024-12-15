@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SinglePromotionCampaignResponseDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SinglePromotionCampaignResponseDto implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'campaign' => '\OpenAPI\Client\Model\CampaignResponseDto',
-        'promotion' => '\OpenAPI\Client\Model\PromotionResponseDto',
+        'campaign' => '\robsonek\phpAllegroApi\Model\CampaignResponseDto',
+        'promotion' => '\robsonek\phpAllegroApi\Model\PromotionResponseDto',
         'status' => 'string'
     ];
 
@@ -341,7 +341,7 @@ class SinglePromotionCampaignResponseDto implements ModelInterface, ArrayAccess,
     /**
      * Gets campaign
      *
-     * @return \OpenAPI\Client\Model\CampaignResponseDto
+     * @return \robsonek\phpAllegroApi\Model\CampaignResponseDto
      */
     public function getCampaign()
     {
@@ -351,7 +351,7 @@ class SinglePromotionCampaignResponseDto implements ModelInterface, ArrayAccess,
     /**
      * Sets campaign
      *
-     * @param \OpenAPI\Client\Model\CampaignResponseDto $campaign campaign
+     * @param \robsonek\phpAllegroApi\Model\CampaignResponseDto $campaign campaign
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class SinglePromotionCampaignResponseDto implements ModelInterface, ArrayAccess,
     /**
      * Gets promotion
      *
-     * @return \OpenAPI\Client\Model\PromotionResponseDto
+     * @return \robsonek\phpAllegroApi\Model\PromotionResponseDto
      */
     public function getPromotion()
     {
@@ -378,7 +378,7 @@ class SinglePromotionCampaignResponseDto implements ModelInterface, ArrayAccess,
     /**
      * Sets promotion
      *
-     * @param \OpenAPI\Client\Model\PromotionResponseDto $promotion promotion
+     * @param \robsonek\phpAllegroApi\Model\PromotionResponseDto $promotion promotion
      *
      * @return self
      */

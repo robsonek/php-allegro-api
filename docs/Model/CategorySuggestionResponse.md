@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**matching_categories** | [**\OpenAPI\Client\Model\CategorySuggestionCategoryNode[]**](CategorySuggestionCategoryNode.md) | List of categories matching with given phrase. |
+**matching_categories** | [**\robsonek\phpAllegroApi\Model\CategorySuggestionCategoryNode[]**](CategorySuggestionCategoryNode.md) | List of categories matching with given phrase. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

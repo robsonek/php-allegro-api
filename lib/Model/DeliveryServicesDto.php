@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeliveryServicesDto Class Doc Comment
  *
  * @category Class
  * @description List of all available delivery services for merchant. List will be unique for each merchant.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class DeliveryServicesDto implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'services' => '\OpenAPI\Client\Model\DeliveryServiceDto[]'
+        'services' => '\robsonek\phpAllegroApi\Model\DeliveryServiceDto[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class DeliveryServicesDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets services
      *
-     * @return \OpenAPI\Client\Model\DeliveryServiceDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\DeliveryServiceDto[]|null
      */
     public function getServices()
     {
@@ -303,7 +303,7 @@ class DeliveryServicesDto implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets services
      *
-     * @param \OpenAPI\Client\Model\DeliveryServiceDto[]|null $services services
+     * @param \robsonek\phpAllegroApi\Model\DeliveryServiceDto[]|null $services services
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CreateLabelsSuccessfulCommandOutput Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class CreateLabelsSuccessfulCommandOutput extends CreateLabelsCommandOutput
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'labels' => '\OpenAPI\Client\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels'
+        'labels' => '\robsonek\phpAllegroApi\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels'
     ];
 
     /**
@@ -323,7 +323,7 @@ class CreateLabelsSuccessfulCommandOutput extends CreateLabelsCommandOutput
     /**
      * Gets labels
      *
-     * @return \OpenAPI\Client\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels
+     * @return \robsonek\phpAllegroApi\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels
      */
     public function getLabels()
     {
@@ -333,7 +333,7 @@ class CreateLabelsSuccessfulCommandOutput extends CreateLabelsCommandOutput
     /**
      * Sets labels
      *
-     * @param \OpenAPI\Client\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels $labels labels
+     * @param \robsonek\phpAllegroApi\Model\CreateLabelsSuccessfulCommandOutputAllOfLabels $labels labels
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferManagementApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -173,12 +173,12 @@ class OfferManagementApi
      * Batch offer publish / unpublish
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changePublicationStatusUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function changePublicationStatusUsingPUT($command_id, $publication_change_command_dto, string $contentType = self::contentTypes['changePublicationStatusUsingPUT'][0])
     {
@@ -192,12 +192,12 @@ class OfferManagementApi
      * Batch offer publish / unpublish
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changePublicationStatusUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function changePublicationStatusUsingPUTWithHttpInfo($command_id, $publication_change_command_dto, string $contentType = self::contentTypes['changePublicationStatusUsingPUT'][0])
     {
@@ -228,11 +228,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -250,7 +250,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -269,7 +269,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -302,7 +302,7 @@ class OfferManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -318,7 +318,7 @@ class OfferManagementApi
      * Batch offer publish / unpublish
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changePublicationStatusUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -340,7 +340,7 @@ class OfferManagementApi
      * Batch offer publish / unpublish
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changePublicationStatusUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -348,7 +348,7 @@ class OfferManagementApi
      */
     public function changePublicationStatusUsingPUTAsyncWithHttpInfo($command_id, $publication_change_command_dto, string $contentType = self::contentTypes['changePublicationStatusUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->changePublicationStatusUsingPUTRequest($command_id, $publication_change_command_dto, $contentType);
 
         return $this->client
@@ -391,7 +391,7 @@ class OfferManagementApi
      * Create request for operation 'changePublicationStatusUsingPUT'
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\PublicationChangeCommandDto $publication_change_command_dto publicationChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['changePublicationStatusUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -505,12 +505,12 @@ class OfferManagementApi
      *
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $command_id The unique command id generated by you. (required)
-     * @param  \OpenAPI\Client\Model\ChangePriceWithoutOutput $change_price_without_output change_price_without_output (required)
+     * @param  \robsonek\phpAllegroApi\Model\ChangePriceWithoutOutput $change_price_without_output change_price_without_output (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createChangePriceCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ChangePrice|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ChangePrice|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function createChangePriceCommandUsingPUT($offer_id, $command_id, $change_price_without_output, string $contentType = self::contentTypes['createChangePriceCommandUsingPUT'][0])
     {
@@ -525,12 +525,12 @@ class OfferManagementApi
      *
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $command_id The unique command id generated by you. (required)
-     * @param  \OpenAPI\Client\Model\ChangePriceWithoutOutput $change_price_without_output (required)
+     * @param  \robsonek\phpAllegroApi\Model\ChangePriceWithoutOutput $change_price_without_output (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createChangePriceCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ChangePrice|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ChangePrice|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function createChangePriceCommandUsingPUTWithHttpInfo($offer_id, $command_id, $change_price_without_output, string $contentType = self::contentTypes['createChangePriceCommandUsingPUT'][0])
     {
@@ -561,11 +561,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ChangePrice' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ChangePrice' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ChangePrice' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ChangePrice' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -583,16 +583,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ChangePrice', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ChangePrice', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -610,7 +610,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -629,7 +629,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ChangePrice';
+            $returnType = '\robsonek\phpAllegroApi\Model\ChangePrice';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -662,7 +662,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ChangePrice',
+                        '\robsonek\phpAllegroApi\Model\ChangePrice',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -670,7 +670,7 @@ class OfferManagementApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -687,7 +687,7 @@ class OfferManagementApi
      *
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $command_id The unique command id generated by you. (required)
-     * @param  \OpenAPI\Client\Model\ChangePriceWithoutOutput $change_price_without_output (required)
+     * @param  \robsonek\phpAllegroApi\Model\ChangePriceWithoutOutput $change_price_without_output (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createChangePriceCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -710,7 +710,7 @@ class OfferManagementApi
      *
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $command_id The unique command id generated by you. (required)
-     * @param  \OpenAPI\Client\Model\ChangePriceWithoutOutput $change_price_without_output (required)
+     * @param  \robsonek\phpAllegroApi\Model\ChangePriceWithoutOutput $change_price_without_output (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createChangePriceCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -718,7 +718,7 @@ class OfferManagementApi
      */
     public function createChangePriceCommandUsingPUTAsyncWithHttpInfo($offer_id, $command_id, $change_price_without_output, string $contentType = self::contentTypes['createChangePriceCommandUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ChangePrice';
+        $returnType = '\robsonek\phpAllegroApi\Model\ChangePrice';
         $request = $this->createChangePriceCommandUsingPUTRequest($offer_id, $command_id, $change_price_without_output, $contentType);
 
         return $this->client
@@ -762,7 +762,7 @@ class OfferManagementApi
      *
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $command_id The unique command id generated by you. (required)
-     * @param  \OpenAPI\Client\Model\ChangePriceWithoutOutput $change_price_without_output (required)
+     * @param  \robsonek\phpAllegroApi\Model\ChangePriceWithoutOutput $change_price_without_output (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createChangePriceCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -889,12 +889,12 @@ class OfferManagementApi
      *
      * Create offer based on product
      *
-     * @param  \OpenAPI\Client\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 sale_product_offer_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 sale_product_offer_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductOffers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\CreateProductOffers422Response
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\CreateProductOffers422Response
      */
     public function createProductOffers($sale_product_offer_request_v1, string $contentType = self::contentTypes['createProductOffers'][0])
     {
@@ -907,12 +907,12 @@ class OfferManagementApi
      *
      * Create offer based on product
      *
-     * @param  \OpenAPI\Client\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductOffers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\CreateProductOffers422Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\CreateProductOffers422Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createProductOffersWithHttpInfo($sale_product_offer_request_v1, string $contentType = self::contentTypes['createProductOffers'][0])
     {
@@ -943,11 +943,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -965,16 +965,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductOfferResponseV1', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 202:
-                    if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -992,16 +992,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductOfferResponseV1', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1019,16 +1019,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1046,16 +1046,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1073,16 +1073,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\CreateProductOffers422Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CreateProductOffers422Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateProductOffers422Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CreateProductOffers422Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1100,7 +1100,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateProductOffers422Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CreateProductOffers422Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1119,7 +1119,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SaleProductOfferResponseV1';
+            $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1152,7 +1152,7 @@ class OfferManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductOfferResponseV1',
+                        '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1160,7 +1160,7 @@ class OfferManagementApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductOfferResponseV1',
+                        '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1168,7 +1168,7 @@ class OfferManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1176,7 +1176,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1184,7 +1184,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1192,7 +1192,7 @@ class OfferManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateProductOffers422Response',
+                        '\robsonek\phpAllegroApi\Model\CreateProductOffers422Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1207,7 +1207,7 @@ class OfferManagementApi
      *
      * Create offer based on product
      *
-     * @param  \OpenAPI\Client\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1228,7 +1228,7 @@ class OfferManagementApi
      *
      * Create offer based on product
      *
-     * @param  \OpenAPI\Client\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1236,7 +1236,7 @@ class OfferManagementApi
      */
     public function createProductOffersAsyncWithHttpInfo($sale_product_offer_request_v1, string $contentType = self::contentTypes['createProductOffers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SaleProductOfferResponseV1';
+        $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1';
         $request = $this->createProductOffersRequest($sale_product_offer_request_v1, $contentType);
 
         return $this->client
@@ -1278,7 +1278,7 @@ class OfferManagementApi
     /**
      * Create request for operation 'createProductOffers'
      *
-     * @param  \OpenAPI\Client\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferRequestV1 $sale_product_offer_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1378,7 +1378,7 @@ class OfferManagementApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteOfferUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1395,7 +1395,7 @@ class OfferManagementApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteOfferUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1597,12 +1597,12 @@ class OfferManagementApi
      * Edit an offer
      *
      * @param  string $offer_id The offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 sale_product_offer_patch_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 sale_product_offer_patch_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProductOffers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\EditProductOffers422Response
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\EditProductOffers422Response
      */
     public function editProductOffers($offer_id, $sale_product_offer_patch_request_v1, string $contentType = self::contentTypes['editProductOffers'][0])
     {
@@ -1616,12 +1616,12 @@ class OfferManagementApi
      * Edit an offer
      *
      * @param  string $offer_id The offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProductOffers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\SaleProductOfferResponseV1|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\EditProductOffers422Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\EditProductOffers422Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function editProductOffersWithHttpInfo($offer_id, $sale_product_offer_patch_request_v1, string $contentType = self::contentTypes['editProductOffers'][0])
     {
@@ -1652,11 +1652,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1674,16 +1674,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductOfferResponseV1', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 202:
-                    if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductOfferResponseV1' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1701,16 +1701,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductOfferResponseV1', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1728,16 +1728,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1755,16 +1755,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1782,16 +1782,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1809,16 +1809,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1836,16 +1836,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\EditProductOffers422Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\EditProductOffers422Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EditProductOffers422Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\EditProductOffers422Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1863,7 +1863,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EditProductOffers422Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\EditProductOffers422Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1882,7 +1882,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SaleProductOfferResponseV1';
+            $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1915,7 +1915,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductOfferResponseV1',
+                        '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1923,7 +1923,7 @@ class OfferManagementApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductOfferResponseV1',
+                        '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1931,7 +1931,7 @@ class OfferManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1939,7 +1939,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1947,7 +1947,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1955,7 +1955,7 @@ class OfferManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1963,7 +1963,7 @@ class OfferManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1971,7 +1971,7 @@ class OfferManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EditProductOffers422Response',
+                        '\robsonek\phpAllegroApi\Model\EditProductOffers422Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1987,7 +1987,7 @@ class OfferManagementApi
      * Edit an offer
      *
      * @param  string $offer_id The offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2009,7 +2009,7 @@ class OfferManagementApi
      * Edit an offer
      *
      * @param  string $offer_id The offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2017,7 +2017,7 @@ class OfferManagementApi
      */
     public function editProductOffersAsyncWithHttpInfo($offer_id, $sale_product_offer_patch_request_v1, string $contentType = self::contentTypes['editProductOffers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SaleProductOfferResponseV1';
+        $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1';
         $request = $this->editProductOffersRequest($offer_id, $sale_product_offer_patch_request_v1, $contentType);
 
         return $this->client
@@ -2060,7 +2060,7 @@ class OfferManagementApi
      * Create request for operation 'editProductOffers'
      *
      * @param  string $offer_id The offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
+     * @param  \robsonek\phpAllegroApi\Model\SaleProductOfferPatchRequestV1 $sale_product_offer_patch_request_v1 (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProductOffers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2174,9 +2174,9 @@ class OfferManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableOfferPromotionPackages'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AvailablePromotionPackages|\OpenAPI\Client\Model\AuthError
+     * @return \robsonek\phpAllegroApi\Model\AvailablePromotionPackages|\robsonek\phpAllegroApi\Model\AuthError
      */
     public function getAvailableOfferPromotionPackages(string $contentType = self::contentTypes['getAvailableOfferPromotionPackages'][0])
     {
@@ -2191,9 +2191,9 @@ class OfferManagementApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAvailableOfferPromotionPackages'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AvailablePromotionPackages|\OpenAPI\Client\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AvailablePromotionPackages|\robsonek\phpAllegroApi\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAvailableOfferPromotionPackagesWithHttpInfo(string $contentType = self::contentTypes['getAvailableOfferPromotionPackages'][0])
     {
@@ -2224,11 +2224,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AvailablePromotionPackages' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AvailablePromotionPackages' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AvailablePromotionPackages' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AvailablePromotionPackages' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2246,16 +2246,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AvailablePromotionPackages', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AvailablePromotionPackages', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2273,7 +2273,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2292,7 +2292,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AvailablePromotionPackages';
+            $returnType = '\robsonek\phpAllegroApi\Model\AvailablePromotionPackages';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2325,7 +2325,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AvailablePromotionPackages',
+                        '\robsonek\phpAllegroApi\Model\AvailablePromotionPackages',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2333,7 +2333,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2375,7 +2375,7 @@ class OfferManagementApi
      */
     public function getAvailableOfferPromotionPackagesAsyncWithHttpInfo(string $contentType = self::contentTypes['getAvailableOfferPromotionPackages'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AvailablePromotionPackages';
+        $returnType = '\robsonek\phpAllegroApi\Model\AvailablePromotionPackages';
         $request = $this->getAvailableOfferPromotionPackagesRequest($contentType);
 
         return $this->client
@@ -2506,9 +2506,9 @@ class OfferManagementApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOfferPromoOptionsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferPromoOptions|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptions|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getOfferPromoOptionsUsingGET($offer_id, string $contentType = self::contentTypes['getOfferPromoOptionsUsingGET'][0])
     {
@@ -2524,9 +2524,9 @@ class OfferManagementApi
      * @param  string $offer_id Offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOfferPromoOptionsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferPromoOptions|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferPromoOptions|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferPromoOptionsUsingGETWithHttpInfo($offer_id, string $contentType = self::contentTypes['getOfferPromoOptionsUsingGET'][0])
     {
@@ -2557,11 +2557,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferPromoOptions' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferPromoOptions' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferPromoOptions' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferPromoOptions' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2579,16 +2579,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferPromoOptions', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferPromoOptions', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2606,16 +2606,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2633,7 +2633,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2652,7 +2652,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferPromoOptions';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptions';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2685,7 +2685,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferPromoOptions',
+                        '\robsonek\phpAllegroApi\Model\OfferPromoOptions',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2693,7 +2693,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2701,7 +2701,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2745,7 +2745,7 @@ class OfferManagementApi
      */
     public function getOfferPromoOptionsUsingGETAsyncWithHttpInfo($offer_id, string $contentType = self::contentTypes['getOfferPromoOptionsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferPromoOptions';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptions';
         $request = $this->getOfferPromoOptionsUsingGETRequest($offer_id, $contentType);
 
         return $this->client
@@ -2891,9 +2891,9 @@ class OfferManagementApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOffersUnfilledParametersUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UnfilledParametersResponse
+     * @return \robsonek\phpAllegroApi\Model\UnfilledParametersResponse
      */
     public function getOffersUnfilledParametersUsingGET1($offer_id = null, $parameter_type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getOffersUnfilledParametersUsingGET1'][0])
     {
@@ -2912,9 +2912,9 @@ class OfferManagementApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOffersUnfilledParametersUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UnfilledParametersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\UnfilledParametersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOffersUnfilledParametersUsingGET1WithHttpInfo($offer_id = null, $parameter_type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getOffersUnfilledParametersUsingGET1'][0])
     {
@@ -2945,11 +2945,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UnfilledParametersResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\UnfilledParametersResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UnfilledParametersResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\UnfilledParametersResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2967,7 +2967,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UnfilledParametersResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\UnfilledParametersResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2986,7 +2986,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\UnfilledParametersResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\UnfilledParametersResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3019,7 +3019,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UnfilledParametersResponse',
+                        '\robsonek\phpAllegroApi\Model\UnfilledParametersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3069,7 +3069,7 @@ class OfferManagementApi
      */
     public function getOffersUnfilledParametersUsingGET1AsyncWithHttpInfo($offer_id = null, $parameter_type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getOffersUnfilledParametersUsingGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UnfilledParametersResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\UnfilledParametersResponse';
         $request = $this->getOffersUnfilledParametersUsingGET1Request($offer_id, $parameter_type, $offset, $limit, $contentType);
 
         return $this->client
@@ -3250,9 +3250,9 @@ class OfferManagementApi
      * @param  string $operation_id Operation identifier provided in location header of POST or PATCH request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProductOfferProcessingStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SaleProductOfferStatusResponse
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse
      */
     public function getProductOfferProcessingStatus($offer_id, $operation_id, string $contentType = self::contentTypes['getProductOfferProcessingStatus'][0])
     {
@@ -3269,9 +3269,9 @@ class OfferManagementApi
      * @param  string $operation_id Operation identifier provided in location header of POST or PATCH request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProductOfferProcessingStatus'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SaleProductOfferStatusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductOfferProcessingStatusWithHttpInfo($offer_id, $operation_id, string $contentType = self::contentTypes['getProductOfferProcessingStatus'][0])
     {
@@ -3302,11 +3302,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\SaleProductOfferStatusResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductOfferStatusResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3324,7 +3324,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductOfferStatusResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3343,7 +3343,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SaleProductOfferStatusResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3376,7 +3376,7 @@ class OfferManagementApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductOfferStatusResponse',
+                        '\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3422,7 +3422,7 @@ class OfferManagementApi
      */
     public function getProductOfferProcessingStatusAsyncWithHttpInfo($offer_id, $operation_id, string $contentType = self::contentTypes['getProductOfferProcessingStatus'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SaleProductOfferStatusResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponse';
         $request = $this->getProductOfferProcessingStatusRequest($offer_id, $operation_id, $contentType);
 
         return $this->client
@@ -3583,9 +3583,9 @@ class OfferManagementApi
      * @param  int $offset The offset of returned items. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoModificationCommandDetailedResultUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PromoModificationReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\PromoModificationReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getPromoModificationCommandDetailedResultUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPromoModificationCommandDetailedResultUsingGET'][0])
     {
@@ -3603,9 +3603,9 @@ class OfferManagementApi
      * @param  int $offset The offset of returned items. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoModificationCommandDetailedResultUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PromoModificationReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PromoModificationReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPromoModificationCommandDetailedResultUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPromoModificationCommandDetailedResultUsingGET'][0])
     {
@@ -3636,11 +3636,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PromoModificationReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PromoModificationReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PromoModificationReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PromoModificationReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3658,16 +3658,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PromoModificationReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PromoModificationReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3685,16 +3685,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3712,16 +3712,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3739,7 +3739,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3758,7 +3758,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PromoModificationReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\PromoModificationReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3791,7 +3791,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PromoModificationReport',
+                        '\robsonek\phpAllegroApi\Model\PromoModificationReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3799,7 +3799,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3807,7 +3807,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3815,7 +3815,7 @@ class OfferManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3863,7 +3863,7 @@ class OfferManagementApi
      */
     public function getPromoModificationCommandDetailedResultUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPromoModificationCommandDetailedResultUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PromoModificationReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\PromoModificationReport';
         $request = $this->getPromoModificationCommandDetailedResultUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -4037,9 +4037,9 @@ class OfferManagementApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoModificationCommandResultUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PromoGeneralReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\PromoGeneralReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getPromoModificationCommandResultUsingGET($command_id, string $contentType = self::contentTypes['getPromoModificationCommandResultUsingGET'][0])
     {
@@ -4055,9 +4055,9 @@ class OfferManagementApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoModificationCommandResultUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PromoGeneralReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PromoGeneralReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPromoModificationCommandResultUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getPromoModificationCommandResultUsingGET'][0])
     {
@@ -4088,11 +4088,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PromoGeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PromoGeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PromoGeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PromoGeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4110,16 +4110,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PromoGeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PromoGeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4137,16 +4137,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4164,16 +4164,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4191,7 +4191,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4210,7 +4210,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PromoGeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\PromoGeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4243,7 +4243,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PromoGeneralReport',
+                        '\robsonek\phpAllegroApi\Model\PromoGeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4251,7 +4251,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4259,7 +4259,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4267,7 +4267,7 @@ class OfferManagementApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4311,7 +4311,7 @@ class OfferManagementApi
      */
     public function getPromoModificationCommandResultUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getPromoModificationCommandResultUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PromoGeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\PromoGeneralReport';
         $request = $this->getPromoModificationCommandResultUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -4455,9 +4455,9 @@ class OfferManagementApi
      * @param  int $offset Distance between the beginning of the document and the point from which promo options are returned. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoOptionsForSellerOffersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferPromoOptionsForSeller|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError
      */
     public function getPromoOptionsForSellerOffersUsingGET($limit = 5000, $offset = 0, string $contentType = self::contentTypes['getPromoOptionsForSellerOffersUsingGET'][0])
     {
@@ -4474,9 +4474,9 @@ class OfferManagementApi
      * @param  int $offset Distance between the beginning of the document and the point from which promo options are returned. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPromoOptionsForSellerOffersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferPromoOptionsForSeller|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPromoOptionsForSellerOffersUsingGETWithHttpInfo($limit = 5000, $offset = 0, string $contentType = self::contentTypes['getPromoOptionsForSellerOffersUsingGET'][0])
     {
@@ -4507,11 +4507,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferPromoOptionsForSeller' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferPromoOptionsForSeller' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4529,16 +4529,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferPromoOptionsForSeller', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4556,16 +4556,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4583,7 +4583,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4602,7 +4602,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferPromoOptionsForSeller';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4635,7 +4635,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferPromoOptionsForSeller',
+                        '\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4643,7 +4643,7 @@ class OfferManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4651,7 +4651,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4697,7 +4697,7 @@ class OfferManagementApi
      */
     public function getPromoOptionsForSellerOffersUsingGETAsyncWithHttpInfo($limit = 5000, $offset = 0, string $contentType = self::contentTypes['getPromoOptionsForSellerOffersUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferPromoOptionsForSeller';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptionsForSeller';
         $request = $this->getPromoOptionsForSellerOffersUsingGETRequest($limit, $offset, $contentType);
 
         return $this->client
@@ -4855,9 +4855,9 @@ class OfferManagementApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicationReportUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function getPublicationReportUsingGET($command_id, string $contentType = self::contentTypes['getPublicationReportUsingGET'][0])
     {
@@ -4873,9 +4873,9 @@ class OfferManagementApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicationReportUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicationReportUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getPublicationReportUsingGET'][0])
     {
@@ -4906,11 +4906,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4928,7 +4928,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4947,7 +4947,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4980,7 +4980,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5024,7 +5024,7 @@ class OfferManagementApi
      */
     public function getPublicationReportUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getPublicationReportUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->getPublicationReportUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -5169,9 +5169,9 @@ class OfferManagementApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicationTasksUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TaskReport
+     * @return \robsonek\phpAllegroApi\Model\TaskReport
      */
     public function getPublicationTasksUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPublicationTasksUsingGET'][0])
     {
@@ -5189,9 +5189,9 @@ class OfferManagementApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPublicationTasksUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicationTasksUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPublicationTasksUsingGET'][0])
     {
@@ -5222,11 +5222,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TaskReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TaskReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TaskReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TaskReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5244,7 +5244,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TaskReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TaskReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -5263,7 +5263,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TaskReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5296,7 +5296,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TaskReport',
+                        '\robsonek\phpAllegroApi\Model\TaskReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5344,7 +5344,7 @@ class OfferManagementApi
      */
     public function getPublicationTasksUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPublicationTasksUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TaskReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
         $request = $this->getPublicationTasksUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -5519,12 +5519,12 @@ class OfferManagementApi
      * Modify offer promotion packages
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsModifications $promo_options_modifications request (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsModifications $promo_options_modifications request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyOfferPromoOptionsUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferPromoOptions|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptions|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function modifyOfferPromoOptionsUsingPOST($offer_id, $promo_options_modifications, string $contentType = self::contentTypes['modifyOfferPromoOptionsUsingPOST'][0])
     {
@@ -5538,12 +5538,12 @@ class OfferManagementApi
      * Modify offer promotion packages
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsModifications $promo_options_modifications request (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsModifications $promo_options_modifications request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyOfferPromoOptionsUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferPromoOptions|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferPromoOptions|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyOfferPromoOptionsUsingPOSTWithHttpInfo($offer_id, $promo_options_modifications, string $contentType = self::contentTypes['modifyOfferPromoOptionsUsingPOST'][0])
     {
@@ -5574,11 +5574,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferPromoOptions' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferPromoOptions' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferPromoOptions' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferPromoOptions' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5596,16 +5596,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferPromoOptions', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferPromoOptions', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5623,16 +5623,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5650,16 +5650,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5677,7 +5677,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -5696,7 +5696,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferPromoOptions';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptions';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5729,7 +5729,7 @@ class OfferManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferPromoOptions',
+                        '\robsonek\phpAllegroApi\Model\OfferPromoOptions',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5737,7 +5737,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5745,7 +5745,7 @@ class OfferManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5753,7 +5753,7 @@ class OfferManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5769,7 +5769,7 @@ class OfferManagementApi
      * Modify offer promotion packages
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsModifications $promo_options_modifications request (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsModifications $promo_options_modifications request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyOfferPromoOptionsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5791,7 +5791,7 @@ class OfferManagementApi
      * Modify offer promotion packages
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsModifications $promo_options_modifications request (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsModifications $promo_options_modifications request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyOfferPromoOptionsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5799,7 +5799,7 @@ class OfferManagementApi
      */
     public function modifyOfferPromoOptionsUsingPOSTAsyncWithHttpInfo($offer_id, $promo_options_modifications, string $contentType = self::contentTypes['modifyOfferPromoOptionsUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferPromoOptions';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferPromoOptions';
         $request = $this->modifyOfferPromoOptionsUsingPOSTRequest($offer_id, $promo_options_modifications, $contentType);
 
         return $this->client
@@ -5842,7 +5842,7 @@ class OfferManagementApi
      * Create request for operation 'modifyOfferPromoOptionsUsingPOST'
      *
      * @param  string $offer_id Offer identifier. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsModifications $promo_options_modifications request (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsModifications $promo_options_modifications request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyOfferPromoOptionsUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5955,12 +5955,12 @@ class OfferManagementApi
      * Batch offer promotion package modification
      *
      * @param  string $command_id Command identifier. Must be a UUID. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['promoModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PromoGeneralReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\PromoGeneralReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function promoModificationCommandUsingPUT($command_id, $promo_options_command, string $contentType = self::contentTypes['promoModificationCommandUsingPUT'][0])
     {
@@ -5974,12 +5974,12 @@ class OfferManagementApi
      * Batch offer promotion package modification
      *
      * @param  string $command_id Command identifier. Must be a UUID. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['promoModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PromoGeneralReport|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\PromoGeneralReport|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function promoModificationCommandUsingPUTWithHttpInfo($command_id, $promo_options_command, string $contentType = self::contentTypes['promoModificationCommandUsingPUT'][0])
     {
@@ -6010,11 +6010,11 @@ class OfferManagementApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\PromoGeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PromoGeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PromoGeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PromoGeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6032,16 +6032,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PromoGeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PromoGeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6059,16 +6059,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6086,16 +6086,16 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6113,7 +6113,7 @@ class OfferManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -6132,7 +6132,7 @@ class OfferManagementApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PromoGeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\PromoGeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6165,7 +6165,7 @@ class OfferManagementApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PromoGeneralReport',
+                        '\robsonek\phpAllegroApi\Model\PromoGeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6173,7 +6173,7 @@ class OfferManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6181,7 +6181,7 @@ class OfferManagementApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6189,7 +6189,7 @@ class OfferManagementApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6205,7 +6205,7 @@ class OfferManagementApi
      * Batch offer promotion package modification
      *
      * @param  string $command_id Command identifier. Must be a UUID. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['promoModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6227,7 +6227,7 @@ class OfferManagementApi
      * Batch offer promotion package modification
      *
      * @param  string $command_id Command identifier. Must be a UUID. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['promoModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6235,7 +6235,7 @@ class OfferManagementApi
      */
     public function promoModificationCommandUsingPUTAsyncWithHttpInfo($command_id, $promo_options_command, string $contentType = self::contentTypes['promoModificationCommandUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PromoGeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\PromoGeneralReport';
         $request = $this->promoModificationCommandUsingPUTRequest($command_id, $promo_options_command, $contentType);
 
         return $this->client
@@ -6278,7 +6278,7 @@ class OfferManagementApi
      * Create request for operation 'promoModificationCommandUsingPUT'
      *
      * @param  string $command_id Command identifier. Must be a UUID. (required)
-     * @param  \OpenAPI\Client\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
+     * @param  \robsonek\phpAllegroApi\Model\PromoOptionsCommand $promo_options_command Promo packages modification command request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['promoModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

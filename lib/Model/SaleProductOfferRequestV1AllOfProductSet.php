@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferRequestV1AllOfProductSet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product' => '\OpenAPI\Client\Model\ProductOffer',
-        'quantity' => '\OpenAPI\Client\Model\ProductSetElementQuantityQuantity',
-        'responsible_person' => '\OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson',
-        'responsible_producer' => '\OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest',
-        'safety_information' => '\OpenAPI\Client\Model\ProductSetElementSafetyInformation'
+        'product' => '\robsonek\phpAllegroApi\Model\ProductOffer',
+        'quantity' => '\robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity',
+        'responsible_person' => '\robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson',
+        'responsible_producer' => '\robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest',
+        'safety_information' => '\robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation'
     ];
 
     /**
@@ -320,7 +320,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\ProductOffer|null
+     * @return \robsonek\phpAllegroApi\Model\ProductOffer|null
      */
     public function getProduct()
     {
@@ -330,7 +330,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\ProductOffer|null $product You should enter the product identifier (UUID or EAN) or a complete product definition.
+     * @param \robsonek\phpAllegroApi\Model\ProductOffer|null $product You should enter the product identifier (UUID or EAN) or a complete product definition.
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Gets quantity
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null
      */
     public function getQuantity()
     {
@@ -357,7 +357,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Sets quantity
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null $quantity quantity
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null $quantity quantity
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Gets responsible_person
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null
      */
     public function getResponsiblePerson()
     {
@@ -384,7 +384,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Sets responsible_person
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null $responsible_person responsible_person
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementResponsiblePersonRequestResponsiblePerson|null $responsible_person responsible_person
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Gets responsible_producer
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest|null
      */
     public function getResponsibleProducer()
     {
@@ -411,7 +411,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Sets responsible_producer
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest|null $responsible_producer responsible_producer
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest|null $responsible_producer responsible_producer
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Gets safety_information
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null
      */
     public function getSafetyInformation()
     {
@@ -438,7 +438,7 @@ class SaleProductOfferRequestV1AllOfProductSet implements ModelInterface, ArrayA
     /**
      * Sets safety_information
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation|null $safety_information safety_information
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferEventEndedOffer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferEventEndedOffer implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'publication' => '\OpenAPI\Client\Model\OfferEventEndedOfferAllOfPublication'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferEventEndedOfferAllOfPublication'
     ];
 
     /**
@@ -339,7 +339,7 @@ class OfferEventEndedOffer implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -349,7 +349,7 @@ class OfferEventEndedOffer implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OfferEventEndedOffer implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferEventEndedOfferAllOfPublication
+     * @return \robsonek\phpAllegroApi\Model\OfferEventEndedOfferAllOfPublication
      */
     public function getPublication()
     {
@@ -376,7 +376,7 @@ class OfferEventEndedOffer implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferEventEndedOfferAllOfPublication $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferEventEndedOfferAllOfPublication $publication publication
      *
      * @return self
      */

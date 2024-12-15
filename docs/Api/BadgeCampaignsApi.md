@@ -1,4 +1,4 @@
-# OpenAPI\Client\BadgeCampaignsApi
+# robsonek\phpAllegroApi\BadgeCampaignsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `badgeApplicationsGetAll()`
 
 ```php
-badgeApplicationsGetAll($campaign_id, $offer_id, $offset, $limit): \OpenAPI\Client\Model\BadgeApplications
+badgeApplicationsGetAll($campaign_id, $offer_id, $offset, $limit): \robsonek\phpAllegroApi\Model\BadgeApplications
 ```
 
 Get a list of badge applications
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BadgeApplications**](../Model/BadgeApplications.md)
+[**\robsonek\phpAllegroApi\Model\BadgeApplications**](../Model/BadgeApplications.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ try {
 ## `badgeApplicationsGetOne()`
 
 ```php
-badgeApplicationsGetOne($application_id): \OpenAPI\Client\Model\BadgeApplication
+badgeApplicationsGetOne($application_id): \robsonek\phpAllegroApi\Model\BadgeApplication
 ```
 
 Get a badge application details
@@ -97,10 +97,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -124,7 +124,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BadgeApplication**](../Model/BadgeApplication.md)
+[**\robsonek\phpAllegroApi\Model\BadgeApplication**](../Model/BadgeApplication.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ try {
 ## `badgeCampaignsGetAll()`
 
 ```php
-badgeCampaignsGetAll(): \OpenAPI\Client\Model\GetBadgeCampaignsList
+badgeCampaignsGetAll(): \robsonek\phpAllegroApi\Model\GetBadgeCampaignsList
 ```
 
 Get a list of available badge campaigns
@@ -157,10 +157,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -181,7 +181,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetBadgeCampaignsList**](../Model/GetBadgeCampaignsList.md)
+[**\robsonek\phpAllegroApi\Model\GetBadgeCampaignsList**](../Model/GetBadgeCampaignsList.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ This endpoint does not need any parameter.
 ## `badgeOperationsGetOne()`
 
 ```php
-badgeOperationsGetOne($operation_id): \OpenAPI\Client\Model\BadgeOperation
+badgeOperationsGetOne($operation_id): \robsonek\phpAllegroApi\Model\BadgeOperation
 ```
 
 Get badge operation details
@@ -214,10 +214,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BadgeOperation**](../Model/BadgeOperation.md)
+[**\robsonek\phpAllegroApi\Model\BadgeOperation**](../Model/BadgeOperation.md)
 
 ### Authorization
 
@@ -259,7 +259,7 @@ try {
 ## `getBadges()`
 
 ```php
-getBadges($offer_id, $offset, $limit): \OpenAPI\Client\Model\BadgesList
+getBadges($offer_id, $offset, $limit): \robsonek\phpAllegroApi\Model\BadgesList
 ```
 
 Get a list of badges
@@ -274,10 +274,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -305,7 +305,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BadgesList**](../Model/BadgesList.md)
+[**\robsonek\phpAllegroApi\Model\BadgesList**](../Model/BadgesList.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ try {
 ## `patchBadge()`
 
 ```php
-patchBadge($offer_id, $campaign_id, $badge_patch_request): \OpenAPI\Client\Model\PatchBadge202Response
+patchBadge($offer_id, $campaign_id, $badge_patch_request): \robsonek\phpAllegroApi\Model\PatchBadge202Response
 ```
 
 Update campaign badge for the given offer
@@ -338,10 +338,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -349,7 +349,7 @@ $apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
 );
 $offer_id = 'offer_id_example'; // string | Offer ID.
 $campaign_id = 'campaign_id_example'; // string | Campaign ID.
-$badge_patch_request = {"prices":{"bargain":{"value":{"amount":"9.99","currency":"PLN"}}}}; // \OpenAPI\Client\Model\BadgePatchRequest
+$badge_patch_request = {"prices":{"bargain":{"value":{"amount":"9.99","currency":"PLN"}}}}; // \robsonek\phpAllegroApi\Model\BadgePatchRequest
 
 try {
     $result = $apiInstance->patchBadge($offer_id, $campaign_id, $badge_patch_request);
@@ -365,11 +365,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **offer_id** | **string**| Offer ID. | |
 | **campaign_id** | **string**| Campaign ID. | |
-| **badge_patch_request** | [**\OpenAPI\Client\Model\BadgePatchRequest**](../Model/BadgePatchRequest.md)|  | [optional] |
+| **badge_patch_request** | [**\robsonek\phpAllegroApi\Model\BadgePatchRequest**](../Model/BadgePatchRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PatchBadge202Response**](../Model/PatchBadge202Response.md)
+[**\robsonek\phpAllegroApi\Model\PatchBadge202Response**](../Model/PatchBadge202Response.md)
 
 ### Authorization
 
@@ -387,7 +387,7 @@ try {
 ## `postBadges()`
 
 ```php
-postBadges($badge_application_request): \OpenAPI\Client\Model\BadgeApplication
+postBadges($badge_application_request): \robsonek\phpAllegroApi\Model\BadgeApplication
 ```
 
 Apply for badge in selected offer
@@ -402,16 +402,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BadgeCampaignsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BadgeCampaignsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$badge_application_request = {"campaign":{"id":"BARGAIN"},"offer":{"id":"12345678"},"prices":{"bargain":{"amount":"9.99","currency":"PLN"}}}; // \OpenAPI\Client\Model\BadgeApplicationRequest
+$badge_application_request = {"campaign":{"id":"BARGAIN"},"offer":{"id":"12345678"},"prices":{"bargain":{"amount":"9.99","currency":"PLN"}}}; // \robsonek\phpAllegroApi\Model\BadgeApplicationRequest
 
 try {
     $result = $apiInstance->postBadges($badge_application_request);
@@ -425,11 +425,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **badge_application_request** | [**\OpenAPI\Client\Model\BadgeApplicationRequest**](../Model/BadgeApplicationRequest.md)|  | [optional] |
+| **badge_application_request** | [**\robsonek\phpAllegroApi\Model\BadgeApplicationRequest**](../Model/BadgeApplicationRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BadgeApplication**](../Model/BadgeApplication.md)
+[**\robsonek\phpAllegroApi\Model\BadgeApplication**](../Model/BadgeApplication.md)
 
 ### Authorization
 

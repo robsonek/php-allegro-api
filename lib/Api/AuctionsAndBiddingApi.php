@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AuctionsAndBiddingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,9 +133,9 @@ class AuctionsAndBiddingApi
      * @param  string $offer_id The offer ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MyBidResponse|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\MyBidResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getBid($offer_id, string $contentType = self::contentTypes['getBid'][0])
     {
@@ -151,9 +151,9 @@ class AuctionsAndBiddingApi
      * @param  string $offer_id The offer ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MyBidResponse|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\MyBidResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBidWithHttpInfo($offer_id, string $contentType = self::contentTypes['getBid'][0])
     {
@@ -184,11 +184,11 @@ class AuctionsAndBiddingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MyBidResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\MyBidResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MyBidResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\MyBidResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -206,16 +206,16 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MyBidResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\MyBidResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -233,7 +233,7 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -252,7 +252,7 @@ class AuctionsAndBiddingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MyBidResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\MyBidResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -285,7 +285,7 @@ class AuctionsAndBiddingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MyBidResponse',
+                        '\robsonek\phpAllegroApi\Model\MyBidResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -293,7 +293,7 @@ class AuctionsAndBiddingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -337,7 +337,7 @@ class AuctionsAndBiddingApi
      */
     public function getBidAsyncWithHttpInfo($offer_id, string $contentType = self::contentTypes['getBid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MyBidResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\MyBidResponse';
         $request = $this->getBidRequest($offer_id, $contentType);
 
         return $this->client
@@ -478,12 +478,12 @@ class AuctionsAndBiddingApi
      * Place a bid in an auction
      *
      * @param  string $offer_id The offer ID. (required)
-     * @param  \OpenAPI\Client\Model\BidRequest $bid_request bid_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BidRequest $bid_request bid_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['placeBid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\MyBidResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\MyBidResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function placeBid($offer_id, $bid_request = null, string $contentType = self::contentTypes['placeBid'][0])
     {
@@ -497,12 +497,12 @@ class AuctionsAndBiddingApi
      * Place a bid in an auction
      *
      * @param  string $offer_id The offer ID. (required)
-     * @param  \OpenAPI\Client\Model\BidRequest $bid_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BidRequest $bid_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['placeBid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\MyBidResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\MyBidResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function placeBidWithHttpInfo($offer_id, $bid_request = null, string $contentType = self::contentTypes['placeBid'][0])
     {
@@ -533,11 +533,11 @@ class AuctionsAndBiddingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\MyBidResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\MyBidResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\MyBidResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\MyBidResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -555,16 +555,16 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\MyBidResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\MyBidResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -582,16 +582,16 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -609,16 +609,16 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -636,16 +636,16 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -663,7 +663,7 @@ class AuctionsAndBiddingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -682,7 +682,7 @@ class AuctionsAndBiddingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\MyBidResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\MyBidResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -715,7 +715,7 @@ class AuctionsAndBiddingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\MyBidResponse',
+                        '\robsonek\phpAllegroApi\Model\MyBidResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class AuctionsAndBiddingApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -731,7 +731,7 @@ class AuctionsAndBiddingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -739,7 +739,7 @@ class AuctionsAndBiddingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -747,7 +747,7 @@ class AuctionsAndBiddingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -763,7 +763,7 @@ class AuctionsAndBiddingApi
      * Place a bid in an auction
      *
      * @param  string $offer_id The offer ID. (required)
-     * @param  \OpenAPI\Client\Model\BidRequest $bid_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BidRequest $bid_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['placeBid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -785,7 +785,7 @@ class AuctionsAndBiddingApi
      * Place a bid in an auction
      *
      * @param  string $offer_id The offer ID. (required)
-     * @param  \OpenAPI\Client\Model\BidRequest $bid_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BidRequest $bid_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['placeBid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -793,7 +793,7 @@ class AuctionsAndBiddingApi
      */
     public function placeBidAsyncWithHttpInfo($offer_id, $bid_request = null, string $contentType = self::contentTypes['placeBid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\MyBidResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\MyBidResponse';
         $request = $this->placeBidRequest($offer_id, $bid_request, $contentType);
 
         return $this->client
@@ -836,7 +836,7 @@ class AuctionsAndBiddingApi
      * Create request for operation 'placeBid'
      *
      * @param  string $offer_id The offer ID. (required)
-     * @param  \OpenAPI\Client\Model\BidRequest $bid_request (optional)
+     * @param  \robsonek\phpAllegroApi\Model\BidRequest $bid_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['placeBid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

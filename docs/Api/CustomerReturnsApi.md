@@ -1,4 +1,4 @@
-# OpenAPI\Client\CustomerReturnsApi
+# robsonek\phpAllegroApi\CustomerReturnsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getCustomerReturnById()`
 
 ```php
-getCustomerReturnById($customer_return_id): \OpenAPI\Client\Model\CustomerReturn
+getCustomerReturnById($customer_return_id): \robsonek\phpAllegroApi\Model\CustomerReturn
 ```
 
 [BETA] Get customer return by id
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerReturnsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CustomerReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CustomerReturn**](../Model/CustomerReturn.md)
+[**\robsonek\phpAllegroApi\Model\CustomerReturn**](../Model/CustomerReturn.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ try {
 ## `getCustomerReturns()`
 
 ```php
-getCustomerReturns($customer_return_id, $order_id, $buyer_email, $buyer_login, $items_offer_id, $items_name, $parcels_waybill, $parcels_carrier_id, $parcels_sender_phone_number, $reference_number, $from, $created_at_gte, $created_at_lte, $marketplace_id, $status, $limit, $offset): \OpenAPI\Client\Model\CustomerReturnResponse
+getCustomerReturns($customer_return_id, $order_id, $buyer_email, $buyer_login, $items_offer_id, $items_name, $parcels_waybill, $parcels_carrier_id, $parcels_sender_phone_number, $reference_number, $from, $created_at_gte, $created_at_lte, $marketplace_id, $status, $limit, $offset): \robsonek\phpAllegroApi\Model\CustomerReturnResponse
 ```
 
 [BETA] Get customer returns by provided query parameters
@@ -87,10 +87,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerReturnsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CustomerReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -146,7 +146,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CustomerReturnResponse**](../Model/CustomerReturnResponse.md)
+[**\robsonek\phpAllegroApi\Model\CustomerReturnResponse**](../Model/CustomerReturnResponse.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ try {
 ## `rejectCustomerReturnRefund()`
 
 ```php
-rejectCustomerReturnRefund($customer_return_id, $customer_return_refund_rejection_request): \OpenAPI\Client\Model\CustomerReturn
+rejectCustomerReturnRefund($customer_return_id, $customer_return_refund_rejection_request): \robsonek\phpAllegroApi\Model\CustomerReturn
 ```
 
 [BETA] Reject customer return refund
@@ -179,17 +179,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerReturnsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CustomerReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $customer_return_id = 'customer_return_id_example'; // string | Id of the customer return.
-$customer_return_refund_rejection_request = new \OpenAPI\Client\Model\CustomerReturnRefundRejectionRequest(); // \OpenAPI\Client\Model\CustomerReturnRefundRejectionRequest
+$customer_return_refund_rejection_request = new \robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequest(); // \robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequest
 
 try {
     $result = $apiInstance->rejectCustomerReturnRefund($customer_return_id, $customer_return_refund_rejection_request);
@@ -204,11 +204,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **customer_return_id** | **string**| Id of the customer return. | |
-| **customer_return_refund_rejection_request** | [**\OpenAPI\Client\Model\CustomerReturnRefundRejectionRequest**](../Model/CustomerReturnRefundRejectionRequest.md)|  | |
+| **customer_return_refund_rejection_request** | [**\robsonek\phpAllegroApi\Model\CustomerReturnRefundRejectionRequest**](../Model/CustomerReturnRefundRejectionRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CustomerReturn**](../Model/CustomerReturn.md)
+[**\robsonek\phpAllegroApi\Model\CustomerReturn**](../Model/CustomerReturn.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryParameterList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CategoryParameterList implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'parameters' => '\OpenAPI\Client\Model\CategoryParameter[]'
+        'parameters' => '\robsonek\phpAllegroApi\Model\CategoryParameter[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CategoryParameterList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\CategoryParameter[]|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameter[]|null
      */
     public function getParameters()
     {
@@ -302,7 +302,7 @@ class CategoryParameterList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\CategoryParameter[]|null $parameters The list of parameters supported by the category.
+     * @param \robsonek\phpAllegroApi\Model\CategoryParameter[]|null $parameters The list of parameters supported by the category.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CreateResponsiblePersonRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CreateResponsiblePersonRequest implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'personal_data' => '\OpenAPI\Client\Model\CreateResponsiblePersonRequestPersonalData'
+        'personal_data' => '\robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequestPersonalData'
     ];
 
     /**
@@ -334,7 +334,7 @@ class CreateResponsiblePersonRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets personal_data
      *
-     * @return \OpenAPI\Client\Model\CreateResponsiblePersonRequestPersonalData|null
+     * @return \robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequestPersonalData|null
      */
     public function getPersonalData()
     {
@@ -344,7 +344,7 @@ class CreateResponsiblePersonRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets personal_data
      *
-     * @param \OpenAPI\Client\Model\CreateResponsiblePersonRequestPersonalData|null $personal_data personal_data
+     * @param \robsonek\phpAllegroApi\Model\CreateResponsiblePersonRequestPersonalData|null $personal_data personal_data
      *
      * @return self
      */

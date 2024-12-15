@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **account_number** | **string** |  | [optional]
 **iban** | **string** |  | [optional]
 **swift** | **string** |  | [optional]
-**address** | [**\OpenAPI\Client\Model\CustomerReturnRefundBankAccountAddress**](CustomerReturnRefundBankAccountAddress.md) |  | [optional]
+**address** | [**\robsonek\phpAllegroApi\Model\CustomerReturnRefundBankAccountAddress**](CustomerReturnRefundBankAccountAddress.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

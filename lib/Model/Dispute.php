@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Dispute Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,16 +58,16 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'subject' => '\OpenAPI\Client\Model\Subject',
+        'subject' => '\robsonek\phpAllegroApi\Model\Subject',
         'status' => 'string',
         'messages_status' => 'string',
-        'buyer' => '\OpenAPI\Client\Model\DisputeUser',
-        'checkout_form' => '\OpenAPI\Client\Model\DisputeCheckoutForm',
-        'message' => '\OpenAPI\Client\Model\DisputeFirstMessage',
+        'buyer' => '\robsonek\phpAllegroApi\Model\DisputeUser',
+        'checkout_form' => '\robsonek\phpAllegroApi\Model\DisputeCheckoutForm',
+        'message' => '\robsonek\phpAllegroApi\Model\DisputeFirstMessage',
         'messages_count' => 'int',
         'opened_date' => '\DateTime',
         'last_message_creation_date' => '\DateTime',
-        'claim' => '\OpenAPI\Client\Model\DisputeClaim'
+        'claim' => '\robsonek\phpAllegroApi\Model\DisputeClaim'
     ];
 
     /**
@@ -474,7 +474,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets subject
      *
-     * @return \OpenAPI\Client\Model\Subject
+     * @return \robsonek\phpAllegroApi\Model\Subject
      */
     public function getSubject()
     {
@@ -484,7 +484,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets subject
      *
-     * @param \OpenAPI\Client\Model\Subject $subject subject
+     * @param \robsonek\phpAllegroApi\Model\Subject $subject subject
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\DisputeUser
+     * @return \robsonek\phpAllegroApi\Model\DisputeUser
      */
     public function getBuyer()
     {
@@ -585,7 +585,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\DisputeUser $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\DisputeUser $buyer buyer
      *
      * @return self
      */
@@ -602,7 +602,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets checkout_form
      *
-     * @return \OpenAPI\Client\Model\DisputeCheckoutForm
+     * @return \robsonek\phpAllegroApi\Model\DisputeCheckoutForm
      */
     public function getCheckoutForm()
     {
@@ -612,7 +612,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets checkout_form
      *
-     * @param \OpenAPI\Client\Model\DisputeCheckoutForm $checkout_form checkout_form
+     * @param \robsonek\phpAllegroApi\Model\DisputeCheckoutForm $checkout_form checkout_form
      *
      * @return self
      */
@@ -629,7 +629,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets message
      *
-     * @return \OpenAPI\Client\Model\DisputeFirstMessage
+     * @return \robsonek\phpAllegroApi\Model\DisputeFirstMessage
      */
     public function getMessage()
     {
@@ -639,7 +639,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets message
      *
-     * @param \OpenAPI\Client\Model\DisputeFirstMessage $message message
+     * @param \robsonek\phpAllegroApi\Model\DisputeFirstMessage $message message
      *
      * @return self
      */
@@ -742,7 +742,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets claim
      *
-     * @return \OpenAPI\Client\Model\DisputeClaim|null
+     * @return \robsonek\phpAllegroApi\Model\DisputeClaim|null
      */
     public function getClaim()
     {
@@ -752,7 +752,7 @@ class Dispute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets claim
      *
-     * @param \OpenAPI\Client\Model\DisputeClaim|null $claim claim
+     * @param \robsonek\phpAllegroApi\Model\DisputeClaim|null $claim claim
      *
      * @return self
      */

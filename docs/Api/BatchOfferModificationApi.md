@@ -1,4 +1,4 @@
-# OpenAPI\Client\BatchOfferModificationApi
+# robsonek\phpAllegroApi\BatchOfferModificationApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -21,7 +21,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `getGeneralReportUsingGET()`
 
 ```php
-getGeneralReportUsingGET($command_id): \OpenAPI\Client\Model\GeneralReport
+getGeneralReportUsingGET($command_id): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Modification command summary
@@ -36,10 +36,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ try {
 ## `getPriceModificationCommandStatusUsingGET()`
 
 ```php
-getPriceModificationCommandStatusUsingGET($command_id): \OpenAPI\Client\Model\GeneralReport
+getPriceModificationCommandStatusUsingGET($command_id): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Change price command summary
@@ -96,10 +96,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ try {
 ## `getPriceModificationCommandTasksStatusesUsingGET()`
 
 ```php
-getPriceModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \OpenAPI\Client\Model\TaskReport
+getPriceModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \robsonek\phpAllegroApi\Model\TaskReport
 ```
 
 Change price command detailed report
@@ -156,10 +156,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TaskReport**](../Model/TaskReport.md)
+[**\robsonek\phpAllegroApi\Model\TaskReport**](../Model/TaskReport.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ try {
 ## `getQuantityModificationCommandStatusUsingGET()`
 
 ```php
-getQuantityModificationCommandStatusUsingGET($command_id): \OpenAPI\Client\Model\GeneralReport
+getQuantityModificationCommandStatusUsingGET($command_id): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Change quantity command summary
@@ -220,10 +220,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -247,7 +247,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -265,7 +265,7 @@ try {
 ## `getQuantityModificationCommandTasksStatusesUsingGET()`
 
 ```php
-getQuantityModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \OpenAPI\Client\Model\TaskReport
+getQuantityModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \robsonek\phpAllegroApi\Model\TaskReport
 ```
 
 Change quantity command detailed report
@@ -280,10 +280,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -311,7 +311,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TaskReport**](../Model/TaskReport.md)
+[**\robsonek\phpAllegroApi\Model\TaskReport**](../Model/TaskReport.md)
 
 ### Authorization
 
@@ -329,7 +329,7 @@ try {
 ## `getTasksUsingGET()`
 
 ```php
-getTasksUsingGET($command_id, $limit, $offset): \OpenAPI\Client\Model\TaskReport
+getTasksUsingGET($command_id, $limit, $offset): \robsonek\phpAllegroApi\Model\TaskReport
 ```
 
 Modification command detailed report
@@ -344,10 +344,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -375,7 +375,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TaskReport**](../Model/TaskReport.md)
+[**\robsonek\phpAllegroApi\Model\TaskReport**](../Model/TaskReport.md)
 
 ### Authorization
 
@@ -393,7 +393,7 @@ try {
 ## `getofferAutomaticPricingModificationCommandStatusUsingGET()`
 
 ```php
-getofferAutomaticPricingModificationCommandStatusUsingGET($command_id): \OpenAPI\Client\Model\GeneralReport
+getofferAutomaticPricingModificationCommandStatusUsingGET($command_id): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Automatic pricing command summary
@@ -408,10 +408,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -435,7 +435,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -453,7 +453,7 @@ try {
 ## `getofferAutomaticPricingModificationCommandTasksStatusesUsingGET()`
 
 ```php
-getofferAutomaticPricingModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \OpenAPI\Client\Model\TaskReport
+getofferAutomaticPricingModificationCommandTasksStatusesUsingGET($command_id, $limit, $offset): \robsonek\phpAllegroApi\Model\TaskReport
 ```
 
 Automatic pricing command detailed report
@@ -468,10 +468,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -499,7 +499,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TaskReport**](../Model/TaskReport.md)
+[**\robsonek\phpAllegroApi\Model\TaskReport**](../Model/TaskReport.md)
 
 ### Authorization
 
@@ -517,7 +517,7 @@ try {
 ## `modificationCommandUsingPUT()`
 
 ```php
-modificationCommandUsingPUT($command_id, $offer_change_command): \OpenAPI\Client\Model\GeneralReport
+modificationCommandUsingPUT($command_id, $offer_change_command): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Batch offer modification
@@ -532,17 +532,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command identifier.
-$offer_change_command = new \OpenAPI\Client\Model\OfferChangeCommand(); // \OpenAPI\Client\Model\OfferChangeCommand | offerChangeCommandDto
+$offer_change_command = new \robsonek\phpAllegroApi\Model\OfferChangeCommand(); // \robsonek\phpAllegroApi\Model\OfferChangeCommand | offerChangeCommandDto
 
 try {
     $result = $apiInstance->modificationCommandUsingPUT($command_id, $offer_change_command);
@@ -557,11 +557,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command identifier. | |
-| **offer_change_command** | [**\OpenAPI\Client\Model\OfferChangeCommand**](../Model/OfferChangeCommand.md)| offerChangeCommandDto | |
+| **offer_change_command** | [**\robsonek\phpAllegroApi\Model\OfferChangeCommand**](../Model/OfferChangeCommand.md)| offerChangeCommandDto | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -579,7 +579,7 @@ try {
 ## `offerAutomaticPricingModificationCommandUsingPOST()`
 
 ```php
-offerAutomaticPricingModificationCommandUsingPOST($offer_automatic_pricing_command): \OpenAPI\Client\Model\GeneralReport
+offerAutomaticPricingModificationCommandUsingPOST($offer_automatic_pricing_command): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Batch offer automatic pricing rules modification
@@ -594,16 +594,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$offer_automatic_pricing_command = new \OpenAPI\Client\Model\OfferAutomaticPricingCommand(); // \OpenAPI\Client\Model\OfferAutomaticPricingCommand | OfferAutomaticPricingCommand
+$offer_automatic_pricing_command = new \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand(); // \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand | OfferAutomaticPricingCommand
 
 try {
     $result = $apiInstance->offerAutomaticPricingModificationCommandUsingPOST($offer_automatic_pricing_command);
@@ -617,11 +617,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **offer_automatic_pricing_command** | [**\OpenAPI\Client\Model\OfferAutomaticPricingCommand**](../Model/OfferAutomaticPricingCommand.md)| OfferAutomaticPricingCommand | |
+| **offer_automatic_pricing_command** | [**\robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand**](../Model/OfferAutomaticPricingCommand.md)| OfferAutomaticPricingCommand | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -639,7 +639,7 @@ try {
 ## `priceModificationCommandUsingPUT()`
 
 ```php
-priceModificationCommandUsingPUT($command_id, $offer_price_change_command): \OpenAPI\Client\Model\GeneralReport
+priceModificationCommandUsingPUT($command_id, $offer_price_change_command): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Batch offer price modification
@@ -654,17 +654,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command identifier.
-$offer_price_change_command = new \OpenAPI\Client\Model\OfferPriceChangeCommand(); // \OpenAPI\Client\Model\OfferPriceChangeCommand | offerPriceChangeCommandDto
+$offer_price_change_command = new \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand(); // \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand | offerPriceChangeCommandDto
 
 try {
     $result = $apiInstance->priceModificationCommandUsingPUT($command_id, $offer_price_change_command);
@@ -679,11 +679,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command identifier. | |
-| **offer_price_change_command** | [**\OpenAPI\Client\Model\OfferPriceChangeCommand**](../Model/OfferPriceChangeCommand.md)| offerPriceChangeCommandDto | |
+| **offer_price_change_command** | [**\robsonek\phpAllegroApi\Model\OfferPriceChangeCommand**](../Model/OfferPriceChangeCommand.md)| offerPriceChangeCommandDto | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 
@@ -701,7 +701,7 @@ try {
 ## `quantityModificationCommandUsingPUT()`
 
 ```php
-quantityModificationCommandUsingPUT($command_id, $offer_quantity_change_command): \OpenAPI\Client\Model\GeneralReport
+quantityModificationCommandUsingPUT($command_id, $offer_quantity_change_command): \robsonek\phpAllegroApi\Model\GeneralReport
 ```
 
 Batch offer quantity modification
@@ -716,17 +716,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BatchOfferModificationApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\BatchOfferModificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command identifier.
-$offer_quantity_change_command = new \OpenAPI\Client\Model\OfferQuantityChangeCommand(); // \OpenAPI\Client\Model\OfferQuantityChangeCommand | offerQuantityChangeCommandDto
+$offer_quantity_change_command = new \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand(); // \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand | offerQuantityChangeCommandDto
 
 try {
     $result = $apiInstance->quantityModificationCommandUsingPUT($command_id, $offer_quantity_change_command);
@@ -741,11 +741,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command identifier. | |
-| **offer_quantity_change_command** | [**\OpenAPI\Client\Model\OfferQuantityChangeCommand**](../Model/OfferQuantityChangeCommand.md)| offerQuantityChangeCommandDto | |
+| **offer_quantity_change_command** | [**\robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand**](../Model/OfferQuantityChangeCommand.md)| offerQuantityChangeCommandDto | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GeneralReport**](../Model/GeneralReport.md)
+[**\robsonek\phpAllegroApi\Model\GeneralReport**](../Model/GeneralReport.md)
 
 ### Authorization
 

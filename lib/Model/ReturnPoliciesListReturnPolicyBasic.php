@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ReturnPoliciesListReturnPolicyBasic Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ReturnPoliciesListReturnPolicyBasic implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'return_policies' => '\OpenAPI\Client\Model\ReturnPolicyBasic[]'
+        'return_policies' => '\robsonek\phpAllegroApi\Model\ReturnPolicyBasic[]'
     ];
 
     /**
@@ -335,7 +335,7 @@ class ReturnPoliciesListReturnPolicyBasic implements ModelInterface, ArrayAccess
     /**
      * Gets return_policies
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicyBasic[]|null
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicyBasic[]|null
      */
     public function getReturnPolicies()
     {
@@ -345,7 +345,7 @@ class ReturnPoliciesListReturnPolicyBasic implements ModelInterface, ArrayAccess
     /**
      * Sets return_policies
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicyBasic[]|null $return_policies return_policies
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicyBasic[]|null $return_policies return_policies
      *
      * @return self
      */

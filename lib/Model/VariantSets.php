@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * VariantSets Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class VariantSets implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'offer_variants' => '\OpenAPI\Client\Model\VariantSetsVariantSet[]'
+        'offer_variants' => '\robsonek\phpAllegroApi\Model\VariantSetsVariantSet[]'
     ];
 
     /**
@@ -335,7 +335,7 @@ class VariantSets implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer_variants
      *
-     * @return \OpenAPI\Client\Model\VariantSetsVariantSet[]|null
+     * @return \robsonek\phpAllegroApi\Model\VariantSetsVariantSet[]|null
      */
     public function getOfferVariants()
     {
@@ -345,7 +345,7 @@ class VariantSets implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer_variants
      *
-     * @param \OpenAPI\Client\Model\VariantSetsVariantSet[]|null $offer_variants offer_variants
+     * @param \robsonek\phpAllegroApi\Model\VariantSetsVariantSet[]|null $offer_variants offer_variants
      *
      * @return self
      */

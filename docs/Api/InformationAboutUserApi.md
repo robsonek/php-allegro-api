@@ -1,4 +1,4 @@
-# OpenAPI\Client\InformationAboutUserApi
+# robsonek\phpAllegroApi\InformationAboutUserApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -20,7 +20,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `addAdditionalEmailUsingPOST()`
 
 ```php
-addAdditionalEmailUsingPOST($additional_email_request): \OpenAPI\Client\Model\AdditionalEmail
+addAdditionalEmailUsingPOST($additional_email_request): \robsonek\phpAllegroApi\Model\AdditionalEmail
 ```
 
 Add a new additional email address to user's account
@@ -35,16 +35,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$additional_email_request = new \OpenAPI\Client\Model\AdditionalEmailRequest(); // \OpenAPI\Client\Model\AdditionalEmailRequest | request
+$additional_email_request = new \robsonek\phpAllegroApi\Model\AdditionalEmailRequest(); // \robsonek\phpAllegroApi\Model\AdditionalEmailRequest | request
 
 try {
     $result = $apiInstance->addAdditionalEmailUsingPOST($additional_email_request);
@@ -58,11 +58,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **additional_email_request** | [**\OpenAPI\Client\Model\AdditionalEmailRequest**](../Model/AdditionalEmailRequest.md)| request | |
+| **additional_email_request** | [**\robsonek\phpAllegroApi\Model\AdditionalEmailRequest**](../Model/AdditionalEmailRequest.md)| request | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalEmail**](../Model/AdditionalEmail.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalEmail**](../Model/AdditionalEmail.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `answerUserRatingUsingPUT()`
 
 ```php
-answerUserRatingUsingPUT($rating_id, $user_rating_answer_request): \OpenAPI\Client\Model\Answer
+answerUserRatingUsingPUT($rating_id, $user_rating_answer_request): \robsonek\phpAllegroApi\Model\Answer
 ```
 
 Answer for user's rating
@@ -95,17 +95,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $rating_id = 5df0a6d1ef437e00255572a1; // string | ID of the rating.
-$user_rating_answer_request = new \OpenAPI\Client\Model\UserRatingAnswerRequest(); // \OpenAPI\Client\Model\UserRatingAnswerRequest | User rating answer request.
+$user_rating_answer_request = new \robsonek\phpAllegroApi\Model\UserRatingAnswerRequest(); // \robsonek\phpAllegroApi\Model\UserRatingAnswerRequest | User rating answer request.
 
 try {
     $result = $apiInstance->answerUserRatingUsingPUT($rating_id, $user_rating_answer_request);
@@ -120,11 +120,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **rating_id** | **string**| ID of the rating. | |
-| **user_rating_answer_request** | [**\OpenAPI\Client\Model\UserRatingAnswerRequest**](../Model/UserRatingAnswerRequest.md)| User rating answer request. | |
+| **user_rating_answer_request** | [**\robsonek\phpAllegroApi\Model\UserRatingAnswerRequest**](../Model/UserRatingAnswerRequest.md)| User rating answer request. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Answer**](../Model/Answer.md)
+[**\robsonek\phpAllegroApi\Model\Answer**](../Model/Answer.md)
 
 ### Authorization
 
@@ -157,10 +157,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,7 +201,7 @@ void (empty response body)
 ## `getAdditionalEmailUsingGET()`
 
 ```php
-getAdditionalEmailUsingGET($email_id): \OpenAPI\Client\Model\AdditionalEmail
+getAdditionalEmailUsingGET($email_id): \robsonek\phpAllegroApi\Model\AdditionalEmail
 ```
 
 Get information about a particular additional email
@@ -216,10 +216,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalEmail**](../Model/AdditionalEmail.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalEmail**](../Model/AdditionalEmail.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ try {
 ## `getListOfAdditionalEmailsUsingGET()`
 
 ```php
-getListOfAdditionalEmailsUsingGET(): \OpenAPI\Client\Model\AdditionalEmailsResponse
+getListOfAdditionalEmailsUsingGET(): \robsonek\phpAllegroApi\Model\AdditionalEmailsResponse
 ```
 
 Get user's additional emails
@@ -276,10 +276,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -300,7 +300,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdditionalEmailsResponse**](../Model/AdditionalEmailsResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdditionalEmailsResponse**](../Model/AdditionalEmailsResponse.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ This endpoint does not need any parameter.
 ## `getSaleQualityUsingGET()`
 
 ```php
-getSaleQualityUsingGET(): \OpenAPI\Client\Model\SalesQualityHistoryResponse
+getSaleQualityUsingGET(): \robsonek\phpAllegroApi\Model\SalesQualityHistoryResponse
 ```
 
 Get sales quality
@@ -333,10 +333,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -357,7 +357,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SalesQualityHistoryResponse**](../Model/SalesQualityHistoryResponse.md)
+[**\robsonek\phpAllegroApi\Model\SalesQualityHistoryResponse**](../Model/SalesQualityHistoryResponse.md)
 
 ### Authorization
 
@@ -375,7 +375,7 @@ This endpoint does not need any parameter.
 ## `getSellerSmartClassificationGET()`
 
 ```php
-getSellerSmartClassificationGET($marketplace_id): \OpenAPI\Client\Model\SmartSellerClassificationReport
+getSellerSmartClassificationGET($marketplace_id): \robsonek\phpAllegroApi\Model\SmartSellerClassificationReport
 ```
 
 Get Smart! seller classification report
@@ -390,10 +390,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -417,7 +417,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SmartSellerClassificationReport**](../Model/SmartSellerClassificationReport.md)
+[**\robsonek\phpAllegroApi\Model\SmartSellerClassificationReport**](../Model/SmartSellerClassificationReport.md)
 
 ### Authorization
 
@@ -435,7 +435,7 @@ try {
 ## `getUserRatingUsingGET()`
 
 ```php
-getUserRatingUsingGET($rating_id): \OpenAPI\Client\Model\UserRating
+getUserRatingUsingGET($rating_id): \robsonek\phpAllegroApi\Model\UserRating
 ```
 
 Get the user's rating by given rating id
@@ -450,10 +450,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -477,7 +477,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UserRating**](../Model/UserRating.md)
+[**\robsonek\phpAllegroApi\Model\UserRating**](../Model/UserRating.md)
 
 ### Authorization
 
@@ -495,7 +495,7 @@ try {
 ## `getUserRatingsUsingGET()`
 
 ```php
-getUserRatingsUsingGET($recommended, $last_changed_at_gte, $last_changed_at_lte, $offset, $limit): \OpenAPI\Client\Model\UserRatingListResponse
+getUserRatingsUsingGET($recommended, $last_changed_at_gte, $last_changed_at_lte, $offset, $limit): \robsonek\phpAllegroApi\Model\UserRatingListResponse
 ```
 
 Get the user's ratings
@@ -510,10 +510,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -545,7 +545,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UserRatingListResponse**](../Model/UserRatingListResponse.md)
+[**\robsonek\phpAllegroApi\Model\UserRatingListResponse**](../Model/UserRatingListResponse.md)
 
 ### Authorization
 
@@ -563,7 +563,7 @@ try {
 ## `meGET()`
 
 ```php
-meGET(): \OpenAPI\Client\Model\MeResponse
+meGET(): \robsonek\phpAllegroApi\Model\MeResponse
 ```
 
 Get basic information about user
@@ -578,10 +578,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -602,7 +602,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MeResponse**](../Model/MeResponse.md)
+[**\robsonek\phpAllegroApi\Model\MeResponse**](../Model/MeResponse.md)
 
 ### Authorization
 
@@ -620,7 +620,7 @@ This endpoint does not need any parameter.
 ## `userRatingRemovalUsingPUT()`
 
 ```php
-userRatingRemovalUsingPUT($rating_id, $user_rating_removal_request): \OpenAPI\Client\Model\Removal
+userRatingRemovalUsingPUT($rating_id, $user_rating_removal_request): \robsonek\phpAllegroApi\Model\Removal
 ```
 
 Request removal of user's rating
@@ -635,17 +635,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutUserApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $rating_id = 5df0a6d1ef437e00255572a1; // string | ID of the rating.
-$user_rating_removal_request = new \OpenAPI\Client\Model\UserRatingRemovalRequest(); // \OpenAPI\Client\Model\UserRatingRemovalRequest | User rating removal request.
+$user_rating_removal_request = new \robsonek\phpAllegroApi\Model\UserRatingRemovalRequest(); // \robsonek\phpAllegroApi\Model\UserRatingRemovalRequest | User rating removal request.
 
 try {
     $result = $apiInstance->userRatingRemovalUsingPUT($rating_id, $user_rating_removal_request);
@@ -660,11 +660,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **rating_id** | **string**| ID of the rating. | |
-| **user_rating_removal_request** | [**\OpenAPI\Client\Model\UserRatingRemovalRequest**](../Model/UserRatingRemovalRequest.md)| User rating removal request. | |
+| **user_rating_removal_request** | [**\robsonek\phpAllegroApi\Model\UserRatingRemovalRequest**](../Model/UserRatingRemovalRequest.md)| User rating removal request. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Removal**](../Model/Removal.md)
+[**\robsonek\phpAllegroApi\Model\Removal**](../Model/Removal.md)
 
 ### Authorization
 

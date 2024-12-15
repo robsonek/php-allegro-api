@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1AdditionalMarketplacePublication Class Doc Comment
  *
  * @category Class
  * @description Information about the publication of the offer on the given marketplace.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferListingDtoV1AdditionalMarketplacePublication implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'state' => '\OpenAPI\Client\Model\AdditionalMarketplacePublicationState'
+        'state' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationState'
     ];
 
     /**
@@ -293,7 +293,7 @@ class OfferListingDtoV1AdditionalMarketplacePublication implements ModelInterfac
     /**
      * Gets state
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacePublicationState|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationState|null
      */
     public function getState()
     {
@@ -303,7 +303,7 @@ class OfferListingDtoV1AdditionalMarketplacePublication implements ModelInterfac
     /**
      * Sets state
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacePublicationState|null $state state
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationState|null $state state
      *
      * @return self
      */

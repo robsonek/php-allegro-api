@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FulfillmentOrder Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class FulfillmentOrder implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'order_id' => 'string',
-        'parcels' => '\OpenAPI\Client\Model\FulfillmentOrderParcel[]'
+        'parcels' => '\robsonek\phpAllegroApi\Model\FulfillmentOrderParcel[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class FulfillmentOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parcels
      *
-     * @return \OpenAPI\Client\Model\FulfillmentOrderParcel[]|null
+     * @return \robsonek\phpAllegroApi\Model\FulfillmentOrderParcel[]|null
      */
     public function getParcels()
     {
@@ -336,7 +336,7 @@ class FulfillmentOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parcels
      *
-     * @param \OpenAPI\Client\Model\FulfillmentOrderParcel[]|null $parcels parcels
+     * @param \robsonek\phpAllegroApi\Model\FulfillmentOrderParcel[]|null $parcels parcels
      *
      * @return self
      */

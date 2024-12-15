@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAutomaticPricingCommandModification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class OfferAutomaticPricingCommandModification implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'set' => '\OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInner[]',
-        'remove' => '\OpenAPI\Client\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]'
+        'set' => '\robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInner[]',
+        'remove' => '\robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class OfferAutomaticPricingCommandModification implements ModelInterface, ArrayA
     /**
      * Gets set
      *
-     * @return \OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInner[]|null
      */
     public function getSet()
     {
@@ -309,7 +309,7 @@ class OfferAutomaticPricingCommandModification implements ModelInterface, ArrayA
     /**
      * Sets set
      *
-     * @param \OpenAPI\Client\Model\OfferAutomaticPricingModificationSetSetInner[]|null $set List of marketplaces to which the rules will be added.
+     * @param \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationSetSetInner[]|null $set List of marketplaces to which the rules will be added.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class OfferAutomaticPricingCommandModification implements ModelInterface, ArrayA
     /**
      * Gets remove
      *
-     * @return \OpenAPI\Client\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]|null
      */
     public function getRemove()
     {
@@ -336,7 +336,7 @@ class OfferAutomaticPricingCommandModification implements ModelInterface, ArrayA
     /**
      * Sets remove
      *
-     * @param \OpenAPI\Client\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]|null $remove List of marketplaces from which rules will be removed.
+     * @param \robsonek\phpAllegroApi\Model\OfferAutomaticPricingModificationRemoveRemoveInner[]|null $remove List of marketplaces from which rules will be removed.
      *
      * @return self
      */

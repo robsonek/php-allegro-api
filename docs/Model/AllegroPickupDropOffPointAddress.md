@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **city** | **string** | City name |
 **street** | **string** | Street |
 **country_code** | **string** | Country code |
-**coordinates** | [**\OpenAPI\Client\Model\Coordinates**](Coordinates.md) |  |
+**coordinates** | [**\robsonek\phpAllegroApi\Model\Coordinates**](Coordinates.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

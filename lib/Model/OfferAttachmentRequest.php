@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferAttachmentRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class OfferAttachmentRequest implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => '\OpenAPI\Client\Model\AttachmentType',
-        'file' => '\OpenAPI\Client\Model\AttachmentFileRequest'
+        'type' => '\robsonek\phpAllegroApi\Model\AttachmentType',
+        'file' => '\robsonek\phpAllegroApi\Model\AttachmentFileRequest'
     ];
 
     /**
@@ -299,7 +299,7 @@ class OfferAttachmentRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\AttachmentType|null
+     * @return \robsonek\phpAllegroApi\Model\AttachmentType|null
      */
     public function getType()
     {
@@ -309,7 +309,7 @@ class OfferAttachmentRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\AttachmentType|null $type type
+     * @param \robsonek\phpAllegroApi\Model\AttachmentType|null $type type
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class OfferAttachmentRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets file
      *
-     * @return \OpenAPI\Client\Model\AttachmentFileRequest|null
+     * @return \robsonek\phpAllegroApi\Model\AttachmentFileRequest|null
      */
     public function getFile()
     {
@@ -336,7 +336,7 @@ class OfferAttachmentRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets file
      *
-     * @param \OpenAPI\Client\Model\AttachmentFileRequest|null $file file
+     * @param \robsonek\phpAllegroApi\Model\AttachmentFileRequest|null $file file
      *
      * @return self
      */

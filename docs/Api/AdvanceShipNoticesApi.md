@@ -1,4 +1,4 @@
-# OpenAPI\Client\AdvanceShipNoticesApi
+# robsonek\phpAllegroApi\AdvanceShipNoticesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -35,10 +35,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,7 +79,7 @@ void (empty response body)
 ## `createAdvanceShipNotice()`
 
 ```php
-createAdvanceShipNotice($create_advance_ship_notice_request): \OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse
+createAdvanceShipNotice($create_advance_ship_notice_request): \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse
 ```
 
 Create an Advance Ship Notice
@@ -94,16 +94,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_advance_ship_notice_request = new \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest(); // \OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest
+$create_advance_ship_notice_request = new \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest(); // \robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest
 
 try {
     $result = $apiInstance->createAdvanceShipNotice($create_advance_ship_notice_request);
@@ -117,11 +117,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_advance_ship_notice_request** | [**\OpenAPI\Client\Model\CreateAdvanceShipNoticeRequest**](../Model/CreateAdvanceShipNoticeRequest.md)|  | |
+| **create_advance_ship_notice_request** | [**\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeRequest**](../Model/CreateAdvanceShipNoticeRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateAdvanceShipNoticeResponse**](../Model/CreateAdvanceShipNoticeResponse.md)
+[**\robsonek\phpAllegroApi\Model\CreateAdvanceShipNoticeResponse**](../Model/CreateAdvanceShipNoticeResponse.md)
 
 ### Authorization
 
@@ -154,10 +154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -198,7 +198,7 @@ void (empty response body)
 ## `getAdvanceShipNotice()`
 
 ```php
-getAdvanceShipNotice($id): \OpenAPI\Client\Model\AdvanceShipNoticeResponse
+getAdvanceShipNotice($id): \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse
 ```
 
 Get single Advance Ship Notice
@@ -213,10 +213,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
 
 ### Authorization
 
@@ -273,10 +273,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -320,7 +320,7 @@ try {
 ## `getAdvanceShipNoticeReceivingState()`
 
 ```php
-getAdvanceShipNoticeReceivingState($id): \OpenAPI\Client\Model\ReceivingState
+getAdvanceShipNoticeReceivingState($id): \robsonek\phpAllegroApi\Model\ReceivingState
 ```
 
 Check current state and details of Advance Ship Notice receiving
@@ -335,10 +335,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -362,7 +362,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReceivingState**](../Model/ReceivingState.md)
+[**\robsonek\phpAllegroApi\Model\ReceivingState**](../Model/ReceivingState.md)
 
 ### Authorization
 
@@ -380,7 +380,7 @@ try {
 ## `getAdvanceShipNotices()`
 
 ```php
-getAdvanceShipNotices($offset, $limit, $status): \OpenAPI\Client\Model\AdvanceShipNoticeList
+getAdvanceShipNotices($offset, $limit, $status): \robsonek\phpAllegroApi\Model\AdvanceShipNoticeList
 ```
 
 Get list of Advance Ship Notices
@@ -395,10 +395,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -406,7 +406,7 @@ $apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
 );
 $offset = 0; // int | The offset of elements in the response.
 $limit = 50; // int | Maximum number of elements in response.
-$status = array(new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AdvanceShipNoticeStatus()); // \OpenAPI\Client\Model\AdvanceShipNoticeStatus[] | A status of the Advance Ship Notices in the response.
+$status = array(new \robsonek\phpAllegroApi\Model\\robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus()); // \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[] | A status of the Advance Ship Notices in the response.
 
 try {
     $result = $apiInstance->getAdvanceShipNotices($offset, $limit, $status);
@@ -422,11 +422,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **offset** | **int**| The offset of elements in the response. | [optional] [default to 0] |
 | **limit** | **int**| Maximum number of elements in response. | [optional] [default to 50] |
-| **status** | [**\OpenAPI\Client\Model\AdvanceShipNoticeStatus[]**](../Model/\OpenAPI\Client\Model\AdvanceShipNoticeStatus.md)| A status of the Advance Ship Notices in the response. | [optional] |
+| **status** | [**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus[]**](../Model/\robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus.md)| A status of the Advance Ship Notices in the response. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdvanceShipNoticeList**](../Model/AdvanceShipNoticeList.md)
+[**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeList**](../Model/AdvanceShipNoticeList.md)
 
 ### Authorization
 
@@ -444,7 +444,7 @@ try {
 ## `getSubmitCommand()`
 
 ```php
-getSubmitCommand($command_id): \OpenAPI\Client\Model\SubmitCommand
+getSubmitCommand($command_id): \robsonek\phpAllegroApi\Model\SubmitCommand
 ```
 
 Get submit status
@@ -459,10 +459,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -486,7 +486,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SubmitCommand**](../Model/SubmitCommand.md)
+[**\robsonek\phpAllegroApi\Model\SubmitCommand**](../Model/SubmitCommand.md)
 
 ### Authorization
 
@@ -504,7 +504,7 @@ try {
 ## `submitCommand()`
 
 ```php
-submitCommand($command_id, $submit_command): \OpenAPI\Client\Model\SubmitCommand
+submitCommand($command_id, $submit_command): \robsonek\phpAllegroApi\Model\SubmitCommand
 ```
 
 Submit the Advance Ship Notice
@@ -519,17 +519,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = '725432a9-ae9e-43de-b8c5-7430606a81a4'; // string | The identifier of the command.
-$submit_command = new \OpenAPI\Client\Model\SubmitCommand(); // \OpenAPI\Client\Model\SubmitCommand
+$submit_command = new \robsonek\phpAllegroApi\Model\SubmitCommand(); // \robsonek\phpAllegroApi\Model\SubmitCommand
 
 try {
     $result = $apiInstance->submitCommand($command_id, $submit_command);
@@ -544,11 +544,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| The identifier of the command. | [default to &#39;725432a9-ae9e-43de-b8c5-7430606a81a4&#39;] |
-| **submit_command** | [**\OpenAPI\Client\Model\SubmitCommand**](../Model/SubmitCommand.md)|  | |
+| **submit_command** | [**\robsonek\phpAllegroApi\Model\SubmitCommand**](../Model/SubmitCommand.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SubmitCommand**](../Model/SubmitCommand.md)
+[**\robsonek\phpAllegroApi\Model\SubmitCommand**](../Model/SubmitCommand.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ try {
 ## `updateAdvanceShipNotice()`
 
 ```php
-updateAdvanceShipNotice($id, $if_match, $advance_ship_notice): \OpenAPI\Client\Model\AdvanceShipNoticeResponse
+updateAdvanceShipNotice($id, $if_match, $advance_ship_notice): \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse
 ```
 
 Update Advance Ship Notice
@@ -581,10 +581,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -592,7 +592,7 @@ $apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
 );
 $id = 84529ad2-2265-4e15-b76b-c17025d848f6; // string | An identifier of Advance Ship Notice.
 $if_match = 123456; // string | A current version of Advance Ship Notice (e.g. from etag header obtained via get).
-$advance_ship_notice = new \OpenAPI\Client\Model\AdvanceShipNotice(); // \OpenAPI\Client\Model\AdvanceShipNotice
+$advance_ship_notice = new \robsonek\phpAllegroApi\Model\AdvanceShipNotice(); // \robsonek\phpAllegroApi\Model\AdvanceShipNotice
 
 try {
     $result = $apiInstance->updateAdvanceShipNotice($id, $if_match, $advance_ship_notice);
@@ -608,11 +608,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| An identifier of Advance Ship Notice. | |
 | **if_match** | **string**| A current version of Advance Ship Notice (e.g. from etag header obtained via get). | |
-| **advance_ship_notice** | [**\OpenAPI\Client\Model\AdvanceShipNotice**](../Model/AdvanceShipNotice.md)|  | |
+| **advance_ship_notice** | [**\robsonek\phpAllegroApi\Model\AdvanceShipNotice**](../Model/AdvanceShipNotice.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
 
 ### Authorization
 
@@ -630,7 +630,7 @@ try {
 ## `updateSubmittedAdvanceShipNotice()`
 
 ```php
-updateSubmittedAdvanceShipNotice($id, $if_match, $update_submitted_advance_ship_notice_request): \OpenAPI\Client\Model\AdvanceShipNoticeResponse
+updateSubmittedAdvanceShipNotice($id, $if_match, $update_submitted_advance_ship_notice_request): \robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse
 ```
 
 Update submitted Advance Ship Notice
@@ -645,10 +645,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AdvanceShipNoticesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -656,7 +656,7 @@ $apiInstance = new OpenAPI\Client\Api\AdvanceShipNoticesApi(
 );
 $id = 84529ad2-2265-4e15-b76b-c17025d848f6; // string | An identifier of Advance Ship Notice.
 $if_match = 123456; // string | A current version of Advance Ship Notice (e.g. from etag header obtained via get).
-$update_submitted_advance_ship_notice_request = new \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest(); // \OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest
+$update_submitted_advance_ship_notice_request = new \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest(); // \robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest
 
 try {
     $result = $apiInstance->updateSubmittedAdvanceShipNotice($id, $if_match, $update_submitted_advance_ship_notice_request);
@@ -672,11 +672,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| An identifier of Advance Ship Notice. | |
 | **if_match** | **string**| A current version of Advance Ship Notice (e.g. from etag header obtained via get). | |
-| **update_submitted_advance_ship_notice_request** | [**\OpenAPI\Client\Model\UpdateSubmittedAdvanceShipNoticeRequest**](../Model/UpdateSubmittedAdvanceShipNoticeRequest.md)|  | |
+| **update_submitted_advance_ship_notice_request** | [**\robsonek\phpAllegroApi\Model\UpdateSubmittedAdvanceShipNoticeRequest**](../Model/UpdateSubmittedAdvanceShipNoticeRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
+[**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse**](../Model/AdvanceShipNoticeResponse.md)
 
 ### Authorization
 

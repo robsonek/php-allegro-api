@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ContactResponseList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ContactResponseList implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contacts' => '\OpenAPI\Client\Model\ContactResponse[]'
+        'contacts' => '\robsonek\phpAllegroApi\Model\ContactResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ContactResponseList implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets contacts
      *
-     * @return \OpenAPI\Client\Model\ContactResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\ContactResponse[]|null
      */
     public function getContacts()
     {
@@ -302,7 +302,7 @@ class ContactResponseList implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets contacts
      *
-     * @param \OpenAPI\Client\Model\ContactResponse[]|null $contacts contacts
+     * @param \robsonek\phpAllegroApi\Model\ContactResponse[]|null $contacts contacts
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'parcel_id' => 'string',
         'service_id' => 'string',
-        'receiver' => '\OpenAPI\Client\Model\Receiver',
-        'pickup' => '\OpenAPI\Client\Model\Pickup',
-        'items' => '\OpenAPI\Client\Model\ParcelItemDetailsWithWaybill[]',
+        'receiver' => '\robsonek\phpAllegroApi\Model\Receiver',
+        'pickup' => '\robsonek\phpAllegroApi\Model\Pickup',
+        'items' => '\robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybill[]',
         'type' => 'string',
-        'label' => '\OpenAPI\Client\Model\ParcelDetailsLabel',
-        'additional_services' => '\OpenAPI\Client\Model\ParcelAdditionalServices',
+        'label' => '\robsonek\phpAllegroApi\Model\ParcelDetailsLabel',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\ParcelAdditionalServices',
         'state' => 'string'
     ];
 
@@ -454,7 +454,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets receiver
      *
-     * @return \OpenAPI\Client\Model\Receiver|null
+     * @return \robsonek\phpAllegroApi\Model\Receiver|null
      */
     public function getReceiver()
     {
@@ -464,7 +464,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets receiver
      *
-     * @param \OpenAPI\Client\Model\Receiver|null $receiver receiver
+     * @param \robsonek\phpAllegroApi\Model\Receiver|null $receiver receiver
      *
      * @return self
      */
@@ -481,7 +481,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pickup
      *
-     * @return \OpenAPI\Client\Model\Pickup|null
+     * @return \robsonek\phpAllegroApi\Model\Pickup|null
      */
     public function getPickup()
     {
@@ -491,7 +491,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pickup
      *
-     * @param \OpenAPI\Client\Model\Pickup|null $pickup pickup
+     * @param \robsonek\phpAllegroApi\Model\Pickup|null $pickup pickup
      *
      * @return self
      */
@@ -508,7 +508,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ParcelItemDetailsWithWaybill[]|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybill[]|null
      */
     public function getItems()
     {
@@ -518,7 +518,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ParcelItemDetailsWithWaybill[]|null $items Parcel items details.
+     * @param \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybill[]|null $items Parcel items details.
      *
      * @return self
      */
@@ -572,7 +572,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets label
      *
-     * @return \OpenAPI\Client\Model\ParcelDetailsLabel|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelDetailsLabel|null
      */
     public function getLabel()
     {
@@ -582,7 +582,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets label
      *
-     * @param \OpenAPI\Client\Model\ParcelDetailsLabel|null $label label
+     * @param \robsonek\phpAllegroApi\Model\ParcelDetailsLabel|null $label label
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\ParcelAdditionalServices|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelAdditionalServices|null
      */
     public function getAdditionalServices()
     {
@@ -609,7 +609,7 @@ class ParcelDetails implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\ParcelAdditionalServices|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\ParcelAdditionalServices|null $additional_services additional_services
      *
      * @return self
      */

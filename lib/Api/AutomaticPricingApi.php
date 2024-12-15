@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class AutomaticPricingApi
      *
      * Post automatic pricing rule
      *
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAutomaticPricingRulesUsingPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
      */
     public function createAutomaticPricingRulesUsingPost($automatic_pricing_rule_post_request, string $contentType = self::contentTypes['createAutomaticPricingRulesUsingPost'][0])
     {
@@ -160,12 +160,12 @@ class AutomaticPricingApi
      *
      * Post automatic pricing rule
      *
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAutomaticPricingRulesUsingPost'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAutomaticPricingRulesUsingPostWithHttpInfo($automatic_pricing_rule_post_request, string $contentType = self::contentTypes['createAutomaticPricingRulesUsingPost'][0])
     {
@@ -196,11 +196,11 @@ class AutomaticPricingApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,7 +218,7 @@ class AutomaticPricingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AutomaticPricingRuleResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -237,7 +237,7 @@ class AutomaticPricingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -270,7 +270,7 @@ class AutomaticPricingApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AutomaticPricingRuleResponse',
+                        '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class AutomaticPricingApi
      *
      * Post automatic pricing rule
      *
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAutomaticPricingRulesUsingPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -306,7 +306,7 @@ class AutomaticPricingApi
      *
      * Post automatic pricing rule
      *
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAutomaticPricingRulesUsingPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -314,7 +314,7 @@ class AutomaticPricingApi
      */
     public function createAutomaticPricingRulesUsingPostAsyncWithHttpInfo($automatic_pricing_rule_post_request, string $contentType = self::contentTypes['createAutomaticPricingRulesUsingPost'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
         $request = $this->createAutomaticPricingRulesUsingPostRequest($automatic_pricing_rule_post_request, $contentType);
 
         return $this->client
@@ -356,7 +356,7 @@ class AutomaticPricingApi
     /**
      * Create request for operation 'createAutomaticPricingRulesUsingPost'
      *
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest $automatic_pricing_rule_post_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAutomaticPricingRulesUsingPost'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -456,7 +456,7 @@ class AutomaticPricingApi
      * @param  string $rule_id The rule identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAutomaticPricingRuleUsingDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -473,7 +473,7 @@ class AutomaticPricingApi
      * @param  string $rule_id The rule identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteAutomaticPricingRuleUsingDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -677,9 +677,9 @@ class AutomaticPricingApi
      * @param  string $rule_id The rule identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRuleByIdUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
      */
     public function getAutomaticPricingRuleByIdUsingGET($rule_id, string $contentType = self::contentTypes['getAutomaticPricingRuleByIdUsingGET'][0])
     {
@@ -695,9 +695,9 @@ class AutomaticPricingApi
      * @param  string $rule_id The rule identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRuleByIdUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAutomaticPricingRuleByIdUsingGETWithHttpInfo($rule_id, string $contentType = self::contentTypes['getAutomaticPricingRuleByIdUsingGET'][0])
     {
@@ -728,11 +728,11 @@ class AutomaticPricingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -750,7 +750,7 @@ class AutomaticPricingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AutomaticPricingRuleResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -769,7 +769,7 @@ class AutomaticPricingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -802,7 +802,7 @@ class AutomaticPricingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AutomaticPricingRuleResponse',
+                        '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class AutomaticPricingApi
      */
     public function getAutomaticPricingRuleByIdUsingGETAsyncWithHttpInfo($rule_id, string $contentType = self::contentTypes['getAutomaticPricingRuleByIdUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
         $request = $this->getAutomaticPricingRuleByIdUsingGETRequest($rule_id, $contentType);
 
         return $this->client
@@ -989,9 +989,9 @@ class AutomaticPricingApi
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRulesForOfferUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferRules
+     * @return \robsonek\phpAllegroApi\Model\OfferRules
      */
     public function getAutomaticPricingRulesForOfferUsingGET($offer_id, string $contentType = self::contentTypes['getAutomaticPricingRulesForOfferUsingGET'][0])
     {
@@ -1007,9 +1007,9 @@ class AutomaticPricingApi
      * @param  string $offer_id The offer identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRulesForOfferUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferRules, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferRules, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAutomaticPricingRulesForOfferUsingGETWithHttpInfo($offer_id, string $contentType = self::contentTypes['getAutomaticPricingRulesForOfferUsingGET'][0])
     {
@@ -1040,11 +1040,11 @@ class AutomaticPricingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferRules' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferRules' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferRules' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferRules' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1062,7 +1062,7 @@ class AutomaticPricingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferRules', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferRules', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1081,7 +1081,7 @@ class AutomaticPricingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferRules';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferRules';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1114,7 +1114,7 @@ class AutomaticPricingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferRules',
+                        '\robsonek\phpAllegroApi\Model\OfferRules',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1158,7 +1158,7 @@ class AutomaticPricingApi
      */
     public function getAutomaticPricingRulesForOfferUsingGETAsyncWithHttpInfo($offer_id, string $contentType = self::contentTypes['getAutomaticPricingRulesForOfferUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferRules';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferRules';
         $request = $this->getAutomaticPricingRulesForOfferUsingGETRequest($offer_id, $contentType);
 
         return $this->client
@@ -1300,9 +1300,9 @@ class AutomaticPricingApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRulesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AutomaticPricingRulesResponse
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse
      */
     public function getAutomaticPricingRulesUsingGET(string $contentType = self::contentTypes['getAutomaticPricingRulesUsingGET'][0])
     {
@@ -1317,9 +1317,9 @@ class AutomaticPricingApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAutomaticPricingRulesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AutomaticPricingRulesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAutomaticPricingRulesUsingGETWithHttpInfo(string $contentType = self::contentTypes['getAutomaticPricingRulesUsingGET'][0])
     {
@@ -1350,11 +1350,11 @@ class AutomaticPricingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AutomaticPricingRulesResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AutomaticPricingRulesResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1372,7 +1372,7 @@ class AutomaticPricingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AutomaticPricingRulesResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1391,7 +1391,7 @@ class AutomaticPricingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AutomaticPricingRulesResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1424,7 +1424,7 @@ class AutomaticPricingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AutomaticPricingRulesResponse',
+                        '\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1466,7 +1466,7 @@ class AutomaticPricingApi
      */
     public function getAutomaticPricingRulesUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getAutomaticPricingRulesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AutomaticPricingRulesResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse';
         $request = $this->getAutomaticPricingRulesUsingGETRequest($contentType);
 
         return $this->client
@@ -1591,12 +1591,12 @@ class AutomaticPricingApi
      * Edit automatic pricing rule
      *
      * @param  string $rule_id The rule identifier. (required)
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAutomaticPricingRuleUsingPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
      */
     public function updateAutomaticPricingRuleUsingPut($rule_id, $automatic_pricing_rule_put_request, string $contentType = self::contentTypes['updateAutomaticPricingRuleUsingPut'][0])
     {
@@ -1610,12 +1610,12 @@ class AutomaticPricingApi
      * Edit automatic pricing rule
      *
      * @param  string $rule_id The rule identifier. (required)
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAutomaticPricingRuleUsingPut'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAutomaticPricingRuleUsingPutWithHttpInfo($rule_id, $automatic_pricing_rule_put_request, string $contentType = self::contentTypes['updateAutomaticPricingRuleUsingPut'][0])
     {
@@ -1646,11 +1646,11 @@ class AutomaticPricingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AutomaticPricingRuleResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1668,7 +1668,7 @@ class AutomaticPricingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AutomaticPricingRuleResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1687,7 +1687,7 @@ class AutomaticPricingApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1720,7 +1720,7 @@ class AutomaticPricingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AutomaticPricingRuleResponse',
+                        '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1736,7 +1736,7 @@ class AutomaticPricingApi
      * Edit automatic pricing rule
      *
      * @param  string $rule_id The rule identifier. (required)
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAutomaticPricingRuleUsingPut'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1758,7 +1758,7 @@ class AutomaticPricingApi
      * Edit automatic pricing rule
      *
      * @param  string $rule_id The rule identifier. (required)
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAutomaticPricingRuleUsingPut'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1766,7 +1766,7 @@ class AutomaticPricingApi
      */
     public function updateAutomaticPricingRuleUsingPutAsyncWithHttpInfo($rule_id, $automatic_pricing_rule_put_request, string $contentType = self::contentTypes['updateAutomaticPricingRuleUsingPut'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AutomaticPricingRuleResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse';
         $request = $this->updateAutomaticPricingRuleUsingPutRequest($rule_id, $automatic_pricing_rule_put_request, $contentType);
 
         return $this->client
@@ -1809,7 +1809,7 @@ class AutomaticPricingApi
      * Create request for operation 'updateAutomaticPricingRuleUsingPut'
      *
      * @param  string $rule_id The rule identifier. (required)
-     * @param  \OpenAPI\Client\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
+     * @param  \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest $automatic_pricing_rule_put_request The automatic pricing rule. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateAutomaticPricingRuleUsingPut'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

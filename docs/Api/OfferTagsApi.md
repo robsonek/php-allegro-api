@@ -1,4 +1,4 @@
-# OpenAPI\Client\OfferTagsApi
+# robsonek\phpAllegroApi\OfferTagsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -30,17 +30,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $offer_id = 'offer_id_example'; // string | Offer identifier.
-$tag_ids_request = new \OpenAPI\Client\Model\TagIdsRequest(); // \OpenAPI\Client\Model\TagIdsRequest | request
+$tag_ids_request = new \robsonek\phpAllegroApi\Model\TagIdsRequest(); // \robsonek\phpAllegroApi\Model\TagIdsRequest | request
 
 try {
     $apiInstance->assignTagToOfferPOST($offer_id, $tag_ids_request);
@@ -54,7 +54,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **offer_id** | **string**| Offer identifier. | |
-| **tag_ids_request** | [**\OpenAPI\Client\Model\TagIdsRequest**](../Model/TagIdsRequest.md)| request | |
+| **tag_ids_request** | [**\robsonek\phpAllegroApi\Model\TagIdsRequest**](../Model/TagIdsRequest.md)| request | |
 
 ### Return type
 
@@ -76,7 +76,7 @@ void (empty response body)
 ## `createTagPOST1()`
 
 ```php
-createTagPOST1($tag_request): \OpenAPI\Client\Model\TagId
+createTagPOST1($tag_request): \robsonek\phpAllegroApi\Model\TagId
 ```
 
 Create a tag
@@ -91,16 +91,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$tag_request = new \OpenAPI\Client\Model\TagRequest(); // \OpenAPI\Client\Model\TagRequest | request
+$tag_request = new \robsonek\phpAllegroApi\Model\TagRequest(); // \robsonek\phpAllegroApi\Model\TagRequest | request
 
 try {
     $result = $apiInstance->createTagPOST1($tag_request);
@@ -114,11 +114,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **tag_request** | [**\OpenAPI\Client\Model\TagRequest**](../Model/TagRequest.md)| request | |
+| **tag_request** | [**\robsonek\phpAllegroApi\Model\TagRequest**](../Model/TagRequest.md)| request | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TagId**](../Model/TagId.md)
+[**\robsonek\phpAllegroApi\Model\TagId**](../Model/TagId.md)
 
 ### Authorization
 
@@ -151,10 +151,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,7 +195,7 @@ void (empty response body)
 ## `listAssignedOfferTagsGET()`
 
 ```php
-listAssignedOfferTagsGET($offer_id): \OpenAPI\Client\Model\TagListResponse
+listAssignedOfferTagsGET($offer_id): \robsonek\phpAllegroApi\Model\TagListResponse
 ```
 
 Get tags assigned to an offer
@@ -210,10 +210,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TagListResponse**](../Model/TagListResponse.md)
+[**\robsonek\phpAllegroApi\Model\TagListResponse**](../Model/TagListResponse.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ try {
 ## `listSellerTagsGET1()`
 
 ```php
-listSellerTagsGET1($limit, $offset): \OpenAPI\Client\Model\TagListResponse
+listSellerTagsGET1($limit, $offset): \robsonek\phpAllegroApi\Model\TagListResponse
 ```
 
 Get the user's tags
@@ -270,10 +270,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -299,7 +299,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TagListResponse**](../Model/TagListResponse.md)
+[**\robsonek\phpAllegroApi\Model\TagListResponse**](../Model/TagListResponse.md)
 
 ### Authorization
 
@@ -332,17 +332,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferTagsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $tag_id = 'tag_id_example'; // string | Tag identifier.
-$tag_request = new \OpenAPI\Client\Model\TagRequest(); // \OpenAPI\Client\Model\TagRequest | request
+$tag_request = new \robsonek\phpAllegroApi\Model\TagRequest(); // \robsonek\phpAllegroApi\Model\TagRequest | request
 
 try {
     $apiInstance->updateTagPUT($tag_id, $tag_request);
@@ -356,7 +356,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **tag_id** | **string**| Tag identifier. | |
-| **tag_request** | [**\OpenAPI\Client\Model\TagRequest**](../Model/TagRequest.md)| request | |
+| **tag_request** | [**\robsonek\phpAllegroApi\Model\TagRequest**](../Model/TagRequest.md)| request | |
 
 ### Return type
 

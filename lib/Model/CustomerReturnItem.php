@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CustomerReturnItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,9 +60,9 @@ class CustomerReturnItem implements ModelInterface, ArrayAccess, \JsonSerializab
         'offer_id' => 'string',
         'quantity' => 'int',
         'name' => 'string',
-        'price' => '\OpenAPI\Client\Model\Price',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
         'url' => 'string',
-        'reason' => '\OpenAPI\Client\Model\CustomerReturnItemReason'
+        'reason' => '\robsonek\phpAllegroApi\Model\CustomerReturnItemReason'
     ];
 
     /**
@@ -408,7 +408,7 @@ class CustomerReturnItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -418,7 +418,7 @@ class CustomerReturnItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price price
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price price
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class CustomerReturnItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets reason
      *
-     * @return \OpenAPI\Client\Model\CustomerReturnItemReason|null
+     * @return \robsonek\phpAllegroApi\Model\CustomerReturnItemReason|null
      */
     public function getReason()
     {
@@ -472,7 +472,7 @@ class CustomerReturnItem implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets reason
      *
-     * @param \OpenAPI\Client\Model\CustomerReturnItemReason|null $reason reason
+     * @param \robsonek\phpAllegroApi\Model\CustomerReturnItemReason|null $reason reason
      *
      * @return self
      */

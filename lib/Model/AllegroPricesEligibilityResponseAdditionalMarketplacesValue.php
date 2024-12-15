@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AllegroPricesEligibilityResponseAdditionalMarketplacesValue Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AllegroPricesEligibilityResponseAdditionalMarketplacesValue implements Mod
       */
     protected static $openAPITypes = [
         'consent' => 'string',
-        'qualification' => '\OpenAPI\Client\Model\AllegroPricesQualificationResponse'
+        'qualification' => '\robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse'
     ];
 
     /**
@@ -360,7 +360,7 @@ class AllegroPricesEligibilityResponseAdditionalMarketplacesValue implements Mod
     /**
      * Gets qualification
      *
-     * @return \OpenAPI\Client\Model\AllegroPricesQualificationResponse|null
+     * @return \robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse|null
      */
     public function getQualification()
     {
@@ -370,7 +370,7 @@ class AllegroPricesEligibilityResponseAdditionalMarketplacesValue implements Mod
     /**
      * Sets qualification
      *
-     * @param \OpenAPI\Client\Model\AllegroPricesQualificationResponse|null $qualification qualification
+     * @param \robsonek\phpAllegroApi\Model\AllegroPricesQualificationResponse|null $qualification qualification
      *
      * @return self
      */

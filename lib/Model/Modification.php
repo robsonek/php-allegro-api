@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Modification Class Doc Comment
  *
  * @category Class
  * @description Contains fields to change
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,16 +58,16 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_services_group' => '\OpenAPI\Client\Model\AdditionalServicesGroup',
-        'delivery' => '\OpenAPI\Client\Model\ModificationDelivery',
-        'discounts' => '\OpenAPI\Client\Model\ModificationDiscounts',
-        'location' => '\OpenAPI\Client\Model\Location',
-        'payments' => '\OpenAPI\Client\Model\ModificationPayments',
-        'size_table' => '\OpenAPI\Client\Model\SizeTable',
-        'publication' => '\OpenAPI\Client\Model\ModificationPublication',
-        'responsible_person' => '\OpenAPI\Client\Model\ModificationResponsiblePerson',
-        'responsible_producer' => '\OpenAPI\Client\Model\ModificationResponsibleProducer',
-        'safety_information' => '\OpenAPI\Client\Model\ModificationSafetyInformation'
+        'additional_services_group' => '\robsonek\phpAllegroApi\Model\AdditionalServicesGroup',
+        'delivery' => '\robsonek\phpAllegroApi\Model\ModificationDelivery',
+        'discounts' => '\robsonek\phpAllegroApi\Model\ModificationDiscounts',
+        'location' => '\robsonek\phpAllegroApi\Model\Location',
+        'payments' => '\robsonek\phpAllegroApi\Model\ModificationPayments',
+        'size_table' => '\robsonek\phpAllegroApi\Model\SizeTable',
+        'publication' => '\robsonek\phpAllegroApi\Model\ModificationPublication',
+        'responsible_person' => '\robsonek\phpAllegroApi\Model\ModificationResponsiblePerson',
+        'responsible_producer' => '\robsonek\phpAllegroApi\Model\ModificationResponsibleProducer',
+        'safety_information' => '\robsonek\phpAllegroApi\Model\ModificationSafetyInformation'
     ];
 
     /**
@@ -356,7 +356,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services_group
      *
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroup|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroup|null
      */
     public function getAdditionalServicesGroup()
     {
@@ -366,7 +366,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services_group
      *
-     * @param \OpenAPI\Client\Model\AdditionalServicesGroup|null $additional_services_group additional_services_group
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServicesGroup|null $additional_services_group additional_services_group
      *
      * @return self
      */
@@ -383,7 +383,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\ModificationDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationDelivery|null
      */
     public function getDelivery()
     {
@@ -393,7 +393,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\ModificationDelivery|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\ModificationDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -410,7 +410,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discounts
      *
-     * @return \OpenAPI\Client\Model\ModificationDiscounts|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationDiscounts|null
      */
     public function getDiscounts()
     {
@@ -420,7 +420,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discounts
      *
-     * @param \OpenAPI\Client\Model\ModificationDiscounts|null $discounts discounts
+     * @param \robsonek\phpAllegroApi\Model\ModificationDiscounts|null $discounts discounts
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets location
      *
-     * @return \OpenAPI\Client\Model\Location|null
+     * @return \robsonek\phpAllegroApi\Model\Location|null
      */
     public function getLocation()
     {
@@ -447,7 +447,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets location
      *
-     * @param \OpenAPI\Client\Model\Location|null $location location
+     * @param \robsonek\phpAllegroApi\Model\Location|null $location location
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\ModificationPayments|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationPayments|null
      */
     public function getPayments()
     {
@@ -474,7 +474,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\ModificationPayments|null $payments payments
+     * @param \robsonek\phpAllegroApi\Model\ModificationPayments|null $payments payments
      *
      * @return self
      */
@@ -491,7 +491,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets size_table
      *
-     * @return \OpenAPI\Client\Model\SizeTable|null
+     * @return \robsonek\phpAllegroApi\Model\SizeTable|null
      */
     public function getSizeTable()
     {
@@ -501,7 +501,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets size_table
      *
-     * @param \OpenAPI\Client\Model\SizeTable|null $size_table size_table
+     * @param \robsonek\phpAllegroApi\Model\SizeTable|null $size_table size_table
      *
      * @return self
      */
@@ -518,7 +518,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\ModificationPublication|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationPublication|null
      */
     public function getPublication()
     {
@@ -528,7 +528,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\ModificationPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\ModificationPublication|null $publication publication
      *
      * @return self
      */
@@ -545,7 +545,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets responsible_person
      *
-     * @return \OpenAPI\Client\Model\ModificationResponsiblePerson|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationResponsiblePerson|null
      */
     public function getResponsiblePerson()
     {
@@ -555,7 +555,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets responsible_person
      *
-     * @param \OpenAPI\Client\Model\ModificationResponsiblePerson|null $responsible_person responsible_person
+     * @param \robsonek\phpAllegroApi\Model\ModificationResponsiblePerson|null $responsible_person responsible_person
      *
      * @return self
      */
@@ -572,7 +572,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets responsible_producer
      *
-     * @return \OpenAPI\Client\Model\ModificationResponsibleProducer|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationResponsibleProducer|null
      */
     public function getResponsibleProducer()
     {
@@ -582,7 +582,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets responsible_producer
      *
-     * @param \OpenAPI\Client\Model\ModificationResponsibleProducer|null $responsible_producer responsible_producer
+     * @param \robsonek\phpAllegroApi\Model\ModificationResponsibleProducer|null $responsible_producer responsible_producer
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets safety_information
      *
-     * @return \OpenAPI\Client\Model\ModificationSafetyInformation|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationSafetyInformation|null
      */
     public function getSafetyInformation()
     {
@@ -609,7 +609,7 @@ class Modification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets safety_information
      *
-     * @param \OpenAPI\Client\Model\ModificationSafetyInformation|null $safety_information safety_information
+     * @param \robsonek\phpAllegroApi\Model\ModificationSafetyInformation|null $safety_information safety_information
      *
      * @return self
      */

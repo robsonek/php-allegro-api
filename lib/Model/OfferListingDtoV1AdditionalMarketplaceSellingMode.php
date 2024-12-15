@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1AdditionalMarketplaceSellingMode Class Doc Comment
  *
  * @category Class
  * @description Information about the selling mode of the offer on the given marketplace.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferListingDtoV1AdditionalMarketplaceSellingMode implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'price' => '\OpenAPI\Client\Model\BuyNowPrice',
-        'price_automation' => '\OpenAPI\Client\Model\PriceAutomation'
+        'price' => '\robsonek\phpAllegroApi\Model\BuyNowPrice',
+        'price_automation' => '\robsonek\phpAllegroApi\Model\PriceAutomation'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OfferListingDtoV1AdditionalMarketplaceSellingMode implements ModelInterfac
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\BuyNowPrice|null
+     * @return \robsonek\phpAllegroApi\Model\BuyNowPrice|null
      */
     public function getPrice()
     {
@@ -310,7 +310,7 @@ class OfferListingDtoV1AdditionalMarketplaceSellingMode implements ModelInterfac
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\BuyNowPrice|null $price The price of the offer on the given marketplace.
+     * @param \robsonek\phpAllegroApi\Model\BuyNowPrice|null $price The price of the offer on the given marketplace.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OfferListingDtoV1AdditionalMarketplaceSellingMode implements ModelInterfac
     /**
      * Gets price_automation
      *
-     * @return \OpenAPI\Client\Model\PriceAutomation|null
+     * @return \robsonek\phpAllegroApi\Model\PriceAutomation|null
      */
     public function getPriceAutomation()
     {
@@ -337,7 +337,7 @@ class OfferListingDtoV1AdditionalMarketplaceSellingMode implements ModelInterfac
     /**
      * Sets price_automation
      *
-     * @param \OpenAPI\Client\Model\PriceAutomation|null $price_automation The automatic pricing rule on the given marketplace.
+     * @param \robsonek\phpAllegroApi\Model\PriceAutomation|null $price_automation The automatic pricing rule on the given marketplace.
      *
      * @return self
      */

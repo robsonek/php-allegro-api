@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountListEligibleResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AlleDiscountListEligibleResponse implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'eligible_offers' => '\OpenAPI\Client\Model\AlleDiscountEligibleOfferDto[]',
+        'eligible_offers' => '\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDto[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -306,7 +306,7 @@ class AlleDiscountListEligibleResponse implements ModelInterface, ArrayAccess, \
     /**
      * Gets eligible_offers
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountEligibleOfferDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDto[]|null
      */
     public function getEligibleOffers()
     {
@@ -316,7 +316,7 @@ class AlleDiscountListEligibleResponse implements ModelInterface, ArrayAccess, \
     /**
      * Sets eligible_offers
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountEligibleOfferDto[]|null $eligible_offers Array of offers eligible to be submitted to given AlleDiscount campaign.
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDto[]|null $eligible_offers Array of offers eligible to be submitted to given AlleDiscount campaign.
      *
      * @return self
      */

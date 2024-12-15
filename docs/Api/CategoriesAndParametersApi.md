@@ -1,4 +1,4 @@
-# OpenAPI\Client\CategoriesAndParametersApi
+# robsonek\phpAllegroApi\CategoriesAndParametersApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `categorySuggestionUsingGET()`
 
 ```php
-categorySuggestionUsingGET($name): \OpenAPI\Client\Model\CategorySuggestionResponse
+categorySuggestionUsingGET($name): \robsonek\phpAllegroApi\Model\CategorySuggestionResponse
 ```
 
 Get categories suggestions
@@ -30,10 +30,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategorySuggestionResponse**](../Model/CategorySuggestionResponse.md)
+[**\robsonek\phpAllegroApi\Model\CategorySuggestionResponse**](../Model/CategorySuggestionResponse.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ try {
 ## `getCategoriesUsingGET()`
 
 ```php
-getCategoriesUsingGET($parent_id): \OpenAPI\Client\Model\CategoriesDto
+getCategoriesUsingGET($parent_id): \robsonek\phpAllegroApi\Model\CategoriesDto
 ```
 
 Get IDs of Allegro categories
@@ -90,13 +90,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoriesDto**](../Model/CategoriesDto.md)
+[**\robsonek\phpAllegroApi\Model\CategoriesDto**](../Model/CategoriesDto.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ try {
 ## `getCategoryEventsUsingGET1()`
 
 ```php
-getCategoryEventsUsingGET1($from, $limit, $type): \OpenAPI\Client\Model\CategoryEventsResponse
+getCategoryEventsUsingGET1($from, $limit, $type): \robsonek\phpAllegroApi\Model\CategoryEventsResponse
 ```
 
 Get changes in categories
@@ -153,13 +153,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -187,7 +187,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoryEventsResponse**](../Model/CategoryEventsResponse.md)
+[**\robsonek\phpAllegroApi\Model\CategoryEventsResponse**](../Model/CategoryEventsResponse.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ try {
 ## `getCategoryParametersScheduledChangesUsingGET1()`
 
 ```php
-getCategoryParametersScheduledChangesUsingGET1($scheduled_for_gte, $scheduled_for_lte, $scheduled_at_gte, $scheduled_at_lte, $type, $offset, $limit): \OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse
+getCategoryParametersScheduledChangesUsingGET1($scheduled_for_gte, $scheduled_for_lte, $scheduled_at_gte, $scheduled_at_lte, $type, $offset, $limit): \robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse
 ```
 
 Get planned changes in category parameters
@@ -220,13 +220,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -262,7 +262,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse**](../Model/CategoryParametersScheduledChangesResponse.md)
+[**\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse**](../Model/CategoryParametersScheduledChangesResponse.md)
 
 ### Authorization
 
@@ -280,7 +280,7 @@ try {
 ## `getCategoryUsingGET1()`
 
 ```php
-getCategoryUsingGET1($category_id): \OpenAPI\Client\Model\CategoryDto
+getCategoryUsingGET1($category_id): \robsonek\phpAllegroApi\Model\CategoryDto
 ```
 
 Get a category by ID
@@ -295,13 +295,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -325,7 +325,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoryDto**](../Model/CategoryDto.md)
+[**\robsonek\phpAllegroApi\Model\CategoryDto**](../Model/CategoryDto.md)
 
 ### Authorization
 
@@ -343,7 +343,7 @@ try {
 ## `getFlatParametersUsingGET2()`
 
 ```php
-getFlatParametersUsingGET2($category_id): \OpenAPI\Client\Model\CategoryParameterList
+getFlatParametersUsingGET2($category_id): \robsonek\phpAllegroApi\Model\CategoryParameterList
 ```
 
 Get parameters supported by a category
@@ -358,13 +358,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CategoriesAndParametersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -388,7 +388,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CategoryParameterList**](../Model/CategoryParameterList.md)
+[**\robsonek\phpAllegroApi\Model\CategoryParameterList**](../Model/CategoryParameterList.md)
 
 ### Authorization
 

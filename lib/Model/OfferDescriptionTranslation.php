@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferDescriptionTranslation Class Doc Comment
  *
  * @category Class
  * @description Offer description translation
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferDescriptionTranslation implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'translation' => '\OpenAPI\Client\Model\StandardizedDescription',
-        'type' => '\OpenAPI\Client\Model\OfferTranslationType'
+        'translation' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
+        'type' => '\robsonek\phpAllegroApi\Model\OfferTranslationType'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OfferDescriptionTranslation implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets translation
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getTranslation()
     {
@@ -310,7 +310,7 @@ class OfferDescriptionTranslation implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets translation
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $translation translation
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $translation translation
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OfferDescriptionTranslation implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\OfferTranslationType|null
+     * @return \robsonek\phpAllegroApi\Model\OfferTranslationType|null
      */
     public function getType()
     {
@@ -337,7 +337,7 @@ class OfferDescriptionTranslation implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\OfferTranslationType|null $type type
+     * @param \robsonek\phpAllegroApi\Model\OfferTranslationType|null $type type
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * QuoteResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class QuoteResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'name' => 'string',
         'type' => 'string',
-        'fee' => '\OpenAPI\Client\Model\Price',
+        'fee' => '\robsonek\phpAllegroApi\Model\Price',
         'cycle_duration' => 'string',
-        'classifieds_package' => '\OpenAPI\Client\Model\ClassifiedPackage'
+        'classifieds_package' => '\robsonek\phpAllegroApi\Model\ClassifiedPackage'
     ];
 
     /**
@@ -374,7 +374,7 @@ class QuoteResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fee
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getFee()
     {
@@ -384,7 +384,7 @@ class QuoteResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fee
      *
-     * @param \OpenAPI\Client\Model\Price|null $fee fee
+     * @param \robsonek\phpAllegroApi\Model\Price|null $fee fee
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class QuoteResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets classifieds_package
      *
-     * @return \OpenAPI\Client\Model\ClassifiedPackage|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedPackage|null
      */
     public function getClassifiedsPackage()
     {
@@ -438,7 +438,7 @@ class QuoteResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets classifieds_package
      *
-     * @param \OpenAPI\Client\Model\ClassifiedPackage|null $classifieds_package classifieds_package
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedPackage|null $classifieds_package classifieds_package
      *
      * @return self
      */

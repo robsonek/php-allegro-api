@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CreateOfferBundleDTO Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class CreateOfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\OpenAPI\Client\Model\BundledOfferDTO[]',
-        'discounts' => '\OpenAPI\Client\Model\BundleDiscountDTO[]'
+        'offers' => '\robsonek\phpAllegroApi\Model\BundledOfferDTO[]',
+        'discounts' => '\robsonek\phpAllegroApi\Model\BundleDiscountDTO[]'
     ];
 
     /**
@@ -302,7 +302,7 @@ class CreateOfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\BundledOfferDTO[]
+     * @return \robsonek\phpAllegroApi\Model\BundledOfferDTO[]
      */
     public function getOffers()
     {
@@ -312,7 +312,7 @@ class CreateOfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\BundledOfferDTO[] $offers Offers that will make up the bundle.
+     * @param \robsonek\phpAllegroApi\Model\BundledOfferDTO[] $offers Offers that will make up the bundle.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class CreateOfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets discounts
      *
-     * @return \OpenAPI\Client\Model\BundleDiscountDTO[]|null
+     * @return \robsonek\phpAllegroApi\Model\BundleDiscountDTO[]|null
      */
     public function getDiscounts()
     {
@@ -339,7 +339,7 @@ class CreateOfferBundleDTO implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets discounts
      *
-     * @param \OpenAPI\Client\Model\BundleDiscountDTO[]|null $discounts Discounts on marketplaces. Can be null or empty if bundle shouldn't have discount on any marketplace.
+     * @param \robsonek\phpAllegroApi\Model\BundleDiscountDTO[]|null $discounts Discounts on marketplaces. Can be null or empty if bundle shouldn't have discount on any marketplace.
      *
      * @return self
      */

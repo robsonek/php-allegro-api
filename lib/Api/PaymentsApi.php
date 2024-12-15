@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PaymentsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -146,9 +146,9 @@ class PaymentsApi
      * @param  int $offset Index of the first returned payment operation from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPaymentsOperationHistory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return |\OpenAPI\Client\Model\PaymentOperations|\OpenAPI\Client\Model\ErrorsHolder
+     * @return |\robsonek\phpAllegroApi\Model\PaymentOperations|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getPaymentsOperationHistory($wallet_type = 'AVAILABLE', $wallet_payment_operator = null, $payment_id = null, $participant_login = null, $occurred_at_gte = null, $occurred_at_lte = null, $group = null, $marketplace_id = null, $currency = null, $limit = 50, $offset = 0, string $contentType = self::contentTypes['getPaymentsOperationHistory'][0])
     {
@@ -174,9 +174,9 @@ class PaymentsApi
      * @param  int $offset Index of the first returned payment operation from all search results. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPaymentsOperationHistory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of |\OpenAPI\Client\Model\PaymentOperations|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of |\robsonek\phpAllegroApi\Model\PaymentOperations|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPaymentsOperationHistoryWithHttpInfo($wallet_type = 'AVAILABLE', $wallet_payment_operator = null, $payment_id = null, $participant_login = null, $occurred_at_gte = null, $occurred_at_lte = null, $group = null, $marketplace_id = null, $currency = null, $limit = 50, $offset = 0, string $contentType = self::contentTypes['getPaymentsOperationHistory'][0])
     {
@@ -207,11 +207,11 @@ class PaymentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PaymentOperations' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\PaymentOperations' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PaymentOperations' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\PaymentOperations' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -229,16 +229,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PaymentOperations', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\PaymentOperations', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -256,7 +256,7 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -275,7 +275,7 @@ class PaymentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PaymentOperations';
+            $returnType = '\robsonek\phpAllegroApi\Model\PaymentOperations';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -308,7 +308,7 @@ class PaymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PaymentOperations',
+                        '\robsonek\phpAllegroApi\Model\PaymentOperations',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -316,7 +316,7 @@ class PaymentsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -380,7 +380,7 @@ class PaymentsApi
      */
     public function getPaymentsOperationHistoryAsyncWithHttpInfo($wallet_type = 'AVAILABLE', $wallet_payment_operator = null, $payment_id = null, $participant_login = null, $occurred_at_gte = null, $occurred_at_lte = null, $group = null, $marketplace_id = null, $currency = null, $limit = 50, $offset = 0, string $contentType = self::contentTypes['getPaymentsOperationHistory'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PaymentOperations';
+        $returnType = '\robsonek\phpAllegroApi\Model\PaymentOperations';
         $request = $this->getPaymentsOperationHistoryRequest($wallet_type, $wallet_payment_operator, $payment_id, $participant_login, $occurred_at_gte, $occurred_at_lte, $group, $marketplace_id, $currency, $limit, $offset, $contentType);
 
         return $this->client
@@ -646,9 +646,9 @@ class PaymentsApi
      * @param  string[] $status Current status of payment refund. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundedPayments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetRefundedPayments200Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\GetRefundedPayments200Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getRefundedPayments($limit = 50, $offset = 0, $id = null, $payment_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $status = null, string $contentType = self::contentTypes['getRefundedPayments'][0])
     {
@@ -670,9 +670,9 @@ class PaymentsApi
      * @param  string[] $status Current status of payment refund. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getRefundedPayments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetRefundedPayments200Response|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetRefundedPayments200Response|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRefundedPaymentsWithHttpInfo($limit = 50, $offset = 0, $id = null, $payment_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $status = null, string $contentType = self::contentTypes['getRefundedPayments'][0])
     {
@@ -703,11 +703,11 @@ class PaymentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetRefundedPayments200Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetRefundedPayments200Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -725,16 +725,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetRefundedPayments200Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -752,16 +752,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -779,16 +779,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -806,7 +806,7 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -825,7 +825,7 @@ class PaymentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetRefundedPayments200Response';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -858,7 +858,7 @@ class PaymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetRefundedPayments200Response',
+                        '\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class PaymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -874,7 +874,7 @@ class PaymentsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -882,7 +882,7 @@ class PaymentsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -938,7 +938,7 @@ class PaymentsApi
      */
     public function getRefundedPaymentsAsyncWithHttpInfo($limit = 50, $offset = 0, $id = null, $payment_id = null, $occurred_at_gte = null, $occurred_at_lte = null, $status = null, string $contentType = self::contentTypes['getRefundedPayments'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetRefundedPayments200Response';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetRefundedPayments200Response';
         $request = $this->getRefundedPaymentsRequest($limit, $offset, $id, $payment_id, $occurred_at_gte, $occurred_at_lte, $status, $contentType);
 
         return $this->client
@@ -1148,12 +1148,12 @@ class PaymentsApi
      *
      * Initiate a refund of a payment
      *
-     * @param  \OpenAPI\Client\Model\InitializeRefund $initialize_refund initialize_refund (optional)
+     * @param  \robsonek\phpAllegroApi\Model\InitializeRefund $initialize_refund initialize_refund (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['initiateRefund'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RefundDetails|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\RefundDetails|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function initiateRefund($initialize_refund = null, string $contentType = self::contentTypes['initiateRefund'][0])
     {
@@ -1166,12 +1166,12 @@ class PaymentsApi
      *
      * Initiate a refund of a payment
      *
-     * @param  \OpenAPI\Client\Model\InitializeRefund $initialize_refund (optional)
+     * @param  \robsonek\phpAllegroApi\Model\InitializeRefund $initialize_refund (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['initiateRefund'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RefundDetails|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\RefundDetails|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function initiateRefundWithHttpInfo($initialize_refund = null, string $contentType = self::contentTypes['initiateRefund'][0])
     {
@@ -1202,11 +1202,11 @@ class PaymentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\RefundDetails' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\RefundDetails' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RefundDetails' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\RefundDetails' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1224,16 +1224,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RefundDetails', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\RefundDetails', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1251,16 +1251,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1278,16 +1278,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1305,16 +1305,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1332,16 +1332,16 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1359,7 +1359,7 @@ class PaymentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1378,7 +1378,7 @@ class PaymentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RefundDetails';
+            $returnType = '\robsonek\phpAllegroApi\Model\RefundDetails';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1411,7 +1411,7 @@ class PaymentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RefundDetails',
+                        '\robsonek\phpAllegroApi\Model\RefundDetails',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1419,7 +1419,7 @@ class PaymentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1427,7 +1427,7 @@ class PaymentsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1435,7 +1435,7 @@ class PaymentsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1443,7 +1443,7 @@ class PaymentsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetOfferSmartClassificationGET403Response',
+                        '\robsonek\phpAllegroApi\Model\GetOfferSmartClassificationGET403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1451,7 +1451,7 @@ class PaymentsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1466,7 +1466,7 @@ class PaymentsApi
      *
      * Initiate a refund of a payment
      *
-     * @param  \OpenAPI\Client\Model\InitializeRefund $initialize_refund (optional)
+     * @param  \robsonek\phpAllegroApi\Model\InitializeRefund $initialize_refund (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['initiateRefund'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1487,7 +1487,7 @@ class PaymentsApi
      *
      * Initiate a refund of a payment
      *
-     * @param  \OpenAPI\Client\Model\InitializeRefund $initialize_refund (optional)
+     * @param  \robsonek\phpAllegroApi\Model\InitializeRefund $initialize_refund (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['initiateRefund'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1495,7 +1495,7 @@ class PaymentsApi
      */
     public function initiateRefundAsyncWithHttpInfo($initialize_refund = null, string $contentType = self::contentTypes['initiateRefund'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RefundDetails';
+        $returnType = '\robsonek\phpAllegroApi\Model\RefundDetails';
         $request = $this->initiateRefundRequest($initialize_refund, $contentType);
 
         return $this->client
@@ -1537,7 +1537,7 @@ class PaymentsApi
     /**
      * Create request for operation 'initiateRefund'
      *
-     * @param  \OpenAPI\Client\Model\InitializeRefund $initialize_refund (optional)
+     * @param  \robsonek\phpAllegroApi\Model\InitializeRefund $initialize_refund (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['initiateRefund'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

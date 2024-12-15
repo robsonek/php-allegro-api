@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacePromoOptionsCommandModification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AdditionalMarketplacePromoOptionsCommandModification implements ModelInter
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'modification' => '\OpenAPI\Client\Model\PromoOptionsCommandModification'
+        'modification' => '\robsonek\phpAllegroApi\Model\PromoOptionsCommandModification'
     ];
 
     /**
@@ -326,7 +326,7 @@ class AdditionalMarketplacePromoOptionsCommandModification implements ModelInter
     /**
      * Gets modification
      *
-     * @return \OpenAPI\Client\Model\PromoOptionsCommandModification|null
+     * @return \robsonek\phpAllegroApi\Model\PromoOptionsCommandModification|null
      */
     public function getModification()
     {
@@ -336,7 +336,7 @@ class AdditionalMarketplacePromoOptionsCommandModification implements ModelInter
     /**
      * Sets modification
      *
-     * @param \OpenAPI\Client\Model\PromoOptionsCommandModification|null $modification modification
+     * @param \robsonek\phpAllegroApi\Model\PromoOptionsCommandModification|null $modification modification
      *
      * @return self
      */

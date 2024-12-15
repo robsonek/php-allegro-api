@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner implements
         'name' => 'string',
         'items_type' => 'string',
         'input_type' => 'string',
-        'validation_rules' => '\OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules'
+        'validation_rules' => '\robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules'
     ];
 
     /**
@@ -462,7 +462,7 @@ class CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner implements
     /**
      * Gets validation_rules
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules|null
      */
     public function getValidationRules()
     {
@@ -472,7 +472,7 @@ class CompatibilityListSupportedCategoriesDtoSupportedCategoriesInner implements
     /**
      * Sets validation_rules
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules|null $validation_rules validation_rules
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListSupportedCategoriesDtoSupportedCategoriesInnerValidationRules|null $validation_rules validation_rules
      *
      * @return self
      */

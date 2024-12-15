@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rates** | [**\OpenAPI\Client\Model\OfferTaxRate[]**](OfferTaxRate.md) | Tax rates for offer. |
+**rates** | [**\robsonek\phpAllegroApi\Model\OfferTaxRate[]**](OfferTaxRate.md) | Tax rates for offer. |
 **subject** | **string** | The subject of taxation for offer. | [optional]
 **exemption** | **string** | The exemption of taxation for offer. | [optional]
 

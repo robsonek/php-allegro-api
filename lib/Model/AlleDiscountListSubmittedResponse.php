@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountListSubmittedResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AlleDiscountListSubmittedResponse implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'submitted_offers' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDto[]',
+        'submitted_offers' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDto[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -306,7 +306,7 @@ class AlleDiscountListSubmittedResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets submitted_offers
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDto[]|null
      */
     public function getSubmittedOffers()
     {
@@ -316,7 +316,7 @@ class AlleDiscountListSubmittedResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets submitted_offers
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDto[]|null $submitted_offers Array of offers submitted to a given AlleDiscount campaign. This list contains all active and non active offer participations. There can be only one submission for offer in one AlleDiscount campaign.
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDto[]|null $submitted_offers Array of offers submitted to a given AlleDiscount campaign. This list contains all active and non active offer participations. There can be only one submission for offer in one AlleDiscount campaign.
      *
      * @return self
      */

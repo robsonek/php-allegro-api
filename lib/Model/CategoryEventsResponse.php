@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryEventsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CategoryEventsResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'events' => '\OpenAPI\Client\Model\CategoryBaseEvent[]'
+        'events' => '\robsonek\phpAllegroApi\Model\CategoryBaseEvent[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CategoryEventsResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets events
      *
-     * @return \OpenAPI\Client\Model\CategoryBaseEvent[]
+     * @return \robsonek\phpAllegroApi\Model\CategoryBaseEvent[]
      */
     public function getEvents()
     {
@@ -305,7 +305,7 @@ class CategoryEventsResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets events
      *
-     * @param \OpenAPI\Client\Model\CategoryBaseEvent[] $events The list of events.
+     * @param \robsonek\phpAllegroApi\Model\CategoryBaseEvent[] $events The list of events.
      *
      * @return self
      */

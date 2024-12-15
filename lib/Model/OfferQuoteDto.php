@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferQuoteDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class OfferQuoteDto implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'enabled' => 'bool',
-        'fee' => '\OpenAPI\Client\Model\Fee',
+        'fee' => '\robsonek\phpAllegroApi\Model\Fee',
         'name' => 'string',
         'next_date' => '\DateTime',
-        'offer' => '\OpenAPI\Client\Model\OfferId',
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferId',
         'type' => 'string'
     ];
 
@@ -354,7 +354,7 @@ class OfferQuoteDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fee
      *
-     * @return \OpenAPI\Client\Model\Fee|null
+     * @return \robsonek\phpAllegroApi\Model\Fee|null
      */
     public function getFee()
     {
@@ -364,7 +364,7 @@ class OfferQuoteDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fee
      *
-     * @param \OpenAPI\Client\Model\Fee|null $fee fee
+     * @param \robsonek\phpAllegroApi\Model\Fee|null $fee fee
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class OfferQuoteDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferId|null
+     * @return \robsonek\phpAllegroApi\Model\OfferId|null
      */
     public function getOffer()
     {
@@ -445,7 +445,7 @@ class OfferQuoteDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferId|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferId|null $offer offer
      *
      * @return self
      */

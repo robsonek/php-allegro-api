@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * TaxRate Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'country_code' => 'string',
-        'values' => '\OpenAPI\Client\Model\TaxRateValue[]'
+        'values' => '\robsonek\phpAllegroApi\Model\TaxRateValue[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\TaxRateValue[]|null
+     * @return \robsonek\phpAllegroApi\Model\TaxRateValue[]|null
      */
     public function getValues()
     {
@@ -336,7 +336,7 @@ class TaxRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\TaxRateValue[]|null $values Values of tax rates for given country code.
+     * @param \robsonek\phpAllegroApi\Model\TaxRateValue[]|null $values Values of tax rates for given country code.
      *
      * @return self
      */

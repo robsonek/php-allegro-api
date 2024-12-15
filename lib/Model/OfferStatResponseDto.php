@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferStatResponseDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\OfferStatModelDto',
-        'event_stats_total' => '\OpenAPI\Client\Model\ClassifiedEventStat[]',
-        'events_per_day' => '\OpenAPI\Client\Model\ClassifiedDailyEventStatResponseDto[]'
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferStatModelDto',
+        'event_stats_total' => '\robsonek\phpAllegroApi\Model\ClassifiedEventStat[]',
+        'events_per_day' => '\robsonek\phpAllegroApi\Model\ClassifiedDailyEventStatResponseDto[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferStatModelDto|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStatModelDto|null
      */
     public function getOffer()
     {
@@ -316,7 +316,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferStatModelDto|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferStatModelDto|null $offer offer
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets event_stats_total
      *
-     * @return \OpenAPI\Client\Model\ClassifiedEventStat[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedEventStat[]|null
      */
     public function getEventStatsTotal()
     {
@@ -343,7 +343,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets event_stats_total
      *
-     * @param \OpenAPI\Client\Model\ClassifiedEventStat[]|null $event_stats_total event_stats_total
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedEventStat[]|null $event_stats_total event_stats_total
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets events_per_day
      *
-     * @return \OpenAPI\Client\Model\ClassifiedDailyEventStatResponseDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedDailyEventStatResponseDto[]|null
      */
     public function getEventsPerDay()
     {
@@ -370,7 +370,7 @@ class OfferStatResponseDto implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets events_per_day
      *
-     * @param \OpenAPI\Client\Model\ClassifiedDailyEventStatResponseDto[]|null $events_per_day events_per_day
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedDailyEventStatResponseDto[]|null $events_per_day events_per_day
      *
      * @return self
      */

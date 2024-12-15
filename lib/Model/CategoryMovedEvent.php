@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryMovedEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class CategoryMovedEvent extends CategoryBaseEvent
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'category' => '\OpenAPI\Client\Model\CategoryEventBaseCategory'
+        'category' => '\robsonek\phpAllegroApi\Model\CategoryEventBaseCategory'
     ];
 
     /**
@@ -323,7 +323,7 @@ class CategoryMovedEvent extends CategoryBaseEvent
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\CategoryEventBaseCategory
+     * @return \robsonek\phpAllegroApi\Model\CategoryEventBaseCategory
      */
     public function getCategory()
     {
@@ -333,7 +333,7 @@ class CategoryMovedEvent extends CategoryBaseEvent
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\CategoryEventBaseCategory $category category
+     * @param \robsonek\phpAllegroApi\Model\CategoryEventBaseCategory $category category
      *
      * @return self
      */

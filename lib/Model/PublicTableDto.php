@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PublicTableDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headers' => '\OpenAPI\Client\Model\Header[]',
+        'headers' => '\robsonek\phpAllegroApi\Model\Header[]',
         'id' => 'string',
         'name' => 'string',
-        'template' => '\OpenAPI\Client\Model\JustId',
-        'values' => '\OpenAPI\Client\Model\Cells[]'
+        'template' => '\robsonek\phpAllegroApi\Model\JustId',
+        'values' => '\robsonek\phpAllegroApi\Model\Cells[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets headers
      *
-     * @return \OpenAPI\Client\Model\Header[]
+     * @return \robsonek\phpAllegroApi\Model\Header[]
      */
     public function getHeaders()
     {
@@ -339,7 +339,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets headers
      *
-     * @param \OpenAPI\Client\Model\Header[] $headers size table headers
+     * @param \robsonek\phpAllegroApi\Model\Header[] $headers size table headers
      *
      * @return self
      */
@@ -410,7 +410,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets template
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getTemplate()
     {
@@ -420,7 +420,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets template
      *
-     * @param \OpenAPI\Client\Model\JustId|null $template template
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $template template
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\Cells[]
+     * @return \robsonek\phpAllegroApi\Model\Cells[]
      */
     public function getValues()
     {
@@ -447,7 +447,7 @@ class PublicTableDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\Cells[] $values size table cells
+     * @param \robsonek\phpAllegroApi\Model\Cells[] $values size table cells
      *
      * @return self
      */

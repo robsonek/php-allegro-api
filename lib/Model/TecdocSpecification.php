@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * TecdocSpecification Class Doc Comment
  *
  * @category Class
  * @description Contains additional information describing products from automotive categories. Technical specification is created based on TecDoc database and can only be used while creating offer with assigned product to it. &lt;a href&#x3D;\&quot;../../tutorials/jak-jednym-requestem-wystawic-oferte-powiazana-z-produktem-D7Kj9gw4xFA\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Read more&lt;/a&gt;.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class TecdocSpecification implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'items' => '\OpenAPI\Client\Model\TecdocSpecificationItem[]'
+        'items' => '\robsonek\phpAllegroApi\Model\TecdocSpecificationItem[]'
     ];
 
     /**
@@ -330,7 +330,7 @@ class TecdocSpecification implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\TecdocSpecificationItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\TecdocSpecificationItem[]|null
      */
     public function getItems()
     {
@@ -340,7 +340,7 @@ class TecdocSpecification implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\TecdocSpecificationItem[]|null $items Text representation of the technical specification. Provided for informational purposes only - ignored when creating (Post) or updating (Put) compatibility list in the offer.
+     * @param \robsonek\phpAllegroApi\Model\TecdocSpecificationItem[]|null $items Text representation of the technical specification. Provided for informational purposes only - ignored when creating (Post) or updating (Put) compatibility list in the offer.
      *
      * @return self
      */

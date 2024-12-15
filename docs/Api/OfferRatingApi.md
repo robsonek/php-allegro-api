@@ -1,4 +1,4 @@
-# OpenAPI\Client\OfferRatingApi
+# robsonek\phpAllegroApi\OfferRatingApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `offerRatingGET()`
 
 ```php
-offerRatingGET($offer_id): \OpenAPI\Client\Model\OfferRating
+offerRatingGET($offer_id): \robsonek\phpAllegroApi\Model\OfferRating
 ```
 
 Get offer rating
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferRatingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferRatingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferRating**](../Model/OfferRating.md)
+[**\robsonek\phpAllegroApi\Model\OfferRating**](../Model/OfferRating.md)
 
 ### Authorization
 

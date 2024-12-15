@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * StandardizedDescription Class Doc Comment
  *
  * @category Class
  * @description The description section cannot have more than 40000 bytes in length.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class StandardizedDescription implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sections' => '\OpenAPI\Client\Model\DescriptionSection[]'
+        'sections' => '\robsonek\phpAllegroApi\Model\DescriptionSection[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class StandardizedDescription implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets sections
      *
-     * @return \OpenAPI\Client\Model\DescriptionSection[]|null
+     * @return \robsonek\phpAllegroApi\Model\DescriptionSection[]|null
      */
     public function getSections()
     {
@@ -303,7 +303,7 @@ class StandardizedDescription implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets sections
      *
-     * @param \OpenAPI\Client\Model\DescriptionSection[]|null $sections sections
+     * @param \robsonek\phpAllegroApi\Model\DescriptionSection[]|null $sections sections
      *
      * @return self
      */

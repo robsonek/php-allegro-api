@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSetElementResponsibleProducerRequestWrapper Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ProductSetElementResponsibleProducerRequestWrapper implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responsible_producer' => '\OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest'
+        'responsible_producer' => '\robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ProductSetElementResponsibleProducerRequestWrapper implements ModelInterfa
     /**
      * Gets responsible_producer
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest|null
      */
     public function getResponsibleProducer()
     {
@@ -302,7 +302,7 @@ class ProductSetElementResponsibleProducerRequestWrapper implements ModelInterfa
     /**
      * Sets responsible_producer
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementResponsibleProducerRequest|null $responsible_producer responsible_producer
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementResponsibleProducerRequest|null $responsible_producer responsible_producer
      *
      * @return self
      */

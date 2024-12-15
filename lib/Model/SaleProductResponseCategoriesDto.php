@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductResponseCategoriesDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SaleProductResponseCategoriesDto implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subcategories' => '\OpenAPI\Client\Model\ProductsCategorySubcategories[]',
-        'path' => '\OpenAPI\Client\Model\ProductsCategoryPath[]'
+        'subcategories' => '\robsonek\phpAllegroApi\Model\ProductsCategorySubcategories[]',
+        'path' => '\robsonek\phpAllegroApi\Model\ProductsCategoryPath[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class SaleProductResponseCategoriesDto implements ModelInterface, ArrayAccess, \
     /**
      * Gets subcategories
      *
-     * @return \OpenAPI\Client\Model\ProductsCategorySubcategories[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductsCategorySubcategories[]|null
      */
     public function getSubcategories()
     {
@@ -309,7 +309,7 @@ class SaleProductResponseCategoriesDto implements ModelInterface, ArrayAccess, \
     /**
      * Sets subcategories
      *
-     * @param \OpenAPI\Client\Model\ProductsCategorySubcategories[]|null $subcategories A list of categories that contain results for given search parameters.
+     * @param \robsonek\phpAllegroApi\Model\ProductsCategorySubcategories[]|null $subcategories A list of categories that contain results for given search parameters.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class SaleProductResponseCategoriesDto implements ModelInterface, ArrayAccess, \
     /**
      * Gets path
      *
-     * @return \OpenAPI\Client\Model\ProductsCategoryPath[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductsCategoryPath[]|null
      */
     public function getPath()
     {
@@ -336,7 +336,7 @@ class SaleProductResponseCategoriesDto implements ModelInterface, ArrayAccess, \
     /**
      * Sets path
      *
-     * @param \OpenAPI\Client\Model\ProductsCategoryPath[]|null $path The path of current category used as categrory filter in search.
+     * @param \robsonek\phpAllegroApi\Model\ProductsCategoryPath[]|null $path The path of current category used as categrory filter in search.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SalesQualityHistoryResponse Class Doc Comment
  *
  * @category Class
  * @description At most 30 day sales quality history, if seller doesn&#39;t have sales quality for given day, it won&#39;t be present in &#x60;quality&#x60; array.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class SalesQualityHistoryResponse implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'quality' => '\OpenAPI\Client\Model\SalesQualityForDay[]'
+        'quality' => '\robsonek\phpAllegroApi\Model\SalesQualityForDay[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class SalesQualityHistoryResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets quality
      *
-     * @return \OpenAPI\Client\Model\SalesQualityForDay[]
+     * @return \robsonek\phpAllegroApi\Model\SalesQualityForDay[]
      */
     public function getQuality()
     {
@@ -306,7 +306,7 @@ class SalesQualityHistoryResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets quality
      *
-     * @param \OpenAPI\Client\Model\SalesQualityForDay[] $quality quality
+     * @param \robsonek\phpAllegroApi\Model\SalesQualityForDay[] $quality quality
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferPublicationMarketplacesResponse Class Doc Comment
  *
  * @category Class
  * @description Information about publication in multiple marketplaces.&lt;br/&gt; See [Changes in listing offers - we will add the possibility to display offers in foreign domains of Allegro&#39;s marketplaces](https://developer.allegro.pl/news/changes-in-listing-offers-we-will-add-the-possibility-to-display-offers-in-foreign-domains-of-allegro-s-marketplaces-9gKv0RVzRTK) for more details regarding this field
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class SaleProductOfferPublicationMarketplacesResponse implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base' => '\OpenAPI\Client\Model\JustId',
-        'additional' => '\OpenAPI\Client\Model\JustId[]'
+        'base' => '\robsonek\phpAllegroApi\Model\JustId',
+        'additional' => '\robsonek\phpAllegroApi\Model\JustId[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class SaleProductOfferPublicationMarketplacesResponse implements ModelInterface,
     /**
      * Gets base
      *
-     * @return \OpenAPI\Client\Model\JustId|null
+     * @return \robsonek\phpAllegroApi\Model\JustId|null
      */
     public function getBase()
     {
@@ -310,7 +310,7 @@ class SaleProductOfferPublicationMarketplacesResponse implements ModelInterface,
     /**
      * Sets base
      *
-     * @param \OpenAPI\Client\Model\JustId|null $base <small>[read-only]</small> Specifies the offer’s base service. We assign the value in the field automatically when the offer is created and it is read-only, it will never change.
+     * @param \robsonek\phpAllegroApi\Model\JustId|null $base <small>[read-only]</small> Specifies the offer’s base service. We assign the value in the field automatically when the offer is created and it is read-only, it will never change.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class SaleProductOfferPublicationMarketplacesResponse implements ModelInterface,
     /**
      * Gets additional
      *
-     * @return \OpenAPI\Client\Model\JustId[]|null
+     * @return \robsonek\phpAllegroApi\Model\JustId[]|null
      */
     public function getAdditional()
     {
@@ -337,7 +337,7 @@ class SaleProductOfferPublicationMarketplacesResponse implements ModelInterface,
     /**
      * Sets additional
      *
-     * @param \OpenAPI\Client\Model\JustId[]|null $additional Specifies whether an offer is visible in the additional marketplace.
+     * @param \robsonek\phpAllegroApi\Model\JustId[]|null $additional Specifies whether an offer is visible in the additional marketplace.
      *
      * @return self
      */

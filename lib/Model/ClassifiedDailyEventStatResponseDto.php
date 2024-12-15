@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ClassifiedDailyEventStatResponseDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ClassifiedDailyEventStatResponseDto implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'date' => 'string',
-        'event_stats' => '\OpenAPI\Client\Model\ClassifiedEventStat[]'
+        'event_stats' => '\robsonek\phpAllegroApi\Model\ClassifiedEventStat[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class ClassifiedDailyEventStatResponseDto implements ModelInterface, ArrayAccess
     /**
      * Gets event_stats
      *
-     * @return \OpenAPI\Client\Model\ClassifiedEventStat[]|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedEventStat[]|null
      */
     public function getEventStats()
     {
@@ -336,7 +336,7 @@ class ClassifiedDailyEventStatResponseDto implements ModelInterface, ArrayAccess
     /**
      * Sets event_stats
      *
-     * @param \OpenAPI\Client\Model\ClassifiedEventStat[]|null $event_stats List of event types with number of occurrences.
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedEventStat[]|null $event_stats List of event types with number of occurrences.
      *
      * @return self
      */

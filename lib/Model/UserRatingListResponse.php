@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UserRatingListResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UserRatingListResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ratings' => '\OpenAPI\Client\Model\UserRating[]'
+        'ratings' => '\robsonek\phpAllegroApi\Model\UserRating[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class UserRatingListResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets ratings
      *
-     * @return \OpenAPI\Client\Model\UserRating[]
+     * @return \robsonek\phpAllegroApi\Model\UserRating[]
      */
     public function getRatings()
     {
@@ -305,7 +305,7 @@ class UserRatingListResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets ratings
      *
-     * @param \OpenAPI\Client\Model\UserRating[] $ratings List of ratings that match requested filter. Empty when no rating matched.
+     * @param \robsonek\phpAllegroApi\Model\UserRating[] $ratings List of ratings that match requested filter. Empty when no rating matched.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**compatible_products** | [**\OpenAPI\Client\Model\CompatibleProductDto[]**](CompatibleProductDto.md) | List of compatible products for given type and parameters. | [optional]
+**compatible_products** | [**\robsonek\phpAllegroApi\Model\CompatibleProductDto[]**](CompatibleProductDto.md) | List of compatible products for given type and parameters. | [optional]
 **count** | **int** | Number of returned elements. | [optional]
 **total_count** | **int** | Total number of available elements. Field is not present when &#x60;phrase&#x60; parameter is used. | [optional]
 

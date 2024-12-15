@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTablePostRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'template' => '\OpenAPI\Client\Model\JustId',
-        'headers' => '\OpenAPI\Client\Model\Header[]',
-        'values' => '\OpenAPI\Client\Model\Cells[]'
+        'template' => '\robsonek\phpAllegroApi\Model\JustId',
+        'headers' => '\robsonek\phpAllegroApi\Model\Header[]',
+        'values' => '\robsonek\phpAllegroApi\Model\Cells[]'
     ];
 
     /**
@@ -352,7 +352,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets template
      *
-     * @return \OpenAPI\Client\Model\JustId
+     * @return \robsonek\phpAllegroApi\Model\JustId
      */
     public function getTemplate()
     {
@@ -362,7 +362,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets template
      *
-     * @param \OpenAPI\Client\Model\JustId $template template
+     * @param \robsonek\phpAllegroApi\Model\JustId $template template
      *
      * @return self
      */
@@ -379,7 +379,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets headers
      *
-     * @return \OpenAPI\Client\Model\Header[]
+     * @return \robsonek\phpAllegroApi\Model\Header[]
      */
     public function getHeaders()
     {
@@ -389,7 +389,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets headers
      *
-     * @param \OpenAPI\Client\Model\Header[] $headers size table headers
+     * @param \robsonek\phpAllegroApi\Model\Header[] $headers size table headers
      *
      * @return self
      */
@@ -406,7 +406,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\Cells[]
+     * @return \robsonek\phpAllegroApi\Model\Cells[]
      */
     public function getValues()
     {
@@ -416,7 +416,7 @@ class SizeTablePostRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\Cells[] $values size table cells
+     * @param \robsonek\phpAllegroApi\Model\Cells[] $values size table cells
      *
      * @return self
      */

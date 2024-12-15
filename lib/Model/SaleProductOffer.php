@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOffer Class Doc Comment
  *
  * @category Class
  * @description Single offer data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'payments' => '\OpenAPI\Client\Model\Payments',
-        'selling_mode' => '\OpenAPI\Client\Model\SellingMode',
-        'location' => '\OpenAPI\Client\Model\Location',
+        'payments' => '\robsonek\phpAllegroApi\Model\Payments',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\SellingMode',
+        'location' => '\robsonek\phpAllegroApi\Model\Location',
         'images' => 'string[]',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'size_table' => '\OpenAPI\Client\Model\SizeTable',
-        'tax_settings' => '\OpenAPI\Client\Model\OfferTaxSettings',
-        'message_to_seller_settings' => '\OpenAPI\Client\Model\MessageToSellerSettings'
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'size_table' => '\robsonek\phpAllegroApi\Model\SizeTable',
+        'tax_settings' => '\robsonek\phpAllegroApi\Model\OfferTaxSettings',
+        'message_to_seller_settings' => '\robsonek\phpAllegroApi\Model\MessageToSellerSettings'
     ];
 
     /**
@@ -391,7 +391,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payments
      *
-     * @return \OpenAPI\Client\Model\Payments|null
+     * @return \robsonek\phpAllegroApi\Model\Payments|null
      */
     public function getPayments()
     {
@@ -401,7 +401,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payments
      *
-     * @param \OpenAPI\Client\Model\Payments|null $payments payments
+     * @param \robsonek\phpAllegroApi\Model\Payments|null $payments payments
      *
      * @return self
      */
@@ -418,7 +418,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\SellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\SellingMode|null
      */
     public function getSellingMode()
     {
@@ -428,7 +428,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\SellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\SellingMode|null $selling_mode selling_mode
      *
      * @return self
      */
@@ -445,7 +445,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets location
      *
-     * @return \OpenAPI\Client\Model\Location|null
+     * @return \robsonek\phpAllegroApi\Model\Location|null
      */
     public function getLocation()
     {
@@ -455,7 +455,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets location
      *
-     * @param \OpenAPI\Client\Model\Location|null $location location
+     * @param \robsonek\phpAllegroApi\Model\Location|null $location location
      *
      * @return self
      */
@@ -499,7 +499,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -509,7 +509,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */
@@ -526,7 +526,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -536,7 +536,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -553,7 +553,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets size_table
      *
-     * @return \OpenAPI\Client\Model\SizeTable|null
+     * @return \robsonek\phpAllegroApi\Model\SizeTable|null
      */
     public function getSizeTable()
     {
@@ -563,7 +563,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets size_table
      *
-     * @param \OpenAPI\Client\Model\SizeTable|null $size_table size_table
+     * @param \robsonek\phpAllegroApi\Model\SizeTable|null $size_table size_table
      *
      * @return self
      */
@@ -580,7 +580,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_settings
      *
-     * @return \OpenAPI\Client\Model\OfferTaxSettings|null
+     * @return \robsonek\phpAllegroApi\Model\OfferTaxSettings|null
      */
     public function getTaxSettings()
     {
@@ -590,7 +590,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_settings
      *
-     * @param \OpenAPI\Client\Model\OfferTaxSettings|null $tax_settings tax_settings
+     * @param \robsonek\phpAllegroApi\Model\OfferTaxSettings|null $tax_settings tax_settings
      *
      * @return self
      */
@@ -607,7 +607,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets message_to_seller_settings
      *
-     * @return \OpenAPI\Client\Model\MessageToSellerSettings|null
+     * @return \robsonek\phpAllegroApi\Model\MessageToSellerSettings|null
      */
     public function getMessageToSellerSettings()
     {
@@ -617,7 +617,7 @@ class SaleProductOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets message_to_seller_settings
      *
-     * @param \OpenAPI\Client\Model\MessageToSellerSettings|null $message_to_seller_settings message_to_seller_settings
+     * @param \robsonek\phpAllegroApi\Model\MessageToSellerSettings|null $message_to_seller_settings message_to_seller_settings
      *
      * @return self
      */

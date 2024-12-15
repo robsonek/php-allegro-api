@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Benefit Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class Benefit implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'specification' => '\OpenAPI\Client\Model\BenefitSpecification'
+        'specification' => '\robsonek\phpAllegroApi\Model\BenefitSpecification'
     ];
 
     /**
@@ -295,7 +295,7 @@ class Benefit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets specification
      *
-     * @return \OpenAPI\Client\Model\BenefitSpecification
+     * @return \robsonek\phpAllegroApi\Model\BenefitSpecification
      */
     public function getSpecification()
     {
@@ -305,7 +305,7 @@ class Benefit implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets specification
      *
-     * @param \OpenAPI\Client\Model\BenefitSpecification $specification specification
+     * @param \robsonek\phpAllegroApi\Model\BenefitSpecification $specification specification
      *
      * @return self
      */

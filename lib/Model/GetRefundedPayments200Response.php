@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetRefundedPayments200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetRefundedPayments200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'refunds' => '\OpenAPI\Client\Model\RefundDetails[]',
+        'refunds' => '\robsonek\phpAllegroApi\Model\RefundDetails[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class GetRefundedPayments200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets refunds
      *
-     * @return \OpenAPI\Client\Model\RefundDetails[]|null
+     * @return \robsonek\phpAllegroApi\Model\RefundDetails[]|null
      */
     public function getRefunds()
     {
@@ -324,7 +324,7 @@ class GetRefundedPayments200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets refunds
      *
-     * @param \OpenAPI\Client\Model\RefundDetails[]|null $refunds Collection of payments refunds.
+     * @param \robsonek\phpAllegroApi\Model\RefundDetails[]|null $refunds Collection of payments refunds.
      *
      * @return self
      */

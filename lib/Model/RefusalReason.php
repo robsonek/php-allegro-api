@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefusalReason Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class RefusalReason implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'code' => 'string',
         'parameters' => 'array<string,string[]>',
-        'related_reasons' => '\OpenAPI\Client\Model\RelatedReason[]'
+        'related_reasons' => '\robsonek\phpAllegroApi\Model\RelatedReason[]'
     ];
 
     /**
@@ -363,7 +363,7 @@ class RefusalReason implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets related_reasons
      *
-     * @return \OpenAPI\Client\Model\RelatedReason[]|null
+     * @return \robsonek\phpAllegroApi\Model\RelatedReason[]|null
      */
     public function getRelatedReasons()
     {
@@ -373,7 +373,7 @@ class RefusalReason implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets related_reasons
      *
-     * @param \OpenAPI\Client\Model\RelatedReason[]|null $related_reasons Related refusal reasons.
+     * @param \robsonek\phpAllegroApi\Model\RelatedReason[]|null $related_reasons Related refusal reasons.
      *
      * @return self
      */

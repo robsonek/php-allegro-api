@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferStatsResponseDto Class Doc Comment
  *
  * @category Class
  * @description Data objects containing details for counted events per offer. Includes a list of OfferStatResponseDto grouped by date and a list of ClassifiedEventStat grouped by EventType for a specific period.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class OfferStatsResponseDto implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_stats' => '\OpenAPI\Client\Model\OfferStatResponseDto[]'
+        'offer_stats' => '\robsonek\phpAllegroApi\Model\OfferStatResponseDto[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class OfferStatsResponseDto implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets offer_stats
      *
-     * @return \OpenAPI\Client\Model\OfferStatResponseDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStatResponseDto[]|null
      */
     public function getOfferStats()
     {
@@ -303,7 +303,7 @@ class OfferStatsResponseDto implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets offer_stats
      *
-     * @param \OpenAPI\Client\Model\OfferStatResponseDto[]|null $offer_stats offer_stats
+     * @param \robsonek\phpAllegroApi\Model\OfferStatResponseDto[]|null $offer_stats offer_stats
      *
      * @return self
      */

@@ -8,13 +8,13 @@ Name | Type | Description | Notes
 **status** | **string** |  |
 **type** | **string** |  |
 **created_at** | **\DateTime** |  |
-**thread** | [**\OpenAPI\Client\Model\ThreadId**](ThreadId.md) |  |
-**author** | [**\OpenAPI\Client\Model\MessageAuthor**](MessageAuthor.md) |  |
+**thread** | [**\robsonek\phpAllegroApi\Model\ThreadId**](ThreadId.md) |  |
+**author** | [**\robsonek\phpAllegroApi\Model\MessageAuthor**](MessageAuthor.md) |  |
 **text** | **string** |  |
 **subject** | **string** |  | [optional]
-**relates_to** | [**\OpenAPI\Client\Model\MessageRelatedObject**](MessageRelatedObject.md) |  |
+**relates_to** | [**\robsonek\phpAllegroApi\Model\MessageRelatedObject**](MessageRelatedObject.md) |  |
 **has_additional_attachments** | **bool** |  |
-**attachments** | [**\OpenAPI\Client\Model\MessageAttachmentInfo[]**](MessageAttachmentInfo.md) |  |
-**additional_information** | [**\OpenAPI\Client\Model\MessageAdditionalInformation**](MessageAdditionalInformation.md) |  | [optional]
+**attachments** | [**\robsonek\phpAllegroApi\Model\MessageAttachmentInfo[]**](MessageAttachmentInfo.md) |  |
+**additional_information** | [**\robsonek\phpAllegroApi\Model\MessageAdditionalInformation**](MessageAdditionalInformation.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

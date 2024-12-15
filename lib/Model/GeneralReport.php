@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GeneralReport Class Doc Comment
  *
  * @category Class
  * @description Command execution summary
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GeneralReport implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'created_at' => '\DateTime',
         'completed_at' => '\DateTime',
-        'task_count' => '\OpenAPI\Client\Model\TaskCount'
+        'task_count' => '\robsonek\phpAllegroApi\Model\TaskCount'
     ];
 
     /**
@@ -402,7 +402,7 @@ class GeneralReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets task_count
      *
-     * @return \OpenAPI\Client\Model\TaskCount|null
+     * @return \robsonek\phpAllegroApi\Model\TaskCount|null
      */
     public function getTaskCount()
     {
@@ -412,7 +412,7 @@ class GeneralReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets task_count
      *
-     * @param \OpenAPI\Client\Model\TaskCount|null $task_count task_count
+     * @param \robsonek\phpAllegroApi\Model\TaskCount|null $task_count task_count
      *
      * @return self
      */

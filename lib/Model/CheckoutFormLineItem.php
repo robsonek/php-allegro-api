@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormLineItem Class Doc Comment
  *
  * @category Class
  * @description Order item
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'offer' => '\OpenAPI\Client\Model\OfferReference',
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferReference',
         'quantity' => 'float',
-        'original_price' => '\OpenAPI\Client\Model\Price',
-        'price' => '\OpenAPI\Client\Model\Price',
-        'reconciliation' => '\OpenAPI\Client\Model\LineItemReconciliation',
-        'selected_additional_services' => '\OpenAPI\Client\Model\CheckoutFormAdditionalService[]',
-        'vouchers' => '\OpenAPI\Client\Model\LineItemVoucher[]',
-        'tax' => '\OpenAPI\Client\Model\CheckoutFormLineItemTax',
+        'original_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
+        'reconciliation' => '\robsonek\phpAllegroApi\Model\LineItemReconciliation',
+        'selected_additional_services' => '\robsonek\phpAllegroApi\Model\CheckoutFormAdditionalService[]',
+        'vouchers' => '\robsonek\phpAllegroApi\Model\LineItemVoucher[]',
+        'tax' => '\robsonek\phpAllegroApi\Model\CheckoutFormLineItemTax',
         'bought_at' => '\DateTime'
     ];
 
@@ -402,7 +402,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferReference
+     * @return \robsonek\phpAllegroApi\Model\OfferReference
      */
     public function getOffer()
     {
@@ -412,7 +412,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferReference $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferReference $offer offer
      *
      * @return self
      */
@@ -461,7 +461,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets original_price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getOriginalPrice()
     {
@@ -471,7 +471,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets original_price
      *
-     * @param \OpenAPI\Client\Model\Price $original_price original_price
+     * @param \robsonek\phpAllegroApi\Model\Price $original_price original_price
      *
      * @return self
      */
@@ -488,7 +488,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getPrice()
     {
@@ -498,7 +498,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price $price price
+     * @param \robsonek\phpAllegroApi\Model\Price $price price
      *
      * @return self
      */
@@ -515,7 +515,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets reconciliation
      *
-     * @return \OpenAPI\Client\Model\LineItemReconciliation|null
+     * @return \robsonek\phpAllegroApi\Model\LineItemReconciliation|null
      */
     public function getReconciliation()
     {
@@ -525,7 +525,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets reconciliation
      *
-     * @param \OpenAPI\Client\Model\LineItemReconciliation|null $reconciliation reconciliation
+     * @param \robsonek\phpAllegroApi\Model\LineItemReconciliation|null $reconciliation reconciliation
      *
      * @return self
      */
@@ -542,7 +542,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets selected_additional_services
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormAdditionalService[]|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormAdditionalService[]|null
      */
     public function getSelectedAdditionalServices()
     {
@@ -552,7 +552,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets selected_additional_services
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormAdditionalService[]|null $selected_additional_services selected_additional_services
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormAdditionalService[]|null $selected_additional_services selected_additional_services
      *
      * @return self
      */
@@ -569,7 +569,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets vouchers
      *
-     * @return \OpenAPI\Client\Model\LineItemVoucher[]|null
+     * @return \robsonek\phpAllegroApi\Model\LineItemVoucher[]|null
      */
     public function getVouchers()
     {
@@ -579,7 +579,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets vouchers
      *
-     * @param \OpenAPI\Client\Model\LineItemVoucher[]|null $vouchers vouchers
+     * @param \robsonek\phpAllegroApi\Model\LineItemVoucher[]|null $vouchers vouchers
      *
      * @return self
      */
@@ -596,7 +596,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets tax
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormLineItemTax|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormLineItemTax|null
      */
     public function getTax()
     {
@@ -606,7 +606,7 @@ class CheckoutFormLineItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets tax
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormLineItemTax|null $tax tax
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormLineItemTax|null $tax tax
      *
      * @return self
      */

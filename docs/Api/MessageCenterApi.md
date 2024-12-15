@@ -1,4 +1,4 @@
-# OpenAPI\Client\MessageCenterApi
+# robsonek\phpAllegroApi\MessageCenterApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -20,7 +20,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `changeReadFlagOnThreadPUT()`
 
 ```php
-changeReadFlagOnThreadPUT($thread_id, $thread_read_flag): \OpenAPI\Client\Model\Thread
+changeReadFlagOnThreadPUT($thread_id, $thread_read_flag): \robsonek\phpAllegroApi\Model\Thread
 ```
 
 Mark a particular thread as read
@@ -35,17 +35,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $thread_id = 'thread_id_example'; // string | Identifier of thread to be marked.
-$thread_read_flag = new \OpenAPI\Client\Model\ThreadReadFlag(); // \OpenAPI\Client\Model\ThreadReadFlag | Updated read flag
+$thread_read_flag = new \robsonek\phpAllegroApi\Model\ThreadReadFlag(); // \robsonek\phpAllegroApi\Model\ThreadReadFlag | Updated read flag
 
 try {
     $result = $apiInstance->changeReadFlagOnThreadPUT($thread_id, $thread_read_flag);
@@ -60,11 +60,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **thread_id** | **string**| Identifier of thread to be marked. | |
-| **thread_read_flag** | [**\OpenAPI\Client\Model\ThreadReadFlag**](../Model/ThreadReadFlag.md)| Updated read flag | |
+| **thread_read_flag** | [**\robsonek\phpAllegroApi\Model\ThreadReadFlag**](../Model/ThreadReadFlag.md)| Updated read flag | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Thread**](../Model/Thread.md)
+[**\robsonek\phpAllegroApi\Model\Thread**](../Model/Thread.md)
 
 ### Authorization
 
@@ -97,10 +97,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -156,10 +156,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -201,7 +201,7 @@ try {
 ## `getMessageGET()`
 
 ```php
-getMessageGET($message_id): \OpenAPI\Client\Model\Message
+getMessageGET($message_id): \robsonek\phpAllegroApi\Model\Message
 ```
 
 Get single message
@@ -216,10 +216,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Message**](../Model/Message.md)
+[**\robsonek\phpAllegroApi\Model\Message**](../Model/Message.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ try {
 ## `getThreadGET()`
 
 ```php
-getThreadGET($thread_id): \OpenAPI\Client\Model\Thread
+getThreadGET($thread_id): \robsonek\phpAllegroApi\Model\Thread
 ```
 
 Get user thread
@@ -276,10 +276,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -303,7 +303,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Thread**](../Model/Thread.md)
+[**\robsonek\phpAllegroApi\Model\Thread**](../Model/Thread.md)
 
 ### Authorization
 
@@ -321,7 +321,7 @@ try {
 ## `listMessagesGET()`
 
 ```php
-listMessagesGET($thread_id, $limit, $offset, $before, $after): \OpenAPI\Client\Model\MessagesList
+listMessagesGET($thread_id, $limit, $offset, $before, $after): \robsonek\phpAllegroApi\Model\MessagesList
 ```
 
 List messages in thread
@@ -336,10 +336,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -371,7 +371,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MessagesList**](../Model/MessagesList.md)
+[**\robsonek\phpAllegroApi\Model\MessagesList**](../Model/MessagesList.md)
 
 ### Authorization
 
@@ -389,7 +389,7 @@ try {
 ## `listThreadsGET()`
 
 ```php
-listThreadsGET($limit, $offset): \OpenAPI\Client\Model\ThreadsList
+listThreadsGET($limit, $offset): \robsonek\phpAllegroApi\Model\ThreadsList
 ```
 
 List user threads
@@ -404,10 +404,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -433,7 +433,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ThreadsList**](../Model/ThreadsList.md)
+[**\robsonek\phpAllegroApi\Model\ThreadsList**](../Model/ThreadsList.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ try {
 ## `newAttachmentDeclarationPOST()`
 
 ```php
-newAttachmentDeclarationPOST($new_attachment_declaration): \OpenAPI\Client\Model\MessageAttachmentId
+newAttachmentDeclarationPOST($new_attachment_declaration): \robsonek\phpAllegroApi\Model\MessageAttachmentId
 ```
 
 Add attachment declaration
@@ -466,16 +466,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$new_attachment_declaration = new \OpenAPI\Client\Model\NewAttachmentDeclaration(); // \OpenAPI\Client\Model\NewAttachmentDeclaration
+$new_attachment_declaration = new \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration(); // \robsonek\phpAllegroApi\Model\NewAttachmentDeclaration
 
 try {
     $result = $apiInstance->newAttachmentDeclarationPOST($new_attachment_declaration);
@@ -489,11 +489,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **new_attachment_declaration** | [**\OpenAPI\Client\Model\NewAttachmentDeclaration**](../Model/NewAttachmentDeclaration.md)|  | |
+| **new_attachment_declaration** | [**\robsonek\phpAllegroApi\Model\NewAttachmentDeclaration**](../Model/NewAttachmentDeclaration.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MessageAttachmentId**](../Model/MessageAttachmentId.md)
+[**\robsonek\phpAllegroApi\Model\MessageAttachmentId**](../Model/MessageAttachmentId.md)
 
 ### Authorization
 
@@ -511,7 +511,7 @@ try {
 ## `newMessageInThreadPOST()`
 
 ```php
-newMessageInThreadPOST($thread_id, $new_message_in_thread): \OpenAPI\Client\Model\Message
+newMessageInThreadPOST($thread_id, $new_message_in_thread): \robsonek\phpAllegroApi\Model\Message
 ```
 
 Write a new message in thread
@@ -526,17 +526,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $thread_id = 'thread_id_example'; // string | Identifier of thread to write message to.
-$new_message_in_thread = new \OpenAPI\Client\Model\NewMessageInThread(); // \OpenAPI\Client\Model\NewMessageInThread
+$new_message_in_thread = new \robsonek\phpAllegroApi\Model\NewMessageInThread(); // \robsonek\phpAllegroApi\Model\NewMessageInThread
 
 try {
     $result = $apiInstance->newMessageInThreadPOST($thread_id, $new_message_in_thread);
@@ -551,11 +551,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **thread_id** | **string**| Identifier of thread to write message to. | |
-| **new_message_in_thread** | [**\OpenAPI\Client\Model\NewMessageInThread**](../Model/NewMessageInThread.md)|  | |
+| **new_message_in_thread** | [**\robsonek\phpAllegroApi\Model\NewMessageInThread**](../Model/NewMessageInThread.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Message**](../Model/Message.md)
+[**\robsonek\phpAllegroApi\Model\Message**](../Model/Message.md)
 
 ### Authorization
 
@@ -573,7 +573,7 @@ try {
 ## `newMessagePOST()`
 
 ```php
-newMessagePOST($new_message): \OpenAPI\Client\Model\Message
+newMessagePOST($new_message): \robsonek\phpAllegroApi\Model\Message
 ```
 
 Write a new message
@@ -588,16 +588,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$new_message = new \OpenAPI\Client\Model\NewMessage(); // \OpenAPI\Client\Model\NewMessage | Object representing new message.
+$new_message = new \robsonek\phpAllegroApi\Model\NewMessage(); // \robsonek\phpAllegroApi\Model\NewMessage | Object representing new message.
 
 try {
     $result = $apiInstance->newMessagePOST($new_message);
@@ -611,11 +611,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **new_message** | [**\OpenAPI\Client\Model\NewMessage**](../Model/NewMessage.md)| Object representing new message. | |
+| **new_message** | [**\robsonek\phpAllegroApi\Model\NewMessage**](../Model/NewMessage.md)| Object representing new message. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Message**](../Model/Message.md)
+[**\robsonek\phpAllegroApi\Model\Message**](../Model/Message.md)
 
 ### Authorization
 
@@ -633,7 +633,7 @@ try {
 ## `uploadAttachmentPUT()`
 
 ```php
-uploadAttachmentPUT($attachment_id, $body): \OpenAPI\Client\Model\MessageAttachmentId
+uploadAttachmentPUT($attachment_id, $body): \robsonek\phpAllegroApi\Model\MessageAttachmentId
 ```
 
 Upload attachment binary data
@@ -648,10 +648,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\MessageCenterApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\MessageCenterApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -677,7 +677,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\MessageAttachmentId**](../Model/MessageAttachmentId.md)
+[**\robsonek\phpAllegroApi\Model\MessageAttachmentId**](../Model/MessageAttachmentId.md)
 
 ### Authorization
 

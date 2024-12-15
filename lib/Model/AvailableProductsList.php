@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AvailableProductsList Class Doc Comment
  *
  * @category Class
  * @description The list of available seller&#39;s products.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AvailableProductsList implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'products' => '\OpenAPI\Client\Model\AvailableProductResponse[]',
+        'products' => '\robsonek\phpAllegroApi\Model\AvailableProductResponse[]',
         'count' => 'float',
         'total_count' => 'float'
     ];
@@ -307,7 +307,7 @@ class AvailableProductsList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\AvailableProductResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\AvailableProductResponse[]|null
      */
     public function getProducts()
     {
@@ -317,7 +317,7 @@ class AvailableProductsList implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\AvailableProductResponse[]|null $products List of products.
+     * @param \robsonek\phpAllegroApi\Model\AvailableProductResponse[]|null $products List of products.
      *
      * @return self
      */

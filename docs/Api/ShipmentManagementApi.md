@@ -1,4 +1,4 @@
-# OpenAPI\Client\ShipmentManagementApi
+# robsonek\phpAllegroApi\ShipmentManagementApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -20,7 +20,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `cancelShipment()`
 
 ```php
-cancelShipment($shipment_cancel_command_dto): \OpenAPI\Client\Model\ShipmentCancelCommandDto
+cancelShipment($shipment_cancel_command_dto): \robsonek\phpAllegroApi\Model\ShipmentCancelCommandDto
 ```
 
 Cancel shipment
@@ -35,16 +35,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$shipment_cancel_command_dto = new \OpenAPI\Client\Model\ShipmentCancelCommandDto(); // \OpenAPI\Client\Model\ShipmentCancelCommandDto
+$shipment_cancel_command_dto = new \robsonek\phpAllegroApi\Model\ShipmentCancelCommandDto(); // \robsonek\phpAllegroApi\Model\ShipmentCancelCommandDto
 
 try {
     $result = $apiInstance->cancelShipment($shipment_cancel_command_dto);
@@ -58,11 +58,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **shipment_cancel_command_dto** | [**\OpenAPI\Client\Model\ShipmentCancelCommandDto**](../Model/ShipmentCancelCommandDto.md)|  | |
+| **shipment_cancel_command_dto** | [**\robsonek\phpAllegroApi\Model\ShipmentCancelCommandDto**](../Model/ShipmentCancelCommandDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShipmentCancelCommandDto**](../Model/ShipmentCancelCommandDto.md)
+[**\robsonek\phpAllegroApi\Model\ShipmentCancelCommandDto**](../Model/ShipmentCancelCommandDto.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `createNewShipment()`
 
 ```php
-createNewShipment($shipment_create_command_dto): \OpenAPI\Client\Model\ShipmentCreateCommandDto
+createNewShipment($shipment_create_command_dto): \robsonek\phpAllegroApi\Model\ShipmentCreateCommandDto
 ```
 
 Create new shipment
@@ -95,16 +95,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$shipment_create_command_dto = new \OpenAPI\Client\Model\ShipmentCreateCommandDto(); // \OpenAPI\Client\Model\ShipmentCreateCommandDto
+$shipment_create_command_dto = new \robsonek\phpAllegroApi\Model\ShipmentCreateCommandDto(); // \robsonek\phpAllegroApi\Model\ShipmentCreateCommandDto
 
 try {
     $result = $apiInstance->createNewShipment($shipment_create_command_dto);
@@ -118,11 +118,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **shipment_create_command_dto** | [**\OpenAPI\Client\Model\ShipmentCreateCommandDto**](../Model/ShipmentCreateCommandDto.md)|  | |
+| **shipment_create_command_dto** | [**\robsonek\phpAllegroApi\Model\ShipmentCreateCommandDto**](../Model/ShipmentCreateCommandDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShipmentCreateCommandDto**](../Model/ShipmentCreateCommandDto.md)
+[**\robsonek\phpAllegroApi\Model\ShipmentCreateCommandDto**](../Model/ShipmentCreateCommandDto.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ try {
 ## `createPickup()`
 
 ```php
-createPickup($pickup_create_command_dto): \OpenAPI\Client\Model\PickupCreateCommandDto
+createPickup($pickup_create_command_dto): \robsonek\phpAllegroApi\Model\PickupCreateCommandDto
 ```
 
 Request shipments pickup
@@ -155,16 +155,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$pickup_create_command_dto = new \OpenAPI\Client\Model\PickupCreateCommandDto(); // \OpenAPI\Client\Model\PickupCreateCommandDto
+$pickup_create_command_dto = new \robsonek\phpAllegroApi\Model\PickupCreateCommandDto(); // \robsonek\phpAllegroApi\Model\PickupCreateCommandDto
 
 try {
     $result = $apiInstance->createPickup($pickup_create_command_dto);
@@ -178,11 +178,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **pickup_create_command_dto** | [**\OpenAPI\Client\Model\PickupCreateCommandDto**](../Model/PickupCreateCommandDto.md)|  | |
+| **pickup_create_command_dto** | [**\robsonek\phpAllegroApi\Model\PickupCreateCommandDto**](../Model/PickupCreateCommandDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PickupCreateCommandDto**](../Model/PickupCreateCommandDto.md)
+[**\robsonek\phpAllegroApi\Model\PickupCreateCommandDto**](../Model/PickupCreateCommandDto.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ try {
 ## `createPickupStatus()`
 
 ```php
-createPickupStatus($command_id): \OpenAPI\Client\Model\CreatePickupCommandStatusDto
+createPickupStatus($command_id): \robsonek\phpAllegroApi\Model\CreatePickupCommandStatusDto
 ```
 
 Create pickup command status
@@ -215,10 +215,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePickupCommandStatusDto**](../Model/CreatePickupCommandStatusDto.md)
+[**\robsonek\phpAllegroApi\Model\CreatePickupCommandStatusDto**](../Model/CreatePickupCommandStatusDto.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ try {
 ## `getDeliveryServices()`
 
 ```php
-getDeliveryServices(): \OpenAPI\Client\Model\DeliveryServicesDto
+getDeliveryServices(): \robsonek\phpAllegroApi\Model\DeliveryServicesDto
 ```
 
 Get available delivery services
@@ -275,10 +275,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -299,7 +299,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliveryServicesDto**](../Model/DeliveryServicesDto.md)
+[**\robsonek\phpAllegroApi\Model\DeliveryServicesDto**](../Model/DeliveryServicesDto.md)
 
 ### Authorization
 
@@ -317,7 +317,7 @@ This endpoint does not need any parameter.
 ## `getPickupProposals()`
 
 ```php
-getPickupProposals($pickup_proposals_request_dto): \OpenAPI\Client\Model\PickupProposalsResponseDto[]
+getPickupProposals($pickup_proposals_request_dto): \robsonek\phpAllegroApi\Model\PickupProposalsResponseDto[]
 ```
 
 Get shipments pickup proposals
@@ -332,16 +332,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$pickup_proposals_request_dto = new \OpenAPI\Client\Model\PickupProposalsRequestDto(); // \OpenAPI\Client\Model\PickupProposalsRequestDto
+$pickup_proposals_request_dto = new \robsonek\phpAllegroApi\Model\PickupProposalsRequestDto(); // \robsonek\phpAllegroApi\Model\PickupProposalsRequestDto
 
 try {
     $result = $apiInstance->getPickupProposals($pickup_proposals_request_dto);
@@ -355,11 +355,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **pickup_proposals_request_dto** | [**\OpenAPI\Client\Model\PickupProposalsRequestDto**](../Model/PickupProposalsRequestDto.md)|  | |
+| **pickup_proposals_request_dto** | [**\robsonek\phpAllegroApi\Model\PickupProposalsRequestDto**](../Model/PickupProposalsRequestDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PickupProposalsResponseDto[]**](../Model/PickupProposalsResponseDto.md)
+[**\robsonek\phpAllegroApi\Model\PickupProposalsResponseDto[]**](../Model/PickupProposalsResponseDto.md)
 
 ### Authorization
 
@@ -377,7 +377,7 @@ try {
 ## `getShipmentCancellationStatus()`
 
 ```php
-getShipmentCancellationStatus($command_id): \OpenAPI\Client\Model\CancelShipmentCommandStatusDto
+getShipmentCancellationStatus($command_id): \robsonek\phpAllegroApi\Model\CancelShipmentCommandStatusDto
 ```
 
 Get shipment cancellation status
@@ -392,10 +392,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -419,7 +419,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CancelShipmentCommandStatusDto**](../Model/CancelShipmentCommandStatusDto.md)
+[**\robsonek\phpAllegroApi\Model\CancelShipmentCommandStatusDto**](../Model/CancelShipmentCommandStatusDto.md)
 
 ### Authorization
 
@@ -437,7 +437,7 @@ try {
 ## `getShipmentCreationStatus()`
 
 ```php
-getShipmentCreationStatus($command_id): \OpenAPI\Client\Model\CreateShipmentCommandStatusDto
+getShipmentCreationStatus($command_id): \robsonek\phpAllegroApi\Model\CreateShipmentCommandStatusDto
 ```
 
 Get shipment creation command status
@@ -452,10 +452,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -479,7 +479,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateShipmentCommandStatusDto**](../Model/CreateShipmentCommandStatusDto.md)
+[**\robsonek\phpAllegroApi\Model\CreateShipmentCommandStatusDto**](../Model/CreateShipmentCommandStatusDto.md)
 
 ### Authorization
 
@@ -497,7 +497,7 @@ try {
 ## `getShipmentDetails()`
 
 ```php
-getShipmentDetails($shipment_id): \OpenAPI\Client\Model\ShipmentDto
+getShipmentDetails($shipment_id): \robsonek\phpAllegroApi\Model\ShipmentDto
 ```
 
 Get shipment details
@@ -512,10 +512,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -539,7 +539,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShipmentDto**](../Model/ShipmentDto.md)
+[**\robsonek\phpAllegroApi\Model\ShipmentDto**](../Model/ShipmentDto.md)
 
 ### Authorization
 
@@ -572,16 +572,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$label_request_dto = new \OpenAPI\Client\Model\LabelRequestDto(); // \OpenAPI\Client\Model\LabelRequestDto
+$label_request_dto = new \robsonek\phpAllegroApi\Model\LabelRequestDto(); // \robsonek\phpAllegroApi\Model\LabelRequestDto
 
 try {
     $result = $apiInstance->getShipmentLabels($label_request_dto);
@@ -595,7 +595,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **label_request_dto** | [**\OpenAPI\Client\Model\LabelRequestDto**](../Model/LabelRequestDto.md)|  | |
+| **label_request_dto** | [**\robsonek\phpAllegroApi\Model\LabelRequestDto**](../Model/LabelRequestDto.md)|  | |
 
 ### Return type
 
@@ -632,16 +632,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ShipmentManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$shipment_ids_dto = new \OpenAPI\Client\Model\ShipmentIdsDto(); // \OpenAPI\Client\Model\ShipmentIdsDto
+$shipment_ids_dto = new \robsonek\phpAllegroApi\Model\ShipmentIdsDto(); // \robsonek\phpAllegroApi\Model\ShipmentIdsDto
 
 try {
     $result = $apiInstance->getShipmentProtocol($shipment_ids_dto);
@@ -655,7 +655,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **shipment_ids_dto** | [**\OpenAPI\Client\Model\ShipmentIdsDto**](../Model/ShipmentIdsDto.md)|  | |
+| **shipment_ids_dto** | [**\robsonek\phpAllegroApi\Model\ShipmentIdsDto**](../Model/ShipmentIdsDto.md)|  | |
 
 ### Return type
 

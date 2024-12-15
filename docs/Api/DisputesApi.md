@@ -1,4 +1,4 @@
-# OpenAPI\Client\DisputesApi
+# robsonek\phpAllegroApi\DisputesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `addMessageToDisputeUsingPOST()`
 
 ```php
-addMessageToDisputeUsingPOST($dispute_id, $message_request): \OpenAPI\Client\Model\DisputeMessage
+addMessageToDisputeUsingPOST($dispute_id, $message_request): \robsonek\phpAllegroApi\Model\DisputeMessage
 ```
 
 Add a message to a dispute
@@ -31,17 +31,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $dispute_id = 'dispute_id_example'; // string | Dispute identifier.
-$message_request = new \OpenAPI\Client\Model\MessageRequest(); // \OpenAPI\Client\Model\MessageRequest | Message request
+$message_request = new \robsonek\phpAllegroApi\Model\MessageRequest(); // \robsonek\phpAllegroApi\Model\MessageRequest | Message request
 
 try {
     $result = $apiInstance->addMessageToDisputeUsingPOST($dispute_id, $message_request);
@@ -56,11 +56,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **dispute_id** | **string**| Dispute identifier. | |
-| **message_request** | [**\OpenAPI\Client\Model\MessageRequest**](../Model/MessageRequest.md)| Message request | |
+| **message_request** | [**\robsonek\phpAllegroApi\Model\MessageRequest**](../Model/MessageRequest.md)| Message request | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DisputeMessage**](../Model/DisputeMessage.md)
+[**\robsonek\phpAllegroApi\Model\DisputeMessage**](../Model/DisputeMessage.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ try {
 ## `createAnAttachmentUsingPOST()`
 
 ```php
-createAnAttachmentUsingPOST($attachment_declaration): \OpenAPI\Client\Model\DisputeAttachmentId
+createAnAttachmentUsingPOST($attachment_declaration): \robsonek\phpAllegroApi\Model\DisputeAttachmentId
 ```
 
 Create an attachment declaration
@@ -93,16 +93,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$attachment_declaration = new \OpenAPI\Client\Model\AttachmentDeclaration(); // \OpenAPI\Client\Model\AttachmentDeclaration | A detailed declaration of a file to be uploaded
+$attachment_declaration = new \robsonek\phpAllegroApi\Model\AttachmentDeclaration(); // \robsonek\phpAllegroApi\Model\AttachmentDeclaration | A detailed declaration of a file to be uploaded
 
 try {
     $result = $apiInstance->createAnAttachmentUsingPOST($attachment_declaration);
@@ -116,11 +116,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **attachment_declaration** | [**\OpenAPI\Client\Model\AttachmentDeclaration**](../Model/AttachmentDeclaration.md)| A detailed declaration of a file to be uploaded | |
+| **attachment_declaration** | [**\robsonek\phpAllegroApi\Model\AttachmentDeclaration**](../Model/AttachmentDeclaration.md)| A detailed declaration of a file to be uploaded | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DisputeAttachmentId**](../Model/DisputeAttachmentId.md)
+[**\robsonek\phpAllegroApi\Model\DisputeAttachmentId**](../Model/DisputeAttachmentId.md)
 
 ### Authorization
 
@@ -153,10 +153,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -198,7 +198,7 @@ try {
 ## `getDisputeUsingGET()`
 
 ```php
-getDisputeUsingGET($dispute_id): \OpenAPI\Client\Model\Dispute
+getDisputeUsingGET($dispute_id): \robsonek\phpAllegroApi\Model\Dispute
 ```
 
 Get a single dispute
@@ -213,10 +213,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -240,7 +240,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Dispute**](../Model/Dispute.md)
+[**\robsonek\phpAllegroApi\Model\Dispute**](../Model/Dispute.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ try {
 ## `getListOfDisputesUsingGET()`
 
 ```php
-getListOfDisputesUsingGET($checkout_form_id, $limit, $offset, $status): \OpenAPI\Client\Model\DisputeListResponse
+getListOfDisputesUsingGET($checkout_form_id, $limit, $offset, $status): \robsonek\phpAllegroApi\Model\DisputeListResponse
 ```
 
 Get the user's disputes
@@ -273,10 +273,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -306,7 +306,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DisputeListResponse**](../Model/DisputeListResponse.md)
+[**\robsonek\phpAllegroApi\Model\DisputeListResponse**](../Model/DisputeListResponse.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ try {
 ## `getMessagesFromDisputeUsingGET()`
 
 ```php
-getMessagesFromDisputeUsingGET($dispute_id, $limit, $offset): \OpenAPI\Client\Model\DisputeMessageList
+getMessagesFromDisputeUsingGET($dispute_id, $limit, $offset): \robsonek\phpAllegroApi\Model\DisputeMessageList
 ```
 
 Get the messages within a dispute
@@ -339,10 +339,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -370,7 +370,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DisputeMessageList**](../Model/DisputeMessageList.md)
+[**\robsonek\phpAllegroApi\Model\DisputeMessageList**](../Model/DisputeMessageList.md)
 
 ### Authorization
 
@@ -411,10 +411,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DisputesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\DisputesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryDeletedEvent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,8 +56,8 @@ class CategoryDeletedEvent extends CategoryBaseEvent
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'category' => '\OpenAPI\Client\Model\CategoryEventBaseCategory',
-        'redirect_category' => '\OpenAPI\Client\Model\CategoryDeletedEventAllOfRedirectCategory'
+        'category' => '\robsonek\phpAllegroApi\Model\CategoryEventBaseCategory',
+        'redirect_category' => '\robsonek\phpAllegroApi\Model\CategoryDeletedEventAllOfRedirectCategory'
     ];
 
     /**
@@ -330,7 +330,7 @@ class CategoryDeletedEvent extends CategoryBaseEvent
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\CategoryEventBaseCategory
+     * @return \robsonek\phpAllegroApi\Model\CategoryEventBaseCategory
      */
     public function getCategory()
     {
@@ -340,7 +340,7 @@ class CategoryDeletedEvent extends CategoryBaseEvent
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\CategoryEventBaseCategory $category category
+     * @param \robsonek\phpAllegroApi\Model\CategoryEventBaseCategory $category category
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class CategoryDeletedEvent extends CategoryBaseEvent
     /**
      * Gets redirect_category
      *
-     * @return \OpenAPI\Client\Model\CategoryDeletedEventAllOfRedirectCategory|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryDeletedEventAllOfRedirectCategory|null
      */
     public function getRedirectCategory()
     {
@@ -367,7 +367,7 @@ class CategoryDeletedEvent extends CategoryBaseEvent
     /**
      * Sets redirect_category
      *
-     * @param \OpenAPI\Client\Model\CategoryDeletedEventAllOfRedirectCategory|null $redirect_category redirect_category
+     * @param \robsonek\phpAllegroApi\Model\CategoryDeletedEventAllOfRedirectCategory|null $redirect_category redirect_category
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferStatusResponse Class Doc Comment
  *
  * @category Class
  * @description Single opertion data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class SaleProductOfferStatusResponse implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\OfferId',
-        'operation' => '\OpenAPI\Client\Model\SaleProductOfferStatusResponseOperation'
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferId',
+        'operation' => '\robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponseOperation'
     ];
 
     /**
@@ -300,7 +300,7 @@ class SaleProductOfferStatusResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferId|null
+     * @return \robsonek\phpAllegroApi\Model\OfferId|null
      */
     public function getOffer()
     {
@@ -310,7 +310,7 @@ class SaleProductOfferStatusResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferId|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferId|null $offer offer
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class SaleProductOfferStatusResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets operation
      *
-     * @return \OpenAPI\Client\Model\SaleProductOfferStatusResponseOperation|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponseOperation|null
      */
     public function getOperation()
     {
@@ -337,7 +337,7 @@ class SaleProductOfferStatusResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets operation
      *
-     * @param \OpenAPI\Client\Model\SaleProductOfferStatusResponseOperation|null $operation operation
+     * @param \robsonek\phpAllegroApi\Model\SaleProductOfferStatusResponseOperation|null $operation operation
      *
      * @return self
      */

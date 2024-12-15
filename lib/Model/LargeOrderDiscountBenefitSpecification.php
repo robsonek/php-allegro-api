@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * LargeOrderDiscountBenefitSpecification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class LargeOrderDiscountBenefitSpecification extends BenefitSpecification
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'thresholds' => '\OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[]'
+        'thresholds' => '\robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[]'
     ];
 
     /**
@@ -323,7 +323,7 @@ class LargeOrderDiscountBenefitSpecification extends BenefitSpecification
     /**
      * Gets thresholds
      *
-     * @return \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[]
+     * @return \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[]
      */
     public function getThresholds()
     {
@@ -333,7 +333,7 @@ class LargeOrderDiscountBenefitSpecification extends BenefitSpecification
     /**
      * Sets thresholds
      *
-     * @param \OpenAPI\Client\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[] $thresholds List of order discount thresholds. A threshold with a higher orderValue.lowerBound.amount than another one must also have a higher discount.percentage.
+     * @param \robsonek\phpAllegroApi\Model\LargeOrderDiscountBenefitSpecificationAllOfThresholds[] $thresholds List of order discount thresholds. A threshold with a higher orderValue.lowerBound.amount than another one must also have a higher discount.percentage.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**offers** | [**\OpenAPI\Client\Model\OfferListingDto[]**](OfferListingDto.md) | The list of seller&#39;s offers matching the request&#39;s criteria. | [optional]
+**offers** | [**\robsonek\phpAllegroApi\Model\OfferListingDto[]**](OfferListingDto.md) | The list of seller&#39;s offers matching the request&#39;s criteria. | [optional]
 **count** | **int** | Number of offers in the search result. | [optional]
 **total_count** | **int** | The total number of offers matching the request&#39;s criteria. | [optional]
 

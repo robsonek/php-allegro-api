@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferRulesRulesInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace',
-        'rule' => '\OpenAPI\Client\Model\OfferRulesRulesInnerRule',
-        'configuration' => '\OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace',
+        'rule' => '\robsonek\phpAllegroApi\Model\OfferRulesRulesInnerRule',
+        'configuration' => '\robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration',
         'updated_at' => '\DateTime'
     ];
 
@@ -322,7 +322,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace
+     * @return \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace
      */
     public function getMarketplace()
     {
@@ -332,7 +332,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerMarketplace $marketplace marketplace
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets rule
      *
-     * @return \OpenAPI\Client\Model\OfferRulesRulesInnerRule
+     * @return \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerRule
      */
     public function getRule()
     {
@@ -359,7 +359,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets rule
      *
-     * @param \OpenAPI\Client\Model\OfferRulesRulesInnerRule $rule rule
+     * @param \robsonek\phpAllegroApi\Model\OfferRulesRulesInnerRule $rule rule
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets configuration
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration|null
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration|null
      */
     public function getConfiguration()
     {
@@ -386,7 +386,7 @@ class OfferRulesRulesInner implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets configuration
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfiguration|null $configuration configuration
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfiguration|null $configuration configuration
      *
      * @return self
      */

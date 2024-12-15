@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * UnfilledParametersResponseOffersInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class UnfilledParametersResponseOffersInner implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'parameters' => '\OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerParametersInner[]',
-        'category' => '\OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerCategory'
+        'parameters' => '\robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerParametersInner[]',
+        'category' => '\robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerCategory'
     ];
 
     /**
@@ -333,7 +333,7 @@ class UnfilledParametersResponseOffersInner implements ModelInterface, ArrayAcce
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerParametersInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerParametersInner[]|null
      */
     public function getParameters()
     {
@@ -343,7 +343,7 @@ class UnfilledParametersResponseOffersInner implements ModelInterface, ArrayAcce
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerParametersInner[]|null $parameters List of unfilled parameters.
+     * @param \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerParametersInner[]|null $parameters List of unfilled parameters.
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class UnfilledParametersResponseOffersInner implements ModelInterface, ArrayAcce
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerCategory|null
+     * @return \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerCategory|null
      */
     public function getCategory()
     {
@@ -370,7 +370,7 @@ class UnfilledParametersResponseOffersInner implements ModelInterface, ArrayAcce
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\UnfilledParametersResponseOffersInnerCategory|null $category category
+     * @param \robsonek\phpAllegroApi\Model\UnfilledParametersResponseOffersInnerCategory|null $category category
      *
      * @return self
      */

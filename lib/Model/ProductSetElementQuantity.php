@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSetElementQuantity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ProductSetElementQuantity implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'quantity' => '\OpenAPI\Client\Model\ProductSetElementQuantityQuantity'
+        'quantity' => '\robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ProductSetElementQuantity implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets quantity
      *
-     * @return \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null
      */
     public function getQuantity()
     {
@@ -302,7 +302,7 @@ class ProductSetElementQuantity implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets quantity
      *
-     * @param \OpenAPI\Client\Model\ProductSetElementQuantityQuantity|null $quantity quantity
+     * @param \robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity|null $quantity quantity
      *
      * @return self
      */

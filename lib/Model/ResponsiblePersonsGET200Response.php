@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ResponsiblePersonsGET200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ResponsiblePersonsGET200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responsible_persons' => '\OpenAPI\Client\Model\ResponsiblePersonResponse[]',
+        'responsible_persons' => '\robsonek\phpAllegroApi\Model\ResponsiblePersonResponse[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class ResponsiblePersonsGET200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets responsible_persons
      *
-     * @return \OpenAPI\Client\Model\ResponsiblePersonResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsiblePersonResponse[]|null
      */
     public function getResponsiblePersons()
     {
@@ -324,7 +324,7 @@ class ResponsiblePersonsGET200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets responsible_persons
      *
-     * @param \OpenAPI\Client\Model\ResponsiblePersonResponse[]|null $responsible_persons responsible_persons
+     * @param \robsonek\phpAllegroApi\Model\ResponsiblePersonResponse[]|null $responsible_persons responsible_persons
      *
      * @return self
      */

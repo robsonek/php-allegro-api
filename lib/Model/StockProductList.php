@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * StockProductList Class Doc Comment
  *
  * @category Class
  * @description Represents the current stock for the seller.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class StockProductList implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'stock' => '\OpenAPI\Client\Model\StockProductItem[]',
+        'stock' => '\robsonek\phpAllegroApi\Model\StockProductItem[]',
         'count' => 'float',
         'total_count' => 'float'
     ];
@@ -307,7 +307,7 @@ class StockProductList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\StockProductItem[]|null
+     * @return \robsonek\phpAllegroApi\Model\StockProductItem[]|null
      */
     public function getStock()
     {
@@ -317,7 +317,7 @@ class StockProductList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\StockProductItem[]|null $stock List of products with their quantity.
+     * @param \robsonek\phpAllegroApi\Model\StockProductItem[]|null $stock List of products with their quantity.
      *
      * @return self
      */

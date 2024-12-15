@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * StockProductItem Class Doc Comment
  *
  * @category Class
  * @description Groups together product and its quantity.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product' => '\OpenAPI\Client\Model\StockProduct',
-        'quantity' => '\OpenAPI\Client\Model\StockQuantity',
-        'selling_stats' => '\OpenAPI\Client\Model\StockSellingStats',
-        'reserve' => '\OpenAPI\Client\Model\ReserveInfo',
-        'storage_fee' => '\OpenAPI\Client\Model\StockStorageFee',
+        'product' => '\robsonek\phpAllegroApi\Model\StockProduct',
+        'quantity' => '\robsonek\phpAllegroApi\Model\StockQuantity',
+        'selling_stats' => '\robsonek\phpAllegroApi\Model\StockSellingStats',
+        'reserve' => '\robsonek\phpAllegroApi\Model\ReserveInfo',
+        'storage_fee' => '\robsonek\phpAllegroApi\Model\StockStorageFee',
         'offer_id' => 'string'
     ];
 
@@ -328,7 +328,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\StockProduct|null
+     * @return \robsonek\phpAllegroApi\Model\StockProduct|null
      */
     public function getProduct()
     {
@@ -338,7 +338,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\StockProduct|null $product product
+     * @param \robsonek\phpAllegroApi\Model\StockProduct|null $product product
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets quantity
      *
-     * @return \OpenAPI\Client\Model\StockQuantity|null
+     * @return \robsonek\phpAllegroApi\Model\StockQuantity|null
      */
     public function getQuantity()
     {
@@ -365,7 +365,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets quantity
      *
-     * @param \OpenAPI\Client\Model\StockQuantity|null $quantity quantity
+     * @param \robsonek\phpAllegroApi\Model\StockQuantity|null $quantity quantity
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets selling_stats
      *
-     * @return \OpenAPI\Client\Model\StockSellingStats|null
+     * @return \robsonek\phpAllegroApi\Model\StockSellingStats|null
      */
     public function getSellingStats()
     {
@@ -392,7 +392,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets selling_stats
      *
-     * @param \OpenAPI\Client\Model\StockSellingStats|null $selling_stats selling_stats
+     * @param \robsonek\phpAllegroApi\Model\StockSellingStats|null $selling_stats selling_stats
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets reserve
      *
-     * @return \OpenAPI\Client\Model\ReserveInfo|null
+     * @return \robsonek\phpAllegroApi\Model\ReserveInfo|null
      */
     public function getReserve()
     {
@@ -419,7 +419,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets reserve
      *
-     * @param \OpenAPI\Client\Model\ReserveInfo|null $reserve reserve
+     * @param \robsonek\phpAllegroApi\Model\ReserveInfo|null $reserve reserve
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets storage_fee
      *
-     * @return \OpenAPI\Client\Model\StockStorageFee|null
+     * @return \robsonek\phpAllegroApi\Model\StockStorageFee|null
      */
     public function getStorageFee()
     {
@@ -446,7 +446,7 @@ class StockProductItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets storage_fee
      *
-     * @param \OpenAPI\Client\Model\StockStorageFee|null $storage_fee storage_fee
+     * @param \robsonek\phpAllegroApi\Model\StockStorageFee|null $storage_fee storage_fee
      *
      * @return self
      */

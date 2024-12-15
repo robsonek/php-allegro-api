@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SmartOfferClassificationReportConditionsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class SmartOfferClassificationReportConditionsInner implements ModelInterface, A
         'name' => 'string',
         'description' => 'string',
         'fulfilled' => 'bool',
-        'passed_delivery_methods' => '\OpenAPI\Client\Model\DeliveryMethodId[]',
-        'failed_delivery_methods' => '\OpenAPI\Client\Model\DeliveryMethodId[]'
+        'passed_delivery_methods' => '\robsonek\phpAllegroApi\Model\DeliveryMethodId[]',
+        'failed_delivery_methods' => '\robsonek\phpAllegroApi\Model\DeliveryMethodId[]'
     ];
 
     /**
@@ -435,7 +435,7 @@ class SmartOfferClassificationReportConditionsInner implements ModelInterface, A
     /**
      * Gets passed_delivery_methods
      *
-     * @return \OpenAPI\Client\Model\DeliveryMethodId[]|null
+     * @return \robsonek\phpAllegroApi\Model\DeliveryMethodId[]|null
      */
     public function getPassedDeliveryMethods()
     {
@@ -445,7 +445,7 @@ class SmartOfferClassificationReportConditionsInner implements ModelInterface, A
     /**
      * Sets passed_delivery_methods
      *
-     * @param \OpenAPI\Client\Model\DeliveryMethodId[]|null $passed_delivery_methods Set of delivery methods that meet this condition. May be null if the condition does not apply to delivery methods.
+     * @param \robsonek\phpAllegroApi\Model\DeliveryMethodId[]|null $passed_delivery_methods Set of delivery methods that meet this condition. May be null if the condition does not apply to delivery methods.
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class SmartOfferClassificationReportConditionsInner implements ModelInterface, A
     /**
      * Gets failed_delivery_methods
      *
-     * @return \OpenAPI\Client\Model\DeliveryMethodId[]|null
+     * @return \robsonek\phpAllegroApi\Model\DeliveryMethodId[]|null
      */
     public function getFailedDeliveryMethods()
     {
@@ -472,7 +472,7 @@ class SmartOfferClassificationReportConditionsInner implements ModelInterface, A
     /**
      * Sets failed_delivery_methods
      *
-     * @param \OpenAPI\Client\Model\DeliveryMethodId[]|null $failed_delivery_methods Set of delivery methods that fail to meet this condition. May be null if the condition does not apply to delivery methods.
+     * @param \robsonek\phpAllegroApi\Model\DeliveryMethodId[]|null $failed_delivery_methods Set of delivery methods that fail to meet this condition. May be null if the condition does not apply to delivery methods.
      *
      * @return self
      */

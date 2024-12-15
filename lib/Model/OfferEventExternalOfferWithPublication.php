@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferEventExternalOfferWithPublication Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferEventExternalOfferWithPublication implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'publication' => '\OpenAPI\Client\Model\OfferMarketplacesPublication'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferMarketplacesPublication'
     ];
 
     /**
@@ -339,7 +339,7 @@ class OfferEventExternalOfferWithPublication implements ModelInterface, ArrayAcc
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -349,7 +349,7 @@ class OfferEventExternalOfferWithPublication implements ModelInterface, ArrayAcc
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OfferEventExternalOfferWithPublication implements ModelInterface, ArrayAcc
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferMarketplacesPublication
+     * @return \robsonek\phpAllegroApi\Model\OfferMarketplacesPublication
      */
     public function getPublication()
     {
@@ -376,7 +376,7 @@ class OfferEventExternalOfferWithPublication implements ModelInterface, ArrayAcc
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferMarketplacesPublication $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferMarketplacesPublication $publication publication
      *
      * @return self
      */

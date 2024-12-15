@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FeePreviewResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class FeePreviewResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'commissions' => '\OpenAPI\Client\Model\CommissionResponse[]',
-        'quotes' => '\OpenAPI\Client\Model\QuoteResponse[]'
+        'commissions' => '\robsonek\phpAllegroApi\Model\CommissionResponse[]',
+        'quotes' => '\robsonek\phpAllegroApi\Model\QuoteResponse[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class FeePreviewResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets commissions
      *
-     * @return \OpenAPI\Client\Model\CommissionResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\CommissionResponse[]|null
      */
     public function getCommissions()
     {
@@ -309,7 +309,7 @@ class FeePreviewResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets commissions
      *
-     * @param \OpenAPI\Client\Model\CommissionResponse[]|null $commissions An array of commissions.
+     * @param \robsonek\phpAllegroApi\Model\CommissionResponse[]|null $commissions An array of commissions.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class FeePreviewResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets quotes
      *
-     * @return \OpenAPI\Client\Model\QuoteResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\QuoteResponse[]|null
      */
     public function getQuotes()
     {
@@ -336,7 +336,7 @@ class FeePreviewResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets quotes
      *
-     * @param \OpenAPI\Client\Model\QuoteResponse[]|null $quotes An array of quotes.
+     * @param \robsonek\phpAllegroApi\Model\QuoteResponse[]|null $quotes An array of quotes.
      *
      * @return self
      */

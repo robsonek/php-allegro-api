@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**default** | [**\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault**](GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault.md) |  | [optional]
+**default** | [**\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault**](GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTimeDefault.md) |  | [optional]
 **customizable** | **bool** | Indicates if custom shipping time can be set when adding or modifying shipping rates. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

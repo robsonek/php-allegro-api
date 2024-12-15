@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgeApplications Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BadgeApplications implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'badge_applications' => '\OpenAPI\Client\Model\BadgeApplication[]'
+        'badge_applications' => '\robsonek\phpAllegroApi\Model\BadgeApplication[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class BadgeApplications implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets badge_applications
      *
-     * @return \OpenAPI\Client\Model\BadgeApplication[]
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplication[]
      */
     public function getBadgeApplications()
     {
@@ -305,7 +305,7 @@ class BadgeApplications implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets badge_applications
      *
-     * @param \OpenAPI\Client\Model\BadgeApplication[] $badge_applications badge_applications
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplication[] $badge_applications badge_applications
      *
      * @return self
      */

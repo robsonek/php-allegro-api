@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BillingEntry Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'occurred_at' => '\DateTime',
-        'type' => '\OpenAPI\Client\Model\BillingEntryType',
-        'offer' => '\OpenAPI\Client\Model\BillingEntryOffer',
-        'value' => '\OpenAPI\Client\Model\BillingEntryValue',
-        'tax' => '\OpenAPI\Client\Model\BillingEntryTax',
-        'balance' => '\OpenAPI\Client\Model\BillingEntryBalance',
-        'order' => '\OpenAPI\Client\Model\BillingEntryOrder'
+        'type' => '\robsonek\phpAllegroApi\Model\BillingEntryType',
+        'offer' => '\robsonek\phpAllegroApi\Model\BillingEntryOffer',
+        'value' => '\robsonek\phpAllegroApi\Model\BillingEntryValue',
+        'tax' => '\robsonek\phpAllegroApi\Model\BillingEntryTax',
+        'balance' => '\robsonek\phpAllegroApi\Model\BillingEntryBalance',
+        'order' => '\robsonek\phpAllegroApi\Model\BillingEntryOrder'
     ];
 
     /**
@@ -395,7 +395,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\BillingEntryType|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryType|null
      */
     public function getType()
     {
@@ -405,7 +405,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\BillingEntryType|null $type type
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryType|null $type type
      *
      * @return self
      */
@@ -422,7 +422,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\BillingEntryOffer|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryOffer|null
      */
     public function getOffer()
     {
@@ -432,7 +432,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\BillingEntryOffer|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryOffer|null $offer offer
      *
      * @return self
      */
@@ -449,7 +449,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\BillingEntryValue|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryValue|null
      */
     public function getValue()
     {
@@ -459,7 +459,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\BillingEntryValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryValue|null $value value
      *
      * @return self
      */
@@ -476,7 +476,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax
      *
-     * @return \OpenAPI\Client\Model\BillingEntryTax|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryTax|null
      */
     public function getTax()
     {
@@ -486,7 +486,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax
      *
-     * @param \OpenAPI\Client\Model\BillingEntryTax|null $tax tax
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryTax|null $tax tax
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets balance
      *
-     * @return \OpenAPI\Client\Model\BillingEntryBalance|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryBalance|null
      */
     public function getBalance()
     {
@@ -513,7 +513,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets balance
      *
-     * @param \OpenAPI\Client\Model\BillingEntryBalance|null $balance balance
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryBalance|null $balance balance
      *
      * @return self
      */
@@ -530,7 +530,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\BillingEntryOrder|null
+     * @return \robsonek\phpAllegroApi\Model\BillingEntryOrder|null
      */
     public function getOrder()
     {
@@ -540,7 +540,7 @@ class BillingEntry implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\BillingEntryOrder|null $order order
+     * @param \robsonek\phpAllegroApi\Model\BillingEntryOrder|null $order order
      *
      * @return self
      */

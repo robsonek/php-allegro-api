@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductOfferPublicationRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class SaleProductOfferPublicationRequest implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'duration' => 'string',
         'starting_at' => '\DateTime',
-        'status' => '\OpenAPI\Client\Model\OfferStatus',
+        'status' => '\robsonek\phpAllegroApi\Model\OfferStatus',
         'republish' => 'bool'
     ];
 
@@ -367,7 +367,7 @@ class SaleProductOfferPublicationRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\OfferStatus|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStatus|null
      */
     public function getStatus()
     {
@@ -377,7 +377,7 @@ class SaleProductOfferPublicationRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\OfferStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\OfferStatus|null $status status
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ShippingRatesSet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ShippingRatesSet implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'rates' => '\OpenAPI\Client\Model\ShippingRate[]',
+        'rates' => '\robsonek\phpAllegroApi\Model\ShippingRate[]',
         'last_modified' => 'string'
     ];
 
@@ -385,7 +385,7 @@ class ShippingRatesSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rates
      *
-     * @return \OpenAPI\Client\Model\ShippingRate[]
+     * @return \robsonek\phpAllegroApi\Model\ShippingRate[]
      */
     public function getRates()
     {
@@ -395,7 +395,7 @@ class ShippingRatesSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rates
      *
-     * @param \OpenAPI\Client\Model\ShippingRate[] $rates rates
+     * @param \robsonek\phpAllegroApi\Model\ShippingRate[] $rates rates
      *
      * @return self
      */

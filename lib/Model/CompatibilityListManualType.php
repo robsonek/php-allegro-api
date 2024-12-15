@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListManualType Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CompatibilityListManualType implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\CompatibilityListItem[]'
+        'items' => '\robsonek\phpAllegroApi\Model\CompatibilityListItem[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CompatibilityListManualType implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListItem[]
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListItem[]
      */
     public function getItems()
     {
@@ -305,7 +305,7 @@ class CompatibilityListManualType implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListItem[] $items List of the compatible items. Maximum number of elements on the list depends on type of included compatible items. Configuration and details concerning the compatible items in selected category are provided in the response for GET <a href=\"/documentation/#tag/Compatibility-List/paths/~1sale~1compatibility-list~1supported-categories/get\"> supported-categories</a> resource in `validationRules` object.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListItem[] $items List of the compatible items. Maximum number of elements on the list depends on type of included compatible items. Configuration and details concerning the compatible items in selected category are provided in the response for GET <a href=\"/documentation/#tag/Compatibility-List/paths/~1sale~1compatibility-list~1supported-categories/get\"> supported-categories</a> resource in `validationRules` object.
      *
      * @return self
      */

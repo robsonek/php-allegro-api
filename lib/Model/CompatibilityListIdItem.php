@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CompatibilityListIdItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CompatibilityListIdItem extends CompatibilityListItem
         'type' => 'string',
         'id' => 'string',
         'text' => 'string',
-        'additional_info' => '\OpenAPI\Client\Model\CompatibilityListIdItemAdditionalInfo[]'
+        'additional_info' => '\robsonek\phpAllegroApi\Model\CompatibilityListIdItemAdditionalInfo[]'
     ];
 
     /**
@@ -391,7 +391,7 @@ class CompatibilityListIdItem extends CompatibilityListItem
     /**
      * Gets additional_info
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListIdItemAdditionalInfo[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListIdItemAdditionalInfo[]|null
      */
     public function getAdditionalInfo()
     {
@@ -401,7 +401,7 @@ class CompatibilityListIdItem extends CompatibilityListItem
     /**
      * Sets additional_info
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListIdItemAdditionalInfo[]|null $additional_info Details of the compatible item represented by ID.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListIdItemAdditionalInfo[]|null $additional_info Details of the compatible item represented by ID.
      *
      * @return self
      */

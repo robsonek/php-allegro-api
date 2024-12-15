@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MyBidResponse Class Doc Comment
  *
  * @category Class
  * @description bid response
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class MyBidResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'max_amount' => '\OpenAPI\Client\Model\Price',
+        'max_amount' => '\robsonek\phpAllegroApi\Model\Price',
         'minimal_price_met' => 'bool',
         'high_bidder' => 'bool',
-        'auction' => '\OpenAPI\Client\Model\AuctionDetails'
+        'auction' => '\robsonek\phpAllegroApi\Model\AuctionDetails'
     ];
 
     /**
@@ -323,7 +323,7 @@ class MyBidResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets max_amount
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getMaxAmount()
     {
@@ -333,7 +333,7 @@ class MyBidResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets max_amount
      *
-     * @param \OpenAPI\Client\Model\Price $max_amount Maximum amount that user is willing to pay for the auction.
+     * @param \robsonek\phpAllegroApi\Model\Price $max_amount Maximum amount that user is willing to pay for the auction.
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class MyBidResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets auction
      *
-     * @return \OpenAPI\Client\Model\AuctionDetails
+     * @return \robsonek\phpAllegroApi\Model\AuctionDetails
      */
     public function getAuction()
     {
@@ -414,7 +414,7 @@ class MyBidResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets auction
      *
-     * @param \OpenAPI\Client\Model\AuctionDetails $auction auction
+     * @param \robsonek\phpAllegroApi\Model\AuctionDetails $auction auction
      *
      * @return self
      */

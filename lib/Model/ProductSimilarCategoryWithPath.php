@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductSimilarCategoryWithPath Class Doc Comment
  *
  * @category Class
  * @description Category in which the product can be listed for sale
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class ProductSimilarCategoryWithPath implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'path' => '\OpenAPI\Client\Model\ProductsCategoryPath[]'
+        'path' => '\robsonek\phpAllegroApi\Model\ProductsCategoryPath[]'
     ];
 
     /**
@@ -361,7 +361,7 @@ class ProductSimilarCategoryWithPath implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets path
      *
-     * @return \OpenAPI\Client\Model\ProductsCategoryPath[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductsCategoryPath[]|null
      */
     public function getPath()
     {
@@ -371,7 +371,7 @@ class ProductSimilarCategoryWithPath implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets path
      *
-     * @param \OpenAPI\Client\Model\ProductsCategoryPath[]|null $path path
+     * @param \robsonek\phpAllegroApi\Model\ProductsCategoryPath[]|null $path path
      *
      * @return self
      */

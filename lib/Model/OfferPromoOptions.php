@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferPromoOptions Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     protected static $openAPITypes = [
         'offer_id' => 'string',
         'marketplace_id' => 'string',
-        'base_package' => '\OpenAPI\Client\Model\OfferPromoOption',
-        'extra_packages' => '\OpenAPI\Client\Model\OfferPromoOption[]',
-        'pending_changes' => '\OpenAPI\Client\Model\OfferPromoOptionsPendingChanges',
-        'additional_marketplaces' => '\OpenAPI\Client\Model\MarketplaceOfferPromoOption[]'
+        'base_package' => '\robsonek\phpAllegroApi\Model\OfferPromoOption',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\OfferPromoOption[]',
+        'pending_changes' => '\robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges',
+        'additional_marketplaces' => '\robsonek\phpAllegroApi\Model\MarketplaceOfferPromoOption[]'
     ];
 
     /**
@@ -381,7 +381,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOption|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOption|null
      */
     public function getBasePackage()
     {
@@ -391,7 +391,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOption|null $base_package base_package
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOption|null $base_package base_package
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOption[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOption[]|null
      */
     public function getExtraPackages()
     {
@@ -418,7 +418,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOption[]|null $extra_packages Extra promotion packages set on offer.
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOption[]|null $extra_packages Extra promotion packages set on offer.
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets pending_changes
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOptionsPendingChanges|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges|null
      */
     public function getPendingChanges()
     {
@@ -445,7 +445,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets pending_changes
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOptionsPendingChanges|null $pending_changes pending_changes
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges|null $pending_changes pending_changes
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets additional_marketplaces
      *
-     * @return \OpenAPI\Client\Model\MarketplaceOfferPromoOption[]|null
+     * @return \robsonek\phpAllegroApi\Model\MarketplaceOfferPromoOption[]|null
      */
     public function getAdditionalMarketplaces()
     {
@@ -472,7 +472,7 @@ class OfferPromoOptions implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets additional_marketplaces
      *
-     * @param \OpenAPI\Client\Model\MarketplaceOfferPromoOption[]|null $additional_marketplaces Promo packages on additional marketplaces
+     * @param \robsonek\phpAllegroApi\Model\MarketplaceOfferPromoOption[]|null $additional_marketplaces Promo packages on additional marketplaces
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferRating Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class OfferRating implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'average_score' => 'string',
-        'score_distribution' => '\OpenAPI\Client\Model\OfferRatingScoreDistributionInner[]',
+        'score_distribution' => '\robsonek\phpAllegroApi\Model\OfferRatingScoreDistributionInner[]',
         'total_responses' => 'int',
-        'size_feedback' => '\OpenAPI\Client\Model\OfferRatingSizeFeedbackInner[]'
+        'size_feedback' => '\robsonek\phpAllegroApi\Model\OfferRatingSizeFeedbackInner[]'
     ];
 
     /**
@@ -344,7 +344,7 @@ class OfferRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets score_distribution
      *
-     * @return \OpenAPI\Client\Model\OfferRatingScoreDistributionInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferRatingScoreDistributionInner[]|null
      */
     public function getScoreDistribution()
     {
@@ -354,7 +354,7 @@ class OfferRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets score_distribution
      *
-     * @param \OpenAPI\Client\Model\OfferRatingScoreDistributionInner[]|null $score_distribution List score distribution with count.
+     * @param \robsonek\phpAllegroApi\Model\OfferRatingScoreDistributionInner[]|null $score_distribution List score distribution with count.
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class OfferRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets size_feedback
      *
-     * @return \OpenAPI\Client\Model\OfferRatingSizeFeedbackInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferRatingSizeFeedbackInner[]|null
      */
     public function getSizeFeedback()
     {
@@ -413,7 +413,7 @@ class OfferRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets size_feedback
      *
-     * @param \OpenAPI\Client\Model\OfferRatingSizeFeedbackInner[]|null $size_feedback List of size feedback.
+     * @param \robsonek\phpAllegroApi\Model\OfferRatingSizeFeedbackInner[]|null $size_feedback List of size feedback.
      *
      * @return self
      */

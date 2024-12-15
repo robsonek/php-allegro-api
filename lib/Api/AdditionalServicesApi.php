@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServicesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class AdditionalServicesApi
      *
      * Create additional services group
      *
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdditionalServicesGroupUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
      */
     public function createAdditionalServicesGroupUsingPOST($additional_services_group_request, string $contentType = self::contentTypes['createAdditionalServicesGroupUsingPOST'][0])
     {
@@ -157,12 +157,12 @@ class AdditionalServicesApi
      *
      * Create additional services group
      *
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdditionalServicesGroupUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createAdditionalServicesGroupUsingPOSTWithHttpInfo($additional_services_group_request, string $contentType = self::contentTypes['createAdditionalServicesGroupUsingPOST'][0])
     {
@@ -193,11 +193,11 @@ class AdditionalServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,7 +215,7 @@ class AdditionalServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServicesGroupResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -234,7 +234,7 @@ class AdditionalServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -267,7 +267,7 @@ class AdditionalServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServicesGroupResponse',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -282,7 +282,7 @@ class AdditionalServicesApi
      *
      * Create additional services group
      *
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdditionalServicesGroupUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -303,7 +303,7 @@ class AdditionalServicesApi
      *
      * Create additional services group
      *
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdditionalServicesGroupUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -311,7 +311,7 @@ class AdditionalServicesApi
      */
     public function createAdditionalServicesGroupUsingPOSTAsyncWithHttpInfo($additional_services_group_request, string $contentType = self::contentTypes['createAdditionalServicesGroupUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
         $request = $this->createAdditionalServicesGroupUsingPOSTRequest($additional_services_group_request, $contentType);
 
         return $this->client
@@ -353,7 +353,7 @@ class AdditionalServicesApi
     /**
      * Create request for operation 'createAdditionalServicesGroupUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createAdditionalServicesGroupUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -453,9 +453,9 @@ class AdditionalServicesApi
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdditionalServicesGroupUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
      */
     public function getAdditionalServicesGroupUsingGET($group_id, string $contentType = self::contentTypes['getAdditionalServicesGroupUsingGET'][0])
     {
@@ -471,9 +471,9 @@ class AdditionalServicesApi
      * @param  string $group_id Additional Service Group ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAdditionalServicesGroupUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAdditionalServicesGroupUsingGETWithHttpInfo($group_id, string $contentType = self::contentTypes['getAdditionalServicesGroupUsingGET'][0])
     {
@@ -504,11 +504,11 @@ class AdditionalServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -526,7 +526,7 @@ class AdditionalServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServicesGroupResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -545,7 +545,7 @@ class AdditionalServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -578,7 +578,7 @@ class AdditionalServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServicesGroupResponse',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -622,7 +622,7 @@ class AdditionalServicesApi
      */
     public function getAdditionalServicesGroupUsingGETAsyncWithHttpInfo($group_id, string $contentType = self::contentTypes['getAdditionalServicesGroupUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
         $request = $this->getAdditionalServicesGroupUsingGETRequest($group_id, $contentType);
 
         return $this->client
@@ -764,9 +764,9 @@ class AdditionalServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfAdditionalServicesDefinitionsCategoriesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoriesResponse
+     * @return \robsonek\phpAllegroApi\Model\CategoriesResponse
      */
     public function getListOfAdditionalServicesDefinitionsCategoriesUsingGET(string $contentType = self::contentTypes['getListOfAdditionalServicesDefinitionsCategoriesUsingGET'][0])
     {
@@ -781,9 +781,9 @@ class AdditionalServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfAdditionalServicesDefinitionsCategoriesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoriesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoriesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfAdditionalServicesDefinitionsCategoriesUsingGETWithHttpInfo(string $contentType = self::contentTypes['getListOfAdditionalServicesDefinitionsCategoriesUsingGET'][0])
     {
@@ -814,11 +814,11 @@ class AdditionalServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoriesResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoriesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoriesResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoriesResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -836,7 +836,7 @@ class AdditionalServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoriesResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoriesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -855,7 +855,7 @@ class AdditionalServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoriesResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoriesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -888,7 +888,7 @@ class AdditionalServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoriesResponse',
+                        '\robsonek\phpAllegroApi\Model\CategoriesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -930,7 +930,7 @@ class AdditionalServicesApi
      */
     public function getListOfAdditionalServicesDefinitionsCategoriesUsingGETAsyncWithHttpInfo(string $contentType = self::contentTypes['getListOfAdditionalServicesDefinitionsCategoriesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoriesResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoriesResponse';
         $request = $this->getListOfAdditionalServicesDefinitionsCategoriesUsingGETRequest($contentType);
 
         return $this->client
@@ -1058,9 +1058,9 @@ class AdditionalServicesApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfAdditionalServicesGroupsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroups
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroups
      */
     public function getListOfAdditionalServicesGroupsUsingGET($offset = 0, $limit = 100, string $contentType = self::contentTypes['getListOfAdditionalServicesGroupsUsingGET'][0])
     {
@@ -1077,9 +1077,9 @@ class AdditionalServicesApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getListOfAdditionalServicesGroupsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServicesGroups, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServicesGroups, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfAdditionalServicesGroupsUsingGETWithHttpInfo($offset = 0, $limit = 100, string $contentType = self::contentTypes['getListOfAdditionalServicesGroupsUsingGET'][0])
     {
@@ -1110,11 +1110,11 @@ class AdditionalServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdditionalServicesGroups' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroups' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServicesGroups' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroups' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1132,7 +1132,7 @@ class AdditionalServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServicesGroups', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServicesGroups', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1151,7 +1151,7 @@ class AdditionalServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroups';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroups';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1184,7 +1184,7 @@ class AdditionalServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServicesGroups',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServicesGroups',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1230,7 +1230,7 @@ class AdditionalServicesApi
      */
     public function getListOfAdditionalServicesGroupsUsingGETAsyncWithHttpInfo($offset = 0, $limit = 100, string $contentType = self::contentTypes['getListOfAdditionalServicesGroupsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroups';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroups';
         $request = $this->getListOfAdditionalServicesGroupsUsingGETRequest($offset, $limit, $contentType);
 
         return $this->client
@@ -1386,12 +1386,12 @@ class AdditionalServicesApi
      * Modify an additional services group
      *
      * @param  string $group_id Additional service group ID. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAdditionalServicesGroupUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AdditionalServicesGroupResponse
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse
      */
     public function modifyAdditionalServicesGroupUsingPUT($group_id, $additional_services_group_request, string $contentType = self::contentTypes['modifyAdditionalServicesGroupUsingPUT'][0])
     {
@@ -1405,12 +1405,12 @@ class AdditionalServicesApi
      * Modify an additional services group
      *
      * @param  string $group_id Additional service group ID. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAdditionalServicesGroupUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function modifyAdditionalServicesGroupUsingPUTWithHttpInfo($group_id, $additional_services_group_request, string $contentType = self::contentTypes['modifyAdditionalServicesGroupUsingPUT'][0])
     {
@@ -1441,11 +1441,11 @@ class AdditionalServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AdditionalServicesGroupResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1463,7 +1463,7 @@ class AdditionalServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AdditionalServicesGroupResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1482,7 +1482,7 @@ class AdditionalServicesApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1515,7 +1515,7 @@ class AdditionalServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AdditionalServicesGroupResponse',
+                        '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1531,7 +1531,7 @@ class AdditionalServicesApi
      * Modify an additional services group
      *
      * @param  string $group_id Additional service group ID. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAdditionalServicesGroupUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1553,7 +1553,7 @@ class AdditionalServicesApi
      * Modify an additional services group
      *
      * @param  string $group_id Additional service group ID. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAdditionalServicesGroupUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1561,7 +1561,7 @@ class AdditionalServicesApi
      */
     public function modifyAdditionalServicesGroupUsingPUTAsyncWithHttpInfo($group_id, $additional_services_group_request, string $contentType = self::contentTypes['modifyAdditionalServicesGroupUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AdditionalServicesGroupResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\AdditionalServicesGroupResponse';
         $request = $this->modifyAdditionalServicesGroupUsingPUTRequest($group_id, $additional_services_group_request, $contentType);
 
         return $this->client
@@ -1604,7 +1604,7 @@ class AdditionalServicesApi
      * Create request for operation 'modifyAdditionalServicesGroupUsingPUT'
      *
      * @param  string $group_id Additional service group ID. (required)
-     * @param  \OpenAPI\Client\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
+     * @param  \robsonek\phpAllegroApi\Model\AdditionalServicesGroupRequest $additional_services_group_request Additional service group body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modifyAdditionalServicesGroupUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

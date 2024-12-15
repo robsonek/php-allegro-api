@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SellingModeWithNetPrice Class Doc Comment
  *
  * @category Class
  * @description Information on the offer&#39;s selling mode.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\OpenAPI\Client\Model\SellingModeFormat',
-        'price' => '\OpenAPI\Client\Model\Price',
-        'minimal_price' => '\OpenAPI\Client\Model\Price',
-        'starting_price' => '\OpenAPI\Client\Model\Price',
-        'net_price' => '\OpenAPI\Client\Model\Price'
+        'format' => '\robsonek\phpAllegroApi\Model\SellingModeFormat',
+        'price' => '\robsonek\phpAllegroApi\Model\Price',
+        'minimal_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'starting_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'net_price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -321,7 +321,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets format
      *
-     * @return \OpenAPI\Client\Model\SellingModeFormat|null
+     * @return \robsonek\phpAllegroApi\Model\SellingModeFormat|null
      */
     public function getFormat()
     {
@@ -331,7 +331,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets format
      *
-     * @param \OpenAPI\Client\Model\SellingModeFormat|null $format format
+     * @param \robsonek\phpAllegroApi\Model\SellingModeFormat|null $format format
      *
      * @return self
      */
@@ -348,7 +348,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getPrice()
     {
@@ -358,7 +358,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
+     * @param \robsonek\phpAllegroApi\Model\Price|null $price The buy now or advertisement price (depending on the offer's format).
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets minimal_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getMinimalPrice()
     {
@@ -385,7 +385,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets minimal_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $minimal_price The minimal price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $minimal_price The minimal price for offers in auction format.
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets starting_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getStartingPrice()
     {
@@ -412,7 +412,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets starting_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $starting_price The starting price for offers in auction format.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $starting_price The starting price for offers in auction format.
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets net_price
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getNetPrice()
     {
@@ -439,7 +439,7 @@ class SellingModeWithNetPrice implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets net_price
      *
-     * @param \OpenAPI\Client\Model\Price|null $net_price The buy now net price computed based on tax. Provided for informational purposes only - ignored when creating (POST) or updating (PUT).
+     * @param \robsonek\phpAllegroApi\Model\Price|null $net_price The buy now net price computed based on tax. Provided for informational purposes only - ignored when creating (POST) or updating (PUT).
      *
      * @return self
      */

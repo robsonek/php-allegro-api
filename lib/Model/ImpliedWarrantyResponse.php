@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ImpliedWarrantyResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'seller' => '\OpenAPI\Client\Model\Seller',
+        'seller' => '\robsonek\phpAllegroApi\Model\Seller',
         'name' => 'string',
-        'individual' => '\OpenAPI\Client\Model\ImpliedWarrantyPeriod',
-        'corporate' => '\OpenAPI\Client\Model\ImpliedWarrantyPeriod',
-        'address' => '\OpenAPI\Client\Model\AfterSalesServicesAddress',
+        'individual' => '\robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod',
+        'corporate' => '\robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod',
+        'address' => '\robsonek\phpAllegroApi\Model\AfterSalesServicesAddress',
         'description' => 'string'
     ];
 
@@ -365,7 +365,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets seller
      *
-     * @return \OpenAPI\Client\Model\Seller|null
+     * @return \robsonek\phpAllegroApi\Model\Seller|null
      */
     public function getSeller()
     {
@@ -375,7 +375,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets seller
      *
-     * @param \OpenAPI\Client\Model\Seller|null $seller seller
+     * @param \robsonek\phpAllegroApi\Model\Seller|null $seller seller
      *
      * @return self
      */
@@ -423,7 +423,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets individual
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null
      */
     public function getIndividual()
     {
@@ -433,7 +433,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets individual
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null $individual individual
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null $individual individual
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets corporate
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null
      */
     public function getCorporate()
     {
@@ -460,7 +460,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets corporate
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarrantyPeriod|null $corporate corporate
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarrantyPeriod|null $corporate corporate
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\AfterSalesServicesAddress|null
+     * @return \robsonek\phpAllegroApi\Model\AfterSalesServicesAddress|null
      */
     public function getAddress()
     {
@@ -487,7 +487,7 @@ class ImpliedWarrantyResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\AfterSalesServicesAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\AfterSalesServicesAddress|null $address address
      *
      * @return self
      */

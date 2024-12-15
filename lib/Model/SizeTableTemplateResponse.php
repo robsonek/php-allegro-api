@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SizeTableTemplateResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'image' => '\OpenAPI\Client\Model\SizeTableTemplateImageResponse',
-        'headers' => '\OpenAPI\Client\Model\Header[]',
-        'values' => '\OpenAPI\Client\Model\Cells[]'
+        'image' => '\robsonek\phpAllegroApi\Model\SizeTableTemplateImageResponse',
+        'headers' => '\robsonek\phpAllegroApi\Model\Header[]',
+        'values' => '\robsonek\phpAllegroApi\Model\Cells[]'
     ];
 
     /**
@@ -386,7 +386,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets image
      *
-     * @return \OpenAPI\Client\Model\SizeTableTemplateImageResponse|null
+     * @return \robsonek\phpAllegroApi\Model\SizeTableTemplateImageResponse|null
      */
     public function getImage()
     {
@@ -396,7 +396,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets image
      *
-     * @param \OpenAPI\Client\Model\SizeTableTemplateImageResponse|null $image image
+     * @param \robsonek\phpAllegroApi\Model\SizeTableTemplateImageResponse|null $image image
      *
      * @return self
      */
@@ -413,7 +413,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets headers
      *
-     * @return \OpenAPI\Client\Model\Header[]
+     * @return \robsonek\phpAllegroApi\Model\Header[]
      */
     public function getHeaders()
     {
@@ -423,7 +423,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets headers
      *
-     * @param \OpenAPI\Client\Model\Header[] $headers size table template headers
+     * @param \robsonek\phpAllegroApi\Model\Header[] $headers size table template headers
      *
      * @return self
      */
@@ -440,7 +440,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\Cells[]
+     * @return \robsonek\phpAllegroApi\Model\Cells[]
      */
     public function getValues()
     {
@@ -450,7 +450,7 @@ class SizeTableTemplateResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\Cells[] $values size table template cells
+     * @param \robsonek\phpAllegroApi\Model\Cells[] $values size table template cells
      *
      * @return self
      */

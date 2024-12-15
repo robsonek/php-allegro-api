@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ChangePriceInput Class Doc Comment
  *
  * @category Class
  * @description The input of the command, i.e. the new Buy Now price for the offer.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ChangePriceInput implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'buy_now_price' => '\OpenAPI\Client\Model\Price'
+        'buy_now_price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ChangePriceInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buy_now_price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getBuyNowPrice()
     {
@@ -306,7 +306,7 @@ class ChangePriceInput implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buy_now_price
      *
-     * @param \OpenAPI\Client\Model\Price $buy_now_price buy_now_price
+     * @param \robsonek\phpAllegroApi\Model\Price $buy_now_price buy_now_price
      *
      * @return self
      */

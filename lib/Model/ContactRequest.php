@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ContactRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ContactRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'emails' => '\OpenAPI\Client\Model\EmailRequest[]',
-        'phones' => '\OpenAPI\Client\Model\PhonesRequest[]'
+        'emails' => '\robsonek\phpAllegroApi\Model\EmailRequest[]',
+        'phones' => '\robsonek\phpAllegroApi\Model\PhonesRequest[]'
     ];
 
     /**
@@ -349,7 +349,7 @@ class ContactRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets emails
      *
-     * @return \OpenAPI\Client\Model\EmailRequest[]|null
+     * @return \robsonek\phpAllegroApi\Model\EmailRequest[]|null
      */
     public function getEmails()
     {
@@ -359,7 +359,7 @@ class ContactRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets emails
      *
-     * @param \OpenAPI\Client\Model\EmailRequest[]|null $emails emails
+     * @param \robsonek\phpAllegroApi\Model\EmailRequest[]|null $emails emails
      *
      * @return self
      */
@@ -380,7 +380,7 @@ class ContactRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets phones
      *
-     * @return \OpenAPI\Client\Model\PhonesRequest[]|null
+     * @return \robsonek\phpAllegroApi\Model\PhonesRequest[]|null
      */
     public function getPhones()
     {
@@ -390,7 +390,7 @@ class ContactRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets phones
      *
-     * @param \OpenAPI\Client\Model\PhonesRequest[]|null $phones phones
+     * @param \robsonek\phpAllegroApi\Model\PhonesRequest[]|null $phones phones
      *
      * @return self
      */

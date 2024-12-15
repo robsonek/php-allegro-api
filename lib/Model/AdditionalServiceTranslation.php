@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServiceTranslation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AdditionalServiceTranslation implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'definition' => '\OpenAPI\Client\Model\AdditionalServiceDefinitionRequest',
+        'definition' => '\robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest',
         'description' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class AdditionalServiceTranslation implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets definition
      *
-     * @return \OpenAPI\Client\Model\AdditionalServiceDefinitionRequest|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest|null
      */
     public function getDefinition()
     {
@@ -309,7 +309,7 @@ class AdditionalServiceTranslation implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets definition
      *
-     * @param \OpenAPI\Client\Model\AdditionalServiceDefinitionRequest|null $definition definition
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServiceDefinitionRequest|null $definition definition
      *
      * @return self
      */

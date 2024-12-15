@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormOrderWaybillResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckoutFormOrderWaybillResponse implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipments' => '\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated[]'
+        'shipments' => '\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CheckoutFormOrderWaybillResponse implements ModelInterface, ArrayAccess, \
     /**
      * Gets shipments
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormAddWaybillCreated[]|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated[]|null
      */
     public function getShipments()
     {
@@ -302,7 +302,7 @@ class CheckoutFormOrderWaybillResponse implements ModelInterface, ArrayAccess, \
     /**
      * Sets shipments
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormAddWaybillCreated[]|null $shipments List of parcel tracking numbers currently assigned to the order.
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated[]|null $shipments List of parcel tracking numbers currently assigned to the order.
      *
      * @return self
      */

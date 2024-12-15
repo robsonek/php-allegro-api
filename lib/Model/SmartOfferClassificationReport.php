@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SmartOfferClassificationReport Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'classification' => '\OpenAPI\Client\Model\SmartOfferClassificationReportClassification',
+        'classification' => '\robsonek\phpAllegroApi\Model\SmartOfferClassificationReportClassification',
         'scheduled_for_reclassification' => 'bool',
-        'smart_delivery_methods' => '\OpenAPI\Client\Model\SmartDeliveryMethod[]',
-        'conditions' => '\OpenAPI\Client\Model\SmartOfferClassificationReportConditionsInner[]'
+        'smart_delivery_methods' => '\robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]',
+        'conditions' => '\robsonek\phpAllegroApi\Model\SmartOfferClassificationReportConditionsInner[]'
     ];
 
     /**
@@ -313,7 +313,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets classification
      *
-     * @return \OpenAPI\Client\Model\SmartOfferClassificationReportClassification|null
+     * @return \robsonek\phpAllegroApi\Model\SmartOfferClassificationReportClassification|null
      */
     public function getClassification()
     {
@@ -323,7 +323,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets classification
      *
-     * @param \OpenAPI\Client\Model\SmartOfferClassificationReportClassification|null $classification classification
+     * @param \robsonek\phpAllegroApi\Model\SmartOfferClassificationReportClassification|null $classification classification
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets smart_delivery_methods
      *
-     * @return \OpenAPI\Client\Model\SmartDeliveryMethod[]|null
+     * @return \robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]|null
      */
     public function getSmartDeliveryMethods()
     {
@@ -377,7 +377,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets smart_delivery_methods
      *
-     * @param \OpenAPI\Client\Model\SmartDeliveryMethod[]|null $smart_delivery_methods Delivery methods marked with Smart! label
+     * @param \robsonek\phpAllegroApi\Model\SmartDeliveryMethod[]|null $smart_delivery_methods Delivery methods marked with Smart! label
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets conditions
      *
-     * @return \OpenAPI\Client\Model\SmartOfferClassificationReportConditionsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\SmartOfferClassificationReportConditionsInner[]|null
      */
     public function getConditions()
     {
@@ -404,7 +404,7 @@ class SmartOfferClassificationReport implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets conditions
      *
-     * @param \OpenAPI\Client\Model\SmartOfferClassificationReportConditionsInner[]|null $conditions Set of conditions to be met in order for that particular offer to be Smart!. Each condition filters out improperly configured delivery methods or checks some offer attributes. Order of conditions matters. Please keep in mind that this is a **PREVIEW** of an offer classification if being conducted right now - actual classification is triggered only by attribute changes and as of now it cannot be manually done on demand.
+     * @param \robsonek\phpAllegroApi\Model\SmartOfferClassificationReportConditionsInner[]|null $conditions Set of conditions to be met in order for that particular offer to be Smart!. Each condition filters out improperly configured delivery methods or checks some offer attributes. Order of conditions matters. Please keep in mind that this is a **PREVIEW** of an offer classification if being conducted right now - actual classification is triggered only by attribute changes and as of now it cannot be manually done on demand.
      *
      * @return self
      */

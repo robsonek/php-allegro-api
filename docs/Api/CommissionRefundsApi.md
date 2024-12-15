@@ -1,4 +1,4 @@
-# OpenAPI\Client\CommissionRefundsApi
+# robsonek\phpAllegroApi\CommissionRefundsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionRefundsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CommissionRefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -72,7 +72,7 @@ void (empty response body)
 ## `createRefundApplication()`
 
 ```php
-createRefundApplication($refund_claim_request): \OpenAPI\Client\Model\RefundClaimResponse
+createRefundApplication($refund_claim_request): \robsonek\phpAllegroApi\Model\RefundClaimResponse
 ```
 
 Create a refund application
@@ -87,16 +87,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionRefundsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CommissionRefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$refund_claim_request = new \OpenAPI\Client\Model\RefundClaimRequest(); // \OpenAPI\Client\Model\RefundClaimRequest
+$refund_claim_request = new \robsonek\phpAllegroApi\Model\RefundClaimRequest(); // \robsonek\phpAllegroApi\Model\RefundClaimRequest
 
 try {
     $result = $apiInstance->createRefundApplication($refund_claim_request);
@@ -110,11 +110,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **refund_claim_request** | [**\OpenAPI\Client\Model\RefundClaimRequest**](../Model/RefundClaimRequest.md)|  | |
+| **refund_claim_request** | [**\robsonek\phpAllegroApi\Model\RefundClaimRequest**](../Model/RefundClaimRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RefundClaimResponse**](../Model/RefundClaimResponse.md)
+[**\robsonek\phpAllegroApi\Model\RefundClaimResponse**](../Model/RefundClaimResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ try {
 ## `getRefundApplication()`
 
 ```php
-getRefundApplication($claim_id): \OpenAPI\Client\Model\RefundClaim
+getRefundApplication($claim_id): \robsonek\phpAllegroApi\Model\RefundClaim
 ```
 
 Get a refund application details
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionRefundsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CommissionRefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RefundClaim**](../Model/RefundClaim.md)
+[**\robsonek\phpAllegroApi\Model\RefundClaim**](../Model/RefundClaim.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ try {
 ## `getRefundApplications()`
 
 ```php
-getRefundApplications($line_item_offer_id, $buyer_login, $status, $limit, $offset): \OpenAPI\Client\Model\GetRefundApplications200Response
+getRefundApplications($line_item_offer_id, $buyer_login, $status, $limit, $offset): \robsonek\phpAllegroApi\Model\GetRefundApplications200Response
 ```
 
 Get a list of refund applications
@@ -207,10 +207,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionRefundsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\CommissionRefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -242,7 +242,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetRefundApplications200Response**](../Model/GetRefundApplications200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetRefundApplications200Response**](../Model/GetRefundApplications200Response.md)
 
 ### Authorization
 

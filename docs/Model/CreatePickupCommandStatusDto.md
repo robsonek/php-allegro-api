@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **command_id** | **string** | Command UUID | [optional]
 **status** | **string** |  | [optional]
-**errors** | [**\OpenAPI\Client\Model\Error400[]**](Error400.md) | List of errors. Available only, if operation finished with ERROR. | [optional]
+**errors** | [**\robsonek\phpAllegroApi\Model\Error400[]**](Error400.md) | List of errors. Available only, if operation finished with ERROR. | [optional]
 **pickup_id** | **string** | Generated internal pickup ID. Available only, if operation finished with SUCCESS. | [optional]
 **carrier_pickup_id** | **string** | Generated Carrier Pickup ID. Available only, if operation finished with SUCCESS. | [optional]
 

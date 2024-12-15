@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BaseSaleProductResponseDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'description' => '\OpenAPI\Client\Model\StandardizedDescription',
-        'category' => '\OpenAPI\Client\Model\ProductCategoryWithPath',
-        'images' => '\OpenAPI\Client\Model\ImageUrl[]',
-        'parameters' => '\OpenAPI\Client\Model\ProductParameterDto[]',
+        'description' => '\robsonek\phpAllegroApi\Model\StandardizedDescription',
+        'category' => '\robsonek\phpAllegroApi\Model\ProductCategoryWithPath',
+        'images' => '\robsonek\phpAllegroApi\Model\ImageUrl[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ProductParameterDto[]',
         'is_draft' => 'bool',
-        'ai_co_created_content' => '\OpenAPI\Client\Model\AiCoCreatedContent',
+        'ai_co_created_content' => '\robsonek\phpAllegroApi\Model\AiCoCreatedContent',
         'has_protected_brand' => 'bool',
-        'product_safety' => '\OpenAPI\Client\Model\ProductSafetyDto',
-        'publication' => '\OpenAPI\Client\Model\SaleProductDtoPublication'
+        'product_safety' => '\robsonek\phpAllegroApi\Model\ProductSafetyDto',
+        'publication' => '\robsonek\phpAllegroApi\Model\SaleProductDtoPublication'
     ];
 
     /**
@@ -425,7 +425,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets description
      *
-     * @return \OpenAPI\Client\Model\StandardizedDescription|null
+     * @return \robsonek\phpAllegroApi\Model\StandardizedDescription|null
      */
     public function getDescription()
     {
@@ -435,7 +435,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets description
      *
-     * @param \OpenAPI\Client\Model\StandardizedDescription|null $description description
+     * @param \robsonek\phpAllegroApi\Model\StandardizedDescription|null $description description
      *
      * @return self
      */
@@ -452,7 +452,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\ProductCategoryWithPath
+     * @return \robsonek\phpAllegroApi\Model\ProductCategoryWithPath
      */
     public function getCategory()
     {
@@ -462,7 +462,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\ProductCategoryWithPath $category category
+     * @param \robsonek\phpAllegroApi\Model\ProductCategoryWithPath $category category
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ImageUrl[]|null
+     * @return \robsonek\phpAllegroApi\Model\ImageUrl[]|null
      */
     public function getImages()
     {
@@ -489,7 +489,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ImageUrl[]|null $images images
+     * @param \robsonek\phpAllegroApi\Model\ImageUrl[]|null $images images
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ProductParameterDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\ProductParameterDto[]|null
      */
     public function getParameters()
     {
@@ -516,7 +516,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ProductParameterDto[]|null $parameters parameters
+     * @param \robsonek\phpAllegroApi\Model\ProductParameterDto[]|null $parameters parameters
      *
      * @return self
      */
@@ -560,7 +560,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ai_co_created_content
      *
-     * @return \OpenAPI\Client\Model\AiCoCreatedContent|null
+     * @return \robsonek\phpAllegroApi\Model\AiCoCreatedContent|null
      */
     public function getAiCoCreatedContent()
     {
@@ -570,7 +570,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ai_co_created_content
      *
-     * @param \OpenAPI\Client\Model\AiCoCreatedContent|null $ai_co_created_content ai_co_created_content
+     * @param \robsonek\phpAllegroApi\Model\AiCoCreatedContent|null $ai_co_created_content ai_co_created_content
      *
      * @return self
      */
@@ -614,7 +614,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets product_safety
      *
-     * @return \OpenAPI\Client\Model\ProductSafetyDto|null
+     * @return \robsonek\phpAllegroApi\Model\ProductSafetyDto|null
      */
     public function getProductSafety()
     {
@@ -624,7 +624,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets product_safety
      *
-     * @param \OpenAPI\Client\Model\ProductSafetyDto|null $product_safety product_safety
+     * @param \robsonek\phpAllegroApi\Model\ProductSafetyDto|null $product_safety product_safety
      *
      * @return self
      */
@@ -648,7 +648,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\SaleProductDtoPublication|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductDtoPublication|null
      */
     public function getPublication()
     {
@@ -658,7 +658,7 @@ class BaseSaleProductResponseDto implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\SaleProductDtoPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\SaleProductDtoPublication|null $publication publication
      *
      * @return self
      */

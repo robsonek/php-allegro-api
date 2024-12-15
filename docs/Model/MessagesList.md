@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**messages** | [**\OpenAPI\Client\Model\Message[]**](Message.md) |  |
+**messages** | [**\robsonek\phpAllegroApi\Model\Message[]**](Message.md) |  |
 **offset** | **int** |  |
 **limit** | **int** |  |
 

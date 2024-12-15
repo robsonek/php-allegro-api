@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingOfferRuleConfiguration Class Doc Comment
  *
  * @category Class
  * @description Offer Rule configuration. For \&quot;EXCHANGE_RATE\&quot; the field is not allowed. For \&quot;FOLLOW_BY_ALLEGRO_MIN_PRICE\&quot; and \&quot;FOLLOW_BY_MARKET_MIN_PRICE\&quot; it is necessary for the rule to work.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AutomaticPricingOfferRuleConfiguration implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'price_range' => '\OpenAPI\Client\Model\AutomaticPricingOfferRuleConfigurationPriceRange'
+        'price_range' => '\robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfigurationPriceRange'
     ];
 
     /**
@@ -293,7 +293,7 @@ class AutomaticPricingOfferRuleConfiguration implements ModelInterface, ArrayAcc
     /**
      * Gets price_range
      *
-     * @return \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfigurationPriceRange|null
+     * @return \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfigurationPriceRange|null
      */
     public function getPriceRange()
     {
@@ -303,7 +303,7 @@ class AutomaticPricingOfferRuleConfiguration implements ModelInterface, ArrayAcc
     /**
      * Sets price_range
      *
-     * @param \OpenAPI\Client\Model\AutomaticPricingOfferRuleConfigurationPriceRange|null $price_range price_range
+     * @param \robsonek\phpAllegroApi\Model\AutomaticPricingOfferRuleConfigurationPriceRange|null $price_range price_range
      *
      * @return self
      */

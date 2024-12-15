@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sender** | [**\OpenAPI\Client\Model\Sender**](Sender.md) |  | [optional]
+**sender** | [**\robsonek\phpAllegroApi\Model\Sender**](Sender.md) |  | [optional]
 **file_format** | **string** | Label file format. | [optional]
 **reference_number** | **string** | Parcel identifier in own system. Example: &#x60;your_ordering_number&#x60;. | [optional]
 

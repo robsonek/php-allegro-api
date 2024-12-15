@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmitCommandResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class AlleDiscountSubmitCommandResponse implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'input' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInput',
-        'output' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseOutput'
+        'input' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInput',
+        'output' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseOutput'
     ];
 
     /**
@@ -333,7 +333,7 @@ class AlleDiscountSubmitCommandResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInput|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInput|null
      */
     public function getInput()
     {
@@ -343,7 +343,7 @@ class AlleDiscountSubmitCommandResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseInput|null $input input
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseInput|null $input input
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class AlleDiscountSubmitCommandResponse implements ModelInterface, ArrayAccess, 
     /**
      * Gets output
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseOutput|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseOutput|null
      */
     public function getOutput()
     {
@@ -370,7 +370,7 @@ class AlleDiscountSubmitCommandResponse implements ModelInterface, ArrayAccess, 
     /**
      * Sets output
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandResponseOutput|null $output output
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandResponseOutput|null $output output
      *
      * @return self
      */

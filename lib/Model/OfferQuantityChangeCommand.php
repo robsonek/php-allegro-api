@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferQuantityChangeCommand Class Doc Comment
  *
  * @category Class
  * @description Quantity modification command payload
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class OfferQuantityChangeCommand implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'modification' => '\OpenAPI\Client\Model\QuantityModification',
-        'offer_criteria' => '\OpenAPI\Client\Model\OfferCriterium[]'
+        'modification' => '\robsonek\phpAllegroApi\Model\QuantityModification',
+        'offer_criteria' => '\robsonek\phpAllegroApi\Model\OfferCriterium[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class OfferQuantityChangeCommand implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets modification
      *
-     * @return \OpenAPI\Client\Model\QuantityModification|null
+     * @return \robsonek\phpAllegroApi\Model\QuantityModification|null
      */
     public function getModification()
     {
@@ -310,7 +310,7 @@ class OfferQuantityChangeCommand implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets modification
      *
-     * @param \OpenAPI\Client\Model\QuantityModification|null $modification modification
+     * @param \robsonek\phpAllegroApi\Model\QuantityModification|null $modification modification
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class OfferQuantityChangeCommand implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets offer_criteria
      *
-     * @return \OpenAPI\Client\Model\OfferCriterium[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferCriterium[]|null
      */
     public function getOfferCriteria()
     {
@@ -337,7 +337,7 @@ class OfferQuantityChangeCommand implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets offer_criteria
      *
-     * @param \OpenAPI\Client\Model\OfferCriterium[]|null $offer_criteria List of offer criteria
+     * @param \robsonek\phpAllegroApi\Model\OfferCriterium[]|null $offer_criteria List of offer criteria
      *
      * @return self
      */

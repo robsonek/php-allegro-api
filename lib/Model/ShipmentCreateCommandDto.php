@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ShipmentCreateCommandDto Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ShipmentCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'command_id' => 'string',
-        'input' => '\OpenAPI\Client\Model\ShipmentCreateRequestDto'
+        'input' => '\robsonek\phpAllegroApi\Model\ShipmentCreateRequestDto'
     ];
 
     /**
@@ -329,7 +329,7 @@ class ShipmentCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\ShipmentCreateRequestDto
+     * @return \robsonek\phpAllegroApi\Model\ShipmentCreateRequestDto
      */
     public function getInput()
     {
@@ -339,7 +339,7 @@ class ShipmentCreateCommandDto implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\ShipmentCreateRequestDto $input input
+     * @param \robsonek\phpAllegroApi\Model\ShipmentCreateRequestDto $input input
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\RebatesAndPromotionsApi
+# robsonek\phpAllegroApi\RebatesAndPromotionsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createPromotionUsingPOST1()`
 
 ```php
-createPromotionUsingPOST1($seller_create_rebate_request_dto): \OpenAPI\Client\Model\SellerRebateDto
+createPromotionUsingPOST1($seller_create_rebate_request_dto): \robsonek\phpAllegroApi\Model\SellerRebateDto
 ```
 
 Create a new promotion
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\RebatesAndPromotionsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\RebatesAndPromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$seller_create_rebate_request_dto = {"benefits":[{"specification":{"type":"LARGE_ORDER_DISCOUNT","thresholds":[{"orderValue":{"lowerBound":{"amount":"1000.00","currency":"PLN"}},"discount":{"percentage":"5.00"}},{"orderValue":{"lowerBound":{"amount":"1500.00","currency":"PLN"}},"discount":{"percentage":"8.00"}}]}}],"offerCriteria":[{"type":"ALL_OFFERS"}]}; // \OpenAPI\Client\Model\SellerCreateRebateRequestDto
+$seller_create_rebate_request_dto = {"benefits":[{"specification":{"type":"LARGE_ORDER_DISCOUNT","thresholds":[{"orderValue":{"lowerBound":{"amount":"1000.00","currency":"PLN"}},"discount":{"percentage":"5.00"}},{"orderValue":{"lowerBound":{"amount":"1500.00","currency":"PLN"}},"discount":{"percentage":"8.00"}}]}}],"offerCriteria":[{"type":"ALL_OFFERS"}]}; // \robsonek\phpAllegroApi\Model\SellerCreateRebateRequestDto
 
 try {
     $result = $apiInstance->createPromotionUsingPOST1($seller_create_rebate_request_dto);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **seller_create_rebate_request_dto** | [**\OpenAPI\Client\Model\SellerCreateRebateRequestDto**](../Model/SellerCreateRebateRequestDto.md)|  | |
+| **seller_create_rebate_request_dto** | [**\robsonek\phpAllegroApi\Model\SellerCreateRebateRequestDto**](../Model/SellerCreateRebateRequestDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
+[**\robsonek\phpAllegroApi\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
 
 ### Authorization
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\RebatesAndPromotionsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\RebatesAndPromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ void (empty response body)
 ## `getPromotionUsingGET()`
 
 ```php
-getPromotionUsingGET($promotion_id): \OpenAPI\Client\Model\SellerRebateDto
+getPromotionUsingGET($promotion_id): \robsonek\phpAllegroApi\Model\SellerRebateDto
 ```
 
 Get a promotion data by id
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\RebatesAndPromotionsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\RebatesAndPromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
+[**\robsonek\phpAllegroApi\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ try {
 ## `listSellerPromotionsUsingGET1()`
 
 ```php
-listSellerPromotionsUsingGET1($promotion_type, $limit, $offset, $offer_id): \OpenAPI\Client\Model\SellerRebatesDto
+listSellerPromotionsUsingGET1($promotion_type, $limit, $offset, $offer_id): \robsonek\phpAllegroApi\Model\SellerRebatesDto
 ```
 
 Get the user's list of promotions
@@ -208,10 +208,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\RebatesAndPromotionsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\RebatesAndPromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -241,7 +241,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerRebatesDto**](../Model/SellerRebatesDto.md)
+[**\robsonek\phpAllegroApi\Model\SellerRebatesDto**](../Model/SellerRebatesDto.md)
 
 ### Authorization
 
@@ -259,7 +259,7 @@ try {
 ## `updatePromotionUsingPUT()`
 
 ```php
-updatePromotionUsingPUT($promotion_id, $seller_create_rebate_request_dto): \OpenAPI\Client\Model\SellerRebateDto
+updatePromotionUsingPUT($promotion_id, $seller_create_rebate_request_dto): \robsonek\phpAllegroApi\Model\SellerRebateDto
 ```
 
 Modify a promotion
@@ -274,17 +274,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\RebatesAndPromotionsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\RebatesAndPromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $promotion_id = 'promotion_id_example'; // string | Promotion identifier.
-$seller_create_rebate_request_dto = {"benefits":[{"specification":{"type":"ORDER_FIXED_DISCOUNT","value":{"amount":"10.00","currency":"PLN"}}}],"offerCriteria":[{"type":"CONTAINS_OFFERS","offers":[{"id":"1122334455","quantity":2,"promotionEntryPoint":true},{"id":"2233445566","quantity":1,"promotionEntryPoint":false}]}]}; // \OpenAPI\Client\Model\SellerCreateRebateRequestDto
+$seller_create_rebate_request_dto = {"benefits":[{"specification":{"type":"ORDER_FIXED_DISCOUNT","value":{"amount":"10.00","currency":"PLN"}}}],"offerCriteria":[{"type":"CONTAINS_OFFERS","offers":[{"id":"1122334455","quantity":2,"promotionEntryPoint":true},{"id":"2233445566","quantity":1,"promotionEntryPoint":false}]}]}; // \robsonek\phpAllegroApi\Model\SellerCreateRebateRequestDto
 
 try {
     $result = $apiInstance->updatePromotionUsingPUT($promotion_id, $seller_create_rebate_request_dto);
@@ -299,11 +299,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **promotion_id** | **string**| Promotion identifier. | |
-| **seller_create_rebate_request_dto** | [**\OpenAPI\Client\Model\SellerCreateRebateRequestDto**](../Model/SellerCreateRebateRequestDto.md)|  | |
+| **seller_create_rebate_request_dto** | [**\robsonek\phpAllegroApi\Model\SellerCreateRebateRequestDto**](../Model/SellerCreateRebateRequestDto.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
+[**\robsonek\phpAllegroApi\Model\SellerRebateDto**](../Model/SellerRebateDto.md)
 
 ### Authorization
 

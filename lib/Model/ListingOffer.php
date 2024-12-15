@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ListingOffer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'seller' => '\OpenAPI\Client\Model\OfferSeller',
-        'promotion' => '\OpenAPI\Client\Model\OfferPromotion',
-        'delivery' => '\OpenAPI\Client\Model\OfferDelivery',
-        'images' => '\OpenAPI\Client\Model\OfferImages[]',
-        'selling_mode' => '\OpenAPI\Client\Model\OfferSellingMode',
-        'stock' => '\OpenAPI\Client\Model\OfferStock',
-        'vendor' => '\OpenAPI\Client\Model\OfferVendor',
-        'category' => '\OpenAPI\Client\Model\Category',
-        'publication' => '\OpenAPI\Client\Model\OfferPublication'
+        'seller' => '\robsonek\phpAllegroApi\Model\OfferSeller',
+        'promotion' => '\robsonek\phpAllegroApi\Model\OfferPromotion',
+        'delivery' => '\robsonek\phpAllegroApi\Model\OfferDelivery',
+        'images' => '\robsonek\phpAllegroApi\Model\OfferImages[]',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\OfferSellingMode',
+        'stock' => '\robsonek\phpAllegroApi\Model\OfferStock',
+        'vendor' => '\robsonek\phpAllegroApi\Model\OfferVendor',
+        'category' => '\robsonek\phpAllegroApi\Model\Category',
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferPublication'
     ];
 
     /**
@@ -416,7 +416,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \OpenAPI\Client\Model\OfferSeller|null
+     * @return \robsonek\phpAllegroApi\Model\OfferSeller|null
      */
     public function getSeller()
     {
@@ -426,7 +426,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \OpenAPI\Client\Model\OfferSeller|null $seller seller
+     * @param \robsonek\phpAllegroApi\Model\OfferSeller|null $seller seller
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets promotion
      *
-     * @return \OpenAPI\Client\Model\OfferPromotion|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromotion|null
      */
     public function getPromotion()
     {
@@ -453,7 +453,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets promotion
      *
-     * @param \OpenAPI\Client\Model\OfferPromotion|null $promotion promotion
+     * @param \robsonek\phpAllegroApi\Model\OfferPromotion|null $promotion promotion
      *
      * @return self
      */
@@ -470,7 +470,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery
      *
-     * @return \OpenAPI\Client\Model\OfferDelivery|null
+     * @return \robsonek\phpAllegroApi\Model\OfferDelivery|null
      */
     public function getDelivery()
     {
@@ -480,7 +480,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery
      *
-     * @param \OpenAPI\Client\Model\OfferDelivery|null $delivery delivery
+     * @param \robsonek\phpAllegroApi\Model\OfferDelivery|null $delivery delivery
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\OfferImages[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferImages[]|null
      */
     public function getImages()
     {
@@ -507,7 +507,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\OfferImages[]|null $images The gallery of images. Only the URL of the original sized image is provided. The first image represents the thumbnail image used on listing.
+     * @param \robsonek\phpAllegroApi\Model\OfferImages[]|null $images The gallery of images. Only the URL of the original sized image is provided. The first image represents the thumbnail image used on listing.
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\OfferSellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\OfferSellingMode|null
      */
     public function getSellingMode()
     {
@@ -534,7 +534,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\OfferSellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\OfferSellingMode|null $selling_mode selling_mode
      *
      * @return self
      */
@@ -551,7 +551,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\OfferStock|null
+     * @return \robsonek\phpAllegroApi\Model\OfferStock|null
      */
     public function getStock()
     {
@@ -561,7 +561,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\OfferStock|null $stock stock
+     * @param \robsonek\phpAllegroApi\Model\OfferStock|null $stock stock
      *
      * @return self
      */
@@ -578,7 +578,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets vendor
      *
-     * @return \OpenAPI\Client\Model\OfferVendor|null
+     * @return \robsonek\phpAllegroApi\Model\OfferVendor|null
      */
     public function getVendor()
     {
@@ -588,7 +588,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets vendor
      *
-     * @param \OpenAPI\Client\Model\OfferVendor|null $vendor vendor
+     * @param \robsonek\phpAllegroApi\Model\OfferVendor|null $vendor vendor
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category|null
+     * @return \robsonek\phpAllegroApi\Model\Category|null
      */
     public function getCategory()
     {
@@ -615,7 +615,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category|null $category The category to which the offer is listed for sale.
+     * @param \robsonek\phpAllegroApi\Model\Category|null $category The category to which the offer is listed for sale.
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferPublication|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPublication|null
      */
     public function getPublication()
     {
@@ -642,7 +642,7 @@ class ListingOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferPublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferPublication|null $publication publication
      *
      * @return self
      */

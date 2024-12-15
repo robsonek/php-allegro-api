@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplaceOfferPromoOption Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'base_package' => '\OpenAPI\Client\Model\OfferPromoOption',
-        'extra_packages' => '\OpenAPI\Client\Model\OfferPromoOption[]',
-        'pending_changes' => '\OpenAPI\Client\Model\OfferPromoOptionsPendingChanges'
+        'base_package' => '\robsonek\phpAllegroApi\Model\OfferPromoOption',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\OfferPromoOption[]',
+        'pending_changes' => '\robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges'
     ];
 
     /**
@@ -340,7 +340,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets base_package
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOption|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOption|null
      */
     public function getBasePackage()
     {
@@ -350,7 +350,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets base_package
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOption|null $base_package base_package
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOption|null $base_package base_package
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOption[]|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOption[]|null
      */
     public function getExtraPackages()
     {
@@ -377,7 +377,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOption[]|null $extra_packages Extra promotion packages set on offer.
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOption[]|null $extra_packages Extra promotion packages set on offer.
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets pending_changes
      *
-     * @return \OpenAPI\Client\Model\OfferPromoOptionsPendingChanges|null
+     * @return \robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges|null
      */
     public function getPendingChanges()
     {
@@ -404,7 +404,7 @@ class MarketplaceOfferPromoOption implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets pending_changes
      *
-     * @param \OpenAPI\Client\Model\OfferPromoOptionsPendingChanges|null $pending_changes pending_changes
+     * @param \robsonek\phpAllegroApi\Model\OfferPromoOptionsPendingChanges|null $pending_changes pending_changes
      *
      * @return self
      */

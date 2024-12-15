@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BaseOperation Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class BaseOperation implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'type' => 'string',
         'group' => 'string',
-        'wallet' => '\OpenAPI\Client\Model\Wallet',
-        'value' => '\OpenAPI\Client\Model\OperationValue',
+        'wallet' => '\robsonek\phpAllegroApi\Model\Wallet',
+        'value' => '\robsonek\phpAllegroApi\Model\OperationValue',
         'occurred_at' => '\DateTime',
         'marketplace_id' => 'string'
     ];
@@ -437,7 +437,7 @@ class BaseOperation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets wallet
      *
-     * @return \OpenAPI\Client\Model\Wallet
+     * @return \robsonek\phpAllegroApi\Model\Wallet
      */
     public function getWallet()
     {
@@ -447,7 +447,7 @@ class BaseOperation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets wallet
      *
-     * @param \OpenAPI\Client\Model\Wallet $wallet wallet
+     * @param \robsonek\phpAllegroApi\Model\Wallet $wallet wallet
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class BaseOperation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\OperationValue
+     * @return \robsonek\phpAllegroApi\Model\OperationValue
      */
     public function getValue()
     {
@@ -474,7 +474,7 @@ class BaseOperation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\OperationValue $value value
+     * @param \robsonek\phpAllegroApi\Model\OperationValue $value value
      *
      * @return self
      */

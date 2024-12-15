@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PublicOfferPreviewRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PublicOfferPreviewRequest implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer' => '\OpenAPI\Client\Model\PricingOffer',
-        'classifieds_packages' => '\OpenAPI\Client\Model\ClassifiedsPackages',
+        'offer' => '\robsonek\phpAllegroApi\Model\PricingOffer',
+        'classifieds_packages' => '\robsonek\phpAllegroApi\Model\ClassifiedsPackages',
         'marketplace_id' => 'string'
     ];
 
@@ -306,7 +306,7 @@ class PublicOfferPreviewRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\PricingOffer|null
+     * @return \robsonek\phpAllegroApi\Model\PricingOffer|null
      */
     public function getOffer()
     {
@@ -316,7 +316,7 @@ class PublicOfferPreviewRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\PricingOffer|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\PricingOffer|null $offer offer
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class PublicOfferPreviewRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets classifieds_packages
      *
-     * @return \OpenAPI\Client\Model\ClassifiedsPackages|null
+     * @return \robsonek\phpAllegroApi\Model\ClassifiedsPackages|null
      */
     public function getClassifiedsPackages()
     {
@@ -343,7 +343,7 @@ class PublicOfferPreviewRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets classifieds_packages
      *
-     * @param \OpenAPI\Client\Model\ClassifiedsPackages|null $classifieds_packages classifieds_packages
+     * @param \robsonek\phpAllegroApi\Model\ClassifiedsPackages|null $classifieds_packages classifieds_packages
      *
      * @return self
      */

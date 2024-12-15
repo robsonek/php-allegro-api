@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetSaleProductsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'products' => '\OpenAPI\Client\Model\BaseSaleProductResponseDto[]',
-        'categories' => '\OpenAPI\Client\Model\SaleProductResponseCategoriesDto',
-        'filters' => '\OpenAPI\Client\Model\ListingResponseFilters[]',
-        'next_page' => '\OpenAPI\Client\Model\GetSaleProductsResponseNextPage'
+        'products' => '\robsonek\phpAllegroApi\Model\BaseSaleProductResponseDto[]',
+        'categories' => '\robsonek\phpAllegroApi\Model\SaleProductResponseCategoriesDto',
+        'filters' => '\robsonek\phpAllegroApi\Model\ListingResponseFilters[]',
+        'next_page' => '\robsonek\phpAllegroApi\Model\GetSaleProductsResponseNextPage'
     ];
 
     /**
@@ -316,7 +316,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\BaseSaleProductResponseDto[]
+     * @return \robsonek\phpAllegroApi\Model\BaseSaleProductResponseDto[]
      */
     public function getProducts()
     {
@@ -326,7 +326,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\BaseSaleProductResponseDto[] $products products
+     * @param \robsonek\phpAllegroApi\Model\BaseSaleProductResponseDto[] $products products
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets categories
      *
-     * @return \OpenAPI\Client\Model\SaleProductResponseCategoriesDto|null
+     * @return \robsonek\phpAllegroApi\Model\SaleProductResponseCategoriesDto|null
      */
     public function getCategories()
     {
@@ -353,7 +353,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets categories
      *
-     * @param \OpenAPI\Client\Model\SaleProductResponseCategoriesDto|null $categories categories
+     * @param \robsonek\phpAllegroApi\Model\SaleProductResponseCategoriesDto|null $categories categories
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets filters
      *
-     * @return \OpenAPI\Client\Model\ListingResponseFilters[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingResponseFilters[]|null
      */
     public function getFilters()
     {
@@ -380,7 +380,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets filters
      *
-     * @param \OpenAPI\Client\Model\ListingResponseFilters[]|null $filters filters
+     * @param \robsonek\phpAllegroApi\Model\ListingResponseFilters[]|null $filters filters
      *
      * @return self
      */
@@ -397,7 +397,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets next_page
      *
-     * @return \OpenAPI\Client\Model\GetSaleProductsResponseNextPage|null
+     * @return \robsonek\phpAllegroApi\Model\GetSaleProductsResponseNextPage|null
      */
     public function getNextPage()
     {
@@ -407,7 +407,7 @@ class GetSaleProductsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets next_page
      *
-     * @param \OpenAPI\Client\Model\GetSaleProductsResponseNextPage|null $next_page next_page
+     * @param \robsonek\phpAllegroApi\Model\GetSaleProductsResponseNextPage|null $next_page next_page
      *
      * @return self
      */

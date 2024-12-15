@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ResponsibleProducersGET200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ResponsibleProducersGET200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responsible_producers' => '\OpenAPI\Client\Model\ResponsibleProducerResponse[]',
+        'responsible_producers' => '\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -314,7 +314,7 @@ class ResponsibleProducersGET200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets responsible_producers
      *
-     * @return \OpenAPI\Client\Model\ResponsibleProducerResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]|null
      */
     public function getResponsibleProducers()
     {
@@ -324,7 +324,7 @@ class ResponsibleProducersGET200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets responsible_producers
      *
-     * @param \OpenAPI\Client\Model\ResponsibleProducerResponse[]|null $responsible_producers responsible_producers
+     * @param \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse[]|null $responsible_producers responsible_producers
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\AutomaticPricingApi
+# robsonek\phpAllegroApi\AutomaticPricingApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createAutomaticPricingRulesUsingPost()`
 
 ```php
-createAutomaticPricingRulesUsingPost($automatic_pricing_rule_post_request): \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+createAutomaticPricingRulesUsingPost($automatic_pricing_rule_post_request): \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
 ```
 
 Post automatic pricing rule
@@ -30,16 +30,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$automatic_pricing_rule_post_request = new \OpenAPI\Client\Model\AutomaticPricingRulePostRequest(); // \OpenAPI\Client\Model\AutomaticPricingRulePostRequest | The automatic pricing rule.
+$automatic_pricing_rule_post_request = new \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest(); // \robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest | The automatic pricing rule.
 
 try {
     $result = $apiInstance->createAutomaticPricingRulesUsingPost($automatic_pricing_rule_post_request);
@@ -53,11 +53,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **automatic_pricing_rule_post_request** | [**\OpenAPI\Client\Model\AutomaticPricingRulePostRequest**](../Model/AutomaticPricingRulePostRequest.md)| The automatic pricing rule. | |
+| **automatic_pricing_rule_post_request** | [**\robsonek\phpAllegroApi\Model\AutomaticPricingRulePostRequest**](../Model/AutomaticPricingRulePostRequest.md)| The automatic pricing rule. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
+[**\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
 
 ### Authorization
 
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 ## `getAutomaticPricingRuleByIdUsingGET()`
 
 ```php
-getAutomaticPricingRuleByIdUsingGET($rule_id): \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+getAutomaticPricingRuleByIdUsingGET($rule_id): \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
 ```
 
 Get automatic pricing rule by id
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
+[**\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ try {
 ## `getAutomaticPricingRulesForOfferUsingGET()`
 
 ```php
-getAutomaticPricingRulesForOfferUsingGET($offer_id): \OpenAPI\Client\Model\OfferRules
+getAutomaticPricingRulesForOfferUsingGET($offer_id): \robsonek\phpAllegroApi\Model\OfferRules
 ```
 
 Get automatic pricing rules assigned to the offer
@@ -209,10 +209,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -236,7 +236,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferRules**](../Model/OfferRules.md)
+[**\robsonek\phpAllegroApi\Model\OfferRules**](../Model/OfferRules.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ try {
 ## `getAutomaticPricingRulesUsingGET()`
 
 ```php
-getAutomaticPricingRulesUsingGET(): \OpenAPI\Client\Model\AutomaticPricingRulesResponse
+getAutomaticPricingRulesUsingGET(): \robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse
 ```
 
 Get automatic pricing rules
@@ -269,10 +269,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -293,7 +293,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AutomaticPricingRulesResponse**](../Model/AutomaticPricingRulesResponse.md)
+[**\robsonek\phpAllegroApi\Model\AutomaticPricingRulesResponse**](../Model/AutomaticPricingRulesResponse.md)
 
 ### Authorization
 
@@ -311,7 +311,7 @@ This endpoint does not need any parameter.
 ## `updateAutomaticPricingRuleUsingPut()`
 
 ```php
-updateAutomaticPricingRuleUsingPut($rule_id, $automatic_pricing_rule_put_request): \OpenAPI\Client\Model\AutomaticPricingRuleResponse
+updateAutomaticPricingRuleUsingPut($rule_id, $automatic_pricing_rule_put_request): \robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse
 ```
 
 Edit automatic pricing rule
@@ -326,17 +326,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutomaticPricingApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\AutomaticPricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $rule_id = 66466e2b07ba0029b829f08d; // string | The rule identifier.
-$automatic_pricing_rule_put_request = new \OpenAPI\Client\Model\AutomaticPricingRulePutRequest(); // \OpenAPI\Client\Model\AutomaticPricingRulePutRequest | The automatic pricing rule.
+$automatic_pricing_rule_put_request = new \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest(); // \robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest | The automatic pricing rule.
 
 try {
     $result = $apiInstance->updateAutomaticPricingRuleUsingPut($rule_id, $automatic_pricing_rule_put_request);
@@ -351,11 +351,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **rule_id** | **string**| The rule identifier. | |
-| **automatic_pricing_rule_put_request** | [**\OpenAPI\Client\Model\AutomaticPricingRulePutRequest**](../Model/AutomaticPricingRulePutRequest.md)| The automatic pricing rule. | |
+| **automatic_pricing_rule_put_request** | [**\robsonek\phpAllegroApi\Model\AutomaticPricingRulePutRequest**](../Model/AutomaticPricingRulePutRequest.md)| The automatic pricing rule. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
+[**\robsonek\phpAllegroApi\Model\AutomaticPricingRuleResponse**](../Model/AutomaticPricingRuleResponse.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoriesAndParametersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,9 +145,9 @@ class CategoriesAndParametersApi
      * @param  string $name Product name for which you want to get suggested categories. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['categorySuggestionUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategorySuggestionResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategorySuggestionResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function categorySuggestionUsingGET($name, string $contentType = self::contentTypes['categorySuggestionUsingGET'][0])
     {
@@ -163,9 +163,9 @@ class CategoriesAndParametersApi
      * @param  string $name Product name for which you want to get suggested categories. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['categorySuggestionUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategorySuggestionResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategorySuggestionResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function categorySuggestionUsingGETWithHttpInfo($name, string $contentType = self::contentTypes['categorySuggestionUsingGET'][0])
     {
@@ -196,11 +196,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategorySuggestionResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategorySuggestionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategorySuggestionResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategorySuggestionResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,16 +218,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategorySuggestionResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategorySuggestionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -245,16 +245,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -272,16 +272,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 406:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -299,16 +299,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -326,7 +326,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -345,7 +345,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategorySuggestionResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategorySuggestionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -378,7 +378,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategorySuggestionResponse',
+                        '\robsonek\phpAllegroApi\Model\CategorySuggestionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -386,7 +386,7 @@ class CategoriesAndParametersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -394,7 +394,7 @@ class CategoriesAndParametersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -402,7 +402,7 @@ class CategoriesAndParametersApi
                 case 406:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -410,7 +410,7 @@ class CategoriesAndParametersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -454,7 +454,7 @@ class CategoriesAndParametersApi
      */
     public function categorySuggestionUsingGETAsyncWithHttpInfo($name, string $contentType = self::contentTypes['categorySuggestionUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategorySuggestionResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategorySuggestionResponse';
         $request = $this->categorySuggestionUsingGETRequest($name, $contentType);
 
         return $this->client
@@ -598,9 +598,9 @@ class CategoriesAndParametersApi
      * @param  string $parent_id The ID of the category which children should be returned. If omitted, the list of main Allegro categories will be returned. (optional, default to '954b95b6-43cf-4104-8354-dea4d9b10ddf')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoriesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoriesDto|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategoriesDto|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getCategoriesUsingGET($parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf', string $contentType = self::contentTypes['getCategoriesUsingGET'][0])
     {
@@ -616,9 +616,9 @@ class CategoriesAndParametersApi
      * @param  string $parent_id The ID of the category which children should be returned. If omitted, the list of main Allegro categories will be returned. (optional, default to '954b95b6-43cf-4104-8354-dea4d9b10ddf')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoriesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoriesDto|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoriesDto|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoriesUsingGETWithHttpInfo($parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf', string $contentType = self::contentTypes['getCategoriesUsingGET'][0])
     {
@@ -649,11 +649,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoriesDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoriesDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoriesDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoriesDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -671,16 +671,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoriesDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoriesDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -698,7 +698,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -717,7 +717,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoriesDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoriesDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -750,7 +750,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoriesDto',
+                        '\robsonek\phpAllegroApi\Model\CategoriesDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -758,7 +758,7 @@ class CategoriesAndParametersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -802,7 +802,7 @@ class CategoriesAndParametersApi
      */
     public function getCategoriesUsingGETAsyncWithHttpInfo($parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf', string $contentType = self::contentTypes['getCategoriesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoriesDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoriesDto';
         $request = $this->getCategoriesUsingGETRequest($parent_id, $contentType);
 
         return $this->client
@@ -946,9 +946,9 @@ class CategoriesAndParametersApi
      * @param  string[] $type The types of events that will be returned in the response. All types of events are returned by default. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryEventsUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryEventsResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError
+     * @return \robsonek\phpAllegroApi\Model\CategoryEventsResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError
      */
     public function getCategoryEventsUsingGET1($from = null, $limit = 100, $type = null, string $contentType = self::contentTypes['getCategoryEventsUsingGET1'][0])
     {
@@ -966,9 +966,9 @@ class CategoriesAndParametersApi
      * @param  string[] $type The types of events that will be returned in the response. All types of events are returned by default. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryEventsUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryEventsResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryEventsResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryEventsUsingGET1WithHttpInfo($from = null, $limit = 100, $type = null, string $contentType = self::contentTypes['getCategoryEventsUsingGET1'][0])
     {
@@ -999,11 +999,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryEventsResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryEventsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryEventsResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryEventsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1021,16 +1021,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryEventsResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryEventsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1048,16 +1048,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1075,7 +1075,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1094,7 +1094,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryEventsResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryEventsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1127,7 +1127,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryEventsResponse',
+                        '\robsonek\phpAllegroApi\Model\CategoryEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1135,7 +1135,7 @@ class CategoriesAndParametersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1143,7 +1143,7 @@ class CategoriesAndParametersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1191,7 +1191,7 @@ class CategoriesAndParametersApi
      */
     public function getCategoryEventsUsingGET1AsyncWithHttpInfo($from = null, $limit = 100, $type = null, string $contentType = self::contentTypes['getCategoryEventsUsingGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryEventsResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryEventsResponse';
         $request = $this->getCategoryEventsUsingGET1Request($from, $limit, $type, $contentType);
 
         return $this->client
@@ -1370,9 +1370,9 @@ class CategoriesAndParametersApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryParametersScheduledChangesUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError
+     * @return \robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError
      */
     public function getCategoryParametersScheduledChangesUsingGET1($scheduled_for_gte = null, $scheduled_for_lte = null, $scheduled_at_gte = null, $scheduled_at_lte = null, $type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getCategoryParametersScheduledChangesUsingGET1'][0])
     {
@@ -1394,9 +1394,9 @@ class CategoriesAndParametersApi
      * @param  int $limit The limit of elements in the response. (optional, default to 100)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryParametersScheduledChangesUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryParametersScheduledChangesUsingGET1WithHttpInfo($scheduled_for_gte = null, $scheduled_for_lte = null, $scheduled_at_gte = null, $scheduled_at_lte = null, $type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getCategoryParametersScheduledChangesUsingGET1'][0])
     {
@@ -1427,11 +1427,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1449,16 +1449,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1476,16 +1476,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1503,7 +1503,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1522,7 +1522,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1555,7 +1555,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse',
+                        '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1563,7 +1563,7 @@ class CategoriesAndParametersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1571,7 +1571,7 @@ class CategoriesAndParametersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1627,7 +1627,7 @@ class CategoriesAndParametersApi
      */
     public function getCategoryParametersScheduledChangesUsingGET1AsyncWithHttpInfo($scheduled_for_gte = null, $scheduled_for_lte = null, $scheduled_at_gte = null, $scheduled_at_lte = null, $type = null, $offset = 0, $limit = 100, string $contentType = self::contentTypes['getCategoryParametersScheduledChangesUsingGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryParametersScheduledChangesResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryParametersScheduledChangesResponse';
         $request = $this->getCategoryParametersScheduledChangesUsingGET1Request($scheduled_for_gte, $scheduled_for_lte, $scheduled_at_gte, $scheduled_at_lte, $type, $offset, $limit, $contentType);
 
         return $this->client
@@ -1844,9 +1844,9 @@ class CategoriesAndParametersApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryDto|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategoryDto|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getCategoryUsingGET1($category_id, string $contentType = self::contentTypes['getCategoryUsingGET1'][0])
     {
@@ -1862,9 +1862,9 @@ class CategoriesAndParametersApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCategoryUsingGET1'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryDto|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryDto|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryUsingGET1WithHttpInfo($category_id, string $contentType = self::contentTypes['getCategoryUsingGET1'][0])
     {
@@ -1895,11 +1895,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1917,16 +1917,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1944,7 +1944,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1963,7 +1963,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1996,7 +1996,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryDto',
+                        '\robsonek\phpAllegroApi\Model\CategoryDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2004,7 +2004,7 @@ class CategoriesAndParametersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2048,7 +2048,7 @@ class CategoriesAndParametersApi
      */
     public function getCategoryUsingGET1AsyncWithHttpInfo($category_id, string $contentType = self::contentTypes['getCategoryUsingGET1'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryDto';
         $request = $this->getCategoryUsingGET1Request($category_id, $contentType);
 
         return $this->client
@@ -2195,9 +2195,9 @@ class CategoriesAndParametersApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFlatParametersUsingGET2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryParameterList|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategoryParameterList|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getFlatParametersUsingGET2($category_id, string $contentType = self::contentTypes['getFlatParametersUsingGET2'][0])
     {
@@ -2213,9 +2213,9 @@ class CategoriesAndParametersApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFlatParametersUsingGET2'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryParameterList|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryParameterList|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFlatParametersUsingGET2WithHttpInfo($category_id, string $contentType = self::contentTypes['getFlatParametersUsingGET2'][0])
     {
@@ -2246,11 +2246,11 @@ class CategoriesAndParametersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryParameterList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryParameterList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryParameterList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryParameterList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2268,16 +2268,16 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryParameterList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryParameterList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2295,7 +2295,7 @@ class CategoriesAndParametersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2314,7 +2314,7 @@ class CategoriesAndParametersApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryParameterList';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryParameterList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2347,7 +2347,7 @@ class CategoriesAndParametersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryParameterList',
+                        '\robsonek\phpAllegroApi\Model\CategoryParameterList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2355,7 +2355,7 @@ class CategoriesAndParametersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2399,7 +2399,7 @@ class CategoriesAndParametersApi
      */
     public function getFlatParametersUsingGET2AsyncWithHttpInfo($category_id, string $contentType = self::contentTypes['getFlatParametersUsingGET2'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryParameterList';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryParameterList';
         $request = $this->getFlatParametersUsingGET2Request($category_id, $contentType);
 
         return $this->client

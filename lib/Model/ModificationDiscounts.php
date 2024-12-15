@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ModificationDiscounts Class Doc Comment
  *
  * @category Class
  * @description Allows you to assign/unassign discounts (rebates) to/from offers.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ModificationDiscounts implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'wholesale_price_list' => '\OpenAPI\Client\Model\ModificationDiscountsWholesalePriceList'
+        'wholesale_price_list' => '\robsonek\phpAllegroApi\Model\ModificationDiscountsWholesalePriceList'
     ];
 
     /**
@@ -293,7 +293,7 @@ class ModificationDiscounts implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets wholesale_price_list
      *
-     * @return \OpenAPI\Client\Model\ModificationDiscountsWholesalePriceList|null
+     * @return \robsonek\phpAllegroApi\Model\ModificationDiscountsWholesalePriceList|null
      */
     public function getWholesalePriceList()
     {
@@ -303,7 +303,7 @@ class ModificationDiscounts implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets wholesale_price_list
      *
-     * @param \OpenAPI\Client\Model\ModificationDiscountsWholesalePriceList|null $wholesale_price_list wholesale_price_list
+     * @param \robsonek\phpAllegroApi\Model\ModificationDiscountsWholesalePriceList|null $wholesale_price_list wholesale_price_list
      *
      * @return self
      */

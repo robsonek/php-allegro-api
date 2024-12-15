@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmitCommandRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AlleDiscountSubmitCommandRequest implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'command_id' => 'string',
-        'input' => '\OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInput'
+        'input' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInput'
     ];
 
     /**
@@ -333,7 +333,7 @@ class AlleDiscountSubmitCommandRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets input
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInput|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInput|null
      */
     public function getInput()
     {
@@ -343,7 +343,7 @@ class AlleDiscountSubmitCommandRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets input
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmitCommandRequestInput|null $input input
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmitCommandRequestInput|null $input input
      *
      * @return self
      */

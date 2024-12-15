@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferReference Class Doc Comment
  *
  * @category Class
  * @description Offer identifier.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class OfferReference implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'external' => '\OpenAPI\Client\Model\ExternalId',
-        'product_set' => '\OpenAPI\Client\Model\OfferProductSetReference'
+        'external' => '\robsonek\phpAllegroApi\Model\ExternalId',
+        'product_set' => '\robsonek\phpAllegroApi\Model\OfferProductSetReference'
     ];
 
     /**
@@ -374,7 +374,7 @@ class OfferReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets external
      *
-     * @return \OpenAPI\Client\Model\ExternalId|null
+     * @return \robsonek\phpAllegroApi\Model\ExternalId|null
      */
     public function getExternal()
     {
@@ -384,7 +384,7 @@ class OfferReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets external
      *
-     * @param \OpenAPI\Client\Model\ExternalId|null $external external
+     * @param \robsonek\phpAllegroApi\Model\ExternalId|null $external external
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class OfferReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product_set
      *
-     * @return \OpenAPI\Client\Model\OfferProductSetReference|null
+     * @return \robsonek\phpAllegroApi\Model\OfferProductSetReference|null
      */
     public function getProductSet()
     {
@@ -411,7 +411,7 @@ class OfferReference implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product_set
      *
-     * @param \OpenAPI\Client\Model\OfferProductSetReference|null $product_set product_set
+     * @param \robsonek\phpAllegroApi\Model\OfferProductSetReference|null $product_set product_set
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferDelivery Class Doc Comment
  *
  * @category Class
  * @description Information about shipping options for the offer.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class OfferDelivery implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'available_for_free' => 'bool',
-        'lowest_price' => '\OpenAPI\Client\Model\OfferLowestPrice'
+        'lowest_price' => '\robsonek\phpAllegroApi\Model\OfferLowestPrice'
     ];
 
     /**
@@ -327,7 +327,7 @@ class OfferDelivery implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets lowest_price
      *
-     * @return \OpenAPI\Client\Model\OfferLowestPrice|null
+     * @return \robsonek\phpAllegroApi\Model\OfferLowestPrice|null
      */
     public function getLowestPrice()
     {
@@ -337,7 +337,7 @@ class OfferDelivery implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets lowest_price
      *
-     * @param \OpenAPI\Client\Model\OfferLowestPrice|null $lowest_price lowest_price
+     * @param \robsonek\phpAllegroApi\Model\OfferLowestPrice|null $lowest_price lowest_price
      *
      * @return self
      */

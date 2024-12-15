@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BadgePatchPricesPricesBargain Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BadgePatchPricesPricesBargain implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => '\OpenAPI\Client\Model\BadgeApplicationBargainPrice'
+        'value' => '\robsonek\phpAllegroApi\Model\BadgeApplicationBargainPrice'
     ];
 
     /**
@@ -292,7 +292,7 @@ class BadgePatchPricesPricesBargain implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\BadgeApplicationBargainPrice|null
+     * @return \robsonek\phpAllegroApi\Model\BadgeApplicationBargainPrice|null
      */
     public function getValue()
     {
@@ -302,7 +302,7 @@ class BadgePatchPricesPricesBargain implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\BadgeApplicationBargainPrice|null $value value
+     * @param \robsonek\phpAllegroApi\Model\BadgeApplicationBargainPrice|null $value value
      *
      * @return self
      */

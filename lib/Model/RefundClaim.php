@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * RefundClaim Class Doc Comment
  *
  * @category Class
  * @description Detailed information about the refund application.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,10 +61,10 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'status' => 'string',
         'quantity' => 'int',
-        'commission' => '\OpenAPI\Client\Model\RefundClaimCommission',
-        'buyer' => '\OpenAPI\Client\Model\RefundClaimBuyer',
+        'commission' => '\robsonek\phpAllegroApi\Model\RefundClaimCommission',
+        'buyer' => '\robsonek\phpAllegroApi\Model\RefundClaimBuyer',
         'created_at' => '\DateTime',
-        'line_item' => '\OpenAPI\Client\Model\RefundClaimLineItem',
+        'line_item' => '\robsonek\phpAllegroApi\Model\RefundClaimLineItem',
         'type' => 'string'
     ];
 
@@ -500,7 +500,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets commission
      *
-     * @return \OpenAPI\Client\Model\RefundClaimCommission|null
+     * @return \robsonek\phpAllegroApi\Model\RefundClaimCommission|null
      */
     public function getCommission()
     {
@@ -510,7 +510,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets commission
      *
-     * @param \OpenAPI\Client\Model\RefundClaimCommission|null $commission commission
+     * @param \robsonek\phpAllegroApi\Model\RefundClaimCommission|null $commission commission
      *
      * @return self
      */
@@ -527,7 +527,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\RefundClaimBuyer|null
+     * @return \robsonek\phpAllegroApi\Model\RefundClaimBuyer|null
      */
     public function getBuyer()
     {
@@ -537,7 +537,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\RefundClaimBuyer|null $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\RefundClaimBuyer|null $buyer buyer
      *
      * @return self
      */
@@ -581,7 +581,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets line_item
      *
-     * @return \OpenAPI\Client\Model\RefundClaimLineItem|null
+     * @return \robsonek\phpAllegroApi\Model\RefundClaimLineItem|null
      */
     public function getLineItem()
     {
@@ -591,7 +591,7 @@ class RefundClaim implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets line_item
      *
-     * @param \OpenAPI\Client\Model\RefundClaimLineItem|null $line_item line_item
+     * @param \robsonek\phpAllegroApi\Model\RefundClaimLineItem|null $line_item line_item
      *
      * @return self
      */

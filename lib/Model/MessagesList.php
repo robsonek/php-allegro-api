@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MessagesList Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class MessagesList implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\OpenAPI\Client\Model\Message[]',
+        'messages' => '\robsonek\phpAllegroApi\Model\Message[]',
         'offset' => 'int',
         'limit' => 'int'
     ];
@@ -323,7 +323,7 @@ class MessagesList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets messages
      *
-     * @return \OpenAPI\Client\Model\Message[]
+     * @return \robsonek\phpAllegroApi\Model\Message[]
      */
     public function getMessages()
     {
@@ -333,7 +333,7 @@ class MessagesList implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets messages
      *
-     * @param \OpenAPI\Client\Model\Message[] $messages messages
+     * @param \robsonek\phpAllegroApi\Model\Message[] $messages messages
      *
      * @return self
      */

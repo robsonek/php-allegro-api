@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PaymentOperations Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PaymentOperations implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payment_operations' => '\OpenAPI\Client\Model\BaseOperation[]',
+        'payment_operations' => '\robsonek\phpAllegroApi\Model\BaseOperation[]',
         'count' => 'int',
         'total_count' => 'int'
     ];
@@ -323,7 +323,7 @@ class PaymentOperations implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets payment_operations
      *
-     * @return \OpenAPI\Client\Model\BaseOperation[]
+     * @return \robsonek\phpAllegroApi\Model\BaseOperation[]
      */
     public function getPaymentOperations()
     {
@@ -333,7 +333,7 @@ class PaymentOperations implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets payment_operations
      *
-     * @param \OpenAPI\Client\Model\BaseOperation[] $payment_operations Collection of payment operations.
+     * @param \robsonek\phpAllegroApi\Model\BaseOperation[] $payment_operations Collection of payment operations.
      *
      * @return self
      */

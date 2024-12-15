@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace robsonek\phpAllegroApi\Model;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * PriceModificationValueChangeDecrease Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -56,7 +56,7 @@ class PriceModificationValueChangeDecrease extends PriceModification
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\OpenAPI\Client\Model\Price'
+        'value' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -320,7 +320,7 @@ class PriceModificationValueChangeDecrease extends PriceModification
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\Price|null
+     * @return \robsonek\phpAllegroApi\Model\Price|null
      */
     public function getValue()
     {
@@ -330,7 +330,7 @@ class PriceModificationValueChangeDecrease extends PriceModification
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\Price|null $value Change of offer buy now price, related to types: INCREASE_PRICE, DECREASE_PRICE.
+     * @param \robsonek\phpAllegroApi\Model\Price|null $value Change of offer buy now price, related to types: INCREASE_PRICE, DECREASE_PRICE.
      *
      * @return self
      */

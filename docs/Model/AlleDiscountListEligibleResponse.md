@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**eligible_offers** | [**\OpenAPI\Client\Model\AlleDiscountEligibleOfferDto[]**](AlleDiscountEligibleOfferDto.md) | Array of offers eligible to be submitted to given AlleDiscount campaign. | [optional]
+**eligible_offers** | [**\robsonek\phpAllegroApi\Model\AlleDiscountEligibleOfferDto[]**](AlleDiscountEligibleOfferDto.md) | Array of offers eligible to be submitted to given AlleDiscount campaign. | [optional]
 **count** | **int** | Number of offers returned in page. | [optional]
 **total_count** | **int** | Total number of eligible offers. | [optional]
 

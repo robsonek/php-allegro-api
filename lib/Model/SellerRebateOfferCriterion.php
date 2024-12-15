@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SellerRebateOfferCriterion Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SellerRebateOfferCriterion implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\OpenAPI\Client\Model\SellerRebateOfferCriterionOffersInner[]',
+        'offers' => '\robsonek\phpAllegroApi\Model\SellerRebateOfferCriterionOffersInner[]',
         'type' => 'string'
     ];
 
@@ -328,7 +328,7 @@ class SellerRebateOfferCriterion implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets offers
      *
-     * @return \OpenAPI\Client\Model\SellerRebateOfferCriterionOffersInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\SellerRebateOfferCriterionOffersInner[]|null
      */
     public function getOffers()
     {
@@ -338,7 +338,7 @@ class SellerRebateOfferCriterion implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets offers
      *
-     * @param \OpenAPI\Client\Model\SellerRebateOfferCriterionOffersInner[]|null $offers Set of offers – only if `type` is `CONTAINS_OFFERS`
+     * @param \robsonek\phpAllegroApi\Model\SellerRebateOfferCriterionOffersInner[]|null $offers Set of offers – only if `type` is `CONTAINS_OFFERS`
      *
      * @return self
      */

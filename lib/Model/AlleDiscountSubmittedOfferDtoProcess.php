@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AlleDiscountSubmittedOfferDtoProcess Class Doc Comment
  *
  * @category Class
  * @description Participation processing data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class AlleDiscountSubmittedOfferDtoProcess implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'errors' => '\OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class AlleDiscountSubmittedOfferDtoProcess implements ModelInterface, ArrayAcces
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]|null
+     * @return \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]|null
      */
     public function getErrors()
     {
@@ -377,7 +377,7 @@ class AlleDiscountSubmittedOfferDtoProcess implements ModelInterface, ArrayAcces
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]|null $errors Possible participation errors:   - TOO_HIGH_PROPOSED_PRICE - “proposedPrice” field when submitting an offer was set higher than the “requiredMerchantPrice” of this offer.   - PRODUCT_CONFIGURATION_CHANGED - configuration of offer’s product has changed in the meantime of processing the request.   - PRODUCT_NOT_IN_CAMPAIGN - submitted offer’s product is no longer available in this campaign.   - OFFER_NOT_VISIBLE_ON_CAMPAIGN_MARKETPLACE - offer is not visible on the marketplace of the campaign it was submitted to.   - CURRENCY_NOT_SUPPORTED - currency in “proposedPrice” does not match the currency of the marketplace offer was submitted to.   - ALLE_DISCOUNT_SUSPENDED_ACCOUNT - seller submitting offer is suspended and cannot perform any action.
+     * @param \robsonek\phpAllegroApi\Model\AlleDiscountSubmittedOfferDtoProcessErrorsInner[]|null $errors Possible participation errors:   - TOO_HIGH_PROPOSED_PRICE - “proposedPrice” field when submitting an offer was set higher than the “requiredMerchantPrice” of this offer.   - PRODUCT_CONFIGURATION_CHANGED - configuration of offer’s product has changed in the meantime of processing the request.   - PRODUCT_NOT_IN_CAMPAIGN - submitted offer’s product is no longer available in this campaign.   - OFFER_NOT_VISIBLE_ON_CAMPAIGN_MARKETPLACE - offer is not visible on the marketplace of the campaign it was submitted to.   - CURRENCY_NOT_SUPPORTED - currency in “proposedPrice” does not match the currency of the marketplace offer was submitted to.   - ALLE_DISCOUNT_SUSPENDED_ACCOUNT - seller submitting offer is suspended and cannot perform any action.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * TaskReport Class Doc Comment
  *
  * @category Class
  * @description Contains list of task results
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class TaskReport implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tasks' => '\OpenAPI\Client\Model\CommandTask[]'
+        'tasks' => '\robsonek\phpAllegroApi\Model\CommandTask[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class TaskReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tasks
      *
-     * @return \OpenAPI\Client\Model\CommandTask[]|null
+     * @return \robsonek\phpAllegroApi\Model\CommandTask[]|null
      */
     public function getTasks()
     {
@@ -303,7 +303,7 @@ class TaskReport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tasks
      *
-     * @param \OpenAPI\Client\Model\CommandTask[]|null $tasks List of task results
+     * @param \robsonek\phpAllegroApi\Model\CommandTask[]|null $tasks List of task results
      *
      * @return self
      */

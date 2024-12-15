@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SellerOfferEventsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SellerOfferEventsResponse implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_events' => '\OpenAPI\Client\Model\SellerOfferBaseEvent[]'
+        'offer_events' => '\robsonek\phpAllegroApi\Model\SellerOfferBaseEvent[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class SellerOfferEventsResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets offer_events
      *
-     * @return \OpenAPI\Client\Model\SellerOfferBaseEvent[]
+     * @return \robsonek\phpAllegroApi\Model\SellerOfferBaseEvent[]
      */
     public function getOfferEvents()
     {
@@ -305,7 +305,7 @@ class SellerOfferEventsResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets offer_events
      *
-     * @param \OpenAPI\Client\Model\SellerOfferBaseEvent[] $offer_events The list of events.
+     * @param \robsonek\phpAllegroApi\Model\SellerOfferBaseEvent[] $offer_events The list of events.
      *
      * @return self
      */

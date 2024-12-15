@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * DeliveryServiceDto Class Doc Comment
  *
  * @category Class
  * @description Primary object for Ship with Allegro. It&#39;s strongly related to delivery-method selected by buyer in purchase process and represent how shipment will be delivered. Delivery services contains set of features like cash on delivery support, insurance, additional services used to shipment creation.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,16 +58,16 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'id' => '\OpenAPI\Client\Model\DeliveryServiceIdDto',
+        'id' => '\robsonek\phpAllegroApi\Model\DeliveryServiceIdDto',
         'name' => 'string',
         'carrier_id' => 'string',
-        'additional_services' => '\OpenAPI\Client\Model\AdditionalServiceDto[]',
-        'additional_properties' => '\OpenAPI\Client\Model\AdditionalPropertyDto[]',
+        'additional_services' => '\robsonek\phpAllegroApi\Model\AdditionalServiceDto[]',
+        'additional_properties' => '\robsonek\phpAllegroApi\Model\AdditionalPropertyDto[]',
         'owner' => 'string',
         'marketplaces' => 'string[]',
         'package_types' => 'string[]',
-        'cash_on_delivery' => '\OpenAPI\Client\Model\CashOnDeliveryLimitDto',
-        'insurance' => '\OpenAPI\Client\Model\LimitWithCurrencyDto',
+        'cash_on_delivery' => '\robsonek\phpAllegroApi\Model\CashOnDeliveryLimitDto',
+        'insurance' => '\robsonek\phpAllegroApi\Model\LimitWithCurrencyDto',
         'features' => 'array<string,string>'
     ];
 
@@ -406,7 +406,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets id
      *
-     * @return \OpenAPI\Client\Model\DeliveryServiceIdDto|null
+     * @return \robsonek\phpAllegroApi\Model\DeliveryServiceIdDto|null
      */
     public function getId()
     {
@@ -416,7 +416,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets id
      *
-     * @param \OpenAPI\Client\Model\DeliveryServiceIdDto|null $id id
+     * @param \robsonek\phpAllegroApi\Model\DeliveryServiceIdDto|null $id id
      *
      * @return self
      */
@@ -487,7 +487,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\AdditionalServiceDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalServiceDto[]|null
      */
     public function getAdditionalServices()
     {
@@ -497,7 +497,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\AdditionalServiceDto[]|null $additional_services additional_services
+     * @param \robsonek\phpAllegroApi\Model\AdditionalServiceDto[]|null $additional_services additional_services
      *
      * @return self
      */
@@ -514,7 +514,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets additional_properties
      *
-     * @return \OpenAPI\Client\Model\AdditionalPropertyDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalPropertyDto[]|null
      */
     public function getAdditionalProperties()
     {
@@ -524,7 +524,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets additional_properties
      *
-     * @param \OpenAPI\Client\Model\AdditionalPropertyDto[]|null $additional_properties additional_properties
+     * @param \robsonek\phpAllegroApi\Model\AdditionalPropertyDto[]|null $additional_properties additional_properties
      *
      * @return self
      */
@@ -641,7 +641,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets cash_on_delivery
      *
-     * @return \OpenAPI\Client\Model\CashOnDeliveryLimitDto|null
+     * @return \robsonek\phpAllegroApi\Model\CashOnDeliveryLimitDto|null
      */
     public function getCashOnDelivery()
     {
@@ -651,7 +651,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets cash_on_delivery
      *
-     * @param \OpenAPI\Client\Model\CashOnDeliveryLimitDto|null $cash_on_delivery cash_on_delivery
+     * @param \robsonek\phpAllegroApi\Model\CashOnDeliveryLimitDto|null $cash_on_delivery cash_on_delivery
      *
      * @return self
      */
@@ -668,7 +668,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets insurance
      *
-     * @return \OpenAPI\Client\Model\LimitWithCurrencyDto|null
+     * @return \robsonek\phpAllegroApi\Model\LimitWithCurrencyDto|null
      */
     public function getInsurance()
     {
@@ -678,7 +678,7 @@ class DeliveryServiceDto implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets insurance
      *
-     * @param \OpenAPI\Client\Model\LimitWithCurrencyDto|null $insurance insurance
+     * @param \robsonek\phpAllegroApi\Model\LimitWithCurrencyDto|null $insurance insurance
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrdersShippingCarriersResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class OrdersShippingCarriersResponse implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'carriers' => '\OpenAPI\Client\Model\OrdersShippingCarrier[]'
+        'carriers' => '\robsonek\phpAllegroApi\Model\OrdersShippingCarrier[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class OrdersShippingCarriersResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets carriers
      *
-     * @return \OpenAPI\Client\Model\OrdersShippingCarrier[]|null
+     * @return \robsonek\phpAllegroApi\Model\OrdersShippingCarrier[]|null
      */
     public function getCarriers()
     {
@@ -302,7 +302,7 @@ class OrdersShippingCarriersResponse implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets carriers
      *
-     * @param \OpenAPI\Client\Model\OrdersShippingCarrier[]|null $carriers List of shipping carriers.
+     * @param \robsonek\phpAllegroApi\Model\OrdersShippingCarrier[]|null $carriers List of shipping carriers.
      *
      * @return self
      */

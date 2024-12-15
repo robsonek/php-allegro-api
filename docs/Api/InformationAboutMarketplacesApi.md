@@ -1,4 +1,4 @@
-# OpenAPI\Client\InformationAboutMarketplacesApi
+# robsonek\phpAllegroApi\InformationAboutMarketplacesApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `marketplacesGET()`
 
 ```php
-marketplacesGET(): \OpenAPI\Client\Model\AllegroMarketplaces
+marketplacesGET(): \robsonek\phpAllegroApi\Model\AllegroMarketplaces
 ```
 
 Get details for all marketplaces in allegro
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\InformationAboutMarketplacesApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutMarketplacesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroMarketplaces**](../Model/AllegroMarketplaces.md)
+[**\robsonek\phpAllegroApi\Model\AllegroMarketplaces**](../Model/AllegroMarketplaces.md)
 
 ### Authorization
 

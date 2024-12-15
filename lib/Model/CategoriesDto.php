@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoriesDto Class Doc Comment
  *
  * @category Class
  * @description The list of categories.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CategoriesDto implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'categories' => '\OpenAPI\Client\Model\CategoryDto[]'
+        'categories' => '\robsonek\phpAllegroApi\Model\CategoryDto[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class CategoriesDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets categories
      *
-     * @return \OpenAPI\Client\Model\CategoryDto[]|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryDto[]|null
      */
     public function getCategories()
     {
@@ -303,7 +303,7 @@ class CategoriesDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets categories
      *
-     * @param \OpenAPI\Client\Model\CategoryDto[]|null $categories categories
+     * @param \robsonek\phpAllegroApi\Model\CategoryDto[]|null $categories categories
      *
      * @return self
      */

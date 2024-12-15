@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,9 +145,9 @@ class ProductsApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFlatProductParametersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CategoryProductParameterList|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\CategoryProductParameterList|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getFlatProductParametersUsingGET($category_id, string $contentType = self::contentTypes['getFlatProductParametersUsingGET'][0])
     {
@@ -163,9 +163,9 @@ class ProductsApi
      * @param  string $category_id The category ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFlatProductParametersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CategoryProductParameterList|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\CategoryProductParameterList|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFlatProductParametersUsingGETWithHttpInfo($category_id, string $contentType = self::contentTypes['getFlatProductParametersUsingGET'][0])
     {
@@ -196,11 +196,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CategoryProductParameterList' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\CategoryProductParameterList' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CategoryProductParameterList' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\CategoryProductParameterList' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,16 +218,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CategoryProductParameterList', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\CategoryProductParameterList', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -245,7 +245,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -264,7 +264,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CategoryProductParameterList';
+            $returnType = '\robsonek\phpAllegroApi\Model\CategoryProductParameterList';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -297,7 +297,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CategoryProductParameterList',
+                        '\robsonek\phpAllegroApi\Model\CategoryProductParameterList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -305,7 +305,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -349,7 +349,7 @@ class ProductsApi
      */
     public function getFlatProductParametersUsingGETAsyncWithHttpInfo($category_id, string $contentType = self::contentTypes['getFlatProductParametersUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CategoryProductParameterList';
+        $returnType = '\robsonek\phpAllegroApi\Model\CategoryProductParameterList';
         $request = $this->getFlatProductParametersUsingGETRequest($category_id, $contentType);
 
         return $this->client
@@ -497,9 +497,9 @@ class ProductsApi
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProductChangeProposal'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductChangeProposalDto|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ProductChangeProposalDto|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getProductChangeProposal($change_proposal_id, $accept_language = 'en-US', string $contentType = self::contentTypes['getProductChangeProposal'][0])
     {
@@ -516,9 +516,9 @@ class ProductsApi
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProductChangeProposal'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductChangeProposalDto|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ProductChangeProposalDto|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductChangeProposalWithHttpInfo($change_proposal_id, $accept_language = 'en-US', string $contentType = self::contentTypes['getProductChangeProposal'][0])
     {
@@ -549,11 +549,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProductChangeProposalDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ProductChangeProposalDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ProductChangeProposalDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ProductChangeProposalDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -571,16 +571,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductChangeProposalDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -598,16 +598,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -625,16 +625,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -652,7 +652,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -671,7 +671,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductChangeProposalDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -704,7 +704,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductChangeProposalDto',
+                        '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -712,7 +712,7 @@ class ProductsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -720,7 +720,7 @@ class ProductsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -728,7 +728,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -774,7 +774,7 @@ class ProductsApi
      */
     public function getProductChangeProposalAsyncWithHttpInfo($change_proposal_id, $accept_language = 'en-US', string $contentType = self::contentTypes['getProductChangeProposal'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ProductChangeProposalDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto';
         $request = $this->getProductChangeProposalRequest($change_proposal_id, $accept_language, $contentType);
 
         return $this->client
@@ -926,9 +926,9 @@ class ProductsApi
      * @param  string $language The language version of product. You can indicate the language for the returned product data. At present we support: \&quot;pl-PL\&quot;, \&quot;cs-CZ\&quot;, \&quot;en-US\&quot; and \&quot;uk-UA\&quot;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSaleProduct'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SaleProductDto|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\SaleProductDto|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getSaleProduct($product_id, $category_id = null, $include_drafts = null, $language = null, string $contentType = self::contentTypes['getSaleProduct'][0])
     {
@@ -947,9 +947,9 @@ class ProductsApi
      * @param  string $language The language version of product. You can indicate the language for the returned product data. At present we support: \&quot;pl-PL\&quot;, \&quot;cs-CZ\&quot;, \&quot;en-US\&quot; and \&quot;uk-UA\&quot;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSaleProduct'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SaleProductDto|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\SaleProductDto|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSaleProductWithHttpInfo($product_id, $category_id = null, $include_drafts = null, $language = null, string $contentType = self::contentTypes['getSaleProduct'][0])
     {
@@ -980,11 +980,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SaleProductDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\SaleProductDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SaleProductDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\SaleProductDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1002,16 +1002,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SaleProductDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\SaleProductDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1029,16 +1029,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1056,16 +1056,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1083,7 +1083,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1102,7 +1102,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SaleProductDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\SaleProductDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1135,7 +1135,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SaleProductDto',
+                        '\robsonek\phpAllegroApi\Model\SaleProductDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1143,7 +1143,7 @@ class ProductsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1151,7 +1151,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1159,7 +1159,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1209,7 +1209,7 @@ class ProductsApi
      */
     public function getSaleProductAsyncWithHttpInfo($product_id, $category_id = null, $include_drafts = null, $language = null, string $contentType = self::contentTypes['getSaleProduct'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SaleProductDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\SaleProductDto';
         $request = $this->getSaleProductRequest($product_id, $category_id, $include_drafts, $language, $contentType);
 
         return $this->client
@@ -1393,9 +1393,9 @@ class ProductsApi
      * @param  bool $include_drafts Include products in draft state. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSaleProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetSaleProductsResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\GetSaleProductsResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function getSaleProducts($ean = null, $phrase = null, $mode = null, $language = null, $category_id = null, $dynamic_filters = null, $page_id = null, $search_features = null, $include_drafts = null, string $contentType = self::contentTypes['getSaleProducts'][0])
     {
@@ -1419,9 +1419,9 @@ class ProductsApi
      * @param  bool $include_drafts Include products in draft state. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSaleProducts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetSaleProductsResponse|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GetSaleProductsResponse|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSaleProductsWithHttpInfo($ean = null, $phrase = null, $mode = null, $language = null, $category_id = null, $dynamic_filters = null, $page_id = null, $search_features = null, $include_drafts = null, string $contentType = self::contentTypes['getSaleProducts'][0])
     {
@@ -1452,11 +1452,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetSaleProductsResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GetSaleProductsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetSaleProductsResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GetSaleProductsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1474,16 +1474,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetSaleProductsResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GetSaleProductsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1501,16 +1501,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1528,7 +1528,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1547,7 +1547,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetSaleProductsResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\GetSaleProductsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1580,7 +1580,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetSaleProductsResponse',
+                        '\robsonek\phpAllegroApi\Model\GetSaleProductsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1588,7 +1588,7 @@ class ProductsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1596,7 +1596,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1656,7 +1656,7 @@ class ProductsApi
      */
     public function getSaleProductsAsyncWithHttpInfo($ean = null, $phrase = null, $mode = null, $language = null, $category_id = null, $dynamic_filters = null, $page_id = null, $search_features = null, $include_drafts = null, string $contentType = self::contentTypes['getSaleProducts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetSaleProductsResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\GetSaleProductsResponse';
         $request = $this->getSaleProductsRequest($ean, $phrase, $mode, $language, $category_id, $dynamic_filters, $page_id, $search_features, $include_drafts, $contentType);
 
         return $this->client
@@ -1886,13 +1886,13 @@ class ProductsApi
      * Propose changes in product
      *
      * @param  string $product_id The product identifier. (required)
-     * @param  \OpenAPI\Client\Model\ProductChangeProposalRequest $product_change_proposal_request product_change_proposal_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest $product_change_proposal_request product_change_proposal_request (required)
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['productChangeProposal'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductChangeProposalDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ProductChangeProposalDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function productChangeProposal($product_id, $product_change_proposal_request, $accept_language = 'en-US', string $contentType = self::contentTypes['productChangeProposal'][0])
     {
@@ -1906,13 +1906,13 @@ class ProductsApi
      * Propose changes in product
      *
      * @param  string $product_id The product identifier. (required)
-     * @param  \OpenAPI\Client\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['productChangeProposal'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductChangeProposalDto|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ProductChangeProposalDto|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function productChangeProposalWithHttpInfo($product_id, $product_change_proposal_request, $accept_language = 'en-US', string $contentType = self::contentTypes['productChangeProposal'][0])
     {
@@ -1943,11 +1943,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ProductChangeProposalDto' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ProductChangeProposalDto' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ProductChangeProposalDto' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ProductChangeProposalDto' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1965,16 +1965,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductChangeProposalDto', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1992,16 +1992,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2019,16 +2019,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2046,16 +2046,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2073,7 +2073,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2092,7 +2092,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductChangeProposalDto';
+            $returnType = '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2125,7 +2125,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductChangeProposalDto',
+                        '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2133,7 +2133,7 @@ class ProductsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2141,7 +2141,7 @@ class ProductsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2149,7 +2149,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2157,7 +2157,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2173,7 +2173,7 @@ class ProductsApi
      * Propose changes in product
      *
      * @param  string $product_id The product identifier. (required)
-     * @param  \OpenAPI\Client\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['productChangeProposal'] to see the possible values for this operation
      *
@@ -2196,7 +2196,7 @@ class ProductsApi
      * Propose changes in product
      *
      * @param  string $product_id The product identifier. (required)
-     * @param  \OpenAPI\Client\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['productChangeProposal'] to see the possible values for this operation
      *
@@ -2205,7 +2205,7 @@ class ProductsApi
      */
     public function productChangeProposalAsyncWithHttpInfo($product_id, $product_change_proposal_request, $accept_language = 'en-US', string $contentType = self::contentTypes['productChangeProposal'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ProductChangeProposalDto';
+        $returnType = '\robsonek\phpAllegroApi\Model\ProductChangeProposalDto';
         $request = $this->productChangeProposalRequest($product_id, $product_change_proposal_request, $accept_language, $contentType);
 
         return $this->client
@@ -2248,7 +2248,7 @@ class ProductsApi
      * Create request for operation 'productChangeProposal'
      *
      * @param  string $product_id The product identifier. (required)
-     * @param  \OpenAPI\Client\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductChangeProposalRequest $product_change_proposal_request (required)
      * @param  string $accept_language Expected language of messages. (optional, default to 'en-US')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['productChangeProposal'] to see the possible values for this operation
      *
@@ -2366,12 +2366,12 @@ class ProductsApi
      *
      * Propose a product
      *
-     * @param  \OpenAPI\Client\Model\ProductProposalsRequest $product_proposals_request product_proposals_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductProposalsRequest $product_proposals_request product_proposals_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['proposeSaleProduct'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProductProposalsResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder
+     * @return \robsonek\phpAllegroApi\Model\ProductProposalsResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder
      */
     public function proposeSaleProduct($product_proposals_request, string $contentType = self::contentTypes['proposeSaleProduct'][0])
     {
@@ -2384,12 +2384,12 @@ class ProductsApi
      *
      * Propose a product
      *
-     * @param  \OpenAPI\Client\Model\ProductProposalsRequest $product_proposals_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductProposalsRequest $product_proposals_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['proposeSaleProduct'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProductProposalsResponse|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\AuthError|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder|\OpenAPI\Client\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\ProductProposalsResponse|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\AuthError|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder|\robsonek\phpAllegroApi\Model\ErrorsHolder, HTTP status code, HTTP response headers (array of strings)
      */
     public function proposeSaleProductWithHttpInfo($product_proposals_request, string $contentType = self::contentTypes['proposeSaleProduct'][0])
     {
@@ -2420,11 +2420,11 @@ class ProductsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ProductProposalsResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ProductProposalsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ProductProposalsResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ProductProposalsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2442,16 +2442,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProductProposalsResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ProductProposalsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2469,16 +2469,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\AuthError' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\AuthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AuthError' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\AuthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2496,16 +2496,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AuthError', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\AuthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2523,16 +2523,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 409:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2550,16 +2550,16 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\ErrorsHolder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ErrorsHolder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\ErrorsHolder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2577,7 +2577,7 @@ class ProductsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ErrorsHolder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\ErrorsHolder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2596,7 +2596,7 @@ class ProductsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProductProposalsResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\ProductProposalsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2629,7 +2629,7 @@ class ProductsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProductProposalsResponse',
+                        '\robsonek\phpAllegroApi\Model\ProductProposalsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2637,7 +2637,7 @@ class ProductsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2645,7 +2645,7 @@ class ProductsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AuthError',
+                        '\robsonek\phpAllegroApi\Model\AuthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2653,7 +2653,7 @@ class ProductsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2661,7 +2661,7 @@ class ProductsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2669,7 +2669,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ErrorsHolder',
+                        '\robsonek\phpAllegroApi\Model\ErrorsHolder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2684,7 +2684,7 @@ class ProductsApi
      *
      * Propose a product
      *
-     * @param  \OpenAPI\Client\Model\ProductProposalsRequest $product_proposals_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductProposalsRequest $product_proposals_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['proposeSaleProduct'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2705,7 +2705,7 @@ class ProductsApi
      *
      * Propose a product
      *
-     * @param  \OpenAPI\Client\Model\ProductProposalsRequest $product_proposals_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductProposalsRequest $product_proposals_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['proposeSaleProduct'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2713,7 +2713,7 @@ class ProductsApi
      */
     public function proposeSaleProductAsyncWithHttpInfo($product_proposals_request, string $contentType = self::contentTypes['proposeSaleProduct'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ProductProposalsResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\ProductProposalsResponse';
         $request = $this->proposeSaleProductRequest($product_proposals_request, $contentType);
 
         return $this->client
@@ -2755,7 +2755,7 @@ class ProductsApi
     /**
      * Create request for operation 'proposeSaleProduct'
      *
-     * @param  \OpenAPI\Client\Model\ProductProposalsRequest $product_proposals_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\ProductProposalsRequest $product_proposals_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['proposeSaleProduct'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

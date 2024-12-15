@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * SaleProductCompatibilityList Class Doc Comment
  *
  * @category Class
  * @description Compatibility list assigned to this product, based on information from TecDoc database.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class SaleProductCompatibilityList implements ModelInterface, ArrayAccess, \Json
     protected static $openAPITypes = [
         'id' => 'string',
         'type' => 'string',
-        'items' => '\OpenAPI\Client\Model\CompatibilityListItemProductBased[]'
+        'items' => '\robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class SaleProductCompatibilityList implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\CompatibilityListItemProductBased[]|null
+     * @return \robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]|null
      */
     public function getItems()
     {
@@ -377,7 +377,7 @@ class SaleProductCompatibilityList implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\CompatibilityListItemProductBased[]|null $items List of the compatible items.
+     * @param \robsonek\phpAllegroApi\Model\CompatibilityListItemProductBased[]|null $items List of the compatible items.
      *
      * @return self
      */

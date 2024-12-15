@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BuyerParticipant Class Doc Comment
  *
  * @category Class
  * @description The buyer&#39;s data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class BuyerParticipant implements ModelInterface, ArrayAccess, \JsonSerializable
         'login' => 'string',
         'first_name' => 'string',
         'last_name' => 'string',
-        'address' => '\OpenAPI\Client\Model\OperationParticipantAddress',
+        'address' => '\robsonek\phpAllegroApi\Model\OperationParticipantAddress',
         'id' => 'string'
     ];
 
@@ -448,7 +448,7 @@ class BuyerParticipant implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\OperationParticipantAddress|null
+     * @return \robsonek\phpAllegroApi\Model\OperationParticipantAddress|null
      */
     public function getAddress()
     {
@@ -458,7 +458,7 @@ class BuyerParticipant implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\OperationParticipantAddress|null $address address
+     * @param \robsonek\phpAllegroApi\Model\OperationParticipantAddress|null $address address
      *
      * @return self
      */

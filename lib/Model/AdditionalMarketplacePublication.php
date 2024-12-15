@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalMarketplacePublication Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class AdditionalMarketplacePublication implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\OpenAPI\Client\Model\AdditionalMarketplacePublicationStatus'
+        'status' => '\robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationStatus'
     ];
 
     /**
@@ -292,7 +292,7 @@ class AdditionalMarketplacePublication implements ModelInterface, ArrayAccess, \
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\AdditionalMarketplacePublicationStatus|null
+     * @return \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationStatus|null
      */
     public function getStatus()
     {
@@ -302,7 +302,7 @@ class AdditionalMarketplacePublication implements ModelInterface, ArrayAccess, \
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\AdditionalMarketplacePublicationStatus|null $status status
+     * @param \robsonek\phpAllegroApi\Model\AdditionalMarketplacePublicationStatus|null $status status
      *
      * @return self
      */

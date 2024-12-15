@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormInvoiceAddressCompany Class Doc Comment
  *
  * @category Class
  * @description Setting the value to null indicates a private purchase, while any other value indicates a corporate purchase.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CheckoutFormInvoiceAddressCompany implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'ids' => '\OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompanyId[]',
+        'ids' => '\robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompanyId[]',
         'vat_payer_status' => 'string',
         'tax_id' => 'string'
     ];
@@ -373,7 +373,7 @@ class CheckoutFormInvoiceAddressCompany implements ModelInterface, ArrayAccess, 
     /**
      * Gets ids
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompanyId[]|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompanyId[]|null
      */
     public function getIds()
     {
@@ -383,7 +383,7 @@ class CheckoutFormInvoiceAddressCompany implements ModelInterface, ArrayAccess, 
     /**
      * Sets ids
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormInvoiceAddressCompanyId[]|null $ids Tax ids of a company for which invoice should be issued.
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormInvoiceAddressCompanyId[]|null $ids Tax ids of a company for which invoice should be issued.
      *
      * @return self
      */

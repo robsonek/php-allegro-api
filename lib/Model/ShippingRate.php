@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ShippingRate Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_method' => '\OpenAPI\Client\Model\ShippingRateDeliveryMethod',
+        'delivery_method' => '\robsonek\phpAllegroApi\Model\ShippingRateDeliveryMethod',
         'max_quantity_per_package' => 'int',
-        'max_package_weight' => '\OpenAPI\Client\Model\ShippingRateMaxPackageWeight',
-        'first_item_rate' => '\OpenAPI\Client\Model\ShippingRateFirstItemRate',
-        'next_item_rate' => '\OpenAPI\Client\Model\ShippingRateNextItemRate',
-        'shipping_time' => '\OpenAPI\Client\Model\ShippingRateShippingTime'
+        'max_package_weight' => '\robsonek\phpAllegroApi\Model\ShippingRateMaxPackageWeight',
+        'first_item_rate' => '\robsonek\phpAllegroApi\Model\ShippingRateFirstItemRate',
+        'next_item_rate' => '\robsonek\phpAllegroApi\Model\ShippingRateNextItemRate',
+        'shipping_time' => '\robsonek\phpAllegroApi\Model\ShippingRateShippingTime'
     ];
 
     /**
@@ -343,7 +343,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery_method
      *
-     * @return \OpenAPI\Client\Model\ShippingRateDeliveryMethod
+     * @return \robsonek\phpAllegroApi\Model\ShippingRateDeliveryMethod
      */
     public function getDeliveryMethod()
     {
@@ -353,7 +353,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery_method
      *
-     * @param \OpenAPI\Client\Model\ShippingRateDeliveryMethod $delivery_method delivery_method
+     * @param \robsonek\phpAllegroApi\Model\ShippingRateDeliveryMethod $delivery_method delivery_method
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets max_package_weight
      *
-     * @return \OpenAPI\Client\Model\ShippingRateMaxPackageWeight|null
+     * @return \robsonek\phpAllegroApi\Model\ShippingRateMaxPackageWeight|null
      */
     public function getMaxPackageWeight()
     {
@@ -412,7 +412,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets max_package_weight
      *
-     * @param \OpenAPI\Client\Model\ShippingRateMaxPackageWeight|null $max_package_weight max_package_weight
+     * @param \robsonek\phpAllegroApi\Model\ShippingRateMaxPackageWeight|null $max_package_weight max_package_weight
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets first_item_rate
      *
-     * @return \OpenAPI\Client\Model\ShippingRateFirstItemRate
+     * @return \robsonek\phpAllegroApi\Model\ShippingRateFirstItemRate
      */
     public function getFirstItemRate()
     {
@@ -439,7 +439,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets first_item_rate
      *
-     * @param \OpenAPI\Client\Model\ShippingRateFirstItemRate $first_item_rate first_item_rate
+     * @param \robsonek\phpAllegroApi\Model\ShippingRateFirstItemRate $first_item_rate first_item_rate
      *
      * @return self
      */
@@ -456,7 +456,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets next_item_rate
      *
-     * @return \OpenAPI\Client\Model\ShippingRateNextItemRate
+     * @return \robsonek\phpAllegroApi\Model\ShippingRateNextItemRate
      */
     public function getNextItemRate()
     {
@@ -466,7 +466,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next_item_rate
      *
-     * @param \OpenAPI\Client\Model\ShippingRateNextItemRate $next_item_rate next_item_rate
+     * @param \robsonek\phpAllegroApi\Model\ShippingRateNextItemRate $next_item_rate next_item_rate
      *
      * @return self
      */
@@ -483,7 +483,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_time
      *
-     * @return \OpenAPI\Client\Model\ShippingRateShippingTime|null
+     * @return \robsonek\phpAllegroApi\Model\ShippingRateShippingTime|null
      */
     public function getShippingTime()
     {
@@ -493,7 +493,7 @@ class ShippingRate implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_time
      *
-     * @param \OpenAPI\Client\Model\ShippingRateShippingTime|null $shipping_time shipping_time
+     * @param \robsonek\phpAllegroApi\Model\ShippingRateShippingTime|null $shipping_time shipping_time
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**category** | [**\OpenAPI\Client\Model\Category**](Category.md) |  |
+**category** | [**\robsonek\phpAllegroApi\Model\Category**](Category.md) |  |
 **condition** | **string** | Offer condition, if is new, used or other. | [optional]
 **duration** | **string** |  | [optional]
 **has_any_quantity** | **bool** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AutomaticPricingOfferRuleConfigurationPriceRange Class Doc Comment
  *
  * @category Class
  * @description Price range. This field is optional.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class AutomaticPricingOfferRuleConfigurationPriceRange implements ModelInterface
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'min_price' => '\OpenAPI\Client\Model\Price',
-        'max_price' => '\OpenAPI\Client\Model\Price'
+        'min_price' => '\robsonek\phpAllegroApi\Model\Price',
+        'max_price' => '\robsonek\phpAllegroApi\Model\Price'
     ];
 
     /**
@@ -377,7 +377,7 @@ class AutomaticPricingOfferRuleConfigurationPriceRange implements ModelInterface
     /**
      * Gets min_price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getMinPrice()
     {
@@ -387,7 +387,7 @@ class AutomaticPricingOfferRuleConfigurationPriceRange implements ModelInterface
     /**
      * Sets min_price
      *
-     * @param \OpenAPI\Client\Model\Price $min_price The minimum price that can be set.
+     * @param \robsonek\phpAllegroApi\Model\Price $min_price The minimum price that can be set.
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class AutomaticPricingOfferRuleConfigurationPriceRange implements ModelInterface
     /**
      * Gets max_price
      *
-     * @return \OpenAPI\Client\Model\Price
+     * @return \robsonek\phpAllegroApi\Model\Price
      */
     public function getMaxPrice()
     {
@@ -414,7 +414,7 @@ class AutomaticPricingOfferRuleConfigurationPriceRange implements ModelInterface
     /**
      * Sets max_price
      *
-     * @param \OpenAPI\Client\Model\Price $max_price The maximum price that can be set.
+     * @param \robsonek\phpAllegroApi\Model\Price $max_price The maximum price that can be set.
      *
      * @return self
      */

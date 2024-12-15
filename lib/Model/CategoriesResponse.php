@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoriesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CategoriesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'categories' => '\OpenAPI\Client\Model\CategoryResponse[]'
+        'categories' => '\robsonek\phpAllegroApi\Model\CategoryResponse[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CategoriesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets categories
      *
-     * @return \OpenAPI\Client\Model\CategoryResponse[]|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryResponse[]|null
      */
     public function getCategories()
     {
@@ -302,7 +302,7 @@ class CategoriesResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets categories
      *
-     * @param \OpenAPI\Client\Model\CategoryResponse[]|null $categories categories
+     * @param \robsonek\phpAllegroApi\Model\CategoryResponse[]|null $categories categories
      *
      * @return self
      */

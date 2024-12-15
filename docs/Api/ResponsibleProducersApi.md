@@ -1,4 +1,4 @@
-# OpenAPI\Client\ResponsibleProducersApi
+# robsonek\phpAllegroApi\ResponsibleProducersApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `responsibleProducerGET()`
 
 ```php
-responsibleProducerGET($id, $accept): \OpenAPI\Client\Model\ResponsibleProducerResponse
+responsibleProducerGET($id, $accept): \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse
 ```
 
 Get responsible producer
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsibleProducersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
+[**\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ try {
 ## `responsibleProducersGET()`
 
 ```php
-responsibleProducersGET($accept, $offset, $limit): \OpenAPI\Client\Model\ResponsibleProducersGET200Response
+responsibleProducersGET($accept, $offset, $limit): \robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response
 ```
 
 Get the list of responsible producers
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsibleProducersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsibleProducersGET200Response**](../Model/ResponsibleProducersGET200Response.md)
+[**\robsonek\phpAllegroApi\Model\ResponsibleProducersGET200Response**](../Model/ResponsibleProducersGET200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ try {
 ## `responsibleProducersPOST()`
 
 ```php
-responsibleProducersPOST($accept, $content_type, $create_responsible_producer_request): \OpenAPI\Client\Model\ResponsibleProducerResponse
+responsibleProducersPOST($accept, $content_type, $create_responsible_producer_request): \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse
 ```
 
 Create responsible producer
@@ -154,10 +154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsibleProducersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -165,7 +165,7 @@ $apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
 );
 $accept = application/vnd.allegro.public.v1+json; // string | Acceptable representation of the response.
 $content_type = application/vnd.allegro.public.v1+json; // string | Content type of the request body.
-$create_responsible_producer_request = new \OpenAPI\Client\Model\CreateResponsibleProducerRequest(); // \OpenAPI\Client\Model\CreateResponsibleProducerRequest
+$create_responsible_producer_request = new \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest(); // \robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest
 
 try {
     $result = $apiInstance->responsibleProducersPOST($accept, $content_type, $create_responsible_producer_request);
@@ -181,11 +181,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **accept** | **string**| Acceptable representation of the response. | |
 | **content_type** | **string**| Content type of the request body. | |
-| **create_responsible_producer_request** | [**\OpenAPI\Client\Model\CreateResponsibleProducerRequest**](../Model/CreateResponsibleProducerRequest.md)|  | |
+| **create_responsible_producer_request** | [**\robsonek\phpAllegroApi\Model\CreateResponsibleProducerRequest**](../Model/CreateResponsibleProducerRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
+[**\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ try {
 ## `responsibleProducersPUT()`
 
 ```php
-responsibleProducersPUT($id, $accept, $content_type, $update_responsible_producer_request): \OpenAPI\Client\Model\ResponsibleProducerResponse
+responsibleProducersPUT($id, $accept, $content_type, $update_responsible_producer_request): \robsonek\phpAllegroApi\Model\ResponsibleProducerResponse
 ```
 
 Update responsible producer
@@ -218,10 +218,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ResponsibleProducersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -230,7 +230,7 @@ $apiInstance = new OpenAPI\Client\Api\ResponsibleProducersApi(
 $id = 'id_example'; // string | Responsible producer ID.
 $accept = application/vnd.allegro.public.v1+json; // string | Acceptable representation of the response.
 $content_type = application/vnd.allegro.public.v1+json; // string | Content type of the request body.
-$update_responsible_producer_request = new \OpenAPI\Client\Model\UpdateResponsibleProducerRequest(); // \OpenAPI\Client\Model\UpdateResponsibleProducerRequest
+$update_responsible_producer_request = new \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest(); // \robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest
 
 try {
     $result = $apiInstance->responsibleProducersPUT($id, $accept, $content_type, $update_responsible_producer_request);
@@ -247,11 +247,11 @@ try {
 | **id** | **string**| Responsible producer ID. | |
 | **accept** | **string**| Acceptable representation of the response. | |
 | **content_type** | **string**| Content type of the request body. | |
-| **update_responsible_producer_request** | [**\OpenAPI\Client\Model\UpdateResponsibleProducerRequest**](../Model/UpdateResponsibleProducerRequest.md)|  | |
+| **update_responsible_producer_request** | [**\robsonek\phpAllegroApi\Model\UpdateResponsibleProducerRequest**](../Model/UpdateResponsibleProducerRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
+[**\robsonek\phpAllegroApi\Model\ResponsibleProducerResponse**](../Model/ResponsibleProducerResponse.md)
 
 ### Authorization
 

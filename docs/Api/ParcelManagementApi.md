@@ -1,4 +1,4 @@
-# OpenAPI\Client\ParcelManagementApi
+# robsonek\phpAllegroApi\ParcelManagementApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -20,7 +20,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `cancelParcel()`
 
 ```php
-cancelParcel($command_id, $cancel_parcel_parameters): \OpenAPI\Client\Model\CancelParcel201Response
+cancelParcel($command_id, $cancel_parcel_parameters): \robsonek\phpAllegroApi\Model\CancelParcel201Response
 ```
 
 Cancel parcel
@@ -35,17 +35,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command UUID.
-$cancel_parcel_parameters = new \OpenAPI\Client\Model\CancelParcelParameters(); // \OpenAPI\Client\Model\CancelParcelParameters
+$cancel_parcel_parameters = new \robsonek\phpAllegroApi\Model\CancelParcelParameters(); // \robsonek\phpAllegroApi\Model\CancelParcelParameters
 
 try {
     $result = $apiInstance->cancelParcel($command_id, $cancel_parcel_parameters);
@@ -60,11 +60,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command UUID. | |
-| **cancel_parcel_parameters** | [**\OpenAPI\Client\Model\CancelParcelParameters**](../Model/CancelParcelParameters.md)|  | |
+| **cancel_parcel_parameters** | [**\robsonek\phpAllegroApi\Model\CancelParcelParameters**](../Model/CancelParcelParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CancelParcel201Response**](../Model/CancelParcel201Response.md)
+[**\robsonek\phpAllegroApi\Model\CancelParcel201Response**](../Model/CancelParcel201Response.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ try {
 ## `createNewParcel()`
 
 ```php
-createNewParcel($command_id, $parcel_creation_parameters): \OpenAPI\Client\Model\CreateNewParcel201Response
+createNewParcel($command_id, $parcel_creation_parameters): \robsonek\phpAllegroApi\Model\CreateNewParcel201Response
 ```
 
 Create a new parcel
@@ -97,17 +97,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command UUID.
-$parcel_creation_parameters = new \OpenAPI\Client\Model\ParcelCreationParameters(); // \OpenAPI\Client\Model\ParcelCreationParameters
+$parcel_creation_parameters = new \robsonek\phpAllegroApi\Model\ParcelCreationParameters(); // \robsonek\phpAllegroApi\Model\ParcelCreationParameters
 
 try {
     $result = $apiInstance->createNewParcel($command_id, $parcel_creation_parameters);
@@ -122,11 +122,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command UUID. | |
-| **parcel_creation_parameters** | [**\OpenAPI\Client\Model\ParcelCreationParameters**](../Model/ParcelCreationParameters.md)|  | |
+| **parcel_creation_parameters** | [**\robsonek\phpAllegroApi\Model\ParcelCreationParameters**](../Model/ParcelCreationParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateNewParcel201Response**](../Model/CreateNewParcel201Response.md)
+[**\robsonek\phpAllegroApi\Model\CreateNewParcel201Response**](../Model/CreateNewParcel201Response.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ try {
 ## `getAvailableDeliveryServices()`
 
 ```php
-getAvailableDeliveryServices(): \OpenAPI\Client\Model\DeliveryServices
+getAvailableDeliveryServices(): \robsonek\phpAllegroApi\Model\DeliveryServices
 ```
 
 Get available delivery services
@@ -159,10 +159,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -183,7 +183,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliveryServices**](../Model/DeliveryServices.md)
+[**\robsonek\phpAllegroApi\Model\DeliveryServices**](../Model/DeliveryServices.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ This endpoint does not need any parameter.
 ## `getParcelCancellationStatus()`
 
 ```php
-getParcelCancellationStatus($command_id): \OpenAPI\Client\Model\GetParcelCancellationStatus200Response
+getParcelCancellationStatus($command_id): \robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response
 ```
 
 Get parcel cancellation status
@@ -216,10 +216,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetParcelCancellationStatus200Response**](../Model/GetParcelCancellationStatus200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetParcelCancellationStatus200Response**](../Model/GetParcelCancellationStatus200Response.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ try {
 ## `getParcelCreationStatus()`
 
 ```php
-getParcelCreationStatus($command_id): \OpenAPI\Client\Model\GetParcelCreationStatus200Response
+getParcelCreationStatus($command_id): \robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response
 ```
 
 Get parcel creation status
@@ -276,10 +276,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -303,7 +303,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetParcelCreationStatus200Response**](../Model/GetParcelCreationStatus200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetParcelCreationStatus200Response**](../Model/GetParcelCreationStatus200Response.md)
 
 ### Authorization
 
@@ -321,7 +321,7 @@ try {
 ## `getParcelDetails()`
 
 ```php
-getParcelDetails($parcel_id): \OpenAPI\Client\Model\ParcelDetails
+getParcelDetails($parcel_id): \robsonek\phpAllegroApi\Model\ParcelDetails
 ```
 
 Get parcel details
@@ -336,10 +336,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -363,7 +363,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ParcelDetails**](../Model/ParcelDetails.md)
+[**\robsonek\phpAllegroApi\Model\ParcelDetails**](../Model/ParcelDetails.md)
 
 ### Authorization
 
@@ -396,10 +396,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -443,7 +443,7 @@ try {
 ## `getParcelPickupStatus()`
 
 ```php
-getParcelPickupStatus($command_id): \OpenAPI\Client\Model\GetParcelPickupStatus200Response
+getParcelPickupStatus($command_id): \robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response
 ```
 
 Get parcel pickup status
@@ -458,10 +458,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -485,7 +485,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetParcelPickupStatus200Response**](../Model/GetParcelPickupStatus200Response.md)
+[**\robsonek\phpAllegroApi\Model\GetParcelPickupStatus200Response**](../Model/GetParcelPickupStatus200Response.md)
 
 ### Authorization
 
@@ -503,7 +503,7 @@ try {
 ## `getParcelsPickupDateProposals()`
 
 ```php
-getParcelsPickupDateProposals($parcel_id, $ready_date): \OpenAPI\Client\Model\PickupDateParcelsProposals
+getParcelsPickupDateProposals($parcel_id, $ready_date): \robsonek\phpAllegroApi\Model\PickupDateParcelsProposals
 ```
 
 Get parcels pickup date proposals
@@ -518,10 +518,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -547,7 +547,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PickupDateParcelsProposals**](../Model/PickupDateParcelsProposals.md)
+[**\robsonek\phpAllegroApi\Model\PickupDateParcelsProposals**](../Model/PickupDateParcelsProposals.md)
 
 ### Authorization
 
@@ -580,10 +580,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -625,7 +625,7 @@ try {
 ## `requestParcelPickup()`
 
 ```php
-requestParcelPickup($command_id, $pickup_parcel_parameters): \OpenAPI\Client\Model\RequestParcelPickup201Response
+requestParcelPickup($command_id, $pickup_parcel_parameters): \robsonek\phpAllegroApi\Model\RequestParcelPickup201Response
 ```
 
 Request parcel pickup
@@ -640,17 +640,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ParcelManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\ParcelManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $command_id = 'command_id_example'; // string | Command UUID.
-$pickup_parcel_parameters = new \OpenAPI\Client\Model\PickupParcelParameters(); // \OpenAPI\Client\Model\PickupParcelParameters
+$pickup_parcel_parameters = new \robsonek\phpAllegroApi\Model\PickupParcelParameters(); // \robsonek\phpAllegroApi\Model\PickupParcelParameters
 
 try {
     $result = $apiInstance->requestParcelPickup($command_id, $pickup_parcel_parameters);
@@ -665,11 +665,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **command_id** | **string**| Command UUID. | |
-| **pickup_parcel_parameters** | [**\OpenAPI\Client\Model\PickupParcelParameters**](../Model/PickupParcelParameters.md)|  | |
+| **pickup_parcel_parameters** | [**\robsonek\phpAllegroApi\Model\PickupParcelParameters**](../Model/PickupParcelParameters.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RequestParcelPickup201Response**](../Model/RequestParcelPickup201Response.md)
+[**\robsonek\phpAllegroApi\Model\RequestParcelPickup201Response**](../Model/RequestParcelPickup201Response.md)
 
 ### Authorization
 

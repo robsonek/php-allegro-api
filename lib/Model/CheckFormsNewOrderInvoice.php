@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckFormsNewOrderInvoice Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckFormsNewOrderInvoice implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'file' => '\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceFile',
+        'file' => '\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceFile',
         'invoice_number' => 'string'
     ];
 
@@ -302,7 +302,7 @@ class CheckFormsNewOrderInvoice implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets file
      *
-     * @return \OpenAPI\Client\Model\CheckFormsNewOrderInvoiceFile
+     * @return \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceFile
      */
     public function getFile()
     {
@@ -312,7 +312,7 @@ class CheckFormsNewOrderInvoice implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets file
      *
-     * @param \OpenAPI\Client\Model\CheckFormsNewOrderInvoiceFile $file file
+     * @param \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceFile $file file
      *
      * @return self
      */

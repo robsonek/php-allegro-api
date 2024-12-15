@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**advance_ship_notices** | [**\OpenAPI\Client\Model\AdvanceShipNoticeResponse[]**](AdvanceShipNoticeResponse.md) |  |
+**advance_ship_notices** | [**\robsonek\phpAllegroApi\Model\AdvanceShipNoticeResponse[]**](AdvanceShipNoticeResponse.md) |  |
 **count** | **float** | A number of Advance Ship Notices in response. |
 **total_count** | **float** | A number of Advance Ship Notices in total. |
 

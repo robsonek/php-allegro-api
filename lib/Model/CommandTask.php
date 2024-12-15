@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CommandTask Class Doc Comment
  *
  * @category Class
  * @description Status of single command task.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,9 +60,9 @@ class CommandTask implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'field' => 'string',
         'message' => 'string',
-        'offer' => '\OpenAPI\Client\Model\OfferId',
+        'offer' => '\robsonek\phpAllegroApi\Model\OfferId',
         'status' => 'string',
-        'errors' => '\OpenAPI\Client\Model\Error[]'
+        'errors' => '\robsonek\phpAllegroApi\Model\Error[]'
     ];
 
     /**
@@ -375,7 +375,7 @@ class CommandTask implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OfferId|null
+     * @return \robsonek\phpAllegroApi\Model\OfferId|null
      */
     public function getOffer()
     {
@@ -385,7 +385,7 @@ class CommandTask implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OfferId|null $offer offer
+     * @param \robsonek\phpAllegroApi\Model\OfferId|null $offer offer
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class CommandTask implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\Error[]|null
+     * @return \robsonek\phpAllegroApi\Model\Error[]|null
      */
     public function getErrors()
     {
@@ -439,7 +439,7 @@ class CommandTask implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $errors The list of error objects explaining the problems with command processing for the given offer.
+     * @param \robsonek\phpAllegroApi\Model\Error[]|null $errors The list of error objects explaining the problems with command processing for the given offer.
      *
      * @return self
      */

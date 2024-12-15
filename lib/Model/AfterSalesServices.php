@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AfterSalesServices Class Doc Comment
  *
  * @category Class
  * @description The definitions of the different after sales services assigned to the offer.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'implied_warranty' => '\OpenAPI\Client\Model\ImpliedWarranty',
-        'return_policy' => '\OpenAPI\Client\Model\ReturnPolicy',
-        'warranty' => '\OpenAPI\Client\Model\Warranty'
+        'implied_warranty' => '\robsonek\phpAllegroApi\Model\ImpliedWarranty',
+        'return_policy' => '\robsonek\phpAllegroApi\Model\ReturnPolicy',
+        'warranty' => '\robsonek\phpAllegroApi\Model\Warranty'
     ];
 
     /**
@@ -307,7 +307,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets implied_warranty
      *
-     * @return \OpenAPI\Client\Model\ImpliedWarranty|null
+     * @return \robsonek\phpAllegroApi\Model\ImpliedWarranty|null
      */
     public function getImpliedWarranty()
     {
@@ -317,7 +317,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets implied_warranty
      *
-     * @param \OpenAPI\Client\Model\ImpliedWarranty|null $implied_warranty implied_warranty
+     * @param \robsonek\phpAllegroApi\Model\ImpliedWarranty|null $implied_warranty implied_warranty
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets return_policy
      *
-     * @return \OpenAPI\Client\Model\ReturnPolicy|null
+     * @return \robsonek\phpAllegroApi\Model\ReturnPolicy|null
      */
     public function getReturnPolicy()
     {
@@ -344,7 +344,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets return_policy
      *
-     * @param \OpenAPI\Client\Model\ReturnPolicy|null $return_policy return_policy
+     * @param \robsonek\phpAllegroApi\Model\ReturnPolicy|null $return_policy return_policy
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets warranty
      *
-     * @return \OpenAPI\Client\Model\Warranty|null
+     * @return \robsonek\phpAllegroApi\Model\Warranty|null
      */
     public function getWarranty()
     {
@@ -371,7 +371,7 @@ class AfterSalesServices implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets warranty
      *
-     * @param \OpenAPI\Client\Model\Warranty|null $warranty warranty
+     * @param \robsonek\phpAllegroApi\Model\Warranty|null $warranty warranty
      *
      * @return self
      */

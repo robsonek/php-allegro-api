@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * Thread Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class Thread implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'read' => 'bool',
         'last_message_date_time' => '\DateTime',
-        'interlocutor' => '\OpenAPI\Client\Model\Interlocutor'
+        'interlocutor' => '\robsonek\phpAllegroApi\Model\Interlocutor'
     ];
 
     /**
@@ -407,7 +407,7 @@ class Thread implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets interlocutor
      *
-     * @return \OpenAPI\Client\Model\Interlocutor|null
+     * @return \robsonek\phpAllegroApi\Model\Interlocutor|null
      */
     public function getInterlocutor()
     {
@@ -417,7 +417,7 @@ class Thread implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets interlocutor
      *
-     * @param \OpenAPI\Client\Model\Interlocutor|null $interlocutor interlocutor
+     * @param \robsonek\phpAllegroApi\Model\Interlocutor|null $interlocutor interlocutor
      *
      * @return self
      */

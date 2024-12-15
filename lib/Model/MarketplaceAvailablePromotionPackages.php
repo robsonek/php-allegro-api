@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * MarketplaceAvailablePromotionPackages Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class MarketplaceAvailablePromotionPackages implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'base_packages' => '\OpenAPI\Client\Model\AvailablePromotionPackage[]',
-        'extra_packages' => '\OpenAPI\Client\Model\AvailablePromotionPackage[]'
+        'base_packages' => '\robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]',
+        'extra_packages' => '\robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class MarketplaceAvailablePromotionPackages implements ModelInterface, ArrayAcce
     /**
      * Gets base_packages
      *
-     * @return \OpenAPI\Client\Model\AvailablePromotionPackage[]|null
+     * @return \robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]|null
      */
     public function getBasePackages()
     {
@@ -343,7 +343,7 @@ class MarketplaceAvailablePromotionPackages implements ModelInterface, ArrayAcce
     /**
      * Sets base_packages
      *
-     * @param \OpenAPI\Client\Model\AvailablePromotionPackage[]|null $base_packages Available base promotion packages. Only one base package can be set on an offer.
+     * @param \robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]|null $base_packages Available base promotion packages. Only one base package can be set on an offer.
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class MarketplaceAvailablePromotionPackages implements ModelInterface, ArrayAcce
     /**
      * Gets extra_packages
      *
-     * @return \OpenAPI\Client\Model\AvailablePromotionPackage[]|null
+     * @return \robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]|null
      */
     public function getExtraPackages()
     {
@@ -370,7 +370,7 @@ class MarketplaceAvailablePromotionPackages implements ModelInterface, ArrayAcce
     /**
      * Sets extra_packages
      *
-     * @param \OpenAPI\Client\Model\AvailablePromotionPackage[]|null $extra_packages Available extra promotion packages. Multiple different extra packages can be set on an offer.
+     * @param \robsonek\phpAllegroApi\Model\AvailablePromotionPackage[]|null $extra_packages Available extra promotion packages. Multiple different extra packages can be set on an offer.
      *
      * @return self
      */

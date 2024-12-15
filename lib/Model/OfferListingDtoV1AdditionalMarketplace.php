@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OfferListingDtoV1AdditionalMarketplace Class Doc Comment
  *
  * @category Class
  * @description Properties of the offer for the given marketplace.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'publication' => '\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplacePublication',
-        'selling_mode' => '\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode',
-        'stats' => '\OpenAPI\Client\Model\OfferListingDtoV1Stats',
-        'stock' => '\OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceStock'
+        'publication' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplacePublication',
+        'selling_mode' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode',
+        'stats' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats',
+        'stock' => '\robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceStock'
     ];
 
     /**
@@ -314,7 +314,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Gets publication
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplacePublication|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplacePublication|null
      */
     public function getPublication()
     {
@@ -324,7 +324,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Sets publication
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplacePublication|null $publication publication
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplacePublication|null $publication publication
      *
      * @return self
      */
@@ -348,7 +348,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Gets selling_mode
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode|null
      */
     public function getSellingMode()
     {
@@ -358,7 +358,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Sets selling_mode
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode|null $selling_mode selling_mode
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceSellingMode|null $selling_mode selling_mode
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Gets stats
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1Stats|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats|null
      */
     public function getStats()
     {
@@ -392,7 +392,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Sets stats
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1Stats|null $stats The offer's statistics on the given marketplace.
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1Stats|null $stats The offer's statistics on the given marketplace.
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceStock|null
+     * @return \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceStock|null
      */
     public function getStock()
     {
@@ -426,7 +426,7 @@ class OfferListingDtoV1AdditionalMarketplace implements ModelInterface, ArrayAcc
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\OfferListingDtoV1AdditionalMarketplaceStock|null $stock stock
+     * @param \robsonek\phpAllegroApi\Model\OfferListingDtoV1AdditionalMarketplaceStock|null $stock stock
      *
      * @return self
      */

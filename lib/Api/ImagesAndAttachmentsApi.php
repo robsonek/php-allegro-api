@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ImagesAndAttachmentsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,12 +138,12 @@ class ImagesAndAttachmentsApi
      *
      * Create an offer attachment
      *
-     * @param  \OpenAPI\Client\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOfferAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferAttachment
+     * @return \robsonek\phpAllegroApi\Model\OfferAttachment
      */
     public function createOfferAttachmentUsingPOST($offer_attachment_request, string $contentType = self::contentTypes['createOfferAttachmentUsingPOST'][0])
     {
@@ -156,12 +156,12 @@ class ImagesAndAttachmentsApi
      *
      * Create an offer attachment
      *
-     * @param  \OpenAPI\Client\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOfferAttachmentUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferAttachment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferAttachment, HTTP status code, HTTP response headers (array of strings)
      */
     public function createOfferAttachmentUsingPOSTWithHttpInfo($offer_attachment_request, string $contentType = self::contentTypes['createOfferAttachmentUsingPOST'][0])
     {
@@ -192,11 +192,11 @@ class ImagesAndAttachmentsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\OfferAttachment' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferAttachment' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferAttachment' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferAttachment' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -214,7 +214,7 @@ class ImagesAndAttachmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferAttachment', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferAttachment', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -233,7 +233,7 @@ class ImagesAndAttachmentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferAttachment';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferAttachment';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class ImagesAndAttachmentsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferAttachment',
+                        '\robsonek\phpAllegroApi\Model\OfferAttachment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class ImagesAndAttachmentsApi
      *
      * Create an offer attachment
      *
-     * @param  \OpenAPI\Client\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOfferAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class ImagesAndAttachmentsApi
      *
      * Create an offer attachment
      *
-     * @param  \OpenAPI\Client\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOfferAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class ImagesAndAttachmentsApi
      */
     public function createOfferAttachmentUsingPOSTAsyncWithHttpInfo($offer_attachment_request, string $contentType = self::contentTypes['createOfferAttachmentUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferAttachment';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferAttachment';
         $request = $this->createOfferAttachmentUsingPOSTRequest($offer_attachment_request, $contentType);
 
         return $this->client
@@ -352,7 +352,7 @@ class ImagesAndAttachmentsApi
     /**
      * Create request for operation 'createOfferAttachmentUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAttachmentRequest $offer_attachment_request offer attachment (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOfferAttachmentUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -464,9 +464,9 @@ class ImagesAndAttachmentsApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferAttachment
+     * @return \robsonek\phpAllegroApi\Model\OfferAttachment
      */
     public function uploadOfferAttachmentUsingPUT($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferAttachmentUsingPUT'][0])
     {
@@ -494,9 +494,9 @@ class ImagesAndAttachmentsApi
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferAttachmentUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferAttachment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferAttachment, HTTP status code, HTTP response headers (array of strings)
      */
     public function uploadOfferAttachmentUsingPUTWithHttpInfo($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferAttachmentUsingPUT'][0])
     {
@@ -527,11 +527,11 @@ class ImagesAndAttachmentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferAttachment' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferAttachment' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferAttachment' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferAttachment' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -549,7 +549,7 @@ class ImagesAndAttachmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferAttachment', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferAttachment', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -568,7 +568,7 @@ class ImagesAndAttachmentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferAttachment';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferAttachment';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -601,7 +601,7 @@ class ImagesAndAttachmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferAttachment',
+                        '\robsonek\phpAllegroApi\Model\OfferAttachment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -669,7 +669,7 @@ class ImagesAndAttachmentsApi
      */
     public function uploadOfferAttachmentUsingPUTAsyncWithHttpInfo($attachment_id, $body = null, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferAttachmentUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferAttachment';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferAttachment';
         $request = $this->uploadOfferAttachmentUsingPUTRequest($attachment_id, $body, $hostIndex, $variables, $contentType);
 
         return $this->client
@@ -873,14 +873,14 @@ class ImagesAndAttachmentsApi
      *        - allegro.pl
      *        - allegro.pl.allegrosandbox.pl
      *
-     * @param  \OpenAPI\Client\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request offer_image_link_upload_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request offer_image_link_upload_request (required)
      * @param  null|int $hostIndex Host index. Defaults to null. If null, then the library will use $this->hostIndex instead
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferImageUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferImageUploadResponse
+     * @return \robsonek\phpAllegroApi\Model\OfferImageUploadResponse
      */
     public function uploadOfferImageUsingPOST($offer_image_link_upload_request, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferImageUsingPOST'][0])
     {
@@ -902,14 +902,14 @@ class ImagesAndAttachmentsApi
      *        - allegro.pl
      *        - allegro.pl.allegrosandbox.pl
      *
-     * @param  \OpenAPI\Client\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
      * @param  null|int $hostIndex Host index. Defaults to null. If null, then the library will use $this->hostIndex instead
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferImageUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferImageUploadResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\OfferImageUploadResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function uploadOfferImageUsingPOSTWithHttpInfo($offer_image_link_upload_request, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferImageUsingPOST'][0])
     {
@@ -940,11 +940,11 @@ class ImagesAndAttachmentsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\OfferImageUploadResponse' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\OfferImageUploadResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OfferImageUploadResponse' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\OfferImageUploadResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -962,7 +962,7 @@ class ImagesAndAttachmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferImageUploadResponse', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\OfferImageUploadResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -981,7 +981,7 @@ class ImagesAndAttachmentsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferImageUploadResponse';
+            $returnType = '\robsonek\phpAllegroApi\Model\OfferImageUploadResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1014,7 +1014,7 @@ class ImagesAndAttachmentsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferImageUploadResponse',
+                        '\robsonek\phpAllegroApi\Model\OfferImageUploadResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1038,7 +1038,7 @@ class ImagesAndAttachmentsApi
      *        - allegro.pl
      *        - allegro.pl.allegrosandbox.pl
      *
-     * @param  \OpenAPI\Client\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
      * @param  null|int $hostIndex Host index. Defaults to null. If null, then the library will use $this->hostIndex instead
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferImageUsingPOST'] to see the possible values for this operation
@@ -1070,7 +1070,7 @@ class ImagesAndAttachmentsApi
      *        - allegro.pl
      *        - allegro.pl.allegrosandbox.pl
      *
-     * @param  \OpenAPI\Client\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
      * @param  null|int $hostIndex Host index. Defaults to null. If null, then the library will use $this->hostIndex instead
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferImageUsingPOST'] to see the possible values for this operation
@@ -1080,7 +1080,7 @@ class ImagesAndAttachmentsApi
      */
     public function uploadOfferImageUsingPOSTAsyncWithHttpInfo($offer_image_link_upload_request, ?int $hostIndex = null, array $variables = [], string $contentType = self::contentTypes['uploadOfferImageUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OfferImageUploadResponse';
+        $returnType = '\robsonek\phpAllegroApi\Model\OfferImageUploadResponse';
         $request = $this->uploadOfferImageUsingPOSTRequest($offer_image_link_upload_request, $hostIndex, $variables, $contentType);
 
         return $this->client
@@ -1131,7 +1131,7 @@ class ImagesAndAttachmentsApi
      *        - allegro.pl
      *        - allegro.pl.allegrosandbox.pl
      *
-     * @param  \OpenAPI\Client\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferImageLinkUploadRequest $offer_image_link_upload_request (required)
      * @param  null|int $hostIndex Host index. Defaults to null. If null, then the library will use $this->hostIndex instead
      * @param  array $variables Associative array of variables to pass to the host. Defaults to empty array.
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['uploadOfferImageUsingPOST'] to see the possible values for this operation

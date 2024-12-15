@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CategoryDto Class Doc Comment
  *
  * @category Class
  * @description The category data.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class CategoryDto implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'leaf' => 'bool',
         'name' => 'string',
-        'options' => '\OpenAPI\Client\Model\CategoryOptionsDto',
-        'parent' => '\OpenAPI\Client\Model\CategoryDtoParent'
+        'options' => '\robsonek\phpAllegroApi\Model\CategoryOptionsDto',
+        'parent' => '\robsonek\phpAllegroApi\Model\CategoryDtoParent'
     ];
 
     /**
@@ -402,7 +402,7 @@ class CategoryDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets options
      *
-     * @return \OpenAPI\Client\Model\CategoryOptionsDto|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryOptionsDto|null
      */
     public function getOptions()
     {
@@ -412,7 +412,7 @@ class CategoryDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets options
      *
-     * @param \OpenAPI\Client\Model\CategoryOptionsDto|null $options options
+     * @param \robsonek\phpAllegroApi\Model\CategoryOptionsDto|null $options options
      *
      * @return self
      */
@@ -429,7 +429,7 @@ class CategoryDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parent
      *
-     * @return \OpenAPI\Client\Model\CategoryDtoParent|null
+     * @return \robsonek\phpAllegroApi\Model\CategoryDtoParent|null
      */
     public function getParent()
     {
@@ -439,7 +439,7 @@ class CategoryDto implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parent
      *
-     * @param \OpenAPI\Client\Model\CategoryDtoParent|null $parent parent
+     * @param \robsonek\phpAllegroApi\Model\CategoryDtoParent|null $parent parent
      *
      * @return self
      */

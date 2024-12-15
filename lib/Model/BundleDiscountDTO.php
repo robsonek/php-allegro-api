@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BundleDiscountDTO Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class BundleDiscountDTO implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\OpenAPI\Client\Model\BundleMarketplaceDTO',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\BundleMarketplaceDTO',
         'amount' => 'string',
         'currency' => 'string'
     ];
@@ -315,7 +315,7 @@ class BundleDiscountDTO implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\BundleMarketplaceDTO
+     * @return \robsonek\phpAllegroApi\Model\BundleMarketplaceDTO
      */
     public function getMarketplace()
     {
@@ -325,7 +325,7 @@ class BundleDiscountDTO implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\BundleMarketplaceDTO $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\BundleMarketplaceDTO $marketplace marketplace
      *
      * @return self
      */

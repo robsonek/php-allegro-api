@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * FulfillmentParcelsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,9 +130,9 @@ class FulfillmentParcelsApi
      * @param  string $order_id The Allegro&#39;s platform order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFulfillmentOrderParcels'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FulfillmentOrder
+     * @return \robsonek\phpAllegroApi\Model\FulfillmentOrder
      */
     public function getFulfillmentOrderParcels($order_id, string $contentType = self::contentTypes['getFulfillmentOrderParcels'][0])
     {
@@ -148,9 +148,9 @@ class FulfillmentParcelsApi
      * @param  string $order_id The Allegro&#39;s platform order identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFulfillmentOrderParcels'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FulfillmentOrder, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\FulfillmentOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFulfillmentOrderParcelsWithHttpInfo($order_id, string $contentType = self::contentTypes['getFulfillmentOrderParcels'][0])
     {
@@ -181,11 +181,11 @@ class FulfillmentParcelsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FulfillmentOrder' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\FulfillmentOrder' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FulfillmentOrder' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\FulfillmentOrder' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -203,7 +203,7 @@ class FulfillmentParcelsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FulfillmentOrder', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\FulfillmentOrder', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -222,7 +222,7 @@ class FulfillmentParcelsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FulfillmentOrder';
+            $returnType = '\robsonek\phpAllegroApi\Model\FulfillmentOrder';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -255,7 +255,7 @@ class FulfillmentParcelsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FulfillmentOrder',
+                        '\robsonek\phpAllegroApi\Model\FulfillmentOrder',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -299,7 +299,7 @@ class FulfillmentParcelsApi
      */
     public function getFulfillmentOrderParcelsAsyncWithHttpInfo($order_id, string $contentType = self::contentTypes['getFulfillmentOrderParcels'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FulfillmentOrder';
+        $returnType = '\robsonek\phpAllegroApi\Model\FulfillmentOrder';
         $request = $this->getFulfillmentOrderParcelsRequest($order_id, $contentType);
 
         return $this->client

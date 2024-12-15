@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ParcelItemDetailsWithWaybill Class Doc Comment
  *
  * @category Class
  * @description Parcel item details.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'waybill' => 'string',
-        'dimensions' => '\OpenAPI\Client\Model\ParcelItemDetailsWithWaybillDimensions',
-        'weight' => '\OpenAPI\Client\Model\ParcelItemDetailsWithWaybillWeight',
+        'dimensions' => '\robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillDimensions',
+        'weight' => '\robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillWeight',
         'description' => 'string',
-        'value' => '\OpenAPI\Client\Model\ParcelItemDetailsWithWaybillValue',
+        'value' => '\robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillValue',
         'type' => 'string'
     ];
 
@@ -381,7 +381,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets dimensions
      *
-     * @return \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillDimensions|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillDimensions|null
      */
     public function getDimensions()
     {
@@ -391,7 +391,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets dimensions
      *
-     * @param \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillDimensions|null $dimensions dimensions
+     * @param \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillDimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets weight
      *
-     * @return \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillWeight|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillWeight|null
      */
     public function getWeight()
     {
@@ -418,7 +418,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets weight
      *
-     * @param \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillWeight|null $weight weight
+     * @param \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillWeight|null $weight weight
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets value
      *
-     * @return \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillValue|null
+     * @return \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillValue|null
      */
     public function getValue()
     {
@@ -472,7 +472,7 @@ class ParcelItemDetailsWithWaybill implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets value
      *
-     * @param \OpenAPI\Client\Model\ParcelItemDetailsWithWaybillValue|null $value value
+     * @param \robsonek\phpAllegroApi\Model\ParcelItemDetailsWithWaybillValue|null $value value
      *
      * @return self
      */

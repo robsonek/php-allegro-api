@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ProductChangeProposalRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     protected static $openAPITypes = [
         'name' => 'string',
         'note' => 'string',
-        'category' => '\OpenAPI\Client\Model\Category',
-        'images' => '\OpenAPI\Client\Model\ImageUrl[]',
-        'parameters' => '\OpenAPI\Client\Model\ProductParameter[]',
+        'category' => '\robsonek\phpAllegroApi\Model\Category',
+        'images' => '\robsonek\phpAllegroApi\Model\ImageUrl[]',
+        'parameters' => '\robsonek\phpAllegroApi\Model\ProductParameter[]',
         'notify_via_email_after_verification' => 'bool',
         'language' => 'string'
     ];
@@ -419,7 +419,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets category
      *
-     * @return \OpenAPI\Client\Model\Category
+     * @return \robsonek\phpAllegroApi\Model\Category
      */
     public function getCategory()
     {
@@ -429,7 +429,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets category
      *
-     * @param \OpenAPI\Client\Model\Category $category Product category
+     * @param \robsonek\phpAllegroApi\Model\Category $category Product category
      *
      * @return self
      */
@@ -446,7 +446,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets images
      *
-     * @return \OpenAPI\Client\Model\ImageUrl[]
+     * @return \robsonek\phpAllegroApi\Model\ImageUrl[]
      */
     public function getImages()
     {
@@ -456,7 +456,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets images
      *
-     * @param \OpenAPI\Client\Model\ImageUrl[] $images List of product images. At least one image is required.
+     * @param \robsonek\phpAllegroApi\Model\ImageUrl[] $images List of product images. At least one image is required.
      *
      * @return self
      */
@@ -473,7 +473,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ProductParameter[]
+     * @return \robsonek\phpAllegroApi\Model\ProductParameter[]
      */
     public function getParameters()
     {
@@ -483,7 +483,7 @@ class ProductChangeProposalRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ProductParameter[] $parameters List of product parameters.
+     * @param \robsonek\phpAllegroApi\Model\ProductParameter[] $parameters List of product parameters.
      *
      * @return self
      */

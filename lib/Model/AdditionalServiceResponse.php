@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdditionalServiceResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class AdditionalServiceResponse implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'configurations' => '\OpenAPI\Client\Model\Configuration[]',
-        'definition' => '\OpenAPI\Client\Model\BasicDefinitionResponse',
+        'configurations' => '\robsonek\phpAllegroApi\Model\Configuration[]',
+        'definition' => '\robsonek\phpAllegroApi\Model\BasicDefinitionResponse',
         'description' => 'string'
     ];
 
@@ -306,7 +306,7 @@ class AdditionalServiceResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets configurations
      *
-     * @return \OpenAPI\Client\Model\Configuration[]|null
+     * @return \robsonek\phpAllegroApi\Model\Configuration[]|null
      */
     public function getConfigurations()
     {
@@ -316,7 +316,7 @@ class AdditionalServiceResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets configurations
      *
-     * @param \OpenAPI\Client\Model\Configuration[]|null $configurations configurations
+     * @param \robsonek\phpAllegroApi\Model\Configuration[]|null $configurations configurations
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class AdditionalServiceResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets definition
      *
-     * @return \OpenAPI\Client\Model\BasicDefinitionResponse|null
+     * @return \robsonek\phpAllegroApi\Model\BasicDefinitionResponse|null
      */
     public function getDefinition()
     {
@@ -343,7 +343,7 @@ class AdditionalServiceResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets definition
      *
-     * @param \OpenAPI\Client\Model\BasicDefinitionResponse|null $definition definition
+     * @param \robsonek\phpAllegroApi\Model\BasicDefinitionResponse|null $definition definition
      *
      * @return self
      */

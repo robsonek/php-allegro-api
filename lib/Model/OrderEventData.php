@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * OrderEventData Class Doc Comment
  *
  * @category Class
  * @description Order event data
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,11 +58,11 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'seller' => '\OpenAPI\Client\Model\SellerReference',
-        'buyer' => '\OpenAPI\Client\Model\BuyerReference',
-        'line_items' => '\OpenAPI\Client\Model\OrderLineItem[]',
-        'checkout_form' => '\OpenAPI\Client\Model\CheckoutFormReference',
-        'marketplace' => '\OpenAPI\Client\Model\OrderMarketplace'
+        'seller' => '\robsonek\phpAllegroApi\Model\SellerReference',
+        'buyer' => '\robsonek\phpAllegroApi\Model\BuyerReference',
+        'line_items' => '\robsonek\phpAllegroApi\Model\OrderLineItem[]',
+        'checkout_form' => '\robsonek\phpAllegroApi\Model\CheckoutFormReference',
+        'marketplace' => '\robsonek\phpAllegroApi\Model\OrderMarketplace'
     ];
 
     /**
@@ -330,7 +330,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \OpenAPI\Client\Model\SellerReference
+     * @return \robsonek\phpAllegroApi\Model\SellerReference
      */
     public function getSeller()
     {
@@ -340,7 +340,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \OpenAPI\Client\Model\SellerReference $seller seller
+     * @param \robsonek\phpAllegroApi\Model\SellerReference $seller seller
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buyer
      *
-     * @return \OpenAPI\Client\Model\BuyerReference
+     * @return \robsonek\phpAllegroApi\Model\BuyerReference
      */
     public function getBuyer()
     {
@@ -367,7 +367,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buyer
      *
-     * @param \OpenAPI\Client\Model\BuyerReference $buyer buyer
+     * @param \robsonek\phpAllegroApi\Model\BuyerReference $buyer buyer
      *
      * @return self
      */
@@ -384,7 +384,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets line_items
      *
-     * @return \OpenAPI\Client\Model\OrderLineItem[]
+     * @return \robsonek\phpAllegroApi\Model\OrderLineItem[]
      */
     public function getLineItems()
     {
@@ -394,7 +394,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets line_items
      *
-     * @param \OpenAPI\Client\Model\OrderLineItem[] $line_items line_items
+     * @param \robsonek\phpAllegroApi\Model\OrderLineItem[] $line_items line_items
      *
      * @return self
      */
@@ -411,7 +411,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets checkout_form
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormReference|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormReference|null
      */
     public function getCheckoutForm()
     {
@@ -421,7 +421,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets checkout_form
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormReference|null $checkout_form checkout_form
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormReference|null $checkout_form checkout_form
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketplace
      *
-     * @return \OpenAPI\Client\Model\OrderMarketplace|null
+     * @return \robsonek\phpAllegroApi\Model\OrderMarketplace|null
      */
     public function getMarketplace()
     {
@@ -448,7 +448,7 @@ class OrderEventData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketplace
      *
-     * @param \OpenAPI\Client\Model\OrderMarketplace|null $marketplace marketplace
+     * @param \robsonek\phpAllegroApi\Model\OrderMarketplace|null $marketplace marketplace
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ReturnPolicyAvailability Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ReturnPolicyAvailability implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'range' => 'string',
-        'restriction_cause' => '\OpenAPI\Client\Model\RestrictionCause'
+        'restriction_cause' => '\robsonek\phpAllegroApi\Model\RestrictionCause'
     ];
 
     /**
@@ -362,7 +362,7 @@ class ReturnPolicyAvailability implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets restriction_cause
      *
-     * @return \OpenAPI\Client\Model\RestrictionCause|null
+     * @return \robsonek\phpAllegroApi\Model\RestrictionCause|null
      */
     public function getRestrictionCause()
     {
@@ -372,7 +372,7 @@ class ReturnPolicyAvailability implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets restriction_cause
      *
-     * @param \OpenAPI\Client\Model\RestrictionCause|null $restriction_cause restriction_cause
+     * @param \robsonek\phpAllegroApi\Model\RestrictionCause|null $restriction_cause restriction_cause
      *
      * @return self
      */

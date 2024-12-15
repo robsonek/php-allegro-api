@@ -1,4 +1,4 @@
-# OpenAPI\Client\OfferVariantsApi
+# robsonek\phpAllegroApi\OfferVariantsApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `createVariantSet()`
 
 ```php
-createVariantSet($variant_set): \OpenAPI\Client\Model\VariantSetResponse
+createVariantSet($variant_set): \robsonek\phpAllegroApi\Model\VariantSetResponse
 ```
 
 Create variant set
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferVariantsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferVariantsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$variant_set = {"name":"t-shirt","offers":[{"id":"2"},{"id":"3"}],"parameters":[{"id":"21"}]}; // \OpenAPI\Client\Model\VariantSet
+$variant_set = {"name":"t-shirt","offers":[{"id":"2"},{"id":"3"}],"parameters":[{"id":"21"}]}; // \robsonek\phpAllegroApi\Model\VariantSet
 
 try {
     $result = $apiInstance->createVariantSet($variant_set);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **variant_set** | [**\OpenAPI\Client\Model\VariantSet**](../Model/VariantSet.md)|  | |
+| **variant_set** | [**\robsonek\phpAllegroApi\Model\VariantSet**](../Model/VariantSet.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
+[**\robsonek\phpAllegroApi\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
 
 ### Authorization
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferVariantsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferVariantsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ void (empty response body)
 ## `getVariantSet()`
 
 ```php
-getVariantSet($set_id): \OpenAPI\Client\Model\VariantSetResponse
+getVariantSet($set_id): \robsonek\phpAllegroApi\Model\VariantSetResponse
 ```
 
 Get a variant set
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferVariantsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferVariantsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
+[**\robsonek\phpAllegroApi\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ try {
 ## `getVariantSets()`
 
 ```php
-getVariantSets($offset, $limit, $query): \OpenAPI\Client\Model\VariantSets
+getVariantSets($offset, $limit, $query): \robsonek\phpAllegroApi\Model\VariantSets
 ```
 
 Get the user's variant sets
@@ -208,10 +208,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferVariantsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferVariantsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\VariantSets**](../Model/VariantSets.md)
+[**\robsonek\phpAllegroApi\Model\VariantSets**](../Model/VariantSets.md)
 
 ### Authorization
 
@@ -257,7 +257,7 @@ try {
 ## `updateVariantSet()`
 
 ```php
-updateVariantSet($set_id, $variant_set): \OpenAPI\Client\Model\VariantSetResponse
+updateVariantSet($set_id, $variant_set): \robsonek\phpAllegroApi\Model\VariantSetResponse
 ```
 
 Update variant set
@@ -272,17 +272,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OfferVariantsApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OfferVariantsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $set_id = 'set_id_example'; // string | Variant set identifier.
-$variant_set = {"name":"t-shirt","offers":[{"id":"2"},{"id":"3"}],"parameters":[{"id":"21"}]}; // \OpenAPI\Client\Model\VariantSet
+$variant_set = {"name":"t-shirt","offers":[{"id":"2"},{"id":"3"}],"parameters":[{"id":"21"}]}; // \robsonek\phpAllegroApi\Model\VariantSet
 
 try {
     $result = $apiInstance->updateVariantSet($set_id, $variant_set);
@@ -297,11 +297,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **set_id** | **string**| Variant set identifier. | |
-| **variant_set** | [**\OpenAPI\Client\Model\VariantSet**](../Model/VariantSet.md)|  | |
+| **variant_set** | [**\robsonek\phpAllegroApi\Model\VariantSet**](../Model/VariantSet.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
+[**\robsonek\phpAllegroApi\Model\VariantSetResponse**](../Model/VariantSetResponse.md)
 
 ### Authorization
 

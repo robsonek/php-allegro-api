@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * CheckoutFormsOrderInvoices Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CheckoutFormsOrderInvoices implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invoices' => '\OpenAPI\Client\Model\CheckoutFormsOrderInvoice[]',
+        'invoices' => '\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoice[]',
         'has_external_invoices' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class CheckoutFormsOrderInvoices implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets invoices
      *
-     * @return \OpenAPI\Client\Model\CheckoutFormsOrderInvoice[]|null
+     * @return \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoice[]|null
      */
     public function getInvoices()
     {
@@ -309,7 +309,7 @@ class CheckoutFormsOrderInvoices implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets invoices
      *
-     * @param \OpenAPI\Client\Model\CheckoutFormsOrderInvoice[]|null $invoices invoices
+     * @param \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoice[]|null $invoices invoices
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\OrderManagementApi
+# robsonek\phpAllegroApi\OrderManagementApi
 
 All URIs are relative to https://api.allegro.pl, except if the operation defines another base path.
 
@@ -22,7 +22,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 ## `addOrderInvoicesMetadata()`
 
 ```php
-addOrderInvoicesMetadata($id, $check_forms_new_order_invoice): \OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId
+addOrderInvoicesMetadata($id, $check_forms_new_order_invoice): \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId
 ```
 
 Post new invoice
@@ -37,17 +37,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Order identifier.
-$check_forms_new_order_invoice = new \OpenAPI\Client\Model\CheckFormsNewOrderInvoice(); // \OpenAPI\Client\Model\CheckFormsNewOrderInvoice | request
+$check_forms_new_order_invoice = new \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice(); // \robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice | request
 
 try {
     $result = $apiInstance->addOrderInvoicesMetadata($id, $check_forms_new_order_invoice);
@@ -62,11 +62,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Order identifier. | |
-| **check_forms_new_order_invoice** | [**\OpenAPI\Client\Model\CheckFormsNewOrderInvoice**](../Model/CheckFormsNewOrderInvoice.md)| request | |
+| **check_forms_new_order_invoice** | [**\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoice**](../Model/CheckFormsNewOrderInvoice.md)| request | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckFormsNewOrderInvoiceId**](../Model/CheckFormsNewOrderInvoiceId.md)
+[**\robsonek\phpAllegroApi\Model\CheckFormsNewOrderInvoiceId**](../Model/CheckFormsNewOrderInvoiceId.md)
 
 ### Authorization
 
@@ -84,7 +84,7 @@ try {
 ## `createOrderShipmentsUsingPOST()`
 
 ```php
-createOrderShipmentsUsingPOST($id, $checkout_form_add_waybill_request): \OpenAPI\Client\Model\CheckoutFormAddWaybillCreated
+createOrderShipmentsUsingPOST($id, $checkout_form_add_waybill_request): \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated
 ```
 
 Add a parcel tracking number
@@ -99,17 +99,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Order identifier.
-$checkout_form_add_waybill_request = new \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest(); // \OpenAPI\Client\Model\CheckoutFormAddWaybillRequest | request
+$checkout_form_add_waybill_request = new \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest(); // \robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest | request
 
 try {
     $result = $apiInstance->createOrderShipmentsUsingPOST($id, $checkout_form_add_waybill_request);
@@ -124,11 +124,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Order identifier. | |
-| **checkout_form_add_waybill_request** | [**\OpenAPI\Client\Model\CheckoutFormAddWaybillRequest**](../Model/CheckoutFormAddWaybillRequest.md)| request | |
+| **checkout_form_add_waybill_request** | [**\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillRequest**](../Model/CheckoutFormAddWaybillRequest.md)| request | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckoutFormAddWaybillCreated**](../Model/CheckoutFormAddWaybillCreated.md)
+[**\robsonek\phpAllegroApi\Model\CheckoutFormAddWaybillCreated**](../Model/CheckoutFormAddWaybillCreated.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ try {
 ## `getAllegroPickupDropOffPointsGET()`
 
 ```php
-getAllegroPickupDropOffPointsGET($carriers, $if_modified_since): \OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse
+getAllegroPickupDropOffPointsGET($carriers, $if_modified_since): \robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse
 ```
 
 Get Allegro pickup drop off points
@@ -161,19 +161,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$carriers = array(new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllegroCarrier()); // \OpenAPI\Client\Model\AllegroCarrier[] | List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned.
+$carriers = array(new \robsonek\phpAllegroApi\Model\\robsonek\phpAllegroApi\Model\AllegroCarrier()); // \robsonek\phpAllegroApi\Model\AllegroCarrier[] | List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned.
 $if_modified_since = Sat, 01 Dec 2018 10:00:00 GMT; // string | Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - `Last-Modified`.
 
 try {
@@ -188,12 +188,12 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **carriers** | [**\OpenAPI\Client\Model\AllegroCarrier[]**](../Model/\OpenAPI\Client\Model\AllegroCarrier.md)| List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. | [optional] |
+| **carriers** | [**\robsonek\phpAllegroApi\Model\AllegroCarrier[]**](../Model/\robsonek\phpAllegroApi\Model\AllegroCarrier.md)| List of carrier ids to filter the drop off/pick up points to only the ones where any of the listed carriers operate. In case of an empty list, all points are returned. | [optional] |
 | **if_modified_since** | **string**| Date of last data modification. If data has been modified after specified date, full set of data is returned. If header is not specified, full set of data is returned. Date has to be provided in HTTP-date format. Information about date (the same HTTP-date format) of last modified data is available in response - &#x60;Last-Modified&#x60;. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\AllegroPickupDropOffPointsResponse**](../Model/AllegroPickupDropOffPointsResponse.md)
+[**\robsonek\phpAllegroApi\Model\AllegroPickupDropOffPointsResponse**](../Model/AllegroPickupDropOffPointsResponse.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ try {
 ## `getListOfOrdersUsingGET()`
 
 ```php
-getListOfOrdersUsingGET($offset, $limit, $status, $fulfillment_status, $fulfillment_shipment_summary_line_items_sent, $line_items_bought_at_lte, $line_items_bought_at_gte, $payment_id, $surcharges_id, $delivery_method_id, $buyer_login, $marketplace_id, $updated_at_lte, $updated_at_gte, $sort): \OpenAPI\Client\Model\CheckoutForms
+getListOfOrdersUsingGET($offset, $limit, $status, $fulfillment_status, $fulfillment_shipment_summary_line_items_sent, $line_items_bought_at_lte, $line_items_bought_at_gte, $payment_id, $surcharges_id, $delivery_method_id, $buyer_login, $marketplace_id, $updated_at_lte, $updated_at_gte, $sort): \robsonek\phpAllegroApi\Model\CheckoutForms
 ```
 
 Get the user's orders
@@ -226,10 +226,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -281,7 +281,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckoutForms**](../Model/CheckoutForms.md)
+[**\robsonek\phpAllegroApi\Model\CheckoutForms**](../Model/CheckoutForms.md)
 
 ### Authorization
 
@@ -299,7 +299,7 @@ try {
 ## `getOrderEventsStatisticsUsingGET()`
 
 ```php
-getOrderEventsStatisticsUsingGET(): \OpenAPI\Client\Model\OrderEventStats
+getOrderEventsStatisticsUsingGET(): \robsonek\phpAllegroApi\Model\OrderEventStats
 ```
 
 Get order events statistics
@@ -314,10 +314,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -338,7 +338,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OrderEventStats**](../Model/OrderEventStats.md)
+[**\robsonek\phpAllegroApi\Model\OrderEventStats**](../Model/OrderEventStats.md)
 
 ### Authorization
 
@@ -356,7 +356,7 @@ This endpoint does not need any parameter.
 ## `getOrderEventsUsingGET()`
 
 ```php
-getOrderEventsUsingGET($from, $type, $limit): \OpenAPI\Client\Model\OrderEventsList
+getOrderEventsUsingGET($from, $type, $limit): \robsonek\phpAllegroApi\Model\OrderEventsList
 ```
 
 Get order events
@@ -371,10 +371,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -402,7 +402,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OrderEventsList**](../Model/OrderEventsList.md)
+[**\robsonek\phpAllegroApi\Model\OrderEventsList**](../Model/OrderEventsList.md)
 
 ### Authorization
 
@@ -420,7 +420,7 @@ try {
 ## `getOrderInvoicesDetails()`
 
 ```php
-getOrderInvoicesDetails($id): \OpenAPI\Client\Model\CheckoutFormsOrderInvoices
+getOrderInvoicesDetails($id): \robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices
 ```
 
 Get order invoices details
@@ -435,10 +435,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -462,7 +462,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckoutFormsOrderInvoices**](../Model/CheckoutFormsOrderInvoices.md)
+[**\robsonek\phpAllegroApi\Model\CheckoutFormsOrderInvoices**](../Model/CheckoutFormsOrderInvoices.md)
 
 ### Authorization
 
@@ -480,7 +480,7 @@ try {
 ## `getOrderShipmentsUsingGET()`
 
 ```php
-getOrderShipmentsUsingGET($id): \OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse
+getOrderShipmentsUsingGET($id): \robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse
 ```
 
 Get a list of parcel tracking numbers
@@ -495,10 +495,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -522,7 +522,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckoutFormOrderWaybillResponse**](../Model/CheckoutFormOrderWaybillResponse.md)
+[**\robsonek\phpAllegroApi\Model\CheckoutFormOrderWaybillResponse**](../Model/CheckoutFormOrderWaybillResponse.md)
 
 ### Authorization
 
@@ -540,7 +540,7 @@ try {
 ## `getOrdersCarriersUsingGET()`
 
 ```php
-getOrdersCarriersUsingGET(): \OpenAPI\Client\Model\OrdersShippingCarriersResponse
+getOrdersCarriersUsingGET(): \robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse
 ```
 
 Get a list of available shipping carriers
@@ -555,13 +555,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -582,7 +582,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OrdersShippingCarriersResponse**](../Model/OrdersShippingCarriersResponse.md)
+[**\robsonek\phpAllegroApi\Model\OrdersShippingCarriersResponse**](../Model/OrdersShippingCarriersResponse.md)
 
 ### Authorization
 
@@ -600,7 +600,7 @@ This endpoint does not need any parameter.
 ## `getOrdersDetailsUsingGET()`
 
 ```php
-getOrdersDetailsUsingGET($id): \OpenAPI\Client\Model\CheckoutForm
+getOrdersDetailsUsingGET($id): \robsonek\phpAllegroApi\Model\CheckoutForm
 ```
 
 Get an order's details
@@ -615,10 +615,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -642,7 +642,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CheckoutForm**](../Model/CheckoutForm.md)
+[**\robsonek\phpAllegroApi\Model\CheckoutForm**](../Model/CheckoutForm.md)
 
 ### Authorization
 
@@ -660,7 +660,7 @@ try {
 ## `getParcelTrackingUsingGET()`
 
 ```php
-getParcelTrackingUsingGET($carrier_id, $waybill): \OpenAPI\Client\Model\CarrierParcelTrackingResponse
+getParcelTrackingUsingGET($carrier_id, $waybill): \robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse
 ```
 
 Get carrier parcel tracking history
@@ -675,13 +675,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: bearer-token-for-application
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -707,7 +707,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CarrierParcelTrackingResponse**](../Model/CarrierParcelTrackingResponse.md)
+[**\robsonek\phpAllegroApi\Model\CarrierParcelTrackingResponse**](../Model/CarrierParcelTrackingResponse.md)
 
 ### Authorization
 
@@ -740,17 +740,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Order identifier.
-$checkout_form_fulfillment = new \OpenAPI\Client\Model\CheckoutFormFulfillment(); // \OpenAPI\Client\Model\CheckoutFormFulfillment | request
+$checkout_form_fulfillment = new \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment(); // \robsonek\phpAllegroApi\Model\CheckoutFormFulfillment | request
 $checkout_form_revision = 819b5836; // string | Checkout form revision.
 
 try {
@@ -765,7 +765,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Order identifier. | |
-| **checkout_form_fulfillment** | [**\OpenAPI\Client\Model\CheckoutFormFulfillment**](../Model/CheckoutFormFulfillment.md)| request | |
+| **checkout_form_fulfillment** | [**\robsonek\phpAllegroApi\Model\CheckoutFormFulfillment**](../Model/CheckoutFormFulfillment.md)| request | |
 | **checkout_form_revision** | **string**| Checkout form revision. | [optional] |
 
 ### Return type
@@ -803,10 +803,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: bearer-token-for-user
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\OrderManagementApi(
+$apiInstance = new robsonek\phpAllegroApi\Api\OrderManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

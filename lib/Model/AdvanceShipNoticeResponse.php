@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * AdvanceShipNoticeResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,13 +59,13 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     protected static $openAPITypes = [
         'id' => 'string',
         'display_number' => 'string',
-        'status' => '\OpenAPI\Client\Model\AdvanceShipNoticeStatus',
+        'status' => '\robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus',
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
-        'items' => '\OpenAPI\Client\Model\ProductItem[]',
-        'handling_unit' => '\OpenAPI\Client\Model\HandlingUnit',
-        'labels' => '\OpenAPI\Client\Model\Labels',
-        'shipping' => '\OpenAPI\Client\Model\Shipping',
+        'items' => '\robsonek\phpAllegroApi\Model\ProductItem[]',
+        'handling_unit' => '\robsonek\phpAllegroApi\Model\HandlingUnit',
+        'labels' => '\robsonek\phpAllegroApi\Model\Labels',
+        'shipping' => '\robsonek\phpAllegroApi\Model\Shipping',
         'submitted_at' => '\DateTime'
     ];
 
@@ -427,7 +427,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\AdvanceShipNoticeStatus
+     * @return \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus
      */
     public function getStatus()
     {
@@ -437,7 +437,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\AdvanceShipNoticeStatus $status status
+     * @param \robsonek\phpAllegroApi\Model\AdvanceShipNoticeStatus $status status
      *
      * @return self
      */
@@ -508,7 +508,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\ProductItem[]
+     * @return \robsonek\phpAllegroApi\Model\ProductItem[]
      */
     public function getItems()
     {
@@ -518,7 +518,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\ProductItem[] $items A list of product items.
+     * @param \robsonek\phpAllegroApi\Model\ProductItem[] $items A list of product items.
      *
      * @return self
      */
@@ -535,7 +535,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets handling_unit
      *
-     * @return \OpenAPI\Client\Model\HandlingUnit|null
+     * @return \robsonek\phpAllegroApi\Model\HandlingUnit|null
      */
     public function getHandlingUnit()
     {
@@ -545,7 +545,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets handling_unit
      *
-     * @param \OpenAPI\Client\Model\HandlingUnit|null $handling_unit handling_unit
+     * @param \robsonek\phpAllegroApi\Model\HandlingUnit|null $handling_unit handling_unit
      *
      * @return self
      */
@@ -562,7 +562,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets labels
      *
-     * @return \OpenAPI\Client\Model\Labels|null
+     * @return \robsonek\phpAllegroApi\Model\Labels|null
      */
     public function getLabels()
     {
@@ -572,7 +572,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets labels
      *
-     * @param \OpenAPI\Client\Model\Labels|null $labels labels
+     * @param \robsonek\phpAllegroApi\Model\Labels|null $labels labels
      *
      * @return self
      */
@@ -589,7 +589,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets shipping
      *
-     * @return \OpenAPI\Client\Model\Shipping|null
+     * @return \robsonek\phpAllegroApi\Model\Shipping|null
      */
     public function getShipping()
     {
@@ -599,7 +599,7 @@ class AdvanceShipNoticeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets shipping
      *
-     * @param \OpenAPI\Client\Model\Shipping|null $shipping shipping
+     * @param \robsonek\phpAllegroApi\Model\Shipping|null $shipping shipping
      *
      * @return self
      */

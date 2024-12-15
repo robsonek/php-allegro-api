@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraints Class Doc Comment
  *
  * @category Class
  * @description Rules for the delivery method, i.e. price, quantity, shipping time, etc.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
       */
     protected static $openAPITypes = [
         'allowed' => 'bool',
-        'max_quantity_per_package' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage',
-        'max_package_weight' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight',
-        'first_item_rate' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate',
-        'next_item_rate' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate',
-        'shipping_time' => '\OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime'
+        'max_quantity_per_package' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage',
+        'max_package_weight' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight',
+        'first_item_rate' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate',
+        'next_item_rate' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate',
+        'shipping_time' => '\robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime'
     ];
 
     /**
@@ -355,7 +355,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets max_quantity_per_package
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage|null
      */
     public function getMaxQuantityPerPackage()
     {
@@ -365,7 +365,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets max_quantity_per_package
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage|null $max_quantity_per_package max_quantity_per_package
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxQuantityPerPackage|null $max_quantity_per_package max_quantity_per_package
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets max_package_weight
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight|null
      */
     public function getMaxPackageWeight()
     {
@@ -392,7 +392,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets max_package_weight
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight|null $max_package_weight max_package_weight
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsMaxPackageWeight|null $max_package_weight max_package_weight
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets first_item_rate
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate|null
      */
     public function getFirstItemRate()
     {
@@ -419,7 +419,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets first_item_rate
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate|null $first_item_rate first_item_rate
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsFirstItemRate|null $first_item_rate first_item_rate
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets next_item_rate
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate|null
      */
     public function getNextItemRate()
     {
@@ -446,7 +446,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets next_item_rate
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate|null $next_item_rate next_item_rate
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsNextItemRate|null $next_item_rate next_item_rate
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Gets shipping_time
      *
-     * @return \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime|null
+     * @return \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime|null
      */
     public function getShippingTime()
     {
@@ -473,7 +473,7 @@ class GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRat
     /**
      * Sets shipping_time
      *
-     * @param \OpenAPI\Client\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime|null $shipping_time shipping_time
+     * @param \robsonek\phpAllegroApi\Model\GetListOfDeliveryMethodsUsingGET200ResponseDeliveryMethodsInnerShippingRatesConstraintsShippingTime|null $shipping_time shipping_time
      *
      * @return self
      */

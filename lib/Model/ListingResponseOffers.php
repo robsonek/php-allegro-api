@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace robsonek\phpAllegroApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * ListingResponseOffers Class Doc Comment
  *
  * @category Class
  * @description The lists of search results.
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ListingResponseOffers implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'promoted' => '\OpenAPI\Client\Model\ListingOffer[]',
-        'regular' => '\OpenAPI\Client\Model\ListingOffer[]'
+        'promoted' => '\robsonek\phpAllegroApi\Model\ListingOffer[]',
+        'regular' => '\robsonek\phpAllegroApi\Model\ListingOffer[]'
     ];
 
     /**
@@ -300,7 +300,7 @@ class ListingResponseOffers implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets promoted
      *
-     * @return \OpenAPI\Client\Model\ListingOffer[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingOffer[]|null
      */
     public function getPromoted()
     {
@@ -310,7 +310,7 @@ class ListingResponseOffers implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets promoted
      *
-     * @param \OpenAPI\Client\Model\ListingOffer[]|null $promoted List of promoted offers.
+     * @param \robsonek\phpAllegroApi\Model\ListingOffer[]|null $promoted List of promoted offers.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class ListingResponseOffers implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets regular
      *
-     * @return \OpenAPI\Client\Model\ListingOffer[]|null
+     * @return \robsonek\phpAllegroApi\Model\ListingOffer[]|null
      */
     public function getRegular()
     {
@@ -337,7 +337,7 @@ class ListingResponseOffers implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets regular
      *
-     * @param \OpenAPI\Client\Model\ListingOffer[]|null $regular List of regular (non-promoted) offers.
+     * @param \robsonek\phpAllegroApi\Model\ListingOffer[]|null $regular List of regular (non-promoted) offers.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace robsonek\phpAllegroApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use robsonek\phpAllegroApi\ApiException;
+use robsonek\phpAllegroApi\Configuration;
+use robsonek\phpAllegroApi\HeaderSelector;
+use robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
  * BatchOfferModificationApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  robsonek\phpAllegroApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -163,9 +163,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getGeneralReportUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function getGeneralReportUsingGET($command_id, string $contentType = self::contentTypes['getGeneralReportUsingGET'][0])
     {
@@ -181,9 +181,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getGeneralReportUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getGeneralReportUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getGeneralReportUsingGET'][0])
     {
@@ -214,11 +214,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -236,7 +236,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -255,7 +255,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -288,7 +288,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -332,7 +332,7 @@ class BatchOfferModificationApi
      */
     public function getGeneralReportUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getGeneralReportUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->getGeneralReportUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -475,9 +475,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPriceModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function getPriceModificationCommandStatusUsingGET($command_id, string $contentType = self::contentTypes['getPriceModificationCommandStatusUsingGET'][0])
     {
@@ -493,9 +493,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPriceModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPriceModificationCommandStatusUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getPriceModificationCommandStatusUsingGET'][0])
     {
@@ -526,11 +526,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -548,7 +548,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -567,7 +567,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -600,7 +600,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class BatchOfferModificationApi
      */
     public function getPriceModificationCommandStatusUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getPriceModificationCommandStatusUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->getPriceModificationCommandStatusUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -789,9 +789,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPriceModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TaskReport
+     * @return \robsonek\phpAllegroApi\Model\TaskReport
      */
     public function getPriceModificationCommandTasksStatusesUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPriceModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -809,9 +809,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPriceModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPriceModificationCommandTasksStatusesUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPriceModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -842,11 +842,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TaskReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TaskReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TaskReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TaskReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -864,7 +864,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TaskReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TaskReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -883,7 +883,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TaskReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -916,7 +916,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TaskReport',
+                        '\robsonek\phpAllegroApi\Model\TaskReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class BatchOfferModificationApi
      */
     public function getPriceModificationCommandTasksStatusesUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getPriceModificationCommandTasksStatusesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TaskReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
         $request = $this->getPriceModificationCommandTasksStatusesUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -1141,9 +1141,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantityModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function getQuantityModificationCommandStatusUsingGET($command_id, string $contentType = self::contentTypes['getQuantityModificationCommandStatusUsingGET'][0])
     {
@@ -1159,9 +1159,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantityModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getQuantityModificationCommandStatusUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getQuantityModificationCommandStatusUsingGET'][0])
     {
@@ -1192,11 +1192,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1214,7 +1214,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1233,7 +1233,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1266,7 +1266,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1310,7 +1310,7 @@ class BatchOfferModificationApi
      */
     public function getQuantityModificationCommandStatusUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getQuantityModificationCommandStatusUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->getQuantityModificationCommandStatusUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -1455,9 +1455,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantityModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TaskReport
+     * @return \robsonek\phpAllegroApi\Model\TaskReport
      */
     public function getQuantityModificationCommandTasksStatusesUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getQuantityModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -1475,9 +1475,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getQuantityModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getQuantityModificationCommandTasksStatusesUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getQuantityModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -1508,11 +1508,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TaskReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TaskReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TaskReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TaskReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1530,7 +1530,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TaskReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TaskReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1549,7 +1549,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TaskReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1582,7 +1582,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TaskReport',
+                        '\robsonek\phpAllegroApi\Model\TaskReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1630,7 +1630,7 @@ class BatchOfferModificationApi
      */
     public function getQuantityModificationCommandTasksStatusesUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getQuantityModificationCommandTasksStatusesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TaskReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
         $request = $this->getQuantityModificationCommandTasksStatusesUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -1809,9 +1809,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTasksUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TaskReport
+     * @return \robsonek\phpAllegroApi\Model\TaskReport
      */
     public function getTasksUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getTasksUsingGET'][0])
     {
@@ -1829,9 +1829,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTasksUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTasksUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getTasksUsingGET'][0])
     {
@@ -1862,11 +1862,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TaskReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TaskReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TaskReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TaskReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1884,7 +1884,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TaskReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TaskReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1903,7 +1903,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TaskReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1936,7 +1936,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TaskReport',
+                        '\robsonek\phpAllegroApi\Model\TaskReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1984,7 +1984,7 @@ class BatchOfferModificationApi
      */
     public function getTasksUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getTasksUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TaskReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
         $request = $this->getTasksUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -2161,9 +2161,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getofferAutomaticPricingModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function getofferAutomaticPricingModificationCommandStatusUsingGET($command_id, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandStatusUsingGET'][0])
     {
@@ -2179,9 +2179,9 @@ class BatchOfferModificationApi
      * @param  string $command_id Command identifier. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getofferAutomaticPricingModificationCommandStatusUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getofferAutomaticPricingModificationCommandStatusUsingGETWithHttpInfo($command_id, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandStatusUsingGET'][0])
     {
@@ -2212,11 +2212,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2234,7 +2234,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2253,7 +2253,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2286,7 +2286,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2330,7 +2330,7 @@ class BatchOfferModificationApi
      */
     public function getofferAutomaticPricingModificationCommandStatusUsingGETAsyncWithHttpInfo($command_id, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandStatusUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->getofferAutomaticPricingModificationCommandStatusUsingGETRequest($command_id, $contentType);
 
         return $this->client
@@ -2475,9 +2475,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getofferAutomaticPricingModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TaskReport
+     * @return \robsonek\phpAllegroApi\Model\TaskReport
      */
     public function getofferAutomaticPricingModificationCommandTasksStatusesUsingGET($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -2495,9 +2495,9 @@ class BatchOfferModificationApi
      * @param  int $offset The offset of elements in the response. (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getofferAutomaticPricingModificationCommandTasksStatusesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\TaskReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function getofferAutomaticPricingModificationCommandTasksStatusesUsingGETWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandTasksStatusesUsingGET'][0])
     {
@@ -2528,11 +2528,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TaskReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\TaskReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TaskReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\TaskReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2550,7 +2550,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TaskReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\TaskReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2569,7 +2569,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TaskReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2602,7 +2602,7 @@ class BatchOfferModificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TaskReport',
+                        '\robsonek\phpAllegroApi\Model\TaskReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2650,7 +2650,7 @@ class BatchOfferModificationApi
      */
     public function getofferAutomaticPricingModificationCommandTasksStatusesUsingGETAsyncWithHttpInfo($command_id, $limit = 100, $offset = 0, string $contentType = self::contentTypes['getofferAutomaticPricingModificationCommandTasksStatusesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TaskReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\TaskReport';
         $request = $this->getofferAutomaticPricingModificationCommandTasksStatusesUsingGETRequest($command_id, $limit, $offset, $contentType);
 
         return $this->client
@@ -2825,12 +2825,12 @@ class BatchOfferModificationApi
      * Batch offer modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function modificationCommandUsingPUT($command_id, $offer_change_command, string $contentType = self::contentTypes['modificationCommandUsingPUT'][0])
     {
@@ -2844,12 +2844,12 @@ class BatchOfferModificationApi
      * Batch offer modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function modificationCommandUsingPUTWithHttpInfo($command_id, $offer_change_command, string $contentType = self::contentTypes['modificationCommandUsingPUT'][0])
     {
@@ -2880,11 +2880,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2902,7 +2902,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2921,7 +2921,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2954,7 +2954,7 @@ class BatchOfferModificationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2970,7 +2970,7 @@ class BatchOfferModificationApi
      * Batch offer modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2992,7 +2992,7 @@ class BatchOfferModificationApi
      * Batch offer modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3000,7 +3000,7 @@ class BatchOfferModificationApi
      */
     public function modificationCommandUsingPUTAsyncWithHttpInfo($command_id, $offer_change_command, string $contentType = self::contentTypes['modificationCommandUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->modificationCommandUsingPUTRequest($command_id, $offer_change_command, $contentType);
 
         return $this->client
@@ -3043,7 +3043,7 @@ class BatchOfferModificationApi
      * Create request for operation 'modificationCommandUsingPUT'
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferChangeCommand $offer_change_command offerChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['modificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3155,12 +3155,12 @@ class BatchOfferModificationApi
      *
      * Batch offer automatic pricing rules modification
      *
-     * @param  \OpenAPI\Client\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function offerAutomaticPricingModificationCommandUsingPOST($offer_automatic_pricing_command, string $contentType = self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'][0])
     {
@@ -3173,12 +3173,12 @@ class BatchOfferModificationApi
      *
      * Batch offer automatic pricing rules modification
      *
-     * @param  \OpenAPI\Client\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function offerAutomaticPricingModificationCommandUsingPOSTWithHttpInfo($offer_automatic_pricing_command, string $contentType = self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'][0])
     {
@@ -3209,11 +3209,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3231,7 +3231,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3250,7 +3250,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3283,7 +3283,7 @@ class BatchOfferModificationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3298,7 +3298,7 @@ class BatchOfferModificationApi
      *
      * Batch offer automatic pricing rules modification
      *
-     * @param  \OpenAPI\Client\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3319,7 +3319,7 @@ class BatchOfferModificationApi
      *
      * Batch offer automatic pricing rules modification
      *
-     * @param  \OpenAPI\Client\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3327,7 +3327,7 @@ class BatchOfferModificationApi
      */
     public function offerAutomaticPricingModificationCommandUsingPOSTAsyncWithHttpInfo($offer_automatic_pricing_command, string $contentType = self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->offerAutomaticPricingModificationCommandUsingPOSTRequest($offer_automatic_pricing_command, $contentType);
 
         return $this->client
@@ -3369,7 +3369,7 @@ class BatchOfferModificationApi
     /**
      * Create request for operation 'offerAutomaticPricingModificationCommandUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferAutomaticPricingCommand $offer_automatic_pricing_command OfferAutomaticPricingCommand (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['offerAutomaticPricingModificationCommandUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3467,12 +3467,12 @@ class BatchOfferModificationApi
      * Batch offer price modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['priceModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function priceModificationCommandUsingPUT($command_id, $offer_price_change_command, string $contentType = self::contentTypes['priceModificationCommandUsingPUT'][0])
     {
@@ -3486,12 +3486,12 @@ class BatchOfferModificationApi
      * Batch offer price modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['priceModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function priceModificationCommandUsingPUTWithHttpInfo($command_id, $offer_price_change_command, string $contentType = self::contentTypes['priceModificationCommandUsingPUT'][0])
     {
@@ -3522,11 +3522,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3544,7 +3544,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3563,7 +3563,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3596,7 +3596,7 @@ class BatchOfferModificationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3612,7 +3612,7 @@ class BatchOfferModificationApi
      * Batch offer price modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['priceModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3634,7 +3634,7 @@ class BatchOfferModificationApi
      * Batch offer price modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['priceModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3642,7 +3642,7 @@ class BatchOfferModificationApi
      */
     public function priceModificationCommandUsingPUTAsyncWithHttpInfo($command_id, $offer_price_change_command, string $contentType = self::contentTypes['priceModificationCommandUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->priceModificationCommandUsingPUTRequest($command_id, $offer_price_change_command, $contentType);
 
         return $this->client
@@ -3685,7 +3685,7 @@ class BatchOfferModificationApi
      * Create request for operation 'priceModificationCommandUsingPUT'
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferPriceChangeCommand $offer_price_change_command offerPriceChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['priceModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3798,12 +3798,12 @@ class BatchOfferModificationApi
      * Batch offer quantity modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['quantityModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GeneralReport
+     * @return \robsonek\phpAllegroApi\Model\GeneralReport
      */
     public function quantityModificationCommandUsingPUT($command_id, $offer_quantity_change_command, string $contentType = self::contentTypes['quantityModificationCommandUsingPUT'][0])
     {
@@ -3817,12 +3817,12 @@ class BatchOfferModificationApi
      * Batch offer quantity modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['quantityModificationCommandUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \robsonek\phpAllegroApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \robsonek\phpAllegroApi\Model\GeneralReport, HTTP status code, HTTP response headers (array of strings)
      */
     public function quantityModificationCommandUsingPUTWithHttpInfo($command_id, $offer_quantity_change_command, string $contentType = self::contentTypes['quantityModificationCommandUsingPUT'][0])
     {
@@ -3853,11 +3853,11 @@ class BatchOfferModificationApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\GeneralReport' === '\SplFileObject') {
+                    if ('\robsonek\phpAllegroApi\Model\GeneralReport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GeneralReport' !== 'string') {
+                        if ('\robsonek\phpAllegroApi\Model\GeneralReport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3875,7 +3875,7 @@ class BatchOfferModificationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GeneralReport', []),
+                        ObjectSerializer::deserialize($content, '\robsonek\phpAllegroApi\Model\GeneralReport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3894,7 +3894,7 @@ class BatchOfferModificationApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GeneralReport';
+            $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3927,7 +3927,7 @@ class BatchOfferModificationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GeneralReport',
+                        '\robsonek\phpAllegroApi\Model\GeneralReport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3943,7 +3943,7 @@ class BatchOfferModificationApi
      * Batch offer quantity modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['quantityModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3965,7 +3965,7 @@ class BatchOfferModificationApi
      * Batch offer quantity modification
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['quantityModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3973,7 +3973,7 @@ class BatchOfferModificationApi
      */
     public function quantityModificationCommandUsingPUTAsyncWithHttpInfo($command_id, $offer_quantity_change_command, string $contentType = self::contentTypes['quantityModificationCommandUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GeneralReport';
+        $returnType = '\robsonek\phpAllegroApi\Model\GeneralReport';
         $request = $this->quantityModificationCommandUsingPUTRequest($command_id, $offer_quantity_change_command, $contentType);
 
         return $this->client
@@ -4016,7 +4016,7 @@ class BatchOfferModificationApi
      * Create request for operation 'quantityModificationCommandUsingPUT'
      *
      * @param  string $command_id Command identifier. (required)
-     * @param  \OpenAPI\Client\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
+     * @param  \robsonek\phpAllegroApi\Model\OfferQuantityChangeCommand $offer_quantity_change_command offerQuantityChangeCommandDto (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['quantityModificationCommandUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

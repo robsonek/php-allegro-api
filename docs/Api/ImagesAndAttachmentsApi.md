@@ -5,6 +5,7 @@ All URIs are relative to https://api.allegro.pl, except if the operation defines
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**createOfferAttachmentUsingPOST()**](ImagesAndAttachmentsApi.md#createOfferAttachmentUsingPOST) | **POST** /sale/offer-attachments | Create an offer attachment |
+| [**getOfferAttachment()**](ImagesAndAttachmentsApi.md#getOfferAttachment) | **GET** /sale/offer-attachments/{attachmentId} | Get offer attachment details |
 | [**uploadOfferAttachmentUsingPUT()**](ImagesAndAttachmentsApi.md#uploadOfferAttachmentUsingPUT) | **PUT** /sale/offer-attachments/{attachmentId} | Upload an offer attachment |
 | [**uploadOfferImageUsingPOST()**](ImagesAndAttachmentsApi.md#uploadOfferImageUsingPOST) | **POST** /sale/images | Upload an offer image |
 
@@ -63,6 +64,66 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/vnd.allegro.public.v1+json`
+- **Accept**: `application/vnd.allegro.public.v1+json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `getOfferAttachment()`
+
+```php
+getOfferAttachment($attachment_id): \robsonek\phpAllegroApi\Model\OfferAttachment
+```
+
+Get offer attachment details
+
+Get details of an offer attachments, including download link, by attachment identifier (\"attachmentId\"). The attachment id can be retrieved by querying a particular offer, for example by using <a href=\"#operation/getProductOffer\">`GET /sale/product-offers/{offerId}`</a>.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure OAuth2 access token for authorization: bearer-token-for-user
+$config = robsonek\phpAllegroApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new robsonek\phpAllegroApi\Api\ImagesAndAttachmentsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$attachment_id = 'attachment_id_example'; // string | The ID of the attachment.
+
+try {
+    $result = $apiInstance->getOfferAttachment($attachment_id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ImagesAndAttachmentsApi->getOfferAttachment: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **attachment_id** | **string**| The ID of the attachment. | |
+
+### Return type
+
+[**\robsonek\phpAllegroApi\Model\OfferAttachment**](../Model/OfferAttachment.md)
+
+### Authorization
+
+[bearer-token-for-user](../../README.md#bearer-token-for-user)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
 - **Accept**: `application/vnd.allegro.public.v1+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

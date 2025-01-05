@@ -519,11 +519,11 @@ $apiInstance = new robsonek\phpAllegroApi\Api\InformationAboutUserApi(
     new GuzzleHttp\Client(),
     $config
 );
-$recommended = 'recommended_example'; // string | Filter by recommended.
+$recommended = true; // string | Filter by recommended.
 $last_changed_at_gte = 2020-11-13T12:45:20.818Z; // \DateTime | Last change (creation or latest edition) date time in ISO 8601 format. The lower bound of date time range from which ratings will be fetched.
 $last_changed_at_lte = 2020-11-13T12:45:20.818Z; // \DateTime | Last change (creation or latest edition) date time in ISO 8601 format. The upper bound of date time range from which ratings will be fetched.
-$offset = 0; // int | The offset of elements in the response.
-$limit = 20; // int | The limit of elements in the response.
+$offset = 101; // int | The offset of elements in the response.
+$limit = 100; // int | The limit of elements in the response.
 
 try {
     $result = $apiInstance->getUserRatingsUsingGET($recommended, $last_changed_at_gte, $last_changed_at_lte, $offset, $limit);

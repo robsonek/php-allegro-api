@@ -59,6 +59,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static $openAPITypes = [
         'quantity' => '\robsonek\phpAllegroApi\Model\ProductSetElementQuantityQuantity',
         'safety_information' => '\robsonek\phpAllegroApi\Model\ProductSetElementSafetyInformation',
+        'marketed_before_gpsr_obligation' => 'bool',
         'product' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfProduct',
         'responsible_person' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsiblePerson',
         'responsible_producer' => '\robsonek\phpAllegroApi\Model\SaleProductOfferResponseV1AllOfProductSetAllOfResponsibleProducer'
@@ -74,6 +75,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static $openAPIFormats = [
         'quantity' => null,
         'safety_information' => null,
+        'marketed_before_gpsr_obligation' => null,
         'product' => null,
         'responsible_person' => null,
         'responsible_producer' => null
@@ -87,6 +89,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static array $openAPINullables = [
         'quantity' => false,
         'safety_information' => false,
+        'marketed_before_gpsr_obligation' => true,
         'product' => false,
         'responsible_person' => false,
         'responsible_producer' => false
@@ -180,6 +183,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static $attributeMap = [
         'quantity' => 'quantity',
         'safety_information' => 'safetyInformation',
+        'marketed_before_gpsr_obligation' => 'marketedBeforeGPSRObligation',
         'product' => 'product',
         'responsible_person' => 'responsiblePerson',
         'responsible_producer' => 'responsibleProducer'
@@ -193,6 +197,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static $setters = [
         'quantity' => 'setQuantity',
         'safety_information' => 'setSafetyInformation',
+        'marketed_before_gpsr_obligation' => 'setMarketedBeforeGpsrObligation',
         'product' => 'setProduct',
         'responsible_person' => 'setResponsiblePerson',
         'responsible_producer' => 'setResponsibleProducer'
@@ -206,6 +211,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     protected static $getters = [
         'quantity' => 'getQuantity',
         'safety_information' => 'getSafetyInformation',
+        'marketed_before_gpsr_obligation' => 'getMarketedBeforeGpsrObligation',
         'product' => 'getProduct',
         'responsible_person' => 'getResponsiblePerson',
         'responsible_producer' => 'getResponsibleProducer'
@@ -270,6 +276,7 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
     {
         $this->setIfExists('quantity', $data ?? [], null);
         $this->setIfExists('safety_information', $data ?? [], null);
+        $this->setIfExists('marketed_before_gpsr_obligation', $data ?? [], null);
         $this->setIfExists('product', $data ?? [], null);
         $this->setIfExists('responsible_person', $data ?? [], null);
         $this->setIfExists('responsible_producer', $data ?? [], null);
@@ -367,6 +374,40 @@ class SaleProductOfferResponseV1AllOfProductSet implements ModelInterface, Array
             throw new \InvalidArgumentException('non-nullable safety_information cannot be null');
         }
         $this->container['safety_information'] = $safety_information;
+
+        return $this;
+    }
+
+    /**
+     * Gets marketed_before_gpsr_obligation
+     *
+     * @return bool|null
+     */
+    public function getMarketedBeforeGpsrObligation()
+    {
+        return $this->container['marketed_before_gpsr_obligation'];
+    }
+
+    /**
+     * Sets marketed_before_gpsr_obligation
+     *
+     * @param bool|null $marketed_before_gpsr_obligation Allows you to declare that the product was introduced before 13 Dec 2024 and therefore does not require GPSR data.
+     *
+     * @return self
+     */
+    public function setMarketedBeforeGpsrObligation($marketed_before_gpsr_obligation)
+    {
+        if (is_null($marketed_before_gpsr_obligation)) {
+            array_push($this->openAPINullablesSetToNull, 'marketed_before_gpsr_obligation');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('marketed_before_gpsr_obligation', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+        $this->container['marketed_before_gpsr_obligation'] = $marketed_before_gpsr_obligation;
 
         return $this;
     }

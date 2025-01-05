@@ -189,6 +189,7 @@ Class | Method | HTTP request | Description
 *FulfillmentProductsApi* | [**getAvailableProducts**](docs/Api/FulfillmentProductsApi.md#getavailableproducts) | **GET** /fulfillment/available-products | Get list of available products
 *FulfillmentStockApi* | [**getFulfillmentStock**](docs/Api/FulfillmentStockApi.md#getfulfillmentstock) | **GET** /fulfillment/stock | Get available stock
 *ImagesAndAttachmentsApi* | [**createOfferAttachmentUsingPOST**](docs/Api/ImagesAndAttachmentsApi.md#createofferattachmentusingpost) | **POST** /sale/offer-attachments | Create an offer attachment
+*ImagesAndAttachmentsApi* | [**getOfferAttachment**](docs/Api/ImagesAndAttachmentsApi.md#getofferattachment) | **GET** /sale/offer-attachments/{attachmentId} | Get offer attachment details
 *ImagesAndAttachmentsApi* | [**uploadOfferAttachmentUsingPUT**](docs/Api/ImagesAndAttachmentsApi.md#uploadofferattachmentusingput) | **PUT** /sale/offer-attachments/{attachmentId} | Upload an offer attachment
 *ImagesAndAttachmentsApi* | [**uploadOfferImageUsingPOST**](docs/Api/ImagesAndAttachmentsApi.md#uploadofferimageusingpost) | **POST** /sale/images | Upload an offer image
 *InformationAboutMarketplacesApi* | [**marketplacesGET**](docs/Api/InformationAboutMarketplacesApi.md#marketplacesget) | **GET** /marketplaces | Get details for all marketplaces in allegro
@@ -687,7 +688,6 @@ Class | Method | HTTP request | Description
 - [CreateResponsibleProducerRequest](docs/Model/CreateResponsibleProducerRequest.md)
 - [CreateShipmentCommandStatusDto](docs/Model/CreateShipmentCommandStatusDto.md)
 - [CurrentPrice](docs/Model/CurrentPrice.md)
-- [CustomParameter](docs/Model/CustomParameter.md)
 - [CustomerReturn](docs/Model/CustomerReturn.md)
 - [CustomerReturnBuyer](docs/Model/CustomerReturnBuyer.md)
 - [CustomerReturnItem](docs/Model/CustomerReturnItem.md)
@@ -846,6 +846,7 @@ Class | Method | HTTP request | Description
 - [ManualDescriptionTranslation](docs/Model/ManualDescriptionTranslation.md)
 - [ManualTitleTranslation](docs/Model/ManualTitleTranslation.md)
 - [ManualTranslationUpdateRequest](docs/Model/ManualTranslationUpdateRequest.md)
+- [MarketedBeforeGPSRObligation](docs/Model/MarketedBeforeGPSRObligation.md)
 - [MarketplaceAvailablePromotionPackages](docs/Model/MarketplaceAvailablePromotionPackages.md)
 - [MarketplaceItem](docs/Model/MarketplaceItem.md)
 - [MarketplaceItemCurrencies](docs/Model/MarketplaceItemCurrencies.md)

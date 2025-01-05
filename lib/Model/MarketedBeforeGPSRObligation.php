@@ -1,6 +1,6 @@
 <?php
 /**
- * ProductParameterDtoOptions
+ * MarketedBeforeGPSRObligation
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \robsonek\phpAllegroApi\ObjectSerializer;
 
 /**
- * ProductParameterDtoOptions Class Doc Comment
+ * MarketedBeforeGPSRObligation Class Doc Comment
  *
  * @category Class
  * @package  robsonek\phpAllegroApi
@@ -40,7 +40,7 @@ use \robsonek\phpAllegroApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSerializable
+class MarketedBeforeGPSRObligation implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ProductParameterDto_options';
+    protected static $openAPIModelName = 'MarketedBeforeGPSRObligation';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'identifies_product' => 'bool',
-        'is_gtin' => 'bool',
-        'is_trusted' => 'bool'
+        'marketed_before_gpsr_obligation' => 'bool'
     ];
 
     /**
@@ -70,9 +68,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'identifies_product' => null,
-        'is_gtin' => null,
-        'is_trusted' => null
+        'marketed_before_gpsr_obligation' => null
     ];
 
     /**
@@ -81,9 +77,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'identifies_product' => false,
-        'is_gtin' => false,
-        'is_trusted' => false
+        'marketed_before_gpsr_obligation' => true
     ];
 
     /**
@@ -172,9 +166,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $attributeMap = [
-        'identifies_product' => 'identifiesProduct',
-        'is_gtin' => 'isGTIN',
-        'is_trusted' => 'isTrusted'
+        'marketed_before_gpsr_obligation' => 'marketedBeforeGPSRObligation'
     ];
 
     /**
@@ -183,9 +175,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'identifies_product' => 'setIdentifiesProduct',
-        'is_gtin' => 'setIsGtin',
-        'is_trusted' => 'setIsTrusted'
+        'marketed_before_gpsr_obligation' => 'setMarketedBeforeGpsrObligation'
     ];
 
     /**
@@ -194,9 +184,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'identifies_product' => 'getIdentifiesProduct',
-        'is_gtin' => 'getIsGtin',
-        'is_trusted' => 'getIsTrusted'
+        'marketed_before_gpsr_obligation' => 'getMarketedBeforeGpsrObligation'
     ];
 
     /**
@@ -256,9 +244,7 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('identifies_product', $data ?? [], null);
-        $this->setIfExists('is_gtin', $data ?? [], null);
-        $this->setIfExists('is_trusted', $data ?? [], null);
+        $this->setIfExists('marketed_before_gpsr_obligation', $data ?? [], null);
     }
 
     /**
@@ -288,9 +274,6 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
     {
         $invalidProperties = [];
 
-        if ($this->container['identifies_product'] === null) {
-            $invalidProperties[] = "'identifies_product' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -307,82 +290,35 @@ class ProductParameterDtoOptions implements ModelInterface, ArrayAccess, \JsonSe
 
 
     /**
-     * Gets identifies_product
-     *
-     * @return bool
-     */
-    public function getIdentifiesProduct()
-    {
-        return $this->container['identifies_product'];
-    }
-
-    /**
-     * Sets identifies_product
-     *
-     * @param bool $identifies_product identifies_product
-     *
-     * @return self
-     */
-    public function setIdentifiesProduct($identifies_product)
-    {
-        if (is_null($identifies_product)) {
-            throw new \InvalidArgumentException('non-nullable identifies_product cannot be null');
-        }
-        $this->container['identifies_product'] = $identifies_product;
-
-        return $this;
-    }
-
-    /**
-     * Gets is_gtin
+     * Gets marketed_before_gpsr_obligation
      *
      * @return bool|null
      */
-    public function getIsGtin()
+    public function getMarketedBeforeGpsrObligation()
     {
-        return $this->container['is_gtin'];
+        return $this->container['marketed_before_gpsr_obligation'];
     }
 
     /**
-     * Sets is_gtin
+     * Sets marketed_before_gpsr_obligation
      *
-     * @param bool|null $is_gtin is_gtin
+     * @param bool|null $marketed_before_gpsr_obligation Allows you to declare that the product was introduced before 13 Dec 2024 and therefore does not require GPSR data.
      *
      * @return self
      */
-    public function setIsGtin($is_gtin)
+    public function setMarketedBeforeGpsrObligation($marketed_before_gpsr_obligation)
     {
-        if (is_null($is_gtin)) {
-            throw new \InvalidArgumentException('non-nullable is_gtin cannot be null');
+        if (is_null($marketed_before_gpsr_obligation)) {
+            array_push($this->openAPINullablesSetToNull, 'marketed_before_gpsr_obligation');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('marketed_before_gpsr_obligation', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
         }
-        $this->container['is_gtin'] = $is_gtin;
-
-        return $this;
-    }
-
-    /**
-     * Gets is_trusted
-     *
-     * @return bool|null
-     */
-    public function getIsTrusted()
-    {
-        return $this->container['is_trusted'];
-    }
-
-    /**
-     * Sets is_trusted
-     *
-     * @param bool|null $is_trusted Parameter and its values are authorized by manufacturer or brand owner and changes can’t be proposed to it
-     *
-     * @return self
-     */
-    public function setIsTrusted($is_trusted)
-    {
-        if (is_null($is_trusted)) {
-            throw new \InvalidArgumentException('non-nullable is_trusted cannot be null');
-        }
-        $this->container['is_trusted'] = $is_trusted;
+        $this->container['marketed_before_gpsr_obligation'] = $marketed_before_gpsr_obligation;
 
         return $this;
     }

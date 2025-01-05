@@ -851,8 +851,8 @@ $apiInstance = new robsonek\phpAllegroApi\Api\OfferManagementApi(
     $config
 );
 $command_id = 'command_id_example'; // string | Command identifier.
-$limit = 100; // int | The limit of elements in the response.
-$offset = 0; // int | The offset of elements in the response.
+$limit = 200; // int | The limit of elements in the response.
+$offset = 201; // int | The offset of elements in the response.
 
 try {
     $result = $apiInstance->getPublicationTasksUsingGET($command_id, $limit, $offset);

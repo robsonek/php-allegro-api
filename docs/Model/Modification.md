@@ -14,5 +14,6 @@ Name | Type | Description | Notes
 **responsible_person** | [**\robsonek\phpAllegroApi\Model\ModificationResponsiblePerson**](ModificationResponsiblePerson.md) |  | [optional]
 **responsible_producer** | [**\robsonek\phpAllegroApi\Model\ModificationResponsibleProducer**](ModificationResponsibleProducer.md) |  | [optional]
 **safety_information** | [**\robsonek\phpAllegroApi\Model\ModificationSafetyInformation**](ModificationSafetyInformation.md) |  | [optional]
+**marketed_before_gpsr_obligation** | **bool** | Allows you to declare whether the first product in the offer was marketed before the GPSR obligation. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

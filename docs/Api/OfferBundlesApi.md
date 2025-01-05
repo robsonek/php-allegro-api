@@ -217,7 +217,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\OfferBundlesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$limit = 50; // int | Limit of bundles per page.
+$limit = 200; // int | Limit of bundles per page.
 $offer_id = 123456789; // string | Filter bundles which contains offer.
 $page_id = MjAyNC0wOS0xMFQwNjo0OTowMi40NTBa; // string | ID of page which will be retrieved.
 

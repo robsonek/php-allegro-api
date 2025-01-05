@@ -215,8 +215,8 @@ $apiInstance = new robsonek\phpAllegroApi\Api\AdditionalServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$offset = 0; // int | The offset of elements in the response.
-$limit = 100; // int | The limit of elements in the response.
+$offset = 200; // int | The offset of elements in the response.
+$limit = 200; // int | The limit of elements in the response.
 
 try {
     $result = $apiInstance->getListOfAdditionalServicesGroupsUsingGET($offset, $limit);

@@ -217,7 +217,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\PointsOfServiceApi(
     new GuzzleHttp\Client(),
     $config
 );
-$seller_id = 'seller_id_example'; // string | User identifier.
+$seller_id = 29324; // string | User identifier.
 $country_code = PL; // string | Country code identifier in ISO format. In case of incorrect or unsupported country code, empty list is returned. If missing, list of all defined points is returned. If present, correct and supported, list of all points with given country code for the user is returned.
 
 try {

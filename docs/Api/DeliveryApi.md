@@ -223,7 +223,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\DeliveryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$marketplace_id = 'marketplace_id_example'; // string | Marketplace for which delivery settings will be returned. By default (if the marketplace parameter is not set) the marketplace on which the seller has registered is used. However, we recommend that the marketplace.id query parameter should always be explicitly set.
+$marketplace_id = allegro-pl; // string | Marketplace for which delivery settings will be returned. By default (if the marketplace parameter is not set) the marketplace on which the seller has registered is used. However, we recommend that the marketplace.id query parameter should always be explicitly set.
 
 try {
     $result = $apiInstance->getSaleDeliverySettings($marketplace_id);

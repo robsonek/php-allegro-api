@@ -224,26 +224,26 @@ $apiInstance = new robsonek\phpAllegroApi\Api\UsersOfferInformationApi(
     $config
 );
 $offer_id = array('offer_id_example'); // string[] | Offer ID.
-$name = 'name_example'; // string | The text to search in the offer title.
+$name = iPhone 15; // string | The text to search in the offer title.
 $selling_mode_price_amount_gte = 9.99; // float | The lower threshold of price.  If additionally a `publication.marketplace` is provided, searches using the price on the given marketplace.
 $selling_mode_price_amount_lte = 125.99; // float | The upper threshold of price.  If additionally a `publication.marketplace` is provided, searches using the price on the given marketplace.
-$selling_mode_price_automation_rule_id = 'selling_mode_price_automation_rule_id_example'; // string | The ID of price automation rule. Returns offers with given price automation rule ID.  If additionally a `publication.marketplace` is provided, searches using the price automation rule on the given marketplace.
-$selling_mode_price_automation_rule_id_empty = True; // bool | Allows to filter offers by existence of price automation rule ID. Passing 'false' will return offers with any price automation rule, passing 'true' will return offers without any price automation rules.  If additionally a `publication.marketplace` is provided, searches using the price automation rule on the given marketplace.
+$selling_mode_price_automation_rule_id = 66950bc04a57a95dfad0891d; // string | The ID of price automation rule. Returns offers with given price automation rule ID.  If additionally a `publication.marketplace` is provided, searches using the price automation rule on the given marketplace.
+$selling_mode_price_automation_rule_id_empty = false; // bool | Allows to filter offers by existence of price automation rule ID. Passing 'false' will return offers with any price automation rule, passing 'true' will return offers without any price automation rules.  If additionally a `publication.marketplace` is provided, searches using the price automation rule on the given marketplace.
 $publication_status = array('publication_status_example'); // string[] | The publication status of the offer. Passing more than one value will search for offers with any of the given statuses. By default all statuses are included. Example: `publication.status=INACTIVE&publication.status=ACTIVE` - returns offers with status `INACTIVE` or `ACTIVE`.
 $publication_marketplace = 'publication_marketplace_example'; // string | Either the base marketplace or an additional marketplace of the offer.  When passing the parameter `publication.marketplace`, searches for offers with the given marketplace as either its base marketplace or one of its additional marketplaces. When the parameter is omitted, searches for offers with all marketplaces.  In addition to searching, passing the parameter also influences the functionality of other query parameter by searching and sorting by data (e.g. price) on the given marketplace.
 $selling_mode_format = array('selling_mode_format_example'); // string[] | The offer's selling format. Passing more than one value will search for offers with any of the given formats. By default all formats are included. Example: `sellingMode.format=BUY_NOW&sellingMode.format=ADVERTISEMENT` - returns offers with with format `BUY_NOW` or `ADVERTISEMENT`.
 $external_id = array('external_id_example'); // string[] | The ID from the client's external system. Passing more than one value will search for offers with any of the given IDs. By default no ID is included. Example: `external.id=1233&external.id=1234` - returns offers with ID `1233` or `1234`. Single ID length shouldn't exceed 100 characters.
-$delivery_shipping_rates_id = 'delivery_shipping_rates_id_example'; // string | The ID of shipping rates. Returns offers with given shipping rates ID.
-$delivery_shipping_rates_id_empty = True; // bool | Allows to filter offers by existence of shipping rates ID.
-$sort = 'sort_example'; // string | The results' sorting order. No prefix in the value means ascending order. `-` prefix means descending order. If you don't provide the sort parameter, the list is sorted by offer creation time, descending.  If additionally a `publication.marketplace` is provided, sorts by price and `stock.sold` using the data on the given marketplace.
-$limit = 20; // int | The maximum number of offers returned in the response.
-$offset = 56; // int | Index of the first returned offer from all search results. Maximum sum of offset and limit is 10 000 000.
-$category_id = 'category_id_example'; // string | The identifier of the category, where you want to search for offers.
-$product_id_empty = True; // bool | Allows to filter offers by existence of product ID.
-$productization_required = True; // bool | Allows to search for offers from categories where productization is required.
-$b2b_buyable_only_by_business = True; // bool | Allows to search for offers buyable only by businesses.
-$fundraising_campaign_id = 'fundraising_campaign_id_example'; // string | ID of the charity fundraising campaign that benefits from this offer.
-$fundraising_campaign_id_empty = True; // bool | Allows to search for charity or commercial offers.
+$delivery_shipping_rates_id = 2991e29e-5fbc-46f5-963a-65c326ba65c2; // string | The ID of shipping rates. Returns offers with given shipping rates ID.
+$delivery_shipping_rates_id_empty = false; // bool | Allows to filter offers by existence of shipping rates ID.
+$sort = sellingMode.price.amount; // string | The results' sorting order. No prefix in the value means ascending order. `-` prefix means descending order. If you don't provide the sort parameter, the list is sorted by offer creation time, descending.  If additionally a `publication.marketplace` is provided, sorts by price and `stock.sold` using the data on the given marketplace.
+$limit = 100; // int | The maximum number of offers returned in the response.
+$offset = 101; // int | Index of the first returned offer from all search results. Maximum sum of offset and limit is 10 000 000.
+$category_id = 20285; // string | The identifier of the category, where you want to search for offers.
+$product_id_empty = true; // bool | Allows to filter offers by existence of product ID.
+$productization_required = true; // bool | Allows to search for offers from categories where productization is required.
+$b2b_buyable_only_by_business = false; // bool | Allows to search for offers buyable only by businesses.
+$fundraising_campaign_id = e2307b4f-6903-4be6-85e6-19e8ea303760; // string | ID of the charity fundraising campaign that benefits from this offer.
+$fundraising_campaign_id_empty = false; // bool | Allows to search for charity or commercial offers.
 
 try {
     $result = $apiInstance->searchOffersUsingGET($offer_id, $name, $selling_mode_price_amount_gte, $selling_mode_price_amount_lte, $selling_mode_price_automation_rule_id, $selling_mode_price_automation_rule_id_empty, $publication_status, $publication_marketplace, $selling_mode_format, $external_id, $delivery_shipping_rates_id, $delivery_shipping_rates_id_empty, $sort, $limit, $offset, $category_id, $product_id_empty, $productization_required, $b2b_buyable_only_by_business, $fundraising_campaign_id, $fundraising_campaign_id_empty);

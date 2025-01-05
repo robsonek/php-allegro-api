@@ -286,7 +286,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\ClassifiedsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$category_id = 'category_id_example'; // string | The category ID.
+$category_id = 23456; // string | The category ID.
 
 try {
     $result = $apiInstance->getClassifiedPackageConfigurationsForCategoryUsingGET($category_id);

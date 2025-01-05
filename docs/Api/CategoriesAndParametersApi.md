@@ -102,7 +102,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\CategoriesAndParametersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$parent_id = '954b95b6-43cf-4104-8354-dea4d9b10ddf'; // string | The ID of the category which children should be returned. If omitted, the list of main Allegro categories will be returned.
+$parent_id = 954b95b6-43cf-4104-8354-dea4d9b10ddf; // string | The ID of the category which children should be returned. If omitted, the list of main Allegro categories will be returned.
 
 try {
     $result = $apiInstance->getCategoriesUsingGET($parent_id);

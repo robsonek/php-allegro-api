@@ -38,7 +38,7 @@ $apiInstance = new robsonek\phpAllegroApi\Api\OfferTranslationsApi(
 );
 $language = en-US; // string | Language of the translation to delete.
 $offer_id = 'offer_id_example'; // string | Offer identifier.
-$element = 'element_example'; // string | Offer element for which translation should be deleted. If not provided, translations for all elements will be deleted.
+$element = title; // string | Offer element for which translation should be deleted. If not provided, translations for all elements will be deleted.
 
 try {
     $apiInstance->deleteManualTranslationUsingDELETE($language, $offer_id, $element);
